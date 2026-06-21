@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  /* 시절소담 디자인 토큰 */
+  --color-cream: #f8f6f2;
+  --color-cream-warm: #f2eee5;
+  --color-sage: #5b6e54;
+  --color-sage-light: #889b80;
+  --color-sage-dark: #424f3d;
+  --color-terracotta: #c45d3a;
+  --color-terracotta-light: #e0936f;
+  --color-ink: #2c2a26;
+  --color-ink-soft: #5a5650;
+  --color-paper: #fffdf9;
+  --color-border-soft: #e3ddd0;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: var(--color-cream);
+  --color-cream-warm: var(--color-cream-warm);
+  --color-sage: var(--color-sage);
+  --color-sage-light: var(--color-sage-light);
+  --color-sage-dark: var(--color-sage-dark);
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-light: var(--color-terracotta-light);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-paper: var(--color-paper);
+  --color-border-soft: var(--color-border-soft);
+  --font-serif-kr: var(--font-noto-serif-kr);
+  --font-sans-kr: var(--font-pretendard);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-pretendard), -apple-system, sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: Georgia, 'Noto Serif KR', 'Apple SD Gothic Neo', '바탕', Batang, serif;
+  font-weight: 500;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-soft);
+  border-radius: 3px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
