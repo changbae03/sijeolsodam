@@ -11,7 +11,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 60,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-6/hero.png',
     mainIngredient: '배',
     description: '가을 대표 과일 배를 더해 향긋하게 끓인 전통 식혜예요. 명절이나 손님 접대용으로도 좋습니다.',
     ingredients: [
@@ -41,7 +41,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-7/hero.png',
     mainIngredient: '표고버섯',
     description: '가을 표고버섯의 향과 소고기의 감칠맛이 어우러진 불고기예요. 가족 식사로 든든하게 즐기기 좋습니다.',
     ingredients: [
@@ -55,7 +55,7 @@ export const recipesQ3Extra: Recipe[] = [
     ],
     steps: [
       { title: '재료 손질', description: '표고버섯은 슬라이스하고 양파는 채 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-7/step-56.png' },
-      { title: '양념하기', description: '소고기에 간장, 설탕, 다진마늘, 참기름을 넣고 15분간 재워둡니다.', timerSeconds: 900 },
+      { title: '양념하기', description: '소고기에 간장, 설탕, 다진마늘, 참기름을 넣고 15분간 재워둡니다.', timerSeconds: 900, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-7/step-56.png' },
       { title: '볶기', description: '팬에 양념한 소고기를 볶다가 표고버섯과 양파를 넣고 함께 볶습니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-7/step-58.png' },
     ],
     tips: [
@@ -73,7 +73,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-8/hero.png',
     mainIngredient: '가을무',
     description: '단맛이 응축된 가을무를 새콤하게 무친 가장 기본적인 반찬이에요. 어느 메뉴와도 잘 어울립니다.',
     ingredients: [
@@ -105,7 +105,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 30,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1625943555017-a517a8e8d11a?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-9/hero.png',
     mainIngredient: '대하',
     description: '가을 대하를 간장 양념에 절여 만드는 짭짤하고 감칠맛 나는 밥도둑 반찬이에요.',
     ingredients: [
@@ -136,7 +136,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-10/hero.png',
     mainIngredient: '배',
     description: '과즙이 가득한 가을 배를 얼려 만드는 시원한 셔벗이에요. 가벼운 디저트로 즐기기 좋습니다.',
     ingredients: [
@@ -167,7 +167,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/hero.png',
     mainIngredient: '버섯',
     description: '향이 진해지는 가을철 여러 버섯을 듬뿍 넣고 들깨로 고소하게 끓인 탕이에요. 든든한 보양식으로 손색없습니다.',
     ingredients: [
@@ -180,7 +180,7 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '물', amount: '600ml' },
     ],
     steps: [
-      { title: '버섯 손질', description: '모든 버섯은 한입 크기로 썰거나 찢어둡니다.' },
+      { title: '버섯 손질', description: '모든 버섯은 한입 크기로 썰거나 찢어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-182.png' },
       { title: '볶기', description: '냄비에 들기름을 두르고 버섯을 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-183.png' },
       { title: '끓이기', description: '물과 국간장을 넣고 10분간 끓입니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-184.png' },
       { title: '마무리', description: '들깨가루를 풀어 넣고 5분 더 끓여 완성합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-185.png' },
@@ -200,7 +200,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-7/hero.png',
     mainIngredient: '단호박',
     description: '달큰한 가을 단호박과 견과류, 잡곡을 함께 지은 영양밥이에요. 든든하고 건강한 한 끼입니다.',
     ingredients: [
@@ -233,7 +233,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 30,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-8/hero.png',
     mainIngredient: '사과',
     description: '아삭한 가을 사과를 더해 단맛과 아삭함을 살린 별미 김치예요. 일반 김치와는 다른 산뜻한 맛을 즐길 수 있습니다.',
     ingredients: [
@@ -265,7 +265,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-9/hero.png',
     mainIngredient: '고구마',
     description: '구수한 고구마를 들깨가루와 함께 버무린 가을철 별미 간식이에요. 든든하고 영양도 가득합니다.',
     ingredients: [
@@ -294,7 +294,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 35,
     servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-10/hero.png',
     mainIngredient: '버섯',
     description: '향이 진해지는 가을철 여러 버섯과 채소를 듬뿍 넣어 끓인 푸짐한 전골이에요. 가족 모임 메뉴로 손색없습니다.',
     ingredients: [
@@ -329,7 +329,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-6/hero.png',
     mainIngredient: '알배추',
     description: '속이 단단하게 차오른 가을 알배추를 듬뿍 넣어 끓인 구수한 된장국이에요. 추운 늦가을 몸을 데워줍니다.',
     ingredients: [
@@ -360,7 +360,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601493700750-738103982f56?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-7/hero.png',
     mainIngredient: '단감',
     description: '늦가을 달콤한 단감과 부드러운 리코타치즈를 곁들인 산뜻한 샐러드예요. 손님 초대 메뉴로도 좋습니다.',
     ingredients: [
@@ -391,7 +391,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-8/hero.png',
     mainIngredient: '홍합',
     description: '쫄깃하고 진한 국물 맛을 내는 늦가을 홍합으로 끓인 시원한 탕이에요. 술안주로도 식사로도 좋습니다.',
     ingredients: [
@@ -423,7 +423,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1626200926749-2cf3414de4d6?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-9/hero.png',
     mainIngredient: '굴',
     description: '본격적으로 살이 차오르는 늦가을 굴을 듬뿍 넣어 바삭하게 부친 파전이에요. 비 오는 날 막걸리와 잘 어울립니다.',
     ingredients: [
@@ -454,7 +454,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1601493700750-738103982f56?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-10/hero.png',
     mainIngredient: '단감',
     description: '단단한 단감을 새콤달콤한 절임물에 담가 즐기는 별미예요. 입맛을 돋워주는 사이드 메뉴로 좋습니다.',
     ingredients: [
@@ -486,7 +486,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 35,
     servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1583224994076-ae1f3a73a07c?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-6/hero.png',
     mainIngredient: '생굴',
     description: '한 해 중 가장 통통한 생굴과 채소를 듬뿍 넣어 끓인 진한 전골이에요. 추운 겨울 가족이 둘러앉기 좋은 메뉴입니다.',
     ingredients: [
@@ -519,7 +519,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-7/hero.png',
     mainIngredient: '동치미무',
     description: '시원한 겨울 동치미 국물을 활용한 별미 막국수예요. 겨울에 별미로 즐기는 시원한 메뉴입니다.',
     ingredients: [
@@ -549,7 +549,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-8/hero.png',
     mainIngredient: '명태',
     description: '겨울 동해를 대표하는 명태살을 얇게 떠서 부친 담백한 전이에요. 명절 음식으로도 좋습니다.',
     ingredients: [
@@ -579,7 +579,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 90,
     servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/hero.png',
     mainIngredient: '유자',
     description: '향긋한 겨울 유자를 더해 깊은 풍미를 낸 갈비찜이에요. 명절이나 손님 초대 메뉴로 손색없습니다.',
     ingredients: [
@@ -594,7 +594,7 @@ export const recipesQ3Extra: Recipe[] = [
     ],
     steps: [
       { title: '갈비 손질', description: '갈비는 끓는 물에 한 번 데쳐 핏물을 제거합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-595.png' },
-      { title: '재료 손질', description: '무와 당근은 큼직하게 썰어둡니다.' },
+      { title: '재료 손질', description: '무와 당근은 큼직하게 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-595.png' },
       { title: '양념하기', description: '간장, 설탕, 유자청, 물을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-597.png' },
       { title: '끓이기', description: '갈비와 양념장을 넣고 센 불로 끓이다가 중약불로 줄여 50분간 졸입니다.', timerSeconds: 3000, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-598.png' },
       { title: '마무리', description: '무와 당근을 넣고 20분 더 졸인 뒤 대파를 올려 완성합니다.', timerSeconds: 1200, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-599.png' },
@@ -614,7 +614,7 @@ export const recipesQ3Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-10/hero.png',
     mainIngredient: '생굴',
     description: '한 해 중 가장 통통하고 신선한 생굴을 새콤하게 무쳐낸 별미예요. 입맛을 돋워주는 안주로도 좋습니다.',
     ingredients: [

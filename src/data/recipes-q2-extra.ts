@@ -11,7 +11,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-6/hero.png',
     mainIngredient: '새우, 미나리',
     description: '늦봄 향긋한 미나리와 탱글한 새우를 함께 부친 전이에요. 입맛을 돋워주는 산뜻한 별미입니다.',
     ingredients: [
@@ -41,7 +41,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 5,
     servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-7/hero.png',
     mainIngredient: '매실청',
     description: '5월 매실청으로 만드는 새콤달콤하고 시원한 에이드예요. 더위가 시작되기 전 산뜻하게 즐기기 좋습니다.',
     ingredients: [
@@ -71,7 +71,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-8/hero.png',
     mainIngredient: '봄동',
     description: '구수하고 진한 강된장을 봄동에 싸 먹는 메뉴예요. 강된장 하나로 밥 한 그릇을 비울 수 있습니다.',
     ingredients: [
@@ -104,7 +104,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-9/hero.png',
     mainIngredient: '아스파라거스, 새우',
     description: '부드러운 봄 아스파라거스와 탱글한 새우를 마늘향 가득하게 볶아낸 메뉴예요. 간단하지만 근사한 한 끼가 됩니다.',
     ingredients: [
@@ -135,7 +135,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-10/hero.png',
     mainIngredient: '완두콩',
     description: '아삭하고 달콤한 봄 완두콩을 듬뿍 넣어 지은 별미밥이에요. 색감도 예쁘고 영양도 가득합니다.',
     ingredients: [
@@ -146,7 +146,7 @@ export const recipesQ2Extra: Recipe[] = [
     ],
     steps: [
       { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-10/step-147.png' },
-      { title: '완두콩 손질', description: '완두콩은 깨끗이 씻어둡니다.' },
+      { title: '완두콩 손질', description: '완두콩은 깨끗이 씻어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-10/step-147.png' },
       { title: '밥 짓기', description: '불린 쌀에 완두콩과 물, 소금을 넣고 밥을 짓습니다. 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-10/step-149.png' },
       { title: '뜸 들이기', description: '불을 끄고 5분간 뜸을 들인 뒤 골고루 섞어 완성합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-10/step-150.png' },
     ],
@@ -167,7 +167,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-6/hero.png',
     mainIngredient: '오이',
     description: '아삭한 오이를 새콤달콤하게 무쳐 차가운 국물에 더한 여름 별미예요. 더위에 입맛 없을 때 시원하게 즐기기 좋습니다.',
     ingredients: [
@@ -200,7 +200,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-7/hero.png',
     mainIngredient: '햇감자',
     description: '포슬포슬한 햇감자를 갈아 만든 쫄깃한 옹심이를 넣은 국물 요리예요. 강원도식 별미를 가정에서 즐겨보세요.',
     ingredients: [
@@ -233,7 +233,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-8/hero.png',
     mainIngredient: '블루베리',
     description: '항산화 성분이 풍부한 여름 블루베리를 시원하게 갈아 만드는 스무디예요. 아침 대용으로도 좋은 건강 음료입니다.',
     ingredients: [
@@ -263,7 +263,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-9/hero.png',
     mainIngredient: '갑오징어',
     description: '초여름 두툼한 갑오징어와 아삭한 미역줄기를 매콤하게 볶아낸 메뉴예요. 밥반찬으로도 안주로도 좋습니다.',
     ingredients: [
@@ -294,7 +294,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-10/hero.png',
     mainIngredient: '방울토마토',
     description: '여름 초입 달큰한 방울토마토와 부드러운 달걀을 함께 볶아낸 중국식 가정요리예요. 간단하지만 풍미가 깊습니다.',
     ingredients: [
@@ -329,7 +329,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-6/hero.png',
     mainIngredient: '콩물',
     description: '고소하고 시원한 콩물에 소면을 말아 먹는 여름 보양 별미예요. 더위에 지친 몸에 영양을 채워줍니다.',
     ingredients: [
@@ -343,7 +343,7 @@ export const recipesQ2Extra: Recipe[] = [
     steps: [
       { title: '소면 삶기', description: '소면은 끓는 물에 삶아 찬물에 헹궈 식힙니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-6/step-343.png' },
       { title: '콩물 만들기', description: '두유와 땅콩버터, 소금을 섞어 콩물을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-6/step-344.png' },
-      { title: '재료 준비', description: '오이는 채 썰고 방울토마토는 반으로 자릅니다.' },
+      { title: '재료 준비', description: '오이는 채 썰고 방울토마토는 반으로 자릅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-6/step-343.png' },
       { title: '플레이팅', description: '소면을 그릇에 담고 콩물을 부은 뒤 오이와 토마토를 올려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-6/step-346.png' },
     ],
     tips: [
@@ -361,7 +361,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1598160456488-82ab8111e0bb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-7/hero.png',
     mainIngredient: '초당옥수수',
     description: '여름 별미 초당옥수수를 듬뿍 넣어 바삭하게 부친 전이에요. 달콤한 맛이 일품인 간식 같은 반찬입니다.',
     ingredients: [
@@ -390,7 +390,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-8/hero.png',
     mainIngredient: '가지',
     description: '부드럽게 찐 가지를 매콤새콤한 양념에 무쳐 시원하게 즐기는 여름 별미예요. 입맛 없는 한여름에 잘 어울립니다.',
     ingredients: [
@@ -422,7 +422,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-9/hero.png',
     mainIngredient: '수박',
     description: '한여름 더위를 씻어주는 대표 과일 수박으로 만드는 화채예요. 사이다와 함께 시원하게 즐기는 여름 별미입니다.',
     ingredients: [
@@ -452,7 +452,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-10/hero.png',
     mainIngredient: '갈치속젓',
     description: '제주식 갈치속젓을 곁들여 비벼 먹는 깊은 감칠맛의 비빔밥이에요. 여름철 입맛 없을 때 짭짤하게 입맛을 돋워줍니다.',
     ingredients: [
@@ -484,7 +484,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-6/hero.png',
     mainIngredient: '콩나물',
     description: '아삭하게 데친 콩나물을 매콤새콤하게 무쳐 시원하게 즐기는 여름 별미예요. 더위에 지친 입맛을 돋워줍니다.',
     ingredients: [
@@ -516,7 +516,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-7/hero.png',
     mainIngredient: '전복',
     description: '여름 보양식의 대표 전복을 듬뿍 넣어 끓인 미역국이에요. 더위에 지친 몸을 보양해주는 든든한 국물입니다.',
     ingredients: [
@@ -549,7 +549,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1629828874514-979f5f8f0b48?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-8/hero.png',
     mainIngredient: '복숭아',
     description: '과즙이 풍부한 늦여름 복숭아를 얼려 만드는 시원한 셔벗이에요. 간단하지만 인기 만점인 디저트입니다.',
     ingredients: [
@@ -578,7 +578,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '보통',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-9/hero.png',
     mainIngredient: '고구마순',
     description: '아삭한 늦여름 고구마순을 들깨와 함께 끓인 구수한 국이에요. 손이 많이 가지만 깊은 맛을 자랑합니다.',
     ingredients: [
@@ -611,7 +611,7 @@ export const recipesQ2Extra: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599819177626-08ed8aebec51?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-10/hero.png',
     mainIngredient: '포도',
     description: '당도가 절정에 이르는 여름 끝물 포도를 그릭요거트, 그래놀라와 층층이 쌓은 파르페예요. 보기에도 예쁜 디저트입니다.',
     ingredients: [

@@ -11,7 +11,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-1/hero.png',
     mainIngredient: '우엉',
     description: '겨울철 우엉의 단맛과 식이섬유를 가장 맛있게 즐기는 방법이에요. 들기름에 살짝 볶은 우엉을 쌀과 함께 솥에 안쳐 짓기만 하면, 구수한 향이 집안 가득 퍼지는 든든한 한 끼가 됩니다.',
     ingredients: [
@@ -25,11 +25,11 @@ export const recipesQ1: Recipe[] = [
       { name: '통깨', amount: '약간' },
     ],
     steps: [
-      { title: '쌀 불리기', description: '쌀을 깨끗이 씻어 30분 정도 물에 불려둡니다.', timerSeconds: 1800 },
-      { title: '우엉 손질', description: '우엉은 칼등으로 껍질을 긁어내고 얇게 채 썬 뒤, 갈변을 막기 위해 식초물에 잠깐 담가둡니다.', tip: '우엉을 너무 두껍게 썰면 식감이 거칠어지니 최대한 얇게 썰어주세요.' },
-      { title: '우엉 볶기', description: '달군 솥에 들기름을 두르고 우엉과 채 썬 당근을 넣어 1~2분간 볶아 향을 냅니다.', timerSeconds: 120 },
+      { title: '쌀 불리기', description: '쌀을 깨끗이 씻어 30분 정도 물에 불려둡니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-1/step-27.png' },
+      { title: '우엉 손질', description: '우엉은 칼등으로 껍질을 긁어내고 얇게 채 썬 뒤, 갈변을 막기 위해 식초물에 잠깐 담가둡니다.', tip: '우엉을 너무 두껍게 썰면 식감이 거칠어지니 최대한 얇게 썰어주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-1/step-28.png' },
+      { title: '우엉 볶기', description: '달군 솥에 들기름을 두르고 우엉과 채 썬 당근을 넣어 1~2분간 볶아 향을 냅니다.', timerSeconds: 120, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-1/step-29.png' },
       { title: '밥 짓기', description: '불린 쌀과 맛간장, 물을 넣고 골고루 섞은 뒤 뚜껑을 닫고 센 불에서 끓이다가, 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720, tip: '중간에 뚜껑을 열면 김이 빠져나가 밥이 설익을 수 있어요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-1/step-30.png' },
-      { title: '뜸 들이기', description: '불을 끄고 5분간 그대로 뜸을 들인 뒤, 골고루 섞어 그릇에 담고 대파와 통깨를 뿌려 마무리합니다.', timerSeconds: 300 },
+      { title: '뜸 들이기', description: '불을 끄고 5분간 그대로 뜸을 들인 뒤, 골고루 섞어 그릇에 담고 대파와 통깨를 뿌려 마무리합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-1/step-30.png' },
     ],
     tips: [
       '우엉 솥밥은 양념장(간장, 다진 마늘, 참기름, 고춧가루)을 곁들이면 더 깊은 맛을 즐길 수 있어요.',
@@ -46,7 +46,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-2/hero.png',
     mainIngredient: '꼬막',
     description: '겨울철 가장 살이 통통한 꼬막을 매콤새콤한 양념에 무쳐 소면과 함께 즐기는 메뉴예요. 입맛 없는 겨울날 입맛을 확 돋워주는 별미입니다.',
     ingredients: [
@@ -84,7 +84,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-3/hero.png',
     mainIngredient: '시금치',
     description: '한파를 견디며 단맛이 응축된 노지 시금치를 듬뿍 넣어 만든 이탈리아식 오믈렛이에요. 영양 가득한 한 끼 브런치로 손색없습니다.',
     ingredients: [
@@ -119,7 +119,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통',
     cookTime: 50,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-4/hero.png',
     mainIngredient: '귤',
     description: '새콤달콤한 겨울 귤을 껍질까지 활용해 향긋한 마멀레이드를 만들어요. 토스트에 발라먹거나 차로 우려도 좋은 만능 보존식입니다.',
     ingredients: [
@@ -150,7 +150,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/1-5/hero.png',
     mainIngredient: '시금치',
     description: '단맛이 진해진 겨울 시금치를 듬뿍 넣고 끓인 구수한 된장국이에요. 추운 날 몸을 따뜻하게 데워주는 가장 기본적인 집밥 메뉴입니다.',
     ingredients: [
@@ -185,7 +185,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1627444391694-84594c9b9102?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-1/hero.png',
     mainIngredient: '바지락',
     description: '봄을 준비하며 살이 차오른 바지락을 청주와 함께 찜으로 즐기는 메뉴예요. 깔끔하고 시원한 국물이 입춘 무렵 입맛을 깨워줍니다.',
     ingredients: [
@@ -200,7 +200,7 @@ export const recipesQ1: Recipe[] = [
     steps: [
       { title: '바지락 해감', description: '바지락은 소금물에 1시간 정도 담가 해감을 충분히 시켜줍니다.', timerSeconds: 3600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-1/step-200.png' },
       { title: '재료 손질', description: '마늘은 편으로 썰고, 대파와 청양고추는 어슷하게 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-1/step-201.png' },
-      { title: '버터에 향내기', description: '팬에 버터를 녹이고 마늘을 넣어 약불에서 향이 날 때까지 볶습니다.', timerSeconds: 60 },
+      { title: '버터에 향내기', description: '팬에 버터를 녹이고 마늘을 넣어 약불에서 향이 날 때까지 볶습니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-1/step-200.png' },
       { title: '바지락 넣고 찌기', description: '바지락과 물, 청주를 넣고 뚜껑을 닫아 센 불에서 3~4분간 찝니다.', timerSeconds: 240, tip: '바지락 입이 벌어지면 충분히 익은 신호예요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-1/step-203.png' },
       { title: '마무리', description: '대파와 청양고추를 넣고 한 번 더 끓여 향을 낸 뒤 그릇에 담습니다.', timerSeconds: 30, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-1/step-204.png' },
     ],
@@ -219,7 +219,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-2/hero.png',
     mainIngredient: '삼치',
     description: '부드럽고 기름진 삼치살을 달콤짭짤한 데리야끼 소스로 윤기나게 구워낸 요리예요. 밥반찬으로도, 술안주로도 잘 어울려요.',
     ingredients: [
@@ -253,7 +253,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-3/hero.png',
     mainIngredient: '한라봉',
     description: '달콤하고 향긋한 한라봉을 새콤한 드레싱과 함께 즐기는 산뜻한 샐러드예요. 비타민C 가득한 한 그릇으로 겨울 면역력을 챙겨보세요.',
     ingredients: [
@@ -286,7 +286,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-4/hero.png',
     mainIngredient: '냉이',
     description: '땅이 녹기 시작하면 가장 먼저 올라오는 냉이로 끓인 구수한 된장찌개예요. 흙내 가득한 향이 봄이 오고 있음을 알려줍니다.',
     ingredients: [
@@ -321,7 +321,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1591814468924-caf88d1232e1?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/2-5/hero.png',
     mainIngredient: '바지락',
     description: '겨울 끝물 바지락의 진한 감칠맛이 우러난 육수에 칼국수 면을 넣어 끓이는 따뜻한 한 그릇이에요.',
     ingredients: [
@@ -359,7 +359,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/3-1/hero.png',
     mainIngredient: '달래',
     description: '봄의 전령 달래로 만든 알싸한 양념장을 뜨끈한 밥에 비벼 먹는 메뉴예요. 마늘과 비슷한 알싸한 향이 입맛을 확 돋워줍니다.',
     ingredients: [
@@ -392,7 +392,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/3-2/hero.png',
     mainIngredient: '바지락, 냉이',
     description: '바지락의 시원한 감칠맛과 냉이의 향긋함이 만나 한층 깊어진 된장국이에요. 봄이 가장 잘 느껴지는 국물 요리입니다.',
     ingredients: [
@@ -425,7 +425,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/3-3/hero.png',
     mainIngredient: '쭈꾸미',
     description: '봄에 가장 부드럽고 쫄깃한 쭈꾸미를 살짝 데쳐 향긋한 미나리와 함께 초고추장에 곁들이는 별미예요.',
     ingredients: [
@@ -458,7 +458,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/3-4/hero.png',
     mainIngredient: '미나리',
     description: '향긋한 미나리를 듬뿍 넣고 바삭하게 부친 전이에요. 비 오는 봄날 막걸리와 함께 즐기기 좋은 메뉴입니다.',
     ingredients: [
@@ -488,7 +488,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/3-5/hero.png',
     mainIngredient: '두릅, 달래',
     description: '쌉쌀한 두릅과 알싸한 달래를 함께 무쳐낸 향긋한 봄나물 반찬이에요. 입맛 없는 봄날 입맛을 돋워줍니다.',
     ingredients: [
@@ -522,7 +522,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-1/hero.png',
     mainIngredient: '두릅',
     description: '봄철 산나물의 왕, 두릅을 베이컨으로 감싸 구워낸 별미예요. 쌉쌀한 두릅 향과 베이컨의 고소한 짠맛이 환상의 조화를 이룹니다.',
     ingredients: [
@@ -552,7 +552,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-2/hero.png',
     mainIngredient: '죽순',
     description: '아삭한 식감이 살아있는 봄 죽순과 영양 가득한 견과류, 잡곡을 함께 지은 영양밥이에요. 씹는 맛이 일품인 든든한 한 끼입니다.',
     ingredients: [
@@ -587,7 +587,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-3/hero.png',
     mainIngredient: '취나물',
     description: '향긋하고 부드러운 취나물을 들기름에 고소하게 무쳐낸 가장 기본적인 봄나물 반찬입니다.',
     ingredients: [
@@ -619,7 +619,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/hero.png',
     mainIngredient: '딸기',
     description: '제철을 맞아 가장 달고 향이 진한 딸기로 만드는 상큼한 요거트 음료예요. 아이들 간식으로도, 어른들 디저트로도 좋습니다.',
     ingredients: [
@@ -649,7 +649,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-5/hero.png',
     mainIngredient: '죽순',
     description: '아삭한 식감의 봄 죽순과 탱글한 새우를 튀김옷에 묻혀 바삭하게 튀겨낸 별미예요. 맥주 안주로도 좋은 메뉴입니다.',
     ingredients: [
@@ -665,7 +665,7 @@ export const recipesQ1: Recipe[] = [
       { title: '새우 손질', description: '새우는 껍질을 벗기고 내장을 제거한 뒤 소금, 후추로 밑간합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-5/step-664.png' },
       { title: '튀김옷 만들기', description: '튀김가루와 찬물을 가볍게 섞어 튀김옷을 만듭니다.', tip: '너무 많이 저으면 튀김이 바삭하지 않으니 가볍게 섞어주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-5/step-665.png' },
       { title: '튀기기', description: '170도로 예열한 식용유에 재료를 튀김옷에 묻혀 노릇하게 튀깁니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-5/step-666.png' },
-      { title: '마무리', description: '기름을 충분히 제거하고 그릇에 담아 완성합니다.' },
+      { title: '마무리', description: '기름을 충분히 제거하고 그릇에 담아 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-5/step-663.png' },
     ],
     tips: [
       '튀김옷은 차가운 물로 만들어야 더 바삭한 식감이 나요.',

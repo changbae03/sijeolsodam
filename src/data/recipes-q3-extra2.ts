@@ -575,7 +575,7 @@ export const recipesQ3Extra2: Recipe[] = [
     steps: [
       { title: '모과 손질', description: '모과는 얇게 슬라이스합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-14/step-575.png' },
       { title: '데치기', description: '끓는 물에 모과를 데쳐 떫은맛을 제거합니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-14/step-576.png' },
-      { title: '졸이기', description: '설탕과 물을 넣고 약불에서 윤기 나게 졸입니다.', timerSeconds: 1800, tip: '타지 않게 중간중간 저어주세요.' },
+      { title: '졸이기', description: '설탕과 물을 넣고 약불에서 윤기 나게 졸입니다.', timerSeconds: 1800, tip: '타지 않게 중간중간 저어주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-14/step-575.png' },
     ],
     tips: [
       '말려서 보관하면 더 쫄깃한 정과를 즐길 수 있어요.',
@@ -604,8 +604,8 @@ export const recipesQ3Extra2: Recipe[] = [
     steps: [
       { title: '쌀 불리기', description: '쌀은 씻어서 30분간 불립니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-15/step-604.png' },
       { title: '콩 손질', description: '메주콩은 미리 불려둡니다.', timerSeconds: 3600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-15/step-605.png' },
-      { title: '밥 짓기', description: '불린 쌀과 콩을 넣고 밥을 짓습니다.', timerSeconds: 1800 },
-      { title: '뜸 들이기', description: '뜸을 충분히 들인 뒤 골고루 섞어 마무리합니다.', timerSeconds: 600 },
+      { title: '밥 짓기', description: '불린 쌀과 콩을 넣고 밥을 짓습니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-15/step-604.png' },
+      { title: '뜸 들이기', description: '뜸을 충분히 들인 뒤 골고루 섞어 마무리합니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-15/step-605.png' },
     ],
     tips: [
       '양념장을 곁들이면 더 깊은 맛을 즐길 수 있어요.',

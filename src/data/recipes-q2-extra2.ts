@@ -177,7 +177,7 @@ export const recipesQ2Extra2: Recipe[] = [
     steps: [
       { title: '깻잎 손질', description: '깻잎은 깨끗이 씻어 물기를 뺍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-11/step-177.png' },
       { title: '양념장 만들기', description: '간장, 다진 마늘, 고춧가루, 참기름을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-11/step-178.png' },
-      { title: '재우기', description: '깻잎 사이사이에 양념장을 발라 켜켜이 쌓습니다.', timerSeconds: 1800, tip: '하루 정도 숙성하면 더 깊은 맛이 나요.' },
+      { title: '재우기', description: '깻잎 사이사이에 양념장을 발라 켜켜이 쌓습니다.', timerSeconds: 1800, tip: '하루 정도 숙성하면 더 깊은 맛이 나요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-11/step-177.png' },
     ],
     tips: [
       '냉장 보관하면 일주일 정도 두고 먹을 수 있어요.',
