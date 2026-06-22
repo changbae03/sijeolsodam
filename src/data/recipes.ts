@@ -45,3 +45,16 @@ export function searchRecipes(query: string): Recipe[] {
       r.category.toLowerCase().includes(q)
   );
 }
+
+/**
+ * 식재료 이름(예: "감자", "햇감자")으로 그 재료를 주재료로 쓰는 레시피를 모두 찾음.
+ * 양방향 부분일치 (레시피의 mainIngredient에 입력명이 포함되거나, 입력명에 mainIngredient가 포함).
+ */
+export function getRecipesByIngredient(ingredientName: string): Recipe[] {
+  const normalized = ingredientName.trim();
+  if (!normalized) return [];
+  return allRecipes.filter(
+    (r) =>
+      r.mainIngredient.includes(normalized) || normalized.includes(r.mainIngredient)
+  );
+}

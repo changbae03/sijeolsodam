@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SeasonalIngredient } from '@/data/types';
+import { getRecipesByIngredient } from '@/data/recipes';
+import RecipeCard from './RecipeCard';
 
 interface IngredientDetailSheetProps {
   ingredient: SeasonalIngredient | null;
@@ -96,6 +98,8 @@ export default function IngredientDetailSheet({
               {ingredient.description}
             </p>
 
+            <RelatedRecipesRow ingredientName={ingredient.name} />
+
             {hasDetails ? (
               <div className="mt-5 space-y-3">
                 {ingredient.nutrition && (
@@ -122,6 +126,26 @@ export default function IngredientDetailSheet({
         </>
       )}
     </AnimatePresence>
+  );
+}
+
+function RelatedRecipesRow({ ingredientName }: { ingredientName: string }) {
+  const recipes = getRecipesByIngredient(ingredientName);
+  if (recipes.length === 0) return null;
+
+  return (
+    <div className="mt-5">
+      <span className="text-[11px] font-bold text-sage uppercase tracking-wider block mb-2.5">
+        🍳 {ingredientName}로 만든 요리 {recipes.length}개
+      </span>
+      <div className="flex gap-3 overflow-x-auto pb-1 -mx-6 px-6 snap-x scroll-px-6">
+        {recipes.map((recipe) => (
+          <div key={recipe.id} className="w-[148px] shrink-0 snap-start">
+            <RecipeCard recipe={recipe} />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 
