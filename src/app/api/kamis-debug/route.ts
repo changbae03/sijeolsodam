@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { kamisItemMappings } from '@/lib/kamis-mapping';
 
 const KAMIS_BASE_URL = 'http://www.kamis.or.kr/service/price/xml.do';
@@ -61,12 +61,61 @@ async function testCombo(
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   const certKey = process.env.KAMIS_CERT_KEY;
   const certId = process.env.KAMIS_CERT_ID;
 
   if (!certKey || !certId) {
     return NextResponse.json({ error: 'KAMIS_CERT_KEY/KAMIS_CERT_ID가 설정되어 있지 않습니다.' });
+  }
+
+  const sp = request.nextUrl.searchParams;
+  const mode = sp.get('mode');
+
+  // 스캔 모드: ?mode=scan&category=200&from=200&to=240&target=토마토
+  // category 안에서 itemCode 범위를 훑어서 실제 KAMIS 품목명과 매칭되는 코드를 찾음
+  if (mode === 'scan') {
+    const category = sp.get('category') ?? '';
+    const from = Number(sp.get('from') ?? '0');
+    const to = Number(sp.get('to') ?? '0');
+    const target = sp.get('target') ?? '';
+
+    if (!category || !from || !to || to - from > 60) {
+      return NextResponse.json({
+        error: 'category, from, to(최대 60개 범위)가 필요합니다. 예: ?mode=scan&category=200&from=200&to=240&target=토마토',
+      });
+    }
+
+    const codes: string[] = [];
+    for (let c = from; c <= to; c++) codes.push(String(c));
+
+    const matches: Record<string, unknown>[] = [];
+    const all: Record<string, unknown>[] = [];
+
+    // 동시에 너무 많이 쏘지 않도록 10개씩 묶어서 처리
+    const batchSize = 10;
+    for (let i = 0; i < codes.length; i += batchSize) {
+      const batch = codes.slice(i, i + batchSize);
+      const batchResults = await Promise.all(
+        batch.map(async (itemCode) => {
+          const result = await testCombo(category, itemCode, '01', certKey, certId);
+          return { itemCode, result };
+        })
+      );
+      for (const r of batchResults) {
+        if (r.result.ok) {
+          all.push(r);
+          if (target && r.result.itemNameFromKamis === target) {
+            matches.push(r);
+          }
+        }
+      }
+    }
+
+    return NextResponse.json(
+      { category, from, to, target, matches, allFoundItems: all },
+      { headers: { 'Cache-Control': 'no-store' } }
+    );
   }
 
   const candidateKindCodes = ['00', '01', '02', '03', '04', '05'];
