@@ -72,6 +72,27 @@ export async function GET(request: NextRequest) {
   const sp = request.nextUrl.searchParams;
   const mode = sp.get('mode');
 
+  // kindCode 스캔 모드: ?mode=kindscan&category=100&itemCode=151
+  // itemCode는 고정하고 kindCode 00~09를 훑어서 실제로 데이터가 있는 kindCode를 찾음
+  if (mode === 'kindscan') {
+    const category = sp.get('category') ?? '';
+    const itemCode = sp.get('itemCode') ?? '';
+    if (!category || !itemCode) {
+      return NextResponse.json({ error: 'category, itemCode가 필요합니다.' });
+    }
+    const kindCodes = Array.from({ length: 10 }, (_, i) => pad2(i));
+    const results = await Promise.all(
+      kindCodes.map(async (kindCode) => ({
+        kindCode,
+        result: await testCombo(category, itemCode, kindCode, certKey, certId),
+      }))
+    );
+    return NextResponse.json(
+      { category, itemCode, results: results.filter((r) => r.result.ok) },
+      { headers: { 'Cache-Control': 'no-store' } }
+    );
+  }
+
   // 스캔 모드: ?mode=scan&category=200&from=200&to=240&target=토마토
   // category 안에서 itemCode 범위를 훑어서 실제 KAMIS 품목명과 매칭되는 코드를 찾음
   if (mode === 'scan') {
