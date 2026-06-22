@@ -79,3 +79,15 @@ export const kamisItemMappings: KamisItemMapping[] = [
 export function getKamisMappingForMonth(month: number): KamisItemMapping[] {
   return kamisItemMappings.filter((m) => m.relatedMonths.includes(month));
 }
+
+/**
+ * 레시피/식재료의 이름(예: "감자", "햇감자")으로 KAMIS 매핑을 찾음.
+ * 양방향 부분일치로 검사 (표시명에 입력명이 포함되거나, 입력명에 표시명의 핵심 단어가 포함).
+ * 못 찾으면 undefined.
+ */
+export function getKamisMappingByName(name: string): KamisItemMapping | undefined {
+  const normalized = name.trim();
+  return kamisItemMappings.find(
+    (m) => m.displayName.includes(normalized) || normalized.includes(m.displayName.replace(/\(.*\)/, ''))
+  );
+}
