@@ -3,11 +3,10 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { getMonthData } from '@/data/months';
-import { getRecipesByIds } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
 import SolarTermBanner from '@/components/SolarTermBanner';
+import MonthStrip from '@/components/MonthStrip';
 import IngredientGrid from '@/components/IngredientGrid';
-import RecipeCard from '@/components/RecipeCard';
 import PriceAlertSection from '@/components/PriceAlertSection';
 import Logo from '@/components/Logo';
 
@@ -16,8 +15,6 @@ export default function HomePage() {
   const monthData = getMonthData(selectedMonth);
 
   if (!monthData) return null;
-
-  const recipes = getRecipesByIds(monthData.recipeIds);
 
   const handleSwipeMonth = (direction: -1 | 1) => {
     setSelectedMonth((prev) => {
@@ -37,6 +34,10 @@ export default function HomePage() {
         </h1>
       </header>
 
+      <section className="mb-5">
+        <MonthStrip selectedMonth={selectedMonth} onSelectMonth={setSelectedMonth} />
+      </section>
+
       <AnimatePresence mode="wait">
         <motion.div
           key={selectedMonth}
@@ -46,11 +47,7 @@ export default function HomePage() {
           transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
         >
           <section className="mb-7">
-            <SolarTermBanner
-              monthData={monthData}
-              backgroundImage={monthData.bannerImage ?? recipes[0]?.heroImage}
-              onSwipeMonth={handleSwipeMonth}
-            />
+            <SolarTermBanner monthData={monthData} onSwipeMonth={handleSwipeMonth} />
           </section>
 
           <section className="mb-7">
@@ -61,24 +58,6 @@ export default function HomePage() {
           </section>
 
           <PriceAlertSection month={selectedMonth} />
-
-          <section className="mb-8">
-            <h2 className="font-display text-[17px] text-ink mb-3.5 font-semibold tracking-tight">
-              {monthData.month}월의 추천 레시피
-            </h2>
-            <div className="grid grid-cols-2 gap-3">
-              {recipes.map((recipe, idx) => (
-                <motion.div
-                  key={recipe.id}
-                  initial={{ opacity: 0, y: 14 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.25, delay: idx * 0.04, ease: 'easeOut' }}
-                >
-                  <RecipeCard recipe={recipe} />
-                </motion.div>
-              ))}
-            </div>
-          </section>
         </motion.div>
       </AnimatePresence>
     </main>
