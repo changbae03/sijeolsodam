@@ -5,28 +5,29 @@ type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'ghost';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  /** 버튼 스타일 */
   variant?: ButtonVariant;
-  /** 버튼 크기 */
   size?: ButtonSize;
-  /** 전체 너비 */
   fullWidth?: boolean;
-  /** 로딩 상태 */
   isLoading?: boolean;
   children: React.ReactNode;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: 'bg-terracotta text-white hover:bg-terracotta-light focus:ring-terracotta',
-  secondary: 'bg-sage text-white hover:bg-sage-light focus:ring-sage',
-  tertiary: 'bg-paper text-ink border border-border-soft hover:bg-cream-warm focus:ring-border-soft',
-  ghost: 'text-ink hover:bg-cream-warm focus:ring-border-soft',
+  primary:
+    'bg-terracotta text-paper hover:bg-terracotta-light active:bg-terracotta',
+  secondary:
+    'bg-sage text-paper hover:bg-sage-light active:bg-sage',
+  tertiary:
+    'bg-paper text-ink border border-border-soft hover:bg-cream-warm active:bg-cream',
+  ghost:
+    'text-ink hover:bg-cream-warm active:bg-cream',
 };
 
+// 8pt 시스템: 높이는 32/40/48 (8의 배수), 패딩도 8/16/24
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: 'h-9 px-3 text-[13px]',
-  md: 'h-10 px-4 text-[14px]',
-  lg: 'h-12 px-5 text-[15px]',
+  sm: 'h-8 px-3 text-[13px]', // 32px height
+  md: 'h-10 px-4 text-[14px]', // 40px height
+  lg: 'h-12 px-6 text-[15px]', // 48px height
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -46,8 +47,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     <button
       ref={ref}
       className={cn(
-        'inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200',
-        'disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2',
+        // Base
+        'inline-flex items-center justify-center gap-2 rounded-xl font-medium',
+        'transition-all duration-200 ease-out',
+        // State
+        'disabled:opacity-50 disabled:cursor-not-allowed',
+        'focus-visible:outline-none',
+        // Variants
         variantStyles[variant],
         sizeStyles[size],
         fullWidth && 'w-full',

@@ -3,15 +3,33 @@
 import React from 'react';
 import { cn } from '@/lib/cn';
 
+type SearchBarVariant = 'default' | 'minimal';
+
 interface SearchBarProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
-  /** 좌측 아이콘 */
   leftIcon?: React.ReactNode;
-  /** 우측 아이콘/버튼 */
   rightIcon?: React.ReactNode;
-  /** 우측 액션 핸들러 */
   onRightIconClick?: () => void;
-  /** 컨테이너 스타일 변형 */
-  variant?: 'default' | 'minimal';
+  variant?: SearchBarVariant;
+}
+
+/** 작고 미니멀한 검색 아이콘 SVG */
+function DefaultSearchIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="7" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+  );
 }
 
 const SearchBar = React.forwardRef<HTMLInputElement, SearchBarProps>(
@@ -19,7 +37,7 @@ const SearchBar = React.forwardRef<HTMLInputElement, SearchBarProps>(
     {
       className,
       placeholder = '검색...',
-      leftIcon = '🔍',
+      leftIcon,
       rightIcon,
       onRightIconClick,
       variant = 'default',
@@ -30,21 +48,26 @@ const SearchBar = React.forwardRef<HTMLInputElement, SearchBarProps>(
   ) => (
     <div
       className={cn(
-        'flex items-center gap-2.5 transition-all duration-200',
-        variant === 'default'
-          ? 'bg-paper border border-border-soft rounded-xl px-3.5 py-2.5'
-          : 'bg-transparent border-b border-border-soft px-0 py-2',
+        'flex items-center gap-2 transition-all duration-200',
+        // 8pt 시스템: 높이 40px (md)
+        variant === 'default' &&
+          'bg-paper border border-border-soft rounded-xl h-10 px-3.5',
+        variant === 'minimal' &&
+          'bg-transparent border-b border-border-soft h-10 px-0',
         disabled && 'opacity-50 cursor-not-allowed'
       )}
     >
-      {leftIcon && <span className="text-ink-soft/60 flex-shrink-0">{leftIcon}</span>}
+      <span className="text-ink-soft/60 flex-shrink-0">
+        {leftIcon ?? <DefaultSearchIcon />}
+      </span>
       <input
         ref={ref}
         type="text"
         placeholder={placeholder}
         disabled={disabled}
         className={cn(
-          'flex-1 bg-transparent text-[14px] placeholder:text-ink-soft/50',
+          'flex-1 bg-transparent text-[14px] text-ink',
+          'placeholder:text-ink-soft/50',
           'outline-none focus:placeholder:text-ink-soft/30 transition-colors',
           className
         )}
@@ -54,7 +77,7 @@ const SearchBar = React.forwardRef<HTMLInputElement, SearchBarProps>(
         <button
           type="button"
           onClick={onRightIconClick}
-          className="flex-shrink-0 text-ink-soft/60 hover:text-ink transition-colors p-1 -mr-1"
+          className="flex-shrink-0 text-ink-soft/60 hover:text-ink transition-colors -mr-1 p-1"
         >
           {rightIcon}
         </button>

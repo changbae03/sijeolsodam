@@ -1,55 +1,154 @@
 @import "tailwindcss";
 
+/* ============================================
+   시절소담 디자인 시스템
+   - Premium lifestyle aesthetic
+   - 자연에서 영감을 받은 따뜻한 컬러 팔레트
+   - 8pt 스페이싱 시스템
+   - 한글 가독성 최적화
+   ============================================ */
+
 :root {
-  /* 시절소담 디자인 토큰 */
-  --color-cream: #f8f6f2;
-  --color-cream-warm: #f2eee5;
-  --color-sage: #5b6e54;
+  /* ---------- COLOR TOKENS ---------- */
+
+  /* Neutrals — 종이와 잉크 */
+  --color-cream: #f8f6f2;        /* 메인 배경, 따뜻한 베이지 */
+  --color-cream-warm: #f2eee5;   /* 보조 배경, 조금 더 진한 톤 */
+  --color-paper: #fffdf9;        /* 카드 배경, 거의 흰색 */
+  --color-ink: #2c2a26;          /* 주요 텍스트 (찰떡 어울리는 깊은 차콜) */
+  --color-ink-soft: #5a5650;     /* 부 텍스트 */
+  --color-border-soft: #e3ddd0;  /* 보더 */
+
+  /* Accents — 자연에서 가져온 색 */
+  --color-sage: #5b6e54;         /* 세이지 그린 (메인 액센트) */
   --color-sage-light: #889b80;
   --color-sage-dark: #424f3d;
-  --color-terracotta: #c45d3a;
+  --color-terracotta: #c45d3a;   /* 테라코타 (CTA, 강조) */
   --color-terracotta-light: #e0936f;
-  --color-ink: #2c2a26;
-  --color-ink-soft: #5a5650;
-  --color-paper: #fffdf9;
-  --color-border-soft: #e3ddd0;
 
+  /* Semantic */
   --background: var(--color-cream);
   --foreground: var(--color-ink);
+
+  /* ---------- 8PT SPACING SYSTEM ---------- */
+  /* 모든 여백은 8의 배수 (단, 미세조정용 4pt도 일부 허용) */
+  --space-0: 0;
+  --space-1: 4px;   /* 4pt, 미세 조정 */
+  --space-2: 8px;   /* 8pt, 베이스 단위 */
+  --space-3: 12px;  /* 12pt, 작은 갭 */
+  --space-4: 16px;  /* 16pt, 카드 패딩 */
+  --space-5: 20px;  /* 20pt, 섹션 간격 */
+  --space-6: 24px;  /* 24pt, 큰 패딩 */
+  --space-8: 32px;  /* 32pt, 섹션 사이 */
+  --space-10: 40px; /* 40pt */
+  --space-12: 48px; /* 48pt, 큰 섹션 */
+  --space-16: 64px; /* 64pt, hero 여백 */
+  --space-20: 80px; /* 80pt, 잡지 호흡 */
+
+  /* ---------- BORDER RADIUS ---------- */
+  --radius-sm: 8px;    /* 작은 칩 */
+  --radius-md: 12px;   /* 입력, 작은 카드 */
+  --radius-lg: 16px;   /* 일반 카드 */
+  --radius-xl: 20px;   /* 큰 카드 */
+  --radius-2xl: 24px;  /* 히어로 카드 */
+  --radius-full: 9999px;
+
+  /* ---------- TYPOGRAPHY SCALE ---------- */
+  /* Display: 잡지 헤드라인 */
+  --font-display-xl: 38px;   /* hero 헤드라인 */
+  --font-display-lg: 28px;   /* 섹션 1차 헤드라인 */
+  --font-display-md: 22px;   /* 카드 큰 제목 */
+  --font-display-sm: 17px;   /* 본문 내 강조 제목 */
+
+  /* Body: 본문 텍스트 */
+  --font-body-lg: 15px;
+  --font-body-md: 14px;   /* 베이스 본문 */
+  --font-body-sm: 13px;
+  --font-caption: 12px;   /* 캡션, 부가정보 */
+  --font-overline: 11px;  /* 우버라인, 메타 라벨 (대문자 트래킹) */
+
+  /* Line heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---------- ELEVATION ---------- */
+  --shadow-xs: 0 1px 2px 0 rgba(44, 42, 38, 0.04);
+  --shadow-sm: 0 2px 8px 0 rgba(44, 42, 38, 0.06);
+  --shadow-md: 0 4px 16px 0 rgba(44, 42, 38, 0.08);
+  --shadow-lg: 0 8px 32px 0 rgba(44, 42, 38, 0.10);
+
+  /* ---------- MOTION ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
 }
 
 @theme inline {
+  /* 색상 */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-cream: var(--color-cream);
   --color-cream-warm: var(--color-cream-warm);
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-border-soft: var(--color-border-soft);
   --color-sage: var(--color-sage);
   --color-sage-light: var(--color-sage-light);
   --color-sage-dark: var(--color-sage-dark);
   --color-terracotta: var(--color-terracotta);
   --color-terracotta-light: var(--color-terracotta-light);
-  --color-ink: var(--color-ink);
-  --color-ink-soft: var(--color-ink-soft);
-  --color-paper: var(--color-paper);
-  --color-border-soft: var(--color-border-soft);
+
+  /* 폰트 */
   --font-serif-kr: var(--font-noto-serif-kr);
   --font-sans-kr: var(--font-pretendard);
+
+  /* 라디우스 */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
 }
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-pretendard), -apple-system, sans-serif;
+  font-family: var(--font-pretendard), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: 'ss01', 'ss03';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
 }
 
-h1, h2, h3, .font-display {
+/* Display 타이포: 한글에 잘 어울리는 세리프 사용 */
+h1, h2, h3, h4, .font-display {
   font-family: Georgia, 'Noto Serif KR', 'Apple SD Gothic Neo', '바탕', Batang, serif;
   font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* 한글 줄바꿈 최적화: 단어 단위 자연 줄바꿈 */
+p, h1, h2, h3, h4 {
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* ============================================
+   SCROLLBAR — 미니멀
+   ============================================ */
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -67,4 +166,14 @@ h1, h2, h3, .font-display {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* ============================================
+   FOCUS — 접근성
+   ============================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+  border-radius: 4px;
 }

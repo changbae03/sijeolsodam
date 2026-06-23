@@ -1,49 +1,71 @@
 import React from 'react';
 import { cn } from '@/lib/cn';
+import { Overline } from './Overline';
 
-interface SectionTitleProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
-  /** 제목 */
+interface SectionTitleProps extends Omit<React.HTMLAttributes<HTMLElement>, 'title'> {
+  /** 메인 한글 제목 */
   title: React.ReactNode;
-  /** 부제목 (선택사항) */
+  /** 영문 우버라인 (잡지 톤) */
+  overline?: React.ReactNode;
+  /** 부제목 */
   subtitle?: React.ReactNode;
-  /** 우측 액션 영역 (보기 더보기 버튼 등) */
+  /** 우측 액션 */
   action?: React.ReactNode;
   /** 제목 크기 */
   size?: 'sm' | 'md' | 'lg';
+  /** 우버라인에 디바이더 라인 표시 */
+  withDivider?: boolean;
+  /** 우버라인 색상 */
+  overlineColor?: 'sage' | 'terracotta' | 'ink' | 'soft';
 }
 
-const sizeStyles = {
-  sm: {
-    title: 'text-[15px] font-semibold',
-    subtitle: 'text-[12px]',
-  },
-  md: {
-    title: 'text-[17px] font-semibold',
-    subtitle: 'text-[13px]',
-  },
-  lg: {
-    title: 'font-display text-[22px] font-medium tracking-tight',
-    subtitle: 'text-[14px]',
-  },
+const titleStyles = {
+  sm: 'text-[17px] font-display font-medium tracking-tight',
+  md: 'text-[22px] font-display font-medium tracking-tight',
+  lg: 'text-[28px] font-display font-medium tracking-tight leading-tight',
 };
 
-const SectionTitle = React.forwardRef<HTMLDivElement, SectionTitleProps>(
-  ({ className, title, subtitle, action, size = 'md', ...props }, ref) => (
-    <div
+const subtitleStyles = {
+  sm: 'text-[12px]',
+  md: 'text-[13px]',
+  lg: 'text-[14px]',
+};
+
+const SectionTitle = React.forwardRef<HTMLElement, SectionTitleProps>(
+  (
+    {
+      className,
+      title,
+      overline,
+      subtitle,
+      action,
+      size = 'md',
+      withDivider = false,
+      overlineColor = 'sage',
+      ...props
+    },
+    ref
+  ) => (
+    <header
       ref={ref}
-      className={cn('flex items-center justify-between gap-3', className)}
+      className={cn('flex items-start justify-between gap-4', className)}
       {...props}
     >
-      <div className="flex-1">
-        <h2 className={cn('text-ink', sizeStyles[size].title)}>{title}</h2>
+      <div className="flex-1 min-w-0">
+        {overline && (
+          <Overline color={overlineColor} withDivider={withDivider} className="mb-2">
+            {overline}
+          </Overline>
+        )}
+        <h2 className={cn('text-ink', titleStyles[size])}>{title}</h2>
         {subtitle && (
-          <p className={cn('text-ink-soft/70 mt-1', sizeStyles[size].subtitle)}>
+          <p className={cn('text-ink-soft mt-2 leading-relaxed', subtitleStyles[size])}>
             {subtitle}
           </p>
         )}
       </div>
       {action && <div className="flex-shrink-0">{action}</div>}
-    </div>
+    </header>
   )
 );
 

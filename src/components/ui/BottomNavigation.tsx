@@ -4,68 +4,77 @@ import React from 'react';
 import { cn } from '@/lib/cn';
 
 export interface BottomNavItem {
-  /** 고유 ID */
   id: string;
-  /** 라벨 */
   label: string;
-  /** 아이콘 (이모지 또는 SVG) */
   icon: React.ReactNode;
-  /** 활성 여부 */
+  /** 활성 상태 (수동 제어) */
   active?: boolean;
-  /** 클릭 핸들러 */
   onClick?: () => void;
-  /** 배지 (알림 수 등) */
   badge?: React.ReactNode;
+  /** Link로 감싸진 컨테이너로 렌더링 */
+  href?: string;
 }
 
 interface BottomNavigationProps {
   items: BottomNavItem[];
-  /** 활성 항목 ID */
+  /** 현재 활성 항목 ID */
   activeId?: string;
-  /** 항목 선택 핸들러 */
   onSelectItem?: (id: string) => void;
+  /** 추가 className */
+  className?: string;
 }
 
-const BottomNavigation = React.forwardRef<HTMLDivElement, BottomNavigationProps>(
-  ({ items, activeId, onSelectItem }, ref) => (
-    <div
+const BottomNavigation = React.forwardRef<HTMLElement, BottomNavigationProps>(
+  ({ items, activeId, onSelectItem, className }, ref) => (
+    <nav
       ref={ref}
-      className="fixed bottom-0 left-0 right-0 z-40 bg-paper border-t border-border-soft"
+      className={cn(
+        'fixed bottom-0 left-0 right-0 z-40',
+        'bg-paper/95 backdrop-blur-xl border-t border-border-soft',
+        className
+      )}
     >
-      <div className="max-w-md mx-auto px-0 py-0">
-        <nav className="flex items-center justify-around">
+      <div className="max-w-md mx-auto">
+        <div className="flex items-center justify-around">
           {items.map((item) => {
             const isActive = activeId === item.id || item.active;
             return (
               <button
                 key={item.id}
+                type="button"
                 onClick={() => {
                   item.onClick?.();
                   onSelectItem?.(item.id);
                 }}
                 className={cn(
-                  'flex flex-col items-center justify-center gap-1 flex-1 py-3 px-2',
-                  'transition-colors duration-200 relative',
-                  isActive ? 'text-sage' : 'text-ink-soft/60 hover:text-ink-soft/80'
+                  // 8pt 시스템: padding 8/16
+                  'flex flex-col items-center justify-center gap-1 flex-1',
+                  'py-2.5 px-2 transition-colors duration-200',
+                  isActive
+                    ? 'text-sage'
+                    : 'text-ink-soft/60 hover:text-ink-soft active:text-ink'
                 )}
+                aria-current={isActive ? 'page' : undefined}
               >
-                <span className="text-[20px] flex items-center justify-center relative">
+                <span className="text-[18px] flex items-center justify-center relative">
                   {item.icon}
                   {item.badge && (
-                    <span className="absolute -top-1 -right-2 text-[10px] font-bold text-white bg-terracotta rounded-full w-4 h-4 flex items-center justify-center">
+                    <span className="absolute -top-1 -right-2 text-[9px] font-bold text-paper bg-terracotta rounded-full min-w-4 h-4 flex items-center justify-center px-1">
                       {item.badge}
                     </span>
                   )}
                 </span>
-                <span className="text-[11px] font-medium text-center leading-tight">
+                <span className="text-[10px] font-medium tracking-tight leading-none">
                   {item.label}
                 </span>
               </button>
             );
           })}
-        </nav>
+        </div>
+        {/* iPhone safe-area inset */}
+        <div className="h-[env(safe-area-inset-bottom)] min-h-1" />
       </div>
-    </div>
+    </nav>
   )
 );
 
