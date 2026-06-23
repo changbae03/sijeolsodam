@@ -7,9 +7,8 @@ import { motion } from 'motion/react';
 import { getCurrentMonth, getCurrentMonthData } from '@/lib/season';
 import { getRecipesByMonth, allRecipes } from '@/data/recipes';
 import { SeasonalIngredient } from '@/data/types';
-import { Badge, SearchBar } from '@/components/ui';
+import { SearchBar } from '@/components/ui';
 import IngredientDetailSheet from '@/components/IngredientDetailSheet';
-import RecipeCard from '@/components/RecipeCard';
 import Logo from '@/components/Logo';
 
 export default function HomePage() {
@@ -24,16 +23,18 @@ export default function HomePage() {
     .filter((i) => i.imageUrl)
     .slice(0, 3);
 
-  const todayRecipes = getRecipesByMonth(month).slice(0, 6);
+  // 오늘의 추천 요리: 컴팩트 가로 스크롤 (제철 식재료에 영감받은 4개)
+  const inspiredRecipes = getRecipesByMonth(month).slice(0, 4);
 
+  // 인기 레시피: 컴팩트 리스트 3개만 (작게)
   const popularRecipes = [...allRecipes]
     .sort((a, b) => a.cookTime - b.cookTime)
-    .slice(0, 4);
+    .slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-cream pb-24">
-      {/* 1. Sticky Search Bar */}
-      <div className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl border-b border-border-soft/40">
+    <main className="min-h-screen bg-cream pb-28">
+      {/* Sticky Search Bar */}
+      <div className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3.5 pb-3.5">
           <div className="flex items-center gap-2.5">
             <Logo size="sm" />
@@ -49,148 +50,216 @@ export default function HomePage() {
       </div>
 
       <div className="max-w-md mx-auto px-5">
-        {/* 2. Hero Section */}
-        <section className="pt-10 pb-12">
-          <p className="text-[12px] tracking-[0.2em] uppercase text-terracotta font-semibold mb-4">
-            {monthData.solarTerm}
+        {/* ============================== */}
+        {/* 1. HERO — Editorial cover */}
+        {/* ============================== */}
+        <section className="pt-14 pb-16">
+          <p className="text-[11px] tracking-[0.25em] uppercase text-terracotta font-semibold mb-5">
+            {monthData.solarTerm} · {monthData.season}
           </p>
-          <h1 className="font-display text-[34px] leading-[1.25] tracking-tight text-ink font-medium">
+          <h1 className="font-display text-[38px] leading-[1.2] tracking-tight text-ink font-medium">
             오늘의 식탁,
             <br />
             계절이 정합니다.
           </h1>
-          <p className="text-[14px] leading-relaxed text-ink-soft mt-5 max-w-[300px]">
-            지금 가장 맛있는 제철 식재료와 추천 요리를 만나보세요.
+          <p className="text-[14.5px] leading-[1.7] text-ink-soft mt-7 max-w-[320px]">
+            오늘 가장 좋은 식재료를 먼저 만나보세요.
+            <br />
+            요리는 그 다음의 이야기입니다.
           </p>
         </section>
 
-        {/* 3. 오늘의 제철 */}
-        <section className="mb-14">
-          <div className="flex items-baseline justify-between mb-5">
-            <div>
-              <p className="text-[11px] tracking-[0.15em] uppercase text-sage font-semibold mb-1.5">
+        {/* ====================================== */}
+        {/* 2. 오늘의 제철 — PRIMARY HERO SECTION */}
+        {/* ====================================== */}
+        <section className="mb-20">
+          <header className="mb-7">
+            <div className="flex items-baseline gap-3 mb-2">
+              <span className="h-px w-8 bg-sage" />
+              <p className="text-[11px] tracking-[0.2em] uppercase text-sage font-semibold">
                 In Season Today
               </p>
-              <h2 className="font-display text-[22px] tracking-tight text-ink font-medium">
-                오늘의 제철
-              </h2>
             </div>
-            <Link
-              href="/seasonal"
-              className="text-[12px] text-ink-soft/70 hover:text-ink"
-            >
-              전체보기 →
-            </Link>
-          </div>
+            <h2 className="font-display text-[28px] tracking-tight text-ink font-medium leading-tight">
+              오늘의 제철
+            </h2>
+            <p className="text-[13px] text-ink-soft mt-2.5 leading-relaxed">
+              {month}월, 자연이 가장 정성을 들인 식재료들
+            </p>
+          </header>
 
-          <div className="space-y-3.5">
+          <div className="space-y-7">
             {featuredIngredients.map((ingredient, idx) => (
               <motion.button
                 key={ingredient.name}
                 onClick={() => setSelectedIngredient(ingredient)}
-                initial={{ opacity: 0, y: 12 }}
+                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.08, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full bg-paper rounded-[20px] overflow-hidden border border-border-soft text-left flex items-stretch"
+                transition={{ delay: idx * 0.1, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                whileTap={{ scale: 0.985 }}
+                className="w-full block text-left group"
               >
+                {/* Large editorial image */}
                 {ingredient.imageUrl && (
-                  <div className="relative w-[112px] h-[112px] flex-shrink-0">
+                  <div className="relative w-full aspect-[5/4] rounded-[20px] overflow-hidden bg-cream-warm mb-5">
                     <Image
                       src={ingredient.imageUrl}
                       alt={ingredient.name}
                       fill
-                      sizes="112px"
-                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 448px"
+                      className="object-cover transition-transform duration-500 group-active:scale-[1.02]"
                     />
-                  </div>
-                )}
-                <div className="flex-1 px-4 py-3.5 flex flex-col justify-center min-w-0">
-                  <div className="flex items-center gap-2 mb-1.5">
-                    <Badge variant="sage" size="sm">
+                    {/* Number marker */}
+                    <span className="absolute top-4 left-4 font-display text-[14px] tracking-wider text-cream/90 bg-ink/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                      No. 0{idx + 1}
+                    </span>
+                    {/* Season badge */}
+                    <span className="absolute top-4 right-4 text-[11px] font-semibold tracking-wider text-ink bg-cream/90 backdrop-blur-md rounded-full px-3 py-1.5">
                       제철
-                    </Badge>
-                    <span className="text-[10.5px] text-ink-soft/60 tracking-wider">
-                      {month}월 · {ingredient.category}
                     </span>
                   </div>
-                  <h3 className="font-display text-[17px] text-ink font-medium tracking-tight">
+                )}
+
+                {/* Editorial caption */}
+                <div className="px-1">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-[10.5px] tracking-[0.15em] uppercase text-ink-soft/60 font-medium">
+                      {ingredient.category}
+                      {ingredient.origin && ` · ${ingredient.origin}`}
+                    </span>
+                  </div>
+                  <h3 className="font-display text-[24px] text-ink font-medium tracking-tight leading-tight">
                     {ingredient.name}
                   </h3>
-                  <p className="text-[12.5px] text-ink-soft leading-relaxed mt-1 line-clamp-2">
+                  <p className="text-[14px] text-ink-soft leading-relaxed mt-2.5 max-w-[340px]">
                     {ingredient.description}
                   </p>
+                  <span className="inline-flex items-center gap-1.5 mt-4 text-[12.5px] text-terracotta font-medium">
+                    자세히 보기
+                    <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                  </span>
                 </div>
               </motion.button>
             ))}
           </div>
         </section>
 
-        {/* 4. 오늘의 추천 요리 — Horizontal scroll */}
-        <section className="mb-14 -mx-5">
-          <div className="flex items-baseline justify-between mb-5 px-5">
-            <div>
-              <p className="text-[11px] tracking-[0.15em] uppercase text-sage font-semibold mb-1.5">
-                Chef&apos;s Picks
+        {/* ========================================== */}
+        {/* 3. 오늘의 추천 요리 — Smaller, supporting */}
+        {/* ========================================== */}
+        <section className="mb-20 -mx-5">
+          <header className="mb-5 px-5">
+            <div className="flex items-baseline gap-3 mb-2">
+              <span className="h-px w-8 bg-ink-soft/30" />
+              <p className="text-[11px] tracking-[0.2em] uppercase text-ink-soft/70 font-semibold">
+                Today&apos;s Inspiration
               </p>
-              <h2 className="font-display text-[22px] tracking-tight text-ink font-medium">
-                오늘의 추천 요리
-              </h2>
             </div>
-            <Link
-              href={`/season/${month}`}
-              className="text-[12px] text-ink-soft/70 hover:text-ink px-5"
-            >
-              더보기 →
-            </Link>
-          </div>
+            <h2 className="font-display text-[20px] tracking-tight text-ink font-medium leading-tight">
+              제철에서 떠오른 한 끼
+            </h2>
+          </header>
 
-          <div className="flex gap-3 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
-            {todayRecipes.map((recipe) => (
-              <div key={recipe.id} className="w-[168px] flex-shrink-0 snap-start">
-                <RecipeCard recipe={recipe} />
-              </div>
+          <div className="flex gap-3.5 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
+            {inspiredRecipes.map((recipe) => (
+              <Link
+                key={recipe.id}
+                href={`/recipe/${recipe.id}`}
+                className="w-[140px] flex-shrink-0 snap-start"
+              >
+                <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-cream-warm mb-2.5">
+                  <Image
+                    src={recipe.heroImage}
+                    alt={recipe.title}
+                    fill
+                    sizes="140px"
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-display text-[13px] text-ink leading-snug line-clamp-2 tracking-tight">
+                  {recipe.title}
+                </h3>
+                <p className="text-[11px] text-ink-soft/70 mt-1">
+                  {recipe.cookTime}분
+                </p>
+              </Link>
             ))}
           </div>
         </section>
 
-        {/* 5. 인기 레시피 — Grid */}
-        <section className="mb-14">
-          <div className="flex items-baseline justify-between mb-5">
-            <div>
-              <p className="text-[11px] tracking-[0.15em] uppercase text-sage font-semibold mb-1.5">
-                Most Loved
-              </p>
-              <h2 className="font-display text-[22px] tracking-tight text-ink font-medium">
-                인기 레시피
-              </h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-3">
-            {popularRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+        {/* =================================== */}
+        {/* 4. 인기 레시피 — Compact list */}
+        {/* =================================== */}
+        <section className="mb-20">
+          <header className="mb-5">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-ink-soft/60 font-semibold">
+              Most Loved
+            </p>
+            <h2 className="font-display text-[17px] tracking-tight text-ink font-medium mt-1">
+              많이 찾은 레시피
+            </h2>
+          </header>
+
+          <div className="divide-y divide-border-soft/60">
+            {popularRecipes.map((recipe, idx) => (
+              <Link
+                key={recipe.id}
+                href={`/recipe/${recipe.id}`}
+                className="flex items-center gap-3.5 py-3.5 group"
+              >
+                <span className="font-display text-[13px] text-ink-soft/50 w-5 tabular-nums">
+                  {String(idx + 1).padStart(2, '0')}
+                </span>
+                <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-cream-warm flex-shrink-0">
+                  <Image
+                    src={recipe.heroImage}
+                    alt={recipe.title}
+                    fill
+                    sizes="48px"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-[13.5px] text-ink leading-tight font-medium line-clamp-1">
+                    {recipe.title}
+                  </h3>
+                  <p className="text-[11px] text-ink-soft/60 mt-1">
+                    {recipe.cookTime}분 · {recipe.category}
+                  </p>
+                </div>
+                <span className="text-ink-soft/30 group-active:text-ink-soft transition-colors">
+                  →
+                </span>
+              </Link>
             ))}
           </div>
         </section>
 
-        {/* 6. CTA Section */}
-        <section className="mb-12">
+        {/* =================================== */}
+        {/* 5. CTA — Explore all seasons */}
+        {/* =================================== */}
+        <section className="mb-8">
           <Link
             href="/seasonal"
-            className="block bg-ink rounded-[24px] p-7 text-center relative overflow-hidden"
+            className="block bg-ink rounded-[28px] p-8 text-center relative overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-sage/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-br from-sage/8 via-transparent to-terracotta/8" />
             <div className="relative">
-              <p className="text-[11px] tracking-[0.2em] uppercase text-cream/60 font-semibold mb-3">
-                Explore All Seasons
+              <p className="text-[11px] tracking-[0.25em] uppercase text-cream/50 font-semibold mb-4">
+                Explore the Seasons
               </p>
-              <h3 className="font-display text-[22px] text-cream font-medium leading-snug tracking-tight">
-                12달의 제철 식재료,
+              <h3 className="font-display text-[24px] text-cream font-medium leading-[1.3] tracking-tight">
+                계절의 흐름을 따라
                 <br />
-                계절의 흐름을 따라가보세요
+                일년치 식재료를 만나다
               </h3>
-              <div className="inline-flex items-center gap-2 mt-5 text-[13px] text-terracotta-light font-medium">
-                <span>둘러보기</span>
+              <p className="text-[12.5px] text-cream/60 mt-4 leading-relaxed max-w-[260px] mx-auto">
+                매달 자연이 가장 좋은 것을 내어줍니다.
+                <br />
+                12달의 이야기를 둘러보세요.
+              </p>
+              <div className="inline-flex items-center gap-2 mt-6 text-[13px] text-terracotta-light font-medium">
+                <span>전체 둘러보기</span>
                 <span>→</span>
               </div>
             </div>
@@ -198,7 +267,7 @@ export default function HomePage() {
         </section>
       </div>
 
-      {/* 7. Bottom Navigation */}
+      {/* Bottom Navigation */}
       <BottomNav />
 
       <IngredientDetailSheet
@@ -233,7 +302,6 @@ function BottomNav() {
             </Link>
           ))}
         </div>
-        {/* iPhone safe area */}
         <div className="h-[env(safe-area-inset-bottom)] min-h-[4px]" />
       </div>
     </nav>
