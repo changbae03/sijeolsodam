@@ -51,19 +51,9 @@ export default function HomePage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2. Editorial hero
+            1. 오늘의 제철 — 단 하나의 대표 식재료
            ============================================ */}
-        <section className="pt-8 pb-10">
-          <p className="text-[14px] text-ink-soft mb-2">안녕하세요 👋</p>
-          <h1 className="font-display text-[26px] leading-[1.3] tracking-tight text-ink font-medium">
-            오늘의 식탁, 계절이 정합니다.
-          </h1>
-        </section>
-
-        {/* ============================================
-            3. 오늘의 제철 — 단 하나의 대표 식재료
-           ============================================ */}
-        <section className="mb-12">
+        <section className="pt-8 mb-12">
           <div className="flex items-baseline gap-3 mb-6">
             <span className="h-px w-8 bg-sage" />
             <h2 className="font-display text-[20px] tracking-tight text-ink font-medium">
@@ -75,7 +65,7 @@ export default function HomePage() {
         </section>
 
         {/* ============================================
-            4. 추천 요리 — 그 식재료로 만든 요리 한 가지
+            2. 오늘의 메뉴 추천 — 그 식재료로 만든 요리 한 가지
            ============================================ */}
         {featuredRecipe && (
           <section className="mb-12">
@@ -124,7 +114,7 @@ export default function HomePage() {
         )}
 
         {/* ============================================
-            5. CTA — 제철 식재료 전체 보기
+            3. CTA — 이번 달 제철 식재료 전체 보기
            ============================================ */}
         <section>
           <Link
