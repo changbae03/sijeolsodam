@@ -6,21 +6,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
-import { Badge, Button, Card, Overline } from '@/components/ui';
-import RecipeCard from '@/components/RecipeCard';
+import { getCurrentMonth } from '@/lib/season';
+import { Badge, Button, Card } from '@/components/ui';
 
 interface PriceProfileResponse {
   available: boolean;
-  displayName?: string;
   comparison?: {
     latest: { date: string; price: number } | null;
-    oneWeekAgo: { date: string; price: number } | null;
     oneMonthAgo: { date: string; price: number } | null;
-    oneYearAgo: { date: string; price: number } | null;
   } | null;
-  normalYear?: { average: number | null } | null;
-  wholesale?: { county: string; market: string | null; date: string; price: number }[] | null;
-  monthlyTrend?: { yearMonth: string; avgPrice: number | null }[] | null;
 }
 
 export default function IngredientDetailPage() {
@@ -70,12 +64,16 @@ export default function IngredientDetailPage() {
   }
 
   const { ingredient, months } = found;
-  const recipes = getRecipesByIngredient(ingredient.name);
+  const recipes = getRecipesByIngredient(ingredient.name).slice(0, 3);
+
+  // "OO월이 가장 맛있는 시기입니다" — 지금 달이 제철이면 그대로, 아니면 제철 중 첫 달을 기준으로
+  const currentMonth = getCurrentMonth();
+  const peakMonth = months.includes(currentMonth) ? currentMonth : months[0];
 
   return (
     <main className="min-h-screen bg-cream pb-32">
       {/* ============================================
-          1. Hero image — 화면 끝까지 꽉 채운 큰 이미지
+          1. Hero image
          ============================================ */}
       <div className="relative w-full aspect-[4/3] bg-cream-warm">
         {ingredient.imageUrl ? (
@@ -92,7 +90,6 @@ export default function IngredientDetailPage() {
             <span className="text-[88px] leading-none opacity-80">{ingredient.emoji}</span>
           </div>
         )}
-        {/* 뒤로가기 */}
         <button
           onClick={() => router.back()}
           aria-label="뒤로 가기"
@@ -106,10 +103,10 @@ export default function IngredientDetailPage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2~3. 이름 + 제철 배지 + 한 줄 설명
+            2. 이름 + 제철 배지
            ============================================ */}
-        <section className="pt-6 pb-8">
-          <div className="flex items-center gap-2.5 mb-3">
+        <section className="pt-6 pb-1">
+          <div className="flex items-center gap-2.5">
             <span className="text-[28px] leading-none">{ingredient.emoji}</span>
             <h1 className="font-display text-[26px] text-ink font-medium tracking-tight">
               {ingredient.name}
@@ -118,87 +115,92 @@ export default function IngredientDetailPage() {
               제철 {formatSeasonMonths(months)}
             </Badge>
           </div>
-          <p className="font-display text-[16px] text-ink-soft leading-[1.6] tracking-tight italic">
-            &ldquo;{ingredient.description}&rdquo;
+        </section>
+
+        {/* ============================================
+            3. 에디토리얼 소개 — 왜 지금 좋은지
+           ============================================ */}
+        <section className="pb-7">
+          <p className="text-[15px] text-ink leading-[1.7] tracking-tight">
+            <span className="font-medium">{peakMonth}월이 가장 맛있는 시기입니다.</span>
+            <br />
+            {ingredient.description}
           </p>
         </section>
 
-        {/* ============================================
-            4. 시세 동향 카드
-           ============================================ */}
-        <section className="mb-10">
-          <Overline color="soft" className="mb-3">
-            Price Watch
-          </Overline>
-          <PriceTrendCard loading={priceLoading} profile={priceProfile} />
-        </section>
+        <Divider />
 
         {/* ============================================
-            5. 영양 하이라이트
-           ============================================ */}
-        {ingredient.nutrition && (
-          <section className="mb-10">
-            <Overline color="soft" className="mb-3">
-              Nutrition
-            </Overline>
-            <HighlightCard icon="🌿" text={ingredient.nutrition} />
-          </section>
-        )}
-
-        {/* ============================================
-            6. 보관 팁
-           ============================================ */}
-        {ingredient.tip && (
-          <section className="mb-10">
-            <Overline color="soft" className="mb-3">
-              Storage
-            </Overline>
-            <HighlightCard icon="📦" text={ingredient.tip} />
-          </section>
-        )}
-
-        {/* ============================================
-            7. 준비 팁 (고르는 법 + 어울리는 조리법)
-           ============================================ */}
-        {(ingredient.howToChoose || ingredient.goesWellWith) && (
-          <section className="mb-10 space-y-3">
-            <Overline color="soft" className="mb-3">
-              Preparation
-            </Overline>
-            {ingredient.howToChoose && <HighlightCard icon="👀" text={ingredient.howToChoose} />}
-            {ingredient.goesWellWith && <HighlightCard icon="🍳" text={ingredient.goesWellWith} />}
-          </section>
-        )}
-
-        {/* ============================================
-            8. 추천 레시피 — 가로 스크롤
+            4. 오늘 추천 메뉴 — 높은 우선순위, 의사결정 중심
            ============================================ */}
         {recipes.length > 0 && (
-          <section className="mb-10 -mx-5">
-            <div className="px-5 mb-4">
-              <Overline color="sage">
-                {ingredient.name}로 만든 요리 {recipes.length}개
-              </Overline>
-            </div>
-            <div className="flex gap-3.5 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
+          <section className="py-7">
+            <SectionHeader emoji="🍽️" title="오늘 추천 메뉴" />
+            <div className="space-y-2.5 mt-4">
               {recipes.map((recipe) => (
-                <div key={recipe.id} className="w-[150px] flex-shrink-0 snap-start">
-                  <RecipeCard recipe={recipe} />
-                </div>
+                <Link
+                  key={recipe.id}
+                  href={`/recipe/${recipe.id}`}
+                  className="flex items-center gap-3 bg-paper border border-border-soft rounded-2xl px-4 py-3 group"
+                >
+                  <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-cream-warm flex-shrink-0">
+                    <Image
+                      src={recipe.heroImage}
+                      alt={recipe.title}
+                      fill
+                      sizes="48px"
+                      className="object-cover img-editorial"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[14px] text-ink font-medium leading-tight">{recipe.title}</p>
+                    <p className="text-[11px] text-ink-soft/60 mt-0.5">
+                      {recipe.cookTime}분 · {recipe.difficulty}
+                    </p>
+                  </div>
+                  <span className="text-ink-soft/30 group-active:text-ink-soft transition-colors">
+                    →
+                  </span>
+                </Link>
               ))}
             </div>
           </section>
         )}
+
+        <Divider />
+
+        {/* ============================================
+            5. 가격 인사이트 — "지금 사도 좋을까요?"
+           ============================================ */}
+        <section className="py-7">
+          <SectionHeader emoji="💰" title="지금 사도 좋을까요?" />
+          <div className="mt-4">
+            <PriceInsightCard loading={priceLoading} profile={priceProfile} />
+          </div>
+        </section>
+
+        {/* ============================================
+            6. 보관 팁 — 1~2줄만
+           ============================================ */}
+        {ingredient.tip && (
+          <>
+            <Divider />
+            <section className="py-7">
+              <SectionHeader emoji="💡" title="보관 팁" />
+              <p className="text-[13.5px] text-ink leading-relaxed mt-3">{ingredient.tip}</p>
+            </section>
+          </>
+        )}
       </div>
 
       {/* ============================================
-          9. Primary CTA — 화면 하단 고정
+          7. Primary CTA
          ============================================ */}
       <div className="fixed bottom-16 left-0 right-0 z-30 px-5 pb-3 pt-4 bg-gradient-to-t from-cream via-cream/95 to-transparent">
         <div className="max-w-md mx-auto">
           <Link href="/shop">
             <Button variant="primary" size="lg" fullWidth>
-              이 재료로 장보기 시작하기
+              🛒 이 재료로 장보기 시작하기
             </Button>
           </Link>
         </div>
@@ -207,22 +209,23 @@ export default function IngredientDetailPage() {
   );
 }
 
-/* ============================================================
-   작은 정보 카드 — 긴 문단 대신 짧고 명료하게
-   ============================================================ */
-function HighlightCard({ icon, text }: { icon: string; text: string }) {
+function SectionHeader({ emoji, title }: { emoji: string; title: string }) {
   return (
-    <Card padding="md" className="flex items-start gap-3">
-      <span className="text-[18px] shrink-0 mt-0.5">{icon}</span>
-      <p className="text-[13.5px] text-ink leading-relaxed">{text}</p>
-    </Card>
+    <h2 className="text-[15px] font-semibold text-ink flex items-center gap-1.5">
+      <span>{emoji}</span>
+      {title}
+    </h2>
   );
 }
 
+function Divider() {
+  return <div className="h-px bg-border-soft" />;
+}
+
 /* ============================================================
-   시세 동향 카드 — 현재가 / 30일 추이 / 평년 대비
+   가격 인사이트 카드 — 숫자보다 "지금 사도 될지" 판단을 우선
    ============================================================ */
-function PriceTrendCard({
+function PriceInsightCard({
   loading,
   profile,
 }: {
@@ -237,7 +240,8 @@ function PriceTrendCard({
     );
   }
 
-  if (!profile || !profile.available || !profile.comparison?.latest) {
+  const latest = profile?.comparison?.latest;
+  if (!profile?.available || !latest) {
     return (
       <Card padding="lg" className="text-center text-[12.5px] text-ink-soft/70">
         이 식재료는 아직 시세 정보를 제공하지 않아요.
@@ -245,54 +249,40 @@ function PriceTrendCard({
     );
   }
 
-  const { comparison, normalYear } = profile;
-  const latest = comparison.latest!;
-  const fmt = (n: number) => n.toLocaleString() + '원';
-
-  // 30일 추이 (한 달 전 대비)
-  const monthAgo = comparison.oneMonthAgo;
-  const trend =
+  const monthAgo = profile.comparison?.oneMonthAgo ?? null;
+  const trendPct =
     monthAgo && monthAgo.price > 0
       ? Math.round(((latest.price - monthAgo.price) / monthAgo.price) * 100)
       : null;
 
-  // 평년 대비
-  const avg = normalYear?.average ?? null;
-  const vsAverage = avg ? Math.round(((latest.price - avg) / avg) * 100) : null;
+  let statusDot = '⚪';
+  let statusText = '평소와 비슷한 가격이에요.';
+  let trendLine = '';
+
+  if (trendPct !== null) {
+    if (trendPct <= -3) {
+      statusDot = '🟢';
+      statusText = '지금 구매하기 좋은 시기입니다.';
+      trendLine = `최근 30일 평균보다 ${Math.abs(trendPct)}% 저렴해요.`;
+    } else if (trendPct >= 3) {
+      statusDot = '🟠';
+      statusText = '조금 기다렸다 사는 것도 괜찮아요.';
+      trendLine = `최근 30일 평균보다 ${trendPct}% 비싸요.`;
+    } else {
+      trendLine = '최근 30일과 비슷한 가격대예요.';
+    }
+  }
 
   return (
     <Card padding="lg">
-      <div className="flex items-baseline justify-between mb-1">
-        <span className="text-[12px] text-ink-soft">오늘의 평균 시세 (서울 소매가)</span>
-        <span className="text-[10.5px] text-ink-soft/50">{latest.date.slice(5)} 기준</span>
-      </div>
-      <p className="font-display text-[30px] text-ink font-medium tracking-tight tabular-nums mb-4">
-        {fmt(latest.price)}
+      <p className="text-[12px] text-ink-soft">
+        현재 평균 <span className="font-semibold text-ink">{latest.price.toLocaleString()}원/kg</span>
       </p>
-
-      <div className="flex gap-2.5">
-        {trend !== null && <TrendChip label="30일 추이" value={trend} />}
-        {vsAverage !== null && <TrendChip label="평년 대비" value={vsAverage} />}
-      </div>
-
-      <p className="text-[10px] text-ink-soft/50 leading-relaxed mt-4">
-        자료: KAMIS 농산물유통정보
+      {trendLine && <p className="text-[12.5px] text-ink-soft mt-1.5">{trendLine}</p>}
+      <p className="text-[14px] text-ink font-medium mt-3 flex items-center gap-1.5">
+        <span>{statusDot}</span>
+        {statusText}
       </p>
     </Card>
-  );
-}
-
-function TrendChip({ label, value }: { label: string; value: number }) {
-  const isUp = value > 0;
-  const isFlat = value === 0;
-  const color = isFlat ? 'text-ink-soft' : isUp ? 'text-terracotta' : 'text-sage';
-
-  return (
-    <div className="flex-1 bg-cream-warm rounded-xl px-3 py-2.5">
-      <p className="text-[10.5px] text-ink-soft/70 mb-0.5">{label}</p>
-      <p className={`text-[14px] font-semibold tabular-nums ${color}`}>
-        {isFlat ? '변동 없음' : `${isUp ? '▲' : '▼'} ${Math.abs(value)}%`}
-      </p>
-    </div>
   );
 }
