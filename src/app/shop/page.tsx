@@ -3,8 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import { monthsData } from '@/data/months';
-import { kamisItemMappings } from '@/lib/kamis-mapping';
-import { SeasonalIngredient } from '@/data/types';
+import { getShoppableIngredients } from '@/lib/kamis-mapping';
 import { Badge, Card } from '@/components/ui';
 import Logo from '@/components/Logo';
 
@@ -13,23 +12,7 @@ interface PriceInfo {
   trendPct: number | null; // 30일 전 대비 변동률
 }
 
-// KAMIS에 매핑된 표시명("감자(햇감자)")으로 실제 식재료 데이터(이미지, 이모지)를 찾음
-function resolveIngredient(displayName: string): SeasonalIngredient | undefined {
-  const bare = displayName.replace(/\(.*\)/, '');
-  for (const m of monthsData) {
-    const match = m.ingredients.find(
-      (i) => displayName.includes(i.name) || i.name.includes(bare)
-    );
-    if (match) return match;
-  }
-  return undefined;
-}
-
-const SHOP_ITEMS = kamisItemMappings
-  .map((m) => ({ mapping: m, ingredient: resolveIngredient(m.displayName) }))
-  .filter((x): x is { mapping: typeof kamisItemMappings[number]; ingredient: SeasonalIngredient } =>
-    Boolean(x.ingredient)
-  );
+const SHOP_ITEMS = getShoppableIngredients();
 
 const CATEGORIES = ['전체', '제철', '특가', '산지직송'] as const;
 type Category = (typeof CATEGORIES)[number];

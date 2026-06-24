@@ -7,6 +7,9 @@
 // 해산물(갑오징어, 도다리, 농어, 전갱이, 생멸치 등)은 공식 코드표의 수산물 분류
 // (고등어, 갈치, 명태, 굴, 새우 등 23개 품목)에 아예 포함되어 있지 않아 제외했습니다.
 
+import { monthsData } from '@/data/months';
+import { SeasonalIngredient } from '@/data/types';
+
 export interface KamisItemMapping {
   /** 우리 레시피 데이터의 mainIngredient와 매칭되는 표시용 이름 */
   displayName: string;
@@ -76,6 +79,13 @@ export const kamisItemMappings: KamisItemMapping[] = [
     kindCode: '00',
     relatedMonths: [4],
   },
+  {
+    displayName: '오이',
+    itemCategoryCode: '200',
+    itemCode: '223',
+    kindCode: '01', // 가시계통
+    relatedMonths: [6, 7],
+  },
 ];
 
 export function getKamisMappingForMonth(month: number): KamisItemMapping[] {
@@ -92,4 +102,29 @@ export function getKamisMappingByName(name: string): KamisItemMapping | undefine
   return kamisItemMappings.find(
     (m) => m.displayName.includes(normalized) || normalized.includes(m.displayName.replace(/\(.*\)/, ''))
   );
+}
+
+/**
+ * KAMIS에 매핑된 표시명("감자(햇감자)")으로 실제 식재료 데이터(이미지, 이모지)를 찾아
+ * { mapping, ingredient } 쌍의 목록을 만듦. /shop, 홈 등 여러 화면에서 공용으로 사용.
+ */
+export function getShoppableIngredients(): { mapping: KamisItemMapping; ingredient: SeasonalIngredient }[] {
+  return kamisItemMappings
+    .map((m) => {
+      const bare = m.displayName.replace(/\(.*\)/, '');
+      let found: SeasonalIngredient | undefined;
+      for (const month of monthsData) {
+        const match = month.ingredients.find(
+          (i) => m.displayName.includes(i.name) || i.name.includes(bare)
+        );
+        if (match) {
+          found = match;
+          break;
+        }
+      }
+      return { mapping: m, ingredient: found };
+    })
+    .filter(
+      (x): x is { mapping: KamisItemMapping; ingredient: SeasonalIngredient } => Boolean(x.ingredient)
+    );
 }
