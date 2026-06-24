@@ -28,7 +28,7 @@ export default function HomePage() {
 
   const featuredIngredients = monthData.ingredients.filter((i) => i.imageUrl).slice(0, 3);
   const inspiredRecipes = getRecipesByMonth(month).slice(0, 5);
-  const popularRecipes = [...allRecipes].sort((a, b) => a.cookTime - b.cookTime).slice(0, 4);
+  const popularRecipes = [...allRecipes].sort((a, b) => a.cookTime - b.cookTime).slice(0, 3);
 
   return (
     <main className="min-h-screen bg-cream pb-28">
@@ -143,49 +143,47 @@ export default function HomePage() {
         </section>
 
         {/* ============================================
-            5. 인기 레시피 — 2x2 grid
+            5. 인기 레시피 — Compact list (절대 페이지를 압도하지 않게)
            ============================================ */}
         <section className="mb-24">
           <SectionTitle
             overline="Most Loved"
             overlineColor="soft"
             title="인기 레시피"
-            withDivider
             size="sm"
-            className="mb-6"
+            className="mb-2"
           />
 
-          <div className="grid grid-cols-2 gap-4">
-            {popularRecipes.map((recipe) => (
+          <div className="divide-y divide-border-soft/60">
+            {popularRecipes.map((recipe, idx) => (
               <Link
                 key={recipe.id}
                 href={`/recipe/${recipe.id}`}
-                className="block group"
+                className="flex items-center gap-4 py-4 group"
               >
-                <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-cream-warm shadow-[0_2px_8px_rgba(44,42,38,0.06)]">
+                <span className="font-display text-[13px] text-ink-soft/50 w-5 tabular-nums">
+                  {String(idx + 1).padStart(2, '0')}
+                </span>
+                <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-cream-warm flex-shrink-0">
                   <Image
                     src={recipe.heroImage}
                     alt={recipe.title}
                     fill
-                    sizes="(max-width: 768px) 50vw, 200px"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    sizes="48px"
+                    className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <Badge variant="paper" size="sm">
-                      {recipe.category}
-                    </Badge>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-3.5">
-                    <h3 className="font-display text-[14px] text-cream leading-snug line-clamp-2 tracking-tight drop-shadow-sm">
-                      {recipe.title}
-                    </h3>
-                    <div className="flex items-center gap-1.5 mt-2 text-[10.5px] text-cream/85">
-                      <ClockIcon className="opacity-80" />
-                      <span>{recipe.cookTime}분</span>
-                    </div>
-                  </div>
                 </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-[13.5px] text-ink leading-tight font-medium line-clamp-1">
+                    {recipe.title}
+                  </h3>
+                  <p className="text-[11px] text-ink-soft/60 mt-1">
+                    {recipe.cookTime}분 · {recipe.category}
+                  </p>
+                </div>
+                <span className="text-ink-soft/30 group-active:text-ink-soft transition-colors">
+                  →
+                </span>
               </Link>
             ))}
           </div>
@@ -234,11 +232,11 @@ export default function HomePage() {
       <BottomNavigation
         activeId="home"
         items={[
-          { id: 'home', label: '홈', icon: <NavIcon name="home" /> },
-          { id: 'seasonal', label: '제철', icon: <NavIcon name="seasonal" /> },
-          { id: 'recipe', label: '레시피', icon: <NavIcon name="recipe" /> },
-          { id: 'shop', label: '장보기', icon: <NavIcon name="shop" /> },
-          { id: 'my', label: '마이', icon: <NavIcon name="my" /> },
+          { id: 'home', label: '홈', icon: '🏠' },
+          { id: 'seasonal', label: '제철', icon: '🗓️' },
+          { id: 'recipe', label: '레시피', icon: '🍳' },
+          { id: 'shop', label: '장보기', icon: '🛒' },
+          { id: 'my', label: '마이', icon: '👤' },
         ]}
       />
 
@@ -335,62 +333,4 @@ function ClockIcon({ className = '' }: { className?: string }) {
       <polyline points="12 6 12 12 16 14" />
     </svg>
   );
-}
-
-function NavIcon({ name }: { name: 'home' | 'seasonal' | 'recipe' | 'shop' | 'my' }) {
-  const common = {
-    width: 22,
-    height: 22,
-    viewBox: '0 0 24 24',
-    fill: 'none' as const,
-    stroke: 'currentColor',
-    strokeWidth: 1.8,
-    strokeLinecap: 'round' as const,
-    strokeLinejoin: 'round' as const,
-    'aria-hidden': true,
-  };
-  switch (name) {
-    case 'home':
-      return (
-        <svg {...common}>
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2z" />
-        </svg>
-      );
-    case 'seasonal':
-      // 잎 아이콘 - 자연
-      return (
-        <svg {...common}>
-          <path d="M11 20A7 7 0 0 1 4 13c0-2 1-4 3-6 4-4 12-3 13 0 1 7-2 13-9 13z" />
-          <path d="M2 22c4-2 6-4 8-8" />
-        </svg>
-      );
-    case 'recipe':
-      // 그릇 아이콘
-      return (
-        <svg {...common}>
-          <path d="M4 11h16" />
-          <path d="M5 11a7 7 0 0 0 14 0" />
-          <path d="M12 5v3" />
-          <path d="M9 4v1" />
-          <path d="M15 4v1" />
-        </svg>
-      );
-    case 'shop':
-      // 장바구니
-      return (
-        <svg {...common}>
-          <circle cx="9" cy="21" r="1" />
-          <circle cx="20" cy="21" r="1" />
-          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
-        </svg>
-      );
-    case 'my':
-      // 사람
-      return (
-        <svg {...common}>
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-      );
-  }
 }
