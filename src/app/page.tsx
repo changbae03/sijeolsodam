@@ -13,7 +13,6 @@ import {
   Overline,
   Badge,
   Card,
-  BottomNavigation,
 } from '@/components/ui';
 import IngredientDetailSheet from '@/components/IngredientDetailSheet';
 import Logo from '@/components/Logo';
@@ -31,7 +30,7 @@ export default function HomePage() {
   const popularRecipes = [...allRecipes].sort((a, b) => a.cookTime - b.cookTime).slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-cream pb-28">
+    <main className="min-h-screen bg-cream pb-4">
       {/* ============================================
           1. Sticky Search Bar
          ============================================ */}
@@ -225,20 +224,6 @@ export default function HomePage() {
           </Link>
         </section>
       </div>
-
-      {/* ============================================
-          7. Bottom Navigation
-         ============================================ */}
-      <BottomNavigation
-        activeId="home"
-        items={[
-          { id: 'home', label: '홈', icon: '🏠' },
-          { id: 'seasonal', label: '제철', icon: '🗓️' },
-          { id: 'recipe', label: '레시피', icon: '🍳' },
-          { id: 'shop', label: '장보기', icon: '🛒' },
-          { id: 'my', label: '마이', icon: '👤' },
-        ]}
-      />
 
       <IngredientDetailSheet
         ingredient={selectedIngredient}
