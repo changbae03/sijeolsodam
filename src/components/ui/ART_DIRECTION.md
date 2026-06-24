@@ -64,6 +64,36 @@
 }
 ```
 
+## 🎨 AI 이미지 생성 가이드 (공식)
+
+식재료 사진을 AI로 새로 생성할 때는 아래 구조를 그대로 따릅니다.
+코드로는 `src/lib/image-prompts.ts`의 `buildIngredientImagePrompt()`가
+이 구조를 그대로 생성해줍니다.
+
+**권장 프롬프트 구조**
+
+| 항목 | 내용 |
+|---|---|
+| 주제 | 신선한 {식재료명} |
+| 구도 | 바구니/나무볼에 담긴 모습, 45도 상단 앵글, 안정적인 구도 |
+| 배경 | 아이보리 리넨, 나무 테이블 |
+| 조명 | 자연광(창가 빛), 부드러운 그림자 |
+| 분위기 | 따뜻하고 미니멀한 분위기, 채도 낮은 톤 |
+| 품질 | 고해상도, 사진 품질 |
+
+**네거티브 프롬프트(공통)**
+```
+text, logo, watermark, packaging, plastic, metal, dark background,
+overexposed, artificial light, cooked, fried, grilled, too many props,
+cluttered, cropped, blurry, low quality, cartoon, 3d render
+```
+
+**연출 변주 (채소·과일)**: 바구니+리넨 / 나무볼 / 자른 단면 / 허브 포인트
+**연출 변주 (해산물)**: 나무 도마 / 얼음 위 / 리넨 위 / 나무 트레이
+
+전체 109개 식재료에 대한 프롬프트 목록은 대화에서 공유한
+`시절소담_식재료_이미지_프롬프트.md` 파일을 참고하세요.
+
 ## 적용된 컴포넌트
 
 - `HeroIngredientCard` (홈 — 오늘의 제철) — `.ingredient-frame` 적용
