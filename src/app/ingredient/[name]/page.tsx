@@ -3,11 +3,32 @@
 import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { findIngredientByName, formatSeasonMonths, getMonthData } from '@/data/months';
+import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
 import { Badge, Button, Card } from '@/components/ui';
 import RecipeCard from '@/components/RecipeCard';
+import { SeasonalIngredient } from '@/data/types';
+
+/** 특정 식재료와 함께 쓰면 좋은 양념·재료. 데이터에 없는 항목이라 큐레이션으로 제공. */
+const PAIRING_OVERRIDES: Record<string, string[]> = {
+  감자: ['양파', '마늘', '버터', '로즈마리'],
+  고구마: ['버터', '계핏가루', '꿀', '호두'],
+  배추: ['대파', '마늘', '고춧가루', '액젓'],
+  무: ['대파', '마늘', '참기름', '깨'],
+};
+
+const PAIRING_DEFAULTS: Record<SeasonalIngredient['category'], string[]> = {
+  채소: ['양파', '마늘', '대파', '참기름'],
+  과일: ['꿀', '레몬', '민트', '요거트'],
+  해산물: ['마늘', '레몬', '버터', '파슬리'],
+  기타: ['소금', '후추', '올리브오일', '레몬'],
+};
+
+function getPairingIngredients(ingredient: SeasonalIngredient): string[] {
+  const bare = ingredient.name.replace(/^햇|^새/, ''); // 햇감자 -> 감자처럼 접두어 제거 후 매칭
+  return PAIRING_OVERRIDES[ingredient.name] ?? PAIRING_OVERRIDES[bare] ?? PAIRING_DEFAULTS[ingredient.category];
+}
 
 export default function IngredientDetailPage() {
   const params = useParams<{ name: string }>();
@@ -36,11 +57,7 @@ export default function IngredientDetailPage() {
   const currentMonth = getCurrentMonth();
   const peakMonth = months.includes(currentMonth) ? currentMonth : months[0];
 
-  // 같은 제철 시기의 다른 식재료들 (이 재료 제외)
-  const relatedIngredients =
-    getMonthData(peakMonth)?.ingredients.filter(
-      (i) => i.name !== ingredient.name && i.imageUrl
-    ).slice(0, 4) ?? [];
+  const pairings = getPairingIngredients(ingredient);
 
   return (
     <main className="min-h-screen bg-cream pb-32">
@@ -90,13 +107,14 @@ export default function IngredientDetailPage() {
         </section>
 
         {/* ============================================
-            3. 에디토리얼 소개 — 한 줄
+            3. 에디토리얼 소개 — 더 강한 한 줄
            ============================================ */}
         <section className="pb-8">
           <p className="text-[15px] text-ink leading-[1.7] tracking-tight">
             <span className="font-medium">{peakMonth}월이 가장 맛있는 시기입니다.</span>
             <br />
             {ingredient.description}
+            {recipes[0] && ` ${recipes[0].title}에 특히 잘 어울려요.`}
           </p>
         </section>
 
@@ -108,9 +126,9 @@ export default function IngredientDetailPage() {
             <div className="px-5 mb-4">
               <SectionHeader emoji="🍳" title="이 재료로 만들 수 있는 요리" />
             </div>
-            <div className="flex gap-3.5 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
-              {recipes.map((recipe) => (
-                <div key={recipe.id} className="w-[160px] flex-shrink-0 snap-start">
+            <div className="flex gap-4 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
+              {recipes.slice(0, 3).map((recipe) => (
+                <div key={recipe.id} className="w-[200px] flex-shrink-0 snap-start">
                   <RecipeCard recipe={recipe} />
                 </div>
               ))}
@@ -141,31 +159,16 @@ export default function IngredientDetailPage() {
         )}
 
         {/* ============================================
-            7. 관련 제철 식재료
+            7. 함께 쓰면 좋은 재료 — 탐색이 아니라 요리를 돕는 정보
            ============================================ */}
-        {relatedIngredients.length > 0 && (
+        {pairings.length > 0 && (
           <section className="mb-4">
-            <SectionHeader emoji="🗓️" title={`${peakMonth}월의 다른 제철 식재료`} />
-            <div className="grid grid-cols-2 gap-3 mt-4">
-              {relatedIngredients.map((related) => (
-                <Link
-                  key={related.name}
-                  href={`/ingredient/${encodeURIComponent(related.name)}`}
-                  className="flex items-center gap-2.5 bg-paper border border-border-soft rounded-2xl px-3 py-2.5 group"
-                >
-                  <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-cream-warm flex-shrink-0">
-                    <Image
-                      src={related.imageUrl!}
-                      alt={related.name}
-                      fill
-                      sizes="40px"
-                      className="object-cover img-editorial"
-                    />
-                  </div>
-                  <span className="text-[13px] text-ink font-medium leading-tight">
-                    {related.name}
-                  </span>
-                </Link>
+            <SectionHeader emoji="🧂" title="함께 쓰면 좋은 재료" />
+            <div className="flex flex-wrap gap-2 mt-3.5">
+              {pairings.map((p) => (
+                <Badge key={p} variant="cream" size="md">
+                  {p}
+                </Badge>
               ))}
             </div>
           </section>
@@ -179,7 +182,7 @@ export default function IngredientDetailPage() {
         <div className="max-w-md mx-auto">
           <Link href="/shop">
             <Button variant="primary" size="lg" fullWidth>
-              🛒 이 재료로 장보기 시작하기
+              🍳 이 재료로 요리 준비하기
             </Button>
           </Link>
         </div>
