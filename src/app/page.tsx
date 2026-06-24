@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import { getCurrentMonth, getCurrentMonthData } from '@/lib/season';
+import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByMonth } from '@/data/recipes';
 import { SeasonalIngredient } from '@/data/types';
 import { getShoppableIngredients } from '@/lib/kamis-mapping';
@@ -142,7 +143,7 @@ export default function HomePage() {
                     alt={featuredRecipe.title}
                     fill
                     sizes="96px"
-                    className="object-cover"
+                    className="object-cover img-editorial"
                   />
                 </div>
                 <div className="flex-1 flex flex-col justify-center min-w-0">
@@ -152,10 +153,11 @@ export default function HomePage() {
                   <p className="text-[12.5px] text-ink-soft leading-relaxed mt-1.5 line-clamp-2">
                     &ldquo;지금 가장 맛있는 {featuredRecipe.mainIngredient}로 만들어보세요.&rdquo;
                   </p>
-                  <span className="inline-flex items-center gap-1 mt-2 text-[12px] text-terracotta font-medium">
-                    레시피 보기
-                    <span className="transition-transform group-hover:translate-x-0.5">→</span>
-                  </span>
+                  <div className="flex items-center gap-1.5 mt-2 text-[11px] text-ink-soft/70">
+                    <span>{featuredRecipe.cookTime}분</span>
+                    <span className="w-0.5 h-0.5 rounded-full bg-ink-soft/40" />
+                    <span>{featuredRecipe.difficulty}</span>
+                  </div>
                 </div>
               </div>
             </Link>
@@ -222,6 +224,9 @@ function FeaturedIngredientCard({
   ingredient: SeasonalIngredient;
   index: number;
 }) {
+  const found = findIngredientByName(ingredient.name);
+  const seasonLabel = found ? formatSeasonMonths(found.months) : '';
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 16 }}
@@ -234,26 +239,30 @@ function FeaturedIngredientCard({
         className="w-full block text-left group"
       >
         {ingredient.imageUrl && (
-          <div className="relative w-full aspect-[5/4] rounded-[20px] overflow-hidden bg-cream-warm mb-4 shadow-[0_4px_16px_rgba(44,42,38,0.08)]">
+          <div className="relative w-full aspect-[5/4] rounded-[20px] overflow-hidden bg-cream-warm mb-3 shadow-[0_4px_16px_rgba(44,42,38,0.08)]">
             <Image
               src={ingredient.imageUrl}
               alt={ingredient.name}
               fill
               sizes="(max-width: 768px) 100vw, 448px"
-              className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              className="object-cover img-editorial transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <div className="absolute top-4 right-4">
-              <Badge variant="paper" size="sm">
-                제철
-              </Badge>
-            </div>
           </div>
         )}
-        <div className="px-1 flex items-center justify-between">
-          <h3 className="font-display text-[18px] text-ink font-medium tracking-tight">
-            {ingredient.emoji} {ingredient.name}
-          </h3>
-          <span className="text-ink-soft/40 group-hover:text-ink-soft transition-colors">→</span>
+        <div className="px-1">
+          <div className="flex items-center gap-2 mb-1.5">
+            <h3 className="font-display text-[18px] text-ink font-medium tracking-tight">
+              {ingredient.emoji} {ingredient.name}
+            </h3>
+            {seasonLabel && (
+              <Badge variant="sage" size="sm">
+                제철 {seasonLabel}
+              </Badge>
+            )}
+          </div>
+          <p className="text-[12.5px] text-ink-soft leading-relaxed line-clamp-1">
+            {ingredient.description}
+          </p>
         </div>
       </Link>
     </motion.div>

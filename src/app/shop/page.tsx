@@ -143,7 +143,7 @@ export default function ShopPage() {
                         alt={ingredient.name}
                         fill
                         sizes="180px"
-                        className="object-cover"
+                        className="object-cover img-editorial"
                       />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center text-[36px]">
@@ -202,7 +202,7 @@ export default function ShopPage() {
                 <div key={ing.name} className="w-[120px] flex-shrink-0 snap-start">
                   <div className="relative w-full aspect-square rounded-xl overflow-hidden bg-cream-warm mb-2">
                     {ing.imageUrl ? (
-                      <Image src={ing.imageUrl} alt={ing.name} fill sizes="120px" className="object-cover" />
+                      <Image src={ing.imageUrl} alt={ing.name} fill sizes="120px" className="object-cover img-editorial" />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center text-[28px]">
                         {ing.emoji}

@@ -85,7 +85,7 @@ export default function IngredientDetailPage() {
             fill
             sizes="(max-width: 768px) 100vw, 448px"
             priority
-            className="object-cover"
+            className="object-cover img-editorial"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
