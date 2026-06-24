@@ -147,14 +147,16 @@ function HeroIngredientCard({ ingredient }: { ingredient: SeasonalIngredient }) 
     >
       <Link href={`/ingredient/${encodeURIComponent(ingredient.name)}`} className="block group">
         {ingredient.imageUrl && (
-          <div className="relative w-full aspect-[5/4] rounded-[20px] overflow-hidden bg-cream-warm mb-3 shadow-[0_4px_16px_rgba(44,42,38,0.08)]">
-            <Image
-              src={ingredient.imageUrl}
-              alt={ingredient.name}
-              fill
-              sizes="(max-width: 768px) 100vw, 448px"
-              className="object-cover img-editorial transition-transform duration-700 group-hover:scale-[1.02]"
-            />
+          <div className="ingredient-frame rounded-[20px] mb-3">
+            <div className="relative w-full aspect-[5/4] rounded-[14px] overflow-hidden shadow-[0_6px_20px_-4px_rgba(44,42,38,0.14)]">
+              <Image
+                src={ingredient.imageUrl}
+                alt={ingredient.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 448px"
+                className="object-cover img-editorial transition-transform duration-700 group-hover:scale-[1.02]"
+              />
+            </div>
           </div>
         )}
         <div className="px-1">

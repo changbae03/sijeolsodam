@@ -200,14 +200,16 @@ export default function ShopPage() {
               const info = prices[ing.name];
               return (
                 <div key={ing.name} className="w-[120px] flex-shrink-0 snap-start">
-                  <div className="relative w-full aspect-square rounded-xl overflow-hidden bg-cream-warm mb-2">
-                    {ing.imageUrl ? (
-                      <Image src={ing.imageUrl} alt={ing.name} fill sizes="120px" className="object-cover img-editorial" />
-                    ) : (
-                      <div className="absolute inset-0 flex items-center justify-center text-[28px]">
-                        {ing.emoji}
-                      </div>
-                    )}
+                  <div className="ingredient-frame rounded-xl mb-2">
+                    <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-[0_4px_14px_-3px_rgba(44,42,38,0.14)]">
+                      {ing.imageUrl ? (
+                        <Image src={ing.imageUrl} alt={ing.name} fill sizes="120px" className="object-cover img-editorial" />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center text-[28px]">
+                          {ing.emoji}
+                        </div>
+                      )}
+                    </div>
                   </div>
                   <p className="text-[12.5px] font-medium text-ink leading-tight">{ing.name}</p>
                   <p className="text-[10.5px] text-ink-soft/60 mt-0.5">{ing.origin}</p>
