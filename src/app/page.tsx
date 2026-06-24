@@ -14,13 +14,11 @@ import {
   Badge,
   Card,
 } from '@/components/ui';
-import IngredientDetailSheet from '@/components/IngredientDetailSheet';
 import Logo from '@/components/Logo';
 
 export default function HomePage() {
   const month = getCurrentMonth();
   const monthData = getCurrentMonthData();
-  const [selectedIngredient, setSelectedIngredient] = useState<SeasonalIngredient | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
   if (!monthData) return null;
@@ -84,12 +82,7 @@ export default function HomePage() {
 
           <div className="space-y-10">
             {featuredIngredients.map((ingredient, idx) => (
-              <FeaturedIngredientCard
-                key={ingredient.name}
-                ingredient={ingredient}
-                index={idx}
-                onClick={() => setSelectedIngredient(ingredient)}
-              />
+              <FeaturedIngredientCard key={ingredient.name} ingredient={ingredient} index={idx} />
             ))}
           </div>
         </section>
@@ -225,10 +218,6 @@ export default function HomePage() {
         </section>
       </div>
 
-      <IngredientDetailSheet
-        ingredient={selectedIngredient}
-        onClose={() => setSelectedIngredient(null)}
-      />
     </main>
   );
 }
@@ -239,61 +228,61 @@ export default function HomePage() {
 function FeaturedIngredientCard({
   ingredient,
   index,
-  onClick,
 }: {
   ingredient: SeasonalIngredient;
   index: number;
-  onClick: () => void;
 }) {
   return (
-    <motion.button
-      onClick={onClick}
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ delay: index * 0.08, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      whileTap={{ scale: 0.985 }}
-      className="w-full block text-left group"
     >
-      {ingredient.imageUrl && (
-        <div className="relative w-full aspect-[5/4] rounded-[20px] overflow-hidden bg-cream-warm mb-5 shadow-[0_4px_16px_rgba(44,42,38,0.08)]">
-          <Image
-            src={ingredient.imageUrl}
-            alt={ingredient.name}
-            fill
-            sizes="(max-width: 768px) 100vw, 448px"
-            className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-          />
-          {/* No. 카운터 — 큐레이션 톤 */}
-          <span className="absolute top-4 left-4 font-display text-[13px] tracking-wider text-cream/95 bg-ink/40 backdrop-blur-md rounded-full px-3 py-1.5">
-            No. 0{index + 1}
-          </span>
-          {/* 제철 배지 */}
-          <div className="absolute top-4 right-4">
-            <Badge variant="paper" size="sm">
-              제철
-            </Badge>
+      <Link
+        href={`/ingredient/${encodeURIComponent(ingredient.name)}`}
+        className="w-full block text-left group"
+      >
+        {ingredient.imageUrl && (
+          <div className="relative w-full aspect-[5/4] rounded-[20px] overflow-hidden bg-cream-warm mb-5 shadow-[0_4px_16px_rgba(44,42,38,0.08)]">
+            <Image
+              src={ingredient.imageUrl}
+              alt={ingredient.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 448px"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+            />
+            {/* No. 카운터 — 큐레이션 톤 */}
+            <span className="absolute top-4 left-4 font-display text-[13px] tracking-wider text-cream/95 bg-ink/40 backdrop-blur-md rounded-full px-3 py-1.5">
+              No. 0{index + 1}
+            </span>
+            {/* 제철 배지 */}
+            <div className="absolute top-4 right-4">
+              <Badge variant="paper" size="sm">
+                제철
+              </Badge>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="px-1">
-        <Overline color="soft" className="mb-2.5">
-          {ingredient.category}
-          {ingredient.origin && ` · ${ingredient.origin}`}
-        </Overline>
-        <h3 className="font-display text-[24px] text-ink font-medium tracking-tight leading-tight">
-          {ingredient.name}
-        </h3>
-        <p className="text-[14px] text-ink-soft leading-[1.7] mt-3 max-w-[340px]">
-          {ingredient.description}
-        </p>
-        <span className="inline-flex items-center gap-1.5 mt-5 text-[12.5px] text-terracotta font-medium">
-          자세히 보기
-          <span className="transition-transform group-hover:translate-x-0.5">→</span>
-        </span>
-      </div>
-    </motion.button>
+        <div className="px-1">
+          <Overline color="soft" className="mb-2.5">
+            {ingredient.category}
+            {ingredient.origin && ` · ${ingredient.origin}`}
+          </Overline>
+          <h3 className="font-display text-[24px] text-ink font-medium tracking-tight leading-tight">
+            {ingredient.name}
+          </h3>
+          <p className="text-[14px] text-ink-soft leading-[1.7] mt-3 max-w-[340px]">
+            {ingredient.description}
+          </p>
+          <span className="inline-flex items-center gap-1.5 mt-5 text-[12.5px] text-terracotta font-medium">
+            자세히 보기
+            <span className="transition-transform group-hover:translate-x-0.5">→</span>
+          </span>
+        </div>
+      </Link>
+    </motion.div>
   );
 }
 

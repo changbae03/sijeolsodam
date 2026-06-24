@@ -1,4 +1,4 @@
-import { MonthData } from './types';
+import { MonthData, SeasonalIngredient } from './types';
 
 export const monthsData: MonthData[] = [
   {
@@ -245,4 +245,34 @@ export const monthsData: MonthData[] = [
 
 export function getMonthData(month: number): MonthData | undefined {
   return monthsData.find((m) => m.month === month);
+}
+
+/**
+ * 식재료 이름으로 전체 달 데이터를 훑어 정보를 찾음.
+ * 같은 식재료가 여러 달에 걸쳐 나오는 경우(예: 도다리) 등장하는 모든 월을 함께 반환.
+ */
+export function findIngredientByName(
+  name: string
+): { ingredient: SeasonalIngredient; months: number[] } | undefined {
+  const months: number[] = [];
+  let found: SeasonalIngredient | undefined;
+
+  for (const m of monthsData) {
+    const match = m.ingredients.find((i) => i.name === name);
+    if (match) {
+      months.push(m.month);
+      if (!found) found = match;
+    }
+  }
+
+  return found ? { ingredient: found, months } : undefined;
+}
+
+/** [3, 9, 11] -> "3·9·11월", [6,7,8] -> "6~8월", [6] -> "6월" */
+export function formatSeasonMonths(months: number[]): string {
+  const sorted = [...months].sort((a, b) => a - b);
+  const isContiguous = sorted.every((m, i) => i === 0 || m === sorted[i - 1] + 1);
+  if (sorted.length === 1) return `${sorted[0]}월`;
+  if (isContiguous) return `${sorted[0]}~${sorted[sorted.length - 1]}월`;
+  return `${sorted.join('·')}월`;
 }
