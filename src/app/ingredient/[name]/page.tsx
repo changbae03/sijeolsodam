@@ -163,46 +163,32 @@ export default function IngredientDetailPage() {
         )}
 
         {/* ============================================
-            5-2. 가격 동향 — 컴팩트, 차트 없음
+            5-2. 가격 정보 — 컴팩트, 차트 없음
            ============================================ */}
         {priceInsight && (
           <section className="mb-8">
-            <SectionHeader emoji="💰" title="가격 동향" />
+            <SectionHeader emoji="💰" title="가격 정보" />
             <Card padding="md" className="mt-3">
               <div className="flex items-baseline justify-between">
                 <span className="text-[12px] text-ink-soft">현재 평균가</span>
                 <span className="text-[16px] text-ink font-semibold tabular-nums">
-                  {priceInsight.currentPrice.toLocaleString()}원
+                  {priceInsight.currentPrice.toLocaleString()}원/kg
                 </span>
               </div>
-              <div className="flex items-center gap-4 mt-2 text-[12px] text-ink-soft">
-                {priceInsight.vsLastWeekPct !== null && (
-                  <span>
-                    지난주 대비{' '}
-                    <span
-                      className={
-                        priceInsight.vsLastWeekPct < 0 ? 'text-sage font-medium' : 'text-terracotta font-medium'
-                      }
-                    >
-                      {priceInsight.vsLastWeekPct > 0 ? '+' : ''}
-                      {priceInsight.vsLastWeekPct}%
-                    </span>
+              {priceInsight.vsLastWeekPct !== null && (
+                <div className="flex items-baseline justify-between mt-2">
+                  <span className="text-[12px] text-ink-soft">지난주 대비</span>
+                  <span
+                    className={`text-[13px] font-medium ${
+                      priceInsight.vsLastWeekPct < 0 ? 'text-sage' : 'text-terracotta'
+                    }`}
+                  >
+                    {priceInsight.vsLastWeekPct > 0 ? '+' : ''}
+                    {priceInsight.vsLastWeekPct}%
                   </span>
-                )}
-                {priceInsight.vsLastMonthPct !== null && (
-                  <span>
-                    지난달 대비{' '}
-                    <span
-                      className={
-                        priceInsight.vsLastMonthPct < 0 ? 'text-sage font-medium' : 'text-terracotta font-medium'
-                      }
-                    >
-                      {priceInsight.vsLastMonthPct > 0 ? '+' : ''}
-                      {priceInsight.vsLastMonthPct}%
-                    </span>
-                  </span>
-                )}
-              </div>
+                </div>
+              )}
+              <p className="text-[12px] text-ink-soft mt-2.5">{priceInsight.monthlyTrendSummary}</p>
               <p className="text-[13px] text-ink font-medium mt-3">{priceInsight.recommendation}</p>
             </Card>
           </section>

@@ -19,6 +19,8 @@ export interface PriceInsight {
   tone: 'cheap' | 'expensive' | 'stable';
   /** 식재료 상세용 한 줄 추천 */
   recommendation: string;
+  /** 지난달 추이를 숫자 대신 짧은 문장으로 ("지난달보다 하락하는 추세예요" 등) */
+  monthlyTrendSummary: string;
 }
 
 interface RawPriceResponse {
@@ -35,20 +37,30 @@ function pctChange(latest: number, base: number | null): number | null {
   return Math.round(((latest - base) / base) * 100);
 }
 
-/** 변동률을 사람이 읽는 배지 문구로 변환 (차트/숫자 그래프 없이) */
+/** 변동률을 사람이 읽는 배지 문구로 변환 — 숫자(%) 없이, 이모지+상태 표현만 (카드용) */
 function buildBadge(vsLastWeekPct: number | null): { badge: string; tone: PriceInsight['tone'] } {
-  if (vsLastWeekPct === null) return { badge: '가격 안정', tone: 'stable' };
-  if (vsLastWeekPct <= -3) return { badge: `지난주 대비 ${Math.abs(vsLastWeekPct)}% 저렴`, tone: 'cheap' };
-  if (vsLastWeekPct >= 3) return { badge: '최근 가격 상승', tone: 'expensive' };
-  return { badge: '가격 안정', tone: 'stable' };
+  if (vsLastWeekPct === null) return { badge: '🟡 가격 안정', tone: 'stable' };
+  if (vsLastWeekPct <= -8) return { badge: '🟢 지금 구매하기 좋아요', tone: 'cheap' };
+  if (vsLastWeekPct <= -3) return { badge: '🟢 지난주보다 저렴', tone: 'cheap' };
+  if (vsLastWeekPct >= 3) return { badge: '🔴 최근 가격 상승', tone: 'expensive' };
+  return { badge: '🟡 가격 안정', tone: 'stable' };
+}
+
+/** 식재료 상세용 — 지난달 추이를 숫자 대신 짧은 문장으로 */
+function buildMonthlyTrendSummary(vsLastMonthPct: number | null): string {
+  if (vsLastMonthPct === null) return '지난달 시세와 비교할 데이터가 충분하지 않아요.';
+  if (vsLastMonthPct <= -5) return '지난달보다 하락하는 추세예요.';
+  if (vsLastMonthPct >= 5) return '지난달보다 오르는 추세예요.';
+  return '지난달과 비슷한 수준을 유지하고 있어요.';
 }
 
 function buildRecommendation(vsLastWeekPct: number | null, vsLastMonthPct: number | null): string {
   const ref = vsLastWeekPct ?? vsLastMonthPct;
-  if (ref === null) return '평소와 비슷한 가격대예요.';
+  if (ref === null) return '최근 가격이 안정되어 구매하기 좋은 시기입니다.';
+  if (ref <= -8) return '지금 구매하기 정말 좋은 시기예요.';
   if (ref <= -3) return '지금 구매하기 좋은 시기입니다.';
   if (ref >= 3) return '조금 기다렸다 사는 것도 괜찮아요.';
-  return '평소와 비슷한 가격대예요.';
+  return '최근 가격이 안정되어 구매하기 좋은 시기입니다.';
 }
 
 /** 식재료 이름으로 가격 인사이트를 가져옴. 데이터가 없으면 null. */
@@ -71,6 +83,7 @@ export async function fetchPriceInsight(name: string): Promise<PriceInsight | nu
       badge,
       tone,
       recommendation: buildRecommendation(vsLastWeekPct, vsLastMonthPct),
+      monthlyTrendSummary: buildMonthlyTrendSummary(vsLastMonthPct),
     };
   } catch {
     return null;
