@@ -50,7 +50,7 @@ export default function IngredientGridCard({ ingredient, hasPriceData }: Ingredi
         </span>
         {seasonLabel && (
           <Badge variant="sage" size="sm">
-            {seasonLabel}
+            {seasonLabel} 제철
           </Badge>
         )}
       </div>

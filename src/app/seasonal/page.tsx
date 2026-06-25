@@ -13,14 +13,8 @@ import Logo from '@/components/Logo';
 
 // PM 결정에 따른 카테고리 칩. '버섯'·'곡물'은 현재 데이터에 아직 없어서
 // 선택해도 빈 상태가 뜨지만, 칩 자체는 그대로 노출합니다.
-const CATEGORY_CHIPS: ('전체' | IngredientCategory | '버섯' | '곡물')[] = [
-  '전체',
-  '채소',
-  '과일',
-  '해산물',
-  '버섯',
-  '곡물',
-];
+// 6개 카테고리 칩 — 버섯·곡물도 이제 실제 데이터가 있는 카테고리
+const CATEGORY_CHIPS: ('전체' | IngredientCategory)[] = ['전체', '채소', '과일', '해산물', '버섯', '곡물'];
 
 /**
  * "이번 달"(오늘 기준)에만 보여줄 풍부한 에디토리얼 노트.
@@ -113,7 +107,7 @@ export default function SeasonalPage() {
             <Logo size="sm" />
             <div className="flex-1">
               <SearchBar
-                placeholder="제철 식재료 검색"
+                placeholder="식재료를 검색해보세요"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />

@@ -32,7 +32,7 @@ export interface Recipe {
   youtubeQuery: string;
 }
 
-export type IngredientCategory = '채소' | '과일' | '해산물' | '기타';
+export type IngredientCategory = '채소' | '과일' | '해산물' | '버섯' | '곡물' | '기타';
 
 export interface SeasonalIngredient {
   name: string;
