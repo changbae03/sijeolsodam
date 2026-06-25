@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getCurrentMonthData } from '@/lib/season';
 import { getRecipesByIngredient } from '@/data/recipes';
+import { findBestValueInSeason } from '@/lib/price-insight';
 import { SeasonalIngredient } from '@/data/types';
 import { SearchBar } from '@/components/ui';
 import IngredientFeatureCard from '@/components/IngredientFeatureCard';
@@ -23,7 +24,27 @@ export default function HomePage() {
   const monthData = getCurrentMonthData();
   const [searchQuery, setSearchQuery] = useState('');
 
-  const heroIngredient = monthData?.ingredients.find((i) => i.imageUrl);
+  const defaultHero = monthData?.ingredients.find((i) => i.imageUrl);
+  const [heroIngredient, setHeroIngredient] = useState<SeasonalIngredient | undefined>(defaultHero);
+  // 제철이면서 가격도 좋아서(이번 주 추천 컨셉) 선택된 경우만 true
+  const [isWeeklyPick, setIsWeeklyPick] = useState(false);
+
+  useEffect(() => {
+    if (!monthData) return;
+    const candidates = monthData.ingredients.filter((i) => i.imageUrl);
+    let cancelled = false;
+    findBestValueInSeason(candidates).then((best) => {
+      if (!cancelled && best) {
+        setHeroIngredient(best);
+        setIsWeeklyPick(true);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- monthData는 달이 바뀌지 않는 한 동일 참조
+  }, []);
+
   const featuredRecipe = heroIngredient ? getRecipesByIngredient(heroIngredient.name)[0] : undefined;
 
   if (!monthData || !heroIngredient) return null;
@@ -50,13 +71,14 @@ export default function HomePage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            1. 오늘의 제철 — 단 하나의 대표 식재료
+            1. 오늘의 제철 / 이번 주 추천 — 단 하나의 대표 식재료
+               제철 + 가격이 둘 다 좋은 식재료를 찾으면 "이번 주 추천"으로 승격
            ============================================ */}
         <section className="pt-8 mb-12">
           <div className="flex items-baseline gap-3 mb-6">
             <span className="h-px w-8 bg-sage" />
             <h2 className="font-display text-[20px] tracking-tight text-ink font-medium">
-              오늘의 제철
+              {isWeeklyPick ? '이번 주 추천' : '오늘의 제철'}
             </h2>
           </div>
 

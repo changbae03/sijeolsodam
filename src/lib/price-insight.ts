@@ -39,11 +39,11 @@ function pctChange(latest: number, base: number | null): number | null {
 
 /** 변동률을 사람이 읽는 배지 문구로 변환 — 숫자(%) 없이, 이모지+상태 표현만 (카드용) */
 function buildBadge(vsLastWeekPct: number | null): { badge: string; tone: PriceInsight['tone'] } {
-  if (vsLastWeekPct === null) return { badge: '🟡 가격 안정', tone: 'stable' };
-  if (vsLastWeekPct <= -8) return { badge: '🟢 지금 구매하기 좋아요', tone: 'cheap' };
-  if (vsLastWeekPct <= -3) return { badge: '🟢 지난주보다 저렴', tone: 'cheap' };
-  if (vsLastWeekPct >= 3) return { badge: '🔴 최근 가격 상승', tone: 'expensive' };
-  return { badge: '🟡 가격 안정', tone: 'stable' };
+  if (vsLastWeekPct === null) return { badge: '✅ 가격 안정', tone: 'stable' };
+  if (vsLastWeekPct <= -8) return { badge: '💰 구매 적기', tone: 'cheap' };
+  if (vsLastWeekPct <= -3) return { badge: '📉 지난주보다 저렴', tone: 'cheap' };
+  if (vsLastWeekPct >= 3) return { badge: '📈 가격 상승 중', tone: 'expensive' };
+  return { badge: '✅ 가격 안정', tone: 'stable' };
 }
 
 /** 식재료 상세용 — 지난달 추이를 숫자 대신 짧은 문장으로 */
@@ -63,7 +63,20 @@ function buildRecommendation(vsLastWeekPct: number | null, vsLastMonthPct: numbe
   return '최근 가격이 안정되어 구매하기 좋은 시기입니다.';
 }
 
-/** 식재료 이름으로 가격 인사이트를 가져옴. 데이터가 없으면 null. */
+/**
+ * "이번 주 추천" — 제철이면서 가격도 좋은(tone === 'cheap') 식재료를 찾음.
+ * candidates는 이미 "이번 달 제철" 필터를 거친 목록이어야 함 (이 함수는 가격만 봄).
+ * 가격 데이터가 없는 식재료는 후보에서 자연히 제외됨. 찾는 순서대로 첫 매치를 반환.
+ */
+export async function findBestValueInSeason<T extends { name: string }>(
+  candidates: T[]
+): Promise<T | null> {
+  for (const candidate of candidates) {
+    const insight = await fetchPriceInsight(candidate.name);
+    if (insight?.tone === 'cheap') return candidate;
+  }
+  return null;
+}
 export async function fetchPriceInsight(name: string): Promise<PriceInsight | null> {
   try {
     const res = await fetch(`/api/ingredient-price?name=${encodeURIComponent(name)}`);

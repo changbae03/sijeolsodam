@@ -188,7 +188,19 @@ export default function IngredientDetailPage() {
                   </span>
                 </div>
               )}
-              <p className="text-[12px] text-ink-soft mt-2.5">{priceInsight.monthlyTrendSummary}</p>
+              {priceInsight.vsLastMonthPct !== null && (
+                <div className="flex items-baseline justify-between mt-2">
+                  <span className="text-[12px] text-ink-soft">지난달 대비</span>
+                  <span
+                    className={`text-[13px] font-medium ${
+                      priceInsight.vsLastMonthPct < 0 ? 'text-sage' : 'text-terracotta'
+                    }`}
+                  >
+                    {priceInsight.vsLastMonthPct > 0 ? '+' : ''}
+                    {priceInsight.vsLastMonthPct}%
+                  </span>
+                </div>
+              )}
               <p className="text-[13px] text-ink font-medium mt-3">{priceInsight.recommendation}</p>
             </Card>
           </section>
