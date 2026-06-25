@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { getMonthData } from '@/data/months';
 import { getCurrentMonth } from '@/lib/season';
 import { getKamisMappingByName } from '@/lib/kamis-mapping';
-import { IngredientCategory, SeasonalIngredient } from '@/data/types';
+import { IngredientCategory } from '@/data/types';
 import { SearchBar } from '@/components/ui';
 import MonthStrip from '@/components/MonthStrip';
 import IngredientGridCard from '@/components/IngredientGridCard';
@@ -22,38 +22,35 @@ const CATEGORY_CHIPS: ('전체' | IngredientCategory | '버섯' | '곡물')[] = 
   '곡물',
 ];
 
-/** 그리드 위에 한 번 보여줄 가벼운 에디토리얼 한 줄. 데이터에서 자연스럽게 뽑아냄. */
-// 매달 같은 문구가 반복되지 않도록 템플릿을 여러 개 두고 월 기반으로 골라 씀
-const ORIGIN_NOTE_TEMPLATES = [
-  (origin: string, name: string) => `${origin}에서 온 ${name}, 지금이 한창 물오른 시기예요.`,
-  (origin: string, name: string) => `${origin} ${name}가 올해도 제 맛을 내고 있어요.`,
-  (origin: string, name: string) => `${origin}산 ${name}, 놓치면 아쉬운 제철이에요.`,
-  (origin: string, name: string) => `${origin}에서 갓 올라온 ${name}을 만나보세요.`,
-];
+/**
+ * "이번 달"(오늘 기준)에만 보여줄 풍부한 에디토리얼 노트.
+ * 절기/계절, 대표 카테고리, 산지 하이라이트, 전체 가짓수를 한 문단으로 엮음.
+ * 다른 달을 둘러볼 때는 이 노트를 굳이 보여주지 않음(현재 달에만 특별하게).
+ */
+function buildCurrentMonthNote(monthData: ReturnType<typeof getMonthData>): string | null {
+  if (!monthData || monthData.ingredients.length === 0) return null;
 
-const CATEGORY_NOTE_TEMPLATES = [
-  (month: number, category: string) => `${month}월엔 ${category}가 유독 풍성한 계절이에요.`,
-  (month: number, category: string) => `${month}월 식탁엔 ${category}를 빼놓을 수 없어요.`,
-  (month: number, category: string) => `${category}가 가장 다채로워지는 ${month}월입니다.`,
-];
+  const sentences: string[] = [];
 
-function buildEditorialNote(month: number, items: SeasonalIngredient[]): string | null {
-  if (items.length === 0) return null;
+  sentences.push(`${monthData.solarTerm}, ${monthData.season}의 한가운데예요.`);
 
-  const withOrigin = items.find((i) => i.origin);
-  if (withOrigin) {
-    const template = ORIGIN_NOTE_TEMPLATES[month % ORIGIN_NOTE_TEMPLATES.length];
-    return template(withOrigin.origin!, withOrigin.name);
-  }
-
-  const counts = items.reduce<Record<string, number>>((acc, i) => {
+  const counts = monthData.ingredients.reduce<Record<string, number>>((acc, i) => {
     acc[i.category] = (acc[i.category] ?? 0) + 1;
     return acc;
   }, {});
-  const topCategory = Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0];
-  if (!topCategory) return null;
-  const template = CATEGORY_NOTE_TEMPLATES[month % CATEGORY_NOTE_TEMPLATES.length];
-  return template(month, topCategory);
+  const topEntry = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  if (topEntry) {
+    sentences.push(`이 달엔 ${topEntry[0]}가 ${topEntry[1]}가지나 제철을 맞았어요.`);
+  }
+
+  const withOrigin = monthData.ingredients.find((i) => i.origin);
+  if (withOrigin) {
+    sentences.push(`${withOrigin.origin}에서 온 ${withOrigin.name}도 놓치면 아쉬워요.`);
+  }
+
+  sentences.push(`총 ${monthData.ingredients.length}가지 제철 식재료를 지금 만나보세요.`);
+
+  return sentences.join(' ');
 }
 
 export default function SeasonalPage() {
@@ -72,11 +69,12 @@ export default function SeasonalPage() {
     });
   }, [monthData, activeCategory, query]);
 
-  // 에디토리얼 노트는 카테고리 필터와 무관하게 "이번 달 전체" 기준으로 한 번만 계산
-  // (필터 바꿀 때마다 문구가 흔들리지 않도록)
+  const isCurrentMonth = selectedMonth === getCurrentMonth();
+
+  // 풍부한 노트는 "이번 달"(오늘 기준)일 때만 보여줌. 다른 달엔 굳이 안 보여줌.
   const editorialNote = useMemo(
-    () => (monthData ? buildEditorialNote(monthData.month, monthData.ingredients) : null),
-    [monthData]
+    () => (isCurrentMonth ? buildCurrentMonthNote(monthData) : null),
+    [isCurrentMonth, monthData]
   );
 
   if (!monthData) return null;
@@ -113,9 +111,11 @@ export default function SeasonalPage() {
             <span className="text-[12px] text-terracotta font-medium">{monthData.solarTerm}</span>
           </div>
           {editorialNote && (
-            <p className="font-display text-[13.5px] text-ink-soft leading-relaxed tracking-tight">
-              🌿 {editorialNote}
-            </p>
+            <div className="bg-cream-warm rounded-2xl px-4 py-3.5 mt-2">
+              <p className="font-display text-[13.5px] text-ink leading-relaxed tracking-tight">
+                🌿 {editorialNote}
+              </p>
+            </div>
           )}
         </section>
 
