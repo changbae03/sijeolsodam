@@ -60,6 +60,23 @@ GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-images.
 
 이미 Blob에 업로드된 이미지가 있는 항목은 건너뛰므로 중간에 끊겨도 다시 실행하면 이어서 처리됩니다. 실행 후 `git diff`로 결과를 확인하세요.
 
+## AI 식재료 사진 생성 (선택)
+
+식재료 원물 사진(제철 카드, 식재료 상세 hero 등에 쓰임)도 같은 방식으로 생성할 수 있습니다. 위 레시피 이미지 생성과 동일한 `BLOB_READ_WRITE_TOKEN`을 사용합니다.
+
+```bash
+# 안전을 위해 먼저 식재료 1개만 테스트
+GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-ingredient-images.ts --ingredient=햇감자
+
+# 결과가 마음에 들면, 사진이 아직 없는 식재료 전체 실행
+GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-ingredient-images.ts --all
+
+# 기존 Unsplash 사진들도 같은 톤으로 다시 만들고 싶다면 (전체 109개, 시간/비용 큼)
+GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-ingredient-images.ts --all --replace-existing
+```
+
+원물 사진만 생성하도록 프롬프트에 명시되어 있고(`src/components/ui/ART_DIRECTION.md`의 가이드를 그대로 따름), 이미 Blob에 업로드된 사진은 항상 건너뛰어서 안전합니다.
+
 ## 제철 식재료 상세 정보 생성 (선택)
 
 홈 화면에서 식재료 카드를 누르면 나오는 상세 정보(영양, 고르는 법, 손질·보관 팁, 어울리는 조리법)를 AI로 생성할 수 있습니다.

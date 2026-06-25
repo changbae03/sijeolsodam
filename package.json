@@ -9,6 +9,7 @@
     "lint": "eslint",
     "generate:checkpoints": "tsx scripts/generate-checkpoints.ts",
     "generate:images": "tsx scripts/generate-images.ts",
+    "generate:ingredient-images": "tsx scripts/generate-ingredient-images.ts",
     "generate:ingredients": "tsx scripts/generate-ingredient-details.ts"
   },
   "dependencies": {

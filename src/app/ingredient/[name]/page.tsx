@@ -1,11 +1,13 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
+import { fetchPriceInsight, PriceInsight } from '@/lib/price-insight';
 import { Badge, Button, Card } from '@/components/ui';
 import RecipeCard from '@/components/RecipeCard';
 import { SeasonalIngredient } from '@/data/types';
@@ -36,6 +38,20 @@ export default function IngredientDetailPage() {
   const name = decodeURIComponent(params.name);
 
   const found = findIngredientByName(name);
+
+  const [priceInsight, setPriceInsight] = useState<PriceInsight | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- 식재료가 바뀔 때 이전 가격 정보를 정리
+    setPriceInsight(null);
+    fetchPriceInsight(name).then((result) => {
+      if (!cancelled) setPriceInsight(result);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [name]);
 
   if (!found) {
     return (
@@ -143,6 +159,52 @@ export default function IngredientDetailPage() {
           <section className="mb-8">
             <SectionHeader emoji="📦" title="보관 팁" />
             <p className="text-[13.5px] text-ink leading-relaxed mt-3">{ingredient.tip}</p>
+          </section>
+        )}
+
+        {/* ============================================
+            5-2. 가격 동향 — 컴팩트, 차트 없음
+           ============================================ */}
+        {priceInsight && (
+          <section className="mb-8">
+            <SectionHeader emoji="💰" title="가격 동향" />
+            <Card padding="md" className="mt-3">
+              <div className="flex items-baseline justify-between">
+                <span className="text-[12px] text-ink-soft">현재 평균가</span>
+                <span className="text-[16px] text-ink font-semibold tabular-nums">
+                  {priceInsight.currentPrice.toLocaleString()}원
+                </span>
+              </div>
+              <div className="flex items-center gap-4 mt-2 text-[12px] text-ink-soft">
+                {priceInsight.vsLastWeekPct !== null && (
+                  <span>
+                    지난주 대비{' '}
+                    <span
+                      className={
+                        priceInsight.vsLastWeekPct < 0 ? 'text-sage font-medium' : 'text-terracotta font-medium'
+                      }
+                    >
+                      {priceInsight.vsLastWeekPct > 0 ? '+' : ''}
+                      {priceInsight.vsLastWeekPct}%
+                    </span>
+                  </span>
+                )}
+                {priceInsight.vsLastMonthPct !== null && (
+                  <span>
+                    지난달 대비{' '}
+                    <span
+                      className={
+                        priceInsight.vsLastMonthPct < 0 ? 'text-sage font-medium' : 'text-terracotta font-medium'
+                      }
+                    >
+                      {priceInsight.vsLastMonthPct > 0 ? '+' : ''}
+                      {priceInsight.vsLastMonthPct}%
+                    </span>
+                  </span>
+                )}
+              </div>
+              <p className="text-[13px] text-ink font-medium mt-3">{priceInsight.recommendation}</p>
+            </Card>
           </section>
         )}
 

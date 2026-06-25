@@ -3,12 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'motion/react';
 import { getCurrentMonthData } from '@/lib/season';
-import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { SeasonalIngredient } from '@/data/types';
-import { SearchBar, Badge } from '@/components/ui';
+import { SearchBar } from '@/components/ui';
+import IngredientFeatureCard from '@/components/IngredientFeatureCard';
 import Logo from '@/components/Logo';
 
 /** 설명을 "지금 ~로 ~를 만들어보세요" 같은 행동 유도형 문장으로 변환. 매칭 레시피가 없으면 원래 설명으로 대체. */
@@ -61,7 +60,11 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <HeroIngredientCard ingredient={heroIngredient} />
+          <IngredientFeatureCard
+            ingredient={heroIngredient}
+            descriptionOverride={getActionLine(heroIngredient)}
+            priceDisplay="line"
+          />
         </section>
 
         {/* ============================================
@@ -129,52 +132,5 @@ export default function HomePage() {
         </section>
       </div>
     </main>
-  );
-}
-
-/* ============================================================
-   대표 식재료 카드 — 오늘의 제철, 화면에 단 하나
-   ============================================================ */
-function HeroIngredientCard({ ingredient }: { ingredient: SeasonalIngredient }) {
-  const found = findIngredientByName(ingredient.name);
-  const seasonLabel = found ? formatSeasonMonths(found.months) : '';
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-    >
-      <Link href={`/ingredient/${encodeURIComponent(ingredient.name)}`} className="block group">
-        {ingredient.imageUrl && (
-          <div className="ingredient-frame rounded-[20px] mb-3">
-            <div className="relative w-full aspect-[5/4] rounded-[14px] overflow-hidden shadow-[0_6px_20px_-4px_rgba(44,42,38,0.14)]">
-              <Image
-                src={ingredient.imageUrl}
-                alt={ingredient.name}
-                fill
-                sizes="(max-width: 768px) 100vw, 448px"
-                className="object-cover img-editorial transition-transform duration-700 group-hover:scale-[1.02]"
-              />
-            </div>
-          </div>
-        )}
-        <div className="px-1">
-          <div className="flex items-center gap-2 mb-1.5">
-            <h3 className="font-display text-[18px] text-ink font-medium tracking-tight">
-              {ingredient.emoji} {ingredient.name}
-            </h3>
-            {seasonLabel && (
-              <Badge variant="sage" size="sm">
-                제철 {seasonLabel}
-              </Badge>
-            )}
-          </div>
-          <p className="text-[12.5px] text-terracotta leading-relaxed line-clamp-1 font-medium">
-            {getActionLine(ingredient)}
-          </p>
-        </div>
-      </Link>
-    </motion.div>
   );
 }
