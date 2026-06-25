@@ -22,11 +22,7 @@ const CATEGORY_CHIPS: ('전체' | IngredientCategory | '버섯' | '곡물')[] = 
   '곡물',
 ];
 
-type GridItem =
-  | { type: 'ingredient'; ingredient: SeasonalIngredient }
-  | { type: 'note'; text: string };
-
-/** 그리드 중간에 끼워 넣을 가벼운 에디토리얼 한 줄. 데이터에서 자연스럽게 뽑아냄. */
+/** 그리드 위에 한 번 보여줄 가벼운 에디토리얼 한 줄. 데이터에서 자연스럽게 뽑아냄. */
 // 매달 같은 문구가 반복되지 않도록 템플릿을 여러 개 두고 월 기반으로 골라 씀
 const ORIGIN_NOTE_TEMPLATES = [
   (origin: string, name: string) => `${origin}에서 온 ${name}, 지금이 한창 물오른 시기예요.`,
@@ -76,15 +72,12 @@ export default function SeasonalPage() {
     });
   }, [monthData, activeCategory, query]);
 
-  // 식재료 카드 사이에 에디토리얼 노트를 한 번 끼워 넣음 (6번째 카드 뒤)
-  const gridItems = useMemo<GridItem[]>(() => {
-    const items: GridItem[] = filtered.map((ing) => ({ type: 'ingredient', ingredient: ing }));
-    if (filtered.length > 6) {
-      const note = buildEditorialNote(selectedMonth, filtered);
-      if (note) items.splice(6, 0, { type: 'note', text: note });
-    }
-    return items;
-  }, [filtered, selectedMonth]);
+  // 에디토리얼 노트는 카테고리 필터와 무관하게 "이번 달 전체" 기준으로 한 번만 계산
+  // (필터 바꿀 때마다 문구가 흔들리지 않도록)
+  const editorialNote = useMemo(
+    () => (monthData ? buildEditorialNote(monthData.month, monthData.ingredients) : null),
+    [monthData]
+  );
 
   if (!monthData) return null;
 
@@ -110,15 +103,20 @@ export default function SeasonalPage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2. 에디토리얼 월 헤더
+            2. 에디토리얼 월 헤더 + 한 줄 노트
            ============================================ */}
         <section className="pt-5 pb-4">
-          <div className="flex items-baseline justify-between mb-3.5">
+          <div className="flex items-baseline justify-between mb-2">
             <h1 className="font-display text-[24px] text-ink font-medium tracking-tight">
               {monthData.month}월 제철
             </h1>
             <span className="text-[12px] text-terracotta font-medium">{monthData.solarTerm}</span>
           </div>
+          {editorialNote && (
+            <p className="font-display text-[13.5px] text-ink-soft leading-relaxed tracking-tight">
+              🌿 {editorialNote}
+            </p>
+          )}
         </section>
 
         {/* ============================================
@@ -160,31 +158,19 @@ export default function SeasonalPage() {
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
-            {gridItems.length === 0 ? (
+            {filtered.length === 0 ? (
               <p className="text-[13px] text-ink-soft/70 text-center py-16">
                 이번 달엔 아직 {activeCategory} 식재료가 없어요.
               </p>
             ) : (
               <div className="grid grid-cols-2 gap-4">
-                {gridItems.map((item, idx) =>
-                  item.type === 'note' ? (
-                    <div
-                      key={`note-${idx}`}
-                      className="col-span-2 bg-cream-warm rounded-2xl px-5 py-4 flex items-start gap-2.5"
-                    >
-                      <span className="text-[15px] leading-none mt-0.5">🌿</span>
-                      <p className="font-display text-[13.5px] text-ink leading-relaxed tracking-tight">
-                        {item.text}
-                      </p>
-                    </div>
-                  ) : (
-                    <IngredientGridCard
-                      key={item.ingredient.name}
-                      ingredient={item.ingredient}
-                      hasPriceData={Boolean(getKamisMappingByName(item.ingredient.name))}
-                    />
-                  )
-                )}
+                {filtered.map((ing) => (
+                  <IngredientGridCard
+                    key={ing.name}
+                    ingredient={ing}
+                    hasPriceData={Boolean(getKamisMappingByName(ing.name))}
+                  />
+                ))}
               </div>
             )}
           </motion.section>
