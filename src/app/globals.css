@@ -12,12 +12,12 @@
   /* ---------- COLOR TOKENS ---------- */
 
   /* Neutrals — 종이와 잉크 */
-  --color-cream: #f8f6f2;        /* 메인 배경, 따뜻한 베이지 */
-  --color-cream-warm: #f2eee5;   /* 보조 배경, 조금 더 진한 톤 */
+  --color-cream: #fbf9f6;        /* 메인 배경, 따뜻한 베이지 (더 밝게) */
+  --color-cream-warm: #f6f1e8;   /* 보조 배경, 조금 더 진한 톤 (더 밝게) */
   --color-paper: #fffdf9;        /* 카드 배경, 거의 흰색 */
   --color-ink: #2c2a26;          /* 주요 텍스트 (찰떡 어울리는 깊은 차콜) */
   --color-ink-soft: #5a5650;     /* 부 텍스트 */
-  --color-border-soft: #e3ddd0;  /* 보더 */
+  --color-border-soft: #e8e2d3;  /* 보더 (더 밝게) */
 
   /* Accents — 자연에서 가져온 색 */
   --color-sage: #5b6e54;         /* 세이지 그린 (메인 액센트) */
@@ -175,7 +175,7 @@ p, h1, h2, h3, h4 {
    ============================================ */
 
 .img-editorial {
-  filter: saturate(0.92) contrast(0.96) brightness(1.04) sepia(0.05);
+  filter: saturate(0.92) contrast(0.95) brightness(1.08) sepia(0.04);
 }
 
 /* ============================================

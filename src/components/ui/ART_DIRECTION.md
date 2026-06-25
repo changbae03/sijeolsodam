@@ -43,7 +43,7 @@
 
 ```css
 .img-editorial {
-  filter: saturate(0.92) contrast(0.96) brightness(1.04) sepia(0.05);
+  filter: saturate(0.92) contrast(0.95) brightness(1.08) sepia(0.04);
 }
 ```
 
