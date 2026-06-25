@@ -27,30 +27,53 @@ const CATEGORY_CHIPS: ('전체' | IngredientCategory | '버섯' | '곡물')[] = 
  * 절기/계절, 대표 카테고리, 산지 하이라이트, 전체 가짓수를 한 문단으로 엮음.
  * 다른 달을 둘러볼 때는 이 노트를 굳이 보여주지 않음(현재 달에만 특별하게).
  */
+/** 받침 여부로 '이/가', '을/를' 같은 조사를 자동으로 골라줌 */
+function hasFinalConsonant(word: string): boolean {
+  const lastChar = word[word.length - 1];
+  const code = lastChar.charCodeAt(0) - 0xac00;
+  if (code < 0 || code > 11171) return false; // 한글 음절이 아니면 받침 없는 걸로 취급
+  return code % 28 !== 0;
+}
+function withParticle(word: string, withConsonant: string, withoutConsonant: string): string {
+  return word + (hasFinalConsonant(word) ? withConsonant : withoutConsonant);
+}
+
+/** 1~12 정도의 작은 수는 "다섯 가지"처럼 순우리말 수사로 — 숫자보다 에디토리얼 톤에 어울림 */
+const KOREAN_COUNT = ['', '한', '두', '세', '네', '다섯', '여섯', '일곱', '여덟', '아홉', '열', '열한', '열두'];
+function toKoreanCount(n: number): string {
+  return KOREAN_COUNT[n] ?? `${n}`;
+}
+
 function buildCurrentMonthNote(monthData: ReturnType<typeof getMonthData>): string | null {
   if (!monthData || monthData.ingredients.length === 0) return null;
-
-  const sentences: string[] = [];
-
-  sentences.push(`${monthData.solarTerm}, ${monthData.season}의 한가운데예요.`);
 
   const counts = monthData.ingredients.reduce<Record<string, number>>((acc, i) => {
     acc[i.category] = (acc[i.category] ?? 0) + 1;
     return acc;
   }, {});
   const topEntry = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
-  if (topEntry) {
-    sentences.push(`이 달엔 ${topEntry[0]}가 ${topEntry[1]}가지나 제철을 맞았어요.`);
-  }
-
   const withOrigin = monthData.ingredients.find((i) => i.origin);
-  if (withOrigin) {
-    sentences.push(`${withOrigin.origin}에서 온 ${withOrigin.name}도 놓치면 아쉬워요.`);
+
+  const parts: string[] = [`${monthData.solarTerm}, ${monthData.season}의 한가운데예요.`];
+
+  if (topEntry) {
+    const [topCategory, topCount] = topEntry;
+    let clause = `이 달엔 ${withParticle(topCategory, '이', '가')} ${toKoreanCount(topCount)} 가지나 제철을 맞았`;
+    if (withOrigin) {
+      clause += `고, ${withOrigin.origin}에서 올라온 ${withOrigin.name}도 놓치면 아쉬워요.`;
+    } else {
+      clause += `어요.`;
+    }
+    parts.push(clause);
+  } else if (withOrigin) {
+    parts.push(`${withOrigin.origin}에서 올라온 ${withOrigin.name}을 놓치지 마세요.`);
   }
 
-  sentences.push(`총 ${monthData.ingredients.length}가지 제철 식재료를 지금 만나보세요.`);
+  parts.push(
+    `지금 만나볼 수 있는 제철 식재료는 모두 ${toKoreanCount(monthData.ingredients.length)} 가지예요.`
+  );
 
-  return sentences.join(' ');
+  return parts.join(' ');
 }
 
 export default function SeasonalPage() {
