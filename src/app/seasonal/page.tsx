@@ -8,7 +8,7 @@ import { getKamisMappingByName } from '@/lib/kamis-mapping';
 import { IngredientCategory } from '@/data/types';
 import { SearchBar } from '@/components/ui';
 import MonthStrip from '@/components/MonthStrip';
-import IngredientFeatureCard from '@/components/IngredientFeatureCard';
+import IngredientCarouselCard from '@/components/IngredientCarouselCard';
 import IngredientGridCard from '@/components/IngredientGridCard';
 import Logo from '@/components/Logo';
 
@@ -37,12 +37,14 @@ export default function SeasonalPage() {
 
   const filtered = useMemo(() => {
     if (!monthData) return [];
+    const featuredNames = new Set(featured.map((f) => f.name));
     return monthData.ingredients.filter((ing) => {
+      if (featuredNames.has(ing.name)) return false; // 대표 캐러셀과 중복 노출 방지
       const matchesCategory = activeCategory === '전체' || ing.category === activeCategory;
       const matchesQuery = !query.trim() || ing.name.includes(query.trim());
       return matchesCategory && matchesQuery;
     });
-  }, [monthData, activeCategory, query]);
+  }, [monthData, activeCategory, query, featured]);
 
   if (!monthData) return null;
 
@@ -68,20 +70,18 @@ export default function SeasonalPage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2. 이번 달 hero — 미니멀, 텍스트 최소
+            2. 이번 달 hero — 미니멀, 한 줄
            ============================================ */}
-        <section className="pt-6 pb-7">
-          <div className="flex items-baseline justify-between mb-5">
-            <div>
-              <p className="text-[12px] text-terracotta font-medium mb-1.5">
-                {monthData.solarTerm}
-              </p>
-              <h1 className="font-display text-[30px] text-ink font-medium tracking-tight">
-                {monthData.month}월 제철
-              </h1>
-            </div>
-            <span className="text-[12.5px] text-ink-soft">{monthData.season}</span>
+        <section className="pt-5 pb-4">
+          <div className="flex items-baseline justify-between mb-3.5">
+            <h1 className="font-display text-[24px] text-ink font-medium tracking-tight">
+              {monthData.month}월 제철
+            </h1>
+            <span className="text-[12px] text-terracotta font-medium">{monthData.solarTerm}</span>
           </div>
+        </section>
+
+        <section className="mb-6">
           <MonthStrip selectedMonth={selectedMonth} onSelectMonth={setSelectedMonth} />
         </section>
 
@@ -94,16 +94,16 @@ export default function SeasonalPage() {
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
             {/* ============================================
-                3. 대표 제철 식재료 — 큰 카드 3개
+                3. 대표 제철 식재료 — 가로 캐러셀, 딱 3개
                ============================================ */}
             {featured.length > 0 && (
-              <section className="mb-10">
-                <div className="space-y-7">
+              <section className="mb-8 -mx-5">
+                <div className="flex gap-3 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
                   {featured.map((ing, idx) => (
-                    <IngredientFeatureCard
+                    <IngredientCarouselCard
                       key={ing.name}
                       ingredient={ing}
-                      priceDisplay={getKamisMappingByName(ing.name) ? 'badge' : 'none'}
+                      hasPriceData={Boolean(getKamisMappingByName(ing.name))}
                       animationDelay={idx * 0.06}
                     />
                   ))}
