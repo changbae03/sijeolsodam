@@ -5,10 +5,9 @@ import { AnimatePresence, motion } from 'motion/react';
 import { getMonthData } from '@/data/months';
 import { getCurrentMonth } from '@/lib/season';
 import { getKamisMappingByName } from '@/lib/kamis-mapping';
-import { IngredientCategory } from '@/data/types';
+import { IngredientCategory, SeasonalIngredient } from '@/data/types';
 import { SearchBar } from '@/components/ui';
 import MonthStrip from '@/components/MonthStrip';
-import IngredientCarouselCard from '@/components/IngredientCarouselCard';
 import IngredientGridCard from '@/components/IngredientGridCard';
 import Logo from '@/components/Logo';
 
@@ -23,6 +22,28 @@ const CATEGORY_CHIPS: ('전체' | IngredientCategory | '버섯' | '곡물')[] = 
   '곡물',
 ];
 
+type GridItem =
+  | { type: 'ingredient'; ingredient: SeasonalIngredient }
+  | { type: 'note'; text: string };
+
+/** 그리드 중간에 끼워 넣을 가벼운 에디토리얼 한 줄. 데이터에서 자연스럽게 뽑아냄. */
+function buildEditorialNote(month: number, items: SeasonalIngredient[]): string | null {
+  if (items.length === 0) return null;
+
+  const withOrigin = items.find((i) => i.origin);
+  if (withOrigin) {
+    return `${withOrigin.origin}에서 온 ${withOrigin.name}, 지금이 가장 맛있는 시기예요.`;
+  }
+
+  const counts = items.reduce<Record<string, number>>((acc, i) => {
+    acc[i.category] = (acc[i.category] ?? 0) + 1;
+    return acc;
+  }, {});
+  const topCategory = Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0];
+  if (!topCategory) return null;
+  return `${month}월엔 ${topCategory}가 유독 풍성한 계절이에요.`;
+}
+
 export default function SeasonalPage() {
   const [selectedMonth, setSelectedMonth] = useState(getCurrentMonth());
   const [activeCategory, setActiveCategory] = useState<typeof CATEGORY_CHIPS[number]>('전체');
@@ -30,21 +51,24 @@ export default function SeasonalPage() {
 
   const monthData = getMonthData(selectedMonth);
 
-  const featured = useMemo(
-    () => monthData?.ingredients.filter((i) => i.imageUrl).slice(0, 3) ?? [],
-    [monthData]
-  );
-
   const filtered = useMemo(() => {
     if (!monthData) return [];
-    const featuredNames = new Set(featured.map((f) => f.name));
     return monthData.ingredients.filter((ing) => {
-      if (featuredNames.has(ing.name)) return false; // 대표 캐러셀과 중복 노출 방지
       const matchesCategory = activeCategory === '전체' || ing.category === activeCategory;
       const matchesQuery = !query.trim() || ing.name.includes(query.trim());
       return matchesCategory && matchesQuery;
     });
-  }, [monthData, activeCategory, query, featured]);
+  }, [monthData, activeCategory, query]);
+
+  // 식재료 카드 사이에 에디토리얼 노트를 한 번 끼워 넣음 (6번째 카드 뒤)
+  const gridItems = useMemo<GridItem[]>(() => {
+    const items: GridItem[] = filtered.map((ing) => ({ type: 'ingredient', ingredient: ing }));
+    if (filtered.length > 6) {
+      const note = buildEditorialNote(selectedMonth, filtered);
+      if (note) items.splice(6, 0, { type: 'note', text: note });
+    }
+    return items;
+  }, [filtered, selectedMonth]);
 
   if (!monthData) return null;
 
@@ -70,7 +94,7 @@ export default function SeasonalPage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2. 이번 달 hero — 미니멀, 한 줄
+            2. 에디토리얼 월 헤더
            ============================================ */}
         <section className="pt-5 pb-4">
           <div className="flex items-baseline justify-between mb-3.5">
@@ -81,78 +105,73 @@ export default function SeasonalPage() {
           </div>
         </section>
 
+        {/* ============================================
+            3. 가로 월 선택기
+           ============================================ */}
         <section className="mb-6">
           <MonthStrip selectedMonth={selectedMonth} onSelectMonth={setSelectedMonth} />
         </section>
 
+        {/* ============================================
+            4. 카테고리 칩
+           ============================================ */}
+        <section className="mb-5">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+            {CATEGORY_CHIPS.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-[13px] font-medium transition-colors ${
+                  activeCategory === cat
+                    ? 'bg-ink text-cream'
+                    : 'bg-paper text-ink-soft border border-border-soft'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </section>
+
+        {/* ============================================
+            5. 단일 식재료 그리드 (대표 섹션 없음, 중복 없음)
+           ============================================ */}
         <AnimatePresence mode="wait">
-          <motion.div
-            key={selectedMonth}
+          <motion.section
+            key={`${selectedMonth}-${activeCategory}-${query}`}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
-            {/* ============================================
-                3. 대표 제철 식재료 — 가로 캐러셀, 딱 3개
-               ============================================ */}
-            {featured.length > 0 && (
-              <section className="mb-8 -mx-5">
-                <div className="flex gap-3 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
-                  {featured.map((ing, idx) => (
-                    <IngredientCarouselCard
-                      key={ing.name}
-                      ingredient={ing}
-                      hasPriceData={Boolean(getKamisMappingByName(ing.name))}
-                      animationDelay={idx * 0.06}
-                    />
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* ============================================
-                4. 카테고리 칩
-               ============================================ */}
-            <section className="mb-5">
-              <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-                {CATEGORY_CHIPS.map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setActiveCategory(cat)}
-                    className={`flex-shrink-0 px-4 py-2 rounded-full text-[13px] font-medium transition-colors ${
-                      activeCategory === cat
-                        ? 'bg-ink text-cream'
-                        : 'bg-paper text-ink-soft border border-border-soft'
-                    }`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </section>
-
-            {/* ============================================
-                5. 전체 식재료 그리드
-               ============================================ */}
-            <section>
-              {filtered.length === 0 ? (
-                <p className="text-[13px] text-ink-soft/70 text-center py-16">
-                  이번 달엔 아직 {activeCategory} 식재료가 없어요.
-                </p>
-              ) : (
-                <div className="grid grid-cols-2 gap-4">
-                  {filtered.map((ing) => (
+            {gridItems.length === 0 ? (
+              <p className="text-[13px] text-ink-soft/70 text-center py-16">
+                이번 달엔 아직 {activeCategory} 식재료가 없어요.
+              </p>
+            ) : (
+              <div className="grid grid-cols-2 gap-4">
+                {gridItems.map((item, idx) =>
+                  item.type === 'note' ? (
+                    <div
+                      key={`note-${idx}`}
+                      className="col-span-2 bg-cream-warm rounded-2xl px-5 py-4 flex items-start gap-2.5"
+                    >
+                      <span className="text-[15px] leading-none mt-0.5">🌿</span>
+                      <p className="font-display text-[13.5px] text-ink leading-relaxed tracking-tight">
+                        {item.text}
+                      </p>
+                    </div>
+                  ) : (
                     <IngredientGridCard
-                      key={ing.name}
-                      ingredient={ing}
-                      hasPriceData={Boolean(getKamisMappingByName(ing.name))}
+                      key={item.ingredient.name}
+                      ingredient={item.ingredient}
+                      hasPriceData={Boolean(getKamisMappingByName(item.ingredient.name))}
                     />
-                  ))}
-                </div>
-              )}
-            </section>
-          </motion.div>
+                  )
+                )}
+              </div>
+            )}
+          </motion.section>
         </AnimatePresence>
       </div>
     </main>

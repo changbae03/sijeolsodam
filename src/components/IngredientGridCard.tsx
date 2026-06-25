@@ -2,7 +2,9 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { SeasonalIngredient } from '@/data/types';
+import { Badge } from '@/components/ui';
 import PriceBadge from './PriceBadge';
 
 interface IngredientGridCardProps {
@@ -12,11 +14,13 @@ interface IngredientGridCardProps {
 }
 
 /**
- * 제철 탭의 "전체 식재료" 스크롤 그리드에 쓰는 컴팩트 카드.
- * 원물 사진 + 이름만, 가격 정보가 있을 때만 아주 작은 배지로.
- * 백과사전처럼 느껴지지 않도록 텍스트를 최소화.
+ * 제철 탭의 단일 식재료 그리드에 쓰는 카드.
+ * 에디토리얼 이미지 + 이름 + 제철 배지 + 구매 인사이트 배지 + 한 줄 설명.
  */
 export default function IngredientGridCard({ ingredient, hasPriceData }: IngredientGridCardProps) {
+  const found = findIngredientByName(ingredient.name);
+  const seasonLabel = found ? formatSeasonMonths(found.months) : '';
+
   return (
     <Link href={`/ingredient/${encodeURIComponent(ingredient.name)}`} className="block group">
       <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-cream-warm mb-2">
@@ -39,8 +43,19 @@ export default function IngredientGridCard({ ingredient, hasPriceData }: Ingredi
           </div>
         )}
       </div>
-      <p className="text-[12.5px] font-medium text-ink leading-tight">
-        {ingredient.emoji} {ingredient.name}
+
+      <div className="flex items-center gap-1.5 flex-wrap">
+        <span className="text-[12.5px] font-medium text-ink leading-tight">
+          {ingredient.emoji} {ingredient.name}
+        </span>
+        {seasonLabel && (
+          <Badge variant="sage" size="sm">
+            {seasonLabel}
+          </Badge>
+        )}
+      </div>
+      <p className="text-[11px] text-ink-soft/70 leading-snug mt-1 line-clamp-1">
+        {ingredient.description}
       </p>
     </Link>
   );
