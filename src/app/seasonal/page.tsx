@@ -27,12 +27,27 @@ type GridItem =
   | { type: 'note'; text: string };
 
 /** 그리드 중간에 끼워 넣을 가벼운 에디토리얼 한 줄. 데이터에서 자연스럽게 뽑아냄. */
+// 매달 같은 문구가 반복되지 않도록 템플릿을 여러 개 두고 월 기반으로 골라 씀
+const ORIGIN_NOTE_TEMPLATES = [
+  (origin: string, name: string) => `${origin}에서 온 ${name}, 지금이 한창 물오른 시기예요.`,
+  (origin: string, name: string) => `${origin} ${name}가 올해도 제 맛을 내고 있어요.`,
+  (origin: string, name: string) => `${origin}산 ${name}, 놓치면 아쉬운 제철이에요.`,
+  (origin: string, name: string) => `${origin}에서 갓 올라온 ${name}을 만나보세요.`,
+];
+
+const CATEGORY_NOTE_TEMPLATES = [
+  (month: number, category: string) => `${month}월엔 ${category}가 유독 풍성한 계절이에요.`,
+  (month: number, category: string) => `${month}월 식탁엔 ${category}를 빼놓을 수 없어요.`,
+  (month: number, category: string) => `${category}가 가장 다채로워지는 ${month}월입니다.`,
+];
+
 function buildEditorialNote(month: number, items: SeasonalIngredient[]): string | null {
   if (items.length === 0) return null;
 
   const withOrigin = items.find((i) => i.origin);
   if (withOrigin) {
-    return `${withOrigin.origin}에서 온 ${withOrigin.name}, 지금이 가장 맛있는 시기예요.`;
+    const template = ORIGIN_NOTE_TEMPLATES[month % ORIGIN_NOTE_TEMPLATES.length];
+    return template(withOrigin.origin!, withOrigin.name);
   }
 
   const counts = items.reduce<Record<string, number>>((acc, i) => {
@@ -41,7 +56,8 @@ function buildEditorialNote(month: number, items: SeasonalIngredient[]): string 
   }, {});
   const topCategory = Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0];
   if (!topCategory) return null;
-  return `${month}월엔 ${topCategory}가 유독 풍성한 계절이에요.`;
+  const template = CATEGORY_NOTE_TEMPLATES[month % CATEGORY_NOTE_TEMPLATES.length];
+  return template(month, topCategory);
 }
 
 export default function SeasonalPage() {
