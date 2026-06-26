@@ -54,6 +54,9 @@ export default function IngredientGridCard({ ingredient, hasPriceData }: Ingredi
           </Badge>
         )}
       </div>
+      {ingredient.origin && (
+        <p className="text-[10.5px] text-ink-soft/60 mt-0.5">{ingredient.origin}</p>
+      )}
       <p className="text-[11px] text-ink-soft/70 leading-snug mt-1 line-clamp-1">
         {ingredient.description}
       </p>

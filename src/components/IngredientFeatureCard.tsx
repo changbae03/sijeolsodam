@@ -65,6 +65,9 @@ export default function IngredientFeatureCard({
             {priceDisplay === 'badge' && <PriceBadge name={ingredient.name} variant="badge" />}
           {/* 큰 카드는 최대 3장 정도라 fetch 비용이 작아 항상 시도해도 무방함 */}
           </div>
+          {ingredient.origin && (
+            <p className="text-[11.5px] text-ink-soft/60 mb-1">📍 {ingredient.origin}</p>
+          )}
           <p
             className={
               descriptionOverride

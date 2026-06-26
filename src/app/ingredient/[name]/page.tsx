@@ -122,6 +122,9 @@ export default function IngredientDetailPage() {
               제철 {formatSeasonMonths(months)}
             </Badge>
           </div>
+          {ingredient.origin && (
+            <p className="text-[12px] text-ink-soft/70 mt-1.5">📍 {ingredient.origin}</p>
+          )}
         </section>
 
         {/* ============================================
