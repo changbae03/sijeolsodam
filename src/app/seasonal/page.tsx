@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { getMonthData } from '@/data/months';
+import { getMonthData, searchIngredientsAcrossMonths } from '@/data/months';
 import { getCurrentMonth } from '@/lib/season';
 import { getKamisMappingByName } from '@/lib/kamis-mapping';
 import { IngredientCategory } from '@/data/types';
@@ -77,14 +77,18 @@ export default function SeasonalPage() {
 
   const monthData = getMonthData(selectedMonth);
 
+  const isSearching = query.trim().length > 0;
+
   const filtered = useMemo(() => {
-    if (!monthData) return [];
-    return monthData.ingredients.filter((ing) => {
-      const matchesCategory = activeCategory === '전체' || ing.category === activeCategory;
-      const matchesQuery = !query.trim() || ing.name.includes(query.trim());
-      return matchesCategory && matchesQuery;
-    });
-  }, [monthData, activeCategory, query]);
+    // 검색어가 있으면 "지금 보고 있는 달"에 갇히지 않고 12개월 전체에서 찾음
+    const source = isSearching
+      ? searchIngredientsAcrossMonths(query)
+      : monthData?.ingredients ?? [];
+
+    return source.filter(
+      (ing) => activeCategory === '전체' || ing.category === activeCategory
+    );
+  }, [monthData, activeCategory, query, isSearching]);
 
   const isCurrentMonth = selectedMonth === getCurrentMonth();
 
@@ -175,9 +179,16 @@ export default function SeasonalPage() {
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
+            {isSearching && (
+              <p className="text-[12px] text-ink-soft/60 mb-3">
+                전체 12개월에서 찾은 결과예요 ({filtered.length}개)
+              </p>
+            )}
             {filtered.length === 0 ? (
               <p className="text-[13px] text-ink-soft/70 text-center py-16">
-                이번 달엔 아직 {activeCategory} 식재료가 없어요.
+                {isSearching
+                  ? `'${query.trim()}'으로 찾은 식재료가 없어요.`
+                  : `이번 달엔 아직 ${activeCategory} 식재료가 없어요.`}
               </p>
             ) : (
               <div className="grid grid-cols-2 gap-4">
