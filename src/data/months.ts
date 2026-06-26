@@ -213,7 +213,7 @@ export const monthsData: MonthData[] = [
       { name: '민어', emoji: '🐟', description: '여름 보양식의 대표, "복달임"에 즐기는 생선', category: '해산물', imageUrl: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=400&q=80' , nutrition: '단백질이 풍부해 기력 회복에 좋답니다.', howToChoose: '눈이 맑고 비늘이 고른 것을 고르세요.', tip: '내장을 제거하고 소금 간하여 보관해 보세요.', goesWellWith: '매운탕이나 찜으로 즐겨보세요.' },
       { name: '장어', emoji: '🐟', description: '기력 보충에 좋은 여름 보양식 재료', category: '해산물', imageUrl: 'https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?auto=format&fit=crop&w=400&q=80' , nutrition: '단백질과 비타민 A가 풍부하여 기력 회복에 아주 좋답니다.', howToChoose: '몸통이 두껍고 탄력이 있으며, 윤기가 흐르는 것을 고르세요.', tip: '손질된 장어를 구매하시고, 남은 것은 냉동 보관해 주세요.', goesWellWith: '구이나 덮밥으로 즐겨보세요.' },
       { name: '꽃게', emoji: '🦀', description: '여름 산란을 마치고 살이 차오르는 시기예요', category: '해산물', imageUrl: 'https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=400&q=80' , nutrition: '단백질과 필수 아미노산이 풍부하답니다.', howToChoose: '껍질이 단단하고 무거우며, 다리가 모두 붙어있는 것을 고르세요.', tip: '솔로 깨끗이 씻어 냉동 보관하면 신선함을 오래 유지할 수 있어요.', goesWellWith: '찜이나 탕으로 즐기면 더욱 좋아요.' },
-      { name: '옥수수', emoji: '🌽', description: '한여름 단맛이 가장 진한 별미 곡물', category: '채소', origin: '강원 정선·홍천' },
+      { name: '깻잎', emoji: '🌿', description: '향긋한 향으로 쌈과 무침에 두루 쓰이는 잎채소', category: '채소', origin: '경북 청도' },
       { name: '복분자', emoji: '🫐', description: '새콤달콤하고 진한 향의 여름 산딸기', category: '과일', origin: '전북 고창' },
       { name: '열무', emoji: '🥬', description: '아삭하고 시원해 여름 김치에 빠질 수 없는 채소', category: '채소' },
       { name: '오이', emoji: '🥒', description: '수분 가득하고 아삭한 한여름 대표 채소', category: '채소' },
