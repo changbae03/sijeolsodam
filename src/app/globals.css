@@ -12,7 +12,7 @@
   /* ---------- COLOR TOKENS ---------- */
 
   /* Neutrals — 종이와 잉크 */
-  --color-cream: #fdfbf8;        /* 메인 배경, 거의 화이트에 가까운 따뜻한 톤 */
+  --color-cream: #ffffff;        /* 메인 배경, 순백색 */
   --color-cream-warm: #f6f1e8;   /* 보조 배경, 조금 더 진한 톤 (더 밝게) */
   --color-paper: #fffdf9;        /* 카드 배경, 거의 흰색 */
   --color-ink: #2c2a26;          /* 주요 텍스트 (찰떡 어울리는 깊은 차콜) */
