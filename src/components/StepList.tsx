@@ -233,6 +233,12 @@ function StepItem({
             <p className="text-[12px] text-sage-dark leading-relaxed">{step.checkpoint}</p>
           </div>
         )}
+        {step.warning && (
+          <div className="flex items-start gap-1.5 mt-2 bg-terracotta/8 rounded-xl px-3 py-2">
+            <span className="text-[13px] shrink-0">⚠️</span>
+            <p className="text-[12px] text-terracotta leading-relaxed">{step.warning}</p>
+          </div>
+        )}
       </div>
     </motion.div>
   );

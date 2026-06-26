@@ -11,7 +11,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-1/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '매실청',
     description: '5월에 담근 매실청으로 새콤달콤한 비빔국수 양념을 만들어요. 더위가 시작되기 전, 산뜻한 입맛을 즐길 수 있는 메뉴입니다.',
     ingredients: [
@@ -45,7 +45,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-2/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1534080391025-a77b4afb154f?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '키조개',
     description: '늦봄 가장 살이 차오른 키조개 관자를 버터에 노릇하게 구워 그 자체의 단맛을 살린 요리예요. 레스토랑 메뉴 못지않은 근사한 한 접시입니다.',
     ingredients: [
@@ -57,9 +57,9 @@ export const recipesQ2: Recipe[] = [
       { name: '파슬리', amount: '약간' },
     ],
     steps: [
-      { title: '관자 손질', description: '관자는 키친타월로 물기를 완전히 제거하고 소금, 후추로 밑간합니다.', tip: '물기가 남아있으면 구울 때 기름이 튀고 노릇하게 익지 않아요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-2/step-59.png' },
-      { title: '마늘 준비', description: '마늘은 편으로 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-2/step-60.png' },
-      { title: '굽기', description: '달군 팬에 버터를 녹이고 마늘을 먼저 볶아 향을 낸 뒤, 관자를 올려 센 불에서 양면 각 1분 30초씩 노릇하게 굽습니다.', timerSeconds: 180, tip: '너무 오래 구우면 질겨지니 단시간에 강한 불로 구워주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-2/step-61.png' },
+      { title: '관자 손질', description: '관자는 키친타월로 물기를 완전히 제거하고 소금, 후추로 밑간합니다.', tip: '물기가 남아있으면 구울 때 기름이 튀고 노릇하게 익지 않아요.' },
+      { title: '마늘 준비', description: '마늘은 편으로 썰어둡니다.' },
+      { title: '굽기', description: '달군 팬에 버터를 녹이고 마늘을 먼저 볶아 향을 낸 뒤, 관자를 올려 센 불에서 양면 각 1분 30초씩 노릇하게 굽습니다.', timerSeconds: 180, tip: '너무 오래 구우면 질겨지니 단시간에 강한 불로 구워주세요.' },
       { title: '마무리', description: '레몬즙을 살짝 뿌리고 파슬리를 올려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-2/step-62.png' },
     ],
     tips: [
@@ -77,7 +77,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-3/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '완두콩',
     description: '아삭하고 달콤한 봄 완두콩을 베이컨과 함께 볶아낸 간단한 반찬이에요. 도시락 반찬으로도, 술안주로도 좋습니다.',
     ingredients: [
@@ -88,10 +88,10 @@ export const recipesQ2: Recipe[] = [
       { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '완두콩 데치기', description: '완두콩은 끓는 물에 2분간 데쳐 찬물에 헹굽니다.', timerSeconds: 120, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-3/step-90.png' },
-      { title: '재료 준비', description: '베이컨은 한입 크기로 자르고 마늘은 편으로 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-3/step-91.png' },
-      { title: '볶기', description: '팬에 올리브오일을 두르고 마늘과 베이컨을 먼저 볶아 기름이 나오면 완두콩을 넣고 함께 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-3/step-92.png' },
-      { title: '마무리', description: '소금, 후추로 간을 맞춰 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-3/step-93.png' },
+      { title: '완두콩 데치기', description: '완두콩은 끓는 물에 2분간 데쳐 찬물에 헹굽니다.', timerSeconds: 120 },
+      { title: '재료 준비', description: '베이컨은 한입 크기로 자르고 마늘은 편으로 썰어둡니다.' },
+      { title: '볶기', description: '팬에 올리브오일을 두르고 마늘과 베이컨을 먼저 볶아 기름이 나오면 완두콩을 넣고 함께 볶습니다.', timerSeconds: 180 },
+      { title: '마무리', description: '소금, 후추로 간을 맞춰 완성합니다.' },
     ],
     tips: [
       '완두콩은 너무 오래 볶으면 색이 칙칙해지니 단시간에 볶아주세요.',
@@ -108,7 +108,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-4/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '아스파라거스',
     description: '부드럽고 향긋한 봄 아스파라거스를 베이컨으로 말아 구운 손쉬운 별미예요. 화이트 와인과도 잘 어울리는 메뉴입니다.',
     ingredients: [
@@ -119,10 +119,10 @@ export const recipesQ2: Recipe[] = [
       { name: '파마산 치즈', amount: '약간' },
     ],
     steps: [
-      { title: '아스파라거스 손질', description: '아스파라거스는 밑동의 거친 껍질을 벗겨내고 끓는 물에 1분간 데칩니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-4/step-121.png' },
-      { title: '말기', description: '아스파라거스 2대씩을 베이컨 한 장으로 감아줍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-4/step-122.png' },
-      { title: '굽기', description: '달군 팬에 올리브오일을 두르고 베이컨이 노릇해질 때까지 굴려가며 굽습니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-4/step-123.png' },
-      { title: '마무리', description: '후추와 파마산 치즈를 뿌려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-4/step-124.png' },
+      { title: '아스파라거스 손질', description: '아스파라거스는 밑동의 거친 껍질을 벗겨내고 끓는 물에 1분간 데칩니다.', timerSeconds: 60 },
+      { title: '말기', description: '아스파라거스 2대씩을 베이컨 한 장으로 감아줍니다.' },
+      { title: '굽기', description: '달군 팬에 올리브오일을 두르고 베이컨이 노릇해질 때까지 굴려가며 굽습니다.', timerSeconds: 300 },
+      { title: '마무리', description: '후추와 파마산 치즈를 뿌려 완성합니다.' },
     ],
     tips: [
       '오븐에 200도로 12분간 구워도 더 균일하게 익힐 수 있어요.',
@@ -139,7 +139,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-5/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '방울토마토, 매실청',
     description: '새콤달콤한 매실청에 방울토마토를 절여 만든 산뜻한 디저트예요. 냉장고에 두고 입맛 없을 때 꺼내 먹기 좋습니다.',
     ingredients: [
@@ -149,9 +149,9 @@ export const recipesQ2: Recipe[] = [
       { name: '물', amount: '1/4컵' },
     ],
     steps: [
-      { title: '토마토 손질', description: '방울토마토는 꼭지를 떼고 끓는 물에 10초간 데친 뒤 찬물에 담가 껍질을 벗겨줍니다.', timerSeconds: 10, tip: '데친 후 찬물에 바로 담그면 껍질이 훨씬 잘 벗겨져요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-5/step-151.png' },
-      { title: '절임물 만들기', description: '매실청, 레몬즙, 물을 섞어 절임물을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-5/step-152.png' },
-      { title: '절이기', description: '껍질을 벗긴 토마토를 절임물에 넣고 냉장고에서 최소 2시간 숙성시킵니다.', timerSeconds: 7200, tip: '하룻밤 숙성시키면 더 깊은 맛이 들어요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-5/step-153.png' },
+      { title: '토마토 손질', description: '방울토마토는 꼭지를 떼고 끓는 물에 10초간 데친 뒤 찬물에 담가 껍질을 벗겨줍니다.', timerSeconds: 10, tip: '데친 후 찬물에 바로 담그면 껍질이 훨씬 잘 벗겨져요.' },
+      { title: '절임물 만들기', description: '매실청, 레몬즙, 물을 섞어 절임물을 만듭니다.' },
+      { title: '절이기', description: '껍질을 벗긴 토마토를 절임물에 넣고 냉장고에서 최소 2시간 숙성시킵니다.', timerSeconds: 7200, tip: '하룻밤 숙성시키면 더 깊은 맛이 들어요.' },
     ],
     tips: [
       '밀폐용기에 담아 냉장 보관하면 3~4일간 두고 즐길 수 있어요.',
@@ -170,7 +170,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-1/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '햇감자',
     description: '강한 햇살을 받고 자란 포슬포슬한 햇감자를 로즈마리와 올리브오일로 구워낸 메뉴예요. 사이드 디시로도, 와인 안주로도 잘 어울립니다.',
     ingredients: [
@@ -181,14 +181,39 @@ export const recipesQ2: Recipe[] = [
       { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '감자 손질', description: '햇감자는 껍질째 깨끗이 씻어 반으로 자릅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-1/step-183.png' },
-      { title: '예열', description: '오븐을 200도로 예열합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-1/step-184.png' },
-      { title: '버무리기', description: '감자에 올리브오일, 다진 마늘, 로즈마리, 소금, 후추를 넣고 골고루 버무립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-1/step-185.png' },
-      { title: '굽기', description: '오븐 팬에 펼쳐 담아 200도에서 25분간 노릇하게 굽습니다.', timerSeconds: 1500, tip: '중간에 한 번 뒤집어주면 더 골고루 익어요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-1/step-186.png' },
+      {
+        title: '감자 손질',
+        description:
+          '햇감자는 껍질째 깨끗이 씻어 반으로 자릅니다. 햇감자는 껍질이 워낙 얇아서 껍질을 벗기지 않아도 되는데, 오히려 껍질째 구워야 겉은 바삭하고 속은 포슬포슬한 식감 차이가 또렷하게 살아나요.',
+        checkpoint: '씻은 감자 표면에 흙이나 잔뿌리가 남지 않고 매끈해야 해요. 손으로 만졌을 때 단단하고 묵직한 느낌이면 좋은 감자예요.',
+        warning: '감자가 너무 크면 같은 시간에 속까지 안 익어요. 한입 크기(가로 3~4cm)로 자르면 안전해요.',
+      },
+      {
+        title: '예열',
+        description:
+          '오븐을 200도로 예열합니다. 예열을 건너뛰고 차가운 오븐에 넣으면 감자가 익는 동안 겉면이 충분히 바삭해지지 않고 수분만 빠져나가서 퍽퍽해져요. 예열은 귀찮아도 꼭 거쳐야 하는 단계예요.',
+      },
+      {
+        title: '버무리기',
+        description:
+          '감자에 올리브오일, 다진 마늘, 로즈마리, 소금, 후추를 넣고 골고루 버무립니다. 오일이 감자 표면을 코팅해줘야 오븐 안에서 겉이 바삭하게 마르면서도 속은 마르지 않아요.',
+        tip: '로즈마리는 손으로 살짝 비벼서 넣으면 향이 훨씬 진하게 퍼져요. 잎을 으깨는 순간 향 오일이 터지듯 나오거든요.',
+      },
+      {
+        title: '굽기',
+        description:
+          '오븐 팬에 펼쳐 담아 200도에서 25분간 노릇하게 굽습니다. 시간보다는 색과 냄새를 믿으세요 — 겉면이 황금빛 갈색으로 바뀌고, 부엌에 로즈마리와 마늘이 익는 고소한 냄새가 퍼지면 거의 다 된 거예요.',
+        timerSeconds: 1500,
+        tip: '중간에 한 번 뒤집어주면 더 골고루 익어요. 뒤집을 때 포크로 하나 찔러보면 부드럽게 쑥 들어가는지 확인할 수 있어요.',
+        checkpoint: '겉면이 노릇한 갈색이고, 포크로 찔렀을 때 별 힘 없이 쑥 들어가면 완성이에요. 아직 단단하면 5분씩 더 구워가며 다시 확인하세요.',
+        warning: '팬에 감자를 겹쳐 담으면 겹친 부분이 안 익고 김에만 익어서 물러져요. 한 겹으로 펼쳐 담아야 모든 면이 직접 열을 받아요.',
+      },
     ],
     tips: [
       '에어프라이어를 사용하면 180도에서 20분 정도면 충분합니다.',
       '햇감자는 껍질이 얇아 껍질째 먹어도 영양가가 높아요.',
+      '대체 재료: 로즈마리가 없다면 타임이나 말린 허브 믹스로 대신해도 향이 비슷하게 살아나요.',
+      '보관/활용: 식은 감자는 냉장 보관 후 다음날 으깨서 감자샐러드로 만들면 또 다른 메뉴가 돼요.',
     ],
     youtubeQuery: '햇감자 로즈마리 구이',
   },
@@ -201,7 +226,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-2/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '갑오징어',
     description: '초여름 가장 두툼하고 쫄깃한 갑오징어를 데쳐 신선한 채소와 새콤한 초고추장 드레싱에 곁들이는 샐러드예요.',
     ingredients: [
@@ -213,10 +238,10 @@ export const recipesQ2: Recipe[] = [
       { name: '식초', amount: '1큰술' },
     ],
     steps: [
-      { title: '오징어 손질', description: '갑오징어는 내장을 제거하고 껍질을 벗겨 칼집을 살짝 넣어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-2/step-215.png' },
-      { title: '데치기', description: '끓는 물에 갑오징어를 넣고 2분간 데친 뒤 찬물에 헹궈 한입 크기로 썹니다.', timerSeconds: 120, tip: '너무 오래 데치면 질겨지니 색이 변하면 바로 건져주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-2/step-216.png' },
-      { title: '채소 손질', description: '양상추는 손으로 뜯고 오이는 슬라이스, 방울토마토는 반으로 자릅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-2/step-217.png' },
-      { title: '플레이팅', description: '그릇에 채소를 깔고 갑오징어를 올린 뒤 초고추장과 식초를 섞은 드레싱을 곁들여 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-2/step-218.png' },
+      { title: '오징어 손질', description: '갑오징어는 내장을 제거하고 껍질을 벗겨 칼집을 살짝 넣어둡니다.' },
+      { title: '데치기', description: '끓는 물에 갑오징어를 넣고 2분간 데친 뒤 찬물에 헹궈 한입 크기로 썹니다.', timerSeconds: 120, tip: '너무 오래 데치면 질겨지니 색이 변하면 바로 건져주세요.' },
+      { title: '채소 손질', description: '양상추는 손으로 뜯고 오이는 슬라이스, 방울토마토는 반으로 자릅니다.' },
+      { title: '플레이팅', description: '그릇에 채소를 깔고 갑오징어를 올린 뒤 초고추장과 식초를 섞은 드레싱을 곁들여 완성합니다.' },
     ],
     tips: [
       '칼집을 넣어 데치면 데친 후 모양이 더 예쁘게 나와요.',
@@ -233,7 +258,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 1,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-3/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '블루베리',
     description: '항산화 성분이 풍부한 여름 블루베리와 그릭요거트, 견과류를 곁들인 건강한 아침 식사예요. 간단하지만 영양이 가득합니다.',
     ingredients: [
@@ -244,9 +269,9 @@ export const recipesQ2: Recipe[] = [
       { name: '아몬드', amount: '약간' },
     ],
     steps: [
-      { title: '블루베리 손질', description: '블루베리는 깨끗이 씻어 물기를 제거합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-3/step-246.png' },
-      { title: '플레이팅', description: '그릭요거트를 그릇에 담고 블루베리, 그래놀라, 아몬드를 올립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-3/step-247.png' },
-      { title: '마무리', description: '꿀을 둘러 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-3/step-248.png' },
+      { title: '블루베리 손질', description: '블루베리는 깨끗이 씻어 물기를 제거합니다.' },
+      { title: '플레이팅', description: '그릭요거트를 그릇에 담고 블루베리, 그래놀라, 아몬드를 올립니다.' },
+      { title: '마무리', description: '꿀을 둘러 완성합니다.' },
     ],
     tips: [
       '바나나나 키위를 추가하면 더 풍성한 맛을 즐길 수 있어요.',
@@ -263,7 +288,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-4/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '가지',
     description: '부드럽고 영양 가득한 여름 가지를 구수한 된장 양념에 볶아낸 밥도둑 반찬이에요. 간단하지만 깊은 맛을 자랑합니다.',
     ingredients: [
@@ -276,11 +301,11 @@ export const recipesQ2: Recipe[] = [
       { name: '참기름', amount: '1작은술' },
     ],
     steps: [
-      { title: '가지 손질', description: '가지는 길게 반으로 잘라 어슷하게 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-4/step-278.png' },
-      { title: '양념장 만들기', description: '된장, 고추장, 다진마늘을 섞어 양념장을 만들어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-4/step-279.png' },
-      { title: '볶기', description: '팬에 식용유를 두르고 가지를 넣어 중불에서 2~3분간 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-4/step-280.png' },
-      { title: '양념하기', description: '가지가 부드러워지면 양념장을 넣고 골고루 볶습니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-4/step-281.png' },
-      { title: '마무리', description: '대파와 참기름을 넣고 한 번 더 볶아 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-4/step-282.png' },
+      { title: '가지 손질', description: '가지는 길게 반으로 잘라 어슷하게 썰어둡니다.' },
+      { title: '양념장 만들기', description: '된장, 고추장, 다진마늘을 섞어 양념장을 만들어둡니다.' },
+      { title: '볶기', description: '팬에 식용유를 두르고 가지를 넣어 중불에서 2~3분간 볶습니다.', timerSeconds: 180 },
+      { title: '양념하기', description: '가지가 부드러워지면 양념장을 넣고 골고루 볶습니다.', timerSeconds: 60 },
+      { title: '마무리', description: '대파와 참기름을 넣고 한 번 더 볶아 완성합니다.' },
     ],
     tips: [
       '가지는 기름을 많이 흡수하니 식용유를 살짝만 사용해도 충분해요.',
@@ -297,7 +322,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-5/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '방울토마토',
     description: '여름 초입 가장 달큰한 방울토마토를 듬뿍 넣어 만드는 시원한 냉파스타예요. 더위에 입맛 없을 때 가볍게 즐기기 좋습니다.',
     ingredients: [
@@ -310,10 +335,10 @@ export const recipesQ2: Recipe[] = [
       { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '면 삶기', description: '스파게티면은 끓는 물에 소금을 약간 넣고 삶은 뒤 찬물에 헹궈 식힙니다.', timerSeconds: 540, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-5/step-312.png' },
-      { title: '토마토 손질', description: '방울토마토는 반으로 자르고 마늘은 다져둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-5/step-313.png' },
-      { title: '소스 만들기', description: '토마토, 다진 마늘, 올리브오일, 레몬즙, 소금, 후추를 섞어 마리네이드를 만들고 10분간 재워둡니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-5/step-314.png' },
-      { title: '플레이팅', description: '식힌 면에 토마토 소스를 넣고 골고루 버무린 뒤 바질을 올려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-5/step-315.png' },
+      { title: '면 삶기', description: '스파게티면은 끓는 물에 소금을 약간 넣고 삶은 뒤 찬물에 헹궈 식힙니다.', timerSeconds: 540 },
+      { title: '토마토 손질', description: '방울토마토는 반으로 자르고 마늘은 다져둡니다.' },
+      { title: '소스 만들기', description: '토마토, 다진 마늘, 올리브오일, 레몬즙, 소금, 후추를 섞어 마리네이드를 만들고 10분간 재워둡니다.', timerSeconds: 600 },
+      { title: '플레이팅', description: '식힌 면에 토마토 소스를 넣고 골고루 버무린 뒤 바질을 올려 완성합니다.' },
     ],
     tips: [
       '면을 삶은 후 찬물로 충분히 헹궈야 끈적임 없이 깔끔해요.',
@@ -332,7 +357,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-1/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1598160456488-82ab8111e0bb?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '초당옥수수',
     description: '생으로도 달콤한 초당옥수수를 쌀과 함께 지어 옥수수 알의 아삭함과 단맛을 그대로 즐기는 솥밥이에요.',
     ingredients: [
@@ -343,10 +368,10 @@ export const recipesQ2: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-1/step-345.png' },
-      { title: '옥수수 손질', description: '초당옥수수는 칼로 알을 분리해둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-1/step-346.png' },
-      { title: '밥 짓기', description: '불린 쌀에 옥수수알, 물, 소금을 넣고 뚜껑을 닫아 센 불로 끓이다가 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-1/step-347.png' },
-      { title: '뜸 들이기', description: '불을 끄고 5분간 뜸을 들인 뒤 버터를 넣고 골고루 섞어 완성합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-1/step-348.png' },
+      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800 },
+      { title: '옥수수 손질', description: '초당옥수수는 칼로 알을 분리해둡니다.' },
+      { title: '밥 짓기', description: '불린 쌀에 옥수수알, 물, 소금을 넣고 뚜껑을 닫아 센 불로 끓이다가 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720 },
+      { title: '뜸 들이기', description: '불을 끄고 5분간 뜸을 들인 뒤 버터를 넣고 골고루 섞어 완성합니다.', timerSeconds: 300 },
     ],
     tips: [
       '옥수수 심도 함께 넣고 밥을 지으면 더 진한 단맛이 우러나요.',
@@ -363,7 +388,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-2/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1534790566985-aae57c661c44?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '갈치',
     description: '여름 갈치의 기름진 살에 매콤한 양념이 깊게 배어든 칼칼한 조림이에요. 밥 한 그릇을 든든하게 비울 수 있는 메뉴입니다.',
     ingredients: [
@@ -378,11 +403,11 @@ export const recipesQ2: Recipe[] = [
       { name: '물', amount: '1.5컵' },
     ],
     steps: [
-      { title: '무 깔기', description: '무는 두툼하게 썰어 냄비 바닥에 깔아줍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-2/step-380.png' },
-      { title: '갈치 손질', description: '갈치는 비늘을 긁어내고 깨끗이 씻어 무 위에 올립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-2/step-381.png' },
-      { title: '양념장 만들기', description: '고춧가루, 간장, 고추장, 다진마늘, 물을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-2/step-382.png' },
-      { title: '조리기', description: '양념장을 갈치 위에 붓고 센 불로 끓이다가 끓어오르면 중약불로 줄여 20분간 졸입니다.', timerSeconds: 1200, tip: '중간중간 양념국물을 갈치 위에 끼얹어주면 골고루 간이 배요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-2/step-383.png' },
-      { title: '마무리', description: '대파와 청양고추를 넣고 5분 더 졸여 완성합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-2/step-384.png' },
+      { title: '무 깔기', description: '무는 두툼하게 썰어 냄비 바닥에 깔아줍니다.' },
+      { title: '갈치 손질', description: '갈치는 비늘을 긁어내고 깨끗이 씻어 무 위에 올립니다.' },
+      { title: '양념장 만들기', description: '고춧가루, 간장, 고추장, 다진마늘, 물을 섞어 양념장을 만듭니다.' },
+      { title: '조리기', description: '양념장을 갈치 위에 붓고 센 불로 끓이다가 끓어오르면 중약불로 줄여 20분간 졸입니다.', timerSeconds: 1200, tip: '중간중간 양념국물을 갈치 위에 끼얹어주면 골고루 간이 배요.' },
+      { title: '마무리', description: '대파와 청양고추를 넣고 5분 더 졸여 완성합니다.', timerSeconds: 300 },
     ],
     tips: [
       '무를 함께 졸이면 무에서 단맛이 나와 더 깊은 맛을 즐길 수 있어요.',
@@ -399,7 +424,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 15,
     servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-3/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '수박',
     description: '한여름 더위를 씻어주는 대표 과일 수박을 얼려 만드는 이탈리아식 셔벗이에요. 만들기 쉽고 시원한 디저트로 인기 만점입니다.',
     ingredients: [
@@ -409,9 +434,9 @@ export const recipesQ2: Recipe[] = [
       { name: '민트 잎', amount: '약간' },
     ],
     steps: [
-      { title: '수박 손질', description: '수박은 씨를 제거하고 큼직하게 잘라둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-3/step-411.png' },
-      { title: '갈기', description: '수박, 레몬즙, 꿀을 믹서에 넣고 곱게 갈아줍니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-3/step-413.png' },
-      { title: '얼리기', description: '갈은 수박을 납작한 용기에 담아 냉동실에서 3시간 이상 얼립니다.', timerSeconds: 10800, tip: '1시간마다 포크로 긁어주면 더 보슬보슬한 셔벗 식감이 나요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-3/step-414.png' },
+      { title: '수박 손질', description: '수박은 씨를 제거하고 큼직하게 잘라둡니다.' },
+      { title: '갈기', description: '수박, 레몬즙, 꿀을 믹서에 넣고 곱게 갈아줍니다.', timerSeconds: 60 },
+      { title: '얼리기', description: '갈은 수박을 납작한 용기에 담아 냉동실에서 3시간 이상 얼립니다.', timerSeconds: 10800, tip: '1시간마다 포크로 긁어주면 더 보슬보슬한 셔벗 식감이 나요.' },
       { title: '마무리', description: '포크로 긁어 그릇에 담고 민트 잎을 올려 완성합니다.' },
     ],
     tips: [
@@ -429,7 +454,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-4/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '가지',
     description: '부드럽게 찐 가지를 매콤새콤한 양념에 무쳐 차갑게 즐기는 여름 별미예요. 더운 날 입맛을 살려주는 산뜻한 반찬입니다.',
     ingredients: [
@@ -442,9 +467,9 @@ export const recipesQ2: Recipe[] = [
       { name: '대파', amount: '약간' },
     ],
     steps: [
-      { title: '가지 찌기', description: '가지는 길게 반으로 잘라 찜기에 7분간 부드럽게 찝니다.', timerSeconds: 420, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-4/step-445.png' },
-      { title: '식히기', description: '찐 가지는 찬물에 헹궈 식힌 뒤 손으로 결대로 찢어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-4/step-446.png' },
-      { title: '양념장 만들기', description: '간장, 식초, 고춧가루, 다진마늘, 참기름을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-4/step-447.png' },
+      { title: '가지 찌기', description: '가지는 길게 반으로 잘라 찜기에 7분간 부드럽게 찝니다.', timerSeconds: 420 },
+      { title: '식히기', description: '찐 가지는 찬물에 헹궈 식힌 뒤 손으로 결대로 찢어둡니다.' },
+      { title: '양념장 만들기', description: '간장, 식초, 고춧가루, 다진마늘, 참기름을 섞어 양념장을 만듭니다.' },
       { title: '무치기', description: '가지에 양념장을 넣고 골고루 무친 뒤 대파를 올려 완성합니다.' },
     ],
     tips: [
@@ -462,7 +487,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-5/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '갈치',
     description: '신선한 여름 갈치를 소금만으로 깔끔하게 구워 본연의 맛을 살린 가장 기본적인 생선구이예요.',
     ingredients: [
@@ -471,9 +496,9 @@ export const recipesQ2: Recipe[] = [
       { name: '식용유', amount: '1큰술' },
     ],
     steps: [
-      { title: '갈치 손질', description: '갈치는 비늘을 긁어내고 물기를 키친타월로 제거합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-5/step-473.png' },
-      { title: '밑간', description: '소금을 골고루 뿌려 15분간 재워둡니다.', timerSeconds: 900, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-5/step-474.png' },
-      { title: '굽기', description: '달군 팬에 식용유를 두르고 갈치를 올려 중불에서 앞뒤로 노릇하게 구워줍니다.', timerSeconds: 480, tip: '뒤집을 때 살이 부서지지 않게 한 번만 살짝 뒤집어주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-5/step-475.png' },
+      { title: '갈치 손질', description: '갈치는 비늘을 긁어내고 물기를 키친타월로 제거합니다.' },
+      { title: '밑간', description: '소금을 골고루 뿌려 15분간 재워둡니다.', timerSeconds: 900 },
+      { title: '굽기', description: '달군 팬에 식용유를 두르고 갈치를 올려 중불에서 앞뒤로 노릇하게 구워줍니다.', timerSeconds: 480, tip: '뒤집을 때 살이 부서지지 않게 한 번만 살짝 뒤집어주세요.' },
     ],
     tips: [
       '구운 후 레몬즙을 살짝 뿌리면 비린내 없이 깔끔하게 즐길 수 있어요.',
@@ -492,7 +517,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통',
     cookTime: 50,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-1/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1632128795906-8d542d13ab3b?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '전복',
     description: '더위에 지친 몸을 보양해주는 전복 내장죽이에요. 전복 내장의 깊고 녹진한 맛이 죽에 그대로 우러나옵니다.',
     ingredients: [
@@ -504,11 +529,11 @@ export const recipesQ2: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-1/step-506.png' },
-      { title: '전복 손질', description: '전복은 솔로 깨끗이 씻고 숟가락으로 살을 분리한 뒤 내장을 따로 빼둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-1/step-508.png' },
-      { title: '내장 다지기', description: '전복 내장은 칼로 곱게 다지고, 살은 얇게 슬라이스합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-1/step-509.png' },
-      { title: '볶기', description: '냄비에 참기름을 두르고 다진마늘과 전복 내장을 볶아 향을 낸 뒤 불린 쌀을 넣고 함께 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-1/step-510.png' },
-      { title: '끓이기', description: '물을 붓고 중약불에서 쌀알이 퍼질 때까지 25분 정도 저어가며 끓입니다.', timerSeconds: 1500, tip: '바닥에 눌어붙지 않게 계속 저어주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-1/step-511.png' },
+      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800 },
+      { title: '전복 손질', description: '전복은 솔로 깨끗이 씻고 숟가락으로 살을 분리한 뒤 내장을 따로 빼둡니다.' },
+      { title: '내장 다지기', description: '전복 내장은 칼로 곱게 다지고, 살은 얇게 슬라이스합니다.' },
+      { title: '볶기', description: '냄비에 참기름을 두르고 다진마늘과 전복 내장을 볶아 향을 낸 뒤 불린 쌀을 넣고 함께 볶습니다.', timerSeconds: 180 },
+      { title: '끓이기', description: '물을 붓고 중약불에서 쌀알이 퍼질 때까지 25분 정도 저어가며 끓입니다.', timerSeconds: 1500, tip: '바닥에 눌어붙지 않게 계속 저어주세요.' },
       { title: '마무리', description: '전복살을 넣고 5분 더 끓인 뒤 소금으로 간을 맞춰 완성합니다.', timerSeconds: 300 },
     ],
     tips: [
@@ -526,7 +551,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-2/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '전복',
     description: '여름 보양식의 대표 전복을 버터에 노릇하게 구워 풍미를 살린 메뉴예요. 손님 초대 요리로도 손색없습니다.',
     ingredients: [
@@ -538,10 +563,10 @@ export const recipesQ2: Recipe[] = [
       { name: '쪽파', amount: '약간' },
     ],
     steps: [
-      { title: '전복 손질', description: '전복은 솔로 깨끗이 씻고 껍질에서 살을 분리해 칼집을 격자로 내줍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-2/step-540.png' },
-      { title: '마늘 준비', description: '마늘은 편으로 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-2/step-541.png' },
-      { title: '굽기', description: '달군 팬에 버터를 녹이고 마늘을 먼저 볶다가 전복을 넣어 양면 각 2분씩 굽습니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-2/step-542.png' },
-      { title: '마무리', description: '간장을 둘러 한 번 더 볶고 후추와 쪽파를 뿌려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-2/step-543.png' },
+      { title: '전복 손질', description: '전복은 솔로 깨끗이 씻고 껍질에서 살을 분리해 칼집을 격자로 내줍니다.' },
+      { title: '마늘 준비', description: '마늘은 편으로 썰어둡니다.' },
+      { title: '굽기', description: '달군 팬에 버터를 녹이고 마늘을 먼저 볶다가 전복을 넣어 양면 각 2분씩 굽습니다.', timerSeconds: 240 },
+      { title: '마무리', description: '간장을 둘러 한 번 더 볶고 후추와 쪽파를 뿌려 완성합니다.' },
     ],
     tips: [
       '칼집을 내야 양념이 잘 배어들고 더 부드럽게 익습니다.',
@@ -558,7 +583,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-3/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1629828874514-979f5f8f0b48?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '복숭아',
     description: '과즙이 풍부한 늦여름 복숭아를 모짜렐라 치즈와 곁들인 산뜻한 샐러드예요. 의외로 잘 어울리는 조합을 즐겨보세요.',
     ingredients: [
@@ -570,9 +595,9 @@ export const recipesQ2: Recipe[] = [
       { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '복숭아 손질', description: '복숭아는 씨를 제거하고 웨지 모양으로 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-3/step-572.png' },
-      { title: '치즈 손질', description: '모짜렐라 치즈는 한입 크기로 잘라둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-3/step-574.png' },
-      { title: '플레이팅', description: '그릇에 복숭아와 모짜렐라를 번갈아 올리고 바질을 곁들입니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-3/step-575.png' },
+      { title: '복숭아 손질', description: '복숭아는 씨를 제거하고 웨지 모양으로 썰어둡니다.' },
+      { title: '치즈 손질', description: '모짜렐라 치즈는 한입 크기로 잘라둡니다.' },
+      { title: '플레이팅', description: '그릇에 복숭아와 모짜렐라를 번갈아 올리고 바질을 곁들입니다.' },
       { title: '마무리', description: '올리브오일과 발사믹 글레이즈를 뿌리고 소금, 후추로 간해 완성합니다.' },
     ],
     tips: [
@@ -590,7 +615,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-4/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '고구마순',
     description: '아삭한 식감의 늦여름 고구마순을 들깨가루로 고소하게 볶아낸 반찬이에요. 손이 많이 가지만 그만큼 깊은 맛을 자랑합니다.',
     ingredients: [
@@ -602,9 +627,9 @@ export const recipesQ2: Recipe[] = [
       { name: '물', amount: '3큰술' },
     ],
     steps: [
-      { title: '고구마순 손질', description: '고구마순은 껍질을 벗기고 적당한 길이로 썰어둡니다.', tip: '겉껍질을 벗기지 않으면 질긴 식감이 남으니 꼭 벗겨주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-4/step-605.png' },
-      { title: '데치기', description: '끓는 물에 고구마순을 3분간 데친 뒤 찬물에 헹굽니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-4/step-606.png' },
-      { title: '볶기', description: '팬에 들기름을 두르고 다진마늘과 고구마순을 넣어 볶다가 국간장을 넣습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-4/step-607.png' },
+      { title: '고구마순 손질', description: '고구마순은 껍질을 벗기고 적당한 길이로 썰어둡니다.', tip: '겉껍질을 벗기지 않으면 질긴 식감이 남으니 꼭 벗겨주세요.' },
+      { title: '데치기', description: '끓는 물에 고구마순을 3분간 데친 뒤 찬물에 헹굽니다.', timerSeconds: 180 },
+      { title: '볶기', description: '팬에 들기름을 두르고 다진마늘과 고구마순을 넣어 볶다가 국간장을 넣습니다.', timerSeconds: 180 },
       { title: '마무리', description: '물과 들깨가루를 넣고 약불에서 3분간 더 볶아 완성합니다.', timerSeconds: 180 },
     ],
     tips: [
@@ -622,7 +647,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움',
     cookTime: 10,
     servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-5/hero.png',
+    heroImage: 'https://images.unsplash.com/photo-1599819177626-08ed8aebec51?auto=format&fit=crop&w=800&q=80',
     mainIngredient: '포도',
     description: '당도가 절정에 이르는 여름 끝물 포도로 만드는 알코올 없는 무알콜 샹그리아예요. 가족 모임에서도 부담 없이 즐길 수 있습니다.',
     ingredients: [
@@ -634,9 +659,9 @@ export const recipesQ2: Recipe[] = [
       { name: '꿀', amount: '2큰술' },
     ],
     steps: [
-      { title: '과일 손질', description: '포도는 반으로 자르고, 사과와 오렌지는 한입 크기로 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-5/step-636.png' },
-      { title: '재워두기', description: '큰 용기에 과일과 레몬즙, 꿀을 넣고 냉장고에서 30분간 재워둡니다.', timerSeconds: 1800, tip: '오래 재워둘수록 과일 향이 음료에 더 깊이 우러나요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-5/step-637.png' },
-      { title: '마무리', description: '탄산수를 붓고 가볍게 섞어 잔에 따라 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-5/step-638.png' },
+      { title: '과일 손질', description: '포도는 반으로 자르고, 사과와 오렌지는 한입 크기로 썰어둡니다.' },
+      { title: '재워두기', description: '큰 용기에 과일과 레몬즙, 꿀을 넣고 냉장고에서 30분간 재워둡니다.', timerSeconds: 1800, tip: '오래 재워둘수록 과일 향이 음료에 더 깊이 우러나요.' },
+      { title: '마무리', description: '탄산수를 붓고 가볍게 섞어 잔에 따라 완성합니다.' },
     ],
     tips: [
       '얼음을 듬뿍 넣으면 더 시원하게 즐길 수 있어요.',

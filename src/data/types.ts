@@ -8,8 +8,10 @@ export interface RecipeStep {
   description: string;
   tip?: string;
   timerSeconds?: number;
-  /** 이 단계가 끝났을 때 확인할 수 있는 상태 (AI 코칭 멘트, 선택적) */
+  /** 이 단계가 끝났을 때 확인할 수 있는 상태 (감각적 신호: 색/냄새/소리/질감, 선택적) */
   checkpoint?: string;
+  /** 초보자가 이 단계에서 흔히 저지르는 실수에 대한 경고 (선택적) */
+  warning?: string;
   /** 이 단계를 보여주는 AI 생성 이미지 URL (선택적) */
   stepImage?: string;
 }
