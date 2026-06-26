@@ -114,7 +114,10 @@ function isAlreadyBlobUrl(url: string): boolean {
 }
 
 function slugify(name: string): string {
-  return encodeURIComponent(name);
+  // @vercel/blob의 put()이 pathname을 내부적으로 한 번 인코딩하므로
+  // 여기서 미리 encodeURIComponent를 하면 이중 인코딩(%25...)이 되어버림.
+  // 한글 그대로 넘기면 put()이 깨끗하게 한 번만 인코딩해줌.
+  return name;
 }
 
 async function main() {
