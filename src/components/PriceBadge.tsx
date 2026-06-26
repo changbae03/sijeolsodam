@@ -46,6 +46,15 @@ export default function PriceBadge({ name, variant = 'badge' }: PriceBadgeProps)
     );
   }
 
+  if (insight.tone === 'expensive') {
+    // 가격 상승은 눈에 잘 띄어야 하는 신호라서, 옅은 톤 대신 진한 배경으로 강조
+    return (
+      <span className="inline-flex items-center gap-1.5 whitespace-nowrap font-semibold px-2 py-1 text-[11px] rounded-md bg-terracotta text-paper">
+        {insight.badge}
+      </span>
+    );
+  }
+
   return (
     <Badge variant={toneToBadgeVariant[insight.tone]} size="sm">
       {insight.badge}
