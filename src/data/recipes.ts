@@ -8,6 +8,7 @@ import { recipesQ3Extra } from './recipes-q3-extra';
 import { recipesQ1Extra2 } from './recipes-q1-extra2';
 import { recipesQ2Extra2 } from './recipes-q2-extra2';
 import { recipesQ3Extra2 } from './recipes-q3-extra2';
+import { recipesIngredientCoverage } from './recipes-ingredient-coverage';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -19,6 +20,7 @@ export const allRecipes: Recipe[] = [
   ...recipesQ1Extra2,
   ...recipesQ2Extra2,
   ...recipesQ3Extra2,
+  ...recipesIngredientCoverage,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
