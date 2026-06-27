@@ -239,6 +239,12 @@ function StepItem({
             <p className="text-[12px] text-terracotta leading-relaxed">{step.warning}</p>
           </div>
         )}
+        {step.recoveryTip && (
+          <div className="flex items-start gap-1.5 mt-2 bg-cream-warm rounded-xl px-3 py-2">
+            <span className="text-[13px] shrink-0">🩹</span>
+            <p className="text-[12px] text-ink-soft leading-relaxed">{step.recoveryTip}</p>
+          </div>
+        )}
       </div>
     </motion.div>
   );

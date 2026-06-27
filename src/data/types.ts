@@ -12,6 +12,8 @@ export interface RecipeStep {
   checkpoint?: string;
   /** 초보자가 이 단계에서 흔히 저지르는 실수에 대한 경고 (선택적) */
   warning?: string;
+  /** 그 실수를 이미 했을 때 되돌리거나 만회하는 방법 (선택적) */
+  recoveryTip?: string;
   /** 이 단계를 보여주는 AI 생성 이미지 URL (선택적) */
   stepImage?: string;
 }
