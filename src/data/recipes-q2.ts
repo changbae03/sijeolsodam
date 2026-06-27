@@ -168,6 +168,23 @@ export const recipesQ2: Recipe[] = [
     subtitle: '향긋한 로즈마리 향이 감도는 노릇한 감자 구이',
     category: '브런치',
     difficulty: '아주 쉬움', level: 'home',
+    masterclass: {
+      chefIntro:
+        '바쁜 평일 저녁에도 20분이면 충분한 메뉴예요. 6월 햇감자는 수분이 많아 구우면 겉은 바삭, 속은 포슬포슬한 대비가 또렷하게 나와요.',
+      ingredientSelection:
+        '크기가 작고 비슷한 햇감자를 고르세요. 반으로만 잘라도 빨리 익어요. 표면에 푸른빛이 없는 단단한 걸로요.',
+      miseEnPlace:
+        '감자를 씻어 반으로 자르고, 마늘은 다지고 로즈마리는 미리 손질해두세요. 오븐 예열을 가장 먼저 시작하면 시간이 절약돼요.',
+      cookware: {
+        recommended: '오븐 팬이나 에어프라이어',
+        alternatives: ['일반 프라이팬 — 뚜껑을 덮고 약불로 천천히 구우면 비슷하게 익어요.'],
+      },
+      platingAndServing: '구운 그대로 접시에 담고 로즈마리 줄기를 하나 올리면 충분해요. 메인 요리 곁의 사이드로 좋아요.',
+      pairing: '구운 고기나 생선 요리 어디에나 잘 어울려요. 화이트 와인과도 무난하게 맞아요.',
+      storageAndReheating: '냉장 2일, 에어프라이어에 다시 데우면 바삭함이 돌아와요.',
+      leftoverIdeas: '식은 감자는 잘게 썰어 다음날 오믈렛 속재료로 써도 좋아요.',
+      closingNote: '구워서 향이 올라오기 시작하면 다 됐다는 뜻이에요. 너무 신경 쓰지 말고 가볍게 시작해보세요.',
+    },
     cookTime: 30,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
@@ -224,6 +241,25 @@ export const recipesQ2: Recipe[] = [
     subtitle: '크림소스에 layer를 쌓아 오븐에 구워낸 주말 요리',
     category: '메인',
     difficulty: '보통', level: 'weekend',
+    masterclass: {
+      chefIntro:
+        '주말에 시간을 들여 만들 만한 메뉴예요. 햇감자는 단맛이 또렷해서, 짭짤한 크림소스와의 대비가 저장 감자보다 훨씬 선명하게 느껴져요.',
+      ingredientSelection:
+        '크기가 비슷한 감자로 골라야 슬라이스 두께가 일정해져요. 단단하고 표면에 푸른빛이 없는 것으로요.',
+      miseEnPlace:
+        '슬라이서나 칼을 미리 준비하고, 오븐 용기와 190도 예열을 가장 먼저 시작하세요. 크림소스도 미리 데워두면 조립이 빨라져요.',
+      cookware: {
+        recommended: '오븐용 그라탕 용기',
+        alternatives: ['일반 내열 유리그릇 — 깊이가 너무 깊지 않은 것으로요.'],
+      },
+      chefsNotes:
+        '감자를 얇게 썰어 겹겹이 쌓는 이유는, 켜마다 소스가 스며들 시간을 줘서 속까지 고르게 익히기 위해서예요. 너무 두꺼우면 가운데가 설익어요.',
+      platingAndServing: '그라탕 용기 그대로 식탁에 올려도 멋스러워요. 파슬리를 살짝 뿌리면 색이 살아나요.',
+      pairing: '로스트 치킨이나 스테이크 곁에 사이드로 잘 어울려요. 가벼운 화이트 와인과도 좋아요.',
+      storageAndReheating: '냉장 3일, 에어프라이어나 오븐에 데우면 표면이 다시 바삭해져요.',
+      leftoverIdeas: '잘게 잘라 다음날 볶음밥에 섞어도 고소함이 잘 어울려요.',
+      closingNote: '처음엔 켜가 좀 삐뚤어져도 괜찮아요. 맛은 그대로니, 다음엔 더 가지런해질 거예요.',
+    },
     cookTime: 70,
     servings: 4,
     heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
@@ -289,6 +325,25 @@ export const recipesQ2: Recipe[] = [
     cuisineContext: {
       country: '스페인',
       note: '또르티야 데 파타타스는 스페인 전역의 가정과 타파스 바에서 빠지지 않는 메뉴예요. 멕시코의 옥수수 또르티야와는 전혀 다른, 감자와 달걀로 만든 두툼한 오믈렛이라는 점이 특징이에요. 점심·저녁 메인부터 작게 잘라 타파스로도 즐겨요.',
+    },
+    masterclass: {
+      chefIntro:
+        '스페인 가정에서는 흔한 재료로 매일 만드는 음식이에요. 6월 햇감자로 만들면 콘피하듯 천천히 익히는 동안 단맛이 더 또렷하게 살아나요.',
+      ingredientSelection:
+        '크기가 작은 햇감자가 좋아요. 얇게 썰기 쉽고 빨리 익어요. 양파는 단맛이 강한 것으로 고르면 전체적인 풍미가 깊어져요.',
+      miseEnPlace:
+        '감자와 양파를 비슷한 두께로 썰어두고, 달걀은 미리 풀어 소금으로 간해두세요. 넉넉한 올리브오일도 미리 계량해두면 편해요.',
+      cookware: {
+        recommended: '코팅이 잘 된 작은 프라이팬(지름 20cm 안팎)',
+        alternatives: ['무쇠팬 — 뒤집을 때 더 안정적이에요.'],
+      },
+      chefsNotes:
+        '감자를 튀기지 않고 기름에 천천히 익히는 걸 "콘피"라고 해요. 약불로 천천히 데우면 감자가 부서질 만큼 부드러워지면서도 색은 거의 안 변해요.',
+      platingAndServing: '웨지 모양으로 잘라 접시에 부채꼴로 담으면 타파스 바 느낌이 나요. 실온으로 식혀 내도 좋아요.',
+      pairing: '스페인식이라면 상그리아나 가벼운 화이트 와인이 잘 맞아요. 바게트와 곁들여도 좋아요.',
+      storageAndReheating: '냉장 2일, 실온이나 약불에 살짝 데워 드세요.',
+      leftoverIdeas: '식은 또르티야는 빵 사이에 끼워 보카디요(스페인식 샌드위치)로 즐기기 좋아요.',
+      closingNote: '뒤집기가 가장 긴장되는 순간이에요. 큰 접시로 단번에 덮어 뒤집으면, 생각보다 잘 될 거예요.',
     },
     cookTime: 45,
     servings: 3,
