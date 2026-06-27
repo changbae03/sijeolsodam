@@ -10,7 +10,15 @@ import { getCurrentMonth } from '@/lib/season';
 import { fetchPriceInsight, PriceInsight } from '@/lib/price-insight';
 import { Badge, Button, Card } from '@/components/ui';
 import RecipeCard from '@/components/RecipeCard';
-import { SeasonalIngredient } from '@/data/types';
+import { SeasonalIngredient, Recipe, RecipeLevel } from '@/data/types';
+
+const LEVEL_META: Record<RecipeLevel, { label: string; emoji: string; lead: string }> = {
+  home: { label: '데일리 홈쿡', emoji: '🌱', lead: '처음이라면 여기서부터 — 빠르고 쉬운 일상 요리' },
+  weekend: { label: '주말 요리', emoji: '🔥', lead: '시간 여유가 있을 때 도전해보는 한 단계 더 깊은 요리' },
+  world: { label: '세계 요리', emoji: '🌍', lead: '이 재료로 즐기는 세계 각국의 정통 요리' },
+  chef: { label: '셰프 컬렉션', emoji: '👨\u200d🍳', lead: '레스토랑급 기법과 플레이팅으로 완성하는 요리' },
+};
+const LEVEL_ORDER: RecipeLevel[] = ['home', 'weekend', 'world', 'chef'];
 
 /** 특정 식재료와 함께 쓰면 좋은 양념·재료. 데이터에 없는 항목이라 큐레이션으로 제공. */
 const PAIRING_OVERRIDES: Record<string, string[]> = {
@@ -70,6 +78,14 @@ export default function IngredientDetailPage() {
 
   const { ingredient, months } = found;
   const recipes = getRecipesByIngredient(ingredient.name);
+
+  const recipesByLevel = LEVEL_ORDER.reduce<Record<RecipeLevel, Recipe[]>>(
+    (acc, level) => {
+      acc[level] = recipes.filter((r) => r.level === level);
+      return acc;
+    },
+    { home: [], weekend: [], world: [], chef: [] }
+  );
 
   // "OO월이 가장 맛있는 시기입니다" — 지금 달이 제철이면 그대로, 아니면 제철 중 첫 달을 기준으로
   const currentMonth = getCurrentMonth();
@@ -140,20 +156,57 @@ export default function IngredientDetailPage() {
         </section>
 
         {/* ============================================
-            4. 이 재료로 만들 수 있는 요리 — 최우선, 가장 비주얼하게
+            4. 이 재료로 만들 수 있는 요리 — 난이도 4단계 컬렉션
+               데일리 홈쿡 -> 주말 요리 -> 세계 요리 -> 셰프 컬렉션 순으로
+               자연스럽게 더 도전해보고 싶어지도록 배치
            ============================================ */}
         {recipes.length > 0 && (
           <section className="mb-10 -mx-5">
-            <div className="px-5 mb-4">
+            <div className="px-5 mb-1">
               <SectionHeader emoji="🍳" title="이 재료로 만들 수 있는 요리" />
             </div>
-            <div className="flex gap-4 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
-              {recipes.slice(0, 3).map((recipe) => (
-                <div key={recipe.id} className="w-[200px] flex-shrink-0 snap-start">
-                  <RecipeCard recipe={recipe} />
+
+            {LEVEL_ORDER.map((level, levelIdx) => {
+              const levelRecipes = recipesByLevel[level];
+              if (levelRecipes.length === 0) return null;
+              const meta = LEVEL_META[level];
+              const isFirst = levelIdx === 0;
+
+              return (
+                <div key={level} className={isFirst ? 'mt-4' : 'mt-8'}>
+                  <div className="px-5 mb-3 flex items-center gap-2">
+                    <span
+                      className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${
+                        level === 'chef'
+                          ? 'bg-ink text-cream'
+                          : level === 'world'
+                            ? 'bg-terracotta/10 text-terracotta'
+                            : 'bg-sage/10 text-sage'
+                      }`}
+                    >
+                      {meta.emoji} {meta.label}
+                    </span>
+                    {!isFirst && (
+                      <span className="text-[11px] text-ink-soft/50">→ 한 단계 더 도전</span>
+                    )}
+                  </div>
+                  <p className="px-5 text-[12px] text-ink-soft/70 mb-3 -mt-1.5">{meta.lead}</p>
+
+                  <div className="flex gap-4 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
+                    {levelRecipes.map((recipe) => (
+                      <div key={recipe.id} className="w-[200px] flex-shrink-0 snap-start">
+                        <RecipeCard recipe={recipe} />
+                        {recipe.cuisineContext && (
+                          <p className="text-[11px] text-ink-soft/60 mt-1.5 px-0.5">
+                            🌍 {recipe.cuisineContext.country} 요리
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </section>
         )}
 

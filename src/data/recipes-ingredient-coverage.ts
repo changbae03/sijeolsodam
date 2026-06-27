@@ -15,7 +15,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   // ===== 해산물 =====
   {
     id: 'ing-대게-1', month: 1, title: '쫄깃 살 가득 대게찜', subtitle: '쪄낸 살이 탱글하게 빠지는 겨울 별미',
-    category: '메인', difficulty: '보통', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '대게', description: '손질한 대게를 통째로 쪄서 살을 발라먹는 가장 간단하고 확실한 방법이에요.',
     ingredients: [
       { name: '대게', amount: '1마리(800g~1kg)' }, { name: '맛술', amount: '2큰술' }, { name: '소금', amount: '약간' }, { name: '레몬', amount: '1/2개' },
@@ -30,7 +30,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-대구-1', month: 1, title: '담백한 대구탕', subtitle: '시원한 국물이 일품인 겨울 생선탕',
-    category: '국&찌개', difficulty: '쉬움', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '대구', description: '무와 콩나물을 넣고 맑게 끓여 대구살 본연의 담백함을 살린 탕이에요.',
     ingredients: [
       { name: '대구', amount: '400g(토막)' }, { name: '무', amount: '200g' }, { name: '콩나물', amount: '100g' }, { name: '대파', amount: '1대' }, { name: '다진마늘', amount: '1큰술' }, { name: '소금', amount: '약간' },
@@ -45,7 +45,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-청어-1', month: 1, title: '고소한 청어구이', subtitle: '기름지고 고소한 등푸른 생선구이',
-    category: '메인', difficulty: '쉬움', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '청어', description: '소금만 뿌려 노릇하게 구워내면 청어 특유의 기름진 맛이 가장 살아나요.',
     ingredients: [
       { name: '청어', amount: '2마리' }, { name: '소금', amount: '1작은술' }, { name: '식용유', amount: '1큰술' },
@@ -60,7 +60,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-도다리-1', month: 3, title: '향긋한 도다리쑥국', subtitle: '봄을 알리는 대표 생선국',
-    category: '국&찌개', difficulty: '쉬움', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '도다리', description: '쑥의 향긋함과 도다리의 담백함이 어우러진 봄철 대표 국이에요.',
     ingredients: [
       { name: '도다리', amount: '2마리' }, { name: '쑥', amount: '100g' }, { name: '된장', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '대파', amount: '1대' },
@@ -75,7 +75,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-새조개-1', month: 3, title: '쫄깃 새조개 샤브샤브', subtitle: '데치면 쫄깃해지는 봄 조개의 별미',
-    category: '메인', difficulty: '보통', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '새조개', description: '맑은 육수에 살짝 데쳐 먹는 새조개 샤브샤브는 봄철 별미예요.',
     ingredients: [
       { name: '새조개', amount: '300g' }, { name: '쑥갓', amount: '50g' }, { name: '팽이버섯', amount: '1봉' }, { name: '다시마육수', amount: '4컵' }, { name: '소금', amount: '약간' },
@@ -90,7 +90,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-숭어-1', month: 3, title: '쫄깃한 숭어회', subtitle: '봄 숭어로 즐기는 쫄깃한 회 한 접시',
-    category: '메인', difficulty: '보통', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '숭어', description: '봄에 살이 차오른 숭어는 회로 떠서 쫄깃한 식감을 즐기기 좋아요.',
     ingredients: [
       { name: '숭어회', amount: '300g(손질된 것)' }, { name: '깻잎', amount: '10장' }, { name: '미나리', amount: '한줌' }, { name: '초고추장', amount: '적당량' },
@@ -105,7 +105,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-꽃게-1', month: 4, title: '얼큰한 꽃게탕', subtitle: '살이 꽉 찬 봄 꽃게로 끓인 시원한 탕',
-    category: '국&찌개', difficulty: '보통', cookTime: 35, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 35, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '꽃게', description: '꽃게와 무, 청양고추를 넣고 얼큰하게 끓여낸 시원한 해물탕이에요.',
     ingredients: [
       { name: '꽃게', amount: '2마리' }, { name: '무', amount: '200g' }, { name: '청양고추', amount: '2개' }, { name: '고추장', amount: '1큰술' }, { name: '된장', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' },
@@ -140,7 +140,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-멍게-1', month: 4, title: '향긋한 멍게 비빔밥', subtitle: '바다 향 가득한 봄철 별미 비빔밥',
-    category: '밥', difficulty: '아주 쉬움', cookTime: 15, servings: 1, heroImage: PLACEHOLDER_IMAGE,
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 1, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '멍게', description: '멍게 특유의 향과 참기름이 어우러진 간단하고 향긋한 비빔밥이에요.',
     ingredients: [
       { name: '멍게', amount: '150g(손질된 것)' }, { name: '밥', amount: '1공기' }, { name: '김가루', amount: '약간' }, { name: '참기름', amount: '1큰술' }, { name: '깨소금', amount: '약간' },
@@ -155,7 +155,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-뱅어-1', month: 5, title: '바삭한 뱅어포 무침', subtitle: '간단하게 무쳐먹는 봄 밑반찬',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '뱅어', description: '구운 뱅어포에 고춧가루 양념을 더해 바삭하고 짭짤하게 즐기는 밑반찬이에요.',
     ingredients: [
       { name: '뱅어포', amount: '5장' }, { name: '고춧가루', amount: '1작은술' }, { name: '간장', amount: '1작은술' }, { name: '물엿', amount: '1작은술' }, { name: '참기름', amount: '1작은술' },
@@ -170,7 +170,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-병어-1', month: 5, title: '고소한 병어조림', subtitle: '살이 부드러운 봄 병어를 매콤하게 조린 메인',
-    category: '메인', difficulty: '보통', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '병어', description: '간장양념에 졸여낸 병어는 살이 부드럽고 양념이 잘 배어들어요.',
     ingredients: [
       { name: '병어', amount: '2마리' }, { name: '간장', amount: '3큰술' }, { name: '고춧가루', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '대파', amount: '1대' }, { name: '물', amount: '1/2컵' },
@@ -185,7 +185,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-민어-1', month: 6, title: '담백한 민어탕', subtitle: '여름 보양식으로 으뜸인 맑은 생선탕',
-    category: '국&찌개', difficulty: '쉬움', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '민어', description: '맑게 끓여낸 민어탕은 담백하고 부드러운 살 맛이 일품인 여름 보양식이에요.',
     ingredients: [
       { name: '민어', amount: '400g(토막)' }, { name: '애호박', amount: '1/2개' }, { name: '무', amount: '150g' }, { name: '대파', amount: '1대' }, { name: '소금', amount: '약간' },
@@ -200,7 +200,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-전갱이-1', month: 6, title: '고소한 전갱이 소금구이', subtitle: '기름지고 고소한 초여름 등푸른 생선구이',
-    category: '메인', difficulty: '쉬움', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전갱이', description: '소금만으로 간을 해 구워도 충분히 고소한 전갱이 본연의 맛을 즐길 수 있어요.',
     ingredients: [
       { name: '전갱이', amount: '2마리' }, { name: '소금', amount: '1작은술' }, { name: '식용유', amount: '1큰술' }, { name: '레몬', amount: '1/4개' },
@@ -215,7 +215,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-보리새우-1', month: 7, title: '탱탱한 보리새우 소금구이', subtitle: '고소하고 탱탱한 여름 새우구이',
-    category: '메인', difficulty: '아주 쉬움', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '보리새우', description: '소금만 뿌려 구워도 탱탱한 살과 고소한 맛이 그대로 살아나는 간단한 안주예요.',
     ingredients: [
       { name: '보리새우', amount: '300g' }, { name: '굵은소금', amount: '1줌' },
@@ -229,7 +229,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-장어-1', month: 7, title: '고소한 장어구이', subtitle: '복날 대표 보양식, 양념장에 구운 장어',
-    category: '메인', difficulty: '보통', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '장어', description: '달콤짭짤한 양념을 발라 구운 장어는 여름철 대표 보양식이에요.',
     ingredients: [
       { name: '장어', amount: '2마리(손질된 것)' }, { name: '간장', amount: '3큰술' }, { name: '맛술', amount: '2큰술' }, { name: '설탕', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' },
@@ -263,7 +263,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-우럭-1', month: 8, title: '시원한 우럭미역국', subtitle: '담백한 흰살생선과 미역이 어우러진 국',
-    category: '국&찌개', difficulty: '쉬움', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '우럭', description: '우럭의 담백함과 미역의 부드러움이 잘 어울리는 시원한 국이에요.',
     ingredients: [
       { name: '우럭', amount: '1마리(토막)' }, { name: '마른미역', amount: '20g' }, { name: '참기름', amount: '1큰술' }, { name: '국간장', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' },
@@ -278,7 +278,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-성게-1', month: 8, title: '향긋한 성게 비빔밥', subtitle: '바다향 가득한 고급스러운 별미 비빔밥',
-    category: '밥', difficulty: '아주 쉬움', cookTime: 10, servings: 1, heroImage: PLACEHOLDER_IMAGE,
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 1, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '성게', description: '신선한 성게알을 밥 위에 올려 참기름과 간장으로 간단히 즐기는 별미예요.',
     ingredients: [
       { name: '성게알', amount: '50g' }, { name: '밥', amount: '1공기' }, { name: '김가루', amount: '약간' }, { name: '참기름', amount: '1작은술' }, { name: '간장', amount: '1작은술' },
@@ -293,7 +293,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-연어-1', month: 9, title: '담백한 연어 스테이크', subtitle: '겉은 바삭, 속은 부드러운 연어 요리',
-    category: '메인', difficulty: '쉬움', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '연어', description: '팬에 구워 겉은 바삭하고 속은 부드럽게 즐기는 가장 기본적인 연어 요리예요.',
     ingredients: [
       { name: '연어', amount: '2토막' }, { name: '올리브오일', amount: '1큰술' }, { name: '소금, 후추', amount: '약간씩' }, { name: '레몬', amount: '1/2개' },
@@ -308,7 +308,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-전어-1', month: 9, title: '고소한 전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
-    category: '메인', difficulty: '아주 쉬움', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전어', description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐겨요.',
     ingredients: [
       { name: '전어', amount: '4마리' }, { name: '굵은소금', amount: '1작은술' },
@@ -323,7 +323,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-주꾸미-1', month: 2, title: '매콤한 주꾸미볶음', subtitle: '쫄깃한 주꾸미를 매콤하게 볶아낸 별미',
-    category: '메인', difficulty: '보통', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '주꾸미', description: '매콤달콤한 양념에 볶아낸 주꾸미는 쫄깃한 식감이 일품인 술안주예요.',
     ingredients: [
       { name: '주꾸미', amount: '400g' }, { name: '양파', amount: '1/2개' }, { name: '고추장', amount: '2큰술' }, { name: '고춧가루', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '설탕', amount: '1큰술' },
@@ -338,7 +338,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-광어-1', month: 11, title: '쫄깃한 광어회', subtitle: '담백하고 쫄깃한 가을·겨울 대표 흰살 생선회',
-    category: '메인', difficulty: '보통', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '광어', description: '쫄깃한 식감이 매력인 광어는 얇게 썰어 회로 즐기면 담백한 맛이 살아나요.',
     ingredients: [
       { name: '광어회', amount: '300g(손질된 것)' }, { name: '깻잎', amount: '10장' }, { name: '초고추장', amount: '적당량' }, { name: '와사비간장', amount: '적당량' },
@@ -353,7 +353,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-방어-1', month: 10, title: '고소한 방어회', subtitle: '기름지고 고소한 가을·겨울 대표 회',
-    category: '메인', difficulty: '보통', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '방어', description: '기름이 올라 고소한 방어는 두툼하게 썰어 회로 즐기는 게 제일이에요.',
     ingredients: [
       { name: '방어회', amount: '300g(손질된 것)' }, { name: '쪽파', amount: '약간' }, { name: '양파', amount: '1/4개' }, { name: '초고추장', amount: '적당량' },
@@ -368,7 +368,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-과메기-1', month: 12, title: '쌈채소 곁들인 과메기', subtitle: '쫄깃한 과메기를 채소에 싸먹는 겨울 별미',
-    category: '메인', difficulty: '아주 쉬움', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '과메기', description: '꼬들꼬들하게 말린 과메기를 미역, 쪽파와 함께 채소에 싸먹는 겨울 별미예요.',
     ingredients: [
       { name: '과메기', amount: '200g' }, { name: '쪽파', amount: '한줌' }, { name: '마른김', amount: '5장' }, { name: '물미역', amount: '100g' }, { name: '초고추장', amount: '적당량' },
@@ -383,7 +383,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-꽃새우-1', month: 8, title: '바삭한 꽃새우 소금구이', subtitle: '껍질까지 바삭하게 즐기는 여름 새우',
-    category: '메인', difficulty: '아주 쉬움', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '꽃새우', description: '굵은소금 위에 구워내면 껍질째 바삭하게 즐길 수 있는 간단한 안주예요.',
     ingredients: [
       { name: '꽃새우', amount: '300g' }, { name: '굵은소금', amount: '1줌' },
@@ -397,7 +397,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-농어-1', month: 6, title: '쫄깃한 농어회', subtitle: '탱글한 살이 일품인 여름 흰살 생선회',
-    category: '메인', difficulty: '보통', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '농어', description: '여름 농어는 살이 탱글하고 쫄깃해 얇게 썰어 회로 즐기기 좋아요.',
     ingredients: [
       { name: '농어회', amount: '300g(손질된 것)' }, { name: '깻잎', amount: '10장' }, { name: '미나리', amount: '한줌' }, { name: '초고추장', amount: '적당량' },
@@ -414,7 +414,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   // ===== 채소 =====
   {
     id: 'ing-마늘쫑-1', month: 6, title: '아삭한 마늘쫑볶음', subtitle: '밥반찬으로 좋은 아삭한 볶음',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '마늘쫑', description: '간장양념에 새우젓을 더해 짭짤하고 고소하게 볶아낸 밑반찬이에요.',
     ingredients: [
       { name: '마늘쫑', amount: '200g' }, { name: '식용유', amount: '1큰술' }, { name: '간장', amount: '1큰술' }, { name: '새우젓', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
@@ -429,7 +429,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-무순-1', month: 9, title: '알싱한 무순 샐러드', subtitle: '간단하게 곁들이는 알싱한 새싹 샐러드',
-    category: '샐러드', difficulty: '아주 쉬움', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '무순', description: '아삭한 무순에 간장 드레싱을 더해 가볍게 곁들이기 좋은 샐러드예요.',
     ingredients: [
       { name: '무순', amount: '1팩' }, { name: '간장', amount: '1큰술' }, { name: '식초', amount: '1큰술' }, { name: '참기름', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
@@ -444,7 +444,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-부추-1', month: 5, title: '고소한 부추전', subtitle: '향긋한 부추로 부쳐낸 바삭한 전',
-    category: '브런치', difficulty: '쉬움', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '부추', description: '부추 향이 가득한 반죽을 바삭하게 부쳐낸, 막걸리와 잘 어울리는 전이에요.',
     ingredients: [
       { name: '부추', amount: '150g' }, { name: '부침가루', amount: '1컵' }, { name: '물', amount: '1컵' }, { name: '식용유', amount: '3큰술' },
@@ -459,7 +459,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-씀바귀-1', month: 3, title: '쌉싸름한 씀바귀무침', subtitle: '입맛을 돋우는 새콤달콤 봄나물 무침',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '씀바귀', description: '쌉싸름한 씀바귀를 고춧가루 양념에 새콤달콤하게 무쳐 입맛을 돋워줘요.',
     ingredients: [
       { name: '씀바귀', amount: '200g' }, { name: '고춧가루', amount: '1큰술' }, { name: '식초', amount: '1큰술' }, { name: '설탕', amount: '1작은술' }, { name: '다진마늘', amount: '1작은술' }, { name: '소금', amount: '약간' },
@@ -474,7 +474,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-애호박-1', month: 6, title: '부드러운 애호박볶음', subtitle: '간단하고 부드러운 여름 호박 볶음',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '애호박', description: '새우젓으로 간을 한 애호박볶음은 부드럽고 감칠맛이 좋은 기본 반찬이에요.',
     ingredients: [
       { name: '애호박', amount: '1개' }, { name: '식용유', amount: '1큰술' }, { name: '새우젓', amount: '1작은술' }, { name: '다진마늘', amount: '1작은술' }, { name: '대파', amount: '약간' },
@@ -489,7 +489,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-참나물-1', month: 3, title: '향긋한 참나물무침', subtitle: '향긋하게 무쳐낸 봄나물 반찬',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 10, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '참나물', description: '참기름과 국간장으로 슴슴하게 무쳐 참나물 본연의 향을 살린 반찬이에요.',
     ingredients: [
       { name: '참나물', amount: '200g' }, { name: '국간장', amount: '1큰술' }, { name: '참기름', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
@@ -504,7 +504,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-토란-1', month: 9, title: '구수한 토란국', subtitle: '부드럽고 구수한 가을 대표 국',
-    category: '국&찌개', difficulty: '쉬움', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '토란', description: '소고기와 함께 끓여낸 토란국은 부드럽고 구수한 맛이 일품인 가을철 국이에요.',
     ingredients: [
       { name: '토란', amount: '300g' }, { name: '소고기(국거리)', amount: '100g' }, { name: '국간장', amount: '2큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '참기름', amount: '1큰술' },
@@ -519,7 +519,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-풋마늘-1', month: 5, title: '아삭한 풋마늘무침', subtitle: '알싱하고 아삭한 초여름 마늘 무침',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '풋마늘', description: '아삭한 풋마늘을 고춧가루 양념에 새콤하게 무쳐낸 알싱한 반찬이에요.',
     ingredients: [
       { name: '풋마늘', amount: '200g' }, { name: '고춧가루', amount: '1큰술' }, { name: '액젓', amount: '1큰술' }, { name: '설탕', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
@@ -536,7 +536,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   // ===== 과일 =====
   {
     id: 'ing-레드향-1', month: 1, title: '레드향 화채', subtitle: '향긋하고 시원한 겨울 과일 화채',
-    category: '디저트', difficulty: '아주 쉬움', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '레드향', description: '향긋한 레드향을 사이다와 함께 시원하게 즐기는 간단한 화채예요.',
     ingredients: [
       { name: '레드향', amount: '2개' }, { name: '사이다', amount: '1컵' }, { name: '꿀', amount: '1큰술' }, { name: '얼음', amount: '약간' },
@@ -551,7 +551,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-멜론-1', month: 7, title: '멜론 프로슈토', subtitle: '달콤한 멜론과 짭짤한 햄의 조화',
-    category: '브런치', difficulty: '아주 쉬움', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '멜론', description: '달콤한 멜론에 짭짤한 프로슈토(또는 생햄)를 곁들이는 간단한 전채요리예요.',
     ingredients: [
       { name: '멜론', amount: '1/2개' }, { name: '프로슈토(또는 생햄)', amount: '6장' }, { name: '후추', amount: '약간' },
@@ -566,7 +566,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-살구-1', month: 5, title: '향긋한 살구잼', subtitle: '새콤달콤한 초여름 살구로 만드는 홈메이드 잼',
-    category: '디저트', difficulty: '쉬움', cookTime: 40, servings: 4, heroImage: PLACEHOLDER_IMAGE,
+    category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '살구', description: '살구와 설탕만으로 만드는 향긋한 잼은 빵에 발라먹기 좋아요.',
     ingredients: [
       { name: '살구', amount: '500g' }, { name: '설탕', amount: '250g' }, { name: '레몬즙', amount: '1큰술' },
@@ -600,7 +600,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-키위-1', month: 2, title: '키위 스무디', subtitle: '비타민 가득한 새콤달콤 키위 스무디',
-    category: '디저트', difficulty: '아주 쉬움', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '키위', description: '키위와 우유, 꿀만 있으면 5분 안에 만들 수 있는 비타민 가득 스무디예요.',
     ingredients: [
       { name: '키위', amount: '3개' }, { name: '우유(또는 요거트)', amount: '1컵' }, { name: '꿀', amount: '1큰술' }, { name: '얼음', amount: '5조각' },
@@ -614,7 +614,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-천혜향-1', month: 2, title: '천혜향 청', subtitle: '향이 진한 만감류로 만드는 홈메이드 과일청',
-    category: '디저트', difficulty: '쉬움', cookTime: 30, servings: 6, heroImage: PLACEHOLDER_IMAGE,
+    category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '천혜향', description: '천혜향을 설탕에 재워 만든 과일청은 차로 마시거나 탄산수에 타 마시기 좋아요.',
     ingredients: [
       { name: '천혜향', amount: '3개' }, { name: '설탕', amount: '같은 무게' },
@@ -629,7 +629,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-황금향-1', month: 4, title: '황금향 샐러드', subtitle: '향긋하고 달콤한 봄 만감류 샐러드',
-    category: '샐러드', difficulty: '아주 쉬움', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '황금향', description: '황금향의 달콤한 과즙과 채소를 곁들여 산뜻하게 즐기는 샐러드예요.',
     ingredients: [
       { name: '황금향', amount: '1개' }, { name: '루꼴라(또는 양상추)', amount: '한줌' }, { name: '올리브오일', amount: '1큰술' }, { name: '소금, 후추', amount: '약간씩' },
@@ -646,7 +646,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   // ===== 곡물 =====
   {
     id: 'ing-검은콩-1', month: 2, title: '고소한 검은콩밥', subtitle: '구수하고 영양 가득한 검은콩 잡곡밥',
-    category: '밥', difficulty: '아주 쉬움', cookTime: 40, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 40, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '검은콩', description: '쌀에 검은콩을 섞어 지으면 구수한 맛과 영양을 한 번에 챙길 수 있어요.',
     ingredients: [
       { name: '쌀', amount: '2컵' }, { name: '검은콩', amount: '1/2컵' }, { name: '물', amount: '2컵' },
@@ -680,7 +680,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-녹두-1', month: 8, title: '바삭한 녹두빈대떡', subtitle: '고소하고 바삭한 여름 전통 부침',
-    category: '브런치', difficulty: '보통', cookTime: 40, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '브런치', difficulty: '보통', level: 'home', cookTime: 40, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '녹두', description: '불린 녹두를 갈아 채소와 함께 부쳐낸 바삭하고 고소한 전통 부침이에요.',
     ingredients: [
       { name: '녹두', amount: '1컵(불린 것)' }, { name: '돼지고기(다짐육)', amount: '100g' }, { name: '숙주', amount: '100g' }, { name: '김치', amount: '100g' }, { name: '식용유', amount: '4큰술' },
@@ -695,7 +695,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-들깨-1', month: 1, title: '고소한 들깨미역국', subtitle: '들깨가루로 더 구수해진 국',
-    category: '국&찌개', difficulty: '아주 쉬움', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '들깨', description: '미역국에 들깨가루를 더하면 더 구수하고 고소한 맛이 살아나요.',
     ingredients: [
       { name: '마른미역', amount: '20g' }, { name: '들깨가루', amount: '3큰술' }, { name: '국간장', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '참기름', amount: '1큰술' },
@@ -710,7 +710,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-보리-1', month: 3, title: '구수한 보리비빔밥', subtitle: '식이섬유 가득한 구수한 보리밥 비빔밥',
-    category: '밥', difficulty: '아주 쉬움', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '보리', description: '구수한 보리밥에 나물과 고추장을 더해 비벼먹는 건강한 한 끼예요.',
     ingredients: [
       { name: '보리밥', amount: '2공기' }, { name: '나물(취나물 등)', amount: '1컵' }, { name: '고추장', amount: '2큰술' }, { name: '참기름', amount: '1큰술' }, { name: '계란프라이', amount: '2개' },
@@ -725,7 +725,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-풋콩-1', month: 7, title: '담백한 풋콩찜', subtitle: '소금물에 삶아 즐기는 여름 맥주 안주',
-    category: '반찬', difficulty: '아주 쉬움', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '풋콩', description: '소금물에 삶기만 하면 끝나는 가장 간단한 여름 별미예요.',
     ingredients: [
       { name: '풋콩', amount: '300g' }, { name: '굵은소금', amount: '2큰술' }, { name: '물', amount: '5컵' },
@@ -740,7 +740,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-햅쌀-1', month: 9, title: '윤기나는 햅쌀밥', subtitle: '그해 첫 수확한 쌀로 짓는 향긋한 밥',
-    category: '밥', difficulty: '아주 쉬움', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '햅쌀', description: '특별한 양념 없이 그냥 지어도 향긋하고 차진 햅쌀밥 자체가 별미예요.',
     ingredients: [
       { name: '햅쌀', amount: '2컵' }, { name: '물', amount: '2컵' },
@@ -755,7 +755,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-햇마늘-1', month: 6, title: '알 굵은 햇마늘 장아찌', subtitle: '아삭하게 절여 두고 먹는 마늘 장아찌',
-    category: '반찬', difficulty: '쉬움', cookTime: 20, servings: 6, heroImage: PLACEHOLDER_IMAGE,
+    category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 6, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '햇마늘', description: '알이 통통한 햇마늘을 간장물에 절여두면 아삭하고 알싱한 밑반찬이 돼요.',
     ingredients: [
       { name: '햇마늘', amount: '500g' }, { name: '간장', amount: '1컵' }, { name: '식초', amount: '1컵' }, { name: '물', amount: '1컵' }, { name: '설탕', amount: '1/2컵' },
@@ -770,7 +770,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-흑미-1', month: 1, title: '고소한 흑미밥', subtitle: '안토시아닌이 풍부한 건강 잡곡밥',
-    category: '밥', difficulty: '아주 쉬움', cookTime: 35, servings: 3, heroImage: PLACEHOLDER_IMAGE,
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 35, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '흑미', description: '쌀에 흑미를 섞어 지으면 은은한 보라빛과 구수한 맛을 함께 즐길 수 있어요.',
     ingredients: [
       { name: '쌀', amount: '2컵' }, { name: '흑미', amount: '1/4컵' }, { name: '물', amount: '2컵' },

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'motion/react';
-import { Recipe } from '@/data/types';
+import { Recipe, RecipeLevel } from '@/data/types';
 import { scaleAmount, estimateTimeAdjustmentNote } from '@/lib/scale-amount';
 import { useCurrentStep } from '@/lib/current-step-context';
 import StepList from './StepList';
@@ -16,10 +16,18 @@ const fadeUp = {
   animate: { opacity: 1, y: 0 },
 };
 
+const LEVEL_BADGE: Record<RecipeLevel, { label: string; className: string }> = {
+  home: { label: '🌱 데일리 홈쿡', className: 'bg-sage/10 text-sage' },
+  weekend: { label: '🔥 주말 요리', className: 'bg-terracotta/10 text-terracotta' },
+  world: { label: '🌍 세계 요리', className: 'bg-terracotta/10 text-terracotta' },
+  chef: { label: '👨\u200d🍳 셰프 컬렉션', className: 'bg-ink text-cream' },
+};
+
 export default function RecipeBody({ recipe }: RecipeBodyProps) {
   const { servings, setServings, requestAskAboutStep } = useCurrentStep();
   const scale = servings / recipe.servings;
   const timeNote = estimateTimeAdjustmentNote(scale);
+  const levelBadge = LEVEL_BADGE[recipe.level];
 
   const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(
     recipe.youtubeQuery
@@ -28,12 +36,35 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
   return (
     <div className="px-5 pt-5">
       <motion.div {...fadeUp} transition={{ duration: 0.35, delay: 0.05 }}>
-        <p className="text-[13px] text-sage font-medium">{recipe.category}</p>
+        <div className="flex items-center gap-2">
+          <p className="text-[13px] text-sage font-medium">{recipe.category}</p>
+          <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full ${levelBadge.className}`}>
+            {levelBadge.label}
+          </span>
+        </div>
         <h1 className="font-display text-[21px] text-ink mt-1 leading-snug">
           {recipe.title}
         </h1>
         <p className="text-[14px] text-ink-soft mt-1.5">{recipe.subtitle}</p>
       </motion.div>
+
+      {recipe.cuisineContext && (
+        <motion.div
+          {...fadeUp}
+          transition={{ duration: 0.35, delay: 0.08 }}
+          className="flex items-start gap-2.5 mt-4 bg-terracotta/8 rounded-2xl px-4 py-3.5"
+        >
+          <span className="text-[16px] shrink-0">🌍</span>
+          <div>
+            <p className="text-[12.5px] font-semibold text-terracotta">
+              {recipe.cuisineContext.country} 요리
+            </p>
+            <p className="text-[12.5px] text-ink-soft leading-relaxed mt-1">
+              {recipe.cuisineContext.note}
+            </p>
+          </div>
+        </motion.div>
+      )}
 
       <motion.div
         {...fadeUp}
@@ -115,6 +146,21 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
         <h2 className="font-display text-[16px] text-ink mb-4">만드는 법</h2>
         <StepList steps={recipe.steps} onAskAboutStep={requestAskAboutStep} />
       </section>
+
+      {recipe.platingGuide && (
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.35 }}
+          className="mt-7"
+        >
+          <h2 className="font-display text-[16px] text-ink mb-3">👨‍🍳 플레이팅 가이드</h2>
+          <div className="bg-ink/5 rounded-2xl px-4 py-3.5">
+            <p className="text-[13px] text-ink leading-relaxed">{recipe.platingGuide}</p>
+          </div>
+        </motion.section>
+      )}
 
       {recipe.tips.length > 0 && (
         <motion.section

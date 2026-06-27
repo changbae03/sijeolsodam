@@ -16,6 +16,8 @@ export interface RecipeStep {
   stepImage?: string;
 }
 
+export type RecipeLevel = 'home' | 'weekend' | 'world' | 'chef';
+
 export interface Recipe {
   id: string;
   month: number;
@@ -23,6 +25,12 @@ export interface Recipe {
   subtitle: string;
   category: string;
   difficulty: '아주 쉬움' | '쉬움' | '보통';
+  /** 4단계 난이도 컬렉션: home(데일리 홈쿡) -> weekend(주말 요리) -> world(세계 요리) -> chef(셰프 컬렉션) */
+  level: RecipeLevel;
+  /** world 레벨일 때, 어느 나라/지역 요리인지와 그 배경 설명 (선택적) */
+  cuisineContext?: { country: string; note: string };
+  /** chef 레벨일 때, 플레이팅 가이드(선택적) */
+  platingGuide?: string;
   cookTime: number; // 분
   servings: number;
   heroImage: string;
