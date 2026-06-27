@@ -36,17 +36,35 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
   return (
     <div className="px-5 pt-5">
       <motion.div {...fadeUp} transition={{ duration: 0.35, delay: 0.05 }}>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <p className="text-[13px] text-sage font-medium">{recipe.category}</p>
           <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full ${levelBadge.className}`}>
             {levelBadge.label}
           </span>
+          {recipe.masterclass && (
+            <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-terracotta text-paper">
+              ✨ 마스터클래스
+            </span>
+          )}
         </div>
         <h1 className="font-display text-[21px] text-ink mt-1 leading-snug">
           {recipe.title}
         </h1>
         <p className="text-[14px] text-ink-soft mt-1.5">{recipe.subtitle}</p>
       </motion.div>
+
+      {recipe.masterclass && (
+        <motion.div
+          {...fadeUp}
+          transition={{ duration: 0.35, delay: 0.06 }}
+          className="mt-4 border-l-2 border-terracotta pl-4"
+        >
+          <p className="text-[11px] font-semibold text-terracotta mb-1.5">셰프의 한마디</p>
+          <p className="text-[13.5px] text-ink leading-relaxed italic">
+            &ldquo;{recipe.masterclass.chefIntro}&rdquo;
+          </p>
+        </motion.div>
+      )}
 
       {recipe.cuisineContext && (
         <motion.div
@@ -107,6 +125,21 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
         />
       </motion.div>
 
+      {recipe.masterclass && (
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.35 }}
+          className="mt-7"
+        >
+          <h2 className="font-display text-[16px] text-ink mb-3">🛒 재료 고르는 법</h2>
+          <p className="text-[13.5px] text-ink-soft leading-relaxed">
+            {recipe.masterclass.ingredientSelection}
+          </p>
+        </motion.section>
+      )}
+
       <motion.section
         {...fadeUp}
         transition={{ duration: 0.35, delay: 0.25 }}
@@ -142,12 +175,63 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
         )}
       </motion.section>
 
+      {recipe.masterclass && (
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.35 }}
+          className="mt-7 space-y-4"
+        >
+          <div>
+            <h2 className="font-display text-[16px] text-ink mb-3">🔪 미리 준비하기</h2>
+            <p className="text-[13.5px] text-ink-soft leading-relaxed">
+              {recipe.masterclass.miseEnPlace}
+            </p>
+          </div>
+          <div className="bg-cream-warm rounded-2xl px-4 py-3.5">
+            <p className="text-[12px] font-semibold text-ink mb-1.5">🍳 추천 조리도구</p>
+            <p className="text-[13px] text-ink leading-relaxed">{recipe.masterclass.cookware.recommended}</p>
+            {recipe.masterclass.cookware.alternatives.length > 0 && (
+              <div className="mt-2">
+                <p className="text-[11px] text-ink-soft/70 mb-1">대체 가능한 도구</p>
+                {recipe.masterclass.cookware.alternatives.map((alt, idx) => (
+                  <p key={idx} className="text-[12.5px] text-ink-soft leading-relaxed">
+                    · {alt}
+                  </p>
+                ))}
+              </div>
+            )}
+          </div>
+        </motion.section>
+      )}
+
       <section className="mt-7">
         <h2 className="font-display text-[16px] text-ink mb-4">만드는 법</h2>
         <StepList steps={recipe.steps} onAskAboutStep={requestAskAboutStep} />
       </section>
 
-      {recipe.platingGuide && (
+      {recipe.masterclass?.chefsNotes && (
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.35 }}
+          className="mt-7"
+        >
+          <details className="group bg-ink/5 rounded-2xl px-4 py-3.5">
+            <summary className="text-[14px] font-medium text-ink cursor-pointer list-none flex items-center justify-between">
+              <span>🎓 셰프의 노트 — 더 깊은 기법과 원리</span>
+              <span className="text-ink-soft/50 transition-transform group-open:rotate-180">⌄</span>
+            </summary>
+            <p className="text-[13px] text-ink-soft leading-relaxed mt-3">
+              {recipe.masterclass.chefsNotes}
+            </p>
+          </details>
+        </motion.section>
+      )}
+
+      {(recipe.masterclass?.platingAndServing || recipe.platingGuide) && (
         <motion.section
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -157,7 +241,36 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
         >
           <h2 className="font-display text-[16px] text-ink mb-3">👨‍🍳 플레이팅 가이드</h2>
           <div className="bg-ink/5 rounded-2xl px-4 py-3.5">
-            <p className="text-[13px] text-ink leading-relaxed">{recipe.platingGuide}</p>
+            <p className="text-[13px] text-ink leading-relaxed">
+              {recipe.masterclass?.platingAndServing ?? recipe.platingGuide}
+            </p>
+          </div>
+        </motion.section>
+      )}
+
+      {recipe.masterclass && (
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.35 }}
+          className="mt-7 space-y-5"
+        >
+          <div>
+            <h2 className="font-display text-[16px] text-ink mb-3">🍷 곁들임 추천</h2>
+            <p className="text-[13.5px] text-ink-soft leading-relaxed">{recipe.masterclass.pairing}</p>
+          </div>
+          <div>
+            <h2 className="font-display text-[16px] text-ink mb-3">🧊 보관 및 재가열</h2>
+            <p className="text-[13.5px] text-ink-soft leading-relaxed">
+              {recipe.masterclass.storageAndReheating}
+            </p>
+          </div>
+          <div>
+            <h2 className="font-display text-[16px] text-ink mb-3">♻️ 남았을 때 활용법</h2>
+            <p className="text-[13.5px] text-ink-soft leading-relaxed">
+              {recipe.masterclass.leftoverIdeas}
+            </p>
           </div>
         </motion.section>
       )}
@@ -168,7 +281,7 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.35 }}
-          className="mt-7 mb-10"
+          className="mt-7"
         >
           <h2 className="font-display text-[16px] text-ink mb-3">알면 더 맛있는 팁</h2>
           <div className="bg-sage/8 rounded-2xl px-4 py-3.5 space-y-2">
@@ -178,6 +291,21 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
               </p>
             ))}
           </div>
+        </motion.section>
+      )}
+
+      {recipe.masterclass && (
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.35 }}
+          className="mt-7 mb-10 text-center"
+        >
+          <p className="text-[13px] text-ink-soft leading-relaxed italic px-4">
+            {recipe.masterclass.closingNote}
+          </p>
+          <p className="text-[11px] text-ink-soft/50 mt-2.5">— 시절소담 셰프 노트</p>
         </motion.section>
       )}
     </div>

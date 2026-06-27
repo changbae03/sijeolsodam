@@ -38,6 +38,11 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
             className="object-cover img-editorial"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-transparent" />
+          {recipe.masterclass && (
+            <span className="absolute top-2.5 left-2.5 text-[10px] font-semibold px-2 py-1 rounded-full bg-terracotta text-paper">
+              ✨ 마스터클래스
+            </span>
+          )}
           {user && (
             <motion.button
               onClick={handleFavoriteClick}

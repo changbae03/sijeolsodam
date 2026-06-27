@@ -18,6 +18,33 @@ export interface RecipeStep {
 
 export type RecipeLevel = 'home' | 'weekend' | 'world' | 'chef';
 
+/**
+ * "마스터클래스 레시피" — 최고 품질의 요리 가이드.
+ * 레시피 개수보다 가이드의 깊이를 우선한다는 원칙 아래, 일부 선별된 레시피에만 적용.
+ */
+export interface MasterclassContent {
+  /** 셰프의 소개 — 왜 지금 이 제철 식재료에 이 요리가 가장 잘 맞는지 */
+  chefIntro: string;
+  /** 좋은 재료를 고르는 법 (일반적인 "고르는 법"보다 이 요리에 특화된 기준) */
+  ingredientSelection: string;
+  /** 손질/사전 준비(미즈 앙 플라스) 가이드 */
+  miseEnPlace: string;
+  /** 추천 조리도구와 대체 가능한 도구 */
+  cookware: { recommended: string; alternatives: string[] };
+  /** 펼쳐보는 "셰프의 노트" — 고급 기법이나 조리 과학 설명 (선택적) */
+  chefsNotes?: string;
+  /** 플레이팅과 서빙 제안 */
+  platingAndServing: string;
+  /** 곁들이면 좋은 음료/사이드 추천 */
+  pairing: string;
+  /** 보관 및 재가열 방법 */
+  storageAndReheating: string;
+  /** 남았을 때 활용 아이디어 */
+  leftoverIdeas: string;
+  /** 셰프의 마무리 한 마디 */
+  closingNote: string;
+}
+
 export interface Recipe {
   id: string;
   month: number;
@@ -29,8 +56,10 @@ export interface Recipe {
   level: RecipeLevel;
   /** world 레벨일 때, 어느 나라/지역 요리인지와 그 배경 설명 (선택적) */
   cuisineContext?: { country: string; note: string };
-  /** chef 레벨일 때, 플레이팅 가이드(선택적) */
+  /** chef 레벨일 때, 플레이팅 가이드(선택적) — masterclass가 있으면 그 안의 platingAndServing이 우선됨 */
   platingGuide?: string;
+  /** 마스터클래스급 콘텐츠 (선택적 — 선별된 레시피에만 작성) */
+  masterclass?: MasterclassContent;
   cookTime: number; // 분
   servings: number;
   heroImage: string;
