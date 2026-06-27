@@ -23,6 +23,20 @@ const LEVEL_BADGE: Record<RecipeLevel, { label: string; className: string }> = {
   chef: { label: '👨\u200d🍳 셰프 컬렉션', className: 'bg-ink text-cream' },
 };
 
+/** "\n\n"으로 구분된 텍스트를 여러 문단(<p>)으로 나눠 렌더링 — 긴 마스터클래스 글의 가독성용 */
+function Paragraphs({ text, className }: { text: string; className?: string }) {
+  const paragraphs = text.split(/\n\n+/).filter((p) => p.trim().length > 0);
+  return (
+    <div className="space-y-2.5">
+      {paragraphs.map((p, idx) => (
+        <p key={idx} className={className}>
+          {p.trim()}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 export default function RecipeBody({ recipe }: RecipeBodyProps) {
   const { servings, setServings, requestAskAboutStep } = useCurrentStep();
   const scale = servings / recipe.servings;
@@ -60,9 +74,10 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           className="mt-4 border-l-2 border-terracotta pl-4"
         >
           <p className="text-[11px] font-semibold text-terracotta mb-1.5">셰프의 한마디</p>
-          <p className="text-[13.5px] text-ink leading-relaxed italic">
-            &ldquo;{recipe.masterclass.chefIntro}&rdquo;
-          </p>
+          <Paragraphs
+            text={`"${recipe.masterclass.chefIntro}"`}
+            className="text-[13.5px] text-ink leading-relaxed italic"
+          />
         </motion.div>
       )}
 
@@ -134,9 +149,10 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           className="mt-7"
         >
           <h2 className="font-display text-[16px] text-ink mb-3">🛒 재료 고르는 법</h2>
-          <p className="text-[13.5px] text-ink-soft leading-relaxed">
-            {recipe.masterclass.ingredientSelection}
-          </p>
+          <Paragraphs
+            text={recipe.masterclass.ingredientSelection}
+            className="text-[13.5px] text-ink-soft leading-relaxed"
+          />
         </motion.section>
       )}
 
@@ -185,9 +201,10 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
         >
           <div>
             <h2 className="font-display text-[16px] text-ink mb-3">🔪 미리 준비하기</h2>
-            <p className="text-[13.5px] text-ink-soft leading-relaxed">
-              {recipe.masterclass.miseEnPlace}
-            </p>
+            <Paragraphs
+              text={recipe.masterclass.miseEnPlace}
+              className="text-[13.5px] text-ink-soft leading-relaxed"
+            />
           </div>
           <div className="bg-cream-warm rounded-2xl px-4 py-3.5">
             <p className="text-[12px] font-semibold text-ink mb-1.5">🍳 추천 조리도구</p>
