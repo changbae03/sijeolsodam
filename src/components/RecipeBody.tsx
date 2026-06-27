@@ -55,7 +55,7 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full ${levelBadge.className}`}>
             {levelBadge.label}
           </span>
-          {recipe.masterclass && (
+          {recipe.masterclass && recipe.level === 'chef' && (
             <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-terracotta text-paper">
               ✨ 마스터클래스
             </span>
