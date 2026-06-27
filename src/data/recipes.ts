@@ -13,6 +13,7 @@ import { recipesLevelExpansion2 } from './recipes-level-expansion-2';
 import { recipesLevelExpansion3 } from './recipes-level-expansion-3';
 import { recipesPotatoExpansion } from './recipes-potato-expansion';
 import { recipesPotatoExpansion2 } from './recipes-potato-expansion-2';
+import { recipesAppleExpansion } from './recipes-apple-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -29,6 +30,7 @@ export const allRecipes: Recipe[] = [
   ...recipesLevelExpansion3,
   ...recipesPotatoExpansion,
   ...recipesPotatoExpansion2,
+  ...recipesAppleExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
