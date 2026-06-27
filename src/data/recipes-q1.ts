@@ -630,13 +630,30 @@ export const recipesQ1: Recipe[] = [
       { name: '얼음', amount: '6~8개' },
     ],
     steps: [
-      { title: '딸기 손질', description: '딸기는 꼭지를 떼고 깨끗이 씻어둡니다. 장식용으로 2개는 따로 빼둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/step-632.png' },
-      { title: '믹서에 갈기', description: '딸기, 요거트, 우유, 꿀, 얼음을 모두 믹서에 넣고 곱게 갈아줍니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/step-633.png' },
-      { title: '마무리', description: '컵에 따라 담고 슬라이스한 딸기로 장식해 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/step-634.png' },
+      {
+        title: '딸기 손질',
+        description: '딸기는 꼭지를 떼고 깨끗이 씻어둡니다. 장식용으로 2개는 따로 빼둡니다. 씻은 딸기는 물기를 충분히 털어내야 음료가 묽어지지 않아요.',
+        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/step-632.png',
+      },
+      {
+        title: '믹서에 갈기',
+        description: '딸기, 요거트, 우유, 꿀, 얼음을 모두 믹서에 넣고 곱게 갈아줍니다. 얼음을 같이 갈아야 따로 얼음을 넣을 때보다 음료 전체가 고르게 시원해지고 농도도 부드럽게 살아나요.',
+        timerSeconds: 60,
+        checkpoint: '딸기씨의 거친 입자가 거의 안 느껴지고 부드럽게 갈리면, 색도 선명한 핑크빛으로 변해 있을 거예요.',
+        tip: '믹서가 약하다면 얼음을 먼저 살짝 부순 뒤 나머지 재료를 넣으면 더 곱게 갈려요.',
+        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/step-633.png',
+      },
+      {
+        title: '마무리',
+        description: '컵에 따라 담고 슬라이스한 딸기로 장식해 완성합니다.',
+        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/4-4/step-634.png',
+      },
     ],
     tips: [
       '단맛이 부족하면 꿀을 조금 더 추가해 입맛에 맞춰주세요.',
       '바나나를 추가하면 더 부드러운 질감을 즐길 수 있습니다.',
+      '대체 재료: 플레인 요거트가 없으면 그릭 요거트로 대체하면 더 꾸덕한 질감이 나요.',
+      '보관/활용: 한 번에 다 마시는 게 가장 맛있어요. 남으면 냉동실에 얼려 딸기 요거트 아이스바로 활용해도 좋아요.',
     ],
     youtubeQuery: '딸기 라씨 만들기',
   },
