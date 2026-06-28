@@ -79,8 +79,14 @@ export function searchRecipes(query: string): Recipe[] {
 export function getRecipesByIngredient(ingredientName: string): Recipe[] {
   const normalized = ingredientName.trim();
   if (!normalized) return [];
+  // 접미사 매칭만 허용: "알배추"는 "배추"와 매칭되지만(끝이 같음),
+  // "배"는 "알배추"에 글자가 포함되어도 끝이 다르므로 매칭되지 않음.
+  // 단순 includes()는 "배"가 "알배추" 안에 글자로 들어있다는 이유로
+  // 잘못 매칭시키는 버그가 있었음(예: 알배추 페이지에 배 샐러드가 노출).
   return allRecipes.filter(
     (r) =>
-      r.mainIngredient.includes(normalized) || normalized.includes(r.mainIngredient)
+      r.mainIngredient === normalized ||
+      r.mainIngredient.endsWith(normalized) ||
+      normalized.endsWith(r.mainIngredient)
   );
 }
