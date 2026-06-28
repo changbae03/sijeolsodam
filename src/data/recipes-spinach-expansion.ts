@@ -34,8 +34,16 @@ export const recipesSpinachExpansion: Recipe[] = [
         checkpoint: '시금치가 부드럽게 휘어지고 색이 선명해지면 충분해요.',
         warning: '오래 데치면 흐물흐물해지고 영양소도 많이 빠져나가요. 30초를 넘기지 마세요.',
       },
-      { title: '헹구고 짜기', description: '바로 찬물에 헹궈 물기를 꽉 짭니다.' },
-      { title: '무치기', description: '다진마늘, 참기름, 소금을 넣고 무칩니다.' },
+      {
+        title: '헹구고 짜기',
+        description: '바로 찬물에 헹궈 물기를 꽉 짭니다. 데친 직후 바로 헹궈야 잔열로 더 익는 걸 막고 색도 선명하게 유지돼요.',
+        checkpoint: '손으로 쥐었을 때 물이 더 안 나오면 충분히 짠 거예요.',
+      },
+      {
+        title: '무치기',
+        description: '다진마늘, 참기름, 소금을 넣고 손끝으로 가볍게 무칩니다. 너무 세게 주무르면 숨이 더 죽어 질척해져요.',
+        tip: '참기름은 무치기 직전에 넣어야 향이 가장 진하게 살아요.',
+      },
     ],
     tips: ['대체 재료: 참기름 대신 들기름을 쓰면 더 고소해져요.', '보관/활용: 냉장 1~2일 이내로 드세요.'],
     youtubeQuery: '시금치 나물 무치기',
@@ -61,8 +69,12 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '데치기', description: '끓는 물에 시금치를 30초만 데쳐 찬물에 헹굽니다.', timerSeconds: 30 },
-      { title: '물기 짜기', description: '데친 시금치는 물기를 꽉 짜냅니다.' },
-      { title: '무치기', description: '된장, 다진마늘, 참기름을 넣고 무칩니다.' },
+      { title: '물기 짜기', description: '데친 시금치는 물기를 꽉 짜냅니다. 물기가 남으면 된장이 묽게 풀려서 간이 겉돌아요.' },
+      {
+        title: '무치기',
+        description: '된장, 다진마늘, 참기름을 넣고 가볍게 무칩니다. 된장은 덩어리지지 않게 먼저 손으로 살짝 풀어준 다음 섞으세요.',
+        tip: '된장 양은 시금치 한 단에 한 큰술 정도면 충분해요. 너무 많이 넣으면 짠맛이 시금치 단맛을 가려요.',
+      },
     ],
     tips: ['대체 재료: 된장 대신 쌈장으로도 만들 수 있어요.', '보관/활용: 냉장 1~2일 이내로 드세요.'],
     youtubeQuery: '시금치 된장무침 만들기',
@@ -87,13 +99,17 @@ export const recipesSpinachExpansion: Recipe[] = [
       { name: '시금치', amount: '1/2단' }, { name: '달걀', amount: '3개' }, { name: '물', amount: '1/2컵' }, { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '시금치 손질', description: '시금치는 잘게 썹니다.' },
-      { title: '달걀 풀기', description: '달걀에 물, 소금을 넣고 풀어 시금치를 섞습니다.' },
+      { title: '시금치 손질', description: '시금치는 잘게 썹니다. 너무 굵게 썰면 찜이 익는 동안 한쪽으로 가라앉아 고르게 안 퍼져요.' },
+      {
+        title: '달걀 풀기',
+        description: '달걀에 물, 소금을 넣고 충분히 풀어 시금치를 섞습니다. 체에 한 번 내려 풀면 알끈 없이 더 부드러운 질감이 나와요.',
+      },
       {
         title: '찌기',
         description: '약불에서 저어가며 천천히 익힙니다. 몽글몽글 부풀어 오르면 다 익은 거예요.',
         timerSeconds: 600,
         checkpoint: '가운데까지 몽글하게 익으면 완성이에요.',
+        warning: '센불로 익히면 바닥만 단단해지고 윗부분은 안 익어요. 약불을 꼭 지켜주세요.',
       },
     ],
     tips: ['대체 재료: 새우살을 다져 넣으면 더 든든해져요.', '보관/활용: 냉장 1일 이내로 드세요.'],
@@ -129,7 +145,10 @@ export const recipesSpinachExpansion: Recipe[] = [
         timerSeconds: 300,
         checkpoint: '시금치가 짙은 초록으로 줄어들고 부드러워지면 충분해요.',
       },
-      { title: '소스 만들기', description: '시금치, 리코타, 생크림을 섞어 필링을 만듭니다.' },
+      {
+        title: '소스 만들기',
+        description: '시금치, 리코타, 생크림을 섞어 필링을 만듭니다. 리코타가 차가우면 잘 안 섞이니, 살짝 상온에 둔 뒤 섞으세요.',
+      },
       { title: '쌓고 굽기', description: '면과 필링을 켜켜이 쌓고 치즈를 올려 190도에서 30분 굽습니다.', timerSeconds: 1800, checkpoint: '표면이 노릇하게 보글보글 끓으면 완성이에요.' },
     ],
     tips: ['대체 재료: 시금치 대신 케일을 섞어도 좋아요.', '보관/활용: 냉장 3일 이내로 드세요.'],
@@ -163,7 +182,7 @@ export const recipesSpinachExpansion: Recipe[] = [
         timerSeconds: 300,
         checkpoint: '소스가 걸쭉해지고 윤기가 돌면 완성이에요.',
       },
-      { title: '합치기', description: '삶은 면을 넣고 가볍게 섞습니다.' },
+      { title: '합치기', description: '삶은 면을 넣고 가볍게 섞습니다. 약불을 유지한 채 섞어야 크림이 분리되지 않아요.' },
     ],
     tips: ['대체 재료: 베이컨을 더하면 풍미가 깊어져요.', '보관/활용: 소스만 따로 보관 가능해요.'],
     youtubeQuery: '시금치 크림 파스타',
@@ -191,7 +210,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     steps: [
       { title: '타르트지 굽기', description: '타르트지를 틀에 깔고 180도에서 15분 블라인드 베이킹합니다.', timerSeconds: 900 },
       { title: '시금치 볶기', description: '베이컨을 구워 잘게 썰고, 시금치는 볶아 물기를 짭니다.', timerSeconds: 300 },
-      { title: '필링 만들기', description: '달걀, 생크림을 섞어 베이컨, 시금치, 치즈와 함께 섞습니다.' },
+      { title: '필링 만들기', description: '달걀, 생크림을 섞어 베이컨, 시금치, 치즈와 함께 섞습니다. 달걀과 크림 비율이 키슈의 부드러움을 결정해요.' },
       { title: '굽기', description: '타르트지에 필링을 채워 170도에서 30분 굽습니다.', timerSeconds: 1800, checkpoint: '가운데가 탱탱하게 부풀면 완성이에요.' },
     ],
     tips: ['대체 재료: 베이컨 대신 햄을 써도 좋아요.', '보관/활용: 냉장 보관 후 데워 드세요.'],
@@ -218,8 +237,8 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '시금치 손질', description: '시금치는 데쳐 찬물에 헹궈 물기를 꽉 짜고 잘게 다집니다.', timerSeconds: 60 },
-      { title: '속 만들기', description: '시금치, 다진 고기, 두부, 마늘, 참기름을 섞어 반죽합니다.' },
-      { title: '빚기', description: '만두피에 속을 넣고 가장자리를 물로 붙여 빚습니다.' },
+      { title: '속 만들기', description: '시금치, 다진 고기, 두부, 마늘, 참기름을 섞어 반죽합니다. 한 방향으로 치대면 점성이 생겨 찰진 속이 돼요.' },
+      { title: '빚기', description: '만두피에 속을 넣고 가장자리를 물로 붙여 빚습니다. 가장자리에 양념이 묻으면 잘 안 붙으니 깨끗하게 비워두세요.' },
       { title: '찌기', description: '찜기에 12분간 찝니다.', timerSeconds: 720, checkpoint: '만두피가 투명해지면 다 익은 거예요.' },
     ],
     tips: ['대체 재료: 다진 새우살을 더해도 잘 어울려요.', '보관/활용: 냉동 보관 후 바로 쪄도 좋아요.'],
@@ -246,8 +265,8 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '시금치 볶기', description: '버터에 시금치를 볶아 수분을 줄입니다.', timerSeconds: 240 },
-      { title: '베이컨 굽기', description: '베이컨을 바삭하게 구워 잘게 썹니다.' },
-      { title: '담기', description: '시금치, 베이컨을 그라탕 그릇에 담고 생크림을 부어 치즈를 올립니다.' },
+      { title: '베이컨 굽기', description: '베이컨을 바삭하게 구워 잘게 썹니다. 따로 구워야 그라탕 안에서 더 바삭한 식감이 살아요.' },
+      { title: '담기', description: '시금치, 베이컨을 그라탕 그릇에 담고 생크림을 부어 치즈를 올립니다. 치즈를 가장자리까지 골고루 덮어야 구울 때 한쪽만 타지 않아요.' },
       { title: '굽기', description: '190도에서 20분, 치즈가 노릇해질 때까지 굽습니다.', timerSeconds: 1200, checkpoint: '치즈가 짙은 갈색으로 보글보글 끓으면 완성이에요.' },
     ],
     tips: ['대체 재료: 베이컨 대신 햄으로도 만들 수 있어요.', '보관/활용: 냉장 2일 이내로 드세요.'],
@@ -283,7 +302,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       { title: '시금치 데치기', description: '시금치를 살짝 데쳐 블렌더로 곱게 갑니다.', timerSeconds: 60 },
       { title: '향 내기', description: '기름에 양파, 쿠민가루, 가람마살라를 볶아 향을 냅니다.', timerSeconds: 180 },
       { title: '끓이기', description: '간 시금치를 넣고 10분간 끓입니다.', timerSeconds: 600, checkpoint: '소스가 걸쭉해지면 충분해요.' },
-      { title: '마무리', description: '파니르와 생크림을 넣고 한 번 더 끓입니다.' },
+      { title: '마무리', description: '파니르와 생크림을 넣고 한 번 더 끓입니다. 파니르는 오래 끓이면 단단해지니 마지막에 살짝만 데우세요.' },
     ],
     tips: ['대체 재료: 파니르가 없으면 두부를 구워 대신해도 좋아요.', '보관/활용: 냉동 보관 가능해요.'],
     youtubeQuery: '사그 파니르 만들기',
@@ -320,7 +339,7 @@ export const recipesSpinachExpansion: Recipe[] = [
         checkpoint: '안초비가 거의 다 풀어지고 향이 진하게 올라오면 충분해요.',
       },
       { title: '시금치 넣기', description: '시금치를 넣어 숨이 죽을 때까지 볶습니다.', timerSeconds: 120 },
-      { title: '합치기', description: '삶은 면을 넣고 가볍게 섞습니다.' },
+      { title: '합치기', description: '삶은 면을 넣고 가볍게 섞습니다. 면수를 한 숟갈 더하면 소스가 면에 더 매끄럽게 감겨요.' },
     ],
     tips: ['대체 재료: 안초비가 부담스럽다면 절반만 써도 괜찮아요.', '보관/활용: 만든 직후 바로 드세요.'],
     youtubeQuery: '시금치 오레키에테 만들기',
@@ -350,7 +369,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '시금치 볶기', description: '올리브오일에 시금치를 볶아 물기를 짭니다.', timerSeconds: 180 },
-      { title: '달걀 풀기', description: '달걀을 풀어 페타치즈, 딜과 섞습니다.' },
+      { title: '달걀 풀기', description: '달걀을 풀어 페타치즈, 딜과 섞습니다. 페타치즈가 짠맛을 담당하니 소금은 따로 더 넣지 않아도 돼요.' },
       {
         title: '굽기',
         description: '팬에 시금치를 깔고 달걀물을 부어 약불로 익히다 오븐에 옮겨 180도에서 15분 마무리합니다.',
@@ -387,8 +406,8 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '시금치 손질', description: '시금치는 데쳐 물기를 꽉 짜고 잘게 다집니다.', timerSeconds: 60 },
-      { title: '속 만들기', description: '시금치, 다진 고기, 마늘, 생강, 참기름을 섞어 반죽합니다.' },
-      { title: '빚기', description: '만두피에 속을 넣고 주름을 잡아 빚습니다.' },
+      { title: '속 만들기', description: '시금치, 다진 고기, 마늘, 생강, 참기름을 섞어 반죽합니다. 시금치 물기가 충분히 빠졌는지 한 번 더 확인하세요.' },
+      { title: '빚기', description: '만두피에 속을 넣고 주름을 잡아 빚습니다. 주름을 촘촘히 잡을수록 구울 때 모양이 잘 유지돼요.' },
       {
         title: '굽기',
         description: '팬에 기름을 두르고 만두를 올려 바닥이 노릇해지면 물을 약간 붓고 뚜껑을 덮어 익힙니다.',
@@ -426,7 +445,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       { title: '채소 볶기', description: '양파를 볶아 향을 냅니다.', timerSeconds: 240 },
       { title: '끓이기', description: '감자와 스톡을 넣고 감자가 익을 때까지 끓입니다.', timerSeconds: 900, checkpoint: '감자가 부드러워지면 다음 단계로 넘어가세요.' },
       { title: '시금치 넣기', description: '시금치를 넣어 숨이 죽을 때까지 끓입니다.', timerSeconds: 180 },
-      { title: '마무리', description: '그릇에 담아 사워크림을 올립니다.' },
+      { title: '마무리', description: '그릇에 담아 사워크림을 올립니다. 사워크림은 마지막에 올려야 산미가 살아있고, 끓이면 분리될 수 있어요.' },
     ],
     tips: ['대체 재료: 사워크림이 없으면 그릭요거트로 대신해도 좋아요.', '보관/활용: 냉장 3일 이내로 드세요.'],
     youtubeQuery: '시금치 수프 만들기',
@@ -461,7 +480,7 @@ export const recipesSpinachExpansion: Recipe[] = [
         timerSeconds: 20,
         checkpoint: '얼음물에서 건진 시금치가 진한 초록빛을 유지하면 잘 된 거예요.',
       },
-      { title: '퓌레 만들기', description: '데친 시금치를 버터, 생크림과 함께 곱게 갑니다.' },
+      { title: '퓌레 만들기', description: '데친 시금치를 버터, 생크림과 함께 곱게 갑니다. 차갑게 식은 시금치보다 살짝 온기가 남았을 때 갈면 더 부드럽게 퍼져요.' },
       {
         title: '관자 준비',
         description: '관자는 키친타올로 물기를 완전히 제거합니다.',
@@ -502,7 +521,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     steps: [
       { title: '시금치 데치기', description: '시금치는 데쳐 물기를 완전히 짜고 곱게 다집니다.', timerSeconds: 60 },
       { title: '감자 삶고 으깨기', description: '감자는 삶아 뜨거울 때 체에 곱게 내립니다.', timerSeconds: 1200 },
-      { title: '반죽하기', description: '으깬 감자, 시금치, 밀가루, 달걀노른자를 가볍게 섞습니다.' },
+      { title: '반죽하기', description: '으깬 감자, 시금치, 밀가루, 달걀노른자를 가볍게 섞습니다. 많이 치댈수록 글루텐이 생겨 뇨끼가 질겨지니 가루가 안 보일 때까지만 섞으세요.' },
       { title: '빚고 삶기', description: '반죽을 길게 굴려 잘라 끓는 물에 삶아 떠오르면 건집니다.', timerSeconds: 180, checkpoint: '뇨끼가 떠오르면 다 익은 거예요.' },
       {
         title: '브라운버터',
@@ -537,7 +556,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     steps: [
       { title: '베이컨 칩 만들기', description: '베이컨을 오븐 팬에 펼쳐 180도에서 12분간 바삭하게 굽습니다.', timerSeconds: 720, checkpoint: '짙은 갈색이 돌고 식으면서 단단해지면 완성이에요.' },
       { title: '시금치 퓌레', description: '시금치를 데쳐 곱게 갑니다.', timerSeconds: 60 },
-      { title: '젤라틴 녹이기', description: '불린 젤라틴을 약불에 살짝 녹여 퓌레에 섞습니다.' },
+      { title: '젤라틴 녹이기', description: '불린 젤라틴을 약불에 살짝 녹여 퓌레에 섞습니다. 너무 뜨겁게 녹이면 퓌레와 섞일 때 굳는 힘이 약해져요.' },
       {
         title: '무스 완성',
         description: '생크림을 휘핑해 퓌레에 가볍게 접듯이 섞습니다.',
@@ -570,7 +589,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '데치기', description: '시금치를 끓는 물에 살짝 데쳐 색을 안정시킵니다.', timerSeconds: 20 },
-      { title: '갈기', description: '데친 시금치를 물, 소금과 함께 블렌더로 곱게 갑니다.' },
+      { title: '갈기', description: '데친 시금치를 물, 소금과 함께 블렌더로 곱게 갑니다. 소금이 삼투압 작용으로 즙이 더 잘 빠져나오게 도와줘요.' },
       {
         title: '거르기',
         description: '면포에 넣고 냉장고에서 4시간 이상 매달아 자연스럽게 즙만 떨어지게 둡니다.',
@@ -605,7 +624,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     ],
     steps: [
       { title: '속 만들기', description: '시금치를 데쳐 다진 뒤 리코타와 섞습니다.', timerSeconds: 60 },
-      { title: '반죽 밀기', description: '파스타 반죽을 얇게 밀어 펼칩니다.' },
+      { title: '반죽 밀기', description: '파스타 반죽을 얇게 밀어 펼칩니다. 너무 두꺼우면 삶았을 때 가운데가 설익은 채로 남아요.' },
       {
         title: '빚기',
         description: '반죽 위에 속을 일정한 간격으로 올리고 다른 반죽으로 덮어 가장자리를 눌러 붙입니다.',
