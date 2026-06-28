@@ -23,9 +23,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '오이 손질', description: '오이는 소금으로 절인 뒤 얇게 썰어 물기를 짭니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-11/step-25.png' },
-      { title: '양념 만들기', description: '식초, 설탕, 고춧가루를 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-11/step-26.png' },
-      { title: '무치기', description: '오이에 양념장을 넣고 골고루 무칩니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-11/step-27.png' },
+      { title: '오이 손질', description: '오이는 소금으로 절인 뒤 얇게 썰어 물기를 짭니다.', timerSeconds: 600 },
+      { title: '양념 만들기', description: '식초, 설탕, 고춧가루를 섞어 양념장을 만듭니다.' },
+      { title: '무치기', description: '오이에 양념장을 넣고 골고루 무칩니다.' },
     ],
     tips: [
       '얼음을 살짝 넣으면 더 시원하게 즐길 수 있어요.',
@@ -52,9 +52,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '얼음', amount: '적당량' },
     ],
     steps: [
-      { title: '참외 손질', description: '참외는 씨를 제거하고 작은 큐브로 썹니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-12/step-54.png' },
-      { title: '담기', description: '그릇에 참외와 얼음을 담습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-12/step-55.png' },
-      { title: '마무리', description: '우유와 꿀을 부어 골고루 섞은 뒤 차게 즐깁니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-12/step-56.png' },
+      { title: '참외 손질', description: '참외는 씨를 제거하고 작은 큐브로 썹니다.' },
+      { title: '담기', description: '그릇에 참외와 얼음을 담습니다.' },
+      { title: '마무리', description: '우유와 꿀을 부어 골고루 섞은 뒤 차게 즐깁니다.' },
     ],
     tips: [
       '탄산수로 대체하면 더 시원한 화채를 즐길 수 있어요.',
@@ -82,10 +82,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '다진 마늘', amount: '1작은술' },
     ],
     steps: [
-      { title: '한치 손질', description: '한치는 깨끗이 씻어 손질합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-13/step-84.png' },
-      { title: '데치기', description: '끓는 물에 한치를 30초간 데칩니다.', timerSeconds: 30, tip: '오래 데치면 질겨지니 짧게 데치는 게 중요해요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-13/step-85.png' },
-      { title: '재료 자르기', description: '데친 한치는 한입 크기로 자르고 미나리도 손질합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-13/step-86.png' },
-      { title: '플레이팅', description: '한치와 미나리를 그릇에 담고 초고추장을 곁들입니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-13/step-87.png' },
+      { title: '한치 손질', description: '한치는 깨끗이 씻어 손질합니다.' },
+      { title: '데치기', description: '끓는 물에 한치를 30초간 데칩니다.', timerSeconds: 30, tip: '오래 데치면 질겨지니 짧게 데치는 게 중요해요.' },
+      { title: '재료 자르기', description: '데친 한치는 한입 크기로 자르고 미나리도 손질합니다.' },
+      { title: '플레이팅', description: '한치와 미나리를 그릇에 담고 초고추장을 곁들입니다.' },
     ],
     tips: [
       '한치는 살짝 데쳐야 부드럽고 쫄깃한 식감을 즐길 수 있어요.',
@@ -113,9 +113,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '참기름', amount: '1큰술' },
     ],
     steps: [
-      { title: '오이지 손질', description: '오이지는 얇게 썰어 물에 헹궈 짠맛을 뺍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-14/step-115.png' },
-      { title: '물기 제거', description: '오이지의 물기를 꼭 짜냅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-14/step-116.png' },
-      { title: '무치기', description: '고춧가루, 다진 마늘, 설탕, 참기름을 넣고 골고루 무칩니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-14/step-117.png' },
+      { title: '오이지 손질', description: '오이지는 얇게 썰어 물에 헹궈 짠맛을 뺍니다.' },
+      { title: '물기 제거', description: '오이지의 물기를 꼭 짜냅니다.' },
+      { title: '무치기', description: '고춧가루, 다진 마늘, 설탕, 참기름을 넣고 골고루 무칩니다.' },
     ],
     tips: [
       '청양고추를 다져 넣으면 칼칼한 맛이 더해져요.',
@@ -143,9 +143,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '참외 손질', description: '참외는 씨를 제거하고 얇게 슬라이스합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-15/step-145.png' },
-      { title: '드레싱 만들기', description: '올리브오일, 레몬즙, 소금을 섞어 드레싱을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-15/step-146.png' },
-      { title: '플레이팅', description: '루꼴라 위에 참외를 올리고 드레싱을 뿌립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-15/step-147.png' },
+      { title: '참외 손질', description: '참외는 씨를 제거하고 얇게 슬라이스합니다.' },
+      { title: '드레싱 만들기', description: '올리브오일, 레몬즙, 소금을 섞어 드레싱을 만듭니다.' },
+      { title: '플레이팅', description: '루꼴라 위에 참외를 올리고 드레싱을 뿌립니다.' },
     ],
     tips: [
       '치즈를 곁들이면 더 풍부한 맛을 즐길 수 있어요.',
@@ -175,8 +175,8 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '참기름', amount: '1큰술' },
     ],
     steps: [
-      { title: '깻잎 손질', description: '깻잎은 깨끗이 씻어 물기를 뺍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-11/step-177.png' },
-      { title: '양념장 만들기', description: '간장, 다진 마늘, 고춧가루, 참기름을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-11/step-178.png' },
+      { title: '깻잎 손질', description: '깻잎은 깨끗이 씻어 물기를 뺍니다.' },
+      { title: '양념장 만들기', description: '간장, 다진 마늘, 고춧가루, 참기름을 섞어 양념장을 만듭니다.' },
       { title: '재우기', description: '깻잎 사이사이에 양념장을 발라 켜켜이 쌓습니다.', timerSeconds: 1800, tip: '하루 정도 숙성하면 더 깊은 맛이 나요.' },
     ],
     tips: [
@@ -202,9 +202,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '설탕', amount: '500g' },
     ],
     steps: [
-      { title: '자두 손질', description: '자두는 깨끗이 씻어 씨를 제거하고 슬라이스합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-12/step-204.png' },
-      { title: '설탕에 재우기', description: '자두와 설탕을 1:1 비율로 섞어 유리병에 담습니다.', timerSeconds: 86400, tip: '하루에 한 번씩 저어주면 설탕이 잘 녹아요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-12/step-205.png' },
-      { title: '보관', description: '실온에서 하루 숙성한 뒤 냉장보관합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-12/step-206.png' },
+      { title: '자두 손질', description: '자두는 깨끗이 씻어 씨를 제거하고 슬라이스합니다.' },
+      { title: '설탕에 재우기', description: '자두와 설탕을 1:1 비율로 섞어 유리병에 담습니다.', timerSeconds: 86400, tip: '하루에 한 번씩 저어주면 설탕이 잘 녹아요.' },
+      { title: '보관', description: '실온에서 하루 숙성한 뒤 냉장보관합니다.' },
     ],
     tips: [
       '한 달 정도 숙성하면 더 깊은 맛을 즐길 수 있어요.',
@@ -232,9 +232,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '식용유', amount: '1큰술' },
     ],
     steps: [
-      { title: '멸치 볶기', description: '식용유에 멸치를 넣고 바삭하게 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-13/step-234.png' },
-      { title: '양념하기', description: '간장과 물엿을 넣고 약불에서 골고루 섞습니다.', timerSeconds: 120, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-13/step-235.png' },
-      { title: '마무리', description: '아몬드를 넣고 한 번 더 볶아 마무리합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-13/step-236.png' },
+      { title: '멸치 볶기', description: '식용유에 멸치를 넣고 바삭하게 볶습니다.', timerSeconds: 180 },
+      { title: '양념하기', description: '간장과 물엿을 넣고 약불에서 골고루 섞습니다.', timerSeconds: 120 },
+      { title: '마무리', description: '아몬드를 넣고 한 번 더 볶아 마무리합니다.' },
     ],
     tips: [
       '물엿은 마지막에 넣어야 멸치가 딱딱해지지 않아요.',
@@ -262,9 +262,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '통깨', amount: '약간' },
     ],
     steps: [
-      { title: '깻잎 손질', description: '깻잎은 깨끗이 씻어 채 썹니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-14/step-264.png' },
-      { title: '무치기', description: '된장, 다진 마늘, 참기름을 넣고 골고루 무칩니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-14/step-265.png' },
-      { title: '마무리', description: '통깨를 뿌려 그릇에 담아냅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-14/step-266.png' },
+      { title: '깻잎 손질', description: '깻잎은 깨끗이 씻어 채 썹니다.' },
+      { title: '무치기', description: '된장, 다진 마늘, 참기름을 넣고 골고루 무칩니다.' },
+      { title: '마무리', description: '통깨를 뿌려 그릇에 담아냅니다.' },
     ],
     tips: [
       '들기름으로 대체하면 더 고소한 맛을 즐길 수 있어요.',
@@ -292,10 +292,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '국간장', amount: '1큰술' },
     ],
     steps: [
-      { title: '육수 끓이기', description: '물에 멸치와 다시마를 넣고 육수를 끓입니다.', timerSeconds: 900, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-15/step-294.png' },
-      { title: '육수 식히기', description: '육수를 체에 걸러 차게 식힙니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-15/step-295.png' },
-      { title: '면 삶기', description: '소면을 삶아 찬물에 헹굽니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-15/step-296.png' },
-      { title: '플레이팅', description: '면에 차가운 육수를 붓고 오이를 채 썰어 올립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/6-15/step-297.png' },
+      { title: '육수 끓이기', description: '물에 멸치와 다시마를 넣고 육수를 끓입니다.', timerSeconds: 900 },
+      { title: '육수 식히기', description: '육수를 체에 걸러 차게 식힙니다.', timerSeconds: 1800 },
+      { title: '면 삶기', description: '소면을 삶아 찬물에 헹굽니다.', timerSeconds: 240 },
+      { title: '플레이팅', description: '면에 차가운 육수를 붓고 오이를 채 썰어 올립니다.' },
     ],
     tips: [
       '육수는 미리 만들어 냉장 보관하면 더 편리해요.',
@@ -323,10 +323,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '옥수수 손질', description: '옥수수는 껍질을 벗기고 반으로 자릅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-11/step-325.png' },
-      { title: '삶기', description: '끓는 물에 옥수수를 10분간 삶습니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-11/step-326.png' },
-      { title: '굽기', description: '팬에 버터를 녹이고 삶은 옥수수를 굴려가며 노릇하게 굽습니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-11/step-327.png' },
-      { title: '마무리', description: '소금을 살짝 뿌려 마무리합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-11/step-328.png' },
+      { title: '옥수수 손질', description: '옥수수는 껍질을 벗기고 반으로 자릅니다.' },
+      { title: '삶기', description: '끓는 물에 옥수수를 10분간 삶습니다.', timerSeconds: 600 },
+      { title: '굽기', description: '팬에 버터를 녹이고 삶은 옥수수를 굴려가며 노릇하게 굽습니다.', timerSeconds: 300 },
+      { title: '마무리', description: '소금을 살짝 뿌려 마무리합니다.' },
     ],
     tips: [
       '간장을 살짝 발라 구우면 더 짭짤한 맛을 즐길 수 있어요.',
@@ -353,10 +353,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '레몬', amount: '약간' },
     ],
     steps: [
-      { title: '얼음 채우기', description: '컵에 얼음을 가득 채웁니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-12/step-355.png' },
-      { title: '복분자청 넣기', description: '복분자청을 부어 넣습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-12/step-356.png' },
-      { title: '탄산수 붓기', description: '탄산수를 천천히 부어 섞습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-12/step-357.png' },
-      { title: '마무리', description: '레몬을 곁들여 장식합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-12/step-358.png' },
+      { title: '얼음 채우기', description: '컵에 얼음을 가득 채웁니다.' },
+      { title: '복분자청 넣기', description: '복분자청을 부어 넣습니다.' },
+      { title: '탄산수 붓기', description: '탄산수를 천천히 부어 섞습니다.' },
+      { title: '마무리', description: '레몬을 곁들여 장식합니다.' },
     ],
     tips: [
       '직접 담근 복분자청이 없다면 시판 제품도 좋아요.',
@@ -384,10 +384,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '설탕', amount: '1작은술' },
     ],
     steps: [
-      { title: '면 삶기', description: '소면을 삶아 찬물에 헹굽니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-13/step-386.png' },
-      { title: '열무 손질', description: '열무김치는 먹기 좋게 잘라둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-13/step-387.png' },
-      { title: '양념 만들기', description: '고추장, 참기름, 설탕을 섞어 양념을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-13/step-388.png' },
-      { title: '비비기', description: '면에 열무김치와 양념을 넣고 골고루 비빕니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-13/step-389.png' },
+      { title: '면 삶기', description: '소면을 삶아 찬물에 헹굽니다.', timerSeconds: 240 },
+      { title: '열무 손질', description: '열무김치는 먹기 좋게 잘라둡니다.' },
+      { title: '양념 만들기', description: '고추장, 참기름, 설탕을 섞어 양념을 만듭니다.' },
+      { title: '비비기', description: '면에 열무김치와 양념을 넣고 골고루 비빕니다.' },
     ],
     tips: [
       '열무김치 국물을 살짝 넣으면 더 시원한 맛을 즐길 수 있어요.',
@@ -415,9 +415,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '식용유', amount: '적당량' },
     ],
     steps: [
-      { title: '반죽 만들기', description: '옥수수알, 부침가루, 달걀, 물을 섞어 반죽을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-14/step-417.png' },
-      { title: '예열', description: '팬에 식용유를 두르고 예열합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-14/step-418.png' },
-      { title: '부치기', description: '반죽을 한 숟갈씩 떠서 앞뒤로 노릇하게 부칩니다.', timerSeconds: 480, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-14/step-419.png' },
+      { title: '반죽 만들기', description: '옥수수알, 부침가루, 달걀, 물을 섞어 반죽을 만듭니다.' },
+      { title: '예열', description: '팬에 식용유를 두르고 예열합니다.' },
+      { title: '부치기', description: '반죽을 한 숟갈씩 떠서 앞뒤로 노릇하게 부칩니다.', timerSeconds: 480 },
     ],
     tips: [
       '치즈를 곁들이면 더 풍성한 맛을 즐길 수 있어요.',
@@ -446,10 +446,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '물', amount: '5컵' },
     ],
     steps: [
-      { title: '열무 절이기', description: '열무를 깨끗이 씻어 소금에 30분간 절입니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-15/step-448.png' },
-      { title: '풀 쑤기', description: '밀가루에 물을 섞어 끓여 풀물을 만듭니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-15/step-449.png' },
-      { title: '양념 만들기', description: '고춧가루와 다진 마늘을 풀물에 섞습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-15/step-450.png' },
-      { title: '담기', description: '절인 열무에 양념 국물을 부어 하루 정도 숙성합니다.', timerSeconds: 86400, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/7-15/step-451.png' },
+      { title: '열무 절이기', description: '열무를 깨끗이 씻어 소금에 30분간 절입니다.', timerSeconds: 1800 },
+      { title: '풀 쑤기', description: '밀가루에 물을 섞어 끓여 풀물을 만듭니다.', timerSeconds: 300 },
+      { title: '양념 만들기', description: '고춧가루와 다진 마늘을 풀물에 섞습니다.' },
+      { title: '담기', description: '절인 열무에 양념 국물을 부어 하루 정도 숙성합니다.', timerSeconds: 86400 },
     ],
     tips: [
       '여름철에는 시원한 곳에서 반나절 정도 숙성하면 좋아요.',
@@ -479,9 +479,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '치즈', amount: '30g' },
     ],
     steps: [
-      { title: '무화과 손질', description: '무화과는 깨끗이 씻어 4등분합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-11/step-481.png' },
-      { title: '드레싱 만들기', description: '발사믹 식초와 올리브오일을 섞어 드레싱을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-11/step-482.png' },
-      { title: '플레이팅', description: '루꼴라 위에 무화과와 치즈를 올리고 드레싱을 뿌립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-11/step-483.png' },
+      { title: '무화과 손질', description: '무화과는 깨끗이 씻어 4등분합니다.' },
+      { title: '드레싱 만들기', description: '발사믹 식초와 올리브오일을 섞어 드레싱을 만듭니다.' },
+      { title: '플레이팅', description: '루꼴라 위에 무화과와 치즈를 올리고 드레싱을 뿌립니다.' },
     ],
     tips: [
       '꿀을 살짝 뿌리면 단맛이 더 진해져요.',
@@ -509,10 +509,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '다진 마늘', amount: '1작은술' },
     ],
     steps: [
-      { title: '풋고추 손질', description: '풋고추는 꼭지를 떼고 작게 썹니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-12/step-511.png' },
-      { title: '멸치 볶기', description: '식용유에 멸치를 먼저 볶아 바삭하게 만듭니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-12/step-512.png' },
-      { title: '재료 넣기', description: '풋고추와 다진 마늘을 넣고 함께 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-12/step-513.png' },
-      { title: '마무리', description: '간장을 넣고 골고루 볶아 마무리합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-12/step-514.png' },
+      { title: '풋고추 손질', description: '풋고추는 꼭지를 떼고 작게 썹니다.' },
+      { title: '멸치 볶기', description: '식용유에 멸치를 먼저 볶아 바삭하게 만듭니다.', timerSeconds: 180 },
+      { title: '재료 넣기', description: '풋고추와 다진 마늘을 넣고 함께 볶습니다.', timerSeconds: 180 },
+      { title: '마무리', description: '간장을 넣고 골고루 볶아 마무리합니다.' },
     ],
     tips: [
       '매운 고추를 섞으면 더 알싸한 맛을 즐길 수 있어요.',
@@ -540,10 +540,10 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '다진 생강', amount: '1작은술' },
     ],
     steps: [
-      { title: '갓 손질', description: '갓은 깨끗이 씻어 소금에 1시간 정도 절입니다.', timerSeconds: 3600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-13/step-542.png' },
-      { title: '양념 만들기', description: '고춧가루, 멸치액젓, 다진 마늘, 다진 생강을 섞어 양념을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-13/step-543.png' },
-      { title: '버무리기', description: '절인 갓에 양념을 골고루 버무립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-13/step-544.png' },
-      { title: '숙성', description: '하루 정도 실온에 둔 뒤 냉장 보관합니다.', timerSeconds: 86400, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-13/step-545.png' },
+      { title: '갓 손질', description: '갓은 깨끗이 씻어 소금에 1시간 정도 절입니다.', timerSeconds: 3600 },
+      { title: '양념 만들기', description: '고춧가루, 멸치액젓, 다진 마늘, 다진 생강을 섞어 양념을 만듭니다.' },
+      { title: '버무리기', description: '절인 갓에 양념을 골고루 버무립니다.' },
+      { title: '숙성', description: '하루 정도 실온에 둔 뒤 냉장 보관합니다.', timerSeconds: 86400 },
     ],
     tips: [
       '갓의 알싸한 향이 강하므로 양념을 조금씩 추가하며 맞춰보세요.',
@@ -570,9 +570,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '그래놀라', amount: '3큰술' },
     ],
     steps: [
-      { title: '무화과 손질', description: '무화과는 깨끗이 씻어 4등분합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-14/step-572.png' },
-      { title: '담기', description: '그릭요거트를 그릇에 담습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-14/step-573.png' },
-      { title: '마무리', description: '무화과와 그래놀라를 올리고 꿀을 뿌립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-14/step-574.png' },
+      { title: '무화과 손질', description: '무화과는 깨끗이 씻어 4등분합니다.' },
+      { title: '담기', description: '그릭요거트를 그릇에 담습니다.' },
+      { title: '마무리', description: '무화과와 그래놀라를 올리고 꿀을 뿌립니다.' },
     ],
     tips: [
       '견과류를 더하면 더 고소한 맛을 즐길 수 있어요.',
@@ -600,9 +600,9 @@ export const recipesQ2Extra2: Recipe[] = [
       { name: '통깨', amount: '약간' },
     ],
     steps: [
-      { title: '풋고추 손질', description: '풋고추는 어슷하게 썹니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-15/step-602.png' },
-      { title: '무치기', description: '된장, 들기름, 다진 마늘을 넣고 골고루 무칩니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-15/step-603.png' },
-      { title: '마무리', description: '통깨를 뿌려 마무리합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/8-15/step-604.png' },
+      { title: '풋고추 손질', description: '풋고추는 어슷하게 썹니다.' },
+      { title: '무치기', description: '된장, 들기름, 다진 마늘을 넣고 골고루 무칩니다.' },
+      { title: '마무리', description: '통깨를 뿌려 마무리합니다.' },
     ],
     tips: [
       '매운 맛을 줄이고 싶으면 고추씨를 제거하세요.',

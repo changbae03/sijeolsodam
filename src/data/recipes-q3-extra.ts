@@ -25,7 +25,6 @@ export const recipesQ3Extra: Recipe[] = [
         title: '엿기름물 준비',
         description: '엿기름물을 가라앉혀 윗물만 따로 받아둡니다. 가라앉히는 과정에서 엿기름 속 효소(아밀라아제)가 물에 충분히 녹아 나오는데, 이 맑은 윗물에 그 효소가 농축되어 있어서 밥을 삭히는 힘이 가장 강해요.',
         warning: '바닥에 가라앉은 뻘건 찌꺼기까지 같이 쓰면 식혜가 텁텁하고 탁해져요. 맑은 윗물만 따로 따라내세요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-6/step-23.png',
       },
       {
         title: '삭히기',
@@ -33,19 +32,16 @@ export const recipesQ3Extra: Recipe[] = [
         timerSeconds: 21600,
         tip: '밥알이 동동 떠오르면 다 삭은 신호예요. 떠오르는 이유는 전분이 분해되면서 밥알 속에 공기층이 생겨 가벼워지기 때문이에요.',
         warning: '보온 온도가 너무 높으면(60도 이상) 효소가 변성되어 오히려 삭는 속도가 느려져요. 보온 모드의 약한 쪽으로 맞추는 게 안전해요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-6/step-24.png',
       },
       {
         title: '끓이기',
         description: '삭힌 물을 냄비에 옮겨 끓이며 설탕을 넣습니다. 한 번 끓여줘야 효소 작용이 멈추면서 더 이상 삭지 않고 지금의 단맛 그대로 유지돼요.',
         timerSeconds: 600,
         checkpoint: '한 번 팔팔 끓어오르면 충분해요. 거품을 걷어내면 국물이 더 맑아져요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-6/step-25.png',
       },
       {
         title: '배 추가',
         description: '배는 얇게 썰어 식힌 식혜에 띄워 완성합니다. 뜨거울 때 배를 넣으면 숨이 죽어 물러지니, 식혜가 충분히 식은 다음에 넣어야 배의 아삭함이 그대로 살아요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-6/step-26.png',
       },
     ],
     tips: [
@@ -78,9 +74,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '참기름', amount: '1큰술' },
     ],
     steps: [
-      { title: '재료 손질', description: '표고버섯은 슬라이스하고 양파는 채 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-7/step-56.png' },
+      { title: '재료 손질', description: '표고버섯은 슬라이스하고 양파는 채 썰어둡니다.' },
       { title: '양념하기', description: '소고기에 간장, 설탕, 다진마늘, 참기름을 넣고 15분간 재워둡니다.', timerSeconds: 900 },
-      { title: '볶기', description: '팬에 양념한 소고기를 볶다가 표고버섯과 양파를 넣고 함께 볶습니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-7/step-58.png' },
+      { title: '볶기', description: '팬에 양념한 소고기를 볶다가 표고버섯과 양파를 넣고 함께 볶습니다.', timerSeconds: 300 },
     ],
     tips: [
       '표고버섯 기둥도 함께 넣으면 향이 더 진해져요.',
@@ -112,7 +108,6 @@ export const recipesQ3Extra: Recipe[] = [
       {
         title: '무 손질',
         description: '무는 채 썰어둡니다. 가늘게 썰수록 양념이 골고루 배고, 한입에 먹기도 편해요. 채칼을 쓰면 두께도 일정해서 더 좋아요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-8/step-87.png',
       },
       {
         title: '절이기',
@@ -120,19 +115,16 @@ export const recipesQ3Extra: Recipe[] = [
         timerSeconds: 600,
         checkpoint: '무를 만졌을 때 살짝 흐물거리고, 그릇 바닥에 옅게 물이 고여 있으면 잘 절여진 거예요.',
         warning: '소금을 너무 많이 뿌리면 짠맛이 강해져요. 절인 후 가볍게 물기만 짜내고, 짠맛이 강하면 살짝 헹궈도 괜찮아요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-8/step-88.png',
       },
       {
         title: '양념하기',
         description: '고춧가루, 식초, 설탕을 넣고 골고루 무칩니다. 고춧가루를 먼저 무에 비벼 색을 입힌 다음 식초·설탕을 더하면, 양념이 더 고르게 스며들면서 색도 선명하게 나와요.',
         tip: '고춧가루를 넣고 1~2분 그대로 둔 뒤 식초를 넣으면 고추기름이 살짝 우러나면서 빛깔이 더 고와져요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-8/step-89.png',
       },
       {
         title: '마무리',
         description: '통깨를 뿌려 완성합니다. 통깨는 먹기 직전에 뿌려야 향이 살아있어요 — 미리 뿌려두면 무에서 나온 수분에 눅눅해져 고소한 향이 줄어들어요.',
         checkpoint: '양념이 무에 고르게 입혀져 윤기가 흐르고, 한 가닥 집어 맛봤을 때 새콤달콤짭짤한 맛이 균형 있게 느껴지면 완성이에요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-8/step-90.png',
       },
     ],
     tips: [
@@ -164,9 +156,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '물', amount: '1/2컵' },
     ],
     steps: [
-      { title: '대하 손질', description: '대하는 수염과 다리를 정리하고 깨끗이 씻습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-9/step-119.png' },
-      { title: '양념장 끓이기', description: '간장, 맛술, 물을 끓여 한 김 식힙니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-9/step-120.png' },
-      { title: '재우기', description: '대하에 양념장과 편마늘, 청양고추를 넣어 냉장고에서 하루 재워둡니다.', timerSeconds: 86400, tip: '하루 정도 재워야 간이 속까지 배어요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-9/step-121.png' },
+      { title: '대하 손질', description: '대하는 수염과 다리를 정리하고 깨끗이 씻습니다.' },
+      { title: '양념장 끓이기', description: '간장, 맛술, 물을 끓여 한 김 식힙니다.', timerSeconds: 300 },
+      { title: '재우기', description: '대하에 양념장과 편마늘, 청양고추를 넣어 냉장고에서 하루 재워둡니다.', timerSeconds: 86400, tip: '하루 정도 재워야 간이 속까지 배어요.' },
     ],
     tips: [
       '생대하를 사용해야 식감이 탱글하게 살아요.',
@@ -192,10 +184,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '꿀', amount: '2큰술' },
     ],
     steps: [
-      { title: '배 손질', description: '배는 껍질을 벗기고 씨를 제거해 큼직하게 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-10/step-147.png' },
-      { title: '갈기', description: '배, 레몬즙, 꿀을 믹서에 넣고 곱게 갈아줍니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-10/step-148.png' },
-      { title: '얼리기', description: '용기에 담아 냉동실에서 3시간 이상 얼립니다.', timerSeconds: 10800, tip: '중간에 포크로 긁어주면 더 보슬보슬해져요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-10/step-149.png' },
-      { title: '마무리', description: '포크로 긁어 그릇에 담아 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/9-10/step-150.png' },
+      { title: '배 손질', description: '배는 껍질을 벗기고 씨를 제거해 큼직하게 썰어둡니다.' },
+      { title: '갈기', description: '배, 레몬즙, 꿀을 믹서에 넣고 곱게 갈아줍니다.', timerSeconds: 60 },
+      { title: '얼리기', description: '용기에 담아 냉동실에서 3시간 이상 얼립니다.', timerSeconds: 10800, tip: '중간에 포크로 긁어주면 더 보슬보슬해져요.' },
+      { title: '마무리', description: '포크로 긁어 그릇에 담아 완성합니다.' },
     ],
     tips: [
       '배는 단맛이 충분해 꿀을 적게 넣어도 좋아요.',
@@ -228,9 +220,9 @@ export const recipesQ3Extra: Recipe[] = [
     ],
     steps: [
       { title: '버섯 손질', description: '모든 버섯은 한입 크기로 썰거나 찢어둡니다.' },
-      { title: '볶기', description: '냄비에 들기름을 두르고 버섯을 볶습니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-183.png' },
-      { title: '끓이기', description: '물과 국간장을 넣고 10분간 끓입니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-184.png' },
-      { title: '마무리', description: '들깨가루를 풀어 넣고 5분 더 끓여 완성합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-6/step-185.png' },
+      { title: '볶기', description: '냄비에 들기름을 두르고 버섯을 볶습니다.', timerSeconds: 180 },
+      { title: '끓이기', description: '물과 국간장을 넣고 10분간 끓입니다.', timerSeconds: 600 },
+      { title: '마무리', description: '들깨가루를 풀어 넣고 5분 더 끓여 완성합니다.', timerSeconds: 300 },
     ],
     tips: [
       '여러 버섯을 섞으면 식감과 향이 더 풍부해져요.',
@@ -259,11 +251,11 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '간장 양념장', amount: '적당량' },
     ],
     steps: [
-      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-7/step-214.png' },
-      { title: '단호박 손질', description: '단호박은 껍질을 벗기고 깍둑썰기 합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-7/step-215.png' },
-      { title: '재료 준비', description: '밤은 껍질을 벗겨 큼직하게 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-7/step-216.png' },
-      { title: '밥 짓기', description: '불린 쌀에 단호박, 밤, 은행을 올리고 물을 부어 밥을 짓습니다. 끓어오르면 약불로 줄여 13분간 익힙니다.', timerSeconds: 780, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-7/step-217.png' },
-      { title: '뜸 들이기', description: '불을 끄고 10분간 뜸을 들인 뒤 골고루 섞어 양념장을 곁들여 완성합니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-7/step-218.png' },
+      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800 },
+      { title: '단호박 손질', description: '단호박은 껍질을 벗기고 깍둑썰기 합니다.' },
+      { title: '재료 준비', description: '밤은 껍질을 벗겨 큼직하게 썰어둡니다.' },
+      { title: '밥 짓기', description: '불린 쌀에 단호박, 밤, 은행을 올리고 물을 부어 밥을 짓습니다. 끓어오르면 약불로 줄여 13분간 익힙니다.', timerSeconds: 780 },
+      { title: '뜸 들이기', description: '불을 끄고 10분간 뜸을 들인 뒤 골고루 섞어 양념장을 곁들여 완성합니다.', timerSeconds: 600 },
     ],
     tips: [
       '단호박은 너무 잘게 썰면 으스러지니 적당히 큼직하게 썰어주세요.',
@@ -292,10 +284,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '쪽파', amount: '3줄기' },
     ],
     steps: [
-      { title: '배추 손질', description: '알배추는 한입 크기로 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-8/step-247.png' },
-      { title: '사과 손질', description: '사과는 얇게 채 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-8/step-248.png' },
-      { title: '양념장 만들기', description: '고춧가루, 액젓, 다진마늘을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-8/step-249.png' },
-      { title: '무치기', description: '배추와 사과에 양념장을 넣고 골고루 무친 뒤 쪽파를 넣어 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-8/step-250.png' },
+      { title: '배추 손질', description: '알배추는 한입 크기로 썰어둡니다.' },
+      { title: '사과 손질', description: '사과는 얇게 채 썰어둡니다.' },
+      { title: '양념장 만들기', description: '고춧가루, 액젓, 다진마늘을 섞어 양념장을 만듭니다.' },
+      { title: '무치기', description: '배추와 사과에 양념장을 넣고 골고루 무친 뒤 쪽파를 넣어 완성합니다.' },
     ],
     tips: [
       '사과는 갈변을 막기 위해 양념과 바로 섞어주세요.',
@@ -322,9 +314,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '고구마 손질', description: '고구마는 껍질을 벗기고 큼직하게 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-9/step-277.png' },
-      { title: '찌기', description: '찜기에 고구마를 넣고 부드러워질 때까지 15분간 찝니다.', timerSeconds: 900, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-9/step-278.png' },
-      { title: '버무리기', description: '찐 고구마에 들깨가루, 설탕, 소금을 넣고 골고루 버무려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-9/step-279.png' },
+      { title: '고구마 손질', description: '고구마는 껍질을 벗기고 큼직하게 썰어둡니다.' },
+      { title: '찌기', description: '찜기에 고구마를 넣고 부드러워질 때까지 15분간 찝니다.', timerSeconds: 900 },
+      { title: '버무리기', description: '찐 고구마에 들깨가루, 설탕, 소금을 넣고 골고루 버무려 완성합니다.' },
     ],
     tips: [
       '고구마는 너무 푹 찌면 으스러지니 적당히 익혀주세요.',
@@ -354,10 +346,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '멸치 다시육수', amount: '700ml' },
     ],
     steps: [
-      { title: '재료 손질', description: '모든 버섯과 대파를 먹기 좋게 손질합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-10/step-309.png' },
-      { title: '담기', description: '전골냄비에 소고기와 버섯, 대파를 가지런히 담습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-10/step-310.png' },
-      { title: '육수 만들기', description: '다시육수에 간장을 섞어 부어줍니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-10/step-311.png' },
-      { title: '끓이기', description: '센 불로 끓이다가 끓어오르면 중불로 줄여 10분간 더 끓여 완성합니다.', timerSeconds: 600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/10-10/step-312.png' },
+      { title: '재료 손질', description: '모든 버섯과 대파를 먹기 좋게 손질합니다.' },
+      { title: '담기', description: '전골냄비에 소고기와 버섯, 대파를 가지런히 담습니다.' },
+      { title: '육수 만들기', description: '다시육수에 간장을 섞어 부어줍니다.' },
+      { title: '끓이기', description: '센 불로 끓이다가 끓어오르면 중불로 줄여 10분간 더 끓여 완성합니다.', timerSeconds: 600 },
     ],
     tips: [
       '버섯을 다양하게 사용하면 국물 맛이 더 깊어져요.',
@@ -390,14 +382,12 @@ export const recipesQ3Extra: Recipe[] = [
       {
         title: '배추 손질',
         description: '알배추는 한입 크기로 썰어둡니다. 줄기 쪽은 도톰하게, 잎 쪽은 좀 더 크게 썰어두면 익는 속도 차이를 자연스럽게 맞출 수 있어요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-6/step-342.png',
       },
       {
         title: '육수 끓이기',
         description: '다시육수에 된장을 풀어 끓입니다. 된장은 찬 육수에 미리 풀어 으깨듯 녹여야 덩어리 없이 매끈하게 퍼지고, 끓이는 동안 구수한 향이 서서히 살아나요.',
         timerSeconds: 180,
         tip: '된장을 체에 한 번 내려 풀면 알갱이 없이 훨씬 깔끔한 국물이 돼요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-6/step-343.png',
       },
       {
         title: '재료 넣기',
@@ -405,14 +395,12 @@ export const recipesQ3Extra: Recipe[] = [
         timerSeconds: 300,
         checkpoint: '배추 줄기를 한 조각 건져 씹어봤을 때 아삭함이 살짝 남으면서도 부드럽게 씹히면 적당해요.',
         warning: '너무 오래 끓이면 배추에서 단맛이 다 빠져나가고 물러져서 국물이 탁해져요. 5분을 넘기지 않는 게 좋아요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-6/step-344.png',
       },
       {
         title: '마무리',
         description: '두부를 넣고 한소끔 더 끓여 완성합니다. 두부는 마지막에 넣어야 으깨지지 않고 모양이 살아요.',
         timerSeconds: 120,
         checkpoint: '두부가 가볍게 흔들릴 정도로만 끓으면 충분해요. 너무 오래 끓이면 두부에서 바람이 빠진 듯 푸석해져요.',
-        stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-6/step-345.png',
       },
     ],
     tips: [
@@ -444,9 +432,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '꿀', amount: '1큰술' },
     ],
     steps: [
-      { title: '단감 손질', description: '단감은 껍질을 벗기고 얇게 슬라이스합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-7/step-374.png' },
-      { title: '플레이팅', description: '루꼴라를 깔고 단감, 리코타치즈, 호두를 올립니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-7/step-375.png' },
-      { title: '마무리', description: '올리브오일과 꿀을 둘러 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-7/step-376.png' },
+      { title: '단감 손질', description: '단감은 껍질을 벗기고 얇게 슬라이스합니다.' },
+      { title: '플레이팅', description: '루꼴라를 깔고 단감, 리코타치즈, 호두를 올립니다.' },
+      { title: '마무리', description: '올리브오일과 꿀을 둘러 완성합니다.' },
     ],
     tips: [
       '리코타치즈는 직접 만들어도 좋고 시판 제품을 사용해도 충분해요.',
@@ -475,10 +463,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '물', amount: '500ml' },
     ],
     steps: [
-      { title: '홍합 손질', description: '홍합은 수염을 제거하고 껍데기를 깨끗이 씻습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-8/step-405.png' },
-      { title: '끓이기', description: '냄비에 물과 청주, 다진마늘을 넣고 끓입니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-8/step-406.png' },
-      { title: '홍합 넣기', description: '홍합을 넣고 입이 벌어질 때까지 5분간 끓입니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-8/step-407.png' },
-      { title: '마무리', description: '청양고추와 대파를 넣고 한소끔 더 끓여 완성합니다.', timerSeconds: 60, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-8/step-408.png' },
+      { title: '홍합 손질', description: '홍합은 수염을 제거하고 껍데기를 깨끗이 씻습니다.' },
+      { title: '끓이기', description: '냄비에 물과 청주, 다진마늘을 넣고 끓입니다.', timerSeconds: 180 },
+      { title: '홍합 넣기', description: '홍합을 넣고 입이 벌어질 때까지 5분간 끓입니다.', timerSeconds: 300 },
+      { title: '마무리', description: '청양고추와 대파를 넣고 한소끔 더 끓여 완성합니다.', timerSeconds: 60 },
     ],
     tips: [
       '홍합 껍데기에서 우러난 국물이 진한 맛을 냅니다.',
@@ -506,10 +494,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '식용유', amount: '적당량' },
     ],
     steps: [
-      { title: '굴 손질', description: '굴은 소금물에 살살 흔들어 씻고 체에 걸러둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-9/step-436.png' },
-      { title: '대파 손질', description: '대파는 길게 반으로 잘라둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-9/step-437.png' },
-      { title: '반죽 만들기', description: '부침가루와 물을 섞어 반죽을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-9/step-438.png' },
-      { title: '굽기', description: '팬에 대파를 가지런히 깔고 반죽을 부은 뒤 굴을 올려 앞뒤로 노릇하게 부칩니다.', timerSeconds: 360, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-9/step-439.png' },
+      { title: '굴 손질', description: '굴은 소금물에 살살 흔들어 씻고 체에 걸러둡니다.' },
+      { title: '대파 손질', description: '대파는 길게 반으로 잘라둡니다.' },
+      { title: '반죽 만들기', description: '부침가루와 물을 섞어 반죽을 만듭니다.' },
+      { title: '굽기', description: '팬에 대파를 가지런히 깔고 반죽을 부은 뒤 굴을 올려 앞뒤로 노릇하게 부칩니다.', timerSeconds: 360 },
     ],
     tips: [
       '굴의 물기를 충분히 빼야 기름이 튀지 않아요.',
@@ -537,9 +525,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '단감 손질', description: '단감은 단단한 것으로 골라 얇게 슬라이스합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-10/step-467.png' },
-      { title: '절임물 만들기', description: '식초, 설탕, 물, 소금을 끓여 식힙니다.', timerSeconds: 180, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-10/step-468.png' },
-      { title: '절이기', description: '단감을 절임물에 넣고 냉장고에서 1시간 이상 절입니다.', timerSeconds: 3600, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/11-10/step-469.png' },
+      { title: '단감 손질', description: '단감은 단단한 것으로 골라 얇게 슬라이스합니다.' },
+      { title: '절임물 만들기', description: '식초, 설탕, 물, 소금을 끓여 식힙니다.', timerSeconds: 180 },
+      { title: '절이기', description: '단감을 절임물에 넣고 냉장고에서 1시간 이상 절입니다.', timerSeconds: 3600 },
     ],
     tips: [
       '너무 익은 단감은 물러지니 단단한 것을 골라주세요.',
@@ -571,10 +559,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '멸치 다시육수', amount: '700ml' },
     ],
     steps: [
-      { title: '재료 손질', description: '알배추, 미나리, 두부, 대파를 먹기 좋게 손질합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-6/step-501.png' },
-      { title: '담기', description: '전골냄비에 배추, 두부, 대파를 가지런히 담습니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-6/step-502.png' },
-      { title: '끓이기', description: '다시육수에 국간장을 섞어 부어 끓입니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-6/step-503.png' },
-      { title: '마무리', description: '굴과 미나리를 넣고 2분만 더 끓여 완성합니다.', timerSeconds: 120, tip: '굴은 오래 끓이면 질겨지니 마지막에 살짝만 익혀주세요.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-6/step-504.png' },
+      { title: '재료 손질', description: '알배추, 미나리, 두부, 대파를 먹기 좋게 손질합니다.' },
+      { title: '담기', description: '전골냄비에 배추, 두부, 대파를 가지런히 담습니다.' },
+      { title: '끓이기', description: '다시육수에 국간장을 섞어 부어 끓입니다.', timerSeconds: 300 },
+      { title: '마무리', description: '굴과 미나리를 넣고 2분만 더 끓여 완성합니다.', timerSeconds: 120, tip: '굴은 오래 끓이면 질겨지니 마지막에 살짝만 익혀주세요.' },
     ],
     tips: [
       '굴은 체에 걸러 씻어야 껍데기 부스러기를 제거할 수 있어요.',
@@ -602,9 +590,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '삶은 달걀', amount: '1개' },
     ],
     steps: [
-      { title: '면 삶기', description: '메밀면은 끓는 물에 삶아 찬물에 헹궈 전분을 제거합니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-7/step-532.png' },
-      { title: '재료 손질', description: '동치미무와 오이는 채 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-7/step-533.png' },
-      { title: '플레이팅', description: '면을 그릇에 담고 동치미국물을 부은 뒤 무, 오이, 삶은 달걀을 올려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-7/step-534.png' },
+      { title: '면 삶기', description: '메밀면은 끓는 물에 삶아 찬물에 헹궈 전분을 제거합니다.', timerSeconds: 240 },
+      { title: '재료 손질', description: '동치미무와 오이는 채 썰어둡니다.' },
+      { title: '플레이팅', description: '면을 그릇에 담고 동치미국물을 부은 뒤 무, 오이, 삶은 달걀을 올려 완성합니다.' },
     ],
     tips: [
       '동치미국물은 시판 제품을 사용해도 충분히 맛있어요.',
@@ -632,9 +620,9 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '식용유', amount: '적당량' },
     ],
     steps: [
-      { title: '명태살 손질', description: '명태살은 얇게 포를 떠서 소금, 후추로 밑간합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-8/step-562.png' },
-      { title: '옷 입히기', description: '밀가루를 얇게 묻힌 뒤 달걀물에 담갔다 꺼냅니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-8/step-563.png' },
-      { title: '부치기', description: '팬에 식용유를 두르고 약불에서 앞뒤로 노릇하게 부칩니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-8/step-564.png' },
+      { title: '명태살 손질', description: '명태살은 얇게 포를 떠서 소금, 후추로 밑간합니다.' },
+      { title: '옷 입히기', description: '밀가루를 얇게 묻힌 뒤 달걀물에 담갔다 꺼냅니다.' },
+      { title: '부치기', description: '팬에 식용유를 두르고 약불에서 앞뒤로 노릇하게 부칩니다.', timerSeconds: 300 },
     ],
     tips: [
       '명태살은 물기를 충분히 제거해야 부칠 때 부서지지 않아요.',
@@ -665,11 +653,11 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '물', amount: '2컵' },
     ],
     steps: [
-      { title: '갈비 손질', description: '갈비는 끓는 물에 한 번 데쳐 핏물을 제거합니다.', timerSeconds: 300, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-595.png' },
+      { title: '갈비 손질', description: '갈비는 끓는 물에 한 번 데쳐 핏물을 제거합니다.', timerSeconds: 300 },
       { title: '재료 손질', description: '무와 당근은 큼직하게 썰어둡니다.' },
-      { title: '양념하기', description: '간장, 설탕, 유자청, 물을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-597.png' },
-      { title: '끓이기', description: '갈비와 양념장을 넣고 센 불로 끓이다가 중약불로 줄여 50분간 졸입니다.', timerSeconds: 3000, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-598.png' },
-      { title: '마무리', description: '무와 당근을 넣고 20분 더 졸인 뒤 대파를 올려 완성합니다.', timerSeconds: 1200, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-9/step-599.png' },
+      { title: '양념하기', description: '간장, 설탕, 유자청, 물을 섞어 양념장을 만듭니다.' },
+      { title: '끓이기', description: '갈비와 양념장을 넣고 센 불로 끓이다가 중약불로 줄여 50분간 졸입니다.', timerSeconds: 3000 },
+      { title: '마무리', description: '무와 당근을 넣고 20분 더 졸인 뒤 대파를 올려 완성합니다.', timerSeconds: 1200 },
     ],
     tips: [
       '유자청이 단맛과 향을 동시에 주니 설탕 양을 조절해주세요.',
@@ -698,10 +686,10 @@ export const recipesQ3Extra: Recipe[] = [
       { name: '쪽파', amount: '약간' },
     ],
     steps: [
-      { title: '굴 손질', description: '생굴은 소금물에 살살 흔들어 씻고 체에 걸러둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-10/step-628.png' },
-      { title: '무 손질', description: '무는 채 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-10/step-629.png' },
-      { title: '양념하기', description: '고춧가루, 식초, 설탕을 섞어 양념장을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-10/step-630.png' },
-      { title: '무치기', description: '굴과 무에 양념장을 넣고 살짝 무친 뒤 쪽파를 올려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/12-10/step-631.png' },
+      { title: '굴 손질', description: '생굴은 소금물에 살살 흔들어 씻고 체에 걸러둡니다.' },
+      { title: '무 손질', description: '무는 채 썰어둡니다.' },
+      { title: '양념하기', description: '고춧가루, 식초, 설탕을 섞어 양념장을 만듭니다.' },
+      { title: '무치기', description: '굴과 무에 양념장을 넣고 살짝 무친 뒤 쪽파를 올려 완성합니다.' },
     ],
     tips: [
       '생굴은 신선도가 중요하니 구입 즉시 조리하는 게 좋아요.',

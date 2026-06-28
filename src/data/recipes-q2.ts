@@ -25,10 +25,10 @@ export const recipesQ2: Recipe[] = [
       { name: '통깨', amount: '약간' },
     ],
     steps: [
-      { title: '소면 삶기', description: '끓는 물에 소면을 삶아 찬물에 헹궈 전분을 충분히 제거합니다.', timerSeconds: 240, stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-1/step-27.png' },
-      { title: '오이 손질', description: '오이는 채 썰어둡니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-1/step-28.png' },
-      { title: '양념 만들기', description: '매실청, 고추장, 식초, 간장, 참기름을 골고루 섞어 양념을 만듭니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-1/step-29.png' },
-      { title: '비비기', description: '소면에 양념을 넣고 골고루 비빈 뒤 오이를 올리고 통깨를 뿌려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-1/step-30.png' },
+      { title: '소면 삶기', description: '끓는 물에 소면을 삶아 찬물에 헹궈 전분을 충분히 제거합니다.', timerSeconds: 240 },
+      { title: '오이 손질', description: '오이는 채 썰어둡니다.' },
+      { title: '양념 만들기', description: '매실청, 고추장, 식초, 간장, 참기름을 골고루 섞어 양념을 만듭니다.' },
+      { title: '비비기', description: '소면에 양념을 넣고 골고루 비빈 뒤 오이를 올리고 통깨를 뿌려 완성합니다.' },
     ],
     tips: [
       '매실청의 단맛이 충분하므로 설탕은 따로 넣지 않아도 좋아요.',
@@ -60,7 +60,7 @@ export const recipesQ2: Recipe[] = [
       { title: '관자 손질', description: '관자는 키친타월로 물기를 완전히 제거하고 소금, 후추로 밑간합니다.', tip: '물기가 남아있으면 구울 때 기름이 튀고 노릇하게 익지 않아요.' },
       { title: '마늘 준비', description: '마늘은 편으로 썰어둡니다.' },
       { title: '굽기', description: '달군 팬에 버터를 녹이고 마늘을 먼저 볶아 향을 낸 뒤, 관자를 올려 센 불에서 양면 각 1분 30초씩 노릇하게 굽습니다.', timerSeconds: 180, tip: '너무 오래 구우면 질겨지니 단시간에 강한 불로 구워주세요.' },
-      { title: '마무리', description: '레몬즙을 살짝 뿌리고 파슬리를 올려 완성합니다.', stepImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/5-2/step-62.png' },
+      { title: '마무리', description: '레몬즙을 살짝 뿌리고 파슬리를 올려 완성합니다.' },
     ],
     tips: [
       '관자는 만지지 말고 한 번만 뒤집어야 육즙이 보존됩니다.',
