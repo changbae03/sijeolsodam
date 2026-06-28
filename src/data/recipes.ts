@@ -24,6 +24,7 @@ import { recipesEggplantExpansion } from './recipes-eggplant-expansion';
 import { recipesSpinachExpansion } from './recipes-spinach-expansion';
 import { recipesBeansproutExpansion } from './recipes-beansprout-expansion';
 import { recipesZucchiniExpansion } from './recipes-zucchini-expansion';
+import { recipesChiveExpansion } from './recipes-chive-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -51,6 +52,7 @@ export const allRecipes: Recipe[] = [
   ...recipesSpinachExpansion,
   ...recipesBeansproutExpansion,
   ...recipesZucchiniExpansion,
+  ...recipesChiveExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
