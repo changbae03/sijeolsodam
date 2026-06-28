@@ -27,8 +27,8 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '알배추', amount: '1/2통' }, { name: '고춧가루', amount: '2큰술' }, { name: '액젓', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '설탕', amount: '1작은술' }, { name: '깨', amount: '약간' },
     ],
     steps: [
-      { title: '배추 손질', description: '배추는 한입 크기로 썰어 소금에 10분 절인 뒤 물기를 가볍게 짭니다.' },
-      { title: '양념 만들기', description: '고춧가루, 액젓, 다진마늘, 설탕을 섞어 양념을 만듭니다.' },
+      { title: '배추 손질', description: '배추는 한입 크기로 썰어 소금에 10분 절인 뒤 물기를 가볍게 짭니다. 소금에 절이면 배추 숨이 살짝 죽어 양념이 더 잘 배어들어요.' },
+      { title: '양념 만들기', description: '고춧가루, 액젓, 다진마늘, 설탕을 섞어 양념을 만듭니다. 양념을 미리 섞어두면 배추를 무칠 때 빠르고 골고루 입혀져요.' },
       {
         title: '무치기',
         description: '배추에 양념을 넣고 가볍게 무칩니다. 너무 세게 주무르면 숨이 죽어 아삭함이 사라져요.',
@@ -61,9 +61,9 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '알배추', amount: '1/3통' }, { name: '다진 돼지고기', amount: '200g' }, { name: '두부', amount: '1/3모' }, { name: '밀가루, 달걀물', amount: '적당량씩' }, { name: '다진마늘', amount: '1작은술' }, { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '배추 손질', description: '배추는 잘게 다져 소금에 절인 뒤 물기를 꽉 짭니다.' },
-      { title: '반죽하기', description: '배추, 다진 고기, 두부, 마늘, 소금, 후추를 섞어 반죽합니다.' },
-      { title: '모양 잡기', description: '동글납작하게 빚어 밀가루, 달걀물을 입힙니다.' },
+      { title: '배추 손질', description: '배추는 잘게 다져 소금에 절인 뒤 물기를 꽉 짭니다. 물기를 꽉 짜야 만두 속이 질척해지지 않아요.' },
+      { title: '반죽하기', description: '배추, 다진 고기, 두부, 마늘, 소금, 후추를 섞어 반죽합니다. 한 방향으로 치대면 점성이 생겨 찰진 속이 돼요.' },
+      { title: '모양 잡기', description: '동글납작하게 빚어 밀가루, 달걀물을 입힙니다. 두께를 일정하게 맞춰야 부칠 때 속까지 고르게 익어요.' },
       {
         title: '부치기',
         description: '팬에 기름을 두르고 중약불에서 앞뒤로 노릇하게 부칩니다. 속까지 익으려면 생각보다 시간이 걸려요.',
@@ -103,7 +103,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
         checkpoint: '잎을 들었을 때 부드럽게 늘어지면 잘 익은 거예요.',
         warning: '너무 오래 찌면 흐물흐물해져서 쌈 싸기가 어려워요.',
       },
-      { title: '플레이팅', description: '고기를 슬라이스해 배추잎, 쌈장과 함께 냅니다.' },
+      { title: '플레이팅', description: '고기를 슬라이스해 배추잎, 쌈장과 함께 냅니다. 고기는 결을 거슬러 슬라이스해야 더 부드럽게 씹혀요.' },
     ],
     tips: ['대체 재료: 보쌈김치를 곁들이면 더 풍성해져요.', '보관/활용: 고기는 따로 보관해 다음날 볶음 요리에 써도 좋아요.'],
     youtubeQuery: '배추 찜 보쌈',
@@ -136,7 +136,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
     steps: [
       { title: '감자 삶기', description: '감자는 삶아 으깹니다.', timerSeconds: 1200 },
       { title: '배추 볶기', description: '버터에 채 썬 배추와 대파를 부드러워질 때까지 볶습니다.', timerSeconds: 480, checkpoint: '배추가 투명해지고 부드러워지면 다 된 거예요.' },
-      { title: '섞기', description: '으깬 감자에 볶은 배추, 우유, 남은 버터를 넣고 섞어 소금, 후추로 간합니다.' },
+      { title: '섞기', description: '으깬 감자에 볶은 배추, 우유, 남은 버터를 넣고 섞어 소금, 후추로 간합니다. 따뜻할 때 섞어야 버터가 잘 녹아들면서 더 부드러운 질감이 나와요.' },
     ],
     tips: ['대체 재료: 알배추 대신 케일이나 시금치로도 만들 수 있어요.', '보관/활용: 냉장 2일 이내로 드세요.'],
     youtubeQuery: '콜캐넌 아일랜드 요리',
@@ -165,7 +165,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '알배추', amount: '1/2통' }, { name: '마늘', amount: '3쪽' }, { name: '건고추(또는 고추기름)', amount: '2개' }, { name: '식용유', amount: '2큰술' }, { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '배추 손질', description: '배추는 큼직하게 썹니다.' },
+      { title: '배추 손질', description: '배추는 큼직하게 썹니다. 너무 잘게 썰면 볶는 동안 다 으스러져요.' },
       { title: '향 내기', description: '기름에 마늘, 건고추를 넣어 향을 냅니다.', timerSeconds: 60 },
       {
         title: '볶기',
@@ -201,9 +201,9 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '알배추(속잎)', amount: '6장' }, { name: '올리브오일', amount: '2큰술' }, { name: '레몬즙', amount: '1큰술' }, { name: '파마산 치즈', amount: '20g' }, { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '배추 슬라이스', description: '배추 속잎은 가능한 얇게 슬라이스합니다.' },
-      { title: '플레이팅', description: '겹쳐서 원형으로 담고 올리브오일, 레몬즙을 뿌립니다.' },
-      { title: '마무리', description: '파마산을 얇게 셰이빙해 올리고 소금, 후추로 마무리합니다.' },
+      { title: '배추 슬라이스', description: '배추 속잎은 가능한 얇게 슬라이스합니다. 두께가 일정해야 겹쳐 담았을 때 모양이 깔끔하게 나와요.' },
+      { title: '플레이팅', description: '겹쳐서 원형으로 담고 올리브오일, 레몬즙을 뿌립니다. 겹쳐서 담아야 식감과 색이 한눈에 잘 드러나요.' },
+      { title: '마무리', description: '파마산을 얇게 셰이빙해 올리고 소금, 후추로 마무리합니다. 치즈는 얇게 셰이빙해야 배추 본연의 맛을 가리지 않아요.' },
     ],
     tips: ['대체 재료: 파마산 대신 페코리노 치즈도 잘 어울려요.', '보관/활용: 신선할 때 바로 즐기세요.'],
     youtubeQuery: '배추 카르파치오',
@@ -258,9 +258,9 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '오이', amount: '2개' }, { name: '크림치즈', amount: '100g' }, { name: '딜(또는 차이브)', amount: '약간' }, { name: '레몬즙', amount: '약간' }, { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '오이 리본 만들기', description: '오이는 채칼로 얇게 리본 모양으로 깎습니다. 일정한 압력으로 깎아야 두께가 고르게 나와요.' },
-      { title: '속 준비', description: '크림치즈에 다진 딜, 레몬즙, 소금을 섞습니다.' },
-      { title: '말기', description: '오이 리본에 크림치즈를 짜서 돌려 말아 롤을 만듭니다.' },
+      { title: '오이 리본 만들기', description: '오이는 채칼로 얇게 리본 모양으로 깎습니다. 일정한 압력으로 깎아야 두께가 고르게 나와요. 너무 두껍게 깎으면 말 때 잘 안 휘어져요.' },
+      { title: '속 준비', description: '크림치즈에 다진 딜, 레몬즙, 소금을 섞습니다. 차가운 크림치즈가 부드럽게 풀려야 짜기 쉬운 농도가 돼요.' },
+      { title: '말기', description: '오이 리본에 크림치즈를 짜서 돌려 말아 롤을 만듭니다. 너무 헐겁게 말면 안에서 속이 풀어져요.' },
     ],
     tips: ['대체 재료: 훈제연어를 곁들이면 더 풍성해져요.', '보관/활용: 만든 직후 바로 즐기는 게 가장 좋아요.'],
     youtubeQuery: '오이 크림치즈 롤',
@@ -287,8 +287,8 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
     steps: [
       { title: '오이 손질', description: '오이는 양 끝을 남기고 십자로 칼집을 냅니다. 끝까지 자르지 않아야 속이 안 빠져요.', warning: '칼집을 너무 깊게 내면 속이 채워지지 않고 흘러나와요.' },
       { title: '절이기', description: '소금물에 30분 절여 살짝 숨을 죽입니다.', timerSeconds: 1800 },
-      { title: '속 만들기', description: '부추, 고춧가루, 액젓, 다진마늘을 섞어 속을 만듭니다.' },
-      { title: '채우기', description: '칼집 사이에 속을 골고루 채워 넣습니다.' },
+      { title: '속 만들기', description: '부추, 고춧가루, 액젓, 다진마늘을 섞어 속을 만듭니다. 부추는 너무 잘게 썰지 않아야 식감이 살아요.' },
+      { title: '채우기', description: '칼집 사이에 속을 골고루 채워 넣습니다. 너무 빡빡하게 채우면 익는 동안 갈라질 수 있어요.' },
     ],
     tips: ['대체 재료: 부추가 없으면 쪽파로 대신해도 좋아요.', '보관/활용: 냉장 1~2일 내로 가장 아삭하게 즐기세요.'],
     youtubeQuery: '오이소박이 만들기',
@@ -319,14 +319,14 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '오이', amount: '2개' }, { name: '소금', amount: '1작은술' }, { name: '다시마(작게 자른 것)', amount: '5g' }, { name: '깨', amount: '약간' },
     ],
     steps: [
-      { title: '오이 손질', description: '오이는 먹기 좋게 썹니다.' },
+      { title: '오이 손질', description: '오이는 먹기 좋게 썹니다. 너무 두껍게 썰면 국물이 잘 배어들지 않아요.' },
       {
         title: '절이기',
         description: '지퍼백에 오이, 소금, 다시마를 넣고 공기를 빼 30분 절입니다. 오이가 살짝 휘어지는 정도면 충분해요.',
         timerSeconds: 1800,
         checkpoint: '오이를 눌렀을 때 살짝 물기가 배어나오면 잘 절여진 거예요.',
       },
-      { title: '마무리', description: '물기를 가볍게 짜서 그릇에 담고 깨를 뿌립니다.' },
+      { title: '마무리', description: '물기를 가볍게 짜서 그릇에 담고 깨를 뿌립니다. 물기를 너무 꽉 짜면 양념이 잘 안 묻으니 가볍게만 짜주세요.' },
     ],
     tips: ['대체 재료: 다시마가 없으면 소금만으로도 만들 수 있어요.', '보관/활용: 냉장 2일 이내로 드세요.'],
     youtubeQuery: '아사즈케 오이절임',
@@ -355,9 +355,9 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '오이', amount: '2개' }, { name: '피시소스', amount: '2큰술' }, { name: '라임즙', amount: '2큰술' }, { name: '설탕', amount: '1.5큰술' }, { name: '청양고추', amount: '1개' }, { name: '땅콩(다진 것)', amount: '약간' },
     ],
     steps: [
-      { title: '오이 손질', description: '오이는 어슷하게 썹니다.' },
-      { title: '소스 만들기', description: '피시소스, 라임즙, 설탕, 다진 고추를 섞어 소스를 만듭니다. 설탕이 완전히 녹을 때까지 저어주세요.' },
-      { title: '무치기', description: '오이에 소스를 부어 가볍게 무치고 땅콩을 뿌립니다.' },
+      { title: '오이 손질', description: '오이는 어슷하게 썹니다. 어슷하게 썰면 단면이 넓어져 소스가 더 잘 스며들어요.' },
+      { title: '소스 만들기', description: '피시소스, 라임즙, 설탕, 다진 고추를 섞어 소스를 만듭니다. 설탕이 완전히 녹을 때까지 저어주세요. 설탕이 안 녹으면 바닥에 가라앉아 단맛이 고르게 안 퍼져요.' },
+      { title: '무치기', description: '오이에 소스를 부어 가볍게 무치고 땅콩을 뿌립니다. 무친 후 잠깐 두면 소스가 더 잘 배어들어요.' },
     ],
     tips: ['대체 재료: 피시소스가 부담스럽다면 액젓으로 대신해도 비슷해요.', '보관/활용: 만든 직후 바로 먹는 게 가장 신선해요.'],
     youtubeQuery: '느억짬 오이무침',
@@ -386,7 +386,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '오이', amount: '2개' }, { name: '설탕', amount: '40g' }, { name: '레몬즙', amount: '1큰술' }, { name: '민트', amount: '10장' }, { name: '물', amount: '1/4컵' },
     ],
     steps: [
-      { title: '베이스 만들기', description: '오이, 설탕, 레몬즙, 민트, 물을 블렌더로 곱게 갑니다.' },
+      { title: '베이스 만들기', description: '오이, 설탕, 레몬즙, 민트, 물을 블렌더로 곱게 갑니다. 너무 오래 갈면 거품이 많이 생겨 식감이 흐트러져요.' },
       {
         title: '얼리기',
         description: '평평한 트레이에 부어 얼리며 1시간마다 포크로 긁어줍니다. 거친 얼음 결정이 생기는 게 그라니타의 특징이에요.',
@@ -419,7 +419,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       { name: '오이', amount: '4개' }, { name: '소금', amount: '약간' }, { name: '민트(선택)', amount: '약간' },
     ],
     steps: [
-      { title: '오이 갈기', description: '오이는 소금과 함께 블렌더로 곱게 갑니다.' },
+      { title: '오이 갈기', description: '오이는 소금과 함께 블렌더로 곱게 갑니다. 소금이 삼투압 작용으로 즙이 더 잘 빠져나오게 도와줘요.' },
       {
         title: '거르기',
         description: '면포에 넣고 냉장고에서 4시간 이상 매달아 자연스럽게 즙만 떨어지게 둡니다.',
@@ -427,7 +427,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
         warning: '짜내면 탁해져요. 시간을 들여 천천히 받아내세요.',
         checkpoint: '받아낸 액체가 투명한 연두빛이면 잘 거른 거예요.',
       },
-      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 민트를 살짝 더해 냅니다.' },
+      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 민트를 살짝 더해 냅니다. 민트는 마지막에 더해야 향이 진하게 남아요.' },
     ],
     tips: ['대체 재료: 민트 대신 딜을 더해도 향이 좋아요.', '보관/활용: 냉장 1~2일 이내로 드세요.'],
     youtubeQuery: '오이 콩소메 만들기',

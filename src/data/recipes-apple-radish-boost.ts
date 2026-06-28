@@ -26,14 +26,14 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '사과', amount: '1/2개' }, { name: '오트밀', amount: '1/2컵' }, { name: '우유(또는 물)', amount: '1컵' }, { name: '계피가루', amount: '약간' }, { name: '꿀', amount: '1작은술' },
     ],
     steps: [
-      { title: '사과 손질', description: '사과는 잘게 깍둑썰기 합니다.' },
+      { title: '사과 손질', description: '사과는 잘게 깍둑썰기 합니다. 크기를 일정하게 맞춰야 오트밀과 함께 끓일 때 고르게 익어요.' },
       {
         title: '끓이기',
         description: '냄비에 오트밀, 우유, 사과를 넣고 약불에서 5분 끓입니다. 오트밀이 부드럽게 퍼지고 사과가 살짝 투명해지면 다 된 거예요.',
         timerSeconds: 300,
         checkpoint: '오트밀이 걸쭉해지고 사과가 부드러워지면 완성이에요.',
       },
-      { title: '마무리', description: '계피가루와 꿀을 더해 완성합니다.' },
+      { title: '마무리', description: '계피가루와 꿀을 더해 완성합니다. 계피가루는 끓이는 도중보다 마지막에 넣어야 향이 진하게 살아요.' },
     ],
     tips: ['대체 재료: 견과류나 건포도를 더하면 더 풍성해져요.', '보관/활용: 바로 먹는 게 가장 좋아요.'],
     youtubeQuery: '사과 오트밀 만들기',
@@ -58,9 +58,9 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '사과', amount: '1개' }, { name: '식초', amount: '1/2컵' }, { name: '물', amount: '1/2컵' }, { name: '설탕', amount: '1/4컵' }, { name: '통후추', amount: '5알' },
     ],
     steps: [
-      { title: '사과 손질', description: '사과는 얇게 슬라이스합니다.' },
+      { title: '사과 손질', description: '사과는 얇게 슬라이스합니다. 너무 두껍게 썰면 피클물이 속까지 배어들기 전에 식감이 물러져요.' },
       { title: '피클물 끓이기', description: '식초, 물, 설탕, 통후추를 끓여 식힙니다.', timerSeconds: 300 },
-      { title: '담그기', description: '소독한 병에 사과를 담고 식힌 피클물을 부어 밀봉합니다.' },
+      { title: '담그기', description: '소독한 병에 사과를 담고 식힌 피클물을 부어 밀봉합니다. 뜨거운 피클물을 부어야 병 속 공기가 빠지고 살균 효과까지 더해져요.' },
     ],
     tips: ['대체 재료: 시나몬스틱을 더하면 향이 좋아져요.', '보관/활용: 냉장 1주 이내로 드세요.'],
     youtubeQuery: '사과 피클 만들기',
@@ -89,7 +89,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
     ],
     steps: [
       { title: '필링 만들기', description: '사과는 잘게 썰어 설탕, 계피가루와 볶아 졸입니다.', timerSeconds: 600 },
-      { title: '반죽하기', description: '강력분, 이스트, 우유, 설탕, 버터를 섞어 매끈한 반죽을 만듭니다.' },
+      { title: '반죽하기', description: '강력분, 이스트, 우유, 설탕, 버터를 섞어 매끈한 반죽을 만듭니다. 반죽이 매끈해질 때까지 치대야 발효 중 더 잘 부풀어요.' },
       { title: '발효', description: '따뜻한 곳에서 1시간 두 배로 부풀 때까지 발효시킵니다.', timerSeconds: 3600, checkpoint: '손가락으로 눌렀을 때 자국이 천천히 되돌아오면 발효가 된 거예요.' },
       { title: '필링 채우고 굽기', description: '반죽을 밀어 필링을 펴고 말아 자른 뒤 180도에서 20분 굽습니다.', timerSeconds: 1200, checkpoint: '표면이 황금빛으로 부풀면 완성이에요.' },
     ],
@@ -116,7 +116,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '사과', amount: '4개' }, { name: '설탕', amount: '80g' }, { name: '레몬즙', amount: '1큰술' }, { name: '계피스틱', amount: '1개' },
     ],
     steps: [
-      { title: '사과 손질', description: '사과는 깍둑썰기 합니다.' },
+      { title: '사과 손질', description: '사과는 깍둑썰기 합니다. 너무 잘게 썰면 졸이는 동안 다 으스러져요.' },
       {
         title: '졸이기',
         description: '설탕, 레몬즙, 계피스틱과 함께 약불에서 20분 졸입니다. 사과가 부드러워지고 약간의 형태가 남으면 완성이에요.',
@@ -186,8 +186,8 @@ export const recipesAppleRadishBoost: Recipe[] = [
     ],
     steps: [
       { title: '속 만들기', description: '사과는 잘게 썰어 설탕, 계피가루와 볶아 졸입니다.', timerSeconds: 600 },
-      { title: '반죽 자르기', description: '페이스트리를 둥글게 자릅니다.' },
-      { title: '속 채우기', description: '반죽 한쪽에 속을 올려 반달로 접어 가장자리를 포크로 눌러 붙입니다.' },
+      { title: '반죽 자르기', description: '페이스트리를 둥글게 자릅니다. 반죽이 차가운 채로 작업해야 자르는 동안 모양이 흐트러지지 않아요.' },
+      { title: '속 채우기', description: '반죽 한쪽에 속을 올려 반달로 접어 가장자리를 포크로 눌러 붙입니다. 가장자리를 꼼꼼히 눌러야 굽는 동안 속이 새지 않아요.' },
       { title: '굽기', description: '달걀물을 바르고 190도에서 20분 굽습니다.', timerSeconds: 1200, checkpoint: '겉면이 바삭한 소리를 내면 완성이에요.' },
     ],
     tips: ['대체 재료: 건포도를 더하면 풍미가 깊어져요.', '보관/활용: 냉동 보관 후 오븐에 바로 구워도 좋아요.'],
@@ -218,7 +218,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
     ],
     steps: [
       { title: '타르트지 굽기', description: '타르트지를 틀에 깔고 180도에서 15분 블라인드 베이킹합니다.', timerSeconds: 900 },
-      { title: '사과 슬라이스', description: '사과는 만돌린으로 균일하게 슬라이스해 타르트지에 겹쳐 올립니다.' },
+      { title: '사과 슬라이스', description: '사과는 만돌린으로 균일하게 슬라이스해 타르트지에 겹쳐 올립니다. 겹쳐 올릴 때 살짝 비스듬히 눕히면 구운 뒤 단면이 더 보기 좋게 나와요.' },
       { title: '굽기', description: '190도에서 30분 굽습니다.', timerSeconds: 1800, checkpoint: '사과 가장자리가 살짝 갈색이 돌면 완성이에요.' },
       {
         title: '솔티드 캐러멜',
@@ -251,7 +251,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '사과', amount: '4개' }, { name: '설탕', amount: '50g' }, { name: '레몬즙', amount: '1큰술' }, { name: '물', amount: '1/4컵' },
     ],
     steps: [
-      { title: '베이스 만들기', description: '사과는 갈아 설탕, 레몬즙, 물과 섞습니다.' },
+      { title: '베이스 만들기', description: '사과는 갈아 설탕, 레몬즙, 물과 섞습니다. 물을 적게 넣을수록 더 진한 셔벗 맛이 나요.' },
       {
         title: '얼리기',
         description: '평평한 트레이에 부어 얼리며 1시간마다 포크로 긁어줍니다.',
@@ -284,9 +284,9 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '무', amount: '1/3개' }, { name: '고춧가루', amount: '1.5큰술' }, { name: '액젓', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '설탕', amount: '1작은술' }, { name: '깨', amount: '약간' },
     ],
     steps: [
-      { title: '무 채썰기', description: '무는 가늘게 채 썹니다.' },
-      { title: '양념하기', description: '고춧가루를 먼저 무에 비벼 색을 입힌 뒤 액젓, 다진마늘, 설탕을 넣어 무칩니다.' },
-      { title: '마무리', description: '깨를 뿌려 완성합니다.' },
+      { title: '무 채썰기', description: '무는 가늘게 채 썹니다. 일정한 두께로 썰어야 양념이 고르게 배어들어요.' },
+      { title: '양념하기', description: '고춧가루를 먼저 무에 비벼 색을 입힌 뒤 액젓, 다진마늘, 설탕을 넣어 무칩니다. 고춧가루를 먼저 입히면 색이 더 곱게 나오고 양념도 골고루 스며들어요.' },
+      { title: '마무리', description: '깨를 뿌려 완성합니다. 깨는 무치고 바로 뿌려야 향이 가장 진해요.' },
     ],
     tips: ['대체 재료: 미나리나 쪽파를 더하면 향이 좋아져요.', '보관/활용: 냉장 2~3일 이내로 드세요.'],
     youtubeQuery: '무생채 만들기',
@@ -312,8 +312,8 @@ export const recipesAppleRadishBoost: Recipe[] = [
     ],
     steps: [
       { title: '불리기', description: '무말랭이는 물에 20분 불려 물기를 꽉 짭니다.', timerSeconds: 1200 },
-      { title: '양념하기', description: '고춧가루, 액젓, 다진마늘, 물엿을 넣고 골고루 무칩니다.' },
-      { title: '마무리', description: '깨를 뿌려 완성합니다.' },
+      { title: '양념하기', description: '고춧가루, 액젓, 다진마늘, 물엿을 넣고 골고루 무칩니다. 양념이 골고루 묻을 때까지 충분히 버무려야 맛이 균일해요.' },
+      { title: '마무리', description: '깨를 뿌려 완성합니다. 깨는 먹기 직전에 뿌려야 고소한 향이 살아있어요.' },
     ],
     tips: ['대체 재료: 물엿 대신 설탕을 써도 괜찮아요.', '보관/활용: 냉장 1주일 이내로 드세요.'],
     youtubeQuery: '무말랭이 무침 만들기',
@@ -341,8 +341,8 @@ export const recipesAppleRadishBoost: Recipe[] = [
     ],
     steps: [
       { title: '무 손질', description: '무는 잘게 다져 소금에 절인 뒤 물기를 꽉 짭니다.', warning: '물기를 덜 짜면 만두가 터지기 쉬워요.' },
-      { title: '속 만들기', description: '무, 다진 고기, 두부, 마늘, 참기름을 섞어 반죽합니다.' },
-      { title: '빚기', description: '만두피에 속을 넣고 가장자리를 물로 붙여 빚습니다.' },
+      { title: '속 만들기', description: '무, 다진 고기, 두부, 마늘, 참기름을 섞어 반죽합니다. 한 방향으로 치대면 점성이 생겨 속이 찰지게 뭉쳐져요.' },
+      { title: '빚기', description: '만두피에 속을 넣고 가장자리를 물로 붙여 빚습니다. 가장자리에 양념이 묻으면 잘 안 붙으니 깨끗하게 비워두세요.' },
       { title: '찌기', description: '찜기에 12분간 찝니다.', timerSeconds: 720, checkpoint: '만두피가 투명해지면 다 익은 거예요.' },
     ],
     tips: ['대체 재료: 다진 새우살을 섞으면 더 산뜻해져요.', '보관/활용: 냉동 보관 후 바로 쪄도 좋아요.'],
@@ -375,7 +375,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
         timerSeconds: 480,
         checkpoint: '양면이 황금빛으로 구워지면 완성이에요.',
       },
-      { title: '소스', description: '간장과 다진마늘을 더해 한 번 더 졸이며 코팅합니다.' },
+      { title: '소스', description: '간장과 다진마늘을 더해 한 번 더 졸이며 코팅합니다. 약불로 졸여야 양념이 타지 않고 윤기 있게 코팅돼요.' },
     ],
     tips: ['대체 재료: 간장 대신 굴소스를 쓰면 감칠맛이 깊어져요.', '보관/활용: 갓 구워 바로 먹는 게 가장 좋아요.'],
     youtubeQuery: '무 스테이크 만들기',
@@ -406,7 +406,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '무', amount: '1/2개' }, { name: '어묵(여러 종류)', amount: '300g' }, { name: '다시마', amount: '10g' }, { name: '간장', amount: '2큰술' }, { name: '맛술', amount: '1큰술' },
     ],
     steps: [
-      { title: '무 손질', description: '무는 두툼하게 썰어 모서리를 둥글게 깎습니다.' },
+      { title: '무 손질', description: '무는 두툼하게 썰어 모서리를 둥글게 깎습니다. 모서리를 깎아두면(면취) 오래 끓여도 부서지지 않아요.' },
       { title: '다시육수', description: '물에 다시마를 넣고 30분 우립니다.', timerSeconds: 1800 },
       {
         title: '끓이기',
@@ -443,8 +443,8 @@ export const recipesAppleRadishBoost: Recipe[] = [
     ],
     steps: [
       { title: '무 채썰기', description: '무는 가늘게 채 썰어 얼음물에 5분 담가둡니다.', timerSeconds: 300, checkpoint: '무가 탱탱하게 휘어지면 충분히 아삭해진 거예요.' },
-      { title: '물기 빼기', description: '물기를 꼭 짜냅니다.' },
-      { title: '마무리', description: '폰즈소스와 참기름을 뿌리고 가츠오부시를 올려 완성합니다.' },
+      { title: '물기 빼기', description: '물기를 꼭 짜냅니다. 물기를 충분히 빼야 양념이 묽어지지 않아요.' },
+      { title: '마무리', description: '폰즈소스와 참기름을 뿌리고 가츠오부시를 올려 완성합니다. 가츠오부시는 먹기 직전에 올려야 향과 식감이 살아있어요.' },
     ],
     tips: ['대체 재료: 폰즈소스가 없으면 간장과 식초를 1:1로 섞어도 비슷해요.', '보관/활용: 먹기 직전에 무치는 게 가장 아삭해요.'],
     youtubeQuery: '다이콘 사라다 만들기',
@@ -473,14 +473,14 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '무', amount: '1/2개' }, { name: '레몬즙', amount: '1큰술' }, { name: '소금', amount: '약간' }, { name: '캐비어(또는 날치알)', amount: '약간' },
     ],
     steps: [
-      { title: '베이스 만들기', description: '무는 갈아 레몬즙, 소금과 섞습니다.' },
+      { title: '베이스 만들기', description: '무는 갈아 레몬즙, 소금과 섞습니다. 너무 곱게 갈면 거를 때 시간이 더 오래 걸려요.' },
       {
         title: '얼리기',
         description: '평평한 트레이에 부어 얼리며 1시간마다 포크로 긁어줍니다.',
         timerSeconds: 14400,
         checkpoint: '포크로 긁었을 때 알알이 부서지는 느낌이면 완성이에요.',
       },
-      { title: '마무리', description: '잔에 담아 캐비어를 살짝 올려 냅니다.' },
+      { title: '마무리', description: '잔에 담아 캐비어를 살짝 올려 냅니다. 캐비어는 먹기 직전에 올려야 짠맛과 식감이 가장 좋아요.' },
     ],
     tips: ['대체 재료: 캐비어 대신 연어알도 잘 어울려요.', '보관/활용: 냉동 1주일 이내로 드세요.'],
     youtubeQuery: '무 그라니타 캐비어',
@@ -507,7 +507,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       { name: '무', amount: '1개' }, { name: '소금', amount: '약간' }, { name: '유자즙(선택)', amount: '약간' },
     ],
     steps: [
-      { title: '무 갈기', description: '무는 소금과 함께 블렌더로 곱게 갑니다.' },
+      { title: '무 갈기', description: '무는 소금과 함께 블렌더로 곱게 갑니다. 소금을 같이 넣으면 삼투압 작용으로 즙이 더 잘 빠져나와요.' },
       {
         title: '거르기',
         description: '면포에 넣고 냉장고에서 4시간 이상 매달아 자연스럽게 즙만 떨어지게 둡니다.',
@@ -515,7 +515,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
         warning: '짜내면 탁해져요. 시간을 들여 천천히 받아내세요.',
         checkpoint: '받아낸 액체가 투명하면 잘 거른 거예요.',
       },
-      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 유자즙을 살짝 더해 냅니다.' },
+      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 유자즙을 살짝 더해 냅니다. 유자즙은 마지막에 더해야 향이 은은하게 남아요.' },
     ],
     tips: ['대체 재료: 유자즙이 없으면 레몬즙으로 대신해도 좋아요.', '보관/활용: 냉장 2일 이내로 드세요.'],
     youtubeQuery: '무 콩소메 만들기',

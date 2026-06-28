@@ -27,7 +27,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '고구마', amount: '2개' }, { name: '간장', amount: '3큰술' }, { name: '설탕', amount: '1큰술' }, { name: '식용유', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
     ],
     steps: [
-      { title: '고구마 썰기', description: '고구마는 한입 크기로 깍둑썰기 합니다.' },
+      { title: '고구마 썰기', description: '고구마는 한입 크기로 깍둑썰기 합니다. 크기를 비슷하게 맞춰야 졸이는 시간이 고르게 적용돼요.' },
       { title: '볶기', description: '기름에 고구마를 2분 정도 볶아 겉을 코팅합니다.', timerSeconds: 120 },
       {
         title: '졸이기',
@@ -61,8 +61,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '고구마', amount: '2개' }, { name: '부침가루(또는 밀가루)', amount: '3큰술' }, { name: '소금', amount: '약간' }, { name: '식용유', amount: '적당량' },
     ],
     steps: [
-      { title: '고구마 갈기', description: '고구마는 강판이나 믹서로 갑니다.' },
-      { title: '반죽하기', description: '간 고구마에 부침가루와 소금을 섞습니다.' },
+      { title: '고구마 갈기', description: '고구마는 강판이나 믹서로 갑니다. 너무 곱게 갈면 전분물만 남아 식감이 사라져요.' },
+      { title: '반죽하기', description: '간 고구마에 부침가루와 소금을 섞습니다. 농도가 너무 묽으면 부침가루를 조금 더 넣어 조절하세요.' },
       {
         title: '부치기',
         description: '팬에 기름을 두르고 약불~중불에서 앞뒤로 노릇하게 부칩니다. 고구마는 당도가 높아 센불이면 빨리 타요.',
@@ -94,8 +94,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '쌀', amount: '2컵' }, { name: '고구마', amount: '1개' }, { name: '물', amount: '2컵' },
     ],
     steps: [
-      { title: '고구마 손질', description: '고구마는 깍둑썰기 합니다.' },
-      { title: '안치기', description: '씻은 쌀과 고구마를 솥에 담고 물을 맞춥니다.' },
+      { title: '고구마 손질', description: '고구마는 깍둑썰기 합니다. 일정한 크기로 썰어야 밥에 고르게 섞여 익어요.' },
+      { title: '안치기', description: '씻은 쌀과 고구마를 솥에 담고 물을 맞춥니다. 고구마에서 수분이 나오니 물을 평소보다 살짝 적게 잡으세요.' },
       { title: '밥짓기', description: '평소처럼 밥을 짓습니다.', timerSeconds: 1800 },
     ],
     tips: ['대체 재료: 검은콩을 더하면 더 영양가 있는 잡곡밥이 돼요.', '보관/활용: 냉장 2일 이내로 드세요.'],
@@ -124,8 +124,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '속 준비', description: '고구마는 삶아 으깨고 설탕을 섞습니다.', timerSeconds: 1200 },
-      { title: '모양 잡기', description: '식힌 속을 동그랗게 빚습니다.' },
-      { title: '튀김옷 입히기', description: '밀가루, 달걀물, 빵가루 순서로 입힙니다.' },
+      { title: '모양 잡기', description: '식힌 속을 동그랗게 빚습니다. 따뜻할 때 빚으면 손에 다 붙으니 식힌 뒤 작업하세요.' },
+      { title: '튀김옷 입히기', description: '밀가루, 달걀물, 빵가루 순서로 입힙니다. 빵가루는 살짝 눌러 붙여야 튀길 때 떨어지지 않아요.' },
       {
         title: '튀기기',
         description: '170도 기름에서 노릇해질 때까지 튀깁니다. 고구마는 당분이 높아 빨리 색이 드니 주의해서 지켜보세요.',
@@ -159,7 +159,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '고구마 삶기', description: '작은 고구마를 통째로 살짝 덜 익은 상태로 삶습니다.', timerSeconds: 600, checkpoint: '꼬치로 찔렀을 때 살짝 단단함이 남아있으면 적당해요.' },
-      { title: '베이컨 말기', description: '식힌 고구마에 베이컨을 한 바퀴 돌려 감고 이쑤시개로 고정합니다.' },
+      { title: '베이컨 말기', description: '식힌 고구마에 베이컨을 한 바퀴 돌려 감고 이쑤시개로 고정합니다. 끝을 단단히 고정해야 구울 때 베이컨이 풀리지 않아요.' },
       {
         title: '굽기',
         description: '오븐 200도에서 20분, 베이컨이 바삭해질 때까지 굽습니다.',
@@ -192,7 +192,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '필링 만들기', description: '고구마는 삶아 으깨고 설탕, 계피가루를 섞습니다.', timerSeconds: 1200 },
-      { title: '반죽하기', description: '강력분, 이스트, 우유, 설탕, 버터를 섞어 매끈한 반죽을 만듭니다.' },
+      { title: '반죽하기', description: '강력분, 이스트, 우유, 설탕, 버터를 섞어 매끈한 반죽을 만듭니다. 반죽이 매끈해질 때까지 치대야 발효 중 더 잘 부풀어요.' },
       {
         title: '발효',
         description: '반죽을 따뜻한 곳에서 1시간 정도 두 배로 부풀 때까지 발효시킵니다.',
@@ -227,7 +227,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { title: '양파 볶기', description: '버터에 양파를 투명해질 때까지 볶습니다.', timerSeconds: 300 },
       { title: '끓이기', description: '고구마와 스톡을 넣고 푹 익을 때까지 20분 끓입니다.', timerSeconds: 1200, checkpoint: '포크로 눌렀을 때 부드럽게 부서지면 다 익은 거예요.' },
       { title: '블렌딩', description: '한 김 식힌 뒤 블렌더로 곱게 갑니다.', warning: '뜨거운 채로 갈면 위험해요. 꼭 식힌 후 작업하세요.' },
-      { title: '마무리', description: '다시 데우며 생크림을 넣고 소금, 후추로 간을 맞춥니다.' },
+      { title: '마무리', description: '다시 데우며 생크림을 넣고 소금, 후추로 간을 맞춥니다. 생크림은 마지막에 넣어야 끓는 동안 분리되지 않아요.' },
     ],
     tips: ['대체 재료: 계피가루를 살짝 더하면 향이 좋아져요.', '보관/활용: 냉동 보관 가능해요.'],
     youtubeQuery: '고구마 크림수프 만들기',
@@ -259,7 +259,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '고구마', amount: '1개' }, { name: '튀김가루(또는 밀가루+전분)', amount: '1컵' }, { name: '차가운 물', amount: '1컵' }, { name: '식용유(튀김용)', amount: '적당량' },
     ],
     steps: [
-      { title: '고구마 손질', description: '고구마는 5mm 두께로 슬라이스합니다.' },
+      { title: '고구마 손질', description: '고구마는 5mm 두께로 슬라이스합니다. 두께가 일정해야 튀김옷이 고르게 익어요.' },
       {
         title: '반죽 만들기',
         description: '튀김가루와 차가운 물을 가볍게 섞습니다. 살짝 덩어리가 남아도 괜찮아요.',
@@ -336,8 +336,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '속 만들기', description: '고구마는 삶아 으깨고 설탕, 계피가루를 섞습니다.', timerSeconds: 1200 },
-      { title: '반죽 자르기', description: '페이스트리를 둥글게 자릅니다.' },
-      { title: '속 채우기', description: '반죽 한쪽에 속을 올려 반달로 접어 가장자리를 포크로 눌러 붙입니다.' },
+      { title: '반죽 자르기', description: '페이스트리를 둥글게 자릅니다. 반죽이 차가운 채로 작업해야 모양이 흐트러지지 않아요.' },
+      { title: '속 채우기', description: '반죽 한쪽에 속을 올려 반달로 접어 가장자리를 포크로 눌러 붙입니다. 가장자리를 꼼꼼히 눌러야 굽는 동안 속이 새지 않아요.' },
       {
         title: '굽기',
         description: '달걀물을 바르고 190도에서 20분, 표면이 황금빛이 될 때까지 굽습니다.',
@@ -409,8 +409,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '고구마 삶고 으깨기', description: '고구마는 삶아 뜨거울 때 체에 곱게 내립니다.', timerSeconds: 1200 },
-      { title: '반죽하기', description: '으깬 고구마에 밀가루, 달걀노른자를 넣고 가볍게 섞습니다.' },
-      { title: '빚기', description: '반죽을 길게 굴려 한입 크기로 자릅니다.' },
+      { title: '반죽하기', description: '으깬 고구마에 밀가루, 달걀노른자를 넣고 가볍게 섞습니다. 많이 치댈수록 글루텐이 생겨 뇨끼가 질겨지니 가볍게 섞으세요.' },
+      { title: '빚기', description: '반죽을 길게 굴려 한입 크기로 자릅니다. 일정한 크기로 잘라야 삶을 때 고르게 익어요.' },
       { title: '삶기', description: '끓는 소금물에 뇨끼를 넣어 떠오르면 30초 더 삶습니다.', timerSeconds: 180, checkpoint: '뇨끼가 수면 위로 떠오르면 다 익은 거예요.' },
       {
         title: '브라운버터 만들기',
@@ -444,7 +444,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '고구마 퓌레', description: '고구마는 삶아 곱게 으깨둡니다.', timerSeconds: 1200 },
-      { title: '커스터드 만들기', description: '생크림을 데워 달걀노른자, 설탕, 고구마 퓌레와 섞습니다.' },
+      { title: '커스터드 만들기', description: '생크림을 데워 달걀노른자, 설탕, 고구마 퓌레와 섞습니다. 우유를 조금씩 부어야 노른자가 갑자기 익어 덩어리지지 않아요.' },
       {
         title: '워터배스로 굽기',
         description: '라메킨에 부어 물을 채운 오븐 팬에 올려 150도에서 40분 굽습니다.',
@@ -452,7 +452,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
         checkpoint: '가운데를 살짝 흔들었을 때 출렁이는 정도면 완성이에요.',
         warning: '직접 오븐 팬에 올리면 너무 빨리 익어 알갱이가 생겨요. 물을 꼭 채우세요.',
       },
-      { title: '캐러멜 만들기', description: '식힌 커스터드 위에 설탕을 뿌리고 토치로 캐러멜화합니다.' },
+      { title: '캐러멜 만들기', description: '식힌 커스터드 위에 설탕을 뿌리고 토치로 캐러멜화합니다. 토치는 골고루 움직여야 한 곳만 타지 않아요.' },
     ],
     tips: ['대체 재료: 토치가 없으면 오븐 브로일러를 강하게 켜 단시간에 그슬려도 돼요.', '보관/활용: 커스터드만 따로 냉장 보관 가능해요.'],
     youtubeQuery: '고구마 크렘브륄레',
@@ -480,13 +480,13 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '고구마 퓌레', description: '고구마는 삶아 곱게 으깨둡니다.', timerSeconds: 1200 },
-      { title: '젤라틴 녹이기', description: '불린 젤라틴을 약불에 살짝 녹여 퓌레에 섞습니다.' },
+      { title: '젤라틴 녹이기', description: '불린 젤라틴을 약불에 살짝 녹여 퓌레에 섞습니다. 너무 뜨겁게 녹이면 퓌레와 섞일 때 굳는 힘이 약해져요.' },
       {
         title: '무스 완성',
         description: '생크림을 휘핑해 퓌레에 가볍게 접듯이 섞습니다. 너무 세게 섞으면 공기가 빠져요.',
         warning: '거칠게 섞으면 무거운 질감이 돼요. 주걱으로 아래에서 위로 떠올리듯 섞으세요.',
       },
-      { title: '프랄린 만들기', description: '설탕을 녹여 호두에 부어 굳힌 뒤 잘게 부숩니다.' },
+      { title: '프랄린 만들기', description: '설탕을 녹여 호두에 부어 굳힌 뒤 잘게 부숩니다. 완전히 굳은 뒤 부숴야 깨끗한 조각이 나와요.' },
     ],
     tips: ['대체 재료: 호두 대신 피칸도 잘 어울려요.', '보관/활용: 무스는 냉장 2일 이내로 드세요.'],
     youtubeQuery: '고구마 무스 호두 프랄린',
@@ -525,7 +525,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
         timerSeconds: 2100,
         checkpoint: '가운데를 살짝 눌렀을 때 탄력 있게 돌아오면 완성이에요.',
       },
-      { title: '글레이즈', description: '식힌 타르트 위에 메이플시럽을 가늘게 그어 마무리합니다.' },
+      { title: '글레이즈', description: '식힌 타르트 위에 메이플시럽을 가늘게 그어 마무리합니다. 가늘게 그어야 타르트 본연의 색이 가려지지 않아요.' },
     ],
     tips: ['대체 재료: 메이플시럽이 없으면 꿀로 대신해도 좋아요.', '보관/활용: 냉장 보관 후 슬라이스해 즐기세요.'],
     youtubeQuery: '고구마 타르트 만들기',
@@ -584,9 +584,9 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '10개' }, { name: '어린잎채소', amount: '한줌' }, { name: '발사믹 식초', amount: '1큰술' }, { name: '올리브오일', amount: '2큰술' }, { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '딸기 손질', description: '딸기는 반으로 자릅니다.' },
-      { title: '담기', description: '어린잎채소를 깔고 딸기를 올립니다.' },
-      { title: '드레싱', description: '발사믹 식초, 올리브오일, 소금, 후추를 뿌려 완성합니다.' },
+      { title: '딸기 손질', description: '딸기는 반으로 자릅니다. 한입에 먹기 좋은 크기로 잘라야 식감이 더 좋아요.' },
+      { title: '담기', description: '어린잎채소를 깔고 딸기를 올립니다. 채소를 먼저 깔아야 딸기 즙이 아래로 스며들지 않아요.' },
+      { title: '드레싱', description: '발사믹 식초, 올리브오일, 소금, 후추를 뿌려 완성합니다. 드레싱은 먹기 직전에 뿌려야 채소가 숨이 죽지 않아요.' },
     ],
     tips: ['대체 재료: 페타치즈를 더하면 짠맛 대비가 좋아져요.', '보관/활용: 만든 직후 바로 드세요.'],
     youtubeQuery: '딸기 샐러드 만들기',
@@ -611,9 +611,9 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '10개' }, { name: '우유', amount: '1.5컵' }, { name: '꿀(또는 설탕)', amount: '1큰술' },
     ],
     steps: [
-      { title: '딸기 손질', description: '딸기는 꼭지를 떼고 깨끗이 씻습니다.' },
-      { title: '갈기', description: '딸기, 우유, 꿀을 블렌더에 넣고 곱게 갑니다.' },
-      { title: '마무리', description: '컵에 따라 담아 바로 즐깁니다.' },
+      { title: '딸기 손질', description: '딸기는 꼭지를 떼고 깨끗이 씻습니다. 물기를 충분히 털어내야 음료가 묽어지지 않아요.' },
+      { title: '갈기', description: '딸기, 우유, 꿀을 블렌더에 넣고 곱게 갑니다. 얼음과 함께 갈아야 전체적으로 고르게 시원해져요.' },
+      { title: '마무리', description: '컵에 따라 담아 바로 즐깁니다. 바로 마셔야 신선한 딸기 향이 가장 진해요.' },
     ],
     tips: ['대체 재료: 우유 대신 두유로도 만들 수 있어요.', '보관/활용: 신선할 때 바로 드세요.'],
     youtubeQuery: '딸기우유 만들기',
@@ -641,7 +641,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '15개' }, { name: '달걀', amount: '4개' }, { name: '설탕', amount: '100g' }, { name: '박력분', amount: '80g' }, { name: '생크림', amount: '300ml' },
     ],
     steps: [
-      { title: '반죽 만들기', description: '달걀과 설탕을 충분히 휘핑하고 박력분을 가볍게 섞습니다.' },
+      { title: '반죽 만들기', description: '달걀과 설탕을 충분히 휘핑하고 박력분을 가볍게 섞습니다. 거품기를 들어올렸을 때 자국이 잠시 남을 정도로 충분히 휘핑하세요.' },
       { title: '굽기', description: '평평한 팬에 부어 170도에서 15분 굽습니다.', timerSeconds: 900, checkpoint: '가운데를 눌렀을 때 탄력 있게 돌아오면 완성이에요.' },
       {
         title: '말기',
@@ -673,8 +673,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '15개' }, { name: '크림치즈', amount: '300g' }, { name: '설탕', amount: '80g' }, { name: '달걀', amount: '2개' }, { name: '다이제스티브 비스킷', amount: '100g' }, { name: '버터(녹인 것)', amount: '40g' },
     ],
     steps: [
-      { title: '베이스 만들기', description: '비스킷을 부수어 버터와 섞어 틀 바닥에 눌러 담습니다.' },
-      { title: '치즈 반죽', description: '부드러운 크림치즈에 설탕, 달걀을 순서대로 섞어 매끈하게 만듭니다.' },
+      { title: '베이스 만들기', description: '비스킷을 부수어 버터와 섞어 틀 바닥에 눌러 담습니다. 꾹꾹 눌러 담아야 자를 때 바닥이 부서지지 않아요.' },
+      { title: '치즈 반죽', description: '부드러운 크림치즈에 설탕, 달걀을 순서대로 섞어 매끈하게 만듭니다. 한 가지씩 순서대로 섞어야 덩어리 없이 매끈해져요.' },
       {
         title: '굽기',
         description: '160도 오븐에서 40분 굽습니다. 가운데가 살짝 흔들리는 정도면 충분해요.',
@@ -682,7 +682,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
         checkpoint: '가운데를 흔들었을 때 묵직하게 출렁이면 완성이에요.',
         warning: '온도가 너무 높으면 표면이 갈라져요. 160도를 넘기지 마세요.',
       },
-      { title: '토핑', description: '식힌 케이크 위에 딸기를 보기 좋게 올립니다.' },
+      { title: '토핑', description: '식힌 케이크 위에 딸기를 보기 좋게 올립니다. 식은 뒤에 올려야 딸기가 열에 짓물러지지 않아요.' },
     ],
     tips: ['대체 재료: 다이제스티브가 없으면 그레이엄 크래커로 대신해도 좋아요.', '보관/활용: 냉장 3일 이내로 드세요.'],
     youtubeQuery: '딸기 치즈케이크 만들기',
@@ -709,8 +709,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     ],
     steps: [
       { title: '베이스 갈기', description: '얼린 딸기, 바나나, 그릭요거트를 블렌더로 갑니다. 액체는 최소한으로 넣어 떠먹는 농도로 만드세요.' },
-      { title: '담기', description: '그릇에 담습니다.' },
-      { title: '토핑', description: '그래놀라와 과일을 보기 좋게 올립니다.' },
+      { title: '담기', description: '그릇에 담습니다. 그릇에 옮길 때 너무 오래 두면 갈색으로 변해요.' },
+      { title: '토핑', description: '그래놀라와 과일을 보기 좋게 올립니다. 색이 다른 과일을 고르게 배치하면 더 먹음직스러워 보여요.' },
     ],
     tips: ['대체 재료: 우유 대신 두유나 아몬드밀크로도 만들 수 있어요.', '보관/활용: 바로 먹는 게 가장 좋아요.'],
     youtubeQuery: '딸기 스무디볼 만들기',
@@ -737,7 +737,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     steps: [
       { title: '타르트지 굽기', description: '타르트지를 틀에 깔고 180도에서 15분 블라인드 베이킹합니다.', timerSeconds: 900 },
       { title: '잼 만들기', description: '딸기, 설탕, 레몬즙을 넣고 졸여 잼을 만듭니다.', timerSeconds: 1200, checkpoint: '숟가락으로 떴을 때 천천히 흐르면 적당해요.' },
-      { title: '채우기', description: '식힌 잼을 타르트지에 채우고 한 번 더 식혀 굳힙니다.' },
+      { title: '채우기', description: '식힌 잼을 타르트지에 채우고 한 번 더 식혀 굳힙니다. 충분히 식혀야 타르트지가 눅눅해지지 않아요.' },
     ],
     tips: ['대체 재료: 잼에 바질을 살짝 넣으면 풍미가 색다르게 살아나요.', '보관/활용: 냉장 2일 이내로 드세요.'],
     youtubeQuery: '딸기잼 타르트 만들기',
@@ -769,7 +769,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '아몬드가루', amount: '110g' }, { name: '슈가파우더', amount: '110g' }, { name: '달걀흰자', amount: '80g' }, { name: '설탕', amount: '100g' }, { name: '딸기', amount: '10개' }, { name: '생크림', amount: '100ml' },
     ],
     steps: [
-      { title: '머랭 만들기', description: '달걀흰자에 설탕을 나눠 넣으며 단단하게 휘핑합니다.' },
+      { title: '머랭 만들기', description: '달걀흰자에 설탕을 나눠 넣으며 단단하게 휘핑합니다. 설탕을 한 번에 넣지 않아야 머랭이 더 안정적으로 단단해져요.' },
       {
         title: '마카로나주',
         description: '아몬드가루, 슈가파우더를 머랭에 가볍게 섞습니다. 리본처럼 흘러내리는 농도가 될 때까지 섞으세요.',
@@ -777,7 +777,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       },
       { title: '짜기', description: '짤주머니로 동그랗게 짜고 30분 건조시킵니다.', timerSeconds: 1800, checkpoint: '표면을 만졌을 때 묻지 않으면 충분히 건조된 거예요.' },
       { title: '굽기', description: '150도에서 14분 굽습니다.', timerSeconds: 840, checkpoint: '발이 생기고 살짝 흔들면 떨어지지 않으면 완성이에요.' },
-      { title: '필링과 조립', description: '딸기를 졸여 생크림과 섞은 필링을 코크 사이에 채웁니다.' },
+      { title: '필링과 조립', description: '딸기를 졸여 생크림과 섞은 필링을 코크 사이에 채웁니다. 너무 많이 채우면 코크가 깨질 수 있어요.' },
     ],
     tips: ['대체 재료: 필링에 마스카포네를 더하면 더 부드러워져요.', '보관/활용: 냉장 숙성 후 하루 지나면 맛이 더 좋아져요.'],
     youtubeQuery: '딸기 마카롱 만들기',
@@ -813,7 +813,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
         warning: '버터가 녹으면 결이 안 살아요. 손이 따뜻하면 잠깐씩 멈춰가며 작업하세요.',
       },
       { title: '굽기', description: '동그랗게 잘라 200도에서 15분 굽습니다.', timerSeconds: 900, checkpoint: '겉면이 황금빛으로 부풀면 완성이에요.' },
-      { title: '조립', description: '비스킷을 반으로 갈라 딸기와 휘핑크림을 끼웁니다.' },
+      { title: '조립', description: '비스킷을 반으로 갈라 딸기와 휘핑크림을 끼웁니다. 비스킷이 따뜻할 때 끼우면 크림이 녹아내려요.' },
     ],
     tips: ['대체 재료: 비스킷 대신 시판 스콘으로 대체해도 비슷해요.', '보관/활용: 조립 전 비스킷은 실온 1일 보관 가능해요.'],
     youtubeQuery: '미국식 딸기 쇼트케이크 비스킷',
@@ -843,8 +843,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '20개' }, { name: '마스카포네 치즈', amount: '250g' }, { name: '생크림', amount: '150ml' }, { name: '설탕', amount: '50g' }, { name: '레이디핑거 비스킷', amount: '20개' },
     ],
     steps: [
-      { title: '딸기즙 만들기', description: '딸기 일부를 갈아 즙을 만듭니다.' },
-      { title: '크림 만들기', description: '마스카포네, 생크림, 설탕을 부드럽게 섞습니다.' },
+      { title: '딸기즙 만들기', description: '딸기 일부를 갈아 즙을 만듭니다. 즙을 만들 때 너무 오래 갈면 거품이 많이 생겨요.' },
+      { title: '크림 만들기', description: '마스카포네, 생크림, 설탕을 부드럽게 섞습니다. 마스카포네는 차가운 상태로 섞어야 크림이 잘 잡혀요.' },
       {
         title: '쌓기',
         description: '비스킷을 딸기즙에 살짝 적셔 깔고 크림, 딸기를 켜켜이 쌓습니다. 비스킷을 오래 담그면 흐물흐물해져요.',
@@ -880,8 +880,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '15개' }, { name: '머랭 쿠키', amount: '6개' }, { name: '생크림', amount: '200ml' }, { name: '설탕', amount: '2큰술' },
     ],
     steps: [
-      { title: '딸기 손질', description: '딸기는 으깨거나 잘게 썹니다.' },
-      { title: '크림 휘핑', description: '생크림에 설탕을 넣고 부드럽게 휘핑합니다.' },
+      { title: '딸기 손질', description: '딸기는 으깨거나 잘게 썹니다. 너무 곱게 으깨면 식감이 사라지니 약간 덩어리가 남게 하세요.' },
+      { title: '크림 휘핑', description: '생크림에 설탕을 넣고 부드럽게 휘핑합니다. 너무 단단하게 휘핑하면 머랭과 섞을 때 갈라져요.' },
       { title: '섞기', description: '머랭을 부숴 딸기, 크림과 가볍게 섞습니다. 너무 매끈하게 섞지 말고 듬성듬성 섞는 게 좋아요.' },
     ],
     tips: ['대체 재료: 시판 머랭 쿠키를 활용하면 훨씬 간단해져요.', '보관/활용: 만든 직후 바로 먹는 게 가장 맛있어요.'],
@@ -915,8 +915,8 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
         description: '딸기는 일정한 작은 큐브로 다집니다. 칼을 톡톡 내려찍듯 썰어야 과육이 으깨지지 않아요.',
         tip: '도마와 칼을 차갑게 해두면 딸기 즙이 덜 나와요.',
       },
-      { title: '양념', description: '설탕, 레몬즙을 넣고 가볍게 섞습니다.' },
-      { title: '플레이팅', description: '무스링에 채워 모양을 잡고 조심스럽게 들어올려 바질오일로 마무리합니다.' },
+      { title: '양념', description: '설탕, 레몬즙을 넣고 가볍게 섞습니다. 설탕은 한 번에 다 넣지 말고 맛을 보며 조절하세요.' },
+      { title: '플레이팅', description: '무스링에 채워 모양을 잡고 조심스럽게 들어올려 바질오일로 마무리합니다. 무스링을 천천히 들어올려야 모양이 무너지지 않아요.' },
     ],
     tips: ['대체 재료: 바질오일 대신 민트오일도 잘 어울려요.', '보관/활용: 만든 직후 바로 먹는 게 가장 좋아요.'],
     youtubeQuery: '딸기 타르타르 만들기',
@@ -943,9 +943,9 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '15개' }, { name: '생크림', amount: '200ml' }, { name: '설탕', amount: '40g' }, { name: '젤라틴', amount: '3g' }, { name: '바질', amount: '10장' }, { name: '올리브오일', amount: '3큰술' },
     ],
     steps: [
-      { title: '딸기 퓌레', description: '딸기는 갈아 설탕과 섞습니다.' },
+      { title: '딸기 퓌레', description: '딸기는 갈아 설탕과 섞습니다. 설탕이 딸기의 수분을 끌어내 다음 단계에서 즙이 더 잘 빠져나와요.' },
       { title: '무스 만들기', description: '불린 젤라틴을 녹여 퓌레에 섞고, 휘핑한 생크림을 가볍게 접듯이 섞습니다.', warning: '세게 섞으면 공기가 빠져 무거운 질감이 돼요.' },
-      { title: '바질오일', description: '바질을 끓는 물에 살짝 데쳐 올리브오일과 함께 곱게 갑니다.' },
+      { title: '바질오일', description: '바질을 끓는 물에 살짝 데쳐 올리브오일과 함께 곱게 갑니다. 데치면 색이 선명하게 유지되고 풀맛도 줄어들어요.' },
       { title: '냉장', description: '무스를 잔에 채워 2시간 이상 냉장고에서 굳힙니다.', timerSeconds: 7200 },
     ],
     tips: ['대체 재료: 바질 대신 민트로 만들어도 색다른 향이 나요.', '보관/활용: 냉장 2일 이내로 드세요.'],
@@ -973,7 +973,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       { name: '딸기', amount: '20개' }, { name: '설탕', amount: '50g' }, { name: '레몬즙', amount: '1큰술' }, { name: '물', amount: '1/4컵' },
     ],
     steps: [
-      { title: '베이스 만들기', description: '딸기, 설탕, 레몬즙, 물을 블렌더로 곱게 갑니다.' },
+      { title: '베이스 만들기', description: '딸기, 설탕, 레몬즙, 물을 블렌더로 곱게 갑니다. 물을 적게 넣을수록 더 진한 그라니타 맛이 나요.' },
       {
         title: '얼리기',
         description: '평평한 트레이에 부어 얼리며 1시간마다 포크로 긁어줍니다.',
@@ -1012,13 +1012,13 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
         timerSeconds: 1200,
         checkpoint: '노릇하고 바삭한 소리가 나면 완성이에요.',
       },
-      { title: '커스터드 준비', description: '커스터드 크림을 차갑게 식혀 짤주머니에 채웁니다.' },
+      { title: '커스터드 준비', description: '커스터드 크림을 차갑게 식혀 짤주머니에 채웁니다. 차갑게 식혀야 짤주머니로 짤 때 모양이 잘 잡혀요.' },
       {
         title: '쌓기',
         description: '페이스트리, 커스터드, 딸기 순서로 켜켜이 쌓습니다. 마지막 켜는 페이스트리로 마무리하세요.',
         warning: '미리 쌓아두면 페이스트리가 눅눅해져요. 먹기 직전에 조립하세요.',
       },
-      { title: '마무리', description: '슈가파우더를 뿌리고 날카로운 칼로 깨끗하게 잘라 담습니다.' },
+      { title: '마무리', description: '슈가파우더를 뿌리고 날카로운 칼로 깨끗하게 잘라 담습니다. 날카로운 칼로 단번에 잘라야 켜가 깨끗하게 나와요.' },
     ],
     tips: ['대체 재료: 커스터드 대신 휘핑크림으로도 만들 수 있어요.', '보관/활용: 조립 전 페이스트리는 실온 1일 보관 가능해요.'],
     youtubeQuery: '딸기 밀푀유 만들기',

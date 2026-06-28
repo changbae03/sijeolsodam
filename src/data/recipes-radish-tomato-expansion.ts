@@ -36,7 +36,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
         warning: '센불로 볶으면 겉만 익고 속은 단단하게 남아요. 약불로 천천히 익혀야 해요.',
         recoveryTip: '속이 덜 익었다면 물을 약간 더 넣고 뚜껑을 덮어 3분 더 익히세요.',
       },
-      { title: '간하기', description: '다진마늘과 새우젓을 넣고 한 번 더 볶은 뒤 깨소금을 뿌립니다.' },
+      { title: '간하기', description: '다진마늘과 새우젓을 넣고 한 번 더 볶은 뒤 깨소금을 뿌립니다. 새우젓은 짠맛이 강하니 한 번에 다 넣지 말고 맛을 보며 더하세요.' },
     ],
     tips: ['대체 재료: 새우젓 대신 소금으로 슴슴하게 간해도 좋아요.', '보관/활용: 냉장 3일 이내로 드세요.'],
     youtubeQuery: '무나물 볶기',
@@ -61,14 +61,14 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '무', amount: '1/4개' }, { name: '멸치육수', amount: '4컵' }, { name: '국간장', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '대파', amount: '1대' },
     ],
     steps: [
-      { title: '무 손질', description: '무는 채 썰거나 얇게 나박썰기 합니다.' },
+      { title: '무 손질', description: '무는 채 썰거나 얇게 나박썰기 합니다. 나박썰기를 하면 끓일 때 국물 맛이 더 잘 배어나와요.' },
       {
         title: '끓이기',
         description: '멸치육수에 무를 넣고 10분간 끓입니다. 무가 익으면서 국물이 점점 뽀얗고 진해져요.',
         timerSeconds: 600,
         checkpoint: '무가 투명해지고 부드러워지면 다 된 거예요.',
       },
-      { title: '간하기', description: '국간장과 다진마늘로 간을 맞추고 대파를 넣어 마무리합니다.' },
+      { title: '간하기', description: '국간장과 다진마늘로 간을 맞추고 대파를 넣어 마무리합니다. 대파는 마지막에 넣어야 향이 국물에 옅게 살아남아요.' },
     ],
     tips: ['대체 재료: 멸치육수가 없으면 다시다나 일반 물로도 괜찮아요.', '보관/활용: 냉장 2일 이내로 드세요.'],
     youtubeQuery: '무채국 끓이기',
@@ -96,7 +96,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '무', amount: '1개' }, { name: '식초', amount: '1컵' }, { name: '물', amount: '1컵' }, { name: '설탕', amount: '1/2컵' }, { name: '소금', amount: '1큰술' },
     ],
     steps: [
-      { title: '무 손질', description: '무는 적당한 크기로 깍둑썰거나 스틱 모양으로 자릅니다.' },
+      { title: '무 손질', description: '무는 적당한 크기로 깍둑썰거나 스틱 모양으로 자릅니다. 크기를 일정하게 맞춰야 피클물이 고르게 배어들어요.' },
       {
         title: '피클물 끓이기',
         description: '식초, 물, 설탕, 소금을 넣고 끓입니다. 설탕과 소금이 완전히 녹아 맑아지면 끝이에요.',
@@ -108,7 +108,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
         description: '소독한 병에 무를 담고 뜨거운 피클물을 부어 밀봉합니다.',
         warning: '병이 소독 안 됐으면 곰팡이가 생길 수 있어요. 끓는 물에 미리 한 번 데쳐두세요.',
       },
-      { title: '숙성', description: '실온에서 하루 식힌 뒤 냉장고로 옮겨 보관합니다.' },
+      { title: '숙성', description: '실온에서 하루 식힌 뒤 냉장고로 옮겨 보관합니다. 실온에서 하루 두면 발효가 살짝 시작되며 맛이 더 깊어져요.' },
     ],
     tips: ['대체 재료: 청양고추를 넣으면 칼칼한 맛이 더해져요.', '보관/활용: 냉장 2~3주 가능해요.'],
     youtubeQuery: '무피클 만들기',
@@ -133,7 +133,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '무', amount: '1/2개' }, { name: '부침가루', amount: '1컵' }, { name: '물', amount: '1/2컵' }, { name: '식용유', amount: '적당량' },
     ],
     steps: [
-      { title: '무 갈기', description: '무는 강판이나 믹서로 갑니다.' },
+      { title: '무 갈기', description: '무는 강판이나 믹서로 갑니다. 너무 곱게 갈면 전분물만 남아 식감이 사라져요.' },
       { title: '반죽하기', description: '간 무에 부침가루와 물을 섞어 반죽을 만듭니다. 농도가 너무 묽으면 부침가루를 조금 더 넣어 조절하세요.' },
       {
         title: '부치기',
@@ -171,9 +171,9 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '무(또는 프랑스 래디시)', amount: '1개' }, { name: '버터', amount: '50g' }, { name: '굵은소금', amount: '약간' },
     ],
     steps: [
-      { title: '무 손질', description: '무는 깨끗이 씻어 먹기 좋은 크기로 자릅니다.' },
-      { title: '버터 준비', description: '버터는 상온에 꺼내 부드럽게 만듭니다. 너무 차가우면 무에 잘 안 발라져요.' },
-      { title: '플레이팅', description: '무, 버터, 소금을 따로 접시에 담아 찍어 먹습니다.' },
+      { title: '무 손질', description: '무는 깨끗이 씻어 먹기 좋은 크기로 자릅니다. 너무 깨끗이 씻어도 무 표면의 향은 그대로 남아있어요.' },
+      { title: '버터 준비', description: '버터는 상온에 꺼내 부드럽게 만듭니다. 너무 차가우면 무에 잘 안 발라져요. 부드러운 버터여야 무에 매끄럽게 발라져요.' },
+      { title: '플레이팅', description: '무, 버터, 소금을 따로 접시에 담아 찍어 먹습니다. 따로 담아야 손님이 직접 찍어 먹는 비스트로 느낌이 살아나요.' },
     ],
     tips: ['대체 재료: 발효버터를 쓰면 풍미가 더 깊어져요.', '보관/활용: 신선할 때 바로 즐기는 게 가장 좋아요.'],
     youtubeQuery: 'Radis au beurre 라디 뵈르',
@@ -202,8 +202,8 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '무', amount: '1/2개' }, { name: '돼지갈비', amount: '400g' }, { name: '생강', amount: '2쪽' }, { name: '대파', amount: '1대' }, { name: '소금', amount: '약간' },
     ],
     steps: [
-      { title: '핏물 빼기', description: '돼지갈비는 찬물에 30분 담가 핏물을 뺍니다.' },
-      { title: '데치기', description: '끓는 물에 한 번 데쳐 찬물에 헹굽니다.' },
+      { title: '핏물 빼기', description: '돼지갈비는 찬물에 30분 담가 핏물을 뺍니다. 핏물을 충분히 빼야 졸이는 동안 잡내가 안 올라와요.' },
+      { title: '데치기', description: '끓는 물에 한 번 데쳐 찬물에 헹굽니다. 데친 물을 그대로 쓰면 불순물이 남으니 새 물로 다시 시작하세요.' },
       {
         title: '끓이기',
         description: '물을 넉넉히 붓고 생강을 넣어 1시간 이상 끓입니다. 국물이 점점 뽀얗고 진해지는 게 잘 끓고 있다는 신호예요.',
@@ -238,9 +238,9 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '무', amount: '1/3개' }, { name: '올리브오일', amount: '2큰술' }, { name: '레몬즙', amount: '1큰술' }, { name: '소금, 후추', amount: '약간씩' }, { name: '처빌(또는 딜)', amount: '약간' },
     ],
     steps: [
-      { title: '무 슬라이스', description: '무는 만돌린으로 1mm 두께로 아주 얇게 슬라이스합니다.' },
+      { title: '무 슬라이스', description: '무는 만돌린으로 1mm 두께로 아주 얇게 슬라이스합니다. 두께가 일정해야 씹는 질감도 일정하게 느껴져요.' },
       { title: '소금물에 담그기', description: '슬라이스한 무를 살짝 소금물에 담가 매운맛을 줄입니다.', timerSeconds: 300, checkpoint: '무를 맛봤을 때 매운맛이 줄고 단맛이 느껴지면 충분해요.' },
-      { title: '플레이팅', description: '물기를 닦은 무를 겹쳐 담고 올리브오일, 레몬즙을 뿌려 마무리합니다.' },
+      { title: '플레이팅', description: '물기를 닦은 무를 겹쳐 담고 올리브오일, 레몬즙을 뿌려 마무리합니다. 물기를 먼저 닦아야 올리브오일이 겉돌지 않고 잘 스며들어요.' },
     ],
     tips: ['대체 재료: 레몬즙 대신 유자즙을 쓰면 더 향긋해요.', '보관/활용: 신선할 때 바로 먹는 게 가장 좋아요.'],
     youtubeQuery: '무 카르파치오',
@@ -309,7 +309,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
         timerSeconds: 120,
         checkpoint: '토마토가 부드러워지고 색이 짙어지면 다음 단계로 넘어가세요.',
       },
-      { title: '합치기', description: '볶아둔 달걀을 다시 넣고 소금, 설탕으로 간해 가볍게 섞습니다.' },
+      { title: '합치기', description: '볶아둔 달걀을 다시 넣고 소금, 설탕으로 간해 가볍게 섞습니다. 너무 세게 섞으면 달걀이 부서져 모양이 흐트러져요.' },
     ],
     tips: ['대체 재료: 설탕을 약간 더 넣으면 중식당 스타일의 단맛이 나요.', '보관/활용: 빠르게 만들 수 있어 바쁜 평일 저녁에 좋아요.'],
     youtubeQuery: '토마토 계란볶음 만들기',
@@ -337,7 +337,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
     ],
     steps: [
       { title: '페이스트리 깔기', description: '페이스트리를 틀에 깔고 머스타드를 얇게 바릅니다. 머스타드가 치즈와 토마토 사이 풍미를 이어주는 역할을 해요.' },
-      { title: '치즈와 토마토 올리기', description: '치즈를 뿌리고 반으로 자른 토마토를 빈틈없이 올립니다.' },
+      { title: '치즈와 토마토 올리기', description: '치즈를 뿌리고 반으로 자른 토마토를 빈틈없이 올립니다. 토마토를 너무 겹쳐 올리면 가운데가 안 익어요.' },
       {
         title: '굽기',
         description: '200도 오븐에서 25~30분 굽습니다. 페이스트리 가장자리가 부풀고 토마토가 살짝 갈라지면 다 된 거예요.',
@@ -407,9 +407,9 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '방울토마토', amount: '15개' }, { name: '모짜렐라(또는 부라타)', amount: '150g' }, { name: '바질', amount: '10장' }, { name: '올리브오일', amount: '2큰술' }, { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '재료 손질', description: '토마토는 반으로 자르고 모짜렐라는 한입 크기로 뗍니다.' },
-      { title: '담기', description: '토마토와 모짜렐라를 번갈아 담고 바질을 올립니다.' },
-      { title: '마무리', description: '올리브오일을 뿌리고 소금, 후추로 간해 완성합니다.' },
+      { title: '재료 손질', description: '토마토는 반으로 자르고 모짜렐라는 한입 크기로 뗍니다. 모짜렐라는 손으로 뜯어야 더 자연스러운 단면이 나와요.' },
+      { title: '담기', description: '토마토와 모짜렐라를 번갈아 담고 바질을 올립니다. 번갈아 담아야 색의 대비가 살아나요.' },
+      { title: '마무리', description: '올리브오일을 뿌리고 소금, 후추로 간해 완성합니다. 소금은 먹기 직전에 뿌려야 토마토 즙이 덜 빠져요.' },
     ],
     tips: ['대체 재료: 발사믹 글레이즈를 더하면 단맛이 더해져요.', '보관/활용: 미리 만들면 토마토 즙이 빠지니 바로 먹는 게 좋아요.'],
     youtubeQuery: '카프레제 만들기',
@@ -479,9 +479,9 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '방울토마토', amount: '20개' }, { name: '부라타 치즈', amount: '1개' }, { name: '올리브오일', amount: '2큰술' }, { name: '발사믹 글레이즈', amount: '1큰술' }, { name: '바질', amount: '약간' }, { name: '소금, 후추', amount: '약간씩' },
     ],
     steps: [
-      { title: '토마토 슬라이스', description: '토마토는 얇게 슬라이스합니다.' },
-      { title: '플레이팅', description: '토마토를 겹쳐 원형으로 깔고 중앙에 부라타를 올립니다.' },
-      { title: '마무리', description: '올리브오일, 발사믹 글레이즈를 뿌리고 바질, 소금, 후추로 마무리합니다.' },
+      { title: '토마토 슬라이스', description: '토마토는 얇게 슬라이스합니다. 두께를 일정하게 맞춰야 겹쳐 담았을 때 모양이 깔끔해요.' },
+      { title: '플레이팅', description: '토마토를 겹쳐 원형으로 깔고 중앙에 부라타를 올립니다. 부라타는 식탁에 내기 직전에 올려야 신선함이 유지돼요.' },
+      { title: '마무리', description: '올리브오일, 발사믹 글레이즈를 뿌리고 바질, 소금, 후추로 마무리합니다. 발사믹 글레이즈는 가늘게 그려야 토마토 본연의 색이 가려지지 않아요.' },
     ],
     tips: ['대체 재료: 부라타가 없으면 부드러운 모짜렐라로 대신해도 좋아요.', '보관/활용: 만든 직후 바로 즐기세요.'],
     youtubeQuery: '토마토 카르파치오 부라타',
@@ -508,7 +508,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       { name: '방울토마토', amount: '600g' }, { name: '소금', amount: '약간' }, { name: '바질오일(선택)', amount: '약간' },
     ],
     steps: [
-      { title: '토마토 갈기', description: '토마토에 소금을 약간 넣고 블렌더로 곱게 갑니다.' },
+      { title: '토마토 갈기', description: '토마토에 소금을 약간 넣고 블렌더로 곱게 갑니다. 소금이 삼투압 작용으로 토마토즙이 더 잘 빠져나오게 해줘요.' },
       {
         title: '거르기',
         description: '면포에 넣고 냉장고에서 4시간 이상 매달아 자연스럽게 즙만 떨어지게 둡니다. 짜내지 말고 기다려야 맑은 콩소메가 나와요.',
@@ -516,7 +516,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
         warning: '짜내면 과육이 섞여 탁해져요. 시간을 들여 천천히 받아내세요.',
         checkpoint: '받아낸 액체가 투명한 호박색을 띠면 잘 된 거예요.',
       },
-      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 바질오일을 살짝 더해 냅니다.' },
+      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 바질오일을 살짝 더해 냅니다. 바질오일은 마지막에 더해야 향이 진하게 남아요.' },
     ],
     tips: ['대체 재료: 바질오일이 없으면 올리브오일로 대신해도 좋아요.', '보관/활용: 남은 과육은 버리지 말고 소스로 활용하세요.'],
     youtubeQuery: '토마토 워터 콩소메',

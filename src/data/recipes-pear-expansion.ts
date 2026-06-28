@@ -28,7 +28,7 @@ export const recipesPearExpansion: Recipe[] = [
     ],
     steps: [
       { title: '생강물 끓이기', description: '생강과 물, 통후추를 넣고 10분 끓여 향을 우립니다.', timerSeconds: 600 },
-      { title: '배 손질', description: '배는 껍질을 벗기고 큼직하게 자릅니다.' },
+      { title: '배 손질', description: '배는 껍질을 벗기고 큼직하게 자릅니다. 너무 잘게 썰면 데치는 동안 다 으스러져요.' },
       {
         title: '익히기',
         description: '생강물에 배를 넣고 5분만 살짝 데칩니다. 배가 반투명해지면 충분해요.',
@@ -36,7 +36,7 @@ export const recipesPearExpansion: Recipe[] = [
         checkpoint: '배 가장자리가 살짝 투명해지면 다 된 거예요.',
         warning: '오래 끓이면 배가 물러져요. 짧게 데치는 정도로 충분해요.',
       },
-      { title: '마무리', description: '꿀을 넣어 단맛을 맞추고 차갑게 식힙니다.' },
+      { title: '마무리', description: '꿀을 넣어 단맛을 맞추고 차갑게 식힙니다. 꿀은 불을 끈 뒤에 넣어야 향이 끓는 동안 날아가지 않아요.' },
     ],
     tips: ['대체 재료: 계피를 더하면 향이 더 깊어져요.', '보관/활용: 냉장 3일 이내로 드세요.'],
     youtubeQuery: '배숙 만들기',
@@ -61,9 +61,9 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '1개' }, { name: '고춧가루', amount: '1큰술' }, { name: '식초', amount: '1큰술' }, { name: '설탕', amount: '1작은술' }, { name: '깨', amount: '약간' },
     ],
     steps: [
-      { title: '배 채썰기', description: '배는 껍질을 벗기고 얇게 채 썹니다.' },
-      { title: '무치기', description: '고춧가루, 식초, 설탕을 넣고 가볍게 무칩니다.' },
-      { title: '마무리', description: '깨를 뿌려 완성합니다.' },
+      { title: '배 채썰기', description: '배는 껍질을 벗기고 얇게 채 썹니다. 너무 두껍게 썰면 양념이 고르게 배어들지 않아요.' },
+      { title: '무치기', description: '고춧가루, 식초, 설탕을 넣고 가볍게 무칩니다. 너무 세게 무치면 배에서 물이 많이 나와 양념이 묽어져요.' },
+      { title: '마무리', description: '깨를 뿌려 완성합니다. 깨는 무치고 바로 뿌려야 향이 가장 진해요.' },
     ],
     tips: ['대체 재료: 미나리를 더하면 향이 좋아져요.', '보관/활용: 만든 직후 바로 드세요.'],
     youtubeQuery: '배 생채 만들기',
@@ -90,9 +90,9 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '3개' }, { name: '냉동 페이스트리', amount: '1장' }, { name: '버터', amount: '30g' }, { name: '설탕', amount: '4큰술' }, { name: '계피가루', amount: '약간' },
     ],
     steps: [
-      { title: '배 슬라이스', description: '배는 씨를 제거하고 얇게 슬라이스합니다.' },
-      { title: '페이스트리 준비', description: '페이스트리를 펼쳐 가장자리를 살짝 접어 테두리를 만듭니다.' },
-      { title: '배 올리기', description: '슬라이스한 배를 겹치게 올리고 설탕, 계피가루를 뿌립니다.' },
+      { title: '배 슬라이스', description: '배는 씨를 제거하고 얇게 슬라이스합니다. 씨 부분이 남으면 식감이 거칠어지니 꼼꼼히 제거하세요.' },
+      { title: '페이스트리 준비', description: '페이스트리를 펼쳐 가장자리를 살짝 접어 테두리를 만듭니다. 테두리를 만들어야 굽는 동안 즙이 흘러넘치지 않아요.' },
+      { title: '배 올리기', description: '슬라이스한 배를 겹치게 올리고 설탕, 계피가루를 뿌립니다. 겹치게 올려야 구웠을 때 부채모양 단면이 살아나요.' },
       {
         title: '굽기',
         description: '버터를 녹여 배 위에 붓고 200도에서 25~30분 굽습니다. 가장자리가 황금빛으로 부풀면 다 된 거예요.',
@@ -123,9 +123,9 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '2개' }, { name: '식초', amount: '1컵' }, { name: '물', amount: '1컵' }, { name: '설탕', amount: '1/2컵' }, { name: '통후추', amount: '5알' },
     ],
     steps: [
-      { title: '배 손질', description: '배는 깍둑썰기 합니다.' },
+      { title: '배 손질', description: '배는 깍둑썰기 합니다. 일정한 크기로 썰어야 피클물이 고르게 배어들어요.' },
       { title: '피클물 끓이기', description: '식초, 물, 설탕, 통후추를 끓여 식힙니다.', timerSeconds: 300 },
-      { title: '담그기', description: '소독한 병에 배를 담고 식힌 피클물을 부어 밀봉합니다.' },
+      { title: '담그기', description: '소독한 병에 배를 담고 식힌 피클물을 부어 밀봉합니다. 뜨거운 피클물을 부어야 병 속 공기가 빠지고 살균 효과까지 더해져요.' },
     ],
     tips: ['대체 재료: 시나몬스틱을 더하면 향이 좋아져요.', '보관/활용: 냉장 2주 이내로 드세요.'],
     youtubeQuery: '배 피클 만들기',
@@ -182,14 +182,14 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '2개' }, { name: '꿀', amount: '2큰술' }, { name: '버터', amount: '10g' }, { name: '계피가루', amount: '약간' }, { name: '호두(선택)', amount: '약간' },
     ],
     steps: [
-      { title: '배 손질', description: '배는 반으로 잘라 씨 부분을 살짝 도려냅니다.' },
+      { title: '배 손질', description: '배는 반으로 잘라 씨 부분을 살짝 도려냅니다. 씨 부분을 너무 깊게 파면 속을 채울 때 바닥이 뚫려요.' },
       {
         title: '굽기',
         description: '버터를 두른 그릴팬에 배 단면을 아래로 놓고 굽습니다. 진한 갈색 그릴 자국이 생기면 뒤집을 때예요.',
         timerSeconds: 360,
         checkpoint: '단면에 선명한 갈색 줄무늬가 생기면 잘 구워진 거예요.',
       },
-      { title: '마무리', description: '꿀과 계피가루를 뿌리고 호두를 올려 완성합니다.' },
+      { title: '마무리', description: '꿀과 계피가루를 뿌리고 호두를 올려 완성합니다. 견과류는 먹기 직전에 올려야 바삭함이 살아있어요.' },
     ],
     tips: ['대체 재료: 꿀 대신 메이플시럽도 잘 어울려요.', '보관/활용: 갓 구워 바로 먹는 게 가장 좋아요.'],
     youtubeQuery: '배 그릴 디저트',
@@ -228,7 +228,7 @@ export const recipesPearExpansion: Recipe[] = [
         timerSeconds: 1200,
         checkpoint: '쌀알을 씹었을 때 가운데 살짝 심이 남으면 적당해요.',
       },
-      { title: '마무리', description: '배와 고르곤졸라를 넣고 한 번 더 저어 마무리합니다.' },
+      { title: '마무리', description: '배와 고르곤졸라를 넣고 한 번 더 저어 마무리합니다. 너무 오래 저으면 리소토가 끈적해지니 한 번만 가볍게 섞으세요.' },
     ],
     tips: ['대체 재료: 고르곤졸라가 강하면 브리치즈로 대신해도 좋아요.', '보관/활용: 바로 먹는 게 가장 좋은 요리예요.'],
     youtubeQuery: '배 리소토 만들기',
@@ -258,7 +258,7 @@ export const recipesPearExpansion: Recipe[] = [
     ],
     steps: [
       { title: '향신료 볶기', description: '기름에 쿠민씨, 머스타드씨를 볶아 향을 깨웁니다. 씨앗이 톡톡 튀는 소리가 나면 향이 충분히 올라온 거예요.', timerSeconds: 60 },
-      { title: '배 손질', description: '배는 잘게 깍둑썰기 합니다.' },
+      { title: '배 손질', description: '배는 잘게 깍둑썰기 합니다. 너무 잘게 썰면 졸이는 동안 다 으스러져요.' },
       {
         title: '졸이기',
         description: '배, 식초, 설탕, 생강을 넣고 약불에서 30~40분 걸쭉해질 때까지 졸입니다.',
@@ -294,8 +294,8 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '3개' }, { name: '달걀', amount: '3개' }, { name: '우유', amount: '1컵' }, { name: '밀가루', amount: '60g' }, { name: '설탕', amount: '60g' }, { name: '바닐라 익스트랙', amount: '약간' },
     ],
     steps: [
-      { title: '배 손질', description: '배는 슬라이스해 그릇에 깝니다.' },
-      { title: '반죽 만들기', description: '달걀, 우유, 밀가루, 설탕, 바닐라를 섞어 매끈한 반죽을 만듭니다.' },
+      { title: '배 손질', description: '배는 슬라이스해 그릇에 깝니다. 배를 그릇 바닥에 고르게 펼쳐야 반죽이 부었을 때 골고루 퍼져요.' },
+      { title: '반죽 만들기', description: '달걀, 우유, 밀가루, 설탕, 바닐라를 섞어 매끈한 반죽을 만듭니다. 덩어리 없이 매끈해야 구웠을 때 식감이 부드러워요.' },
       {
         title: '굽기',
         description: '배 위에 반죽을 붓고 180도에서 35분 굽습니다. 표면이 황금빛으로 부풀고 가운데가 탱탱해지면 다 된 거예요.',
@@ -330,8 +330,8 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '4개' }, { name: '밀가루', amount: '120g' }, { name: '버터(차가운 것)', amount: '60g' }, { name: '설탕', amount: '60g' }, { name: '베이킹파우더', amount: '1작은술' }, { name: '우유', amount: '60ml' },
     ],
     steps: [
-      { title: '배 준비', description: '배는 슬라이스해 그라탕 그릇에 깔고 설탕 일부를 뿌립니다.' },
-      { title: '비스킷 반죽', description: '밀가루, 차가운 버터, 설탕, 베이킹파우더를 비벼 섞고 우유를 더해 뭉칩니다.' },
+      { title: '배 준비', description: '배는 슬라이스해 그라탕 그릇에 깔고 설탕 일부를 뿌립니다. 설탕을 먼저 뿌려두면 배에서 즙이 배어나와 비스킷이 눅눅해지지 않아요.' },
+      { title: '비스킷 반죽', description: '밀가루, 차가운 버터, 설탕, 베이킹파우더를 비벼 섞고 우유를 더해 뭉칩니다. 버터가 녹지 않게 빨리 비벼야 구웠을 때 결이 살아요.' },
       {
         title: '올려 굽기',
         description: '반죽을 숟가락으로 떼어 배 위에 군데군데 올리고 190도에서 30분 굽습니다. 반죽이 부풀고 갈색이 돌면 다 된 거예요.',
@@ -371,8 +371,8 @@ export const recipesPearExpansion: Recipe[] = [
         description: '팬에 버터와 설탕을 녹여 짙은 호박색이 될 때까지 끓입니다.',
         warning: '너무 오래 끓이면 쓴맛이 나요. 짙은 호박색이 되는 순간 바로 불에서 내리세요.',
       },
-      { title: '배 채우기', description: '4등분한 배를 캐러멜 위에 빈틈없이 채웁니다.' },
-      { title: '반죽 덮기', description: '식힌 배 위에 페이스트리를 덮어 가장자리를 정리합니다.' },
+      { title: '배 채우기', description: '4등분한 배를 캐러멜 위에 빈틈없이 채웁니다. 빈틈없이 채워야 뒤집었을 때 단면이 가지런하게 보여요.' },
+      { title: '반죽 덮기', description: '식힌 배 위에 페이스트리를 덮어 가장자리를 정리합니다. 가장자리를 꼼꼼히 정리해야 굽는 동안 캐러멜이 새지 않아요.' },
       {
         title: '굽기',
         description: '200도 오븐에서 30~35분 굽습니다. 반죽이 진한 갈색으로 부풀면 다 된 거예요.',
@@ -449,7 +449,7 @@ export const recipesPearExpansion: Recipe[] = [
         checkpoint: '숟가락으로 떴을 때 부드럽게 긁히면 완성이에요.',
       },
       { title: '크럼블 굽기', description: '버터, 밀가루, 고르곤졸라를 비벼 부슬부슬하게 만들어 180도에서 15분 굽습니다.', timerSeconds: 900 },
-      { title: '조립', description: '차가운 그릇에 크럼블을 깔고 셔벗과 호두를 올려 냅니다.' },
+      { title: '조립', description: '차가운 그릇에 크럼블을 깔고 셔벗과 호두를 올려 냅니다. 차가운 그릇에 담아야 셔벗이 빨리 안 녹아요.' },
     ],
     tips: ['대체 재료: 셔벗 대신 시판 바닐라 아이스크림으로도 구성 가능해요.', '보관/활용: 크럼블은 따로 보관해 다른 디저트에도 활용하세요.'],
     youtubeQuery: '배 셔벗 고르곤졸라 크럼블',
@@ -476,7 +476,7 @@ export const recipesPearExpansion: Recipe[] = [
       { name: '배', amount: '4개' }, { name: '설탕', amount: '30g' }, { name: '레몬즙', amount: '1작은술' },
     ],
     steps: [
-      { title: '배 갈기', description: '배는 설탕, 레몬즙과 함께 블렌더로 곱게 갑니다.' },
+      { title: '배 갈기', description: '배는 설탕, 레몬즙과 함께 블렌더로 곱게 갑니다. 너무 오래 갈면 거품이 많이 생겨 식감이 흐트러져요.' },
       {
         title: '거르기',
         description: '면포에 넣고 냉장고에서 4시간 이상 매달아 자연스럽게 즙만 떨어지게 둡니다.',
@@ -484,7 +484,7 @@ export const recipesPearExpansion: Recipe[] = [
         warning: '짜내면 탁해져요. 시간을 들여 천천히 받아내세요.',
         checkpoint: '받아낸 액체가 투명한 황금빛이면 잘 거른 거예요.',
       },
-      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 신선한 배 조각과 함께 냅니다.' },
+      { title: '마무리', description: '거른 콩소메를 차갑게 식혀 신선한 배 조각과 함께 냅니다. 차갑게 충분히 식혀야 콩소메 본연의 맛이 살아나요.' },
     ],
     tips: ['대체 재료: 바질이나 민트를 살짝 우려도 향이 더해져요.', '보관/활용: 남은 과육은 버리지 말고 활용하세요.'],
     youtubeQuery: '배 콩소메 만들기',
