@@ -37,6 +37,7 @@ import { recipesOysterMushroomExpansion } from './recipes-oyster-mushroom-expans
 import { recipesBlackBeanExpansion } from './recipes-blackbean-expansion';
 import { recipesPerillaSeedExpansion } from './recipes-perillaseed-expansion';
 import { recipesBlackRiceExpansion } from './recipes-blackrice-expansion';
+import { recipesDriedPersimmonExpansion } from './recipes-driedpersimmon-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -77,6 +78,7 @@ export const allRecipes: Recipe[] = [
   ...recipesBlackBeanExpansion,
   ...recipesPerillaSeedExpansion,
   ...recipesBlackRiceExpansion,
+  ...recipesDriedPersimmonExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
