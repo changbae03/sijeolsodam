@@ -32,6 +32,7 @@ import { recipesMinariExpansion } from './recipes-minari-expansion';
 import { recipesNaengiExpansion } from './recipes-naengi-expansion';
 import { recipesDureupExpansion } from './recipes-dureup-expansion';
 import { recipesChwinamulExpansion } from './recipes-chwinamul-expansion';
+import { recipesShiitakeExpansion } from './recipes-shiitake-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -67,6 +68,7 @@ export const allRecipes: Recipe[] = [
   ...recipesNaengiExpansion,
   ...recipesDureupExpansion,
   ...recipesChwinamulExpansion,
+  ...recipesShiitakeExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
