@@ -8,6 +8,38 @@ import { Recipe } from './types';
 export const recipesRadishTomatoExpansion: Recipe[] = [
   // ===== 무: 데일리 홈쿡 =====
   {
+    id: 'radish-home-1', month: 11, title: '쇠고기무국', subtitle: '집집마다 끓이는 가장 기본적인 국',
+    category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3,
+    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    mainIngredient: '무',
+    description: '무와 소고기를 국간장으로 슴슴하게 끓인, 한국 밥상에서 가장 자주 만나는 기본 국이에요.',
+    masterclass: {
+      chefIntro: '쇠고기무국은 재료가 단순한 만큼 무의 단맛과 고기의 감칠맛이 얼마나 잘 우러나느냐가 관건이에요. 가을·겨울 무는 단맛이 깊어서 이 국의 완성도를 좌우해요.',
+      ingredientSelection: '소고기는 양지나 사태처럼 국물용 부위를 고르세요. 무는 단단하고 묵직한 것이 단맛이 좋아요.',
+      miseEnPlace: '소고기는 찬물에 담가 핏물을 빼두고, 무는 나박썰기로 도톰하게 썰어 익는 시간을 고르게 맞추세요.',
+      cookware: { recommended: '냄비', alternatives: ['뚝배기로 끓이면 더 오래 따뜻해요.'] },
+      chefsNotes: '소고기를 먼저 볶아 겉면을 익히면 육즙이 갇혀 국물이 더 진해져요. 무는 고기와 함께 볶은 뒤 물을 부어야 무 자체의 단맛이 국물에 배어들어요.',
+      platingAndServing: '뚝배기째 상에 올려 뜨겁게 서빙하세요.',
+      pairing: '쌀밥과 기본 상차림으로 곁들이기 좋아요.',
+      storageAndReheating: '냉장 2일, 데울수록 무에 간이 더 배어 맛있어져요.',
+      leftoverIdeas: '남으면 밥을 말아 국밥처럼 먹어도 좋아요.',
+      closingNote: '고기와 무를 함께 볶아 물을 붓는 순서, 그것이 이 국의 깊은 맛을 만들어요.',
+    },
+    ingredients: [
+      { name: '무', amount: '1/3개' }, { name: '소고기(양지)', amount: '150g' }, { name: '국간장', amount: '2큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '참기름', amount: '1큰술' }, { name: '대파', amount: '1/2대' }, { name: '물', amount: '5컵' },
+    ],
+    steps: [
+      { title: '소고기 손질', description: '소고기는 찬물에 20분간 담가 핏물을 뺀 뒤 한입 크기로 썹니다.', timerSeconds: 1200 },
+      { title: '무 손질', description: '무는 나박썰기로 도톰하게 썹니다.' },
+      { title: '고기 볶기', description: '냄비에 참기름을 두르고 소고기를 넣어 겉면이 익을 때까지 볶습니다.', timerSeconds: 180, checkpoint: '고기 겉면이 갈색으로 변하면 충분해요.' },
+      { title: '무 볶기', description: '무와 다진마늘을 넣고 2분간 함께 볶습니다.', timerSeconds: 120 },
+      { title: '끓이기', description: '물을 붓고 국간장을 넣어 15분간 끓입니다.', timerSeconds: 900, checkpoint: '무가 투명해지고 젓가락이 쑥 들어가면 다 익은 거예요.' },
+      { title: '완성', description: '대파를 넣고 한소끔 더 끓여 완성합니다.' },
+    ],
+    tips: ['대체 재료: 소고기 대신 다시마육수로 만들면 담백한 채식 버전이 돼요.', '보관/활용: 냉장 2일 이내로 드세요.'],
+    youtubeQuery: '쇠고기무국 만들기',
+  },
+  {
     id: 'radish-home-2', month: 11, title: '무나물', subtitle: '슴슴하게 볶아낸 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
     heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
