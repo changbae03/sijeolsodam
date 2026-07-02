@@ -42,6 +42,7 @@ import { recipesClamExpansion } from './recipes-clam-expansion';
 import { recipesSpanishMackerelExpansion } from './recipes-mackerel-expansion';
 import { recipesSeaBreamExpansion } from './recipes-seabream-expansion';
 import { recipesWebfootOctopusExpansion } from './recipes-octopus-expansion';
+import { recipesJjokpaExpansion } from './recipes-jjokpa-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -87,6 +88,7 @@ export const allRecipes: Recipe[] = [
   ...recipesSpanishMackerelExpansion,
   ...recipesSeaBreamExpansion,
   ...recipesWebfootOctopusExpansion,
+  ...recipesJjokpaExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
