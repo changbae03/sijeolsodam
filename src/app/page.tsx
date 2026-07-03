@@ -7,9 +7,9 @@ import { getCurrentMonthData } from '@/lib/season';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { findBestValueInSeason } from '@/lib/price-insight';
 import { SeasonalIngredient } from '@/data/types';
-import { SearchBar } from '@/components/ui';
 import IngredientFeatureCard from '@/components/IngredientFeatureCard';
 import Logo from '@/components/Logo';
+import HomeAgentInput from '@/components/HomeAgentInput';
 
 /** 설명을 "지금 ~로 ~를 만들어보세요" 같은 행동 유도형 문장으로 변환. 매칭 레시피가 없으면 원래 설명으로 대체. */
 function getActionLine(ingredient: SeasonalIngredient): string {
@@ -25,7 +25,6 @@ const CARD_GAP = 16; // px — gap-4
 
 export default function HomePage() {
   const monthData = getCurrentMonthData();
-  const [searchQuery, setSearchQuery] = useState('');
 
   const defaultHero = monthData?.ingredients.find((i) => i.imageUrl);
   const [bestPick, setBestPick] = useState<SeasonalIngredient | undefined>(defaultHero);
@@ -82,11 +81,7 @@ export default function HomePage() {
           <div className="flex items-center gap-3">
             <Logo size="sm" />
             <div className="flex-1">
-              <SearchBar
-                placeholder="오늘은 무엇이 궁금하신가요?"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
+              <HomeAgentInput />
             </div>
           </div>
         </div>
