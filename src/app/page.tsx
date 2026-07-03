@@ -9,7 +9,7 @@ import { findBestValueInSeason } from '@/lib/price-insight';
 import { SeasonalIngredient } from '@/data/types';
 import IngredientFeatureCard from '@/components/IngredientFeatureCard';
 import Logo from '@/components/Logo';
-import HomeAgentInput from '@/components/HomeAgentInput';
+import HomeAgentHero from '@/components/HomeAgentHero';
 
 /** 설명을 "지금 ~로 ~를 만들어보세요" 같은 행동 유도형 문장으로 변환. 매칭 레시피가 없으면 원래 설명으로 대체. */
 function getActionLine(ingredient: SeasonalIngredient): string {
@@ -74,24 +74,24 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-cream pb-12">
       {/* ============================================
-          1. Search
+          1. 헤더 — 로고만
          ============================================ */}
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3 pb-3">
-          <div className="flex items-center gap-3">
-            <Logo size="sm" />
-            <div className="flex-1">
-              <HomeAgentInput />
-            </div>
-          </div>
+          <Logo size="sm" />
         </div>
       </header>
 
       {/* ============================================
-          1. 오늘의 제철 / 이번 주 추천 — 스와이프 캐러셀
+          2. AI 추천 에이전트 — 소담이에게 재료·상황을 물어보는 큰 대화창
+         ============================================ */}
+      <HomeAgentHero />
+
+      {/* ============================================
+          3. 오늘의 제철 / 이번 주 추천 — 스와이프 캐러셀
              첫 카드만 제철+가격 모두 좋으면 "이번 주 추천"으로 승격
          ============================================ */}
-      <section className="max-w-md mx-auto pt-8 mb-2">
+      <section className="max-w-md mx-auto pt-2 mb-2">
         <div className="px-5">
           <div className="flex items-baseline gap-3 mb-6">
             <span className="h-px w-8 bg-sage" />
