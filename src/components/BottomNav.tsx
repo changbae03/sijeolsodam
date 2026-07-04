@@ -8,7 +8,7 @@ const navItems = [
   { href: '/', label: '홈', icon: '🏠' },
   { href: '/seasonal', label: '제철', icon: '🗓️' },
   { href: '/recipes', label: '레시피', icon: '🍳' },
-  { href: '/shop', label: '장보기', icon: '🛒' },
+  { href: '/community', label: '소담', icon: '📸' },
   { href: '/my', label: '마이', icon: '👤' },
 ];
 
