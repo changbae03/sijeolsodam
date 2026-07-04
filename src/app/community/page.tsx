@@ -1,115 +1,148 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'motion/react';
 import Logo from '@/components/Logo';
-import { searchRecipes } from '@/data/recipes';
+import { useAuth } from '@/lib/auth-context';
 
-interface SeedPost {
-  id: string;
-  authorName: string;
-  authorEmoji: string;
-  avatarBg: string;
-  timeAgo: string;
-  image: string;
-  caption: string;
+interface Post {
+  id: number;
+  imageUrl: string;
+  caption: string | null;
   hashtags: string[];
-  dishKeyword: string;
-  likes: number;
-  comments: number;
-  featured?: boolean;
+  recipeId: string | null;
+  userRecipeId: number | null;
+  createdAt: string;
+  authorId: number;
+  authorName: string;
+  authorAvatarUrl: string | null;
+  reactionCount: number;
+  commentCount: number;
+  reacted: boolean;
 }
 
-const SEED_POSTS: SeedPost[] = [
-  {
-    id: 'p1',
-    authorName: '봄날의부엌',
-    authorEmoji: '🍅',
-    avatarBg: 'bg-terracotta/15',
-    timeAgo: '2시간 전',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80',
-    caption: '오늘 갑오징어 볼케이노 처음 도전! 국물이 자작해서 밥 비벼 먹기 딱이었어요 🔥',
-    hashtags: ['갑오징어', '주말요리', '자취요리'],
-    dishKeyword: '갑오징어 볼케이노',
-    likes: 128,
-    comments: 14,
-    featured: true,
-  },
-  {
-    id: 'p2',
-    authorName: '제철러버',
-    authorEmoji: '🌿',
-    avatarBg: 'bg-sage/15',
-    timeAgo: '5시간 전',
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80',
-    caption: '동치미 국물로 막국수 말아 먹었는데 시원해서 눈이 번쩍 뜨였어요. 겨울에도 이거 진리네요.',
-    hashtags: ['동치미', '겨울별미'],
-    dishKeyword: '동치미 막국수',
-    likes: 87,
-    comments: 6,
-  },
-  {
-    id: 'p3',
-    authorName: '집밥일기',
-    authorEmoji: '🍚',
-    avatarBg: 'bg-terracotta/15',
-    timeAgo: '어제',
-    image: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=900&q=80',
-    caption: '매생이굴국 끓였어요. 짧게 끓여야 한다는 팁 보고 30초만 끓였더니 향이 진짜 살아있네요!',
-    hashtags: ['매생이', '보양식'],
-    dishKeyword: '매생이 굴국',
-    likes: 203,
-    comments: 22,
-  },
-  {
-    id: 'p4',
-    authorName: '오늘뭐먹지',
-    authorEmoji: '🥘',
-    avatarBg: 'bg-sage/15',
-    timeAgo: '2일 전',
-    image: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=900&q=80',
-    caption: '고구마순 잡채 처음 해봤는데 아삭한 식감이 신세계... 손질이 살짝 번거롭지만 그만한 가치가 있어요.',
-    hashtags: ['고구마순', '잡채'],
-    dishKeyword: '고구마순 잡채',
-    likes: 64,
-    comments: 5,
-  },
-  {
-    id: 'p5',
-    authorName: '주말셰프',
-    authorEmoji: '🍷',
-    avatarBg: 'bg-terracotta/15',
-    timeAgo: '3일 전',
-    image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80',
-    caption: '손님 초대한 날 관자 뵈르블랑 도전! 소스 분리 안 되게 조심조심 저었더니 성공했습니다 👏',
-    hashtags: ['홈파티', '셰프컬렉션'],
-    dishKeyword: '뵈르블랑',
-    likes: 156,
-    comments: 19,
-  },
-];
+interface UserRecipe {
+  id: number;
+  title: string;
+  mainIngredient: string | null;
+  description: string | null;
+  ingredientsText: string;
+  stepsText: string;
+  imageUrl: string | null;
+  createdAt: string;
+  authorName: string;
+}
 
-function timeToLabel(post: SeedPost) {
-  return post.timeAgo;
+interface Comment {
+  id: number;
+  body: string;
+  createdAt: string;
+  authorName: string;
+}
+
+function timeAgo(iso: string) {
+  const diffMs = Date.now() - new Date(iso).getTime();
+  const min = Math.floor(diffMs / 60000);
+  if (min < 1) return '방금 전';
+  if (min < 60) return `${min}분 전`;
+  const hour = Math.floor(min / 60);
+  if (hour < 24) return `${hour}시간 전`;
+  const day = Math.floor(hour / 24);
+  if (day < 7) return `${day}일 전`;
+  return new Date(iso).toLocaleDateString('ko-KR');
 }
 
 export default function CommunityPage() {
-  const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
-  const [toast, setToast] = useState<string | null>(null);
+  const { user } = useAuth();
+  const router = useRouter();
 
-  function toggleLike(id: string) {
-    setLikedIds((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
+  const [tab, setTab] = useState<'feed' | 'recipes'>('feed');
+  const [posts, setPosts] = useState<Post[] | null>(null);
+  const [userRecipes, setUserRecipes] = useState<UserRecipe[] | null>(null);
+  const [expandedPostId, setExpandedPostId] = useState<number | null>(null);
+  const [commentsByPost, setCommentsByPost] = useState<Record<number, Comment[]>>({});
+  const [commentDraft, setCommentDraft] = useState('');
+  const [composer, setComposer] = useState<'post' | 'recipe' | null>(null);
+
+  useEffect(() => {
+    fetch('/api/community/posts')
+      .then((res) => res.json())
+      .then((data) => setPosts(data.posts ?? []))
+      .catch(() => setPosts([]));
+    fetch('/api/community/recipes')
+      .then((res) => res.json())
+      .then((data) => setUserRecipes(data.recipes ?? []))
+      .catch(() => setUserRecipes([]));
+  }, []);
+
+  function requireLogin() {
+    router.push('/login');
   }
 
-  function showComingSoon() {
-    setToast('요리 자랑 올리기 기능은 곧 열려요! 조금만 기다려주세요 🍳');
-    setTimeout(() => setToast(null), 2600);
+  async function toggleReaction(postId: number) {
+    if (!user) return requireLogin();
+    setPosts((prev) =>
+      (prev ?? []).map((p) =>
+        p.id === postId
+          ? { ...p, reacted: !p.reacted, reactionCount: p.reactionCount + (p.reacted ? -1 : 1) }
+          : p
+      )
+    );
+    try {
+      const res = await fetch(`/api/community/posts/${postId}/react`, { method: 'POST' });
+      const data = await res.json();
+      if (res.ok) {
+        setPosts((prev) =>
+          (prev ?? []).map((p) =>
+            p.id === postId ? { ...p, reacted: data.reacted, reactionCount: data.reactionCount } : p
+          )
+        );
+      }
+    } catch {
+      // 실패해도 조용히 낙관적 업데이트를 유지 (다음 새로고침에서 서버 값으로 맞춰짐)
+    }
+  }
+
+  async function openComments(postId: number) {
+    if (expandedPostId === postId) {
+      setExpandedPostId(null);
+      return;
+    }
+    setExpandedPostId(postId);
+    if (!commentsByPost[postId]) {
+      const res = await fetch(`/api/community/posts/${postId}/comments`);
+      const data = await res.json();
+      setCommentsByPost((prev) => ({ ...prev, [postId]: data.comments ?? [] }));
+    }
+  }
+
+  async function submitComment(postId: number) {
+    if (!user) return requireLogin();
+    const body = commentDraft.trim();
+    if (!body) return;
+    const res = await fetch(`/api/community/posts/${postId}/comments`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ body }),
+    });
+    if (!res.ok) return;
+    const newComment = await res.json();
+    setCommentsByPost((prev) => ({
+      ...prev,
+      [postId]: [...(prev[postId] ?? []), { ...newComment, authorName: user.name || '나' }],
+    }));
+    setCommentDraft('');
+    setPosts((prev) =>
+      (prev ?? []).map((p) => (p.id === postId ? { ...p, commentCount: p.commentCount + 1 } : p))
+    );
+  }
+
+  function openComposer(kind: 'post' | 'recipe') {
+    if (!user) return requireLogin();
+    setComposer(kind);
   }
 
   return (
@@ -137,131 +170,563 @@ export default function CommunityPage() {
             </h1>
           </div>
         </div>
-        <p className="text-[12.5px] text-ink-soft leading-relaxed mt-2 mb-5">
-          오늘 만든 요리, 발견한 팁, 제철 이야기를 편하게 나눠보세요.
+        <p className="text-[12.5px] text-ink-soft leading-relaxed mt-2 mb-4">
+          오늘 만든 요리, 발견한 팁, 나만의 레시피를 편하게 나눠보세요.
         </p>
+
+        <div className="flex gap-2 mb-5">
+          <button
+            type="button"
+            onClick={() => setTab('feed')}
+            className={`text-[13px] font-medium rounded-full px-4 py-2 transition-colors ${
+              tab === 'feed' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
+            }`}
+          >
+            피드
+          </button>
+          <button
+            type="button"
+            onClick={() => setTab('recipes')}
+            className={`text-[13px] font-medium rounded-full px-4 py-2 transition-colors ${
+              tab === 'recipes' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
+            }`}
+          >
+            이웃의 레시피
+          </button>
+        </div>
       </div>
 
-      <div className="max-w-md mx-auto px-5 space-y-6">
-        {SEED_POSTS.map((post) => {
-          const matched = searchRecipes(post.dishKeyword)[0];
-          const liked = likedIds.has(post.id);
-          const likeCount = post.likes + (liked ? 1 : 0);
+      {tab === 'feed' && (
+        <div className="max-w-md mx-auto px-5 space-y-6">
+          {posts === null && <p className="text-[13px] text-ink-soft text-center py-10">불러오는 중...</p>}
+          {posts?.length === 0 && (
+            <p className="text-[13px] text-ink-soft text-center py-10">
+              아직 올라온 이야기가 없어요. 가장 먼저 요리를 자랑해보세요!
+            </p>
+          )}
+          {posts?.map((post) => {
+            const liked = post.reacted;
+            return (
+              <article
+                key={post.id}
+                className="bg-paper border border-border-soft rounded-3xl overflow-hidden"
+                style={{ boxShadow: 'var(--shadow-sm)' }}
+              >
+                <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/15 text-[14px] font-medium text-sage">
+                    {post.authorName.slice(0, 1)}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[13.5px] font-medium text-ink truncate">{post.authorName}</p>
+                    <p className="text-[11px] text-ink-soft/70">{timeAgo(post.createdAt)}</p>
+                  </div>
+                </div>
 
-          return (
-            <article
-              key={post.id}
-              className="bg-paper border border-border-soft rounded-3xl overflow-hidden"
+                <div className="relative w-full aspect-[4/3] bg-cream-warm">
+                  <Image src={post.imageUrl} alt={post.caption ?? ''} fill sizes="448px" className="object-cover" />
+                </div>
+
+                <div className="px-4 pt-3 pb-4">
+                  <div className="flex items-center gap-5">
+                    <button
+                      type="button"
+                      onClick={() => toggleReaction(post.id)}
+                      className="flex items-center gap-1.5"
+                      aria-label="맛있어요"
+                    >
+                      <span className={`text-[19px] transition-transform ${liked ? 'scale-110' : 'grayscale opacity-60'}`}>
+                        😋
+                      </span>
+                      <span className={`text-[13px] ${liked ? 'text-terracotta font-medium' : 'text-ink-soft'}`}>
+                        맛있어요 {post.reactionCount}
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => openComments(post.id)}
+                      className="flex items-center gap-1.5"
+                      aria-label="댓글"
+                    >
+                      <span className="text-[17px]">💬</span>
+                      <span className="text-[13px] text-ink-soft">{post.commentCount}</span>
+                    </button>
+                  </div>
+
+                  {post.caption && (
+                    <p className="text-[13.5px] text-ink leading-relaxed mt-2.5">
+                      <span className="font-medium">{post.authorName}</span>{' '}
+                      <span className="text-ink-soft">{post.caption}</span>
+                    </p>
+                  )}
+
+                  {post.hashtags.length > 0 && (
+                    <p className="text-[12.5px] text-sage mt-1.5">
+                      {post.hashtags.map((tag) => `#${tag}`).join(' ')}
+                    </p>
+                  )}
+
+                  {post.recipeId && (
+                    <Link
+                      href={`/recipe/${post.recipeId}`}
+                      className="mt-3 flex items-center gap-2 rounded-xl border border-border-soft bg-cream-warm/50 px-3 py-2 hover:border-sage/40 transition-colors"
+                    >
+                      <span className="text-[13px]">🍳</span>
+                      <span className="text-[12.5px] text-ink font-medium truncate flex-1">
+                        연결된 레시피 보기
+                      </span>
+                      <span className="text-ink-soft/40 text-[13px]">›</span>
+                    </Link>
+                  )}
+
+                  <AnimatePresence>
+                    {expandedPostId === post.id && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 border-t border-border-soft/70 pt-3 space-y-2.5">
+                          {(commentsByPost[post.id] ?? []).map((c) => (
+                            <p key={c.id} className="text-[12.5px] text-ink leading-relaxed">
+                              <span className="font-medium">{c.authorName}</span>{' '}
+                              <span className="text-ink-soft">{c.body}</span>
+                            </p>
+                          ))}
+                          <div className="flex items-center gap-2 pt-1">
+                            <input
+                              value={commentDraft}
+                              onChange={(e) => setCommentDraft(e.target.value)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter' && !e.nativeEvent.isComposing) submitComment(post.id);
+                              }}
+                              placeholder="댓글을 남겨보세요"
+                              className="flex-1 bg-cream-warm/50 rounded-full px-3.5 py-2 text-[12.5px] text-ink outline-none placeholder:text-ink-soft/45"
+                            />
+                            <button
+                              type="button"
+                              onClick={() => submitComment(post.id)}
+                              className="text-[12.5px] text-terracotta font-medium shrink-0"
+                            >
+                              등록
+                            </button>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
+                  {!expandedPostId && post.commentCount > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => openComments(post.id)}
+                      className="text-[11.5px] text-ink-soft/60 mt-2.5"
+                    >
+                      댓글 {post.commentCount}개 모두 보기
+                    </button>
+                  )}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      )}
+
+      {tab === 'recipes' && (
+        <div className="max-w-md mx-auto px-5 space-y-4">
+          {userRecipes === null && <p className="text-[13px] text-ink-soft text-center py-10">불러오는 중...</p>}
+          {userRecipes?.length === 0 && (
+            <p className="text-[13px] text-ink-soft text-center py-10">
+              아직 등록된 이웃 레시피가 없어요. 가장 먼저 나만의 레시피를 남겨보세요!
+            </p>
+          )}
+          {userRecipes?.map((r) => (
+            <div
+              key={r.id}
+              className="bg-paper border border-border-soft rounded-2xl overflow-hidden"
               style={{ boxShadow: 'var(--shadow-sm)' }}
             >
-              <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-3">
-                <span
-                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[16px] ${post.avatarBg}`}
-                >
-                  {post.authorEmoji}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p className="text-[13.5px] font-medium text-ink truncate">{post.authorName}</p>
-                  <p className="text-[11px] text-ink-soft/70">{timeToLabel(post)}</p>
+              {r.imageUrl && (
+                <div className="relative w-full aspect-[16/10] bg-cream-warm">
+                  <Image src={r.imageUrl} alt={r.title} fill sizes="448px" className="object-cover" />
                 </div>
-                {post.featured && (
-                  <span className="text-[10.5px] bg-terracotta/10 text-terracotta font-medium rounded-full px-2 py-1 shrink-0">
-                    이번 주 인기
-                  </span>
-                )}
-              </div>
-
-              <div className="relative w-full aspect-[4/3]">
-                <Image src={post.image} alt={post.caption} fill sizes="448px" className="object-cover" />
-              </div>
-
-              <div className="px-4 pt-3 pb-4">
-                <div className="flex items-center gap-4">
-                  <button
-                    type="button"
-                    onClick={() => toggleLike(post.id)}
-                    aria-label="좋아요"
-                    className="flex items-center gap-1.5"
-                  >
-                    <svg
-                      width="21"
-                      height="21"
-                      viewBox="0 0 24 24"
-                      fill={liked ? '#c45d3a' : 'none'}
-                      stroke={liked ? '#c45d3a' : '#4a4640'}
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="transition-colors"
-                    >
-                      <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
-                    </svg>
-                  </button>
-                  <span className="flex items-center gap-1.5 text-ink-soft">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a4640" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 20l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                    </svg>
-                  </span>
-                  <span className="ml-auto text-ink-soft/50">
-                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-                    </svg>
-                  </span>
-                </div>
-
-                <p className="text-[13px] text-ink font-medium mt-2.5">
-                  좋아요 {likeCount.toLocaleString()}개
-                </p>
-
-                <p className="text-[13.5px] text-ink leading-relaxed mt-1.5">
-                  <span className="font-medium">{post.authorName}</span>{' '}
-                  <span className="text-ink-soft">{post.caption}</span>
-                </p>
-
-                <p className="text-[12.5px] text-sage mt-1.5">
-                  {post.hashtags.map((tag) => `#${tag}`).join(' ')}
-                </p>
-
-                {matched && (
-                  <Link
-                    href={`/recipe/${matched.id}`}
-                    className="mt-3 flex items-center gap-2 rounded-xl border border-border-soft bg-cream-warm/50 px-3 py-2 hover:border-sage/40 transition-colors"
-                  >
-                    <span className="text-[13px]">🍳</span>
-                    <span className="text-[12.5px] text-ink font-medium truncate flex-1">
-                      {matched.title} 레시피 보기
+              )}
+              <div className="p-4">
+                <div className="flex items-center gap-2 mb-1.5">
+                  {r.mainIngredient && (
+                    <span className="text-[11px] bg-sage/10 text-sage font-medium rounded-full px-2 py-0.5">
+                      {r.mainIngredient}
                     </span>
-                    <span className="text-ink-soft/40 text-[13px]">›</span>
-                  </Link>
+                  )}
+                  <span className="text-[11px] text-ink-soft/60">{r.authorName}님의 레시피</span>
+                </div>
+                <p className="font-display text-[16px] text-ink font-medium">{r.title}</p>
+                {r.description && (
+                  <p className="text-[12.5px] text-ink-soft leading-relaxed mt-1">{r.description}</p>
                 )}
-
-                <p className="text-[11.5px] text-ink-soft/60 mt-2.5">댓글 {post.comments}개 모두 보기</p>
+                <details className="mt-2.5 group">
+                  <summary className="text-[12.5px] text-terracotta font-medium cursor-pointer list-none">
+                    재료·만드는 법 보기
+                  </summary>
+                  <div className="mt-2 space-y-2">
+                    <p className="text-[12px] text-ink-soft whitespace-pre-wrap leading-relaxed">
+                      {r.ingredientsText}
+                    </p>
+                    <p className="text-[12px] text-ink whitespace-pre-wrap leading-relaxed border-t border-border-soft/70 pt-2">
+                      {r.stepsText}
+                    </p>
+                  </div>
+                </details>
               </div>
-            </article>
-          );
-        })}
-      </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       <button
         type="button"
-        onClick={showComingSoon}
+        onClick={() => openComposer(tab === 'feed' ? 'post' : 'recipe')}
         className="fixed bottom-24 right-5 z-30 w-14 h-14 rounded-full bg-terracotta flex items-center justify-center"
         style={{ boxShadow: 'var(--shadow-lg)' }}
-        aria-label="나도 요리 자랑하기"
+        aria-label={tab === 'feed' ? '요리 자랑하기' : '레시피 올리기'}
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 5v14M5 12h14" />
         </svg>
       </button>
 
-      {toast && (
-        <div className="fixed bottom-24 left-5 right-24 z-40">
-          <div className="bg-ink text-cream text-[12.5px] rounded-2xl px-4 py-3 text-center leading-relaxed">
-            {toast}
-          </div>
-        </div>
+      {composer === 'post' && (
+        <PostComposer
+          onClose={() => setComposer(null)}
+          onCreated={(post) => setPosts((prev) => [post, ...(prev ?? [])])}
+        />
       )}
-
+      {composer === 'recipe' && (
+        <RecipeComposer
+          onClose={() => setComposer(null)}
+          onCreated={(recipe) => setUserRecipes((prev) => [recipe, ...(prev ?? [])])}
+        />
+      )}
     </div>
+  );
+}
+
+function ComposerShell({
+  title,
+  onClose,
+  children,
+}: {
+  title: string;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+        className="fixed inset-0 bg-ink/30 z-40"
+      />
+      <motion.div
+        initial={{ y: '100%' }}
+        animate={{ y: 0 }}
+        exit={{ y: '100%' }}
+        transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+        className="fixed bottom-0 left-0 right-0 z-50 max-w-md mx-auto bg-cream rounded-t-3xl flex flex-col max-h-[88vh]"
+      >
+        <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border-soft shrink-0">
+          <p className="font-display text-[16px] text-ink font-medium">{title}</p>
+          <button
+            onClick={onClose}
+            aria-label="닫기"
+            className="w-8 h-8 rounded-full flex items-center justify-center text-ink-soft/60 hover:text-ink-soft transition-colors"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div className="flex-1 overflow-y-auto px-5 py-4">{children}</div>
+      </motion.div>
+    </>
+  );
+}
+
+function PostComposer({
+  onClose,
+  onCreated,
+}: {
+  onClose: () => void;
+  onCreated: (post: Post) => void;
+}) {
+  const { user } = useAuth();
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [caption, setCaption] = useState('');
+  const [hashtagsInput, setHashtagsInput] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleFile(file: File) {
+    setUploading(true);
+    setError(null);
+    try {
+      const formData = new FormData();
+      formData.append('image', file);
+      const res = await fetch('/api/community/upload', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || '사진을 올리지 못했어요.');
+        return;
+      }
+      setImageUrl(data.url);
+    } catch {
+      setError('사진을 올리지 못했어요. 잠시 후 다시 시도해주세요.');
+    } finally {
+      setUploading(false);
+    }
+  }
+
+  async function handleSubmit() {
+    if (!imageUrl) {
+      setError('먼저 사진을 올려주세요.');
+      return;
+    }
+    setSubmitting(true);
+    setError(null);
+    try {
+      const hashtags = hashtagsInput
+        .split(/[\s,]+/)
+        .map((t) => t.replace(/^#/, ''))
+        .filter(Boolean);
+      const res = await fetch('/api/community/posts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ imageUrl, caption, hashtags }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || '게시물을 올리지 못했어요.');
+        return;
+      }
+      onCreated({
+        id: data.id,
+        imageUrl,
+        caption,
+        hashtags,
+        recipeId: null,
+        userRecipeId: null,
+        createdAt: data.createdAt,
+        authorId: user?.id ?? 0,
+        authorName: user?.name || '나',
+        authorAvatarUrl: null,
+        reactionCount: 0,
+        commentCount: 0,
+        reacted: false,
+      });
+      onClose();
+    } catch {
+      setError('게시물을 올리지 못했어요. 잠시 후 다시 시도해주세요.');
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  return (
+    <ComposerShell title="오늘의 요리 자랑" onClose={onClose}>
+      <input
+        ref={fileRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={(e) => {
+          const file = e.target.files?.[0];
+          if (file) handleFile(file);
+        }}
+      />
+      <button
+        type="button"
+        onClick={() => fileRef.current?.click()}
+        className="w-full aspect-[4/3] rounded-2xl border border-dashed border-border-soft bg-cream-warm/40 flex items-center justify-center overflow-hidden relative"
+      >
+        {imageUrl ? (
+          <Image src={imageUrl} alt="업로드한 사진" fill sizes="448px" className="object-cover" />
+        ) : (
+          <span className="text-[13px] text-ink-soft">
+            {uploading ? '사진 올리는 중...' : '탭해서 사진 선택하기 📷'}
+          </span>
+        )}
+      </button>
+
+      <textarea
+        value={caption}
+        onChange={(e) => setCaption(e.target.value)}
+        placeholder="오늘 만든 요리 이야기를 들려주세요"
+        rows={3}
+        className="w-full mt-4 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+      />
+
+      <input
+        value={hashtagsInput}
+        onChange={(e) => setHashtagsInput(e.target.value)}
+        placeholder="해시태그 (예: 갑오징어 주말요리)"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
+      />
+
+      {error && <p className="text-[12.5px] text-terracotta mt-2">{error}</p>}
+
+      <button
+        type="button"
+        onClick={handleSubmit}
+        disabled={submitting || uploading || !imageUrl}
+        className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[14px] font-medium py-3 disabled:opacity-40"
+      >
+        {submitting ? '올리는 중...' : '자랑하기'}
+      </button>
+    </ComposerShell>
+  );
+}
+
+function RecipeComposer({
+  onClose,
+  onCreated,
+}: {
+  onClose: () => void;
+  onCreated: (recipe: UserRecipe) => void;
+}) {
+  const { user } = useAuth();
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [title, setTitle] = useState('');
+  const [mainIngredient, setMainIngredient] = useState('');
+  const [description, setDescription] = useState('');
+  const [ingredientsText, setIngredientsText] = useState('');
+  const [stepsText, setStepsText] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleFile(file: File) {
+    setUploading(true);
+    try {
+      const formData = new FormData();
+      formData.append('image', file);
+      const res = await fetch('/api/community/upload', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (res.ok) setImageUrl(data.url);
+    } finally {
+      setUploading(false);
+    }
+  }
+
+  async function handleSubmit() {
+    if (!title.trim() || !ingredientsText.trim() || !stepsText.trim()) {
+      setError('레시피 이름, 재료, 만드는 순서는 꼭 채워주세요.');
+      return;
+    }
+    setSubmitting(true);
+    setError(null);
+    try {
+      const res = await fetch('/api/community/recipes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title, mainIngredient, description, ingredientsText, stepsText, imageUrl }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || '레시피를 올리지 못했어요.');
+        return;
+      }
+      onCreated({
+        id: data.id,
+        title,
+        mainIngredient: mainIngredient || null,
+        description: description || null,
+        ingredientsText,
+        stepsText,
+        imageUrl,
+        createdAt: data.createdAt,
+        authorName: user?.name || '나',
+      });
+      onClose();
+    } catch {
+      setError('레시피를 올리지 못했어요. 잠시 후 다시 시도해주세요.');
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  return (
+    <ComposerShell title="나만의 레시피 올리기" onClose={onClose}>
+      <input
+        ref={fileRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={(e) => {
+          const file = e.target.files?.[0];
+          if (file) handleFile(file);
+        }}
+      />
+      <button
+        type="button"
+        onClick={() => fileRef.current?.click()}
+        className="w-full aspect-[16/10] rounded-2xl border border-dashed border-border-soft bg-cream-warm/40 flex items-center justify-center overflow-hidden relative"
+      >
+        {imageUrl ? (
+          <Image src={imageUrl} alt="업로드한 사진" fill sizes="448px" className="object-cover" />
+        ) : (
+          <span className="text-[13px] text-ink-soft">{uploading ? '사진 올리는 중...' : '완성 사진 올리기 (선택) 📷'}</span>
+        )}
+      </button>
+
+      <input
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="레시피 이름 (예: 우리집 고구마순 잡채)"
+        className="w-full mt-4 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
+      />
+      <input
+        value={mainIngredient}
+        onChange={(e) => setMainIngredient(e.target.value)}
+        placeholder="주재료 (예: 고구마순)"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
+      />
+      <textarea
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+        placeholder="한 줄 소개"
+        rows={2}
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+      />
+      <textarea
+        value={ingredientsText}
+        onChange={(e) => setIngredientsText(e.target.value)}
+        placeholder={'재료를 한 줄에 하나씩 적어주세요\n예) 고구마순 300g\n돼지고기 200g'}
+        rows={4}
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+      />
+      <textarea
+        value={stepsText}
+        onChange={(e) => setStepsText(e.target.value)}
+        placeholder={'만드는 순서를 한 줄에 하나씩 적어주세요\n예) 고구마순은 데쳐서 껍질을 벗긴다\n돼지고기와 함께 볶는다'}
+        rows={5}
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+      />
+
+      {error && <p className="text-[12.5px] text-terracotta mt-2">{error}</p>}
+
+      <button
+        type="button"
+        onClick={handleSubmit}
+        disabled={submitting}
+        className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[14px] font-medium py-3 disabled:opacity-40"
+      >
+        {submitting ? '올리는 중...' : '레시피 올리기'}
+      </button>
+    </ComposerShell>
   );
 }
