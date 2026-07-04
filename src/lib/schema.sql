@@ -86,3 +86,15 @@ CREATE TABLE IF NOT EXISTS post_comments (
 
 CREATE INDEX IF NOT EXISTS idx_post_comments_post_id ON post_comments(post_id);
 
+-- 로그인한 유저가 어떤 레시피를 열어봤는지 기록.
+-- 홈 화면 개인화 추천("최근 관심 재료 기반 추천")의 근거 데이터로 사용.
+CREATE TABLE IF NOT EXISTS recipe_views (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  recipe_id VARCHAR(20) NOT NULL,
+  main_ingredient VARCHAR(50),
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_recipe_views_user_id ON recipe_views(user_id, created_at DESC);
+

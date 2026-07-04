@@ -1,100 +1,118 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import SectionHeader from './SectionHeader';
+import { useAuth } from '@/lib/auth-context';
 
-const STORAGE_KEY = 'sodam-welcome-dismissed';
-
-const FEATURES = [
-  {
-    icon: '🗓️',
-    title: '지금 뭐가 맛있을까',
-    desc: '제철 정보와 산지, 고르는 법까지 계절을 따라 친절하게 알려드려요.',
-  },
-  {
-    icon: '🍳',
-    title: '그 재료로 만드는 요리',
-    desc: '집밥, 주말 요리, 세계 요리, 셰프의 특별 레시피까지 — 실력과 기분에 맞게 골라보세요.',
-  },
-  {
-    icon: '💬',
-    title: '무엇이든 물어보는 소담이',
-    desc: '냉장고 속 재료나 오늘 기분을 말해주시면, 요리를 추천하고 끝까지 조리법을 알려드려요.',
-  },
-  {
-    icon: '👥',
-    title: '함께 나누는 이야기 (준비 중)',
-    desc: '제철 식재료와 요리 이야기를 나눌 수 있는 공간을 차근차근 준비하고 있어요.',
-  },
-] as const;
-
-function CloseIcon() {
-  return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-      <path d="M18 6L6 18M6 6l12 12" />
-    </svg>
-  );
+interface PersonalizeData {
+  loggedIn: boolean;
+  greeting: string;
+  todayIngredient: { name: string; emoji: string } | null;
+  topIngredient: string | null;
+  recommendedRecipe: { id: string; title: string } | null;
 }
 
+const FEATURES = [
+  { icon: '🗓️', title: '지금 뭐가 맛있을까' },
+  { icon: '🍳', title: '제철 재료로 만드는 요리' },
+  { icon: '💬', title: '무엇이든 물어보는 소담이' },
+  { icon: '👥', title: '함께 나누는 이야기' },
+] as const;
+
 export default function WelcomeBanner() {
-  const [state, setState] = useState<{ mounted: boolean; dismissed: boolean }>({
-    mounted: false,
-    dismissed: true,
-  });
+  const { user } = useAuth();
+  const [data, setData] = useState<PersonalizeData | null>(null);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- 서버에는 localStorage가 없어 클라이언트 마운트 후에만 안전하게 읽을 수 있음
-    setState({ mounted: true, dismissed: window.localStorage.getItem(STORAGE_KEY) === '1' });
+    fetch('/api/personalize')
+      .then((res) => res.json())
+      .then(setData)
+      .catch(() => setData(null));
   }, []);
-
-  function handleDismiss() {
-    setState((prev) => ({ ...prev, dismissed: true }));
-    window.localStorage.setItem(STORAGE_KEY, '1');
-  }
-
-  if (!state.mounted || state.dismissed) return null;
 
   return (
     <section className="max-w-md mx-auto px-5 pt-3 pb-1">
       <div
-        className="relative bg-paper border border-border-soft rounded-3xl p-5"
+        className="bg-paper border border-border-soft rounded-3xl p-5"
         style={{ boxShadow: 'var(--shadow-sm)' }}
       >
-        <button
-          type="button"
-          onClick={handleDismiss}
-          aria-label="안내 닫기"
-          className="absolute top-4 right-4 w-7 h-7 rounded-full flex items-center justify-center text-ink-soft/50 hover:text-ink-soft hover:bg-cream-warm transition-colors"
-        >
-          <CloseIcon />
-        </button>
-
         <SectionHeader eyebrow="시절소담 이야기" title="제철의 마음을 담았어요" icon="🌿" />
 
-        <p className="mt-3 text-[13px] text-ink-soft leading-relaxed pr-6">
-          안녕하세요, 시절소담이에요. 24절기를 따라 흘러가는 계절처럼, 그때그때 가장 맛있고
-          넉넉한 제철 재료를 소중히 여기고 있어요. 오늘은 뭘 먹을지 고민되는 날, 부담 없이
-          기대어 주세요.
+        <p className="mt-3 text-[12.5px] text-ink-soft leading-relaxed">
+          24절기를 따라 흘러가는 계절처럼, 그때그때 가장 맛있고 넉넉한 제철 재료를
+          소중히 여기고 있어요.
         </p>
 
-        <ul className="mt-4 space-y-3.5">
+        {/* 개인화 영역 — 실제 데이터(즐겨찾기, 최근 본 레시피)가 쌓일수록 점점 더 잘 맞아요 */}
+        <div className="mt-4 rounded-2xl bg-cream-warm/50 border border-border-soft/70 px-4 py-3.5">
+          {data?.loggedIn ? (
+            <>
+              <p className="text-[13px] text-ink font-medium">
+                {data.greeting}{user?.name ? `, ${user.name}님` : ''}
+              </p>
+              {data.todayIngredient && (
+                <p className="text-[12.5px] text-ink-soft mt-1.5">
+                  오늘 눈여겨볼 재료는{' '}
+                  <Link
+                    href={`/ingredient/${encodeURIComponent(data.todayIngredient.name)}`}
+                    className="text-sage font-medium"
+                  >
+                    {data.todayIngredient.emoji} {data.todayIngredient.name}
+                  </Link>
+                  예요.
+                </p>
+              )}
+              {data.topIngredient && data.recommendedRecipe && (
+                <Link
+                  href={`/recipe/${data.recommendedRecipe.id}`}
+                  className="flex items-center gap-1.5 text-[12.5px] text-ink-soft mt-2 pt-2 border-t border-border-soft/70"
+                >
+                  <span className="text-[13px]">🍳</span>
+                  <span>
+                    <span className="text-ink font-medium">{data.topIngredient}</span> 즐겨 찾으시던데,{' '}
+                    <span className="text-terracotta font-medium">{data.recommendedRecipe.title}</span>{' '}
+                    어때요?
+                  </span>
+                  <span className="text-ink-soft/40 ml-auto shrink-0">›</span>
+                </Link>
+              )}
+            </>
+          ) : (
+            <>
+              {data?.todayIngredient && (
+                <p className="text-[12.5px] text-ink-soft">
+                  오늘 눈여겨볼 재료는{' '}
+                  <Link
+                    href={`/ingredient/${encodeURIComponent(data.todayIngredient.name)}`}
+                    className="text-sage font-medium"
+                  >
+                    {data.todayIngredient.emoji} {data.todayIngredient.name}
+                  </Link>
+                  예요.
+                </p>
+              )}
+              <Link
+                href="/login"
+                className="text-[12px] text-terracotta font-medium mt-1.5 inline-block"
+              >
+                로그인하면 취향에 맞는 추천을 받아볼 수 있어요 ›
+              </Link>
+            </>
+          )}
+        </div>
+
+        <div className="mt-4 grid grid-cols-2 gap-2">
           {FEATURES.map((f) => (
-            <li key={f.title} className="flex gap-3">
-              <span className="shrink-0 flex h-8 w-8 items-center justify-center rounded-xl bg-sage/10 text-[15px] leading-none">
-                {f.icon}
-              </span>
-              <div className="min-w-0">
-                <p className="text-[13px] font-medium text-ink">{f.title}</p>
-                <p className="text-[12px] text-ink-soft leading-relaxed mt-0.5">{f.desc}</p>
-              </div>
-            </li>
+            <div
+              key={f.title}
+              className="flex items-center gap-2 rounded-xl bg-cream-warm/40 px-2.5 py-2.5"
+            >
+              <span className="text-[15px] shrink-0">{f.icon}</span>
+              <span className="text-[11.5px] text-ink-soft leading-tight">{f.title}</span>
+            </div>
           ))}
-        </ul>
-
-        <p className="mt-4 text-[12px] text-ink-soft/80 leading-relaxed border-t border-border-soft/70 pt-3">
-          요리에 관한 거라면 뭐든 편하게 물어보세요. 아래 대화창에 재료나 오늘 기분을
-          말해주시면 소담이가 도와드릴게요.
-        </p>
+        </div>
       </div>
     </section>
   );
