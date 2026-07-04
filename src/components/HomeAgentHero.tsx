@@ -168,7 +168,7 @@ export default function HomeAgentHero() {
                 <p className="text-[12px] text-ink-soft/70 mb-2">{ex.question}</p>
 
                 {ex.reply && (
-                  <p className="font-display text-[16px] leading-snug text-ink mb-3">
+                  <p className="font-display text-[16px] leading-snug text-ink mb-3 whitespace-pre-wrap break-words">
                     {ex.reply}
                   </p>
                 )}

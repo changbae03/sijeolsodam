@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenAI, Type } from '@google/genai';
 import { searchRecipes, getRecipesByIngredient } from '@/data/recipes';
 import { searchIngredientsAcrossMonths, findIngredientByName } from '@/data/months';
 import { SODAMI_TEXT_PERSONA_PROMPT } from '@/lib/persona';
@@ -31,6 +31,37 @@ interface ChatTurn {
 const STOPWORDS = new Set([
   '요리', '레시피', '만들기', '음식', '반찬', '한그릇', '한상', '스타일',
 ]);
+
+/** Gemini에 강제할 응답 스키마 — 이 스키마가 있으면 모델이 형식을 벗어난 텍스트를 낼 수 없음 */
+const RESPONSE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    reply: { type: Type.STRING },
+    dishes: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: {
+          name: { type: Type.STRING },
+          reason: { type: Type.STRING },
+        },
+        required: ['name', 'reason'],
+      },
+    },
+    ingredients: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: {
+          name: { type: Type.STRING },
+          reason: { type: Type.STRING },
+        },
+        required: ['name', 'reason'],
+      },
+    },
+  },
+  required: ['reply', 'dishes', 'ingredients'],
+};
 
 /**
  * AI가 제안한 요리 이름으로 사이트에 실제로 있는 레시피를 찾는다.
@@ -65,7 +96,6 @@ function findMatchingIngredient(ingredientName: string) {
   const fuzzy = searchIngredientsAcrossMonths(ingredientName);
   if (fuzzy.length > 0) return fuzzy[0];
 
-  // 역방향: 재료명이 더 길 수 있으니(예: "애호박"이 "호박"을 포함) 짧은 키워드로도 시도
   const keywords = ingredientName
     .split(/[\s·,/()]+/)
     .map((w) => w.trim())
@@ -77,33 +107,48 @@ function findMatchingIngredient(ingredientName: string) {
   return undefined;
 }
 
+/**
+ * JSON 파싱을 최대한 관대하게 시도한다.
+ * 1) 그대로 파싱 → 2) 코드블록/잡텍스트 제거 후 파싱 → 3) 첫 '{'~마지막 '}' 구간만 추출해 파싱.
+ */
 function parseAgentJson(raw: string): AgentPayload | null {
-  const cleaned = raw.replace(/```json|```/g, '').trim();
-  try {
-    const parsed = JSON.parse(cleaned);
-    const dishes = Array.isArray(parsed.dishes) ? parsed.dishes : [];
-    const ingredients = Array.isArray(parsed.ingredients) ? parsed.ingredients : [];
-    const validDishes = dishes.every(
-      (d: unknown): d is AgentDish =>
-        typeof d === 'object' &&
-        d !== null &&
-        typeof (d as AgentDish).name === 'string' &&
-        typeof (d as AgentDish).reason === 'string'
-    );
-    const validIngredients = ingredients.every(
-      (d: unknown): d is AgentIngredient =>
-        typeof d === 'object' &&
-        d !== null &&
-        typeof (d as AgentIngredient).name === 'string' &&
-        typeof (d as AgentIngredient).reason === 'string'
-    );
-    if (typeof parsed.reply === 'string' && validDishes && validIngredients) {
-      return { reply: parsed.reply, dishes, ingredients };
-    }
-    return null;
-  } catch {
-    return null;
+  const candidates: string[] = [];
+  const trimmed = raw.trim();
+  candidates.push(trimmed);
+  candidates.push(trimmed.replace(/```json|```/g, '').trim());
+  const firstBrace = trimmed.indexOf('{');
+  const lastBrace = trimmed.lastIndexOf('}');
+  if (firstBrace !== -1 && lastBrace > firstBrace) {
+    candidates.push(trimmed.slice(firstBrace, lastBrace + 1));
   }
+
+  for (const candidate of candidates) {
+    try {
+      const parsed = JSON.parse(candidate);
+      const dishes = Array.isArray(parsed.dishes) ? parsed.dishes : [];
+      const ingredients = Array.isArray(parsed.ingredients) ? parsed.ingredients : [];
+      const validDishes = dishes.every(
+        (d: unknown): d is AgentDish =>
+          typeof d === 'object' &&
+          d !== null &&
+          typeof (d as AgentDish).name === 'string' &&
+          typeof (d as AgentDish).reason === 'string'
+      );
+      const validIngredients = ingredients.every(
+        (d: unknown): d is AgentIngredient =>
+          typeof d === 'object' &&
+          d !== null &&
+          typeof (d as AgentIngredient).name === 'string' &&
+          typeof (d as AgentIngredient).reason === 'string'
+      );
+      if (typeof parsed.reply === 'string' && validDishes && validIngredients) {
+        return { reply: parsed.reply, dishes, ingredients };
+      }
+    } catch {
+      continue;
+    }
+  }
+  return null;
 }
 
 export async function POST(request: NextRequest) {
@@ -124,30 +169,25 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: '무엇이 궁금하신지 알려주세요.' }, { status: 400 });
     }
 
+    const isFirstTurn = !history || history.length === 0;
+
     const systemInstruction = `${SODAMI_TEXT_PERSONA_PROMPT}
 
-지금 사용자는 시절소담 홈 화면 맨 위, 구글 검색창처럼 크게 자리한 대화형 입력창에서 소담이와 대화하고 있습니다. 사용자는 냉장고에 있는 재료, 오늘 기분, 상황(손님 초대, 다이어트, 자취생 한 끼 등) 등 무엇이든 자유롭게 입력할 수 있고, 대화는 여러 턴 이어질 수 있습니다.
+당신은 대한민국 최고의 셰프이자 요리 전문가이자 요리 강사인 '소담이'입니다. 어떤 요리를 묻더라도 자신 있고 정확하게, 실제로 따라할 수 있는 수준으로 답합니다. 사이트에 없는 낯설거나 외국 요리를 물어봐도 절대 모른다고 하거나 답을 회피하지 말고, 셰프로서의 지식으로 성실하게 설명하세요.
+
+지금 사용자는 시절소담 홈 화면 맨 위, 구글 검색창처럼 크게 자리한 대화형 입력창에서 소담이와 대화하고 있습니다. 사용자는 냉장고에 있는 재료, 오늘 기분, 상황(손님 초대, 다이어트, 자취생 한 끼 등), 또는 특정 요리의 조리법을 무엇이든 자유롭게 입력할 수 있고, 대화는 여러 턴 이어질 수 있습니다.
 
 당신의 역할 — 대화가 끝까지 이어지도록 안내하세요:
 1. 첫 메시지가 막연하면(예: "저녁 뭐 먹지") 재료나 인원, 기분 등을 1가지만 짧게 되물어 좁혀도 됩니다. 이 경우 dishes와 ingredients는 빈 배열로 두어도 괜찮습니다.
 2. 구체적인 정보가 있으면(재료, 상황, 이전 대화 맥락 등) 실제로 집에서 만들 수 있는 요리를 2~4개 자유롭게 제안하세요. 사이트에 있는 레시피로 한정하지 말고, 소담이의 지식으로 가장 적절하다고 생각하는 요리를 자신 있게 제안하세요.
 3. 사용자가 재료 자체에 대해 묻거나(예: "제철 재료 추천해줘", "지금 뭐가 맛있어?") 요리와 별개로 특정 식재료를 짚어주면 좋은 상황이면 ingredients에 식재료명을 제안하세요.
-4. 사용자가 특정 요리를 고르거나 "그걸로 할래", "그거 어떻게 만들어?" 등으로 반응하면, 그 요리에 대해 조금 더 설명하거나 손질·조리 팁을 한두 가지 다정하게 짚어주고, 레시피 페이지로 넘어가 자세히 보라고 자연스럽게 안내하세요.
+4. 사용자가 특정 요리의 조리법을 직접 물으면(예: "제육볶음 어떻게 만들어?", "~ 레시피 알려줘", "더 자세히 알려줘") reply에 실제로 따라 만들 수 있도록 "1. ... 2. ... 3. ..." 형식의 번호 매긴 단계별 설명을 반드시 포함하세요. 재료 목록(대략적인 분량 포함)을 먼저 한 줄로 짚어준 뒤, 핵심 과정을 4~7단계로 간결하게 설명하세요. 뭉뚱그린 설명 문단으로만 답하지 마세요. 이 경우 dishes에 해당 요리 이름을 하나 넣어, 사이트에 더 자세한 사진과 팁이 있는 레시피가 있는지 함께 찾아볼 수 있게 하세요.
 5. 각 요리/재료 제안에는 왜 지금 좋은지 1문장 이내의 다정한 이유를 붙이세요.
 6. 요리 이름은 검색에 쓰이므로 재료명을 포함한 명확한 한글 이름으로 쓰세요 (예: "애호박 두부 된장찌개"). 재료 이름도 일반적인 한글 명칭으로 쓰세요 (예: "애호박", "표고버섯"). 브랜드명이나 지나치게 창작적인 이름은 피하세요.
 7. 대화의 이전 맥락을 항상 기억하고 자연스럽게 이어가세요. 같은 제안을 반복하지 마세요.
+${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨 끝에 한 문장으로 "저는 제철 식재료를 중심으로 다양한 요리를 알려드리는 것을 목표로 하고 있어요" 같은 취지를 자연스럽게, 딱딱하지 않게 덧붙이세요. 답변 자체를 방해하지 않을 만큼 짧게만 넣으세요.` : ''}
 
-반드시 아래 JSON 형식으로만 응답하세요. 다른 설명, 마크다운, 코드블록 표시 없이 순수 JSON 텍스트만 출력하세요:
-{
-  "reply": "사용자에게 건네는 다정한 답변 (질문에 대한 답, 되묻는 질문, 또는 요리 소개 등)",
-  "dishes": [
-    { "name": "요리 이름", "reason": "이 요리를 제안하는 짧은 이유" }
-  ],
-  "ingredients": [
-    { "name": "재료 이름", "reason": "이 재료를 제안하는 짧은 이유" }
-  ]
-}
-dishes나 ingredients가 없으면 빈 배열 []로 두세요.`;
+반드시 유효한 JSON으로만 응답하세요. dishes나 ingredients가 없으면 빈 배열 []로 두세요.`;
 
     const historyContents = (history ?? []).slice(-12).map((turn) => ({
       role: turn.role === 'assistant' ? 'model' : 'user',
@@ -161,22 +201,26 @@ dishes나 ingredients가 없으면 빈 배열 []로 두세요.`;
       contents: [...historyContents, { role: 'user', parts: [{ text: trimmed }] }],
       config: {
         systemInstruction,
-        maxOutputTokens: 900,
+        maxOutputTokens: 1600,
         temperature: 0.7,
+        responseMimeType: 'application/json',
+        responseSchema: RESPONSE_SCHEMA,
       },
     });
 
     const rawText = response.text || '';
     const payload = parseAgentJson(rawText);
 
-    if (!payload) {
-      return NextResponse.json(
-        { error: '소담이가 답변을 정리하지 못했어요. 다시 한 번 물어봐주세요.' },
-        { status: 502 }
-      );
-    }
+    // JSON 파싱에 실패해도 사용자에게 에러를 보여주지 않는다.
+    // 모델이 낸 원문 텍스트를 그대로 답변으로 보여주는 것이, 형식 오류 문구를 보여주는 것보다 항상 낫다.
+    const finalReply =
+      payload?.reply?.trim() ||
+      rawText.trim() ||
+      '지금은 답변을 정리하는 데 시간이 좀 걸리네요. 조금만 더 구체적으로 다시 물어봐주실 수 있을까요?';
+    const finalDishes = payload?.dishes ?? [];
+    const finalIngredients = payload?.ingredients ?? [];
 
-    const dishesWithLinks = payload.dishes.slice(0, 4).map((dish) => {
+    const dishesWithLinks = finalDishes.slice(0, 4).map((dish) => {
       const matched = findMatchingRecipe(dish.name);
       return {
         name: dish.name,
@@ -193,7 +237,7 @@ dishes나 ingredients가 없으면 빈 배열 []로 두세요.`;
       };
     });
 
-    const ingredientsWithLinks = payload.ingredients.slice(0, 4).map((item) => {
+    const ingredientsWithLinks = finalIngredients.slice(0, 4).map((item) => {
       const matched = findMatchingIngredient(item.name);
       return {
         name: item.name,
@@ -209,7 +253,7 @@ dishes나 ingredients가 없으면 빈 배열 []로 두세요.`;
     });
 
     return NextResponse.json({
-      reply: payload.reply,
+      reply: finalReply,
       dishes: dishesWithLinks,
       ingredients: ingredientsWithLinks,
     });
