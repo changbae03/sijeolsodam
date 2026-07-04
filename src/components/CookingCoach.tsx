@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useCurrentStep } from '@/lib/current-step-context';
 import { cn } from '@/lib/cn';
+import StructuredReplyView from './StructuredReplyView';
 
 interface Exchange {
   question: string;
@@ -201,11 +202,7 @@ export default function CookingCoach({
                     className={cn(i > 0 && 'border-t border-border-soft/70 pt-4 mt-4')}
                   >
                     <p className="text-[12px] text-ink-soft/70 mb-1.5">{ex.question}</p>
-                    {ex.reply && (
-                      <p className="font-display text-[15px] leading-snug text-ink whitespace-pre-wrap break-words">
-                        {ex.reply}
-                      </p>
-                    )}
+                    {ex.reply && <StructuredReplyView text={ex.reply} size="sm" />}
                     {i === exchanges.length - 1 && loading && (
                       <p className="text-[13px] text-ink-soft/60 mt-1">소담이가 생각하고 있어요</p>
                     )}

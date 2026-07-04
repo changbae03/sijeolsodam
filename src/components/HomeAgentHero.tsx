@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/cn';
+import StructuredReplyView from './StructuredReplyView';
 
 interface RecipeSuggestion {
   name: string;
@@ -168,9 +169,9 @@ export default function HomeAgentHero() {
                 <p className="text-[12px] text-ink-soft/70 mb-2">{ex.question}</p>
 
                 {ex.reply && (
-                  <p className="font-display text-[16px] leading-snug text-ink mb-3 whitespace-pre-wrap break-words">
-                    {ex.reply}
-                  </p>
+                  <div className="mb-3">
+                    <StructuredReplyView text={ex.reply} size="md" />
+                  </div>
                 )}
 
                 {(ex.ingredients?.length ?? 0) > 0 && (
