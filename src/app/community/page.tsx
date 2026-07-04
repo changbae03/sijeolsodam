@@ -60,6 +60,7 @@ export default function CommunityPage() {
   const router = useRouter();
 
   const [tab, setTab] = useState<'feed' | 'recipes'>('feed');
+  const [query, setQuery] = useState('');
   const [posts, setPosts] = useState<Post[] | null>(null);
   const [userRecipes, setUserRecipes] = useState<UserRecipe[] | null>(null);
   const [expandedPostId, setExpandedPostId] = useState<number | null>(null);
@@ -145,6 +146,22 @@ export default function CommunityPage() {
     setComposer(kind);
   }
 
+  const normalizedQuery = query.trim().toLowerCase();
+
+  const filteredPosts = (posts ?? []).filter((post) => {
+    if (!normalizedQuery) return true;
+    const haystack = [post.authorName, post.caption ?? '', ...post.hashtags].join(' ').toLowerCase();
+    return haystack.includes(normalizedQuery);
+  });
+
+  const filteredUserRecipes = (userRecipes ?? []).filter((r) => {
+    if (!normalizedQuery) return true;
+    const haystack = [r.title, r.mainIngredient ?? '', r.description ?? '', r.authorName]
+      .join(' ')
+      .toLowerCase();
+    return haystack.includes(normalizedQuery);
+  });
+
   return (
     <div className="min-h-screen bg-cream pb-24">
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
@@ -194,6 +211,19 @@ export default function CommunityPage() {
             이웃의 레시피
           </button>
         </div>
+
+        <div className="flex items-center gap-2 bg-paper border border-border-soft rounded-full h-11 px-4 mb-5">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8a857c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={tab === 'feed' ? '이름, 재료, 해시태그로 검색' : '레시피 이름이나 재료로 검색'}
+            className="flex-1 bg-transparent text-[13px] text-ink outline-none placeholder:text-ink-soft/45"
+          />
+        </div>
       </div>
 
       {tab === 'feed' && (
@@ -204,7 +234,12 @@ export default function CommunityPage() {
               아직 올라온 이야기가 없어요. 가장 먼저 요리를 자랑해보세요!
             </p>
           )}
-          {posts?.map((post) => {
+          {posts && posts.length > 0 && filteredPosts.length === 0 && (
+            <p className="text-[13px] text-ink-soft text-center py-10">
+              &ldquo;{query}&rdquo;와 일치하는 이야기를 찾지 못했어요.
+            </p>
+          )}
+          {filteredPosts.map((post) => {
             const liked = post.reacted;
             return (
               <article
@@ -340,7 +375,12 @@ export default function CommunityPage() {
               아직 등록된 이웃 레시피가 없어요. 가장 먼저 나만의 레시피를 남겨보세요!
             </p>
           )}
-          {userRecipes?.map((r) => (
+          {userRecipes && userRecipes.length > 0 && filteredUserRecipes.length === 0 && (
+            <p className="text-[13px] text-ink-soft text-center py-10">
+              &ldquo;{query}&rdquo;와 일치하는 레시피를 찾지 못했어요.
+            </p>
+          )}
+          {filteredUserRecipes.map((r) => (
             <div
               key={r.id}
               className="bg-paper border border-border-soft rounded-2xl overflow-hidden"
