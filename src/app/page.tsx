@@ -10,6 +10,8 @@ import { SeasonalIngredient } from '@/data/types';
 import IngredientFeatureCard from '@/components/IngredientFeatureCard';
 import Logo from '@/components/Logo';
 import HomeAgentHero from '@/components/HomeAgentHero';
+import SectionHeader from '@/components/SectionHeader';
+import WelcomeBanner from '@/components/WelcomeBanner';
 
 /** 설명을 "지금 ~로 ~를 만들어보세요" 같은 행동 유도형 문장으로 변환. 매칭 레시피가 없으면 원래 설명으로 대체. */
 function getActionLine(ingredient: SeasonalIngredient): string {
@@ -83,7 +85,12 @@ export default function HomePage() {
       </header>
 
       {/* ============================================
-          2. AI 추천 에이전트 — 소담이에게 재료·상황을 물어보는 큰 대화창
+          2. 시절소담 소개 배너 — 첫 방문 시에만 노출
+         ============================================ */}
+      <WelcomeBanner />
+
+      {/* ============================================
+          3. AI 추천 에이전트 — 소담이에게 재료·상황을 물어보는 큰 대화창
          ============================================ */}
       <HomeAgentHero />
 
@@ -93,11 +100,12 @@ export default function HomePage() {
          ============================================ */}
       <section className="max-w-md mx-auto pt-2 mb-2">
         <div className="px-5">
-          <div className="flex items-baseline gap-3 mb-6">
-            <span className="h-px w-8 bg-sage" />
-            <h2 className="font-display text-[20px] tracking-tight text-ink font-medium">
-              {activeIndex === 0 && isWeeklyPick ? '이번 주 추천' : '오늘의 제철'}
-            </h2>
+          <div className="mb-6">
+            <SectionHeader
+              eyebrow={activeIndex === 0 && isWeeklyPick ? '가격도 착해요' : '이달의 제철'}
+              title={activeIndex === 0 && isWeeklyPick ? '이번 주 추천' : '오늘의 제철'}
+              icon="🗓️"
+            />
           </div>
         </div>
 
@@ -138,11 +146,8 @@ export default function HomePage() {
            ============================================ */}
         {activeRecipe && (
           <section className="mt-10 mb-12">
-            <div className="flex items-baseline gap-3 mb-5">
-              <span className="h-px w-8 bg-sage" />
-              <h2 className="font-display text-[20px] tracking-tight text-ink font-medium">
-                오늘의 메뉴 추천
-              </h2>
+            <div className="mb-5">
+              <SectionHeader eyebrow="오늘 뭐 먹지" title="오늘의 메뉴 추천" icon="🍳" />
             </div>
 
             <Link href={`/recipe/${activeRecipe.id}`} className="block group">

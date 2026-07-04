@@ -222,6 +222,12 @@ export default function CookingCoach({
                   <input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={(e) => {
+                      // 한글 조합(IME) 중 Enter로 인해 글자가 씹히는 것을 막는 안전장치
+                      if (e.key === 'Enter' && e.nativeEvent.isComposing) {
+                        e.preventDefault();
+                      }
+                    }}
                     placeholder="궁금한 걸 물어보세요"
                     className="flex-1 bg-transparent text-[14px] text-ink outline-none placeholder:text-ink-soft/45"
                   />

@@ -129,7 +129,12 @@ export default function HomeAgentHero() {
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
-    if (e.key === 'Enter') send(query);
+    // 한글 등 조합형 입력(IME) 중에 Enter를 누르면 마지막 글자가 아직 조합 중이라
+    // React state에는 반영되기 전인데 먼저 전송/초기화가 일어나 글자가 씹히는 문제가 있었음.
+    // isComposing이면 Enter를 무시하고 조합이 끝난 뒤의 Enter만 전송으로 처리한다.
+    if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
+      send(query);
+    }
   }
 
   function resetConversation() {
