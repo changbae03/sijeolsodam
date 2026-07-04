@@ -4,34 +4,6 @@ import { Recipe } from './types';
 export const recipesQ3Extra2: Recipe[] = [
   // ===== 9월 =====
   {
-    id: '9-11',
-    month: 9,
-    title: '달콤한 대추 차',
-    subtitle: '몸을 따뜻하게 데워주는 가을 보양 차',
-    category: '음료/청',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 40,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '대추',
-    description: '달큰하고 쫄깃한 대추를 푹 끓여낸 따뜻한 가을 보양 차예요.',
-    ingredients: [
-      { name: '대추', amount: '20개' },
-      { name: '물', amount: '5컵' },
-      { name: '꿀', amount: '1큰술' },
-    ],
-    steps: [
-      { title: '대추 손질', description: '대추는 깨끗이 씻어 씨를 제거합니다.' },
-      { title: '끓이기', description: '물에 대추를 넣고 약불에서 30분간 끓입니다.', timerSeconds: 1800 },
-      { title: '마무리', description: '체에 걸러 꿀을 넣고 저어 마무리합니다.' },
-    ],
-    tips: [
-      '생강을 함께 끓이면 더 깊은 풍미를 낼 수 있어요.',
-      '차게 식혀 마시면 여름 끝자락에도 즐길 수 있어요.',
-    ],
-    youtubeQuery: '대추차 만들기',
-  },
-  {
     id: '9-12',
     month: 9,
     title: '새콤한 석류 에이드',
@@ -91,37 +63,6 @@ export const recipesQ3Extra2: Recipe[] = [
       '소면을 곁들이면 더 든든한 한 끼가 됩니다.',
     ],
     youtubeQuery: '낙지볶음 만들기',
-  },
-  {
-    id: '9-14',
-    month: 9,
-    title: '향긋한 대추 약밥',
-    subtitle: '달콤한 대추가 듬뿍 들어간 영양밥',
-    category: '밥',
-    difficulty: '보통', level: 'home',
-    cookTime: 50,
-    servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '대추',
-    description: '달콤한 대추와 견과류를 듬뿍 넣어 지은 영양 가득한 가을 약밥이에요.',
-    ingredients: [
-      { name: '찹쌀', amount: '2컵' },
-      { name: '대추', amount: '10개' },
-      { name: '밤', amount: '8개' },
-      { name: '간장', amount: '2큰술' },
-      { name: '꿀', amount: '2큰술' },
-    ],
-    steps: [
-      { title: '찹쌀 불리기', description: '찹쌀은 깨끗이 씻어 1시간 정도 불립니다.', timerSeconds: 3600 },
-      { title: '재료 준비', description: '대추와 밤은 손질하여 작게 썹니다.' },
-      { title: '밥 짓기', description: '불린 찹쌀에 대추, 밤, 간장, 꿀을 넣고 밥을 짓습니다.', timerSeconds: 1800 },
-      { title: '뜸 들이기', description: '뜸을 충분히 들인 뒤 골고루 섞어 마무리합니다.', timerSeconds: 600 },
-    ],
-    tips: [
-      '찜기로 쪄내면 더 쫀득한 약밥을 만들 수 있어요.',
-      '잣을 올리면 더 고급스러운 맛을 낼 수 있어요.',
-    ],
-    youtubeQuery: '대추약밥 만들기',
   },
   {
     id: '9-15',
