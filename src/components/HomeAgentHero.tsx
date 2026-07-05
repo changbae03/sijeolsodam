@@ -101,7 +101,7 @@ export default function HomeAgentHero() {
 
   useEffect(() => {
     if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+      scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }, [exchanges, isLoading]);
 
@@ -206,7 +206,7 @@ export default function HomeAgentHero() {
 
       <div>
         {hasConversation && (
-          <div ref={scrollRef} className="max-h-[56vh] overflow-y-auto pb-1">
+          <div ref={scrollRef} className="pb-1">
             {exchanges.map((ex, i) => (
               <div key={i} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
                 <p className="text-[12px] text-ink-soft/70 mb-2">{ex.question}</p>
