@@ -3,8 +3,11 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/lib/cn';
 import StructuredReplyView from './StructuredReplyView';
+import { useAuth } from '@/lib/auth-context';
 
 interface RecipeSuggestion {
   name: string;
@@ -36,6 +39,14 @@ interface Exchange {
   error?: string;
 }
 
+interface PastQuery {
+  id: number;
+  message: string;
+  reply: string;
+  matchedIngredient: string | null;
+  createdAt: string;
+}
+
 const QUICK_PROMPTS = [
   '냉장고 파먹기 도와줘',
   '손님 초대했는데 뭘 낼까요?',
@@ -53,14 +64,32 @@ function SendIcon() {
 }
 
 export default function HomeAgentHero() {
+  const { user } = useAuth();
+  const router = useRouter();
   const [query, setQuery] = useState('');
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
   const [exchanges, setExchanges] = useState<Exchange[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [pastQueries, setPastQueries] = useState<PastQuery[] | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const hasConversation = exchanges.length > 0;
+
+  function openHistory() {
+    if (!user) {
+      router.push('/login');
+      return;
+    }
+    setHistoryOpen(true);
+    if (!pastQueries) {
+      fetch('/api/agent-queries')
+        .then((res) => res.json())
+        .then((data) => setPastQueries(data.queries ?? []))
+        .catch(() => setPastQueries([]));
+    }
+  }
 
   useEffect(() => {
     if (hasConversation) return;
@@ -152,15 +181,24 @@ export default function HomeAgentHero() {
             소담이에게 물어보기
           </span>
         </div>
-        {hasConversation && (
+        <div className="flex items-center gap-3 shrink-0 ml-3">
           <button
             type="button"
-            onClick={resetConversation}
-            className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors shrink-0 ml-3"
+            onClick={openHistory}
+            className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
           >
-            새 대화
+            지난 대화
           </button>
-        )}
+          {hasConversation && (
+            <button
+              type="button"
+              onClick={resetConversation}
+              className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
+            >
+              새 대화
+            </button>
+          )}
+        </div>
       </div>
       <p className="text-[12.5px] text-ink-soft leading-relaxed mb-3">
         요리에 관한 거라면 뭐든 편하게 물어보세요.
@@ -311,6 +349,67 @@ export default function HomeAgentHero() {
           ))}
         </div>
       )}
+
+      <AnimatePresence>
+        {historyOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setHistoryOpen(false)}
+              className="fixed inset-0 bg-ink/30 z-40"
+            />
+            <motion.div
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '100%' }}
+              transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+              className="fixed bottom-0 left-0 right-0 z-50 max-w-md mx-auto bg-cream rounded-t-3xl flex flex-col max-h-[80vh]"
+            >
+              <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border-soft shrink-0">
+                <p className="font-display text-[16px] text-ink font-medium">소담이와 나눈 이야기</p>
+                <button
+                  onClick={() => setHistoryOpen(false)}
+                  aria-label="닫기"
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-ink-soft/60 hover:text-ink-soft transition-colors"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div className="flex-1 overflow-y-auto px-5 py-4">
+                {pastQueries === null && (
+                  <p className="text-[13px] text-ink-soft text-center py-8">불러오는 중...</p>
+                )}
+                {pastQueries?.length === 0 && (
+                  <p className="text-[13px] text-ink-soft text-center py-8">
+                    아직 나눈 이야기가 없어요. 지금 첫 질문을 건네보세요!
+                  </p>
+                )}
+                {pastQueries?.map((q, i) => (
+                  <div
+                    key={q.id}
+                    className={cn(i > 0 && 'border-t border-border-soft/70 pt-4 mt-4')}
+                  >
+                    <p className="text-[11px] text-ink-soft/60 mb-1.5">
+                      {new Date(q.createdAt).toLocaleDateString('ko-KR', {
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </p>
+                    <p className="text-[12px] text-ink-soft mb-1.5">{q.message}</p>
+                    <p className="text-[13.5px] text-ink leading-relaxed whitespace-pre-wrap break-words">
+                      {q.reply}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -99,14 +99,17 @@ CREATE TABLE IF NOT EXISTS recipe_views (
 CREATE INDEX IF NOT EXISTS idx_recipe_views_user_id ON recipe_views(user_id, created_at DESC);
 
 -- 소담이(AI 에이전트)에게 물어본 내용 기록.
--- 즐겨찾기·조회기록과 함께 '이 유저가 요즘 관심 있는 재료'를 추정하는 세 번째 신호로 쓰임.
+-- 즐겨찾기·조회기록과 함께 '이 유저가 요즘 관심 있는 재료'를 추정하는 세 번째 신호로 쓰이고,
+-- 유저가 '지난 대화' 화면에서 직접 다시 볼 수 있는 이력으로도 쓰임.
 CREATE TABLE IF NOT EXISTS agent_queries (
   id SERIAL PRIMARY KEY,
   user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
   message TEXT NOT NULL,
+  reply TEXT,
   matched_ingredient VARCHAR(50),
   created_at TIMESTAMP DEFAULT NOW()
 );
 
 CREATE INDEX IF NOT EXISTS idx_agent_queries_user_id ON agent_queries(user_id, created_at DESC);
+ALTER TABLE agent_queries ADD COLUMN IF NOT EXISTS reply TEXT;
 

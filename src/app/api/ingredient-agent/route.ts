@@ -270,8 +270,8 @@ ${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨
         null;
 
       sql`
-        INSERT INTO agent_queries (user_id, message, matched_ingredient)
-        VALUES (${user.userId}, ${trimmed.slice(0, 500)}, ${matchedIngredientName})
+        INSERT INTO agent_queries (user_id, message, reply, matched_ingredient)
+        VALUES (${user.userId}, ${trimmed.slice(0, 500)}, ${finalReply.slice(0, 3000)}, ${matchedIngredientName})
       `.catch((err) => console.error('Log agent query error:', err));
     }
 
