@@ -47,12 +47,38 @@ interface PastQuery {
   createdAt: string;
 }
 
-const QUICK_PROMPTS = [
-  '냉장고 파먹기 도와줘',
-  '손님 초대했는데 뭘 낼까요?',
-  '오늘은 매콤한 게 당겨요',
-  '지금 제철 재료 뭐가 좋아요?',
-];
+const PROMPT_CATEGORIES = [
+  {
+    label: '냉장고 파먹기',
+    prompts: ['냉장고 파먹기 도와줘', '이 재료 어떻게 써야 할지 모르겠어요'],
+  },
+  {
+    label: '상황별',
+    prompts: ['손님 초대했는데 뭘 낼까요?', '도시락 반찬 추천해줘', '술안주 추천해줘'],
+  },
+  {
+    label: '건강·다이어트',
+    prompts: ['다이어트 식단 추천해줘', '속 편한 저녁 메뉴 알려줘'],
+  },
+  {
+    label: '오늘 기분',
+    prompts: ['오늘은 매콤한 게 당겨요', '자극적이지 않은 담백한 요리 알려줘'],
+  },
+  {
+    label: '조리법이 궁금할 때',
+    prompts: ['제육볶음 어떻게 만들어?', '된장찌개 황금레시피 알려줘'],
+  },
+  {
+    label: '세계 요리',
+    prompts: ['이탈리아식 파스타 알려줘', '태국식 커리 만드는 법 알려줘'],
+  },
+  {
+    label: '제철 정보',
+    prompts: ['지금 제철 재료 뭐가 좋아요?', '요즘 저렴한 재료 추천해줘'],
+  },
+] as const;
+
+const QUICK_PROMPTS = PROMPT_CATEGORIES.flatMap((c) => c.prompts);
 
 function SendIcon() {
   return (
@@ -174,14 +200,19 @@ export default function HomeAgentHero() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-1.5">
-          <span className="text-[14px]">💬</span>
-          <span className="text-[11.5px] tracking-[0.14em] uppercase text-terracotta font-semibold">
-            소담이에게 물어보기
-          </span>
+      <div className="flex items-start gap-3 mb-2">
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sage/20 to-terracotta/15 text-[20px] leading-none">
+          💬
+        </span>
+        <div className="flex-1 min-w-0">
+          <p className="text-[11px] tracking-[0.14em] uppercase text-terracotta font-semibold mb-0.5">
+            언제든 편하게
+          </p>
+          <h1 className="font-display text-[22px] tracking-tight text-ink font-semibold leading-tight">
+            소담이에게 물어보세요
+          </h1>
         </div>
-        <div className="flex items-center gap-3 shrink-0 ml-3">
+        <div className="flex items-center gap-3 shrink-0 pt-1">
           <button
             type="button"
             onClick={openHistory}
@@ -200,7 +231,8 @@ export default function HomeAgentHero() {
           )}
         </div>
       </div>
-      <p className="text-[13.5px] text-ink-soft leading-relaxed mb-3">
+      <p className="text-[13.5px] text-ink-soft leading-relaxed mb-4">
+        재료, 오늘 기분, 손님 초대 같은 상황, 심지어 다른 나라 요리 조리법까지 —
         요리에 관한 거라면 뭐든 편하게 물어보세요.
       </p>
 
@@ -297,7 +329,7 @@ export default function HomeAgentHero() {
           <div
             className={cn(
               'flex items-center gap-2 rounded-2xl bg-cream-warm/50 border border-sage/25 px-3.5 transition-all',
-              hasConversation ? 'h-11' : 'h-14'
+              hasConversation ? 'h-12' : 'h-16'
             )}
             style={!hasConversation ? { boxShadow: '0 0 0 3px rgba(122,143,111,0.06)' } : undefined}
           >
@@ -336,16 +368,26 @@ export default function HomeAgentHero() {
       </div>
 
       {!hasConversation && (
-        <div className="flex flex-wrap gap-2 mt-3">
-          {QUICK_PROMPTS.map((prompt) => (
-            <button
-              key={prompt}
-              type="button"
-              onClick={() => send(prompt)}
-              className="text-[13.5px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-full px-3 py-1.5 hover:border-sage/40 hover:text-ink transition-colors"
-            >
-              {prompt}
-            </button>
+        <div className="mt-4 space-y-3">
+          <p className="text-[11px] tracking-[0.1em] uppercase text-ink-soft/50 font-medium">
+            이런 것도 물어볼 수 있어요
+          </p>
+          {PROMPT_CATEGORIES.map((category) => (
+            <div key={category.label}>
+              <p className="text-[11.5px] text-sage font-medium mb-1.5">{category.label}</p>
+              <div className="flex flex-wrap gap-2">
+                {category.prompts.map((prompt) => (
+                  <button
+                    key={prompt}
+                    type="button"
+                    onClick={() => send(prompt)}
+                    className="text-[13.5px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-full px-3 py-1.5 hover:border-sage/40 hover:text-ink transition-colors"
+                  >
+                    {prompt}
+                  </button>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       )}

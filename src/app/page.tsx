@@ -85,7 +85,7 @@ export default function HomePage() {
       </header>
 
       {/* ============================================
-          2. 시절소담 소개 + AI 추천 에이전트 — 하나의 카드로 이어지는 홈 첫인상
+          2. AI 추천 에이전트를 메인으로, 시절소담 이야기는 그 아래 보조로
          ============================================ */}
       <section className="max-w-md mx-auto px-5 pt-3 pb-1">
         <div
@@ -93,11 +93,11 @@ export default function HomePage() {
           style={{ boxShadow: 'var(--shadow-sm)' }}
         >
           <div className="p-5">
-            <WelcomeBanner />
+            <HomeAgentHero />
           </div>
           <div className="border-t border-border-soft" />
           <div className="p-5 pt-4">
-            <HomeAgentHero />
+            <WelcomeBanner />
           </div>
         </div>
       </section>
