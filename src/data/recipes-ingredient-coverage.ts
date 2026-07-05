@@ -367,21 +367,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '방어회 먹는 법',
   },
   {
-    id: 'ing-과메기-1', month: 12, title: '쌈채소 곁들인 과메기', subtitle: '쫄깃한 과메기를 채소에 싸먹는 겨울 별미',
-    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '과메기', description: '꼬들꼬들하게 말린 과메기를 미역, 쪽파와 함께 채소에 싸먹는 겨울 별미예요.',
-    ingredients: [
-      { name: '과메기', amount: '200g' }, { name: '쪽파', amount: '한줌' }, { name: '마른김', amount: '5장' }, { name: '물미역', amount: '100g' }, { name: '초고추장', amount: '적당량' },
-    ],
-    steps: [
-      { title: '손질', description: '과메기는 껍질을 벗기고 먹기 좋은 크기로 자릅니다.' },
-      { title: '곁들임 준비', description: '쪽파는 썰고 물미역은 물기를 짜둡니다.' },
-      { title: '쌈 싸기', description: '김에 과메기, 미역, 쪽파를 올리고 초고추장을 더해 싸먹습니다.' },
-    ],
-    tips: ['미역과 함께 싸먹으면 비린맛이 잡혀요.', '마늘과 청양고추를 곁들이면 더 깔끔해요.'],
-    youtubeQuery: '과메기 먹는 법',
-  },
-  {
     id: 'ing-꽃새우-1', month: 8, title: '바삭한 꽃새우 소금구이', subtitle: '껍질까지 바삭하게 즐기는 여름 새우',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '꽃새우', description: '굵은소금 위에 구워내면 껍질째 바삭하게 즐길 수 있는 간단한 안주예요.',
