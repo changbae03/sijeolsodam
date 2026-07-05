@@ -125,7 +125,8 @@ export default function HomePage() {
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-5 pb-1"
+          className="flex gap-4 overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory px-5 pb-1"
+          style={{ touchAction: 'pan-x' }}
         >
           {carouselIngredients.map((ing) => (
             <div key={ing.name} className="flex-shrink-0 snap-center" style={{ width: CARD_WIDTH }}>
