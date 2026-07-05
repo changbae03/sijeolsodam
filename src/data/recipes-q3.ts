@@ -519,41 +519,6 @@ export const recipesQ3: Recipe[] = [
 
   // ===== 12월 =====
   {
-    id: '12-1',
-    month: 12,
-    title: '깊고 진한 생굴 떡국',
-    subtitle: '한 해의 끝, 굴 향 가득한 떡국으로 몸을 데우다',
-    category: '국/탕',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 30,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1583224994076-ae1f3a73a07c?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '생굴',
-    description: '한 해 중 가장 통통하고 진한 맛을 내는 생굴을 듬뿍 넣어 끓인 떡국이에요. 깊은 굴 향이 떡국의 맛을 한층 풍성하게 만들어줍니다.',
-    ingredients: [
-      { name: '생굴', amount: '200g' },
-      { name: '떡국떡', amount: '300g' },
-      { name: '멸치 다시육수', amount: '700ml' },
-      { name: '국간장', amount: '2큰술' },
-      { name: '대파', amount: '1대' },
-      { name: '달걀', amount: '1개' },
-      { name: '다진마늘', amount: '1작은술' },
-    ],
-    steps: [
-      { title: '떡 불리기', description: '떡국떡이 굳어있다면 찬물에 10분간 담가 부드럽게 만듭니다.', timerSeconds: 600 },
-      { title: '지단 만들기', description: '달걀은 황백으로 나눠 지단을 부쳐 채 썰어둡니다.' },
-      { title: '굴 손질', description: '생굴은 소금물에 살살 흔들어 씻어둡니다.' },
-      { title: '육수 끓이기', description: '멸치 다시육수에 국간장과 다진마늘을 넣고 끓입니다.', timerSeconds: 180 },
-      { title: '떡 넣기', description: '떡국떡을 넣고 떡이 떠오를 때까지 5분간 끓입니다.', timerSeconds: 300 },
-      { title: '마무리', description: '생굴과 대파를 넣고 2분만 더 끓인 뒤 그릇에 담아 지단을 올려 완성합니다.', timerSeconds: 120, tip: '굴은 오래 끓이면 질기고 작아지니 마지막에 살짝만 익혀주세요.' },
-    ],
-    tips: [
-      '굴은 끓는 육수에 넣자마자 불을 약하게 줄여야 부드러운 식감이 유지돼요.',
-      '만두를 함께 넣으면 떡만둣국으로도 즐길 수 있습니다.',
-    ],
-    youtubeQuery: '굴 떡국 끓이기',
-  },
-  {
     id: '12-2',
     month: 12,
     title: '얼큰한 명태 코다리조림',
