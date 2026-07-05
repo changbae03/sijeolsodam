@@ -399,36 +399,6 @@ export const recipesQ2Extra2: Recipe[] = [
 
   // ===== 8월 =====
   {
-    id: '8-11',
-    month: 8,
-    title: '달콤한 무화과 샐러드',
-    subtitle: '부드러운 단맛이 가득한 늦여름 과일 샐러드',
-    category: '샐러드',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 15,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '무화과',
-    description: '부드럽고 달콤한 무화과와 치즈를 함께 즐기는 고급스러운 늦여름 샐러드예요.',
-    ingredients: [
-      { name: '무화과', amount: '4개' },
-      { name: '루꼴라', amount: '50g' },
-      { name: '발사믹 식초', amount: '1큰술' },
-      { name: '올리브오일', amount: '2큰술' },
-      { name: '치즈', amount: '30g' },
-    ],
-    steps: [
-      { title: '무화과 손질', description: '무화과는 깨끗이 씻어 4등분합니다.' },
-      { title: '드레싱 만들기', description: '발사믹 식초와 올리브오일을 섞어 드레싱을 만듭니다.' },
-      { title: '플레이팅', description: '루꼴라 위에 무화과와 치즈를 올리고 드레싱을 뿌립니다.' },
-    ],
-    tips: [
-      '꿀을 살짝 뿌리면 단맛이 더 진해져요.',
-      '견과류를 더하면 고소한 맛을 즐길 수 있어요.',
-    ],
-    youtubeQuery: '무화과 샐러드 만들기',
-  },
-  {
     id: '8-12',
     month: 8,
     title: '알싸한 풋고추 멸치볶음',
@@ -489,35 +459,6 @@ export const recipesQ2Extra2: Recipe[] = [
       '일주일 정도 숙성하면 더 깊은 맛을 즐길 수 있어요.',
     ],
     youtubeQuery: '갓김치 만들기',
-  },
-  {
-    id: '8-14',
-    month: 8,
-    title: '시원한 무화과 요거트볼',
-    subtitle: '부드럽고 건강한 여름 아침 식사',
-    category: '디저트',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 10,
-    servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '무화과',
-    description: '달콤한 무화과와 그릭요거트를 함께 즐기는 건강하고 가벼운 여름 아침 메뉴예요.',
-    ingredients: [
-      { name: '무화과', amount: '2개' },
-      { name: '그릭요거트', amount: '1컵' },
-      { name: '꿀', amount: '1큰술' },
-      { name: '그래놀라', amount: '3큰술' },
-    ],
-    steps: [
-      { title: '무화과 손질', description: '무화과는 깨끗이 씻어 4등분합니다.' },
-      { title: '담기', description: '그릭요거트를 그릇에 담습니다.' },
-      { title: '마무리', description: '무화과와 그래놀라를 올리고 꿀을 뿌립니다.' },
-    ],
-    tips: [
-      '견과류를 더하면 더 고소한 맛을 즐길 수 있어요.',
-      '냉장고에 차게 두었다가 먹으면 더 시원해요.',
-    ],
-    youtubeQuery: '무화과 요거트볼 만들기',
   },
   {
     id: '8-15',
