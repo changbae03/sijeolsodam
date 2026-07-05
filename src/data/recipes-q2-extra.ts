@@ -541,35 +541,6 @@ export const recipesQ2Extra: Recipe[] = [
     youtubeQuery: '전복 미역국 끓이기',
   },
   {
-    id: '8-8',
-    month: 8,
-    title: '복숭아 셔벗',
-    subtitle: '과즙 가득한 복숭아로 만드는 시원한 셔벗',
-    category: '디저트',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 15,
-    servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1629828874514-979f5f8f0b48?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '복숭아',
-    description: '과즙이 풍부한 늦여름 복숭아를 얼려 만드는 시원한 셔벗이에요. 간단하지만 인기 만점인 디저트입니다.',
-    ingredients: [
-      { name: '복숭아', amount: '3개' },
-      { name: '레몬즙', amount: '1큰술' },
-      { name: '꿀', amount: '2큰술' },
-    ],
-    steps: [
-      { title: '복숭아 손질', description: '복숭아는 씨를 제거하고 큼직하게 잘라둡니다.' },
-      { title: '갈기', description: '복숭아, 레몬즙, 꿀을 믹서에 넣고 곱게 갈아줍니다.', timerSeconds: 60 },
-      { title: '얼리기', description: '용기에 담아 냉동실에서 3시간 이상 얼립니다.', timerSeconds: 10800, tip: '1시간마다 포크로 긁어주면 더 보슬보슬해져요.' },
-      { title: '마무리', description: '포크로 긁어 그릇에 담아 완성합니다.' },
-    ],
-    tips: [
-      '완전히 얼기 전 중간중간 긁어줘야 식감이 좋아요.',
-      '복숭아 대신 자두로도 같은 방법으로 만들 수 있습니다.',
-    ],
-    youtubeQuery: '복숭아 셔벗 만들기',
-  },
-  {
 
     id: '8-10',
     month: 8,
