@@ -85,28 +85,33 @@ export default function HomePage() {
       </header>
 
       {/* ============================================
-          2. AI 추천 에이전트를 메인으로, 시절소담 이야기는 그 아래 보조로
+          2. 히어로 — 소담이 대화창이 메인. 24절기 시그니처로 브랜드 정체성을 열어줌
          ============================================ */}
-      <section className="max-w-md mx-auto px-5 pt-3 pb-1">
+      <section className="relative overflow-hidden">
         <div
-          className="bg-paper border border-border-soft rounded-3xl overflow-hidden"
-          style={{ boxShadow: 'var(--shadow-sm)' }}
-        >
-          <div className="p-5">
-            <HomeAgentHero />
+          className="absolute inset-0 bg-gradient-to-b from-sage/[0.09] via-cream to-cream"
+          aria-hidden="true"
+        />
+        <div className="relative max-w-md mx-auto px-5 pt-3 pb-6">
+          <div className="flex items-center gap-2 mb-5">
+            <span className="text-[13px]">🌿</span>
+            <span className="text-[12px] tracking-[0.08em] text-sage font-medium">
+              {monthData.solarTerm} · {monthData.season}
+            </span>
           </div>
-          <div className="border-t border-border-soft" />
-          <div className="p-5 pt-4">
-            <WelcomeBanner />
-          </div>
+          <HomeAgentHero />
         </div>
+      </section>
+
+      <section className="max-w-md mx-auto px-5 pb-1">
+        <WelcomeBanner />
       </section>
 
       {/* ============================================
           3. 오늘의 제철 / 이번 주 추천 — 스와이프 캐러셀
              첫 카드만 제철+가격 모두 좋으면 "이번 주 추천"으로 승격
          ============================================ */}
-      <section className="max-w-md mx-auto pt-2 mb-2">
+      <section className="max-w-md mx-auto pt-7 mb-2">
         <div className="px-5">
           <div className="mb-6">
             <SectionHeader
