@@ -144,31 +144,25 @@ export default function HomeAgentHero() {
   }
 
   return (
-    <section className="max-w-md mx-auto px-5 pt-2 pb-7">
-      <div className="flex items-baseline justify-between mb-3">
-        <div className="flex items-baseline gap-3">
-          <span className="h-px w-8 bg-sage" />
-          <h2 className="font-display text-[17px] tracking-tight text-ink font-medium">
-            무엇을 만들까요
-          </h2>
-        </div>
+    <div>
+      <div className="flex items-center justify-between mb-3">
+        <p className="text-[12.5px] text-ink-soft leading-relaxed">
+          요리에 관한 거라면 뭐든 편하게 물어보세요.
+        </p>
         {hasConversation && (
           <button
             type="button"
             onClick={resetConversation}
-            className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
+            className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors shrink-0 ml-3"
           >
             새 대화
           </button>
         )}
       </div>
 
-      <div
-        className="bg-paper border border-border-soft rounded-2xl overflow-hidden"
-        style={{ boxShadow: 'var(--shadow-sm)' }}
-      >
+      <div>
         {hasConversation && (
-          <div ref={scrollRef} className="max-h-[56vh] overflow-y-auto px-5 pt-5 pb-1">
+          <div ref={scrollRef} className="max-h-[56vh] overflow-y-auto pb-1">
             {exchanges.map((ex, i) => (
               <div key={i} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
                 <p className="text-[12px] text-ink-soft/70 mb-2">{ex.question}</p>
@@ -250,10 +244,10 @@ export default function HomeAgentHero() {
           </div>
         )}
 
-        <div className={cn('px-4 py-3', hasConversation && 'border-t border-border-soft')}>
+        <div className={cn('py-3', hasConversation && 'border-t border-border-soft mt-1')}>
           <div
             className={cn(
-              'flex items-center gap-2 transition-all',
+              'flex items-center gap-2 rounded-2xl bg-cream-warm/50 px-3.5 transition-all',
               hasConversation ? 'h-11' : 'h-14'
             )}
           >
@@ -305,6 +299,6 @@ export default function HomeAgentHero() {
           ))}
         </div>
       )}
-    </section>
+    </div>
   );
 }

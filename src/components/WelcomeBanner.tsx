@@ -32,12 +32,8 @@ export default function WelcomeBanner() {
   }, []);
 
   return (
-    <section className="max-w-md mx-auto px-5 pt-3 pb-1">
-      <div
-        className="bg-paper border border-border-soft rounded-3xl p-5"
-        style={{ boxShadow: 'var(--shadow-sm)' }}
-      >
-        <SectionHeader eyebrow="시절소담 이야기" title="제철의 마음을 담았어요" icon="🌿" />
+    <div>
+      <SectionHeader eyebrow="시절소담 이야기" title="제철의 마음을 담았어요" icon="🌿" />
 
         <p className="mt-3 text-[12.5px] text-ink-soft leading-relaxed">
           24절기를 따라 흘러가는 계절처럼, 그때그때 가장 맛있고 넉넉한 제철 재료를
@@ -114,6 +110,5 @@ export default function WelcomeBanner() {
           ))}
         </div>
       </div>
-    </section>
   );
 }

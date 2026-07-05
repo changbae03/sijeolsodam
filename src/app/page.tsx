@@ -85,14 +85,22 @@ export default function HomePage() {
       </header>
 
       {/* ============================================
-          2. 시절소담 소개 배너 — 첫 방문 시에만 노출
+          2. 시절소담 소개 + AI 추천 에이전트 — 하나의 카드로 이어지는 홈 첫인상
          ============================================ */}
-      <WelcomeBanner />
-
-      {/* ============================================
-          3. AI 추천 에이전트 — 소담이에게 재료·상황을 물어보는 큰 대화창
-         ============================================ */}
-      <HomeAgentHero />
+      <section className="max-w-md mx-auto px-5 pt-3 pb-1">
+        <div
+          className="bg-paper border border-border-soft rounded-3xl overflow-hidden"
+          style={{ boxShadow: 'var(--shadow-sm)' }}
+        >
+          <div className="p-5">
+            <WelcomeBanner />
+          </div>
+          <div className="border-t border-border-soft" />
+          <div className="p-5 pt-4">
+            <HomeAgentHero />
+          </div>
+        </div>
+      </section>
 
       {/* ============================================
           3. 오늘의 제철 / 이번 주 추천 — 스와이프 캐러셀
