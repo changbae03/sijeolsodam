@@ -149,7 +149,7 @@ export default function HomeAgentHero() {
         <div className="flex items-center gap-1.5">
           <span className="text-[13px]">💬</span>
           <span className="text-[10.5px] tracking-[0.14em] uppercase text-terracotta font-semibold">
-            AI에게 물어보기
+            소담이에게 물어보기
           </span>
         </div>
         {hasConversation && (
