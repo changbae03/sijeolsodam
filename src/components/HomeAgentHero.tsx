@@ -145,10 +145,13 @@ export default function HomeAgentHero() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-3">
-        <p className="text-[12.5px] text-ink-soft leading-relaxed">
-          요리에 관한 거라면 뭐든 편하게 물어보세요.
-        </p>
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-1.5">
+          <span className="text-[13px]">💬</span>
+          <span className="text-[10.5px] tracking-[0.14em] uppercase text-terracotta font-semibold">
+            AI에게 물어보기
+          </span>
+        </div>
         {hasConversation && (
           <button
             type="button"
@@ -159,6 +162,9 @@ export default function HomeAgentHero() {
           </button>
         )}
       </div>
+      <p className="text-[12.5px] text-ink-soft leading-relaxed mb-3">
+        요리에 관한 거라면 뭐든 편하게 물어보세요.
+      </p>
 
       <div>
         {hasConversation && (
@@ -247,9 +253,10 @@ export default function HomeAgentHero() {
         <div className={cn('py-3', hasConversation && 'border-t border-border-soft mt-1')}>
           <div
             className={cn(
-              'flex items-center gap-2 rounded-2xl bg-cream-warm/50 px-3.5 transition-all',
+              'flex items-center gap-2 rounded-2xl bg-cream-warm/50 border border-sage/25 px-3.5 transition-all',
               hasConversation ? 'h-11' : 'h-14'
             )}
+            style={!hasConversation ? { boxShadow: '0 0 0 3px rgba(122,143,111,0.06)' } : undefined}
           >
             <input
               ref={inputRef}
@@ -273,9 +280,9 @@ export default function HomeAgentHero() {
               disabled={!query.trim() || isLoading}
               aria-label="소담이에게 물어보기"
               className={cn(
-                'flex-shrink-0 p-2 -mr-1.5 rounded-lg transition-colors',
+                'flex-shrink-0 p-2 -mr-1 rounded-full transition-colors',
                 query.trim() && !isLoading
-                  ? 'text-ink hover:bg-cream-warm'
+                  ? 'bg-terracotta text-cream'
                   : 'text-ink-soft/25 cursor-not-allowed'
               )}
             >
