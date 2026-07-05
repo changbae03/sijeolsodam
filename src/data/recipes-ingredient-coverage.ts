@@ -337,21 +337,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '주꾸미볶음',
   },
   {
-    id: 'ing-광어-1', month: 11, title: '쫄깃한 광어회', subtitle: '담백하고 쫄깃한 가을·겨울 대표 흰살 생선회',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '광어', description: '쫄깃한 식감이 매력인 광어는 얇게 썰어 회로 즐기면 담백한 맛이 살아나요.',
-    ingredients: [
-      { name: '광어회', amount: '300g(손질된 것)' }, { name: '깻잎', amount: '10장' }, { name: '초고추장', amount: '적당량' }, { name: '와사비간장', amount: '적당량' },
-    ],
-    steps: [
-      { title: '준비', description: '손질된 광어회를 얇게 슬라이스합니다.' },
-      { title: '채소 준비', description: '깻잎과 곁들일 채소를 씻어 물기를 뺍니다.' },
-      { title: '플레이팅', description: '접시에 회를 보기 좋게 담고 초고추장과 와사비간장을 곁들입니다.' },
-    ],
-    tips: ['지느러미살(엔가와)은 더 쫄깃해 따로 즐겨보세요.', '먹기 직전에 썰어야 가장 신선해요.'],
-    youtubeQuery: '광어회 뜨는 법',
-  },
-  {
     id: 'ing-방어-1', month: 10, title: '고소한 방어회', subtitle: '기름지고 고소한 가을·겨울 대표 회',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '방어', description: '기름이 올라 고소한 방어는 두툼하게 썰어 회로 즐기는 게 제일이에요.',
