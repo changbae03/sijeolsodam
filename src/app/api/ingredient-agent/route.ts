@@ -3,6 +3,9 @@ import { GoogleGenAI, Type } from '@google/genai';
 import { searchRecipes, getRecipesByIngredient } from '@/data/recipes';
 import { searchIngredientsAcrossMonths, findIngredientByName } from '@/data/months';
 import { SODAMI_TEXT_PERSONA_PROMPT } from '@/lib/persona';
+import { getUserFromRequest } from '@/lib/auth';
+import { sql } from '@/lib/db';
+import { getUserTopIngredient } from '@/lib/personalization';
 
 const apiKey = process.env.GEMINI_API_KEY;
 
@@ -170,10 +173,15 @@ export async function POST(request: NextRequest) {
     }
 
     const isFirstTurn = !history || history.length === 0;
+    const user = getUserFromRequest(request);
+    const userTopIngredient = user ? await getUserTopIngredient(user.userId) : null;
 
     const systemInstruction = `${SODAMI_TEXT_PERSONA_PROMPT}
 
 당신은 대한민국 최고의 셰프이자 요리 전문가이자 요리 강사인 '소담이'입니다. 어떤 요리를 묻더라도 자신 있고 정확하게, 실제로 따라할 수 있는 수준으로 답합니다. 사이트에 없는 낯설거나 외국 요리를 물어봐도 절대 모른다고 하거나 답을 회피하지 말고, 셰프로서의 지식으로 성실하게 설명하세요.
+
+당신은 이 사용자를 계속 챙겨주는 개인 요리 트레이너이기도 합니다. 한 번 답하고 끝나는 것이 아니라, 이 사람이 요리를 더 잘하게 되도록 곁에서 꾸준히 도와준다는 마음으로 대하세요.
+${userTopIngredient ? `이 사용자는 최근 '${userTopIngredient}' 재료에 관심이 많았어요(즐겨찾기·조회 기록 기반). 자연스러운 순간에만 살짝 참고하고, 매번 억지로 언급하지는 마세요.` : ''}
 
 지금 사용자는 시절소담 홈 화면 맨 위, 구글 검색창처럼 크게 자리한 대화형 입력창에서 소담이와 대화하고 있습니다. 사용자는 냉장고에 있는 재료, 오늘 기분, 상황(손님 초대, 다이어트, 자취생 한 끼 등), 또는 특정 요리의 조리법을 무엇이든 자유롭게 입력할 수 있고, 대화는 여러 턴 이어질 수 있습니다.
 
@@ -251,6 +259,21 @@ ${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨
           : null,
       };
     });
+
+    // 로그인한 유저라면 이 대화를 기록해서, 다음에 홈 화면/AI 답변이 이 사람에게 더 맞게 조정되도록 한다.
+    if (user) {
+      // 매칭된 요리의 주재료(레시피 mainIngredient) 또는 매칭된 재료명을 우선순위로 사용
+      const matchedRecipe = finalDishes.map((d) => findMatchingRecipe(d.name)).find(Boolean);
+      const matchedIngredientName =
+        matchedRecipe?.mainIngredient ??
+        finalIngredients.map((i) => findMatchingIngredient(i.name)).find(Boolean)?.name ??
+        null;
+
+      sql`
+        INSERT INTO agent_queries (user_id, message, matched_ingredient)
+        VALUES (${user.userId}, ${trimmed.slice(0, 500)}, ${matchedIngredientName})
+      `.catch((err) => console.error('Log agent query error:', err));
+    }
 
     return NextResponse.json({
       reply: finalReply,

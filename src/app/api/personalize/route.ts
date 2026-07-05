@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { sql } from '@/lib/db';
 import { getUserFromRequest } from '@/lib/auth';
-import { getRecipeById, getRecipesByIngredient } from '@/data/recipes';
+import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonthData } from '@/lib/season';
 import { getKamisMappingByName } from '@/lib/kamis-mapping';
 import { fetchKamisPriceAnalysis } from '@/lib/kamis';
+import { getUserTopIngredient } from '@/lib/personalization';
 
 function pickTodaySeasonalIngredient() {
   const monthData = getCurrentMonthData();
@@ -129,41 +130,11 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // 즐겨찾기 + 최근 조회 기록을 합쳐서 이 유저가 어떤 재료에 관심이 많은지 추정
+    const topIngredient = await getUserTopIngredient(user.userId);
+
     const favoriteRows = await sql`
       SELECT recipe_id FROM favorites WHERE user_id = ${user.userId}
     `;
-    const viewRows = await sql`
-      SELECT main_ingredient FROM recipe_views
-      WHERE user_id = ${user.userId} AND main_ingredient IS NOT NULL
-      ORDER BY created_at DESC
-      LIMIT 30
-    `;
-
-    const ingredientCounts = new Map<string, number>();
-    for (const row of favoriteRows) {
-      const recipe = getRecipeById(row.recipe_id as string);
-      if (recipe) {
-        ingredientCounts.set(
-          recipe.mainIngredient,
-          (ingredientCounts.get(recipe.mainIngredient) ?? 0) + 2 // 즐겨찾기는 더 강한 신호로 가중치 2배
-        );
-      }
-    }
-    for (const row of viewRows) {
-      const ingredient = row.main_ingredient as string;
-      ingredientCounts.set(ingredient, (ingredientCounts.get(ingredient) ?? 0) + 1);
-    }
-
-    let topIngredient: string | null = null;
-    let topCount = 0;
-    for (const [ingredient, count] of ingredientCounts) {
-      if (count > topCount) {
-        topIngredient = ingredient;
-        topCount = count;
-      }
-    }
-
     const favoritedIds = new Set(favoriteRows.map((r) => r.recipe_id as string));
     let recommendedRecipe = null;
     if (topIngredient) {

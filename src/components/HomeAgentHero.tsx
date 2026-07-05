@@ -250,7 +250,12 @@ export default function HomeAgentHero() {
           </div>
         )}
 
-        <div className={cn('py-3', hasConversation && 'border-t border-border-soft mt-1')}>
+        <div
+          className={cn(
+            'sticky bottom-16 z-20 py-3 bg-paper/95 backdrop-blur-xl',
+            hasConversation && 'border-t border-border-soft mt-1'
+          )}
+        >
           <div
             className={cn(
               'flex items-center gap-2 rounded-2xl bg-cream-warm/50 border border-sage/25 px-3.5 transition-all',
