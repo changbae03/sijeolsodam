@@ -12,6 +12,7 @@ interface PersonalizeData {
   topIngredient: string | null;
   recommendedRecipe: { id: string; title: string } | null;
   weatherNote: string | null;
+  priceNote: string | null;
 }
 
 const FEATURES = [
@@ -85,6 +86,9 @@ export default function WelcomeBanner() {
                 예요.
               </p>
             )}
+            {data.priceNote && (
+              <p className="text-[12.5px] text-terracotta mt-1.5">{data.priceNote}</p>
+            )}
             {data.topIngredient && data.recommendedRecipe && (
               <Link
                 href={`/recipe/${data.recommendedRecipe.id}`}
@@ -116,6 +120,9 @@ export default function WelcomeBanner() {
                 </Link>
                 예요.
               </p>
+            )}
+            {data?.priceNote && (
+              <p className="text-[12.5px] text-terracotta mt-1.5">{data.priceNote}</p>
             )}
             <Link
               href="/login"

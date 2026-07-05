@@ -3,6 +3,8 @@ import { sql } from '@/lib/db';
 import { getUserFromRequest } from '@/lib/auth';
 import { getRecipeById, getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonthData } from '@/lib/season';
+import { getKamisMappingByName } from '@/lib/kamis-mapping';
+import { fetchKamisPriceAnalysis } from '@/lib/kamis';
 
 function pickTodaySeasonalIngredient() {
   const monthData = getCurrentMonthData();
@@ -27,12 +29,12 @@ function getKoreaHour(): number {
   return Number(hourStr) % 24;
 }
 
+/** 식사 여부를 묻는 사적인 인사말 대신, 시간대에 따라 톤만 살짝 바뀌는 담백한 인사 */
 function greetingByHour() {
   const hour = getKoreaHour();
   if (hour < 6) return '고요한 새벽이네요';
   if (hour < 11) return '좋은 아침이에요';
-  if (hour < 14) return '점심은 맛있게 드셨어요';
-  if (hour < 17) return '나른한 오후예요';
+  if (hour < 17) return '안녕하세요';
   if (hour < 21) return '저녁 시간이 다가와요';
   return '하루를 마무리하는 시간이네요';
 }
@@ -70,6 +72,36 @@ async function fetchWeatherNote(lat: number, lon: number): Promise<string | null
   }
 }
 
+/** 실제 KAMIS 시세 데이터를 근거로 "지금 사기 좋은 때인지"를 짧게 코멘트한다 */
+async function fetchPriceNote(ingredientName: string): Promise<string | null> {
+  const mapping = getKamisMappingByName(ingredientName);
+  if (!mapping) return null;
+
+  try {
+    const analysis = await Promise.race([
+      fetchKamisPriceAnalysis(mapping, 30),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 3000)),
+    ]);
+    if (!analysis || analysis.latestPrice === null || analysis.avgPrice === null) return null;
+
+    const { displayName, latestPrice, avgPrice, isAtLowestInPeriod } = analysis;
+    const ratio = latestPrice / avgPrice;
+
+    if (isAtLowestInPeriod) {
+      return `${displayName}, 최근 한 달 중 가장 저렴해요. 지금이 사기 딱 좋은 때예요 📉`;
+    }
+    if (ratio <= 0.92) {
+      return `${displayName} 값이 평소보다 내려가고 있어요. 장 보기 좋은 타이밍이에요.`;
+    }
+    if (ratio >= 1.15) {
+      return `${displayName} 값이 요즘 조금 오르고 있어요. 급하지 않다면 잠시 기다려도 좋아요.`;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export async function GET(request: NextRequest) {
   const todayIngredient = pickTodaySeasonalIngredient();
   const user = getUserFromRequest(request);
@@ -78,7 +110,11 @@ export async function GET(request: NextRequest) {
   const lat = Number(searchParams.get('lat'));
   const lon = Number(searchParams.get('lon'));
   const hasLocation = Number.isFinite(lat) && Number.isFinite(lon) && (lat !== 0 || lon !== 0);
-  const weatherNote = hasLocation ? await fetchWeatherNote(lat, lon) : null;
+
+  const [weatherNote, priceNote] = await Promise.all([
+    hasLocation ? fetchWeatherNote(lat, lon) : Promise.resolve(null),
+    todayIngredient ? fetchPriceNote(todayIngredient.name) : Promise.resolve(null),
+  ]);
 
   if (!user) {
     return NextResponse.json({
@@ -88,6 +124,7 @@ export async function GET(request: NextRequest) {
       topIngredient: null,
       recommendedRecipe: null,
       weatherNote,
+      priceNote,
     });
   }
 
@@ -144,6 +181,7 @@ export async function GET(request: NextRequest) {
       topIngredient,
       recommendedRecipe,
       weatherNote,
+      priceNote,
     });
   } catch (error) {
     console.error('Personalize error:', error);
@@ -154,6 +192,7 @@ export async function GET(request: NextRequest) {
       topIngredient: null,
       recommendedRecipe: null,
       weatherNote,
+      priceNote,
     });
   }
 }
