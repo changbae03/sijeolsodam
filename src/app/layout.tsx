@@ -3,6 +3,7 @@ import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 import { FavoritesProvider } from "@/lib/favorites-context";
 import BottomNav from "@/components/BottomNav";
+import GlobalSodami from "@/components/GlobalSodami";
 
 export const metadata: Metadata = {
   title: "시절소담 — 제철 식재료로 짓는 한 끼",
@@ -53,6 +54,7 @@ export default function RootLayout({
         <AuthProvider>
           <FavoritesProvider>
             <div className="flex-1 pb-20">{children}</div>
+            <GlobalSodami />
             <BottomNav />
           </FavoritesProvider>
         </AuthProvider>
