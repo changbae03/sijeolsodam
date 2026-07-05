@@ -69,6 +69,7 @@ import { recipesMulmegiExpansion } from './recipes-mulmegi-expansion';
 import { recipesPeachExpansion } from './recipes-peach-expansion';
 import { recipesAutumnRadishExpansion } from './recipes-autumnradish-expansion';
 import { recipesAutumnCabbageExpansion } from './recipes-autumncabbage-expansion';
+import { recipesMustardGreensExpansion } from './recipes-mustardgreens-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -141,6 +142,7 @@ export const allRecipes: Recipe[] = [
   ...recipesPeachExpansion,
   ...recipesAutumnRadishExpansion,
   ...recipesAutumnCabbageExpansion,
+  ...recipesMustardGreensExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
