@@ -408,34 +408,6 @@ export const recipesQ3Extra2: Recipe[] = [
 
   // ===== 12월 =====
   {
-    id: '12-11',
-    month: 12,
-    title: '향긋한 모과차',
-    subtitle: '진한 향과 새콤함이 매력인 겨울 차',
-    category: '음료/청',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 30,
-    servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '모과',
-    description: '향이 진하고 새콤한 모과를 꿀에 재워 끓여낸 향긋한 겨울 차예요.',
-    ingredients: [
-      { name: '모과', amount: '1개' },
-      { name: '설탕', amount: '1컵' },
-      { name: '물', amount: '4컵' },
-    ],
-    steps: [
-      { title: '모과 손질', description: '모과는 깨끗이 씻어 얇게 썹니다.' },
-      { title: '재우기', description: '모과와 설탕을 섞어 하루 정도 재웁니다.', timerSeconds: 86400 },
-      { title: '끓이기', description: '재운 모과를 물과 함께 약불에서 끓입니다.', timerSeconds: 1200 },
-    ],
-    tips: [
-      '모과는 향이 강하니 차로 마실 때 적당량만 넣어주세요.',
-      '꿀을 더하면 더 부드러운 단맛을 즐길 수 있어요.',
-    ],
-    youtubeQuery: '모과차 만들기',
-  },
-  {
     id: '12-13',
     month: 12,
     title: '달콤한 곶감 샐러드',
@@ -464,33 +436,5 @@ export const recipesQ3Extra2: Recipe[] = [
       '곶감 대신 단감으로도 만들 수 있어요.',
     ],
     youtubeQuery: '곶감 샐러드 만들기',
-  },
-  {
-    id: '12-14',
-    month: 12,
-    title: '향긋한 모과 정과',
-    subtitle: '쫄깃하고 향긋한 겨울철 전통 간식',
-    category: '간식',
-    difficulty: '보통', level: 'home',
-    cookTime: 50,
-    servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '모과',
-    description: '모과를 설탕에 졸여낸 쫄깃하고 향긋한 전통 간식이에요. 차와 함께 즐기기 좋습니다.',
-    ingredients: [
-      { name: '모과', amount: '1개' },
-      { name: '설탕', amount: '1컵' },
-      { name: '물', amount: '1컵' },
-    ],
-    steps: [
-      { title: '모과 손질', description: '모과는 얇게 슬라이스합니다.' },
-      { title: '데치기', description: '끓는 물에 모과를 데쳐 떫은맛을 제거합니다.', timerSeconds: 180 },
-      { title: '졸이기', description: '설탕과 물을 넣고 약불에서 윤기 나게 졸입니다.', timerSeconds: 1800, tip: '타지 않게 중간중간 저어주세요.' },
-    ],
-    tips: [
-      '말려서 보관하면 더 쫄깃한 정과를 즐길 수 있어요.',
-      '꿀을 더하면 더 깊은 단맛을 낼 수 있어요.',
-    ],
-    youtubeQuery: '모과정과 만들기',
   },
 ];
