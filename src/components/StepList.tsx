@@ -77,7 +77,7 @@ function ProgressDots({ total, current }: { total: number; current: number }) {
   return (
     <div className="sticky top-0 z-10 -mx-5 px-5 py-2.5 bg-cream/95 backdrop-blur-sm">
       <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[12px] text-ink-soft">
+        <span className="text-[13px] text-ink-soft">
           {current + 1} / {total} 단계
         </span>
       </div>
@@ -155,7 +155,7 @@ function StepItem({
       }`}
     >
       <div
-        className={`shrink-0 w-7 h-7 rounded-full text-[13px] font-medium flex items-center justify-center mt-0.5 transition-colors ${
+        className={`shrink-0 w-7 h-7 rounded-full text-[14px] font-medium flex items-center justify-center mt-0.5 transition-colors ${
           isActive ? 'bg-sage text-cream' : 'bg-border-soft text-ink-soft'
         }`}
       >
@@ -174,17 +174,17 @@ function StepItem({
           </div>
         )}
         <div className="flex items-start justify-between gap-2">
-          <h3 className="font-medium text-[14.5px] text-ink">{step.title}</h3>
+          <h3 className="font-medium text-[15.5px] text-ink">{step.title}</h3>
           <button
             onClick={onAsk}
-            className="shrink-0 text-[11px] text-sage bg-sage/8 border border-sage/20 rounded-full px-2.5 py-1 mt-0.5"
+            className="shrink-0 text-[12px] text-sage bg-sage/8 border border-sage/20 rounded-full px-2.5 py-1 mt-0.5"
           >
             🧑‍🍳 물어보기
           </button>
         </div>
-        <p className="text-[13.5px] text-ink-soft leading-relaxed mt-1">{step.description}</p>
+        <p className="text-[14.5px] text-ink-soft leading-relaxed mt-1">{step.description}</p>
         {step.tip && (
-          <p className="text-[12.5px] text-terracotta mt-1.5 leading-relaxed">
+          <p className="text-[13.5px] text-terracotta mt-1.5 leading-relaxed">
             tip · {step.tip}
           </p>
         )}
@@ -217,11 +217,11 @@ function StepItem({
                 {running ? <PauseIcon /> : isDone ? <CheckIcon /> : <PlayIcon />}
               </span>
             </button>
-            <span className="text-[13px] text-ink-soft tabular-nums">
+            <span className="text-[14px] text-ink-soft tabular-nums">
               {formatTime(remaining)}
             </span>
             {remaining !== total && (
-              <button onClick={resetTimer} className="text-[12px] text-ink-soft/70 underline">
+              <button onClick={resetTimer} className="text-[13px] text-ink-soft/70 underline">
                 초기화
               </button>
             )}
@@ -229,20 +229,20 @@ function StepItem({
         )}
         {step.checkpoint && (
           <div className="flex items-start gap-1.5 mt-2.5 bg-sage/8 rounded-xl px-3 py-2">
-            <span className="text-[13px] shrink-0">✓</span>
-            <p className="text-[12px] text-sage-dark leading-relaxed">{step.checkpoint}</p>
+            <span className="text-[14px] shrink-0">✓</span>
+            <p className="text-[13px] text-sage-dark leading-relaxed">{step.checkpoint}</p>
           </div>
         )}
         {step.warning && (
           <div className="flex items-start gap-1.5 mt-2 bg-terracotta/8 rounded-xl px-3 py-2">
-            <span className="text-[13px] shrink-0">⚠️</span>
-            <p className="text-[12px] text-terracotta leading-relaxed">{step.warning}</p>
+            <span className="text-[14px] shrink-0">⚠️</span>
+            <p className="text-[13px] text-terracotta leading-relaxed">{step.warning}</p>
           </div>
         )}
         {step.recoveryTip && (
           <div className="flex items-start gap-1.5 mt-2 bg-cream-warm rounded-xl px-3 py-2">
-            <span className="text-[13px] shrink-0">🩹</span>
-            <p className="text-[12px] text-ink-soft leading-relaxed">{step.recoveryTip}</p>
+            <span className="text-[14px] shrink-0">🩹</span>
+            <p className="text-[13px] text-ink-soft leading-relaxed">{step.recoveryTip}</p>
           </div>
         )}
       </div>

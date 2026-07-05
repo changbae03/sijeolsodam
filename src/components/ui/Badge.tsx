@@ -21,8 +21,8 @@ const variantStyles: Record<BadgeVariant, string> = {
 
 // 8pt 시스템: padding y는 4/8, x는 8/12
 const sizeStyles: Record<BadgeSize, string> = {
-  sm: 'px-2 py-1 text-[11px] rounded-md', // 8x4 padding
-  md: 'px-3 py-1.5 text-[12px] rounded-lg', // 12x6 padding
+  sm: 'px-2 py-1 text-[12px] rounded-md', // 8x4 padding
+  md: 'px-3 py-1.5 text-[13px] rounded-lg', // 12x6 padding
 };
 
 const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(

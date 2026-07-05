@@ -20,15 +20,15 @@ interface SectionTitleProps extends Omit<React.HTMLAttributes<HTMLElement>, 'tit
 }
 
 const titleStyles = {
-  sm: 'text-[17px] font-display font-medium tracking-tight',
+  sm: 'text-[18px] font-display font-medium tracking-tight',
   md: 'text-[22px] font-display font-medium tracking-tight',
   lg: 'text-[28px] font-display font-medium tracking-tight leading-tight',
 };
 
 const subtitleStyles = {
-  sm: 'text-[12px]',
-  md: 'text-[13px]',
-  lg: 'text-[14px]',
+  sm: 'text-[13px]',
+  md: 'text-[14px]',
+  lg: 'text-[15px]',
 };
 
 const SectionTitle = React.forwardRef<HTMLElement, SectionTitleProps>(

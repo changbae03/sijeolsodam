@@ -40,7 +40,7 @@ const Overline = React.forwardRef<HTMLDivElement, OverlineProps>(
       )}
       <p
         className={cn(
-          'text-[11px] tracking-[0.2em] uppercase font-semibold',
+          'text-[12px] tracking-[0.2em] uppercase font-semibold',
           colorStyles[color]
         )}
       >

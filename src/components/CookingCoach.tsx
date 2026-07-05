@@ -122,7 +122,7 @@ export default function CookingCoach({
         aria-label="AI 요리 코치 소담이 열기"
       >
         <span className="text-[22px]">🧑‍🍳</span>
-        <span className="absolute -top-1 -right-1 min-w-[20px] h-5 px-1 rounded-full bg-sage text-cream text-[10px] font-medium flex items-center justify-center border-2 border-cream">
+        <span className="absolute -top-1 -right-1 min-w-[20px] h-5 px-1 rounded-full bg-sage text-cream text-[11px] font-medium flex items-center justify-center border-2 border-cream">
           {currentStepIndex + 1}
         </span>
       </motion.button>
@@ -151,10 +151,10 @@ export default function CookingCoach({
                 <div className="flex items-baseline gap-3">
                   <span className="h-px w-8 bg-sage" />
                   <div>
-                    <p className="font-display text-[15px] text-ink font-medium">
+                    <p className="font-display text-[16px] text-ink font-medium">
                       소담이에게 물어보기
                     </p>
-                    <p className="text-[11px] text-ink-soft/70 mt-0.5">
+                    <p className="text-[12px] text-ink-soft/70 mt-0.5">
                       {effectiveStepIndex + 1} / {totalSteps}단계 진행 중
                     </p>
                   </div>
@@ -176,7 +176,7 @@ export default function CookingCoach({
               <div ref={scrollRef} className="flex-1 overflow-y-auto px-5 py-5">
                 {exchanges.length === 0 && (
                   <div>
-                    <p className="text-[13px] text-ink-soft leading-relaxed mb-4">
+                    <p className="text-[14px] text-ink-soft leading-relaxed mb-4">
                       안녕하세요, 소담이예요. 손에 양념이 묻었을 땐 말로 물어보세요. 각 단계 옆
                       아이콘을 누르면 그 단계에 대해 바로 물어볼 수 있어요.
                     </p>
@@ -185,7 +185,7 @@ export default function CookingCoach({
                         <button
                           key={q}
                           onClick={() => sendMessage(q)}
-                          className="text-left text-[13px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-xl px-4 py-2.5 hover:border-sage/40 hover:text-ink transition-colors"
+                          className="text-left text-[14px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-xl px-4 py-2.5 hover:border-sage/40 hover:text-ink transition-colors"
                         >
                           {q}
                         </button>
@@ -201,12 +201,12 @@ export default function CookingCoach({
                     animate={{ opacity: 1, y: 0 }}
                     className={cn(i > 0 && 'border-t border-border-soft/70 pt-4 mt-4')}
                   >
-                    <p className="text-[12px] text-ink-soft/70 mb-1.5">{ex.question}</p>
+                    <p className="text-[13px] text-ink-soft/70 mb-1.5">{ex.question}</p>
                     {ex.reply && <StructuredReplyView text={ex.reply} size="sm" />}
                     {i === exchanges.length - 1 && loading && (
-                      <p className="text-[13px] text-ink-soft/60 mt-1">소담이가 생각하고 있어요</p>
+                      <p className="text-[14px] text-ink-soft/60 mt-1">소담이가 생각하고 있어요</p>
                     )}
-                    {ex.error && <p className="text-[13px] text-terracotta mt-1">{ex.error}</p>}
+                    {ex.error && <p className="text-[14px] text-terracotta mt-1">{ex.error}</p>}
                   </motion.div>
                 ))}
               </div>
@@ -229,7 +229,7 @@ export default function CookingCoach({
                       }
                     }}
                     placeholder="궁금한 걸 물어보세요"
-                    className="flex-1 bg-transparent text-[14px] text-ink outline-none placeholder:text-ink-soft/45"
+                    className="flex-1 bg-transparent text-[15px] text-ink outline-none placeholder:text-ink-soft/45"
                   />
                   <button
                     type="submit"

@@ -13,10 +13,10 @@ interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 const variantStyles = {
-  body: 'text-[14px] leading-relaxed',
-  caption: 'text-[13px] leading-relaxed',
-  label: 'text-[12px] font-medium leading-tight',
-  hint: 'text-[11px] leading-tight',
+  body: 'text-[15px] leading-relaxed',
+  caption: 'text-[14px] leading-relaxed',
+  label: 'text-[13px] font-medium leading-tight',
+  hint: 'text-[12px] leading-tight',
 };
 
 const colorStyles = {

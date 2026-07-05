@@ -54,7 +54,7 @@ export default function SignupPage() {
           placeholder="이름 (선택)"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full bg-paper border border-border-soft rounded-xl px-4 py-3.5 text-[14px] outline-none"
+          className="w-full bg-paper border border-border-soft rounded-xl px-4 py-3.5 text-[15px] outline-none"
         />
         <motion.input
           whileFocus={{ scale: 1.01, borderColor: '#5B6E54' }}
@@ -63,7 +63,7 @@ export default function SignupPage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full bg-paper border border-border-soft rounded-xl px-4 py-3.5 text-[14px] outline-none"
+          className="w-full bg-paper border border-border-soft rounded-xl px-4 py-3.5 text-[15px] outline-none"
         />
         <motion.input
           whileFocus={{ scale: 1.01, borderColor: '#5B6E54' }}
@@ -73,14 +73,14 @@ export default function SignupPage() {
           onChange={(e) => setPassword(e.target.value)}
           required
           minLength={6}
-          className="w-full bg-paper border border-border-soft rounded-xl px-4 py-3.5 text-[14px] outline-none"
+          className="w-full bg-paper border border-border-soft rounded-xl px-4 py-3.5 text-[15px] outline-none"
         />
 
         {error && (
           <motion.p
             initial={{ opacity: 0, x: -4 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-[13px] text-terracotta"
+            className="text-[14px] text-terracotta"
           >
             {error}
           </motion.p>
@@ -90,13 +90,13 @@ export default function SignupPage() {
           whileTap={{ scale: 0.97 }}
           type="submit"
           disabled={loading}
-          className="w-full bg-sage text-cream rounded-xl py-3.5 text-[14px] font-medium mt-2 disabled:opacity-60"
+          className="w-full bg-sage text-cream rounded-xl py-3.5 text-[15px] font-medium mt-2 disabled:opacity-60"
         >
           {loading ? '가입 중...' : '회원가입'}
         </motion.button>
       </motion.form>
 
-      <p className="text-center text-[13px] text-ink-soft mt-6">
+      <p className="text-center text-[14px] text-ink-soft mt-6">
         이미 계정이 있으신가요?{' '}
         <Link href="/login" className="text-sage font-medium">
           로그인

@@ -48,8 +48,8 @@ export default function PriceAlertSection({ month }: { month: number }) {
 
   return (
     <section className="mb-7">
-      <h2 className="font-display text-[16px] text-ink mb-1">이번 달 가격 소식</h2>
-      <p className="text-[12px] text-ink-soft mb-3">
+      <h2 className="font-display text-[17px] text-ink mb-1">이번 달 가격 소식</h2>
+      <p className="text-[13px] text-ink-soft mb-3">
         최근 30일 서울 소매가 기준이에요 · 자료: KAMIS 농산물유통정보
       </p>
       <div className="space-y-2">
@@ -62,9 +62,9 @@ export default function PriceAlertSection({ month }: { month: number }) {
             className="bg-paper rounded-2xl border border-border-soft px-4 py-3.5"
           >
             <div className="flex items-center justify-between">
-              <span className="text-[14px] font-medium text-ink">{r.displayName}</span>
+              <span className="text-[15px] font-medium text-ink">{r.displayName}</span>
               {r.latestPrice !== null && (
-                <span className="text-[14px] text-ink-soft tabular-nums">
+                <span className="text-[15px] text-ink-soft tabular-nums">
                   {r.latestPrice.toLocaleString()}원/kg
                 </span>
               )}
@@ -73,11 +73,11 @@ export default function PriceAlertSection({ month }: { month: number }) {
               <div className="mt-2">
                 <PriceRangeBar min={r.minPrice} max={r.maxPrice} current={r.latestPrice} />
                 {r.isAtLowestInPeriod ? (
-                  <p className="text-[12px] text-terracotta mt-1.5">
+                  <p className="text-[13px] text-terracotta mt-1.5">
                     최근 30일 중 가장 저렴한 가격이에요
                   </p>
                 ) : (
-                  <p className="text-[12px] text-ink-soft/80 mt-1.5">
+                  <p className="text-[13px] text-ink-soft/80 mt-1.5">
                     최근 30일 평균 {r.avgPrice?.toLocaleString()}원 · 최저{' '}
                     {r.minPrice.toLocaleString()}원 ~ 최고 {r.maxPrice.toLocaleString()}원
                   </p>

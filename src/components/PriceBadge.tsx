@@ -40,7 +40,7 @@ export default function PriceBadge({ name, variant = 'badge' }: PriceBadgeProps)
     // 홈: 눈에 띄게 저렴할 때만 한 줄 문장으로 (그렇지 않으면 굳이 보여주지 않음)
     if (insight.tone !== 'cheap' || insight.vsLastWeekPct === null) return null;
     return (
-      <p className="text-[12px] text-sage-dark mt-1.5">
+      <p className="text-[13px] text-sage-dark mt-1.5">
         지난주보다 {Math.abs(insight.vsLastWeekPct)}% 저렴해 지금 장보기 좋습니다.
       </p>
     );
@@ -49,7 +49,7 @@ export default function PriceBadge({ name, variant = 'badge' }: PriceBadgeProps)
   if (insight.tone === 'expensive') {
     // 가격 상승은 눈에 잘 띄어야 하는 신호라서, 옅은 톤 대신 진한 배경으로 강조
     return (
-      <span className="inline-flex items-center gap-1.5 whitespace-nowrap font-semibold px-2 py-1 text-[11px] rounded-md bg-terracotta text-paper">
+      <span className="inline-flex items-center gap-1.5 whitespace-nowrap font-semibold px-2 py-1 text-[12px] rounded-md bg-terracotta text-paper">
         {insight.badge}
       </span>
     );

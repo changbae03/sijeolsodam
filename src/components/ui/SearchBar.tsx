@@ -66,7 +66,7 @@ const SearchBar = React.forwardRef<HTMLInputElement, SearchBarProps>(
         placeholder={placeholder}
         disabled={disabled}
         className={cn(
-          'flex-1 bg-transparent text-[14px] text-ink',
+          'flex-1 bg-transparent text-[15px] text-ink',
           'placeholder:text-ink-soft/50',
           'outline-none focus:placeholder:text-ink-soft/30 transition-colors',
           className

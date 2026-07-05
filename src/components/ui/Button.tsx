@@ -25,9 +25,9 @@ const variantStyles: Record<ButtonVariant, string> = {
 
 // 8pt 시스템: 높이는 32/40/48 (8의 배수), 패딩도 8/16/24
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: 'h-8 px-3 text-[13px]', // 32px height
-  md: 'h-10 px-4 text-[14px]', // 40px height
-  lg: 'h-12 px-6 text-[15px]', // 48px height
+  sm: 'h-8 px-3 text-[14px]', // 32px height
+  md: 'h-10 px-4 text-[15px]', // 40px height
+  lg: 'h-12 px-6 text-[16px]', // 48px height
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

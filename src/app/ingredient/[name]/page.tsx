@@ -66,10 +66,10 @@ export default function IngredientDetailPage() {
   if (!found) {
     return (
       <main className="max-w-md mx-auto px-5 pt-20 text-center">
-        <p className="text-[14px] text-ink-soft">
+        <p className="text-[15px] text-ink-soft">
           &ldquo;{name}&rdquo; 식재료 정보를 찾을 수 없어요.
         </p>
-        <Link href="/seasonal" className="inline-block mt-4 text-[13px] text-terracotta font-medium">
+        <Link href="/seasonal" className="inline-block mt-4 text-[14px] text-terracotta font-medium">
           제철 달력으로 돌아가기 →
         </Link>
       </main>
@@ -139,7 +139,7 @@ export default function IngredientDetailPage() {
             </Badge>
           </div>
           {ingredient.origin && (
-            <p className="text-[12px] text-ink-soft/70 mt-1.5">📍 {ingredient.origin}</p>
+            <p className="text-[13px] text-ink-soft/70 mt-1.5">📍 {ingredient.origin}</p>
           )}
         </section>
 
@@ -147,7 +147,7 @@ export default function IngredientDetailPage() {
             3. 에디토리얼 소개 — 더 강한 한 줄
            ============================================ */}
         <section className="pb-8">
-          <p className="text-[15px] text-ink leading-[1.7] tracking-tight">
+          <p className="text-[16px] text-ink leading-[1.7] tracking-tight">
             <span className="font-medium">{peakMonth}월이 가장 맛있는 시기입니다.</span>
             <br />
             {ingredient.description}
@@ -176,7 +176,7 @@ export default function IngredientDetailPage() {
                 <div key={level} className={isFirst ? 'mt-4' : 'mt-8'}>
                   <div className="px-5 mb-3 flex items-center gap-2">
                     <span
-                      className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${
+                      className={`text-[12px] font-semibold px-2.5 py-1 rounded-full ${
                         level === 'chef'
                           ? 'bg-ink text-cream'
                           : level === 'world'
@@ -187,17 +187,17 @@ export default function IngredientDetailPage() {
                       {meta.emoji} {meta.label}
                     </span>
                     {!isFirst && (
-                      <span className="text-[11px] text-ink-soft/50">→ 한 단계 더 도전</span>
+                      <span className="text-[12px] text-ink-soft/50">→ 한 단계 더 도전</span>
                     )}
                   </div>
-                  <p className="px-5 text-[12px] text-ink-soft/70 mb-3 -mt-1.5">{meta.lead}</p>
+                  <p className="px-5 text-[13px] text-ink-soft/70 mb-3 -mt-1.5">{meta.lead}</p>
 
                   <div className="flex gap-4 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
                     {levelRecipes.map((recipe) => (
                       <div key={recipe.id} className="w-[200px] flex-shrink-0 snap-start">
                         <RecipeCard recipe={recipe} />
                         {recipe.cuisineContext && (
-                          <p className="text-[11px] text-ink-soft/60 mt-1.5 px-0.5">
+                          <p className="text-[12px] text-ink-soft/60 mt-1.5 px-0.5">
                             🌍 {recipe.cuisineContext.country} 요리
                           </p>
                         )}
@@ -216,7 +216,7 @@ export default function IngredientDetailPage() {
         {ingredient.tip && (
           <section className="mb-8">
             <SectionHeader emoji="📦" title="보관 팁" />
-            <p className="text-[13.5px] text-ink leading-relaxed mt-3">{ingredient.tip}</p>
+            <p className="text-[14.5px] text-ink leading-relaxed mt-3">{ingredient.tip}</p>
           </section>
         )}
 
@@ -228,16 +228,16 @@ export default function IngredientDetailPage() {
             <SectionHeader emoji="💰" title="가격 정보" />
             <Card padding="md" className="mt-3">
               <div className="flex items-baseline justify-between">
-                <span className="text-[12px] text-ink-soft">현재 평균가</span>
-                <span className="text-[16px] text-ink font-semibold tabular-nums">
+                <span className="text-[13px] text-ink-soft">현재 평균가</span>
+                <span className="text-[17px] text-ink font-semibold tabular-nums">
                   {priceInsight.currentPrice.toLocaleString()}원/kg
                 </span>
               </div>
               {priceInsight.vsLastWeekPct !== null && (
                 <div className="flex items-baseline justify-between mt-2">
-                  <span className="text-[12px] text-ink-soft">지난주 대비</span>
+                  <span className="text-[13px] text-ink-soft">지난주 대비</span>
                   <span
-                    className={`text-[13px] font-medium ${
+                    className={`text-[14px] font-medium ${
                       priceInsight.vsLastWeekPct < 0 ? 'text-sage' : 'text-terracotta'
                     }`}
                   >
@@ -248,9 +248,9 @@ export default function IngredientDetailPage() {
               )}
               {priceInsight.vsLastMonthPct !== null && (
                 <div className="flex items-baseline justify-between mt-2">
-                  <span className="text-[12px] text-ink-soft">지난달 대비</span>
+                  <span className="text-[13px] text-ink-soft">지난달 대비</span>
                   <span
-                    className={`text-[13px] font-medium ${
+                    className={`text-[14px] font-medium ${
                       priceInsight.vsLastMonthPct < 0 ? 'text-sage' : 'text-terracotta'
                     }`}
                   >
@@ -259,7 +259,7 @@ export default function IngredientDetailPage() {
                   </span>
                 </div>
               )}
-              <p className="text-[13px] text-ink font-medium mt-3">{priceInsight.recommendation}</p>
+              <p className="text-[14px] text-ink font-medium mt-3">{priceInsight.recommendation}</p>
             </Card>
           </section>
         )}
@@ -271,7 +271,7 @@ export default function IngredientDetailPage() {
           <section className="mb-8">
             <SectionHeader emoji="🌿" title="영양 요약" />
             <Card padding="md" className="mt-3">
-              <p className="text-[13.5px] text-ink leading-relaxed">{ingredient.nutrition}</p>
+              <p className="text-[14.5px] text-ink leading-relaxed">{ingredient.nutrition}</p>
             </Card>
           </section>
         )}
@@ -311,7 +311,7 @@ export default function IngredientDetailPage() {
 
 function SectionHeader({ emoji, title }: { emoji: string; title: string }) {
   return (
-    <h2 className="text-[15px] font-semibold text-ink flex items-center gap-1.5">
+    <h2 className="text-[16px] font-semibold text-ink flex items-center gap-1.5">
       <span>{emoji}</span>
       {title}
     </h2>

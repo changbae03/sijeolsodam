@@ -9,9 +9,9 @@ interface StructuredReplyViewProps {
 
 export default function StructuredReplyView({ text, size = 'md' }: StructuredReplyViewProps) {
   const { intro, steps, outro } = parseStructuredReply(text);
-  const introTextClass = size === 'md' ? 'text-[16px]' : 'text-[15px]';
-  const stepTextClass = size === 'md' ? 'text-[14px]' : 'text-[13.5px]';
-  const badgeSize = size === 'md' ? 'w-6 h-6 text-[12px]' : 'w-5 h-5 text-[11px]';
+  const introTextClass = size === 'md' ? 'text-[17px]' : 'text-[16px]';
+  const stepTextClass = size === 'md' ? 'text-[15px]' : 'text-[14.5px]';
+  const badgeSize = size === 'md' ? 'w-6 h-6 text-[13px]' : 'w-5 h-5 text-[12px]';
 
   return (
     <div className="space-y-3">
@@ -48,7 +48,7 @@ export default function StructuredReplyView({ text, size = 'md' }: StructuredRep
       )}
 
       {outro.map((paragraph, i) => (
-        <p key={`outro-${i}`} className="text-[12.5px] text-ink-soft leading-relaxed">
+        <p key={`outro-${i}`} className="text-[13.5px] text-ink-soft leading-relaxed">
           {paragraph}
         </p>
       ))}

@@ -54,7 +54,7 @@ export default function IngredientFeatureCard({
         )}
         <div className="px-1">
           <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-            <h3 className="font-display text-[18px] text-ink font-medium tracking-tight">
+            <h3 className="font-display text-[19px] text-ink font-medium tracking-tight">
               {ingredient.emoji} {ingredient.name}
             </h3>
             {seasonLabel && (
@@ -66,13 +66,13 @@ export default function IngredientFeatureCard({
           {/* 큰 카드는 최대 3장 정도라 fetch 비용이 작아 항상 시도해도 무방함 */}
           </div>
           {ingredient.origin && (
-            <p className="text-[11.5px] text-ink-soft/60 mb-1">📍 {ingredient.origin}</p>
+            <p className="text-[12.5px] text-ink-soft/60 mb-1">📍 {ingredient.origin}</p>
           )}
           <p
             className={
               descriptionOverride
-                ? 'text-[12.5px] text-terracotta leading-relaxed line-clamp-1 font-medium'
-                : 'text-[12.5px] text-ink-soft leading-relaxed line-clamp-1'
+                ? 'text-[13.5px] text-terracotta leading-relaxed line-clamp-1 font-medium'
+                : 'text-[13.5px] text-ink-soft leading-relaxed line-clamp-1'
             }
           >
             {descriptionOverride ?? ingredient.description}

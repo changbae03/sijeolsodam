@@ -44,7 +44,7 @@ export default function RecipesPage() {
       />
 
       {filtered.length === 0 ? (
-        <p className="text-[13px] text-ink-soft/70 text-center py-16">
+        <p className="text-[14px] text-ink-soft/70 text-center py-16">
           검색 결과가 없어요. 다른 키워드로 찾아보세요.
         </p>
       ) : (

@@ -167,7 +167,7 @@ export default function CommunityPage() {
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3 pb-3 flex items-center justify-between">
           <Logo size="sm" />
-          <span className="text-[11px] tracking-[0.14em] uppercase text-terracotta font-semibold">
+          <span className="text-[12px] tracking-[0.14em] uppercase text-terracotta font-semibold">
             오늘의 요리 자랑
           </span>
         </div>
@@ -175,19 +175,19 @@ export default function CommunityPage() {
 
       <div className="max-w-md mx-auto px-5 pt-2">
         <div className="flex items-center gap-3 mb-1">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sage/15 to-terracotta/10 text-[18px] leading-none">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sage/15 to-terracotta/10 text-[19px] leading-none">
             📸
           </span>
           <div className="flex-1 min-w-0">
-            <p className="text-[10.5px] tracking-[0.16em] uppercase text-terracotta font-semibold mb-0.5">
+            <p className="text-[11.5px] tracking-[0.16em] uppercase text-terracotta font-semibold mb-0.5">
               함께 만드는 이야기
             </p>
-            <h1 className="font-display text-[19px] tracking-tight text-ink font-semibold leading-tight">
+            <h1 className="font-display text-[20px] tracking-tight text-ink font-semibold leading-tight">
               소담
             </h1>
           </div>
         </div>
-        <p className="text-[12.5px] text-ink-soft leading-relaxed mt-2 mb-4">
+        <p className="text-[13.5px] text-ink-soft leading-relaxed mt-2 mb-4">
           오늘 만든 요리, 발견한 팁, 나만의 레시피를 편하게 나눠보세요.
         </p>
 
@@ -195,7 +195,7 @@ export default function CommunityPage() {
           <button
             type="button"
             onClick={() => setTab('feed')}
-            className={`text-[13px] font-medium rounded-full px-4 py-2 transition-colors ${
+            className={`text-[14px] font-medium rounded-full px-4 py-2 transition-colors ${
               tab === 'feed' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
             }`}
           >
@@ -204,7 +204,7 @@ export default function CommunityPage() {
           <button
             type="button"
             onClick={() => setTab('recipes')}
-            className={`text-[13px] font-medium rounded-full px-4 py-2 transition-colors ${
+            className={`text-[14px] font-medium rounded-full px-4 py-2 transition-colors ${
               tab === 'recipes' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
             }`}
           >
@@ -221,21 +221,21 @@ export default function CommunityPage() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={tab === 'feed' ? '이름, 재료, 해시태그로 검색' : '레시피 이름이나 재료로 검색'}
-            className="flex-1 bg-transparent text-[13px] text-ink outline-none placeholder:text-ink-soft/45"
+            className="flex-1 bg-transparent text-[14px] text-ink outline-none placeholder:text-ink-soft/45"
           />
         </div>
       </div>
 
       {tab === 'feed' && (
         <div className="max-w-md mx-auto px-5 space-y-6">
-          {posts === null && <p className="text-[13px] text-ink-soft text-center py-10">불러오는 중...</p>}
+          {posts === null && <p className="text-[14px] text-ink-soft text-center py-10">불러오는 중...</p>}
           {posts?.length === 0 && (
-            <p className="text-[13px] text-ink-soft text-center py-10">
+            <p className="text-[14px] text-ink-soft text-center py-10">
               아직 올라온 이야기가 없어요. 가장 먼저 요리를 자랑해보세요!
             </p>
           )}
           {posts && posts.length > 0 && filteredPosts.length === 0 && (
-            <p className="text-[13px] text-ink-soft text-center py-10">
+            <p className="text-[14px] text-ink-soft text-center py-10">
               &ldquo;{query}&rdquo;와 일치하는 이야기를 찾지 못했어요.
             </p>
           )}
@@ -248,12 +248,12 @@ export default function CommunityPage() {
                 style={{ boxShadow: 'var(--shadow-sm)' }}
               >
                 <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/15 text-[14px] font-medium text-sage">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/15 text-[15px] font-medium text-sage">
                     {post.authorName.slice(0, 1)}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="text-[13.5px] font-medium text-ink truncate">{post.authorName}</p>
-                    <p className="text-[11px] text-ink-soft/70">{timeAgo(post.createdAt)}</p>
+                    <p className="text-[14.5px] font-medium text-ink truncate">{post.authorName}</p>
+                    <p className="text-[12px] text-ink-soft/70">{timeAgo(post.createdAt)}</p>
                   </div>
                 </div>
 
@@ -269,10 +269,10 @@ export default function CommunityPage() {
                       className="flex items-center gap-1.5"
                       aria-label="맛있어요"
                     >
-                      <span className={`text-[19px] transition-transform ${liked ? 'scale-110' : 'grayscale opacity-60'}`}>
+                      <span className={`text-[20px] transition-transform ${liked ? 'scale-110' : 'grayscale opacity-60'}`}>
                         😋
                       </span>
-                      <span className={`text-[13px] ${liked ? 'text-terracotta font-medium' : 'text-ink-soft'}`}>
+                      <span className={`text-[14px] ${liked ? 'text-terracotta font-medium' : 'text-ink-soft'}`}>
                         맛있어요 {post.reactionCount}
                       </span>
                     </button>
@@ -282,20 +282,20 @@ export default function CommunityPage() {
                       className="flex items-center gap-1.5"
                       aria-label="댓글"
                     >
-                      <span className="text-[17px]">💬</span>
-                      <span className="text-[13px] text-ink-soft">{post.commentCount}</span>
+                      <span className="text-[18px]">💬</span>
+                      <span className="text-[14px] text-ink-soft">{post.commentCount}</span>
                     </button>
                   </div>
 
                   {post.caption && (
-                    <p className="text-[13.5px] text-ink leading-relaxed mt-2.5">
+                    <p className="text-[14.5px] text-ink leading-relaxed mt-2.5">
                       <span className="font-medium">{post.authorName}</span>{' '}
                       <span className="text-ink-soft">{post.caption}</span>
                     </p>
                   )}
 
                   {post.hashtags.length > 0 && (
-                    <p className="text-[12.5px] text-sage mt-1.5">
+                    <p className="text-[13.5px] text-sage mt-1.5">
                       {post.hashtags.map((tag) => `#${tag}`).join(' ')}
                     </p>
                   )}
@@ -305,11 +305,11 @@ export default function CommunityPage() {
                       href={`/recipe/${post.recipeId}`}
                       className="mt-3 flex items-center gap-2 rounded-xl border border-border-soft bg-cream-warm/50 px-3 py-2 hover:border-sage/40 transition-colors"
                     >
-                      <span className="text-[13px]">🍳</span>
-                      <span className="text-[12.5px] text-ink font-medium truncate flex-1">
+                      <span className="text-[14px]">🍳</span>
+                      <span className="text-[13.5px] text-ink font-medium truncate flex-1">
                         연결된 레시피 보기
                       </span>
-                      <span className="text-ink-soft/40 text-[13px]">›</span>
+                      <span className="text-ink-soft/40 text-[14px]">›</span>
                     </Link>
                   )}
 
@@ -323,7 +323,7 @@ export default function CommunityPage() {
                       >
                         <div className="mt-3 border-t border-border-soft/70 pt-3 space-y-2.5">
                           {(commentsByPost[post.id] ?? []).map((c) => (
-                            <p key={c.id} className="text-[12.5px] text-ink leading-relaxed">
+                            <p key={c.id} className="text-[13.5px] text-ink leading-relaxed">
                               <span className="font-medium">{c.authorName}</span>{' '}
                               <span className="text-ink-soft">{c.body}</span>
                             </p>
@@ -336,12 +336,12 @@ export default function CommunityPage() {
                                 if (e.key === 'Enter' && !e.nativeEvent.isComposing) submitComment(post.id);
                               }}
                               placeholder="댓글을 남겨보세요"
-                              className="flex-1 bg-cream-warm/50 rounded-full px-3.5 py-2 text-[12.5px] text-ink outline-none placeholder:text-ink-soft/45"
+                              className="flex-1 bg-cream-warm/50 rounded-full px-3.5 py-2 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
                             />
                             <button
                               type="button"
                               onClick={() => submitComment(post.id)}
-                              className="text-[12.5px] text-terracotta font-medium shrink-0"
+                              className="text-[13.5px] text-terracotta font-medium shrink-0"
                             >
                               등록
                             </button>
@@ -355,7 +355,7 @@ export default function CommunityPage() {
                     <button
                       type="button"
                       onClick={() => openComments(post.id)}
-                      className="text-[11.5px] text-ink-soft/60 mt-2.5"
+                      className="text-[12.5px] text-ink-soft/60 mt-2.5"
                     >
                       댓글 {post.commentCount}개 모두 보기
                     </button>
@@ -369,14 +369,14 @@ export default function CommunityPage() {
 
       {tab === 'recipes' && (
         <div className="max-w-md mx-auto px-5 space-y-4">
-          {userRecipes === null && <p className="text-[13px] text-ink-soft text-center py-10">불러오는 중...</p>}
+          {userRecipes === null && <p className="text-[14px] text-ink-soft text-center py-10">불러오는 중...</p>}
           {userRecipes?.length === 0 && (
-            <p className="text-[13px] text-ink-soft text-center py-10">
+            <p className="text-[14px] text-ink-soft text-center py-10">
               아직 등록된 이웃 레시피가 없어요. 가장 먼저 나만의 레시피를 남겨보세요!
             </p>
           )}
           {userRecipes && userRecipes.length > 0 && filteredUserRecipes.length === 0 && (
-            <p className="text-[13px] text-ink-soft text-center py-10">
+            <p className="text-[14px] text-ink-soft text-center py-10">
               &ldquo;{query}&rdquo;와 일치하는 레시피를 찾지 못했어요.
             </p>
           )}
@@ -394,25 +394,25 @@ export default function CommunityPage() {
               <div className="p-4">
                 <div className="flex items-center gap-2 mb-1.5">
                   {r.mainIngredient && (
-                    <span className="text-[11px] bg-sage/10 text-sage font-medium rounded-full px-2 py-0.5">
+                    <span className="text-[12px] bg-sage/10 text-sage font-medium rounded-full px-2 py-0.5">
                       {r.mainIngredient}
                     </span>
                   )}
-                  <span className="text-[11px] text-ink-soft/60">{r.authorName}님의 레시피</span>
+                  <span className="text-[12px] text-ink-soft/60">{r.authorName}님의 레시피</span>
                 </div>
-                <p className="font-display text-[16px] text-ink font-medium">{r.title}</p>
+                <p className="font-display text-[17px] text-ink font-medium">{r.title}</p>
                 {r.description && (
-                  <p className="text-[12.5px] text-ink-soft leading-relaxed mt-1">{r.description}</p>
+                  <p className="text-[13.5px] text-ink-soft leading-relaxed mt-1">{r.description}</p>
                 )}
                 <details className="mt-2.5 group">
-                  <summary className="text-[12.5px] text-terracotta font-medium cursor-pointer list-none">
+                  <summary className="text-[13.5px] text-terracotta font-medium cursor-pointer list-none">
                     재료·만드는 법 보기
                   </summary>
                   <div className="mt-2 space-y-2">
-                    <p className="text-[12px] text-ink-soft whitespace-pre-wrap leading-relaxed">
+                    <p className="text-[13px] text-ink-soft whitespace-pre-wrap leading-relaxed">
                       {r.ingredientsText}
                     </p>
-                    <p className="text-[12px] text-ink whitespace-pre-wrap leading-relaxed border-t border-border-soft/70 pt-2">
+                    <p className="text-[13px] text-ink whitespace-pre-wrap leading-relaxed border-t border-border-soft/70 pt-2">
                       {r.stepsText}
                     </p>
                   </div>
@@ -477,7 +477,7 @@ function ComposerShell({
         className="fixed bottom-0 left-0 right-0 z-50 max-w-md mx-auto bg-cream rounded-t-3xl flex flex-col max-h-[88vh]"
       >
         <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border-soft shrink-0">
-          <p className="font-display text-[16px] text-ink font-medium">{title}</p>
+          <p className="font-display text-[17px] text-ink font-medium">{title}</p>
           <button
             onClick={onClose}
             aria-label="닫기"
@@ -595,7 +595,7 @@ function PostComposer({
         {imageUrl ? (
           <Image src={imageUrl} alt="업로드한 사진" fill sizes="448px" className="object-cover" />
         ) : (
-          <span className="text-[13px] text-ink-soft">
+          <span className="text-[14px] text-ink-soft">
             {uploading ? '사진 올리는 중...' : '탭해서 사진 선택하기 📷'}
           </span>
         )}
@@ -606,23 +606,23 @@ function PostComposer({
         onChange={(e) => setCaption(e.target.value)}
         placeholder="오늘 만든 요리 이야기를 들려주세요"
         rows={3}
-        className="w-full mt-4 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+        className="w-full mt-4 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14.5px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
       />
 
       <input
         value={hashtagsInput}
         onChange={(e) => setHashtagsInput(e.target.value)}
         placeholder="해시태그 (예: 갑오징어 주말요리)"
-        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14.5px] text-ink outline-none placeholder:text-ink-soft/45"
       />
 
-      {error && <p className="text-[12.5px] text-terracotta mt-2">{error}</p>}
+      {error && <p className="text-[13.5px] text-terracotta mt-2">{error}</p>}
 
       <button
         type="button"
         onClick={handleSubmit}
         disabled={submitting || uploading || !imageUrl}
-        className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[14px] font-medium py-3 disabled:opacity-40"
+        className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[15px] font-medium py-3 disabled:opacity-40"
       >
         {submitting ? '올리는 중...' : '자랑하기'}
       </button>
@@ -719,7 +719,7 @@ function RecipeComposer({
         {imageUrl ? (
           <Image src={imageUrl} alt="업로드한 사진" fill sizes="448px" className="object-cover" />
         ) : (
-          <span className="text-[13px] text-ink-soft">{uploading ? '사진 올리는 중...' : '완성 사진 올리기 (선택) 📷'}</span>
+          <span className="text-[14px] text-ink-soft">{uploading ? '사진 올리는 중...' : '완성 사진 올리기 (선택) 📷'}</span>
         )}
       </button>
 
@@ -727,43 +727,43 @@ function RecipeComposer({
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="레시피 이름 (예: 우리집 고구마순 잡채)"
-        className="w-full mt-4 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
+        className="w-full mt-4 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14.5px] text-ink outline-none placeholder:text-ink-soft/45"
       />
       <input
         value={mainIngredient}
         onChange={(e) => setMainIngredient(e.target.value)}
         placeholder="주재료 (예: 고구마순)"
-        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14.5px] text-ink outline-none placeholder:text-ink-soft/45"
       />
       <textarea
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         placeholder="한 줄 소개"
         rows={2}
-        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13.5px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14.5px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
       />
       <textarea
         value={ingredientsText}
         onChange={(e) => setIngredientsText(e.target.value)}
         placeholder={'재료를 한 줄에 하나씩 적어주세요\n예) 고구마순 300g\n돼지고기 200g'}
         rows={4}
-        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
       />
       <textarea
         value={stepsText}
         onChange={(e) => setStepsText(e.target.value)}
         placeholder={'만드는 순서를 한 줄에 하나씩 적어주세요\n예) 고구마순은 데쳐서 껍질을 벗긴다\n돼지고기와 함께 볶는다'}
         rows={5}
-        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[13px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
+        className="w-full mt-3 bg-paper border border-border-soft rounded-xl px-3.5 py-3 text-[14px] text-ink outline-none placeholder:text-ink-soft/45 resize-none"
       />
 
-      {error && <p className="text-[12.5px] text-terracotta mt-2">{error}</p>}
+      {error && <p className="text-[13.5px] text-terracotta mt-2">{error}</p>}
 
       <button
         type="button"
         onClick={handleSubmit}
         disabled={submitting}
-        className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[14px] font-medium py-3 disabled:opacity-40"
+        className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[15px] font-medium py-3 disabled:opacity-40"
       >
         {submitting ? '올리는 중...' : '레시피 올리기'}
       </button>

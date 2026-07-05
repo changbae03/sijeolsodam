@@ -39,7 +39,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-transparent" />
           {recipe.masterclass && recipe.level === 'chef' && (
-            <span className="absolute top-2.5 left-2.5 text-[10px] font-semibold px-2 py-1 rounded-full bg-terracotta text-paper">
+            <span className="absolute top-2.5 left-2.5 text-[11px] font-semibold px-2 py-1 rounded-full bg-terracotta text-paper">
               ✨ 마스터클래스
             </span>
           )}
@@ -65,11 +65,11 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
             </motion.button>
           )}
           <div className="absolute bottom-0 left-0 right-0 p-3.5">
-            <h3 className="font-display text-[15px] text-cream leading-snug line-clamp-2 drop-shadow-sm">
+            <h3 className="font-display text-[16px] text-cream leading-snug line-clamp-2 drop-shadow-sm">
               {recipe.title}
             </h3>
             {/* 조리시간 + 난이도만 간결하게 */}
-            <div className="flex items-center gap-2 mt-1.5 text-[11px] text-cream/85">
+            <div className="flex items-center gap-2 mt-1.5 text-[12px] text-cream/85">
               <span>{recipe.cookTime}분</span>
               <span className="w-0.5 h-0.5 rounded-full bg-cream/50" />
               <span>{recipe.difficulty}</span>

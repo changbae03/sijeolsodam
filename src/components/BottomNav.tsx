@@ -35,12 +35,12 @@ export default function BottomNav() {
               <motion.span
                 animate={{ scale: isActive ? 1.12 : 1, y: isActive ? -1 : 0 }}
                 transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                className="text-[19px]"
+                className="text-[20px]"
               >
                 {item.icon}
               </motion.span>
               <span
-                className={`text-[10.5px] ${
+                className={`text-[11.5px] ${
                   isActive ? 'text-sage font-medium' : 'text-ink-soft'
                 }`}
               >

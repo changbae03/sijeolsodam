@@ -56,15 +56,15 @@ const BottomNavigation = React.forwardRef<HTMLElement, BottomNavigationProps>(
                 )}
                 aria-current={isActive ? 'page' : undefined}
               >
-                <span className="text-[18px] flex items-center justify-center relative">
+                <span className="text-[19px] flex items-center justify-center relative">
                   {item.icon}
                   {item.badge && (
-                    <span className="absolute -top-1 -right-2 text-[9px] font-bold text-paper bg-terracotta rounded-full min-w-4 h-4 flex items-center justify-center px-1">
+                    <span className="absolute -top-1 -right-2 text-[10px] font-bold text-paper bg-terracotta rounded-full min-w-4 h-4 flex items-center justify-center px-1">
                       {item.badge}
                     </span>
                   )}
                 </span>
-                <span className="text-[10px] font-medium tracking-tight leading-none">
+                <span className="text-[11px] font-medium tracking-tight leading-none">
                   {item.label}
                 </span>
               </button>

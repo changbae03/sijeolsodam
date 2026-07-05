@@ -176,8 +176,8 @@ export default function HomeAgentHero() {
     <div>
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-1.5">
-          <span className="text-[13px]">💬</span>
-          <span className="text-[10.5px] tracking-[0.14em] uppercase text-terracotta font-semibold">
+          <span className="text-[14px]">💬</span>
+          <span className="text-[11.5px] tracking-[0.14em] uppercase text-terracotta font-semibold">
             소담이에게 물어보기
           </span>
         </div>
@@ -185,7 +185,7 @@ export default function HomeAgentHero() {
           <button
             type="button"
             onClick={openHistory}
-            className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
+            className="text-[12px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
           >
             지난 대화
           </button>
@@ -193,14 +193,14 @@ export default function HomeAgentHero() {
             <button
               type="button"
               onClick={resetConversation}
-              className="text-[11px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
+              className="text-[12px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
             >
               새 대화
             </button>
           )}
         </div>
       </div>
-      <p className="text-[12.5px] text-ink-soft leading-relaxed mb-3">
+      <p className="text-[13.5px] text-ink-soft leading-relaxed mb-3">
         요리에 관한 거라면 뭐든 편하게 물어보세요.
       </p>
 
@@ -209,7 +209,7 @@ export default function HomeAgentHero() {
           <div ref={scrollRef} className="pb-1">
             {exchanges.map((ex, i) => (
               <div key={i} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
-                <p className="text-[12px] text-ink-soft/70 mb-2">{ex.question}</p>
+                <p className="text-[13px] text-ink-soft/70 mb-2">{ex.question}</p>
 
                 {ex.reply && (
                   <div className="mb-3">
@@ -224,7 +224,7 @@ export default function HomeAgentHero() {
                         <Link
                           key={j}
                           href={`/ingredient/${encodeURIComponent(item.ingredient.name)}`}
-                          className="inline-flex items-center gap-1 bg-sage/10 text-sage border border-sage/20 rounded-full px-2.5 py-1 text-[12px] font-medium hover:bg-sage/15 transition-colors"
+                          className="inline-flex items-center gap-1 bg-sage/10 text-sage border border-sage/20 rounded-full px-2.5 py-1 text-[13px] font-medium hover:bg-sage/15 transition-colors"
                         >
                           <span>{item.ingredient.emoji}</span>
                           {item.ingredient.name}
@@ -232,7 +232,7 @@ export default function HomeAgentHero() {
                       ) : (
                         <span
                           key={j}
-                          className="inline-flex items-center bg-cream-warm text-ink-soft border border-border-soft rounded-full px-2.5 py-1 text-[12px]"
+                          className="inline-flex items-center bg-cream-warm text-ink-soft border border-border-soft rounded-full px-2.5 py-1 text-[13px]"
                         >
                           {item.name}
                         </span>
@@ -260,18 +260,18 @@ export default function HomeAgentHero() {
                               />
                             </div>
                             <div className="min-w-0 flex-1">
-                              <p className="text-[14px] text-ink font-medium truncate">
+                              <p className="text-[15px] text-ink font-medium truncate">
                                 {dish.recipe.title}
                               </p>
-                              <p className="text-[12px] text-ink-soft truncate">{dish.reason}</p>
+                              <p className="text-[13px] text-ink-soft truncate">{dish.reason}</p>
                             </div>
-                            <span className="flex-shrink-0 text-ink-soft/40 text-[13px]">›</span>
+                            <span className="flex-shrink-0 text-ink-soft/40 text-[14px]">›</span>
                           </Link>
                         </li>
                       ) : (
                         <li key={j} className="px-2 py-2.5">
-                          <p className="text-[14px] text-ink font-medium">{dish.name}</p>
-                          <p className="text-[12px] text-ink-soft mt-0.5">{dish.reason}</p>
+                          <p className="text-[15px] text-ink font-medium">{dish.name}</p>
+                          <p className="text-[13px] text-ink-soft mt-0.5">{dish.reason}</p>
                         </li>
                       )
                     )}
@@ -279,10 +279,10 @@ export default function HomeAgentHero() {
                 )}
 
                 {i === exchanges.length - 1 && isLoading && (
-                  <p className="text-[13px] text-ink-soft/60 pb-2">소담이가 생각하고 있어요</p>
+                  <p className="text-[14px] text-ink-soft/60 pb-2">소담이가 생각하고 있어요</p>
                 )}
 
-                {ex.error && <p className="text-[13px] text-terracotta pb-2">{ex.error}</p>}
+                {ex.error && <p className="text-[14px] text-terracotta pb-2">{ex.error}</p>}
               </div>
             ))}
           </div>
@@ -290,7 +290,7 @@ export default function HomeAgentHero() {
 
         <div
           className={cn(
-            'sticky bottom-16 z-20 py-3 bg-paper/95 backdrop-blur-xl',
+            'py-3',
             hasConversation && 'border-t border-border-soft mt-1'
           )}
         >
@@ -314,7 +314,7 @@ export default function HomeAgentHero() {
               className={cn(
                 'flex-1 bg-transparent text-ink min-w-0 outline-none',
                 'placeholder:text-ink-soft/45 focus:placeholder:text-ink-soft/25 transition-colors',
-                hasConversation ? 'text-[14px]' : 'text-[15.5px]'
+                hasConversation ? 'text-[15px]' : 'text-[16.5px]'
               )}
             />
             <button
@@ -342,7 +342,7 @@ export default function HomeAgentHero() {
               key={prompt}
               type="button"
               onClick={() => send(prompt)}
-              className="text-[12.5px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-full px-3 py-1.5 hover:border-sage/40 hover:text-ink transition-colors"
+              className="text-[13.5px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-full px-3 py-1.5 hover:border-sage/40 hover:text-ink transition-colors"
             >
               {prompt}
             </button>
@@ -368,7 +368,7 @@ export default function HomeAgentHero() {
               className="fixed bottom-0 left-0 right-0 z-50 max-w-md mx-auto bg-cream rounded-t-3xl flex flex-col max-h-[80vh]"
             >
               <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border-soft shrink-0">
-                <p className="font-display text-[16px] text-ink font-medium">소담이와 나눈 이야기</p>
+                <p className="font-display text-[17px] text-ink font-medium">소담이와 나눈 이야기</p>
                 <button
                   onClick={() => setHistoryOpen(false)}
                   aria-label="닫기"
@@ -381,10 +381,10 @@ export default function HomeAgentHero() {
               </div>
               <div className="flex-1 overflow-y-auto px-5 py-4">
                 {pastQueries === null && (
-                  <p className="text-[13px] text-ink-soft text-center py-8">불러오는 중...</p>
+                  <p className="text-[14px] text-ink-soft text-center py-8">불러오는 중...</p>
                 )}
                 {pastQueries?.length === 0 && (
-                  <p className="text-[13px] text-ink-soft text-center py-8">
+                  <p className="text-[14px] text-ink-soft text-center py-8">
                     아직 나눈 이야기가 없어요. 지금 첫 질문을 건네보세요!
                   </p>
                 )}
@@ -393,14 +393,14 @@ export default function HomeAgentHero() {
                     key={q.id}
                     className={cn(i > 0 && 'border-t border-border-soft/70 pt-4 mt-4')}
                   >
-                    <p className="text-[11px] text-ink-soft/60 mb-1.5">
+                    <p className="text-[12px] text-ink-soft/60 mb-1.5">
                       {new Date(q.createdAt).toLocaleDateString('ko-KR', {
                         month: 'long',
                         day: 'numeric',
                       })}
                     </p>
-                    <p className="text-[12px] text-ink-soft mb-1.5">{q.message}</p>
-                    <p className="text-[13.5px] text-ink leading-relaxed whitespace-pre-wrap break-words">
+                    <p className="text-[13px] text-ink-soft mb-1.5">{q.message}</p>
+                    <p className="text-[14.5px] text-ink leading-relaxed whitespace-pre-wrap break-words">
                       {q.reply}
                     </p>
                   </div>

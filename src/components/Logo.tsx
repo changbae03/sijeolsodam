@@ -4,7 +4,7 @@ interface LogoProps {
 }
 
 const SIZE_MAP = {
-  sm: { text: 'text-[18px]', icon: 16 },
+  sm: { text: 'text-[19px]', icon: 16 },
   md: { text: 'text-[24px]', icon: 22 },
   lg: { text: 'text-[34px]', icon: 30 },
 };

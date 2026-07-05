@@ -129,11 +129,11 @@ export default function SeasonalPage() {
             <h1 className="font-display text-[24px] text-ink font-medium tracking-tight">
               {monthData.month}월 제철
             </h1>
-            <span className="text-[12px] text-terracotta font-medium">{monthData.solarTerm}</span>
+            <span className="text-[13px] text-terracotta font-medium">{monthData.solarTerm}</span>
           </div>
           {editorialNote && (
             <div className="bg-cream-warm rounded-2xl px-4 py-3.5 mt-2">
-              <p className="font-display text-[13.5px] text-ink leading-relaxed tracking-tight">
+              <p className="font-display text-[14.5px] text-ink leading-relaxed tracking-tight">
                 🌿 {editorialNote}
               </p>
             </div>
@@ -156,7 +156,7 @@ export default function SeasonalPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`flex-shrink-0 px-4 py-2 rounded-full text-[13px] font-medium transition-colors ${
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-[14px] font-medium transition-colors ${
                   activeCategory === cat
                     ? 'bg-ink text-cream'
                     : 'bg-paper text-ink-soft border border-border-soft'
@@ -180,12 +180,12 @@ export default function SeasonalPage() {
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
             {isSearching && (
-              <p className="text-[12px] text-ink-soft/60 mb-3">
+              <p className="text-[13px] text-ink-soft/60 mb-3">
                 전체 12개월에서 찾은 결과예요 ({filtered.length}개)
               </p>
             )}
             {filtered.length === 0 ? (
-              <p className="text-[13px] text-ink-soft/70 text-center py-16">
+              <p className="text-[14px] text-ink-soft/70 text-center py-16">
                 {isSearching
                   ? `'${query.trim()}'으로 찾은 식재료가 없어요.`
                   : `이번 달엔 아직 ${activeCategory} 식재료가 없어요.`}

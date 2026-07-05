@@ -61,7 +61,7 @@ export default function MonthStrip({ selectedMonth, onSelectMonth }: MonthStripP
               )}
               <span
                 className={`relative z-10 font-medium whitespace-nowrap transition-all duration-300 ${
-                  isActive ? 'text-[18px] text-cream' : 'text-[13.5px] text-ink-soft/70'
+                  isActive ? 'text-[19px] text-cream' : 'text-[14.5px] text-ink-soft/70'
                 }`}
               >
                 {m.month}월

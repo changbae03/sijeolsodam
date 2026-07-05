@@ -45,9 +45,9 @@ export default function SolarTermBanner({ monthData, onSwipeMonth }: SolarTermBa
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="h-px w-5 bg-cream/40" />
-          <span className="text-[11px] tracking-[0.08em] text-cream/70">24절기 자연의 흐름</span>
+          <span className="text-[12px] tracking-[0.08em] text-cream/70">24절기 자연의 흐름</span>
         </div>
-        <span className="text-[11px] text-cream/70 bg-cream/10 rounded-full px-2.5 py-1">
+        <span className="text-[12px] text-cream/70 bg-cream/10 rounded-full px-2.5 py-1">
           {monthData.season}
         </span>
       </div>
@@ -59,13 +59,13 @@ export default function SolarTermBanner({ monthData, onSwipeMonth }: SolarTermBa
         </span>
         <span className="font-display text-[22px] text-cream/60 pb-1.5">월</span>
       </div>
-      <p className="text-[13px] text-terracotta-light tracking-wide mt-1">{monthData.solarTerm}</p>
+      <p className="text-[14px] text-terracotta-light tracking-wide mt-1">{monthData.solarTerm}</p>
 
       {/* 헤드라인 / 설명 */}
-      <h1 className="font-display text-[18px] leading-[1.4] text-cream font-medium tracking-tight mt-4">
+      <h1 className="font-display text-[19px] leading-[1.4] text-cream font-medium tracking-tight mt-4">
         {monthData.headline}
       </h1>
-      <p className="text-[13px] leading-relaxed text-cream/70 mt-2.5">{monthData.description}</p>
+      <p className="text-[14px] leading-relaxed text-cream/70 mt-2.5">{monthData.description}</p>
 
       {/* 24절기 진행 막대: 지금이 1년 중 어디쯔음인지 보여줌 */}
       {onSwipeMonth && (

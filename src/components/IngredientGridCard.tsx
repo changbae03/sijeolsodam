@@ -45,7 +45,7 @@ export default function IngredientGridCard({ ingredient, hasPriceData }: Ingredi
       </div>
 
       <div className="flex items-center gap-1.5 flex-wrap">
-        <span className="text-[12.5px] font-medium text-ink leading-tight">
+        <span className="text-[13.5px] font-medium text-ink leading-tight">
           {ingredient.emoji} {ingredient.name}
         </span>
         {seasonLabel && (
@@ -55,9 +55,9 @@ export default function IngredientGridCard({ ingredient, hasPriceData }: Ingredi
         )}
       </div>
       {ingredient.origin && (
-        <p className="text-[10.5px] text-ink-soft/60 mt-0.5">{ingredient.origin}</p>
+        <p className="text-[11.5px] text-ink-soft/60 mt-0.5">{ingredient.origin}</p>
       )}
-      <p className="text-[11px] text-ink-soft/70 leading-snug mt-1 line-clamp-1">
+      <p className="text-[12px] text-ink-soft/70 leading-snug mt-1 line-clamp-1">
         {ingredient.description}
       </p>
     </Link>

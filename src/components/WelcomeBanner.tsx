@@ -59,7 +59,7 @@ export default function WelcomeBanner() {
     <div>
       <SectionHeader eyebrow="시절소담 이야기" title="제철의 마음을 담았어요" icon="🌿" />
 
-      <p className="mt-3 text-[12.5px] text-ink-soft leading-relaxed">
+      <p className="mt-3 text-[13.5px] text-ink-soft leading-relaxed">
         24절기를 따라 흘러가는 계절처럼, 그때그때 가장 맛있고 넉넉한 제철 재료를
         소중히 여기고 있어요.
       </p>
@@ -68,14 +68,14 @@ export default function WelcomeBanner() {
       <div className="mt-4 rounded-2xl bg-cream-warm/50 border border-border-soft/70 px-4 py-3.5">
         {data?.loggedIn ? (
           <>
-            <p className="text-[13px] text-ink font-medium">
+            <p className="text-[14px] text-ink font-medium">
               {data.greeting}{user?.name ? `, ${user.name}님` : ''}
             </p>
             {data.weatherNote && (
-              <p className="text-[12.5px] text-ink-soft mt-1.5">{data.weatherNote}</p>
+              <p className="text-[13.5px] text-ink-soft mt-1.5">{data.weatherNote}</p>
             )}
             {data.todayIngredient && (
-              <p className="text-[12.5px] text-ink-soft mt-1.5">
+              <p className="text-[13.5px] text-ink-soft mt-1.5">
                 오늘 눈여겨볼 재료는{' '}
                 <Link
                   href={`/ingredient/${encodeURIComponent(data.todayIngredient.name)}`}
@@ -87,14 +87,14 @@ export default function WelcomeBanner() {
               </p>
             )}
             {data.priceNote && (
-              <p className="text-[12.5px] text-terracotta mt-1.5">{data.priceNote}</p>
+              <p className="text-[13.5px] text-terracotta mt-1.5">{data.priceNote}</p>
             )}
             {data.topIngredient && data.recommendedRecipe && (
               <Link
                 href={`/recipe/${data.recommendedRecipe.id}`}
-                className="flex items-center gap-1.5 text-[12.5px] text-ink-soft mt-2 pt-2 border-t border-border-soft/70"
+                className="flex items-center gap-1.5 text-[13.5px] text-ink-soft mt-2 pt-2 border-t border-border-soft/70"
               >
-                <span className="text-[13px]">🍳</span>
+                <span className="text-[14px]">🍳</span>
                 <span>
                   <span className="text-ink font-medium">{data.topIngredient}</span> 즐겨 찾으시던데,{' '}
                   <span className="text-terracotta font-medium">{data.recommendedRecipe.title}</span>{' '}
@@ -107,10 +107,10 @@ export default function WelcomeBanner() {
         ) : (
           <>
             {data?.weatherNote && (
-              <p className="text-[12.5px] text-ink-soft">{data.weatherNote}</p>
+              <p className="text-[13.5px] text-ink-soft">{data.weatherNote}</p>
             )}
             {data?.todayIngredient && (
-              <p className="text-[12.5px] text-ink-soft mt-1.5">
+              <p className="text-[13.5px] text-ink-soft mt-1.5">
                 오늘 눈여겨볼 재료는{' '}
                 <Link
                   href={`/ingredient/${encodeURIComponent(data.todayIngredient.name)}`}
@@ -122,11 +122,11 @@ export default function WelcomeBanner() {
               </p>
             )}
             {data?.priceNote && (
-              <p className="text-[12.5px] text-terracotta mt-1.5">{data.priceNote}</p>
+              <p className="text-[13.5px] text-terracotta mt-1.5">{data.priceNote}</p>
             )}
             <Link
               href="/login"
-              className="text-[12px] text-terracotta font-medium mt-1.5 inline-block"
+              className="text-[13px] text-terracotta font-medium mt-1.5 inline-block"
             >
               로그인하면 취향에 맞는 추천을 받아볼 수 있어요 ›
             </Link>
@@ -140,8 +140,8 @@ export default function WelcomeBanner() {
             key={f.title}
             className="flex items-center gap-2 rounded-xl bg-cream-warm/40 px-2.5 py-2.5"
           >
-            <span className="text-[15px] shrink-0">{f.icon}</span>
-            <span className="text-[11.5px] text-ink-soft leading-tight">{f.title}</span>
+            <span className="text-[16px] shrink-0">{f.icon}</span>
+            <span className="text-[12.5px] text-ink-soft leading-tight">{f.title}</span>
           </div>
         ))}
       </div>

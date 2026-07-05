@@ -160,15 +160,15 @@ export default function HomePage() {
 
             <Link href={`/recipe/${activeRecipe.id}`} className="block group">
               <div className="flex items-center gap-2 mb-3">
-                <span className="flex items-center gap-1.5 text-[13px] text-ink-soft font-medium">
-                  <span className="text-[16px]">{activeIngredient.emoji}</span>
+                <span className="flex items-center gap-1.5 text-[14px] text-ink-soft font-medium">
+                  <span className="text-[17px]">{activeIngredient.emoji}</span>
                   {activeIngredient.name}
                 </span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="text-terracotta">
                   <path d="M5 12h14" />
                   <path d="M13 5l7 7-7 7" />
                 </svg>
-                <span className="text-[13px] text-ink font-semibold">{activeRecipe.title}</span>
+                <span className="text-[14px] text-ink font-semibold">{activeRecipe.title}</span>
               </div>
 
               <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-cream-warm">
@@ -181,10 +181,10 @@ export default function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-ink/0 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-[13px] text-cream leading-snug">
+                  <p className="text-[14px] text-cream leading-snug">
                     지금 가장 맛있는 {activeIngredient.name}로 만들어보세요.
                   </p>
-                  <div className="flex items-center gap-1.5 mt-1.5 text-[11px] text-cream/80">
+                  <div className="flex items-center gap-1.5 mt-1.5 text-[12px] text-cream/80">
                     <span>{activeRecipe.cookTime}분</span>
                     <span className="w-0.5 h-0.5 rounded-full bg-cream/50" />
                     <span>{activeRecipe.difficulty}</span>
@@ -203,7 +203,7 @@ export default function HomePage() {
             href="/seasonal"
             className="flex items-center justify-between bg-paper border border-border-soft rounded-2xl px-5 py-4 group"
           >
-            <span className="text-[14px] text-ink font-medium">
+            <span className="text-[15px] text-ink font-medium">
               {monthData.month}월 제철 식재료 전체 보기
             </span>
             <span className="text-terracotta transition-transform group-hover:translate-x-0.5">→</span>

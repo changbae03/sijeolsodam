@@ -152,7 +152,7 @@ export default function GlobalSodami() {
               <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border-soft shrink-0">
                 <div className="flex items-baseline gap-3">
                   <span className="h-px w-8 bg-sage" />
-                  <p className="font-display text-[15px] text-ink font-medium">
+                  <p className="font-display text-[16px] text-ink font-medium">
                     소담이에게 물어보기
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export default function GlobalSodami() {
               <div ref={scrollRef} className="flex-1 overflow-y-auto px-5 py-5">
                 {exchanges.length === 0 && (
                   <div>
-                    <p className="text-[13px] text-ink-soft leading-relaxed mb-4">
+                    <p className="text-[14px] text-ink-soft leading-relaxed mb-4">
                       요리에 관한 거라면 뭐든 편하게 물어보세요. 냉장고 속 재료나 오늘 기분을
                       말해주셔도 좋아요.
                     </p>
@@ -179,7 +179,7 @@ export default function GlobalSodami() {
                         <button
                           key={q}
                           onClick={() => send(q)}
-                          className="text-left text-[13px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-xl px-4 py-2.5 hover:border-sage/40 hover:text-ink transition-colors"
+                          className="text-left text-[14px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-xl px-4 py-2.5 hover:border-sage/40 hover:text-ink transition-colors"
                         >
                           {q}
                         </button>
@@ -195,7 +195,7 @@ export default function GlobalSodami() {
                     animate={{ opacity: 1, y: 0 }}
                     className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}
                   >
-                    <p className="text-[12px] text-ink-soft/70 mb-2">{ex.question}</p>
+                    <p className="text-[13px] text-ink-soft/70 mb-2">{ex.question}</p>
 
                     {ex.reply && (
                       <div className="mb-3">
@@ -211,7 +211,7 @@ export default function GlobalSodami() {
                               key={j}
                               href={`/ingredient/${encodeURIComponent(item.ingredient.name)}`}
                               onClick={() => setOpen(false)}
-                              className="inline-flex items-center gap-1 bg-sage/10 text-sage border border-sage/20 rounded-full px-2.5 py-1 text-[12px] font-medium hover:bg-sage/15 transition-colors"
+                              className="inline-flex items-center gap-1 bg-sage/10 text-sage border border-sage/20 rounded-full px-2.5 py-1 text-[13px] font-medium hover:bg-sage/15 transition-colors"
                             >
                               <span>{item.ingredient.emoji}</span>
                               {item.ingredient.name}
@@ -219,7 +219,7 @@ export default function GlobalSodami() {
                           ) : (
                             <span
                               key={j}
-                              className="inline-flex items-center bg-cream-warm text-ink-soft border border-border-soft rounded-full px-2.5 py-1 text-[12px]"
+                              className="inline-flex items-center bg-cream-warm text-ink-soft border border-border-soft rounded-full px-2.5 py-1 text-[13px]"
                             >
                               {item.name}
                             </span>
@@ -248,17 +248,17 @@ export default function GlobalSodami() {
                                   />
                                 </div>
                                 <div className="min-w-0 flex-1">
-                                  <p className="text-[14px] text-ink font-medium truncate">
+                                  <p className="text-[15px] text-ink font-medium truncate">
                                     {dish.recipe.title}
                                   </p>
-                                  <p className="text-[12px] text-ink-soft truncate">{dish.reason}</p>
+                                  <p className="text-[13px] text-ink-soft truncate">{dish.reason}</p>
                                 </div>
-                                <span className="flex-shrink-0 text-ink-soft/40 text-[13px]">›</span>
+                                <span className="flex-shrink-0 text-ink-soft/40 text-[14px]">›</span>
                               </Link>
                             ) : (
                               <div className="px-2 py-2.5">
-                                <p className="text-[14px] text-ink font-medium">{dish.name}</p>
-                                <p className="text-[12px] text-ink-soft mt-0.5">{dish.reason}</p>
+                                <p className="text-[15px] text-ink font-medium">{dish.name}</p>
+                                <p className="text-[13px] text-ink-soft mt-0.5">{dish.reason}</p>
                               </div>
                             )}
                           </li>
@@ -267,9 +267,9 @@ export default function GlobalSodami() {
                     )}
 
                     {i === exchanges.length - 1 && isLoading && (
-                      <p className="text-[13px] text-ink-soft/60 pb-2">소담이가 생각하고 있어요</p>
+                      <p className="text-[14px] text-ink-soft/60 pb-2">소담이가 생각하고 있어요</p>
                     )}
-                    {ex.error && <p className="text-[13px] text-terracotta pb-2">{ex.error}</p>}
+                    {ex.error && <p className="text-[14px] text-terracotta pb-2">{ex.error}</p>}
                   </motion.div>
                 ))}
               </div>
@@ -282,7 +282,7 @@ export default function GlobalSodami() {
                     onChange={(e) => setQuery(e.target.value)}
                     onKeyDown={handleKeyDown}
                     placeholder="궁금한 걸 물어보세요"
-                    className="flex-1 bg-transparent text-[14px] text-ink outline-none placeholder:text-ink-soft/45"
+                    className="flex-1 bg-transparent text-[15px] text-ink outline-none placeholder:text-ink-soft/45"
                   />
                   <button
                     type="button"
@@ -303,7 +303,7 @@ export default function GlobalSodami() {
                   </button>
                 </div>
                 {!user && (
-                  <p className="text-[11px] text-ink-soft/60 mt-2">
+                  <p className="text-[12px] text-ink-soft/60 mt-2">
                     로그인하면 대화가 쌓여 점점 더 나에게 맞는 추천을 받을 수 있어요.
                   </p>
                 )}
