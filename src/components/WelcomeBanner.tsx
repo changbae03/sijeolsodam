@@ -7,7 +7,7 @@ import { useAuth } from '@/lib/auth-context';
 interface PersonalizeData {
   loggedIn: boolean;
   greeting: string;
-  todayIngredient: { name: string; emoji: string } | null;
+  todayIngredient: { name: string; emoji: string; description: string } | null;
   topIngredient: string | null;
   recommendedRecipe: { id: string; title: string } | null;
   weatherNote: string | null;
@@ -69,7 +69,7 @@ export default function WelcomeBanner() {
               >
                 {data.todayIngredient.emoji} {data.todayIngredient.name}
               </Link>
-              예요.
+              예요. {data.todayIngredient.description}
             </p>
           )}
           {data.priceNote && <p className="text-[13.5px] text-terracotta mt-1.5">{data.priceNote}</p>}
@@ -99,7 +99,7 @@ export default function WelcomeBanner() {
               >
                 {data.todayIngredient.emoji} {data.todayIngredient.name}
               </Link>
-              예요.
+              예요. {data.todayIngredient.description}
             </p>
           )}
           {data.priceNote && <p className="text-[13.5px] text-terracotta mt-1.5">{data.priceNote}</p>}
