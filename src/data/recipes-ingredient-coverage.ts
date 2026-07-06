@@ -104,41 +104,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '숭어회 뜨는 법',
   },
   {
-    id: 'ing-꽃게-1', month: 4, title: '얼큰한 꽃게탕', subtitle: '살이 꽉 찬 봄 꽃게로 끓인 시원한 탕',
-    category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 35, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '꽃게', description: '꽃게와 무, 청양고추를 넣고 얼큰하게 끓여낸 시원한 해물탕이에요.',
-    ingredients: [
-      { name: '꽃게', amount: '2마리' }, { name: '무', amount: '200g' }, { name: '청양고추', amount: '2개' }, { name: '고추장', amount: '1큰술' }, { name: '된장', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' },
-    ],
-    steps: [
-      {
-        title: '손질',
-        description: '꽃게는 솔로 씻어 등딱지를 떼고 4등분합니다. 등딱지를 미리 떼어두면 국물에 게딱지 속 알과 내장이 자연스럽게 풀려서, 탕이 훨씬 진하고 고소해져요.',
-        checkpoint: '게 등딱지 안쪽에 주황빛 알이나 내장이 보이면 따로 모아두세요 — 국물 맛을 결정하는 핵심 재료예요.',
-        warning: '꽃게는 살아있는 상태로 손질할 때 다리가 떨어지기 쉬워요. 등딱지를 먼저 떼고 나서 다리를 자르면 훨씬 수월해요.',
-      },
-      {
-        title: '육수',
-        description: '물에 무를 넣고 끓이다 된장과 고추장을 풀어줍니다. 된장을 먼저 풀고 고추장을 더하면 깊은 감칠맛 위에 칼칼함이 얹어지는 순서가 돼서, 국물이 한쪽 맛으로만 치우치지 않아요.',
-      },
-      {
-        title: '끓이기',
-        description: '꽃게와 다진마늘, 청양고추를 넣고 15분간 끓입니다. 꽃게가 들어가면 국물 표면에 뽀얀 거품이 떠오르는데, 그 거품을 걷어내야 국물이 텁텁하지 않고 맑고 깔끔해져요.',
-        timerSeconds: 900,
-        tip: '거품을 걷어내면 국물이 더 맑아요. 숟가락보다는 작은 체로 떠내면 거품만 깔끔하게 걸러져요.',
-        checkpoint: '꽃게 껍질이 선명한 주황빛으로 변하고, 국물에서 알큰하면서도 고소한 게 향이 올라오면 다 익은 신호예요.',
-        warning: '센불로 오래 끓이면 게살이 빠지면서 질겨지고 국물도 탁해져요. 한 번 끓어오르면 중불로 줄이세요.',
-      },
-    ],
-    tips: [
-      '꽃게는 등딱지에 알이 있으면 따로 모아 넣으면 국물이 더 진해져요.',
-      '칼국수 사리를 더하면 든든한 한끼가 돼요.',
-      '대체 재료: 청양고추 대신 베트남고추나 페페론치노로도 칼칼한 맛을 낼 수 있어요.',
-      '보관/활용: 남은 국물은 다음날 라면 국물 베이스로 써도 훌륭해요. 냉장 보관 시 1~2일 안에 드세요.',
-    ],
-    youtubeQuery: '꽃게탕 끓이는 법',
-  },
-  {
     id: 'ing-멍게-1', month: 4, title: '향긋한 멍게 비빔밥', subtitle: '바다 향 가득한 봄철 별미 비빔밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 1, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '멍게', description: '멍게 특유의 향과 참기름이 어우러진 간단하고 향긋한 비빔밥이에요.',
