@@ -41,7 +41,7 @@ import { recipesDriedPersimmonExpansion } from './recipes-driedpersimmon-expansi
 import { recipesClamExpansion } from './recipes-clam-expansion';
 import { recipesSpanishMackerelExpansion } from './recipes-mackerel-expansion';
 import { recipesSeaBreamExpansion } from './recipes-seabream-expansion';
-import { recipesWebfootOctopusExpansion } from './recipes-octopus-expansion';
+import { recipesWebfootOctopusExpansion } from './recipes-webfootoctopus-expansion';
 import { recipesJjokpaExpansion } from './recipes-jjokpa-expansion';
 import { recipesRapeGreensExpansion } from './recipes-rapegreens-expansion';
 import { recipesFreshWakameExpansion } from './recipes-wakame-expansion';
@@ -76,6 +76,7 @@ import { recipesTangerineExpansion } from './recipes-tangerine-expansion';
 import { recipesCockleExpansion } from './recipes-cockle-expansion';
 import { recipesBlueCrabExpansion } from './recipes-bluecrab-expansion';
 import { recipesFlowerShrimpExpansion } from './recipes-flowershrimp-expansion';
+import { recipesLongArmOctopusExpansion } from './recipes-longarmoctopus-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -155,6 +156,7 @@ export const allRecipes: Recipe[] = [
   ...recipesCockleExpansion,
   ...recipesBlueCrabExpansion,
   ...recipesFlowerShrimpExpansion,
+  ...recipesLongArmOctopusExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
