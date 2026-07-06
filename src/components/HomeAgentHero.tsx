@@ -97,6 +97,7 @@ export default function HomeAgentHero() {
   const [exchanges, setExchanges] = useState<Exchange[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [examplesOpen, setExamplesOpen] = useState(false);
   const [pastQueries, setPastQueries] = useState<PastQuery[] | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -368,27 +369,57 @@ export default function HomeAgentHero() {
       </div>
 
       {!hasConversation && (
-        <div className="mt-4 space-y-3">
-          <p className="text-[11px] tracking-[0.1em] uppercase text-ink-soft/50 font-medium">
+        <div className="mt-4">
+          <button
+            type="button"
+            onClick={() => setExamplesOpen((v) => !v)}
+            className="flex items-center gap-1.5 text-[11px] tracking-[0.1em] uppercase text-ink-soft/50 font-medium"
+          >
             이런 것도 물어볼 수 있어요
-          </p>
-          {PROMPT_CATEGORIES.map((category) => (
-            <div key={category.label}>
-              <p className="text-[11.5px] text-sage font-medium mb-1.5">{category.label}</p>
-              <div className="flex flex-wrap gap-2">
-                {category.prompts.map((prompt) => (
-                  <button
-                    key={prompt}
-                    type="button"
-                    onClick={() => send(prompt)}
-                    className="text-[13.5px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-full px-3 py-1.5 hover:border-sage/40 hover:text-ink transition-colors"
-                  >
-                    {prompt}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))}
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className={cn('transition-transform', examplesOpen && 'rotate-180')}
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <AnimatePresence initial={false}>
+            {examplesOpen && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                className="overflow-hidden"
+              >
+                <div className="space-y-3 pt-3">
+                  {PROMPT_CATEGORIES.map((category) => (
+                    <div key={category.label}>
+                      <p className="text-[11.5px] text-sage font-medium mb-1.5">{category.label}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {category.prompts.map((prompt) => (
+                          <button
+                            key={prompt}
+                            type="button"
+                            onClick={() => send(prompt)}
+                            className="text-[13.5px] text-ink-soft bg-cream-warm/60 border border-border-soft rounded-full px-3 py-1.5 hover:border-sage/40 hover:text-ink transition-colors"
+                          >
+                            {prompt}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       )}
 
