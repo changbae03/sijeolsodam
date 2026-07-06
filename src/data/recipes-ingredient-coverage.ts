@@ -317,20 +317,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '방어회 먹는 법',
   },
   {
-    id: 'ing-꽃새우-1', month: 8, title: '바삭한 꽃새우 소금구이', subtitle: '껍질까지 바삭하게 즐기는 여름 새우',
-    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '꽃새우', description: '굵은소금 위에 구워내면 껍질째 바삭하게 즐길 수 있는 간단한 안주예요.',
-    ingredients: [
-      { name: '꽃새우', amount: '300g' }, { name: '굵은소금', amount: '1줌' },
-    ],
-    steps: [
-      { title: '팬 달구기', description: '마른 팬에 굵은소금을 깔고 충분히 달굽니다.' },
-      { title: '굽기', description: '소금 위에 새우를 올려 앞뒤로 4~5분씩 구워줍니다.', timerSeconds: 500 },
-    ],
-    tips: ['머리와 껍질까지 바삭하게 먹을 수 있어요.', '레몬즙을 곁들이면 더 산뜻해요.'],
-    youtubeQuery: '꽃새우 소금구이',
-  },
-  {
     id: 'ing-농어-1', month: 6, title: '쫄깃한 농어회', subtitle: '탱글한 살이 일품인 여름 흰살 생선회',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '농어', description: '여름 농어는 살이 탱글하고 쫄깃해 얇게 썰어 회로 즐기기 좋아요.',
