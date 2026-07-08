@@ -59,21 +59,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '숭어회 뜨는 법',
   },
   {
-    id: 'ing-멍게-1', month: 4, title: '향긋한 멍게 비빔밥', subtitle: '바다 향 가득한 봄철 별미 비빔밥',
-    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 1, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '멍게', description: '멍게 특유의 향과 참기름이 어우러진 간단하고 향긋한 비빔밥이에요.',
-    ingredients: [
-      { name: '멍게', amount: '150g(손질된 것)' }, { name: '밥', amount: '1공기' }, { name: '김가루', amount: '약간' }, { name: '참기름', amount: '1큰술' }, { name: '깨소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '멍게는 잘게 썰어 준비합니다.' },
-      { title: '비비기', description: '밥에 멍게, 참기름, 깨소금을 넣고 골고루 비빕니다.' },
-      { title: '마무리', description: '김가루를 올려 완성합니다.' },
-    ],
-    tips: ['초장을 살짝 곁들이면 더 감칠맛이 나요.', '오이를 채 썰어 더하면 식감이 좋아져요.'],
-    youtubeQuery: '멍게 비빔밥',
-  },
-  {
     id: 'ing-뱅어-1', month: 5, title: '바삭한 뱅어포 무침', subtitle: '간단하게 무쳐먹는 봄 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '뱅어', description: '구운 뱅어포에 고춧가루 양념을 더해 바삭하고 짭짤하게 즐기는 밑반찬이에요.',
