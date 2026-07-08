@@ -29,21 +29,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '청어구이 손질',
   },
   {
-    id: 'ing-도다리-1', month: 3, title: '향긋한 도다리쑥국', subtitle: '봄을 알리는 대표 생선국',
-    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '도다리', description: '쑥의 향긋함과 도다리의 담백함이 어우러진 봄철 대표 국이에요.',
-    ingredients: [
-      { name: '도다리', amount: '2마리' }, { name: '쑥', amount: '100g' }, { name: '된장', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '대파', amount: '1대' },
-    ],
-    steps: [
-      { title: '육수', description: '물에 된장을 풀어 끓이다 손질한 도다리를 넣습니다.' },
-      { title: '끓이기', description: '중불에서 10분 정도 끓여 생선이 익으면 다진마늘을 넣습니다.', timerSeconds: 600 },
-      { title: '쑥 넣기', description: '씻은 쑥과 대파를 넣고 2~3분만 더 끓여 향을 살립니다.' },
-    ],
-    tips: ['쑥은 오래 끓이면 향이 날아가니 마지막에 넣어요.', '청양고추를 더하면 칼칼해져요.'],
-    youtubeQuery: '도다리쑥국 끓이는 법',
-  },
-  {
     id: 'ing-새조개-1', month: 3, title: '쫄깃 새조개 샤브샤브', subtitle: '데치면 쫄깃해지는 봄 조개의 별미',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '새조개', description: '맑은 육수에 살짝 데쳐 먹는 새조개 샤브샤브는 봄철 별미예요.',
