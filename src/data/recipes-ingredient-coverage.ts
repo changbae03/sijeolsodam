@@ -316,21 +316,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     tips: ['방어는 뱃살 부위가 가장 기름지고 고소해요.', '김에 싸서 먹어도 별미예요.'],
     youtubeQuery: '방어회 먹는 법',
   },
-  {
-    id: 'ing-농어-1', month: 6, title: '쫄깃한 농어회', subtitle: '탱글한 살이 일품인 여름 흰살 생선회',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '농어', description: '여름 농어는 살이 탱글하고 쫄깃해 얇게 썰어 회로 즐기기 좋아요.',
-    ingredients: [
-      { name: '농어회', amount: '300g(손질된 것)' }, { name: '깻잎', amount: '10장' }, { name: '미나리', amount: '한줌' }, { name: '초고추장', amount: '적당량' },
-    ],
-    steps: [
-      { title: '준비', description: '손질된 농어회를 얇게 슬라이스합니다.' },
-      { title: '채소 손질', description: '깻잎과 미나리를 씻어 물기를 뺍니다.' },
-      { title: '플레이팅', description: '회와 채소를 함께 담고 초고추장을 곁들입니다.' },
-    ],
-    tips: ['껍질 쪽 살은 더 쫄깃해서 따로 즐겨보세요.', '얼음을 깔고 담으면 더 신선하게 보여요.'],
-    youtubeQuery: '농어회 뜨는 법',
-  },
 
   // ===== 채소 =====
   {
