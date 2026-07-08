@@ -14,21 +14,6 @@ const PLACEHOLDER_IMAGE =
 export const recipesIngredientCoverage: Recipe[] = [
   // ===== 해산물 =====
   {
-    id: 'ing-대구-1', month: 1, title: '담백한 대구탕', subtitle: '시원한 국물이 일품인 겨울 생선탕',
-    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '대구', description: '무와 콩나물을 넣고 맑게 끓여 대구살 본연의 담백함을 살린 탕이에요.',
-    ingredients: [
-      { name: '대구', amount: '400g(토막)' }, { name: '무', amount: '200g' }, { name: '콩나물', amount: '100g' }, { name: '대파', amount: '1대' }, { name: '다진마늘', amount: '1큰술' }, { name: '소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '육수 끓이기', description: '물에 무를 넣고 끓이다 무가 투명해지면 대구를 넣습니다.' },
-      { title: '끓이기', description: '콩나물과 다진마늘을 넣고 중불에서 15분 정도 끓입니다.', timerSeconds: 900 },
-      { title: '마무리', description: '대파를 넣고 소금으로 간을 맞춰 한소끔 더 끓입니다.' },
-    ],
-    tips: ['생강을 살짝 넣으면 비린내가 잡혀요.', '청양고추를 더하면 칼칼한 맛이 더해져요.'],
-    youtubeQuery: '맑은 대구탕 끓이는 법',
-  },
-  {
     id: 'ing-청어-1', month: 1, title: '고소한 청어구이', subtitle: '기름지고 고소한 등푸른 생선구이',
     category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '청어', description: '소금만 뿌려 노릇하게 구워내면 청어 특유의 기름진 맛이 가장 살아나요.',
