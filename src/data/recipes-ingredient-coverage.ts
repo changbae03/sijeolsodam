@@ -600,21 +600,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '검은콩밥 짓기',
   },
   {
-    id: 'ing-녹두-1', month: 8, title: '바삭한 녹두빈대떡', subtitle: '고소하고 바삭한 여름 전통 부침',
-    category: '브런치', difficulty: '보통', level: 'home', cookTime: 40, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '녹두', description: '불린 녹두를 갈아 채소와 함께 부쳐낸 바삭하고 고소한 전통 부침이에요.',
-    ingredients: [
-      { name: '녹두', amount: '1컵(불린 것)' }, { name: '돼지고기(다짐육)', amount: '100g' }, { name: '숙주', amount: '100g' }, { name: '김치', amount: '100g' }, { name: '식용유', amount: '4큰술' },
-    ],
-    steps: [
-      { title: '불리기', description: '녹두는 미리 6시간 이상 불려 껍질을 제거합니다.' },
-      { title: '반죽', description: '불린 녹두를 갈아 돼지고기, 숙주, 김치와 섞습니다.' },
-      { title: '부치기', description: '팬에 기름을 넉넉히 두르고 노릇하고 바삭하게 부칩니다.', timerSeconds: 300, tip: '두껍게 부쳐야 속까지 잘 익어요.' },
-    ],
-    tips: ['간장초식초를 곁들이면 잘 어울려요.', '약불에서 천천히 부쳐야 속까지 익어요.'],
-    youtubeQuery: '녹두빈대떡 부치기',
-  },
-  {
     id: 'ing-들깨-1', month: 1, title: '고소한 들깨미역국', subtitle: '들깨가루로 더 구수해진 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '들깨', description: '미역국에 들깨가루를 더하면 더 구수하고 고소한 맛이 살아나요.',
