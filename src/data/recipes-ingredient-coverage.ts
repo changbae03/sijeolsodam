@@ -14,21 +14,6 @@ const PLACEHOLDER_IMAGE =
 export const recipesIngredientCoverage: Recipe[] = [
   // ===== 해산물 =====
   {
-    id: 'ing-대게-1', month: 1, title: '쫄깃 살 가득 대게찜', subtitle: '쪄낸 살이 탱글하게 빠지는 겨울 별미',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '대게', description: '손질한 대게를 통째로 쪄서 살을 발라먹는 가장 간단하고 확실한 방법이에요.',
-    ingredients: [
-      { name: '대게', amount: '1마리(800g~1kg)' }, { name: '맛술', amount: '2큰술' }, { name: '소금', amount: '약간' }, { name: '레몬', amount: '1/2개' },
-    ],
-    steps: [
-      { title: '손질', description: '대게는 칫솔로 깨끗이 씻고 등딱지를 한 번 떼었다 붙여 찜기에 올리기 쉽게 합니다.' },
-      { title: '찌기', description: '김 오른 찜기에 맛술을 두르고 대게를 올려 15~20분 찝니다.', timerSeconds: 1200, tip: '등딱지를 위로 두면 육즙이 안 빠져요.' },
-      { title: '플레이팅', description: '다리를 가위로 갈라 살을 바로 발라먹기 좋게 담고, 레몬을 곁들입니다.' },
-    ],
-    tips: ['게딱지에 밥을 비벼 먹으면 별미예요.', '찐 후 바로 먹어야 살이 가장 촉촉해요.'],
-    youtubeQuery: '대게찜 손질법',
-  },
-  {
     id: 'ing-대구-1', month: 1, title: '담백한 대구탕', subtitle: '시원한 국물이 일품인 겨울 생선탕',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '대구', description: '무와 콩나물을 넣고 맑게 끓여 대구살 본연의 담백함을 살린 탕이에요.',
