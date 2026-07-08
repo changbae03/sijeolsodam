@@ -274,21 +274,6 @@ export const recipesIngredientCoverage: Recipe[] = [
 
   // ===== 채소 =====
   {
-    id: 'ing-마늘쫑-1', month: 6, title: '아삭한 마늘쫑볶음', subtitle: '밥반찬으로 좋은 아삭한 볶음',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '마늘쫑', description: '간장양념에 새우젓을 더해 짭짤하고 고소하게 볶아낸 밑반찬이에요.',
-    ingredients: [
-      { name: '마늘쫑', amount: '200g' }, { name: '식용유', amount: '1큰술' }, { name: '간장', amount: '1큰술' }, { name: '새우젓', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '마늘쫑은 5cm 길이로 자릅니다.' },
-      { title: '볶기', description: '팬에 기름을 두르고 마늘쫑을 중불에서 3분간 볶습니다.', timerSeconds: 180 },
-      { title: '양념', description: '간장과 새우젓을 넣고 1~2분 더 볶은 뒤 깨소금을 뿌립니다.' },
-    ],
-    tips: ['너무 오래 볶으면 색이 누레지니 짧게 볶아요.', '베이컨을 더하면 풍미가 깊어져요.'],
-    youtubeQuery: '마늘쫑볶음',
-  },
-  {
     id: 'ing-무순-1', month: 9, title: '알싱한 무순 샐러드', subtitle: '간단하게 곁들이는 알싱한 새싹 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '무순', description: '아삭한 무순에 간장 드레싱을 더해 가볍게 곁들이기 좋은 샐러드예요.',
