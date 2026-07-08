@@ -366,21 +366,6 @@ export const recipesIngredientCoverage: Recipe[] = [
 
   // ===== 과일 =====
   {
-    id: 'ing-멜론-1', month: 7, title: '멜론 프로슈토', subtitle: '달콤한 멜론과 짭짤한 햄의 조화',
-    category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '멜론', description: '달콤한 멜론에 짭짤한 프로슈토(또는 생햄)를 곁들이는 간단한 전채요리예요.',
-    ingredients: [
-      { name: '멜론', amount: '1/2개' }, { name: '프로슈토(또는 생햄)', amount: '6장' }, { name: '후추', amount: '약간' },
-    ],
-    steps: [
-      { title: '멜론 손질', description: '멜론은 씨를 제거하고 한입 크기로 자릅니다.' },
-      { title: '감싸기', description: '멜론 조각을 프로슈토로 감쌉니다.' },
-      { title: '마무리', description: '후추를 살짝 뿌려 완성합니다.' },
-    ],
-    tips: ['멜론은 차갑게 식혀서 만들면 더 맛있어요.', '발사믹 글레이즈를 살짝 뿌려도 좋아요.'],
-    youtubeQuery: '멜론 프로슈토',
-  },
-  {
     id: 'ing-살구-1', month: 5, title: '향긋한 살구잼', subtitle: '새콤달콤한 초여름 살구로 만드는 홈메이드 잼',
     category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '살구', description: '살구와 설탕만으로 만드는 향긋한 잼은 빵에 발라먹기 좋아요.',
