@@ -169,40 +169,6 @@ export const recipesQ3: Recipe[] = [
 
   // ===== 10월 =====
   {
-    id: '10-1',
-    month: 10,
-    title: '달큰한 늙은호박죽',
-    subtitle: '가을 햇볕을 머금은 호박의 진한 단맛',
-    category: '밥/죽',
-    difficulty: '보통', level: 'home',
-    cookTime: 50,
-    servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '늙은호박',
-    description: '서리가 내리기 시작하며 달큰한 맛이 응축된 늙은호박으로 끓인 구수한 죽이에요. 소화가 편한 보양식으로도 좋습니다.',
-    ingredients: [
-      { name: '늙은호박', amount: '500g' },
-      { name: '찹쌀가루', amount: '1/2컵' },
-      { name: '물', amount: '4컵' },
-      { name: '설탕', amount: '2큰술' },
-      { name: '소금', amount: '약간' },
-      { name: '단호박씨', amount: '약간(장식용)' },
-    ],
-    steps: [
-      { title: '호박 손질', description: '늙은호박은 씨와 속을 제거하고 껍질을 벗겨 큼직하게 썰어둡니다.' },
-      { title: '삶기', description: '냄비에 호박과 물을 넣고 부드러워질 때까지 20분간 삶습니다.', timerSeconds: 1200 },
-      { title: '으깨기', description: '삶은 호박을 핸드블렌더나 믹서로 곱게 갈아줍니다.' },
-      { title: '찹쌀물 만들기', description: '찹쌀가루에 물을 약간 섞어 멍울 없이 풀어둡니다.' },
-      { title: '끓이기', description: '호박물에 찹쌀물을 천천히 부어가며 저어 걸쭉해질 때까지 10분간 끓입니다.', timerSeconds: 600, tip: '눌어붙기 쉬우니 계속 저어주세요.' },
-      { title: '마무리', description: '설탕과 소금으로 간을 맞추고 그릇에 담아 호박씨를 올려 완성합니다.' },
-    ],
-    tips: [
-      '단맛이 부족하면 꿀이나 설탕을 추가해 입맛에 맞춰주세요.',
-      '새알심을 함께 넣으면 더 든든한 한 끼가 됩니다.',
-    ],
-    youtubeQuery: '늙은호박죽 만들기',
-  },
-  {
     id: '10-2',
     month: 10,
     title: '아삭한 사과 견과 샐러드',
