@@ -396,21 +396,6 @@ export const recipesIngredientCoverage: Recipe[] = [
 
   // ===== 과일 =====
   {
-    id: 'ing-레드향-1', month: 1, title: '레드향 화채', subtitle: '향긋하고 시원한 겨울 과일 화채',
-    category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '레드향', description: '향긋한 레드향을 사이다와 함께 시원하게 즐기는 간단한 화채예요.',
-    ingredients: [
-      { name: '레드향', amount: '2개' }, { name: '사이다', amount: '1컵' }, { name: '꿀', amount: '1큰술' }, { name: '얼음', amount: '약간' },
-    ],
-    steps: [
-      { title: '과육 준비', description: '레드향은 껍질을 까서 알맹이를 분리합니다.' },
-      { title: '섞기', description: '그릇에 과육을 담고 사이다와 꿀을 부어줍니다.' },
-      { title: '마무리', description: '얼음을 띄워 시원하게 즐깁니다.' },
-    ],
-    tips: ['민트잎을 올리면 더 산뜻해요.', '탄산수로 대체하면 덜 달아요.'],
-    youtubeQuery: '레드향 화채',
-  },
-  {
     id: 'ing-멜론-1', month: 7, title: '멜론 프로슈토', subtitle: '달콤한 멜론과 짭짤한 햄의 조화',
     category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '멜론', description: '달콤한 멜론에 짭짤한 프로슈토(또는 생햄)를 곁들이는 간단한 전채요리예요.',

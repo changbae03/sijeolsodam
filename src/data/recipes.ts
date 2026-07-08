@@ -84,6 +84,7 @@ import { recipesSnowCrabExpansion } from './recipes-snowcrab-expansion';
 import { recipesCodExpansion } from './recipes-cod-expansion';
 import { recipesLargeShrimpExpansion } from './recipes-largeshrimp-expansion';
 import { recipesFlounderExpansion } from './recipes-flounder-expansion';
+import { recipesRedhyangExpansion } from './recipes-redhyang-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -171,6 +172,7 @@ export const allRecipes: Recipe[] = [
   ...recipesCodExpansion,
   ...recipesLargeShrimpExpansion,
   ...recipesFlounderExpansion,
+  ...recipesRedhyangExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
