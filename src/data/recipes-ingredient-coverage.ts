@@ -108,21 +108,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '우럭미역국',
   },
   {
-    id: 'ing-성게-1', month: 8, title: '향긋한 성게 비빔밥', subtitle: '바다향 가득한 고급스러운 별미 비빔밥',
-    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 1, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '성게', description: '신선한 성게알을 밥 위에 올려 참기름과 간장으로 간단히 즐기는 별미예요.',
-    ingredients: [
-      { name: '성게알', amount: '50g' }, { name: '밥', amount: '1공기' }, { name: '김가루', amount: '약간' }, { name: '참기름', amount: '1작은술' }, { name: '간장', amount: '1작은술' },
-    ],
-    steps: [
-      { title: '밥 준비', description: '갓 지은 밥을 그릇에 담습니다.' },
-      { title: '올리기', description: '성게알을 밥 위에 소복히 올립니다.' },
-      { title: '마무리', description: '참기름과 간장을 살짝 두르고 김가루를 뿌립니다.' },
-    ],
-    tips: ['와사비를 살짝 곁들이면 풍미가 더 깊어져요.', '비비지 않고 그대로 떠먹어도 맛있어요.'],
-    youtubeQuery: '성게 비빔밥',
-  },
-  {
     id: 'ing-연어-1', month: 9, title: '담백한 연어 스테이크', subtitle: '겉은 바삭, 속은 부드러운 연어 요리',
     category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '연어', description: '팬에 구워 겉은 바삭하고 속은 부드럽게 즐기는 가장 기본적인 연어 요리예요.',
