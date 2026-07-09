@@ -59,21 +59,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '숭어회 뜨는 법',
   },
   {
-    id: 'ing-뱅어-1', month: 5, title: '바삭한 뱅어포 무침', subtitle: '간단하게 무쳐먹는 봄 밑반찬',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '뱅어', description: '구운 뱅어포에 고춧가루 양념을 더해 바삭하고 짭짤하게 즐기는 밑반찬이에요.',
-    ingredients: [
-      { name: '뱅어포', amount: '5장' }, { name: '고춧가루', amount: '1작은술' }, { name: '간장', amount: '1작은술' }, { name: '물엿', amount: '1작은술' }, { name: '참기름', amount: '1작은술' },
-    ],
-    steps: [
-      { title: '굽기', description: '뱅어포를 마른 팬에 살짝 구워 바삭하게 합니다.', timerSeconds: 60 },
-      { title: '자르기', description: '먹기 좋은 크기로 부숩니다.' },
-      { title: '무치기', description: '양념을 모두 섞어 뱅어포에 골고루 무칩니다.' },
-    ],
-    tips: ['너무 오래 구우면 타니 살짝만 구워요.', '깨를 더하면 고소함이 살아요.'],
-    youtubeQuery: '뱅어포 무침',
-  },
-  {
     id: 'ing-병어-1', month: 5, title: '고소한 병어조림', subtitle: '살이 부드러운 봄 병어를 매콤하게 조린 메인',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '병어', description: '간장양념에 졸여낸 병어는 살이 부드럽고 양념이 잘 배어들어요.',
