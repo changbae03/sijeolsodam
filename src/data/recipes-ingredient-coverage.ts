@@ -217,40 +217,6 @@ export const recipesIngredientCoverage: Recipe[] = [
 
   // ===== 과일 =====
   {
-    id: 'ing-살구-1', month: 5, title: '향긋한 살구잼', subtitle: '새콤달콤한 초여름 살구로 만드는 홈메이드 잼',
-    category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '살구', description: '살구와 설탕만으로 만드는 향긋한 잼은 빵에 발라먹기 좋아요.',
-    ingredients: [
-      { name: '살구', amount: '500g' }, { name: '설탕', amount: '250g' }, { name: '레몬즙', amount: '1큰술' },
-    ],
-    steps: [
-      {
-        title: '손질',
-        description: '살구는 씨를 제거하고 잘게 자릅니다. 너무 크게 자르면 졸이는 동안 과육이 끝까지 안 풀어져서 잼이 아니라 과일조림처럼 돼버려요.',
-      },
-      {
-        title: '설탕 절이기',
-        description: '설탕을 넣고 30분 정도 절여 즙이 나오게 합니다. 설탕이 삼투 작용으로 과육 속 수분을 끌어내는 과정이라, 이 단계를 건너뛰면 나중에 졸이는 시간이 훨씬 길어지고 과육이 뭉개지기 쉬워요.',
-        checkpoint: '그릇 바닥에 옅은 갈색 즙이 흥건하게 고여 있으면 충분히 절여진 거예요.',
-      },
-      {
-        title: '졸이기',
-        description: '냄비에 넣고 중약불에서 저어가며 20분간 졸입니다. 거품이 보글보글 올라오다가 점점 큰 기포로 천천히 터지는 소리로 바뀌면, 수분이 줄면서 점도가 잡히고 있다는 신호예요.',
-        timerSeconds: 1200,
-        tip: '레몬즙을 마지막에 넣으면 색과 산미가 살아요. 펙틴 작용을 도와 잼이 더 잘 굳기도 해요.',
-        checkpoint: '나무 숟가락으로 떠서 차가운 접시에 한 방울 떨어뜨려 봤을 때, 흐르지 않고 모양을 유지하면 다 된 거예요.',
-        warning: '불을 세게 켜고 자리를 비우면 바닥부터 타기 쉬워요. 중약불을 유지하면서 계속 저어줘야 해요.',
-      },
-    ],
-    tips: [
-      '소독한 유리병에 담아 식혀 보관하면 오래 즐길 수 있어요.',
-      '요거트에 곁들이면 잘 어울려요.',
-      '대체 재료: 살구가 끝물이라 구하기 어렵다면 자두나 천도복숭아로도 비슷하게 만들 수 있어요.',
-      '보관/활용: 밀폐해 냉장보관하면 2~3주 정도 즐길 수 있고, 더 오래 두려면 소독한 병에 뜨거울 때 바로 채워 밀봉하세요.',
-    ],
-    youtubeQuery: '살구잼 만들기',
-  },
-  {
     id: 'ing-키위-1', month: 2, title: '키위 스무디', subtitle: '비타민 가득한 새콤달콤 키위 스무디',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '키위', description: '키위와 우유, 꿀만 있으면 5분 안에 만들 수 있는 비타민 가득 스무디예요.',
