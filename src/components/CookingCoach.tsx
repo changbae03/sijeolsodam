@@ -50,6 +50,7 @@ export default function CookingCoach({
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [askedStepIndex, setAskedStepIndex] = useState<number | null>(null);
+  const autoAskedStepsRef = useRef<Set<number>>(new Set());
   const scrollRef = useRef<HTMLDivElement>(null);
   const lastNonceRef = useRef<number | null>(null);
 
@@ -59,17 +60,9 @@ export default function CookingCoach({
     }
   }, [exchanges, loading]);
 
-  useEffect(() => {
-    if (askRequest && askRequest.nonce !== lastNonceRef.current) {
-      lastNonceRef.current = askRequest.nonce;
-      setAskedStepIndex(askRequest.stepIndex);
-      setOpen(true);
-    }
-  }, [askRequest]);
-
   const effectiveStepIndex = open && askedStepIndex !== null ? askedStepIndex : currentStepIndex;
 
-  const sendMessage = async (text: string) => {
+  const sendMessage = async (text: string, stepIndexOverride?: number) => {
     const question = text.trim();
     if (!question || loading) return;
     const priorHistory = historyFromExchanges(exchanges);
@@ -83,7 +76,7 @@ export default function CookingCoach({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           recipeId,
-          currentStepIndex: effectiveStepIndex,
+          currentStepIndex: stepIndexOverride ?? effectiveStepIndex,
           servings,
           messages: [...priorHistory, { role: 'user', content: question }],
         }),
@@ -112,6 +105,20 @@ export default function CookingCoach({
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (askRequest && askRequest.nonce !== lastNonceRef.current) {
+      lastNonceRef.current = askRequest.nonce;
+      const stepIndex = askRequest.stepIndex;
+      setAskedStepIndex(stepIndex);
+      setOpen(true);
+      if (!autoAskedStepsRef.current.has(stepIndex)) {
+        autoAskedStepsRef.current.add(stepIndex);
+        sendMessage('이 단계 자세히 알려줘', stepIndex);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [askRequest]);
 
   return (
     <>
