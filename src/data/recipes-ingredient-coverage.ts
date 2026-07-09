@@ -155,21 +155,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '부추전 부치기',
   },
   {
-    id: 'ing-씀바귀-1', month: 3, title: '쌉싸름한 씀바귀무침', subtitle: '입맛을 돋우는 새콤달콤 봄나물 무침',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '씀바귀', description: '쌉싸름한 씀바귀를 고춧가루 양념에 새콤달콤하게 무쳐 입맛을 돋워줘요.',
-    ingredients: [
-      { name: '씀바귀', amount: '200g' }, { name: '고춧가루', amount: '1큰술' }, { name: '식초', amount: '1큰술' }, { name: '설탕', amount: '1작은술' }, { name: '다진마늘', amount: '1작은술' }, { name: '소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '씀바귀는 다듬어 씻은 뒤 소금물에 살짝 절여 쓴맛을 줄입니다.' },
-      { title: '헹구기', description: '찬물에 헹궈 물기를 꼭 짜냅니다.' },
-      { title: '무치기', description: '고춧가루, 식초, 설탕, 다진마늘을 넣고 골고루 무칩니다.' },
-    ],
-    tips: ['쓴맛이 부담스러우면 절이는 시간을 늘려요.', '미나리를 더하면 향이 좋아져요.'],
-    youtubeQuery: '씀바귀무침',
-  },
-  {
     id: 'ing-애호박-1', month: 6, title: '부드러운 애호박볶음', subtitle: '간단하고 부드러운 여름 호박 볶음',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '애호박', description: '새우젓으로 간을 한 애호박볶음은 부드럽고 감칠맛이 좋은 기본 반찬이에요.',
