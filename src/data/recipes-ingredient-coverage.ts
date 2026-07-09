@@ -29,21 +29,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '청어구이 손질',
   },
   {
-    id: 'ing-새조개-1', month: 3, title: '쫄깃 새조개 샤브샤브', subtitle: '데치면 쫄깃해지는 봄 조개의 별미',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '새조개', description: '맑은 육수에 살짝 데쳐 먹는 새조개 샤브샤브는 봄철 별미예요.',
-    ingredients: [
-      { name: '새조개', amount: '300g' }, { name: '쑥갓', amount: '50g' }, { name: '팽이버섯', amount: '1봉' }, { name: '다시마육수', amount: '4컵' }, { name: '소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '새조개는 소금물에 흔들어 씻어 모래를 제거합니다.' },
-      { title: '육수 준비', description: '다시마육수를 끓이고 소금으로 살짝 간합니다.' },
-      { title: '데치기', description: '팔팔 끓는 육수에 새조개를 5~10초만 데쳐 바로 먹습니다.', timerSeconds: 10, tip: '오래 데치면 질겨지니 살짝만 데쳐요.' },
-    ],
-    tips: ['초고추장이나 참기름장에 찍어 드세요.', '남은 육수에 칼국수를 넣어 마무리해도 좋아요.'],
-    youtubeQuery: '새조개 샤브샤브',
-  },
-  {
     id: 'ing-숭어-1', month: 3, title: '쫄깃한 숭어회', subtitle: '봄 숭어로 즐기는 쫄깃한 회 한 접시',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '숭어', description: '봄에 살이 차오른 숭어는 회로 떠서 쫄깃한 식감을 즐기기 좋아요.',
