@@ -29,21 +29,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '청어구이 손질',
   },
   {
-    id: 'ing-숭어-1', month: 3, title: '쫄깃한 숭어회', subtitle: '봄 숭어로 즐기는 쫄깃한 회 한 접시',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '숭어', description: '봄에 살이 차오른 숭어는 회로 떠서 쫄깃한 식감을 즐기기 좋아요.',
-    ingredients: [
-      { name: '숭어회', amount: '300g(손질된 것)' }, { name: '깻잎', amount: '10장' }, { name: '미나리', amount: '한줌' }, { name: '초고추장', amount: '적당량' },
-    ],
-    steps: [
-      { title: '준비', description: '손질된 숭어회를 먹기 좋은 두께로 슬라이스합니다.' },
-      { title: '채소 손질', description: '깻잎과 미나리는 깨끗이 씻어 물기를 뺍니다.' },
-      { title: '플레이팅', description: '회와 채소를 함께 담고 초고추장을 곁들입니다.' },
-    ],
-    tips: ['먹기 직전에 회를 썰어야 신선해요.', '마늘과 청양고추를 곁들이면 더 깔끔해요.'],
-    youtubeQuery: '숭어회 뜨는 법',
-  },
-  {
     id: 'ing-전갱이-1', month: 6, title: '고소한 전갱이 소금구이', subtitle: '기름지고 고소한 초여름 등푸른 생선구이',
     category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전갱이', description: '소금만으로 간을 해 구워도 충분히 고소한 전갱이 본연의 맛을 즐길 수 있어요.',
