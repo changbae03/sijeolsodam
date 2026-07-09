@@ -211,7 +211,21 @@ export default function CookingCoach({
                     <p className="text-[13px] text-ink-soft/70 mb-1.5">{ex.question}</p>
                     {ex.reply && <StructuredReplyView text={ex.reply} size="sm" />}
                     {i === exchanges.length - 1 && loading && (
-                      <p className="text-[14px] text-ink-soft/60 mt-1">소담이가 생각하고 있어요</p>
+                      <div className="flex items-center gap-1 mt-2 h-4">
+                        {[0, 1, 2].map((d) => (
+                          <motion.span
+                            key={d}
+                            className="w-1.5 h-1.5 rounded-full bg-ink-soft/40"
+                            animate={{ opacity: [0.3, 1, 0.3], y: [0, -3, 0] }}
+                            transition={{
+                              duration: 0.9,
+                              repeat: Infinity,
+                              delay: d * 0.15,
+                              ease: 'easeInOut',
+                            }}
+                          />
+                        ))}
+                      </div>
                     )}
                     {ex.error && <p className="text-[14px] text-terracotta mt-1">{ex.error}</p>}
                   </motion.div>

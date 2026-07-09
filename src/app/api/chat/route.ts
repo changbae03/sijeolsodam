@@ -105,8 +105,9 @@ ${scaleNote}
       contents,
       config: {
         systemInstruction,
-        maxOutputTokens: 1000,
+        maxOutputTokens: 2048,
         temperature: 0.6,
+        thinkingConfig: { thinkingBudget: 0 },
       },
     });
 
