@@ -74,20 +74,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '전갱이 소금구이',
   },
   {
-    id: 'ing-보리새우-1', month: 7, title: '탱탱한 보리새우 소금구이', subtitle: '고소하고 탱탱한 여름 새우구이',
-    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '보리새우', description: '소금만 뿌려 구워도 탱탱한 살과 고소한 맛이 그대로 살아나는 간단한 안주예요.',
-    ingredients: [
-      { name: '보리새우', amount: '300g' }, { name: '굵은소금', amount: '1줌' },
-    ],
-    steps: [
-      { title: '팬 달구기', description: '마른 팬에 굵은소금을 깔고 달굽니다.' },
-      { title: '굽기', description: '소금 위에 새우를 올려 앞뒤로 5분씩 굽습니다.', timerSeconds: 600, tip: '껍질이 붉어지면 다 익은 신호예요.' },
-    ],
-    tips: ['머리부터 통째로 먹으면 더 고소해요.', '레몬즙을 살짝 뿌려도 좋아요.'],
-    youtubeQuery: '보리새우 소금구이',
-  },
-  {
     id: 'ing-장어-1', month: 7, title: '고소한 장어구이', subtitle: '복날 대표 보양식, 양념장에 구운 장어',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '장어', description: '달콤짭짤한 양념을 발라 구운 장어는 여름철 대표 보양식이에요.',
