@@ -32,11 +32,20 @@ export async function POST(request: NextRequest) {
     }
 
     const stepsText = recipe.steps
-      .map(
-        (s, i) =>
-          `${i + 1}단계. ${s.title}: ${s.description}${s.tip ? ` (tip: ${s.tip})` : ''}`
-      )
+      .map((s, i) => {
+        const parts = [`${i + 1}단계. ${s.title}: ${s.description}`];
+        if (s.timerSeconds) parts.push(`(소요시간: 약 ${Math.round(s.timerSeconds / 60)}분)`);
+        if (s.tip) parts.push(`(팁: ${s.tip})`);
+        if (s.checkpoint) parts.push(`(완료 신호: ${s.checkpoint})`);
+        if (s.warning) parts.push(`(흔한 실수: ${s.warning})`);
+        if (s.recoveryTip) parts.push(`(만회법: ${s.recoveryTip})`);
+        return parts.join(' ');
+      })
       .join('\n');
+
+    const masterclassText = recipe.masterclass
+      ? `\n셰프의 심화 가이드(이 요리 특유의 기법·원리):\n- 재료 고르는 법: ${recipe.masterclass.ingredientSelection}\n- 사전 준비: ${recipe.masterclass.miseEnPlace}${recipe.masterclass.chefsNotes ? `\n- 셰프 노트: ${recipe.masterclass.chefsNotes}` : ''}`
+      : '';
 
     const ingredientsText = recipe.ingredients
       .map((ing) => `- ${ing.name}: ${ing.amount}`)
@@ -68,6 +77,7 @@ ${ingredientsText}
 
 조리 단계:
 ${stepsText}
+${masterclassText}
 
 사용자가 현재 보고 있는 단계: ${currentStepLabel}
 ${scaleNote}
@@ -75,7 +85,7 @@ ${scaleNote}
 규칙:
 - 이 레시피와 무관한 질문(다른 요리, 일반 상식 등)이 와도 친절하게 답하되, 가능하면 이 레시피의 맥락으로 자연스럽게 연결하세요.
 - "다음 단계 알려줘" 같은 질문에는 사용자가 보고 있는 단계의 다음 단계 내용을 알려주세요.
-- "이 단계 자세히 알려줘"처럼 단계 전체를 물으면, 레시피에 적힌 설명을 그대로 반복하지 말고 실제로 손을 움직이는 사람에게 도움이 되도록 풀어서 설명하세요: 정확히 몇 분/몇 초인지, 불 세기는 어느 정도인지, 무엇이 어떤 색/질감/상태가 됐을 때 다음으로 넘어가는지, 이 단계에서 사람들이 흔히 실수하는 부분은 무엇인지까지 짚어주세요.
+- "이 단계 자세히 알려줘"라는 질문은 위의 1~3문장 제한과 무관하게, 이 단계를 실제로 성공시키는 데 필요한 모든 걸 빠짐없이 짚어주는 상세 가이드로 답하세요. 다음 항목을 자연스러운 문단으로 엮어서 답하세요: ① 정확히 무엇을 몇 분/몇 초, 어느 불 세기로 하는지, ② 위 "완료 신호"에 있는 감각적 신호(색·냄새·소리·질감)로 다 됐는지 확인하는 법, ③ 위 "흔한 실수"와 "만회법"이 있다면 반드시 언급, ④ 셰프의 심화 가이드에 관련 내용이 있으면 왜 그렇게 해야 하는지 원리까지 설명. 레시피에 적힌 설명을 그대로 반복하지 말고, 요리 초보자가 옆에서 직접 봐주는 것처럼 구체적으로 풀어 설명하세요.
 - 정확한 재료 양, 시간, 온도는 위 레시피 정보를 근거로만 답하고, 모르는 정보는 추측해서 단정적으로 말하지 마세요.
 - 계량이나 타이밍을 물으면("소금 얼마나 넣어?", "언제 넣어?", "얼마나 볶아?") 절대 "적당히", "알아서" 식으로 얼버무리지 말고, 레시피에 있는 정확한 수치(큰술/작은술/g/ml/분)와 "무엇이 어떤 상태가 됐을 때"까지 구체적으로 답하세요. 레시피에 정확한 수치가 없는 세부 질문이면, 비슷한 요리에서 일반적으로 쓰이는 수치를 자신 있게 제안하되 "레시피에는 없지만" 이라고 짧게 밝히세요.
 - "에어프라이어 대신 프라이팬으로 하려면?", "오븐 없는데 어떻게 해?" 같은 조리도구 대체 질문에는, 이 레시피의 조리 원리(굽기/찌기/끓이기 등)를 유지하면서 일반적으로 알려진 대체 방법을 안내하세요. 다만 정확한 대체 시간·온도는 "비슷하게 익었는지 확인하며 조절하세요" 정도로 안내하고, 존재하지 않는 정밀한 수치를 단정적으로 만들어내지 마세요.
