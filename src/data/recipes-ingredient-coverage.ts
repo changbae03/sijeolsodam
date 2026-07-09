@@ -89,21 +89,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '병어조림',
   },
   {
-    id: 'ing-민어-1', month: 6, title: '담백한 민어탕', subtitle: '여름 보양식으로 으뜸인 맑은 생선탕',
-    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '민어', description: '맑게 끓여낸 민어탕은 담백하고 부드러운 살 맛이 일품인 여름 보양식이에요.',
-    ingredients: [
-      { name: '민어', amount: '400g(토막)' }, { name: '애호박', amount: '1/2개' }, { name: '무', amount: '150g' }, { name: '대파', amount: '1대' }, { name: '소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '육수', description: '물에 무를 넣고 끓이다 민어를 넣습니다.' },
-      { title: '끓이기', description: '중불에서 15분간 끓여 생선을 익힙니다.', timerSeconds: 900 },
-      { title: '마무리', description: '애호박과 대파를 넣고 소금으로 간을 맞춥니다.' },
-    ],
-    tips: ['미나리를 곁들이면 향이 더 좋아져요.', '국물만 따로 떠서 죽을 끓여도 좋아요.'],
-    youtubeQuery: '민어탕 끓이는 법',
-  },
-  {
     id: 'ing-전갱이-1', month: 6, title: '고소한 전갱이 소금구이', subtitle: '기름지고 고소한 초여름 등푸른 생선구이',
     category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전갱이', description: '소금만으로 간을 해 구워도 충분히 고소한 전갱이 본연의 맛을 즐길 수 있어요.',
