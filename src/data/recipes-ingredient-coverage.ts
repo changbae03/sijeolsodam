@@ -226,21 +226,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     tips: ['깻잎이나 부추를 더하면 향이 좋아져요.', '볶음밥으로 마무리해도 맛있어요.'],
     youtubeQuery: '주꾸미볶음',
   },
-  {
-    id: 'ing-방어-1', month: 10, title: '고소한 방어회', subtitle: '기름지고 고소한 가을·겨울 대표 회',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '방어', description: '기름이 올라 고소한 방어는 두툼하게 썰어 회로 즐기는 게 제일이에요.',
-    ingredients: [
-      { name: '방어회', amount: '300g(손질된 것)' }, { name: '쪽파', amount: '약간' }, { name: '양파', amount: '1/4개' }, { name: '초고추장', amount: '적당량' },
-    ],
-    steps: [
-      { title: '준비', description: '손질된 방어회를 두툼하게 슬라이스합니다.' },
-      { title: '곁들임 준비', description: '쪽파와 양파를 채 썰어 준비합니다.' },
-      { title: '플레이팅', description: '회 위에 쪽파와 양파를 올리고 초고추장을 곁들입니다.' },
-    ],
-    tips: ['방어는 뱃살 부위가 가장 기름지고 고소해요.', '김에 싸서 먹어도 별미예요.'],
-    youtubeQuery: '방어회 먹는 법',
-  },
 
   // ===== 채소 =====
   {
