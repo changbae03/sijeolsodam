@@ -59,21 +59,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '숭어회 뜨는 법',
   },
   {
-    id: 'ing-병어-1', month: 5, title: '고소한 병어조림', subtitle: '살이 부드러운 봄 병어를 매콤하게 조린 메인',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '병어', description: '간장양념에 졸여낸 병어는 살이 부드럽고 양념이 잘 배어들어요.',
-    ingredients: [
-      { name: '병어', amount: '2마리' }, { name: '간장', amount: '3큰술' }, { name: '고춧가루', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '대파', amount: '1대' }, { name: '물', amount: '1/2컵' },
-    ],
-    steps: [
-      { title: '손질', description: '병어는 비늘과 내장을 제거하고 칼집을 냅니다.' },
-      { title: '양념', description: '간장, 고춧가루, 다진마늘, 물을 섞어 양념장을 만듭니다.' },
-      { title: '조리기', description: '냄비에 병어와 양념장을 넣고 중불에서 15분간 조립니다.', timerSeconds: 900, tip: '중간에 양념을 끼얹어주면 골고루 배요.' },
-    ],
-    tips: ['대파를 마지막에 올려 향을 살려요.', '감자를 깔고 조리면 더 든든해요.'],
-    youtubeQuery: '병어조림',
-  },
-  {
     id: 'ing-전갱이-1', month: 6, title: '고소한 전갱이 소금구이', subtitle: '기름지고 고소한 초여름 등푸른 생선구이',
     category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전갱이', description: '소금만으로 간을 해 구워도 충분히 고소한 전갱이 본연의 맛을 즐길 수 있어요.',
