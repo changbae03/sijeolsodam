@@ -420,21 +420,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '들깨미역국',
   },
   {
-    id: 'ing-보리-1', month: 3, title: '구수한 보리비빔밥', subtitle: '식이섬유 가득한 구수한 보리밥 비빔밥',
-    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '보리', description: '구수한 보리밥에 나물과 고추장을 더해 비벼먹는 건강한 한 끼예요.',
-    ingredients: [
-      { name: '보리밥', amount: '2공기' }, { name: '나물(취나물 등)', amount: '1컵' }, { name: '고추장', amount: '2큰술' }, { name: '참기름', amount: '1큰술' }, { name: '계란프라이', amount: '2개' },
-    ],
-    steps: [
-      { title: '밥 짓기', description: '보리를 쌀과 섞어 평소보다 물을 좀 더 넣고 밥을 짓습니다.', timerSeconds: 1800 },
-      { title: '나물 준비', description: '나물은 간장, 참기름으로 무쳐둡니다.' },
-      { title: '비비기', description: '그릇에 밥, 나물, 계란프라이를 올리고 고추장과 참기름을 더해 비빕니다.' },
-    ],
-    tips: ['보리는 쌀보다 물을 1.2배 정도 더 넣어요.', '여러 나물을 섞으면 더 풍성해요.'],
-    youtubeQuery: '보리비빔밥',
-  },
-  {
     id: 'ing-풋콩-1', month: 7, title: '담백한 풋콩찜', subtitle: '소금물에 삶아 즐기는 여름 맥주 안주',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '풋콩', description: '소금물에 삶기만 하면 끝나는 가장 간단한 여름 별미예요.',
