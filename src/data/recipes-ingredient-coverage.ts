@@ -93,21 +93,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '우럭미역국',
   },
   {
-    id: 'ing-연어-1', month: 9, title: '담백한 연어 스테이크', subtitle: '겉은 바삭, 속은 부드러운 연어 요리',
-    category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '연어', description: '팬에 구워 겉은 바삭하고 속은 부드럽게 즐기는 가장 기본적인 연어 요리예요.',
-    ingredients: [
-      { name: '연어', amount: '2토막' }, { name: '올리브오일', amount: '1큰술' }, { name: '소금, 후추', amount: '약간씩' }, { name: '레몬', amount: '1/2개' },
-    ],
-    steps: [
-      { title: '밑간', description: '연어에 소금, 후추로 밑간을 합니다.' },
-      { title: '굽기', description: '달군 팬에 올리브오일을 두르고 껍질 쪽부터 바삭하게 굽습니다.', timerSeconds: 240, tip: '한쪽당 3~4분씩 구우면 적당해요.' },
-      { title: '마무리', description: '레몬즙을 뿌려 산뜻하게 마무리합니다.' },
-    ],
-    tips: ['버터를 약간 더하면 풍미가 깊어져요.', '아스파라거스를 곁들이면 보기 좋아요.'],
-    youtubeQuery: '연어 스테이크 굽기',
-  },
-  {
     id: 'ing-전어-1', month: 9, title: '고소한 전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전어', description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐겨요.',
