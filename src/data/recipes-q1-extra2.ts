@@ -4,38 +4,6 @@ import { Recipe } from './types';
 export const recipesQ1Extra2: Recipe[] = [
   // ===== 1월 =====
   {
-    id: '1-12',
-    month: 1,
-    title: '아삭한 연근 조림',
-    subtitle: '달콤짭짤한 간장 양념이 밴 겨울 반찬',
-    category: '밑반찬',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 25,
-    servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '연근',
-    description: '아삭한 식감의 연근을 간장 양념에 졸여낸 밑반찬이에요. 식감과 단맛이 살아있어 도시락 반찬으로도 좋아요.',
-    ingredients: [
-      { name: '연근', amount: '300g' },
-      { name: '간장', amount: '3큰술' },
-      { name: '설탕', amount: '1큰술' },
-      { name: '물엿', amount: '1큰술' },
-      { name: '식초', amount: '1작은술' },
-      { name: '통깨', amount: '약간' },
-    ],
-    steps: [
-      { title: '연근 손질', description: '연근은 껍질을 벗기고 0.5cm 두께로 썰어 식초물에 담가둡니다.' },
-      { title: '데치기', description: '끓는 물에 연근을 2분간 데쳐 건집니다.', timerSeconds: 120 },
-      { title: '조리기', description: '팬에 연근과 간장, 설탕, 물을 넣고 중불에서 졸입니다.', timerSeconds: 600, tip: '물엿은 마지막에 넣어야 윤기가 살아요.' },
-      { title: '마무리', description: '물엿을 넣고 한 번 더 졸인 뒤 통깨를 뿌려 마무리합니다.' },
-    ],
-    tips: [
-      '식초물에 담가두면 연근이 갈변하지 않아요.',
-      '견과류를 함께 졸이면 더 고소한 맛을 낼 수 있어요.',
-    ],
-    youtubeQuery: '연근조림 만들기',
-  },
-  {
     id: '1-13',
     month: 1,
     title: '뜨끈한 대파 된장국',
