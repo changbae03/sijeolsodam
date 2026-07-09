@@ -259,21 +259,6 @@ export const recipesIngredientCoverage: Recipe[] = [
 
   // ===== 채소 =====
   {
-    id: 'ing-무순-1', month: 9, title: '알싱한 무순 샐러드', subtitle: '간단하게 곁들이는 알싱한 새싹 샐러드',
-    category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '무순', description: '아삭한 무순에 간장 드레싱을 더해 가볍게 곁들이기 좋은 샐러드예요.',
-    ingredients: [
-      { name: '무순', amount: '1팩' }, { name: '간장', amount: '1큰술' }, { name: '식초', amount: '1큰술' }, { name: '참기름', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '무순은 찬물에 씻어 물기를 충분히 뺍니다.' },
-      { title: '드레싱', description: '간장, 식초, 참기름을 섞어 드레싱을 만듭니다.' },
-      { title: '버무리기', description: '먹기 직전에 무순과 드레싱을 가볍게 섞습니다.' },
-    ],
-    tips: ['고기 요리에 곁들이면 알싱한 맛이 잘 어울려요.', '미리 무치면 숨이 죽으니 먹기 직전에 무쳐요.'],
-    youtubeQuery: '무순 샐러드',
-  },
-  {
     id: 'ing-부추-1', month: 5, title: '고소한 부추전', subtitle: '향긋한 부추로 부쳐낸 바삭한 전',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '부추', description: '부추 향이 가득한 반죽을 바삭하게 부쳐낸, 막걸리와 잘 어울리는 전이에요.',
