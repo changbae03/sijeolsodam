@@ -76,21 +76,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '애호박볶음',
   },
   {
-    id: 'ing-참나물-1', month: 3, title: '향긋한 참나물무침', subtitle: '향긋하게 무쳐낸 봄나물 반찬',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '참나물', description: '참기름과 국간장으로 슴슴하게 무쳐 참나물 본연의 향을 살린 반찬이에요.',
-    ingredients: [
-      { name: '참나물', amount: '200g' }, { name: '국간장', amount: '1큰술' }, { name: '참기름', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '참나물은 깨끗이 씻어 먹기 좋게 자릅니다.' },
-      { title: '무치기', description: '국간장, 참기름, 다진마늘을 넣고 골고루 무칩니다.' },
-      { title: '마무리', description: '깨소금을 뿌려 마무리합니다.' },
-    ],
-    tips: ['생으로 무쳐야 향이 가장 좋아요.', '초고추장으로 무쳐도 잘 어울려요.'],
-    youtubeQuery: '참나물무침',
-  },
-  {
     id: 'ing-토란-1', month: 9, title: '구수한 토란국', subtitle: '부드럽고 구수한 가을 대표 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '토란', description: '소고기와 함께 끓여낸 토란국은 부드럽고 구수한 맛이 일품인 가을철 국이에요.',
