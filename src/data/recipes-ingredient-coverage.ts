@@ -93,20 +93,6 @@ export const recipesIngredientCoverage: Recipe[] = [
 
   // ===== 과일 =====
   {
-    id: 'ing-키위-1', month: 2, title: '키위 스무디', subtitle: '비타민 가득한 새콤달콤 키위 스무디',
-    category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '키위', description: '키위와 우유, 꿀만 있으면 5분 안에 만들 수 있는 비타민 가득 스무디예요.',
-    ingredients: [
-      { name: '키위', amount: '3개' }, { name: '우유(또는 요거트)', amount: '1컵' }, { name: '꿀', amount: '1큰술' }, { name: '얼음', amount: '5조각' },
-    ],
-    steps: [
-      { title: '손질', description: '키위는 껍질을 벗기고 적당히 자릅니다.' },
-      { title: '블렌딩', description: '모든 재료를 블렌더에 넣고 곱게 갑니다.' },
-    ],
-    tips: ['요거트로 만들면 더 꾸덕해요.', '꿀 양은 키위의 단맛에 맞춰 조절해요.'],
-    youtubeQuery: '키위 스무디',
-  },
-  {
     id: 'ing-황금향-1', month: 4, title: '황금향 샐러드', subtitle: '향긋하고 달콤한 봄 만감류 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '황금향', description: '황금향의 달콤한 과즙과 채소를 곁들여 산뜻하게 즐기는 샐러드예요.',
