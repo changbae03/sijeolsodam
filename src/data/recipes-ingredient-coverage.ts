@@ -61,21 +61,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '애호박볶음',
   },
   {
-    id: 'ing-토란-1', month: 9, title: '구수한 토란국', subtitle: '부드럽고 구수한 가을 대표 국',
-    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '토란', description: '소고기와 함께 끓여낸 토란국은 부드럽고 구수한 맛이 일품인 가을철 국이에요.',
-    ingredients: [
-      { name: '토란', amount: '300g' }, { name: '소고기(국거리)', amount: '100g' }, { name: '국간장', amount: '2큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '참기름', amount: '1큰술' },
-    ],
-    steps: [
-      { title: '손질', description: '토란은 껍질을 벗기고 소금물에 살짝 씻어 미끈거림을 줄입니다.' },
-      { title: '볶기', description: '참기름에 소고기를 볶다가 물을 붓고 끓입니다.' },
-      { title: '끓이기', description: '토란과 국간장, 다진마늘을 넣고 20분간 끓입니다.', timerSeconds: 1200, tip: '토란이 푹 익을 때까지 끓여야 부드러워요.' },
-    ],
-    tips: ['손으로 만졌을 때 가려우면 장갑을 끼고 손질해요.', '들깨가루를 더하면 더 구수해져요.'],
-    youtubeQuery: '토란국 끓이는 법',
-  },
-  {
     id: 'ing-풋마늘-1', month: 5, title: '아삭한 풋마늘무침', subtitle: '알싱하고 아삭한 초여름 마늘 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '풋마늘', description: '아삭한 풋마늘을 고춧가루 양념에 새콤하게 무쳐낸 알싱한 반찬이에요.',
