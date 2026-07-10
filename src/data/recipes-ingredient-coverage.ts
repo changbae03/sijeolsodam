@@ -60,21 +60,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     tips: ['소금을 약간 넣고 절였다가 볶으면 물이 덜 나와요.', '새우젓 대신 소금으로 간해도 좋아요.'],
     youtubeQuery: '애호박볶음',
   },
-  {
-    id: 'ing-풋마늘-1', month: 5, title: '아삭한 풋마늘무침', subtitle: '알싱하고 아삭한 초여름 마늘 무침',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '풋마늘', description: '아삭한 풋마늘을 고춧가루 양념에 새콤하게 무쳐낸 알싱한 반찬이에요.',
-    ingredients: [
-      { name: '풋마늘', amount: '200g' }, { name: '고춧가루', amount: '1큰술' }, { name: '액젓', amount: '1큰술' }, { name: '설탕', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '손질', description: '풋마늘은 다듬어 씻고 먹기 좋은 길이로 자릅니다.' },
-      { title: '절이기', description: '소금을 살짝 뿌려 5분간 절여 숨을 죽입니다.' },
-      { title: '무치기', description: '고춧가루, 액젓, 설탕을 넣고 골고루 무친 뒤 깨소금을 뿌립니다.' },
-    ],
-    tips: ['너무 매운맛이 부담스러우면 양념을 줄여요.', '쪽파를 더해도 잘 어울려요.'],
-    youtubeQuery: '풋마늘무침',
-  },
 
   // ===== 과일 =====
   {
