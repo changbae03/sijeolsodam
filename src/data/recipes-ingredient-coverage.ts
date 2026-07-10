@@ -14,21 +14,6 @@ const PLACEHOLDER_IMAGE =
 export const recipesIngredientCoverage: Recipe[] = [
   // ===== 해산물 =====
   {
-    id: 'ing-청어-1', month: 1, title: '고소한 청어구이', subtitle: '기름지고 고소한 등푸른 생선구이',
-    category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '청어', description: '소금만 뿌려 노릇하게 구워내면 청어 특유의 기름진 맛이 가장 살아나요.',
-    ingredients: [
-      { name: '청어', amount: '2마리' }, { name: '소금', amount: '1작은술' }, { name: '식용유', amount: '1큰술' },
-    ],
-    steps: [
-      { title: '손질', description: '청어는 내장을 제거하고 깨끗이 씻어 칼집을 살짝 냅니다.' },
-      { title: '밑간', description: '소금을 골고루 뿌려 10분 정도 재웁니다.' },
-      { title: '굽기', description: '팬에 기름을 두르고 중불에서 앞뒤로 노릇하게 굽습니다.', timerSeconds: 600, tip: '뚜껑을 덮고 구우면 속까지 잘 익어요.' },
-    ],
-    tips: ['무즙을 곁들이면 느끼함이 잡혀요.', '레몬즙을 살짝 뿌려도 좋아요.'],
-    youtubeQuery: '청어구이 손질',
-  },
-  {
     id: 'ing-주꾸미-1', month: 2, title: '매콤한 주꾸미볶음', subtitle: '쫄깃한 주꾸미를 매콤하게 볶아낸 별미',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '주꾸미', description: '매콤달콤한 양념에 볶아낸 주꾸미는 쫄깃한 식감이 일품인 술안주예요.',
