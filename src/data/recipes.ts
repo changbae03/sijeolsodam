@@ -108,6 +108,7 @@ import { recipesSalmonExpansion } from './recipes-salmon-expansion';
 import { recipesRockfishExpansion } from './recipes-rockfish-expansion';
 import { recipesBurdockExpansion } from './recipes-burdock-expansion';
 import { recipesPlumExpansion } from './recipes-plum-expansion';
+import { recipesEelExpansion } from './recipes-eel-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -219,6 +220,7 @@ export const allRecipes: Recipe[] = [
   ...recipesRockfishExpansion,
   ...recipesBurdockExpansion,
   ...recipesPlumExpansion,
+  ...recipesEelExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {

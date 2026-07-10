@@ -44,40 +44,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '전갱이 소금구이',
   },
   {
-    id: 'ing-장어-1', month: 7, title: '고소한 장어구이', subtitle: '복날 대표 보양식, 양념장에 구운 장어',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 30, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '장어', description: '달콤짭짤한 양념을 발라 구운 장어는 여름철 대표 보양식이에요.',
-    ingredients: [
-      { name: '장어', amount: '2마리(손질된 것)' }, { name: '간장', amount: '3큰술' }, { name: '맛술', amount: '2큰술' }, { name: '설탕', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' },
-    ],
-    steps: [
-      {
-        title: '양념장',
-        description: '간장, 맛술, 설탕, 다진마늘을 섞어 양념장을 끓여 졸입니다. 미리 한 번 끓여서 졸여두면 알코올과 비린내가 날아가고, 당분이 살짝 캐러멜화되면서 단순히 짠맛이 아니라 깊은 단짠 맛이 생겨요.',
-        checkpoint: '숟가락으로 떠봤을 때 주르륵 흐르지 않고 묵직하게 떨어지는 점도가 되면 졸임이 끝난 거예요.',
-      },
-      {
-        title: '굽기 1차',
-        description: '장어를 석쇄나 팬에 먼저 노릇하게 굽습니다. 양념 없이 먼저 굽는 이유는, 장어 자체의 기름을 먼저 빼주는 거예요 — 그래야 나중에 양념을 발랐을 때 느끼하지 않고 양념 맛이 또렷하게 살아요.',
-        timerSeconds: 600,
-        checkpoint: '껍질 쪽이 살짝 오그라들면서 노릇한 갈색이 돌고, 지글지글 기름 빠지는 소리가 잦아들면 1차로 충분히 구워진 거예요.',
-        warning: '센불에서 급하게 구우면 겉만 타고 속은 안 익어요. 중불에서 천천히 구워야 골고루 익어요.',
-      },
-      {
-        title: '양념 바르기',
-        description: '양념장을 발라가며 2~3번 더 구워 윤기나게 마무리합니다. 한 번에 양념을 많이 바르면 타기 쉬우니, 얇게 여러 번 덧발라 가며 윤기가 쌓이듯 입혀주세요.',
-        tip: '양념을 바른 후엔 불 옆에서 자리를 뜨지 마세요. 당분이 들어간 양념은 순식간에 타버려요.',
-      },
-    ],
-    tips: [
-      '생강채를 곁들이면 느끼함이 잡혀요.',
-      '깻잎에 싸먹으면 더 깔끔해요.',
-      '대체 재료: 손질된 장어가 없다면 미꾸라지나 붕장어로도 비슷한 양념을 활용할 수 있어요.',
-      '보관/활용: 남은 양념장은 밀폐용기에 담아 냉장보관하면 다른 구이 요리에도 두루 쓸 수 있어요.',
-    ],
-    youtubeQuery: '장어구이 양념',
-  },
-  {
     id: 'ing-전어-1', month: 9, title: '고소한 전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전어', description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐겨요.',
