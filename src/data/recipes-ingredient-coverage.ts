@@ -29,21 +29,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '청어구이 손질',
   },
   {
-    id: 'ing-전갱이-1', month: 6, title: '고소한 전갱이 소금구이', subtitle: '기름지고 고소한 초여름 등푸른 생선구이',
-    category: '메인', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '전갱이', description: '소금만으로 간을 해 구워도 충분히 고소한 전갱이 본연의 맛을 즐길 수 있어요.',
-    ingredients: [
-      { name: '전갱이', amount: '2마리' }, { name: '소금', amount: '1작은술' }, { name: '식용유', amount: '1큰술' }, { name: '레몬', amount: '1/4개' },
-    ],
-    steps: [
-      { title: '손질', description: '전갱이는 비늘과 내장을 제거하고 깨끗이 씻습니다.' },
-      { title: '밑간', description: '소금을 골고루 뿌려 10분간 재웁니다.' },
-      { title: '굽기', description: '팬에 기름을 두르고 앞뒤로 노릇하게 굽습니다.', timerSeconds: 600 },
-    ],
-    tips: ['레몬을 곁들이면 풍미가 살아나요.', '에어프라이어 200도 12분도 좋아요.'],
-    youtubeQuery: '전갱이 소금구이',
-  },
-  {
     id: 'ing-전어-1', month: 9, title: '고소한 전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전어', description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐겨요.',
