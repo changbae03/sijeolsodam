@@ -78,21 +78,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '장어구이 양념',
   },
   {
-    id: 'ing-우럭-1', month: 8, title: '시원한 우럭미역국', subtitle: '담백한 흰살생선과 미역이 어우러진 국',
-    category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '우럭', description: '우럭의 담백함과 미역의 부드러움이 잘 어울리는 시원한 국이에요.',
-    ingredients: [
-      { name: '우럭', amount: '1마리(토막)' }, { name: '마른미역', amount: '20g' }, { name: '참기름', amount: '1큰술' }, { name: '국간장', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' },
-    ],
-    steps: [
-      { title: '미역 불리기', description: '마른미역을 물에 불려 먹기 좋게 자릅니다.' },
-      { title: '볶기', description: '참기름에 미역을 볶다가 물을 붓고 끓입니다.' },
-      { title: '끓이기', description: '우럭과 국간장, 다진마늘을 넣고 15분간 끓입니다.', timerSeconds: 900 },
-    ],
-    tips: ['끓이는 중간 거품을 걷어내면 국물이 깔끔해요.', '소금으로 부족한 간을 맞춰요.'],
-    youtubeQuery: '우럭미역국',
-  },
-  {
     id: 'ing-전어-1', month: 9, title: '고소한 전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '전어', description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐겨요.',
