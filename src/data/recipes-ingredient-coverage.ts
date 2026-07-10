@@ -122,21 +122,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '키위 스무디',
   },
   {
-    id: 'ing-천혜향-1', month: 2, title: '천혜향 청', subtitle: '향이 진한 만감류로 만드는 홈메이드 과일청',
-    category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '천혜향', description: '천혜향을 설탕에 재워 만든 과일청은 차로 마시거나 탄산수에 타 마시기 좋아요.',
-    ingredients: [
-      { name: '천혜향', amount: '3개' }, { name: '설탕', amount: '같은 무게' },
-    ],
-    steps: [
-      { title: '손질', description: '천혜향은 껍질째 얇게 슬라이스하거나 과육만 분리합니다.' },
-      { title: '재우기', description: '설탕과 1:1 비율로 켜켜이 담아 재웁니다.' },
-      { title: '숙성', description: '하루 정도 실온에 두었다가 냉장 보관하며 숙성시킵니다.' },
-    ],
-    tips: ['소독한 병에 담아야 오래 보관할 수 있어요.', '뜨거운 물에 타면 향긋한 차가 돼요.'],
-    youtubeQuery: '천혜향 청 만들기',
-  },
-  {
     id: 'ing-황금향-1', month: 4, title: '황금향 샐러드', subtitle: '향긋하고 달콤한 봄 만감류 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '황금향', description: '황금향의 달콤한 과즙과 채소를 곁들여 산뜻하게 즐기는 샐러드예요.',
