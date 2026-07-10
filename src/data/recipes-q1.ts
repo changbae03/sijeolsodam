@@ -3,41 +3,6 @@ import { Recipe } from './types';
 export const recipesQ1: Recipe[] = [
   // ===== 1월 =====
   {
-    id: '1-1',
-    month: 1,
-    title: '은은한 풍미, 우엉 솥밥',
-    subtitle: '구수한 우엉 향이 밥알 사이로 스며드는 한 그릇',
-    category: '밥/죽',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 35,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '우엉',
-    description: '겨울철 우엉의 단맛과 식이섬유를 가장 맛있게 즐기는 방법이에요. 들기름에 살짝 볶은 우엉을 쌀과 함께 솥에 안쳐 짓기만 하면, 구수한 향이 집안 가득 퍼지는 든든한 한 끼가 됩니다.',
-    ingredients: [
-      { name: '쌀', amount: '2컵' },
-      { name: '우엉', amount: '150g' },
-      { name: '당근', amount: '1/3개' },
-      { name: '들기름', amount: '1.5큰술' },
-      { name: '맛간장', amount: '1큰술' },
-      { name: '물', amount: '2컵' },
-      { name: '대파', amount: '약간' },
-      { name: '통깨', amount: '약간' },
-    ],
-    steps: [
-      { title: '쌀 불리기', description: '쌀을 깨끗이 씻어 30분 정도 물에 불려둡니다.', timerSeconds: 1800 },
-      { title: '우엉 손질', description: '우엉은 칼등으로 껍질을 긁어내고 얇게 채 썬 뒤, 갈변을 막기 위해 식초물에 잠깐 담가둡니다.', tip: '우엉을 너무 두껍게 썰면 식감이 거칠어지니 최대한 얇게 썰어주세요.' },
-      { title: '우엉 볶기', description: '달군 솥에 들기름을 두르고 우엉과 채 썬 당근을 넣어 1~2분간 볶아 향을 냅니다.', timerSeconds: 120 },
-      { title: '밥 짓기', description: '불린 쌀과 맛간장, 물을 넣고 골고루 섞은 뒤 뚜껑을 닫고 센 불에서 끓이다가, 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720, tip: '중간에 뚜껑을 열면 김이 빠져나가 밥이 설익을 수 있어요.' },
-      { title: '뜸 들이기', description: '불을 끄고 5분간 그대로 뜸을 들인 뒤, 골고루 섞어 그릇에 담고 대파와 통깨를 뿌려 마무리합니다.', timerSeconds: 300 },
-    ],
-    tips: [
-      '우엉 솥밥은 양념장(간장, 다진 마늘, 참기름, 고춧가루)을 곁들이면 더 깊은 맛을 즐길 수 있어요.',
-      '우엉을 미리 볶아두면 비린내 없이 더 고소한 향이 납니다.',
-    ],
-    youtubeQuery: '우엉 솥밥 만들기',
-  },
-  {
     id: '1-3',
     month: 1,
     title: '달큰한 남해 시금치 프리타타',
