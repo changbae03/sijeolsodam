@@ -29,21 +29,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '청어구이 손질',
   },
   {
-    id: 'ing-전어-1', month: 9, title: '고소한 전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
-    category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '전어', description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐겨요.',
-    ingredients: [
-      { name: '전어', amount: '4마리' }, { name: '굵은소금', amount: '1작은술' },
-    ],
-    steps: [
-      { title: '손질', description: '전어는 비늘만 살짝 긁어내고 통째로 준비합니다.' },
-      { title: '밑간', description: '소금을 골고루 뿌려 10분간 둡니다.' },
-      { title: '굽기', description: '석쇠나 팬에 앞뒤로 노릇하게 굽습니다.', timerSeconds: 600 },
-    ],
-    tips: ['뼈가 부드러워 통째로 먹어도 좋아요.', '깻잎에 싸서 먹으면 더 향긋해요.'],
-    youtubeQuery: '전어구이',
-  },
-  {
     id: 'ing-주꾸미-1', month: 2, title: '매콤한 주꾸미볶음', subtitle: '쫄깃한 주꾸미를 매콤하게 볶아낸 별미',
     category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '주꾸미', description: '매콤달콤한 양념에 볶아낸 주꾸미는 쫄깃한 식감이 일품인 술안주예요.',
