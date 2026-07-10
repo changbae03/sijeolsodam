@@ -186,33 +186,6 @@ export const recipesQ2Extra2: Recipe[] = [
     youtubeQuery: '깻잎장아찌 만들기',
   },
   {
-    id: '6-12',
-    month: 6,
-    title: '새콤달콤 자두 청',
-    subtitle: '진한 향과 새콤한 맛을 담은 여름 과일청',
-    category: '음료/청',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 30,
-    servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '자두',
-    description: '새콤달콤한 자두로 만든 청이에요. 물이나 탄산수에 타서 시원한 음료로 즐길 수 있어요.',
-    ingredients: [
-      { name: '자두', amount: '500g' },
-      { name: '설탕', amount: '500g' },
-    ],
-    steps: [
-      { title: '자두 손질', description: '자두는 깨끗이 씻어 씨를 제거하고 슬라이스합니다.' },
-      { title: '설탕에 재우기', description: '자두와 설탕을 1:1 비율로 섞어 유리병에 담습니다.', timerSeconds: 86400, tip: '하루에 한 번씩 저어주면 설탕이 잘 녹아요.' },
-      { title: '보관', description: '실온에서 하루 숙성한 뒤 냉장보관합니다.' },
-    ],
-    tips: [
-      '한 달 정도 숙성하면 더 깊은 맛을 즐길 수 있어요.',
-      '탄산수에 타면 시원한 자두 에이드가 됩니다.',
-    ],
-    youtubeQuery: '자두청 만들기',
-  },
-  {
     id: '6-14',
     month: 6,
     title: '향긋한 깻잎 된장무침',
