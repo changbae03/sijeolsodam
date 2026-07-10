@@ -129,21 +129,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '들깨미역국',
   },
   {
-    id: 'ing-풋콩-1', month: 7, title: '담백한 풋콩찜', subtitle: '소금물에 삶아 즐기는 여름 맥주 안주',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '풋콩', description: '소금물에 삶기만 하면 끝나는 가장 간단한 여름 별미예요.',
-    ingredients: [
-      { name: '풋콩', amount: '300g' }, { name: '굵은소금', amount: '2큰술' }, { name: '물', amount: '5컵' },
-    ],
-    steps: [
-      { title: '손질', description: '풋콩 꼬투리 끝을 살짝 잘라 소금물이 잘 배게 합니다.' },
-      { title: '삶기', description: '소금물을 끓여 풋콩을 넣고 8~10분간 삶습니다.', timerSeconds: 540, tip: '너무 오래 삶으면 물러지니 시간을 지켜요.' },
-      { title: '헹구기', description: '찬물에 헹궈 한 번 더 소금을 살짝 뿌려줍니다.' },
-    ],
-    tips: ['삶은 후 바로 찬물에 헹구면 더 아삭해요.', '맥주 안주로 잘 어울려요.'],
-    youtubeQuery: '풋콩 삶는 법',
-  },
-  {
     id: 'ing-햅쌀-1', month: 9, title: '윤기나는 햅쌀밥', subtitle: '그해 첫 수확한 쌀로 짓는 향긋한 밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '햅쌀', description: '특별한 양념 없이 그냥 지어도 향긋하고 차진 햅쌀밥 자체가 별미예요.',
