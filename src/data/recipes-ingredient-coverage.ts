@@ -129,21 +129,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '들깨미역국',
   },
   {
-    id: 'ing-햅쌀-1', month: 9, title: '윤기나는 햅쌀밥', subtitle: '그해 첫 수확한 쌀로 짓는 향긋한 밥',
-    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '햅쌀', description: '특별한 양념 없이 그냥 지어도 향긋하고 차진 햅쌀밥 자체가 별미예요.',
-    ingredients: [
-      { name: '햅쌀', amount: '2컵' }, { name: '물', amount: '2컵' },
-    ],
-    steps: [
-      { title: '씻기', description: '햅쌀은 2~3번 가볍게 씻습니다.' },
-      { title: '불리기', description: '30분 정도 물에 불립니다.' },
-      { title: '밥짓기', description: '평소보다 물을 살짝 적게 잡고 밥을 짓습니다.', timerSeconds: 1800, tip: '햅쌀은 수분이 많아 물을 약간 줄여요.' },
-    ],
-    tips: ['갓 지은 밥은 그 자체로 가장 맛있어요.', '소금을 살짝 넣고 지으면 단맛이 더 살아요.'],
-    youtubeQuery: '햅쌀밥 짓기',
-  },
-  {
     id: 'ing-햇마늘-1', month: 6, title: '알 굵은 햇마늘 장아찌', subtitle: '아삭하게 절여 두고 먹는 마늘 장아찌',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 6, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '햇마늘', description: '알이 통통한 햇마늘을 간장물에 절여두면 아삭하고 알싱한 밑반찬이 돼요.',
