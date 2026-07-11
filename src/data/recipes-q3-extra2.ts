@@ -3,66 +3,6 @@ import { Recipe } from './types';
 // 9~12월 추가 레시피 20개 (각 월 11~15번)
 export const recipesQ3Extra2: Recipe[] = [
   // ===== 9월 =====
-  {
-    id: '9-12',
-    month: 9,
-    title: '새콤한 석류 에이드',
-    subtitle: '알알이 씹히는 새콤달콤 가을 음료',
-    category: '음료/청',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 10,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '석류',
-    description: '새콤달콤한 석류알을 듬뿍 넣어 만든 산뜻한 가을 음료예요.',
-    ingredients: [
-      { name: '석류', amount: '1개' },
-      { name: '탄산수', amount: '2컵' },
-      { name: '꿀', amount: '2큰술' },
-      { name: '얼음', amount: '적당량' },
-    ],
-    steps: [
-      { title: '석류 손질', description: '석류는 알을 발라냅니다.' },
-      { title: '담기', description: '컵에 석류알과 얼음을 담습니다.' },
-      { title: '마무리', description: '꿀과 탄산수를 부어 골고루 섞습니다.' },
-    ],
-    tips: [
-      '레몬즙을 살짝 더하면 더 상큼해져요.',
-      '석류 시즌이 짧으니 냉동 보관해두면 오래 즐길 수 있어요.',
-    ],
-    youtubeQuery: '석류에이드 만들기',
-  },
-  {
-    id: '9-15',
-    month: 9,
-    title: '향긋한 석류 샐러드',
-    subtitle: '알알이 씹히는 새콤함이 매력적인 가을 샐러드',
-    category: '샐러드',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 15,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '석류',
-    description: '새콤달콤한 석류알을 채소와 함께 즐기는 산뜻한 가을 샐러드예요.',
-    ingredients: [
-      { name: '석류', amount: '1/2개' },
-      { name: '루꼴라', amount: '50g' },
-      { name: '올리브오일', amount: '2큰술' },
-      { name: '발사믹 식초', amount: '1큰술' },
-      { name: '호두', amount: '20g' },
-    ],
-    steps: [
-      { title: '석류 손질', description: '석류는 알을 발라냅니다.' },
-      { title: '드레싱 만들기', description: '올리브오일과 발사믹 식초를 섞어 드레싱을 만듭니다.' },
-      { title: '플레이팅', description: '루꼴라 위에 석류알과 호두를 올리고 드레싱을 뿌립니다.' },
-    ],
-    tips: [
-      '치즈를 곁들이면 더 풍부한 맛을 즐길 수 있어요.',
-      '석류알이 터지지 않게 살짝 올려주세요.',
-    ],
-    youtubeQuery: '석류 샐러드 만들기',
-  },
-
   // ===== 10월 =====
   {
     id: '10-11',
