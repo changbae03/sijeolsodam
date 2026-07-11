@@ -36,6 +36,9 @@ export async function getUserTopIngredient(userId: number): Promise<string | nul
         topCount = count;
       }
     }
+    // 단 한 번의 우연한 조회만으로 "즐겨 찾으시던데"라고 확신하듯 말하면 뜬금없게 느껴진다.
+    // 즐겨찾기 1건(가중치 2) 또는 조회/질문 2건 이상 쌓였을 때만 실제 관심사로 간주한다.
+    if (topCount < 2) return null;
     return top;
   } catch (error) {
     console.error('getUserTopIngredient error:', error);

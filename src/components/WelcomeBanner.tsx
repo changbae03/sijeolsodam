@@ -7,11 +7,27 @@ import { useAuth } from '@/lib/auth-context';
 interface PersonalizeData {
   loggedIn: boolean;
   greeting: string;
-  todayIngredient: { name: string; emoji: string; description: string } | null;
+  todayIngredient: {
+    name: string;
+    emoji: string;
+    description: string;
+    origin?: string;
+    tip?: string;
+    nutrition?: string;
+  } | null;
   topIngredient: string | null;
   recommendedRecipe: { id: string; title: string } | null;
   weatherNote: string | null;
   priceNote: string | null;
+}
+
+/** 원산지·보관팁·영양 정보를 더해 "눈여겨볼 재료" 한 줄을 훨씬 풍성하게 만든다. */
+function buildIngredientLine(ing: NonNullable<PersonalizeData['todayIngredient']>): string {
+  const parts = [ing.description];
+  if (ing.origin) parts.push(`${ing.origin}에서 온 제철 재료예요.`);
+  const extra = ing.tip ?? ing.nutrition;
+  if (extra) parts.push(extra);
+  return parts.join(' ');
 }
 
 /**
@@ -69,7 +85,7 @@ export default function WelcomeBanner() {
               >
                 {data.todayIngredient.emoji} {data.todayIngredient.name}
               </Link>
-              예요. {data.todayIngredient.description}
+              예요. {buildIngredientLine(data.todayIngredient)}
             </p>
           )}
           {data.priceNote && <p className="text-[13.5px] text-terracotta mt-1.5">{data.priceNote}</p>}
@@ -99,7 +115,7 @@ export default function WelcomeBanner() {
               >
                 {data.todayIngredient.emoji} {data.todayIngredient.name}
               </Link>
-              예요. {data.todayIngredient.description}
+              예요. {buildIngredientLine(data.todayIngredient)}
             </p>
           )}
           {data.priceNote && <p className="text-[13.5px] text-terracotta mt-1.5">{data.priceNote}</p>}
