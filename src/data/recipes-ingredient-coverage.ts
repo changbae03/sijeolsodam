@@ -62,21 +62,6 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
 
   // ===== 과일 =====
-  {
-    id: 'ing-황금향-1', month: 4, title: '황금향 샐러드', subtitle: '향긋하고 달콤한 봄 만감류 샐러드',
-    category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '황금향', description: '황금향의 달콤한 과즙과 채소를 곁들여 산뜻하게 즐기는 샐러드예요.',
-    ingredients: [
-      { name: '황금향', amount: '1개' }, { name: '루꼴라(또는 양상추)', amount: '한줌' }, { name: '올리브오일', amount: '1큰술' }, { name: '소금, 후추', amount: '약간씩' },
-    ],
-    steps: [
-      { title: '손질', description: '황금향은 껍질을 까서 과육을 분리합니다.' },
-      { title: '담기', description: '루꼴라를 깔고 황금향 과육을 올립니다.' },
-      { title: '드레싱', description: '올리브오일, 소금, 후추를 뿌려 마무리합니다.' },
-    ],
-    tips: ['견과류를 더하면 식감이 좋아져요.', '발사믹 식초를 살짝 더해도 잘 어울려요.'],
-    youtubeQuery: '황금향 샐러드',
-  },
 
   // ===== 곡물 =====
   {
