@@ -129,21 +129,6 @@ export const recipesIngredientCoverage: Recipe[] = [
     youtubeQuery: '들깨미역국',
   },
   {
-    id: 'ing-햇마늘-1', month: 6, title: '알 굵은 햇마늘 장아찌', subtitle: '아삭하게 절여 두고 먹는 마늘 장아찌',
-    category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 6, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '햇마늘', description: '알이 통통한 햇마늘을 간장물에 절여두면 아삭하고 알싱한 밑반찬이 돼요.',
-    ingredients: [
-      { name: '햇마늘', amount: '500g' }, { name: '간장', amount: '1컵' }, { name: '식초', amount: '1컵' }, { name: '물', amount: '1컵' }, { name: '설탕', amount: '1/2컵' },
-    ],
-    steps: [
-      { title: '손질', description: '햇마늘은 껍질을 까서 깨끗이 씻습니다.' },
-      { title: '절임물', description: '간장, 식초, 물, 설탕을 넣고 끓여 절임물을 만듭니다.' },
-      { title: '절이기', description: '식힌 절임물을 마늘에 부어 2주 정도 숙성시킵니다.', tip: '2주 후부터 아삭하게 즐길 수 있어요.' },
-    ],
-    tips: ['소독한 병에 담아야 오래 보관할 수 있어요.', '숙성될수록 매운맛이 부드러워져요.'],
-    youtubeQuery: '햇마늘 장아찌',
-  },
-  {
     id: 'ing-흑미-1', month: 1, title: '고소한 흑미밥', subtitle: '안토시아닌이 풍부한 건강 잡곡밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 35, servings: 3, heroImage: PLACEHOLDER_IMAGE,
     mainIngredient: '흑미', description: '쌀에 흑미를 섞어 지으면 은은한 보라빛과 구수한 맛을 함께 즐길 수 있어요.',
