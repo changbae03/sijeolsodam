@@ -136,35 +136,6 @@ export const recipesQ1Extra: Recipe[] = [
     ],
     youtubeQuery: '단호박 수프 만들기',
   },
-  {
-    id: '1-10',
-    month: 1,
-    title: '향긋한 한라봉 청',
-    subtitle: '겨울 한라봉으로 만드는 향긋한 수제 청',
-    category: '음료',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 40,
-    servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '한라봉',
-    description: '향긋하고 달콤한 한라봉으로 만드는 수제 청이에요. 따뜻한 물에 타서 차로 마시거나 탄산수에 섞어 에이드로 즐기기 좋습니다.',
-    ingredients: [
-      { name: '한라봉', amount: '4개' },
-      { name: '설탕', amount: '한라봉 무게의 80%' },
-      { name: '레몬즙', amount: '1큰술' },
-    ],
-    steps: [
-      { title: '한라봉 손질', description: '한라봉은 소금으로 깨끗이 씻고 껍질째 얇게 슬라이스합니다.' },
-      { title: '설탕에 재우기', description: '슬라이스한 한라봉에 설탕을 넣고 골고루 섞어 하루 정도 재워둡니다.', timerSeconds: 86400, tip: '설탕이 충분히 녹아야 보존이 잘 돼요.' },
-      { title: '졸이기', description: '약불에서 10분간 저어가며 살짝 졸인 뒤 레몬즙을 넣고 마무리합니다.', timerSeconds: 600 },
-      { title: '보관', description: '소독한 유리병에 담아 냉장 보관합니다.' },
-    ],
-    tips: [
-      '냉장 보관하면 한 달 이상 두고 즐길 수 있어요.',
-      '뜨거운 물에 풀면 향긋한 한라봉차로 즐길 수 있습니다.',
-    ],
-    youtubeQuery: '한라봉청 만들기',
-  },
 
   // ===== 2월 추가 =====
   {

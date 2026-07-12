@@ -23,6 +23,10 @@ interface AgentPayload {
   reply: string;
   dishes: AgentDish[];
   ingredients: AgentIngredient[];
+  /** 조리법 답변일 때, 재료 목록을 "이름 수량" 문자열로 담는 구조화된 필드.
+   * reply 본문 텍스트에서 재료 줄을 파싱해 추측하는 대신, 이 필드가 있으면
+   * 프런트엔드가 그대로 칩(chip) 목록으로 렌더링해 항상 일관된 모양이 나오게 한다. */
+  ingredientList?: string[];
 }
 
 interface ChatTurn {
@@ -61,6 +65,10 @@ const RESPONSE_SCHEMA = {
         },
         required: ['name', 'reason'],
       },
+    },
+    ingredientList: {
+      type: Type.ARRAY,
+      items: { type: Type.STRING },
     },
   },
   required: ['reply', 'dishes', 'ingredients'],
@@ -163,7 +171,10 @@ function parseAgentJson(raw: string): AgentPayload | null {
           typeof (d as AgentIngredient).reason === 'string'
       );
       if (typeof parsed.reply === 'string' && validDishes && validIngredients) {
-        return { reply: parsed.reply, dishes, ingredients };
+        const ingredientList = Array.isArray(parsed.ingredientList)
+          ? parsed.ingredientList.filter((s: unknown): s is string => typeof s === 'string')
+          : undefined;
+        return { reply: parsed.reply, dishes, ingredients, ingredientList };
       }
     } catch {
       continue;
@@ -214,7 +225,11 @@ ${userTopIngredient ? `이 사용자는 최근 '${userTopIngredient}' 재료에 
 1. 첫 메시지가 막연하면(예: "저녁 뭐 먹지") 재료나 인원, 기분 등을 1가지만 짧게 되물어 좁혀도 됩니다. 이 경우 dishes와 ingredients는 빈 배열로 두어도 괜찮습니다.
 2. 구체적인 정보가 있으면(재료, 상황, 이전 대화 맥락 등) 실제로 집에서 만들 수 있는 요리를 2~4개 자유롭게 제안하세요. 사이트에 있는 레시피로 한정하지 말고, 소담이의 지식으로 가장 적절하다고 생각하는 요리를 자신 있게 제안하세요.
 3. 사용자가 재료 자체에 대해 묻거나(예: "제철 재료 추천해줘", "지금 뭐가 맛있어?") 요리와 별개로 특정 식재료를 짚어주면 좋은 상황이면 ingredients에 식재료명을 제안하세요.
-4. 사용자가 특정 요리의 조리법을 직접 물으면(예: "제육볶음 어떻게 만들어?", "~ 레시피 알려줘", "더 자세히 알려줘") reply에 실제로 따라 만들 수 있도록 번호 매긴 단계별 설명을 반드시 포함하세요. 먼저 재료 목록을 한 줄로 짚어준 뒤 줄바꿈(\n)을 하고, 이어서 "1. ...", "2. ...", "3. ..." 각 단계를 반드시 줄바꿈(\n)으로 구분해서 한 줄에 하나씩 쓰세요. 절대 여러 단계를 한 문단에 이어붙이지 마세요. 핵심 과정은 4~7단계로 간결하게 설명하세요. 뭉뚱그린 설명 문단으로만 답하지 마세요. 이 경우 dishes에 해당 요리 이름을 하나 넣어, 사이트에 더 자세한 사진과 팁이 있는 레시피가 있는지 함께 찾아볼 수 있게 하세요.
+4. 사용자가 특정 요리의 조리법을 직접 물으면(예: "제육볶음 어떻게 만들어?", "~ 레시피 알려줘", "더 자세히 알려줘") 실제로 따라 만들 수 있도록 답하세요. 이때 아래 세 부분을 반드시 분리해서 채우세요.
+   - reply: 재료 목록은 절대 reply 안에 넣지 마세요. reply에는 오직 (a) 짧은 소개 문장 1~2개와 (b) "1. ...", "2. ...", "3. ..." 형태의 번호 매긴 조리 단계만 담으세요. 각 단계는 반드시 줄바꿈(\n)으로 구분해 한 줄에 하나씩 쓰고, 절대 여러 단계를 한 문단에 이어붙이지 마세요. 핵심 과정은 4~7단계로 간결하게 설명하세요.
+   - ingredientList: 재료 목록은 오직 이 배열에만 담으세요. 각 항목은 "이름 수량" 형태의 짧은 문자열 하나로 씁니다(예: "돼지고기 다짐육 300g", "두부 1/4모"). 소스나 양념 재료도 모두 이 배열 안에 개별 항목으로 넣으세요. 배열이 아닌 문장으로 풀어 쓰지 마세요.
+   - dishes: 해당 요리 이름을 하나 넣어, 사이트에 더 자세한 사진과 팁이 있는 레시피가 있는지 함께 찾아볼 수 있게 하세요.
+   조리법을 묻는 게 아닌 일반적인 대화(추천, 잡담 등)에서는 ingredientList를 비워두세요.
    - 계량은 "적당히", "약간" 같은 애매한 표현 대신 항상 구체적인 수치로 쓰세요. 예: "간장 약간"이 아니라 "간장 1큰술", "고춧가루 조금"이 아니라 "고춧가루 1.5큰술", "물 적당량"이 아니라 "물 2컵". 숟가락 단위는 큰술/작은술로, 그 외엔 g, ml, 컵, 개 등 실제 요리할 때 계량할 수 있는 단위를 쓰세요.
    - 타이밍도 구체적으로 짚으세요. "볶는다"로 끝내지 말고 "중불에서 2분간 볶는다", "고기 겉면이 갈색이 되면 양파를 넣는다"처럼 몇 분인지, 무엇이 어떤 상태가 됐을 때 다음 재료를 넣는지, 불 세기는 어느 정도인지까지 알려주세요. 재료를 넣는 순서가 맛을 좌우하는 경우(예: 마늘을 먼저 볶아 향을 낸 뒤 고기를 넣는다) 그 이유도 짧게 덧붙이세요.
 5. 각 요리/재료 제안에는 왜 지금 좋은지 1문장 이내의 다정한 이유를 붙이세요.
@@ -306,6 +321,7 @@ ${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨
       reply: finalReply,
       dishes: dishesWithLinks,
       ingredients: ingredientsWithLinks,
+      ingredientList: payload?.ingredientList ?? [],
     });
   } catch (error) {
     console.error('Ingredient agent error:', error);

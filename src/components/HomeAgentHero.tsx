@@ -36,6 +36,7 @@ interface Exchange {
   reply?: string;
   dishes?: RecipeSuggestion[];
   ingredients?: IngredientSuggestion[];
+  ingredientList?: string[];
   error?: string;
 }
 
@@ -166,6 +167,7 @@ export default function HomeAgentHero() {
             reply: data.reply,
             dishes: data.dishes,
             ingredients: data.ingredients,
+            ingredientList: data.ingredientList,
           };
         }
         return next;
@@ -252,7 +254,7 @@ export default function HomeAgentHero() {
 
                 {ex.reply && (
                   <div className="mb-3">
-                    <StructuredReplyView text={ex.reply} size="md" />
+                    <StructuredReplyView text={ex.reply} size="md" ingredientList={ex.ingredientList} />
                   </div>
                 )}
 

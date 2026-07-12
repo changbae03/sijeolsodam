@@ -5,10 +5,18 @@ interface StructuredReplyViewProps {
   text: string;
   /** 'md'는 홈 히어로(더 큰 헤드라인), 'sm'은 CookingCoach 등 좁은 패널용 */
   size?: 'md' | 'sm';
+  /** API가 구조화된 필드로 내려준 재료 목록. 있으면 이걸 그대로 칩으로 쓰고,
+   * 텍스트에서 재료 줄을 추측 파싱하지 않는다(항상 일관된 모양을 위해). */
+  ingredientList?: string[];
 }
 
-export default function StructuredReplyView({ text, size = 'md' }: StructuredReplyViewProps) {
-  const { intro, ingredientLine, steps, outro } = parseStructuredReply(text);
+export default function StructuredReplyView({ text, size = 'md', ingredientList }: StructuredReplyViewProps) {
+  const parsed = parseStructuredReply(text);
+  const intro = parsed.intro;
+  const steps = parsed.steps;
+  const outro = parsed.outro;
+  // API가 이미 구조화된 재료 배열을 줬으면 그걸 쓰고, 없으면(과거 대화 등) 텍스트 추측 파싱으로 대체한다.
+  const chips = ingredientList && ingredientList.length > 0 ? ingredientList : parsed.ingredientLine;
   const introTextClass = size === 'md' ? 'text-[17px]' : 'text-[16px]';
   const stepTextClass = size === 'md' ? 'text-[15px]' : 'text-[14.5px]';
   const badgeSize = size === 'md' ? 'w-6 h-6 text-[13px]' : 'w-5 h-5 text-[12px]';
@@ -27,13 +35,13 @@ export default function StructuredReplyView({ text, size = 'md' }: StructuredRep
         </p>
       ))}
 
-      {ingredientLine && ingredientLine.length > 0 && (
+      {chips && chips.length > 0 && (
         <div>
           <p className="text-[10.5px] tracking-[0.14em] uppercase text-sage font-bold mb-1.5">
             재료
           </p>
           <div className="flex flex-wrap gap-1.5">
-            {ingredientLine.map((item, i) => (
+            {chips.map((item, i) => (
               <span
                 key={i}
                 className="inline-flex items-center bg-sage/10 text-ink border border-sage/20 rounded-full px-2.5 py-1 text-[13px] font-medium"
