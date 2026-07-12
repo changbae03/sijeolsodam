@@ -56,7 +56,9 @@ function insertLineBreaksBeforeNumbers(raw: string): string {
 }
 
 export function parseStructuredReply(raw: string): StructuredReply {
-  const normalized = insertLineBreaksBeforeNumbers(raw.trim());
+  // 모델이 간혹 마크다운 강조(**텍스트**)를 섞어 낼 때 별표가 그대로 노출되지 않게 제거한다.
+  const withoutMarkdownBold = raw.replace(/\*\*(.+?)\*\*/g, '$1');
+  const normalized = insertLineBreaksBeforeNumbers(withoutMarkdownBold.trim());
   const lines = normalized
     .split('\n')
     .map((l) => l.trim())

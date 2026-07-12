@@ -111,6 +111,24 @@ function findMatchingIngredient(ingredientName: string) {
 }
 
 /**
+ * JSON.parse가 전부 실패했을 때(주로 maxOutputTokens 한도로 응답이 중간에 잘린 경우)
+ * 최후의 수단으로 "reply":"..." 부분의 문자열만이라도 살려서 꺼낸다.
+ * 절대 원본 JSON 텍스트를 그대로 사용자에게 보여주지 않기 위한 안전장치.
+ */
+function salvageReplyText(raw: string): string | null {
+  const match = raw.match(/"reply"\s*:\s*"((?:\\.|[^"\\])*)"?/);
+  if (!match) return null;
+  let text = match[1];
+  // 응답이 문자열 중간에서 잘렸다면 마지막 이스케이프 문자가 불완전할 수 있으니 정리
+  text = text
+    .replace(/\\n/g, '\n')
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, '\\')
+    .trim();
+  return text.length > 0 ? text : null;
+}
+
+/**
  * JSON 파싱을 최대한 관대하게 시도한다.
  * 1) 그대로 파싱 → 2) 코드블록/잡텍스트 제거 후 파싱 → 3) 첫 '{'~마지막 '}' 구간만 추출해 파싱.
  */
@@ -151,6 +169,13 @@ function parseAgentJson(raw: string): AgentPayload | null {
       continue;
     }
   }
+
+  // 완전한 JSON으로는 파싱이 안 됐지만(응답이 잘렸을 가능성), reply 필드 문자열만이라도 구제한다.
+  const salvaged = salvageReplyText(trimmed);
+  if (salvaged) {
+    return { reply: salvaged, dishes: [], ingredients: [] };
+  }
+
   return null;
 }
 
@@ -211,7 +236,7 @@ ${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨
       contents: [...historyContents, { role: 'user', parts: [{ text: trimmed }] }],
       config: {
         systemInstruction,
-        maxOutputTokens: 1600,
+        maxOutputTokens: 3000,
         temperature: 0.7,
         responseMimeType: 'application/json',
         responseSchema: RESPONSE_SCHEMA,
@@ -221,11 +246,11 @@ ${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨
     const rawText = response.text || '';
     const payload = parseAgentJson(rawText);
 
-    // JSON 파싱에 실패해도 사용자에게 에러를 보여주지 않는다.
-    // 모델이 낸 원문 텍스트를 그대로 답변으로 보여주는 것이, 형식 오류 문구를 보여주는 것보다 항상 낫다.
+    // JSON 파싱에 실패해도 사용자에게 원본 JSON 텍스트를 그대로 보여주지 않는다.
+    // parseAgentJson이 이미 reply 필드만 구제하는 시도까지 마쳤으므로,
+    // 그래도 실패했다면(완전히 형식을 벗어난 응답) 안내 문구로 대체한다.
     const finalReply =
       payload?.reply?.trim() ||
-      rawText.trim() ||
       '지금은 답변을 정리하는 데 시간이 좀 걸리네요. 조금만 더 구체적으로 다시 물어봐주실 수 있을까요?';
     const finalDishes = payload?.dishes ?? [];
     const finalIngredients = payload?.ingredients ?? [];
