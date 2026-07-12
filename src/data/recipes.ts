@@ -139,6 +139,7 @@ import { recipesGrapeExpansion } from './recipes-grape-expansion';
 import { recipesGreenChiliExpansion } from './recipes-greenchili-expansion';
 import { recipesHallabongExpansion } from './recipes-hallabong-expansion';
 import { recipesMusselExpansion } from './recipes-mussel-expansion';
+import { recipesEnokiExpansion } from './recipes-enoki-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -281,6 +282,7 @@ export const allRecipes: Recipe[] = [
   ...recipesGreenChiliExpansion,
   ...recipesHallabongExpansion,
   ...recipesMusselExpansion,
+  ...recipesEnokiExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
