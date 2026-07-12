@@ -12,23 +12,6 @@ const PLACEHOLDER_IMAGE =
   'https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80';
 
 export const recipesIngredientCoverage: Recipe[] = [
-  // ===== 해산물 =====
-  {
-    id: 'ing-주꾸미-1', month: 2, title: '매콤한 주꾸미볶음', subtitle: '쫄깃한 주꾸미를 매콤하게 볶아낸 별미',
-    category: '메인', difficulty: '보통', level: 'home', cookTime: 25, servings: 2, heroImage: PLACEHOLDER_IMAGE,
-    mainIngredient: '주꾸미', description: '매콤달콤한 양념에 볶아낸 주꾸미는 쫄깃한 식감이 일품인 술안주예요.',
-    ingredients: [
-      { name: '주꾸미', amount: '400g' }, { name: '양파', amount: '1/2개' }, { name: '고추장', amount: '2큰술' }, { name: '고춧가루', amount: '1큰술' }, { name: '다진마늘', amount: '1큰술' }, { name: '설탕', amount: '1큰술' },
-    ],
-    steps: [
-      { title: '손질', description: '주꾸미는 내장을 제거하고 밀가루로 바락바락 씻어 헹굽니다.' },
-      { title: '양념', description: '고추장, 고춧가루, 다진마늘, 설탕을 섞어 양념장을 만듭니다.' },
-      { title: '볶기', description: '팬에 양파를 볶다가 주꾸미와 양념장을 넣고 센불에서 5분간 볶습니다.', timerSeconds: 300, tip: '너무 오래 볶으면 질겨지니 주의해요.' },
-    ],
-    tips: ['깻잎이나 부추를 더하면 향이 좋아져요.', '볶음밥으로 마무리해도 맛있어요.'],
-    youtubeQuery: '주꾸미볶음',
-  },
-
   // ===== 채소 =====
   {
     id: 'ing-부추-1', month: 5, title: '고소한 부추전', subtitle: '향긋한 부추로 부쳐낸 바삭한 전',
