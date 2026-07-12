@@ -126,36 +126,6 @@ export const recipesQ2Extra: Recipe[] = [
     ],
     youtubeQuery: '아스파라거스 새우볶음',
   },
-  {
-    id: '5-10',
-    month: 5,
-    title: '향긋한 완두콩밥',
-    subtitle: '달콤한 완두콩이 콩콕 박힌 봄철 별미밥',
-    category: '밥/죽',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 35,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '완두콩',
-    description: '아삭하고 달콤한 봄 완두콩을 듬뿍 넣어 지은 별미밥이에요. 색감도 예쁘고 영양도 가득합니다.',
-    ingredients: [
-      { name: '쌀', amount: '2컵' },
-      { name: '완두콩', amount: '1컵' },
-      { name: '물', amount: '2컵' },
-      { name: '소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800 },
-      { title: '완두콩 손질', description: '완두콩은 깨끗이 씻어둡니다.' },
-      { title: '밥 짓기', description: '불린 쌀에 완두콩과 물, 소금을 넣고 밥을 짓습니다. 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720 },
-      { title: '뜸 들이기', description: '불을 끄고 5분간 뜸을 들인 뒤 골고루 섞어 완성합니다.', timerSeconds: 300 },
-    ],
-    tips: [
-      '완두콩은 너무 오래 익으면 색이 칙칙해지니 적당히 넣어주세요.',
-      '버터를 살짝 곁들이면 더 풍미 있게 즐길 수 있습니다.',
-    ],
-    youtubeQuery: '완두콩밥 만들기',
-  },
 
   // ===== 6월 추가 =====
   {
