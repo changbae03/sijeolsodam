@@ -296,6 +296,17 @@ export function searchRecipes(query: string): Recipe[] {
  * 식재료 이름(예: "감자", "햇감자")으로 그 재료를 주재료로 쓰는 레시피를 모두 찾음.
  * 양방향 부분일치 (레시피의 mainIngredient에 입력명이 포함되거나, 입력명에 mainIngredient가 포함).
  */
+// 접미사가 같아도 실제로는 서로 다른 별개의 재료인 쌍(오탐 방지용 예외 목록).
+// 예: "열무"는 "무"로 끝나지만 무와 다른 채소이므로, 무 페이지에 열무 레시피가
+// (또는 그 반대가) 섞여 들어가면 안 됨. "가을무"/"동치미무"는 무의 이표기이므로 제외 대상 아님.
+const INGREDIENT_MATCH_EXCEPTIONS: [string, string][] = [
+  ['열무', '무'],
+];
+function isExceptedPair(a: string, b: string): boolean {
+  return INGREDIENT_MATCH_EXCEPTIONS.some(
+    ([x, y]) => (a === x && b === y) || (a === y && b === x)
+  );
+}
 export function getRecipesByIngredient(ingredientName: string): Recipe[] {
   const normalized = ingredientName.trim();
   if (!normalized) return [];
@@ -303,10 +314,9 @@ export function getRecipesByIngredient(ingredientName: string): Recipe[] {
   // "배"는 "알배추"에 글자가 포함되어도 끝이 다르므로 매칭되지 않음.
   // 단순 includes()는 "배"가 "알배추" 안에 글자로 들어있다는 이유로
   // 잘못 매칭시키는 버그가 있었음(예: 알배추 페이지에 배 샐러드가 노출).
-  return allRecipes.filter(
-    (r) =>
-      r.mainIngredient === normalized ||
-      r.mainIngredient.endsWith(normalized) ||
-      normalized.endsWith(r.mainIngredient)
-  );
+  return allRecipes.filter((r) => {
+    if (r.mainIngredient === normalized) return true;
+    if (isExceptedPair(r.mainIngredient, normalized)) return false;
+    return r.mainIngredient.endsWith(normalized) || normalized.endsWith(r.mainIngredient);
+  });
 }
