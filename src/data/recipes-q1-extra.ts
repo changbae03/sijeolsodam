@@ -12,7 +12,7 @@ export const recipesQ1Extra: Recipe[] = [
     cookTime: 30,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '동태',
+    mainIngredient: '명태',
     description: '겨울철 가장 살이 통통한 동태로 끓인 얼큰한 탕이에요. 무와 함께 끓이면 더욱 깊은 국물 맛을 즐길 수 있습니다.',
     ingredients: [
       { name: '동태', amount: '1마리' },

@@ -12,8 +12,8 @@ export const recipesQ2: Recipe[] = [
     cookTime: 15,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '매실청',
-    description: '5월에 담근 매실청으로 새콤달콤한 비빔국수 양념을 만들어요. 더위가 시작되기 전, 산뜻한 입맛을 즐길 수 있는 메뉴입니다.',
+    mainIngredient: '매실',
+    description: '5월에 담근 매실청으로 새콤달콤한 비빔국수 양념을 만들어요. 더위가 시작되기 전, 산뜻한 입맛을 즐길 수 있는 메뉴예요.',
     ingredients: [
       { name: '소면', amount: '200g' },
       { name: '매실청', amount: '3큰술' },
@@ -46,7 +46,7 @@ export const recipesQ2: Recipe[] = [
     cookTime: 10,
     servings: 4,
     heroImage: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '방울토마토, 매실청',
+    mainIngredient: '방울토마토',
     description: '새콤달콤한 매실청에 방울토마토를 절여 만든 산뜻한 디저트예요. 냉장고에 두고 입맛 없을 때 꺼내 먹기 좋습니다.',
     ingredients: [
       { name: '방울토마토', amount: '20개' },
