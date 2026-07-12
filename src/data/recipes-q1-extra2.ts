@@ -226,37 +226,6 @@ export const recipesQ1Extra2: Recipe[] = [
 
   // ===== 3월 =====
   {
-    id: '3-12',
-    month: 3,
-    title: '바삭한 실치회무침',
-    subtitle: '투명하고 가는 봄철 별미 뱅어 새끼 무침',
-    category: '나물/무침',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 15,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '실치',
-    description: '실처럼 가는 봄철 실치를 새콤달콤한 양념에 무쳐낸 별미예요. 봄 식탁에 산뜻함을 더합니다.',
-    ingredients: [
-      { name: '실치', amount: '200g' },
-      { name: '미나리', amount: '50g' },
-      { name: '고추장', amount: '1큰술' },
-      { name: '식초', amount: '1큰술' },
-      { name: '다진 마늘', amount: '1작은술' },
-    ],
-    steps: [
-      { title: '실치 손질', description: '실치는 가볍게 씻어 물기를 뺍니다.' },
-      { title: '미나리 손질', description: '미나리는 깨끗이 씻어 4cm 길이로 자릅니다.' },
-      { title: '양념 만들기', description: '고추장, 식초, 다진 마늘을 섞어 양념장을 만듭니다.' },
-      { title: '무치기', description: '실치와 미나리에 양념장을 넣고 골고루 무칩니다.' },
-    ],
-    tips: [
-      '실치는 신선도가 중요하니 당일 구매한 것을 사용하세요.',
-      '오이를 추가하면 더 시원한 맛을 즐길 수 있어요.',
-    ],
-    youtubeQuery: '실치회무침 만들기',
-  },
-  {
     id: '3-13',
     month: 3,
     title: '향긋한 봄동 국수',
@@ -287,36 +256,6 @@ export const recipesQ1Extra2: Recipe[] = [
       '봄동은 살짝 데쳐서 사용하면 더 부드러워요.',
     ],
     youtubeQuery: '봄동 비빔국수 만들기',
-  },
-  {
-    id: '3-15',
-    month: 3,
-    title: '얼큰한 실치 미나리전',
-    subtitle: '봄 향 가득한 실치와 미나리의 만남',
-    category: '전/구이',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 20,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '실치',
-    description: '봄철 실치와 미나리를 듬뿍 넣어 부쳐낸 향긋한 전이에요. 막걸리 안주로도 일품입니다.',
-    ingredients: [
-      { name: '실치', amount: '150g' },
-      { name: '미나리', amount: '80g' },
-      { name: '부침가루', amount: '1컵' },
-      { name: '물', amount: '3/4컵' },
-      { name: '식용유', amount: '적당량' },
-    ],
-    steps: [
-      { title: '재료 준비', description: '실치는 씻어 물기를 빼고 미나리는 4cm로 자릅니다.' },
-      { title: '반죽 만들기', description: '부침가루와 물을 섞어 반죽을 만들고 실치, 미나리를 넣어 섞습니다.' },
-      { title: '굽기', description: '달군 팬에 식용유를 두르고 반죽을 얇게 펼쳐 노릇하게 부칩니다.', timerSeconds: 480 },
-    ],
-    tips: [
-      '초간장을 곁들이면 깔끔하게 즐길 수 있어요.',
-      '반죽이 너무 묻듣하면 부침가루를 추가해주세요.',
-    ],
-    youtubeQuery: '실치 미나리전 만들기',
   },
 
   // ===== 4월 =====
