@@ -141,6 +141,7 @@ import { recipesHallabongExpansion } from './recipes-hallabong-expansion';
 import { recipesMusselExpansion } from './recipes-mussel-expansion';
 import { recipesEnokiExpansion } from './recipes-enoki-expansion';
 import { recipesNeungiExpansion } from './recipes-neungi-expansion';
+import { recipesMaesilExpansion } from './recipes-maesil-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -285,6 +286,7 @@ export const allRecipes: Recipe[] = [
   ...recipesMusselExpansion,
   ...recipesEnokiExpansion,
   ...recipesNeungiExpansion,
+  ...recipesMaesilExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
