@@ -8,18 +8,18 @@ interface StructuredReplyViewProps {
 }
 
 export default function StructuredReplyView({ text, size = 'md' }: StructuredReplyViewProps) {
-  const { intro, steps, outro } = parseStructuredReply(text);
+  const { intro, ingredientLine, steps, outro } = parseStructuredReply(text);
   const introTextClass = size === 'md' ? 'text-[17px]' : 'text-[16px]';
   const stepTextClass = size === 'md' ? 'text-[15px]' : 'text-[14.5px]';
   const badgeSize = size === 'md' ? 'w-6 h-6 text-[13px]' : 'w-5 h-5 text-[12px]';
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3.5">
       {intro.map((paragraph, i) => (
         <p
           key={`intro-${i}`}
           className={cn(
-            'font-display leading-snug text-ink whitespace-pre-wrap break-words',
+            'font-display font-semibold leading-snug text-ink whitespace-pre-wrap break-words tracking-tight',
             introTextClass
           )}
         >
@@ -27,13 +27,31 @@ export default function StructuredReplyView({ text, size = 'md' }: StructuredRep
         </p>
       ))}
 
+      {ingredientLine && ingredientLine.length > 0 && (
+        <div>
+          <p className="text-[10.5px] tracking-[0.14em] uppercase text-sage font-bold mb-1.5">
+            재료
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {ingredientLine.map((item, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center bg-sage/10 text-ink border border-sage/20 rounded-full px-2.5 py-1 text-[13px] font-medium"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
       {steps.length > 0 && (
-        <ol className="space-y-2.5 border-t border-border-soft/70 pt-3">
+        <ol className="space-y-3 border-t border-border-soft/70 pt-3.5">
           {steps.map((step) => (
-            <li key={step.number} className="flex gap-2.5">
+            <li key={step.number} className="flex gap-3">
               <span
                 className={cn(
-                  'shrink-0 rounded-full bg-sage/12 text-sage font-medium flex items-center justify-center mt-0.5',
+                  'shrink-0 rounded-full bg-terracotta text-cream font-bold flex items-center justify-center mt-0.5 shadow-sm',
                   badgeSize
                 )}
               >

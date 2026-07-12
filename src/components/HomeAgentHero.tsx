@@ -202,14 +202,18 @@ export default function HomeAgentHero() {
   return (
     <div>
       <div className="flex items-start gap-3 mb-2">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sage/20 to-terracotta/15 text-[20px] leading-none">
+        <span
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-[22px] leading-none shadow-sm"
+          style={{ background: 'linear-gradient(135deg, rgba(122,143,111,0.22), rgba(217,119,87,0.18))' }}
+        >
           💬
         </span>
         <div className="flex-1 min-w-0">
-          <p className="text-[11px] tracking-[0.14em] uppercase text-terracotta font-semibold mb-0.5">
-            언제든 편하게
+          <p className="inline-flex items-center gap-1 text-[10.5px] tracking-[0.14em] uppercase text-terracotta font-bold mb-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-terracotta" />
+            요리 시작 전 먼저 물어보세요
           </p>
-          <h1 className="font-display text-[22px] tracking-tight text-ink font-semibold leading-tight">
+          <h1 className="font-display text-[24px] tracking-tight text-ink font-extrabold leading-tight">
             소담이에게 물어보세요
           </h1>
         </div>
@@ -242,7 +246,9 @@ export default function HomeAgentHero() {
           <div ref={scrollRef} className="pb-1">
             {exchanges.map((ex, i) => (
               <div key={i} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
-                <p className="text-[13px] text-ink-soft/70 mb-2">{ex.question}</p>
+                <p className="inline-block max-w-[85%] bg-cream-warm text-ink-soft text-[13px] rounded-2xl rounded-tl-sm px-3.5 py-2 mb-3">
+                  {ex.question}
+                </p>
 
                 {ex.reply && (
                   <div className="mb-3">
@@ -312,7 +318,14 @@ export default function HomeAgentHero() {
                 )}
 
                 {i === exchanges.length - 1 && isLoading && (
-                  <p className="text-[14px] text-ink-soft/60 pb-2">소담이가 생각하고 있어요</p>
+                  <p className="flex items-center gap-1.5 text-[14px] text-ink-soft/60 pb-2">
+                    소담이가 생각하고 있어요
+                    <span className="inline-flex gap-0.5">
+                      <span className="w-1 h-1 rounded-full bg-ink-soft/40 animate-bounce [animation-delay:-0.3s]" />
+                      <span className="w-1 h-1 rounded-full bg-ink-soft/40 animate-bounce [animation-delay:-0.15s]" />
+                      <span className="w-1 h-1 rounded-full bg-ink-soft/40 animate-bounce" />
+                    </span>
+                  </p>
                 )}
 
                 {ex.error && <p className="text-[14px] text-terracotta pb-2">{ex.error}</p>}
