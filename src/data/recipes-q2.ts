@@ -544,37 +544,6 @@ export const recipesQ2: Recipe[] = [
 
   // ===== 7월 =====
   {
-    id: '7-1',
-    month: 7,
-    title: '달콤 아삭 초당옥수수 솥밥',
-    subtitle: '여름 옥수수의 단맛이 밥알에 스며든 별미밥',
-    category: '밥/죽',
-    difficulty: '쉬움', level: 'home',
-    cookTime: 35,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1598160456488-82ab8111e0bb?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '초당옥수수',
-    description: '생으로도 달콤한 초당옥수수를 쌀과 함께 지어 옥수수 알의 아삭함과 단맛을 그대로 즐기는 솥밥이에요.',
-    ingredients: [
-      { name: '쌀', amount: '2컵' },
-      { name: '초당옥수수', amount: '1개' },
-      { name: '물', amount: '2컵' },
-      { name: '버터', amount: '1작은술' },
-      { name: '소금', amount: '약간' },
-    ],
-    steps: [
-      { title: '쌀 불리기', description: '쌀을 씻어 30분간 불려둡니다.', timerSeconds: 1800 },
-      { title: '옥수수 손질', description: '초당옥수수는 칼로 알을 분리해둡니다.' },
-      { title: '밥 짓기', description: '불린 쌀에 옥수수알, 물, 소금을 넣고 뚜껑을 닫아 센 불로 끓이다가 끓어오르면 약불로 줄여 12분간 익힙니다.', timerSeconds: 720 },
-      { title: '뜸 들이기', description: '불을 끄고 5분간 뜸을 들인 뒤 버터를 넣고 골고루 섞어 완성합니다.', timerSeconds: 300 },
-    ],
-    tips: [
-      '옥수수 심도 함께 넣고 밥을 지으면 더 진한 단맛이 우러나요.',
-      '간장 양념장을 곁들이면 짭짤한 맛의 균형을 즐길 수 있습니다.',
-    ],
-    youtubeQuery: '초당옥수수 솥밥 만들기',
-  },
-  {
     id: '7-2',
     month: 7,
     title: '매콤 칼칼한 남대문식 갈치조림',
