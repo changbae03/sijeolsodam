@@ -142,6 +142,7 @@ import { recipesMusselExpansion } from './recipes-mussel-expansion';
 import { recipesEnokiExpansion } from './recipes-enoki-expansion';
 import { recipesNeungiExpansion } from './recipes-neungi-expansion';
 import { recipesMaesilExpansion } from './recipes-maesil-expansion';
+import { recipesRaspberryExpansion } from './recipes-raspberry-expansion';
 
 export const allRecipes: Recipe[] = [
   ...recipesQ1,
@@ -287,6 +288,7 @@ export const allRecipes: Recipe[] = [
   ...recipesEnokiExpansion,
   ...recipesNeungiExpansion,
   ...recipesMaesilExpansion,
+  ...recipesRaspberryExpansion,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {
@@ -323,6 +325,8 @@ export function searchRecipes(query: string): Recipe[] {
 // (또는 그 반대가) 섞여 들어가면 안 됨. "가을무"/"동치미무"는 무의 이표기이므로 제외 대상 아님.
 const INGREDIENT_MATCH_EXCEPTIONS: [string, string][] = [
   ['열무', '무'],
+  ['양상추', '상추'],
+  ['산딸기', '딸기'],
 ];
 function isExceptedPair(a: string, b: string): boolean {
   return INGREDIENT_MATCH_EXCEPTIONS.some(
