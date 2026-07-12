@@ -421,35 +421,4 @@ export const recipesQ2Extra: Recipe[] = [
     ],
     youtubeQuery: '전복 미역국 끓이기',
   },
-  {
-
-    id: '8-10',
-    month: 8,
-    title: '포도 요거트 파르페',
-    subtitle: '당도 가득한 여름 끝물 포도로 만드는 디저트',
-    category: '디저트',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 10,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599819177626-08ed8aebec51?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '포도',
-    description: '당도가 절정에 이르는 여름 끝물 포도를 그릭요거트, 그래놀라와 층층이 쌓은 파르페예요. 보기에도 예쁜 디저트입니다.',
-    ingredients: [
-      { name: '포도', amount: '20알' },
-      { name: '그릭요거트', amount: '1컵' },
-      { name: '그래놀라', amount: '1/2컵' },
-      { name: '꿀', amount: '2큰술' },
-    ],
-    steps: [
-      { title: '포도 손질', description: '포도는 반으로 잘라둡니다.' },
-      { title: '층 쌓기', description: '컵에 그릭요거트, 그래놀라, 포도 순으로 층을 쌓습니다.' },
-      { title: '반복', description: '같은 순서로 한 번 더 층을 쌓습니다.' },
-      { title: '마무리', description: '꿀을 둘러 완성합니다.' },
-    ],
-    tips: [
-      '투명한 유리컵에 담으면 층이 더 예쁘게 보여요.',
-      '바로 먹지 않으면 그래놀라가 눅눅해지니 먹기 직전에 만드는 게 좋습니다.',
-    ],
-    youtubeQuery: '포도 요거트 파르페',
-  },
 ];
