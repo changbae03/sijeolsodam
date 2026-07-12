@@ -129,10 +129,12 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Display 타이포: 한글에 잘 어울리는 세리프 사용 */
+/* Display 타이포: Pretendard 굵은 웨이트로 브랜드 제목 통일
+   (이전엔 Georgia/Noto Serif KR을 지정했지만 Noto Serif KR이 실제로
+   로드되지 않아 시스템 세리프로 대체되며 얇고 일관성 없게 보이는 문제가 있었음) */
 h1, h2, h3, h4, .font-display {
-  font-family: Georgia, 'Noto Serif KR', 'Apple SD Gothic Neo', '바탕', Batang, serif;
-  font-weight: 500;
+  font-family: var(--font-pretendard), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 800;
   letter-spacing: -0.02em;
 }
 
