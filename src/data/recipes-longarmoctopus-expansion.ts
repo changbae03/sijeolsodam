@@ -153,7 +153,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
       { title: '끓이기', description: '물을 붓고 저어가며 20분간 끓입니다.', timerSeconds: 1200, checkpoint: '쌀알이 퍼지면 낙지를 넣을 때예요.' },
       { title: '완성', description: '낙지를 넣고 2분만 더 끓여 완성합니다.', timerSeconds: 120 },
     ],
-    tips: ['대체 재료: 낙지 대신 주꾸미로도 만들 수 있어요.', '보관/활용: 냉장 1일 이내로 드세요.'],
+    tips: ['대체 재료: 낙지 대신 쭈꾸미로도 만들 수 있어요.', '보관/활용: 냉장 1일 이내로 드세요.'],
     youtubeQuery: '낙지죽 만들기',
   },
 
