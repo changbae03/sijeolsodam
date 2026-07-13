@@ -1,32 +1,40 @@
 /**
  * 레시피 완성샷 및 단계별 이미지를 Gemini(gemini-2.5-flash-image, 일명 "나노바나나")로
- * 생성해 Vercel Blob에 업로드하고, 생성된 URL을 데이터 파일(recipes-qN.ts)에 채워 넣는 스크립트.
+ * 생성해 이미지를 저장하고, 생성된 경로를 데이터 파일(recipes-qN.ts)에 채워 넣는 스크립트.
+ *
+ * 저장 방식은 두 가지 중 하나가 자동으로 선택됩니다:
+ *  - BLOB_READ_WRITE_TOKEN이 있으면: Vercel Blob에 업로드 (기존 방식)
+ *  - 없으면: 프로젝트 안 /public/images/recipes/ 폴더에 직접 저장 (Blob 스토리지가
+ *    정지되었거나 쓰고 싶지 않을 때의 대안). 이 경우 데이터에는 '/images/recipes/...'
+ *    같은 상대 경로가 들어가고, Next.js가 정적 파일로 그대로 서빙합니다.
+ *    이렇게 저장한 이미지는 git에 커밋해서 그대로 배포하면 됩니다.
  *
  * 실행 방법:
- *   GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-images.ts --recipe=1-1
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=1-1                (로컬 저장)
+ *   GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-images.ts --recipe=1-1  (Blob 저장)
  *   (전체 60개 실행: --all 플래그, 완성샷만: --hero-only)
  *
  * 안전장치:
  *  - 기본은 1개 레시피(--recipe=ID)만 처리하도록 강제. --all을 명시해야 전체 실행.
- *  - 이미 Blob URL이 들어있는 항목(heroImage가 blob.vercel-storage.com 도메인)은 건너뜀.
+ *  - 이미 이미지 URL(Blob 또는 로컬 경로)이 들어있는 항목은 건너뜀.
  *  - 실행 중간에 에러가 나도 그 시점까지 결과는 파일에 저장됨(매 항목 처리 후 즉시 write).
  */
 import { GoogleGenAI } from '@google/genai';
 import { put } from '@vercel/blob';
-import { readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
 import { SODAMI_VISUAL_STYLE } from '../src/lib/persona';
 
 const apiKey = process.env.GEMINI_API_KEY;
 const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
+const useLocalStorage = !blobToken;
 
 if (!apiKey) {
   console.error('GEMINI_API_KEY 환경변수가 필요합니다.');
   process.exit(1);
 }
-if (!blobToken) {
-  console.error('BLOB_READ_WRITE_TOKEN 환경변수가 필요합니다. (Vercel 프로젝트 > Storage > Blob)');
-  process.exit(1);
+if (useLocalStorage) {
+  console.log('BLOB_READ_WRITE_TOKEN이 없어 /public/images/recipes/ 폴더에 로컬로 저장합니다.');
 }
 
 const ai = new GoogleGenAI({ apiKey });
@@ -61,6 +69,12 @@ async function generateImageBuffer(prompt: string): Promise<Buffer | null> {
 }
 
 async function uploadToBlob(buffer: Buffer, pathname: string): Promise<string> {
+  if (useLocalStorage) {
+    const localPath = join(__dirname, '..', 'public', 'images', pathname);
+    mkdirSync(dirname(localPath), { recursive: true });
+    writeFileSync(localPath, buffer);
+    return `/images/${pathname}`;
+  }
   const blob = await put(pathname, buffer, {
     access: 'public',
     contentType: 'image/png',
@@ -71,7 +85,7 @@ async function uploadToBlob(buffer: Buffer, pathname: string): Promise<string> {
 }
 
 function isAlreadyBlobUrl(url: string): boolean {
-  return url.includes('blob.vercel-storage.com');
+  return url.includes('blob.vercel-storage.com') || url.startsWith('/images/recipes/');
 }
 
 interface RecipeLineInfo {
