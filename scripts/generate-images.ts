@@ -21,7 +21,7 @@
  */
 import { GoogleGenAI } from '@google/genai';
 import { put } from '@vercel/blob';
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { SODAMI_VISUAL_STYLE } from '../src/lib/persona';
 
@@ -240,17 +240,11 @@ async function processFile(fileName: string) {
 }
 
 async function main() {
-  const files = [
-    'recipes-q1.ts',
-    'recipes-q2.ts',
-    'recipes-q3.ts',
-    'recipes-q1-extra.ts',
-    'recipes-q2-extra.ts',
-    'recipes-q3-extra.ts',
-    'recipes-q1-extra2.ts',
-    'recipes-q2-extra2.ts',
-    'recipes-q3-extra2.ts',
-  ];
+  const dataDir = join(__dirname, '..', 'src', 'data');
+  const files = readdirSync(dataDir).filter(
+    (f) => f.startsWith('recipes-') && f.endsWith('.ts')
+  );
+  console.log(`대상 파일 ${files.length}개 발견`);
   for (const file of files) {
     await processFile(file);
   }
