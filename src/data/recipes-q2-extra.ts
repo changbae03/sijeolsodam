@@ -324,40 +324,6 @@ export const recipesQ2Extra: Recipe[] = [
     ],
     youtubeQuery: '갈치속젓 비빔밥',
   },
-
-  // ===== 8월 추가 =====
-  {
-    id: '8-6',
-    month: 8,
-    title: '시원한 콩나물 냉채',
-    subtitle: '아삭한 콩나물로 만드는 여름 입맛 살리기',
-    category: '반찬',
-    difficulty: '아주 쉬움', level: 'home',
-    cookTime: 15,
-    servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '콩나물',
-    description: '아삭하게 데친 콩나물을 매콤새콤하게 무쳐 시원하게 즐기는 여름 별미예요. 더위에 지친 입맛을 돋워줍니다.',
-    ingredients: [
-      { name: '콩나물', amount: '200g' },
-      { name: '고춧가루', amount: '1큰술' },
-      { name: '식초', amount: '1큰술' },
-      { name: '간장', amount: '1큰술' },
-      { name: '참기름', amount: '1작은술' },
-      { name: '통깨', amount: '약간' },
-    ],
-    steps: [
-      { title: '콩나물 데치기', description: '콩나물은 끓는 물에 소금을 약간 넣고 3분간 데칩니다.', timerSeconds: 180 },
-      { title: '식히기', description: '데친 콩나물은 찬물에 헹궈 물기를 짭니다.' },
-      { title: '무치기', description: '고춧가루, 식초, 간장, 참기름을 넣고 골고루 무칩니다.' },
-      { title: '마무리', description: '통깨를 뿌려 완성합니다.' },
-    ],
-    tips: [
-      '콩나물은 뚜껑을 열고 데쳐야 비린내가 나지 않아요.',
-      '냉장고에 차게 두었다가 먹으면 더 맛있습니다.',
-    ],
-    youtubeQuery: '콩나물 냉채 무침',
-  },
   {
     id: '8-7',
     month: 8,
