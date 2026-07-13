@@ -1,37 +1,45 @@
 /**
  * 식재료 원물 사진을 Gemini(gemini-2.5-flash-image, "나노바나나")로 생성해
- * Vercel Blob에 업로드하고, 생성된 URL을 src/data/months.ts에 채워 넣는 스크립트.
+ * 저장하고, 생성된 경로를 src/data/months.ts에 채워 넣는 스크립트.
  * 레시피용 scripts/generate-images.ts와 동일한 안전장치 패턴을 따릅니다.
  *
+ * 저장 방식은 두 가지 중 하나가 자동으로 선택됩니다:
+ *  - BLOB_READ_WRITE_TOKEN이 있으면: Vercel Blob에 업로드 (기존 방식)
+ *  - 없으면: 프로젝트 안 /public/images/ingredients/ 폴더에 직접 저장.
+ *    이 경우 데이터에는 '/images/ingredients/이름.png' 같은 상대 경로가 들어가고,
+ *    Next.js가 정적 파일로 그대로 서빙합니다. git에 커밋해서 배포하면 됩니다.
+ *
  * 실행 방법:
- *   GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-ingredient-images.ts --ingredient=햇감자
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-ingredient-images.ts --ingredient=햇감자
  *   (전체 실행: --all 플래그 필요)
  *   (이미 사진이 있는 것도 시절소담 톤으로 다시 만들고 싶으면: --replace-existing)
+ *   (기존 Vercel Blob 사진들도 다시 생성하고 싶으면(Blob 스토어가 정지된 경우 등): --replace-blob)
  *
  * 안전장치:
  *  - 기본은 1개 식재료(--ingredient=이름)만 처리하도록 강제. --all을 명시해야 전체 실행.
  *  - 기본은 imageUrl이 아예 없는 항목만 채움. 이미 사진(Unsplash 등)이 있는 항목은
  *    --replace-existing을 명시해야 다시 생성함.
- *  - 이미 Blob URL인 항목(blob.vercel-storage.com)은 항상 건너뜀(중복 생성 방지).
+ *  - 이미 이미지 URL(Blob 또는 로컬 경로)인 항목은 기본적으로 건너뜀(중복 생성 방지).
+ *    --replace-blob을 명시하면 기존 Blob URL도 다시 생성 대상에 포함.
  *  - 같은 식재료가 여러 달에 중복 등장하면(예: 도다리) 한 번만 생성해서 모든 줄에 동일하게 적용.
  *  - 매 항목 처리 후 즉시 파일에 저장 → 중간에 끊겨도 그때까지 결과는 남음.
  */
 import { GoogleGenAI } from '@google/genai';
 import { put } from '@vercel/blob';
-import { readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
 import { SODAMI_VISUAL_STYLE } from '../src/lib/persona';
 
 const apiKey = process.env.GEMINI_API_KEY;
 const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
+const useLocalStorage = !blobToken;
 
 if (!apiKey) {
   console.error('GEMINI_API_KEY 환경변수가 필요합니다.');
   process.exit(1);
 }
-if (!blobToken) {
-  console.error('BLOB_READ_WRITE_TOKEN 환경변수가 필요합니다. (Vercel 프로젝트 > Storage > Blob)');
-  process.exit(1);
+if (useLocalStorage) {
+  console.log('BLOB_READ_WRITE_TOKEN이 없어 /public/images/ingredients/ 폴더에 로컬로 저장합니다.');
 }
 
 const ai = new GoogleGenAI({ apiKey });
@@ -40,6 +48,7 @@ const args = process.argv.slice(2);
 const ingredientArg = args.find((a) => a.startsWith('--ingredient='))?.split('=')[1];
 const runAll = args.includes('--all');
 const replaceExisting = args.includes('--replace-existing');
+const replaceBlob = args.includes('--replace-blob');
 
 if (!ingredientArg && !runAll) {
   console.error(
@@ -100,6 +109,12 @@ async function generateImageBuffer(prompt: string): Promise<Buffer | null> {
 }
 
 async function uploadToBlob(buffer: Buffer, pathname: string): Promise<string> {
+  if (useLocalStorage) {
+    const localPath = join(__dirname, '..', 'public', 'images', pathname);
+    mkdirSync(dirname(localPath), { recursive: true });
+    writeFileSync(localPath, buffer);
+    return `/images/${pathname}`;
+  }
   const blob = await put(pathname, buffer, {
     access: 'public',
     contentType: 'image/png',
@@ -109,8 +124,10 @@ async function uploadToBlob(buffer: Buffer, pathname: string): Promise<string> {
   return blob.url;
 }
 
-function isAlreadyBlobUrl(url: string): boolean {
-  return url.includes('blob.vercel-storage.com');
+function isAlreadyGenerated(url: string): boolean {
+  if (url.startsWith('/images/ingredients/')) return true; // 로컬 저장분은 항상 건너뜀
+  if (url.includes('blob.vercel-storage.com')) return !replaceBlob; // Blob은 --replace-blob 줘야 다시 생성
+  return false;
 }
 
 function slugify(name: string): string {
@@ -141,10 +158,10 @@ async function main() {
     const imageUrlMatch = line.match(/imageUrl: '([^']*)'/);
     const currentUrl = imageUrlMatch?.[1] ?? '';
 
-    if (isAlreadyBlobUrl(currentUrl)) {
-      continue; // 항상 건너뜀 (중복 생성 방지)
+    if (isAlreadyGenerated(currentUrl)) {
+      continue; // 로컬 저장분은 항상 건너뜀, Blob은 --replace-blob 없으면 건너뜀
     }
-    if (currentUrl && !replaceExisting) {
+    if (currentUrl && !replaceExisting && !replaceBlob) {
       continue; // 기존 사진 있고 --replace-existing 안 줬으면 건너뜀
     }
 
