@@ -19,7 +19,13 @@ export const SODAMI_PERSONA = {
  * 레시피 완성샷, 단계별 사진 등 모든 AI 이미지 프롬프트 끝에 덧붙입니다.
  */
 export const SODAMI_VISUAL_STYLE = `
-Photography style: warm, soft natural window light, shallow depth of field, shot on a wooden or warm cream-colored table with sage-green and terracotta colored linen or ceramic props nearby, Korean home-cooking magazine aesthetic (like a cozy seasonal recipe magazine), appetizing and cozy mood, slightly muted and warm color grading — never oversaturated or harshly lit like a fast-food ad.
+PHOTOREALISM — this must look like an actual photograph taken with a real camera, never a 3D render, illustration, painting, or CGI. Real food texture: visible steam where appropriate, natural sauce drips, slightly uneven plating, authentic sear marks and char, real oil sheen, imperfect garnish placement — the small imperfections of a real chef who just finished cooking and set the plate down for a photo, not a perfectly styled stock photo. Avoid: plastic-looking glossy surfaces, airbrushed food, unnaturally perfect symmetry, oversaturated "food ad" colors, any rendered or illustrated look.
+
+CAMERA & LIGHT (keep identical across every dish for visual consistency): shot on a DSLR with a 50mm lens, shallow depth of field (f/2.0–f/2.8) so the plate is sharp and the background falls softly out of focus, camera positioned at a 35–45 degree angle above the plate (not flat top-down, not straight-on eye level), single soft natural window light from the upper-left, soft shadows, no harsh flash.
+
+SETTING (keep identical across every dish): warm cream or aged wooden table, one or two simple props nearby — plain ceramic bowl, linen napkin in sage-green or terracotta, a single utensil — never more than that, never anything that competes with the food. Consistent warm, slightly muted color grading (think a quiet seasonal Korean home-cooking magazine, not a fast-food ad) across every single image so the whole recipe collection feels like one continuous photo series shot by the same photographer in the same kitchen.
+
+FRAMING: the finished dish fills most of the frame and is clearly the single subject — no other dishes, no hands, no people, no phones or utensils mid-use.
 
 CRITICAL — absolutely no text anywhere in the image: no labels, no tags, no cards, no handwriting, no printed text, no watermark, no logos, no signage, no recipe cards with writing on them, no Korean or any other language characters anywhere in the frame. Do not include any object whose purpose is to display text (paper tags, notecards, chalkboards, packaging with visible labels). Keep all props purely visual — plain bowls, plain linen, plain wood, fresh ingredients — with zero typography of any kind. No visible human faces or hands.`;
 

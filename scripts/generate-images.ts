@@ -172,7 +172,7 @@ async function processFile(fileName: string) {
     if (!isAlreadyBlobUrl(currentHeroUrl)) {
       console.log('  완성샷 생성 중...');
       try {
-        const prompt = `A beautifully plated Korean home-cooked dish: "${recipe.title}", made with ${recipe.mainIngredient}. Top-down or 45-degree angle food photography.${SODAMI_VISUAL_STYLE}`;
+        const prompt = `A beautifully plated Korean home-cooked dish: "${recipe.title}", made with ${recipe.mainIngredient}.${SODAMI_VISUAL_STYLE}`;
         const buffer = await generateImageBuffer(prompt);
         if (buffer) {
           const url = await uploadToBlob(buffer, `recipes/${recipe.id}/hero.png`);
