@@ -12,7 +12,7 @@ export const recipesQ3: Recipe[] = [
     cookTime: 30,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1625943555017-a517a8e8d11a?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '대하, 가을무',
+    mainIngredient: '대하',
     description: '서늘한 바람이 불기 시작하며 단맛이 응축된 가을무와, 살이 탱글하게 오른 대하를 함께 찜으로 즐기는 메뉴예요.',
     ingredients: [
       { name: '대하', amount: '10마리' },
@@ -77,7 +77,7 @@ export const recipesQ3: Recipe[] = [
     cookTime: 15,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '가을무, 배',
+    mainIngredient: '가을무',
     description: '단맛이 응축된 가을무와 과즙 가득한 배를 채 썰어 새콤하게 무친 시원한 반찬이에요. 기름진 음식과 함께 먹으면 좋습니다.',
     ingredients: [
       { name: '가을무', amount: '1/3개' },

@@ -338,7 +338,7 @@ export const recipesQ1Extra: Recipe[] = [
     cookTime: 25,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '미나리, 새우',
+    mainIngredient: '미나리',
     description: '향긋한 미나리전 위에 탱글한 새우를 올려 더욱 풍성하게 즐기는 별미예요. 봄비 내리는 날 막걸리와 함께 즐기기 좋습니다.',
     ingredients: [
       { name: '미나리', amount: '100g' },
@@ -434,7 +434,7 @@ export const recipesQ1Extra: Recipe[] = [
     cookTime: 30,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '취나물, 두릅',
+    mainIngredient: '취나물',
     description: '취나물, 두릅 등 봄철 산나물을 듬뿍 올려 비벼 먹는 영양 가득한 비빔밥이에요. 색감도 화려해 보는 즐거움도 있습니다.',
     ingredients: [
       { name: '밥', amount: '2공기' },

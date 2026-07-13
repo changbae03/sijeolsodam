@@ -256,7 +256,7 @@ export const recipesQ1: Recipe[] = [
     cookTime: 20,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '바지락, 냉이',
+    mainIngredient: '바지락',
     description: '바지락의 시원한 감칠맛과 냉이의 향긋함이 만나 한층 깊어진 된장국이에요. 봄이 가장 잘 느껴지는 국물 요리입니다.',
     ingredients: [
       { name: '바지락', amount: '300g' },
@@ -319,7 +319,7 @@ export const recipesQ1: Recipe[] = [
     cookTime: 15,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '두릅, 달래',
+    mainIngredient: '두릅',
     description: '쌉쌀한 두릅과 알싸한 달래를 함께 무쳐낸 향긋한 봄나물 반찬이에요. 입맛 없는 봄날 입맛을 돋워줍니다.',
     ingredients: [
       { name: '두릅', amount: '100g' },

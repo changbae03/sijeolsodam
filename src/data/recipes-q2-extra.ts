@@ -12,7 +12,7 @@ export const recipesQ2Extra: Recipe[] = [
     cookTime: 25,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '새우, 미나리',
+    mainIngredient: '새우',
     description: '늦봄 향긋한 미나리와 탱글한 새우를 함께 부친 전이에요. 입맛을 돋워주는 산뜻한 별미입니다.',
     ingredients: [
       { name: '새우', amount: '10마리' },
@@ -75,7 +75,7 @@ export const recipesQ2Extra: Recipe[] = [
     cookTime: 20,
     servings: 2,
     heroImage: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=800&q=80',
-    mainIngredient: '아스파라거스, 새우',
+    mainIngredient: '아스파라거스',
     description: '부드러운 봄 아스파라거스와 탱글한 새우를 마늘향 가득하게 볶아낸 메뉴예요. 간단하지만 근사한 한 끼가 됩니다.',
     ingredients: [
       { name: '아스파라거스', amount: '10대' },
