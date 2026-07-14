@@ -6,6 +6,8 @@ import { getCurrentMonthData } from '@/lib/season';
 import { getKamisMappingByName } from '@/lib/kamis-mapping';
 import { fetchKamisPriceAnalysis } from '@/lib/kamis';
 import { getUserTopIngredient } from '@/lib/personalization';
+import { allRecipes } from '@/data/recipes';
+import type { Recipe } from '@/data/types';
 
 function pickTodaySeasonalIngredient() {
   const monthData = getCurrentMonthData();
@@ -28,6 +30,68 @@ function getKoreaHour(): number {
     hour12: false,
   }).format(new Date());
   return Number(hourStr) % 24;
+}
+
+/** 실시간 시간대 컨텍스트 — 이 두 구간에서만 별도의 유도 문구/추천을 보여준다 */
+type TimeSlot = 'dawnQuick' | 'preDinner' | null;
+
+function getTimeSlot(hour: number): TimeSlot {
+  if (hour >= 5 && hour < 9) return 'dawnQuick'; // 새벽/아침: 해장 or 간편식
+  if (hour >= 16 && hour < 18) return 'preDinner'; // 저녁 전: 메인 요리 유도
+  return null;
+}
+
+const HANGOVER_KEYWORDS = ['해장', '북엇국', '북어', '황태', '콩나물국', '재첩'];
+
+/** 새벽/아침(05~09시): 해장 국물 요리 우선, 없으면 짧고 쉬운 간편식으로 대체 */
+function pickDawnRecipe(): Recipe | null {
+  const hangover = allRecipes.filter(
+    (r) =>
+      (r.category === '국&찌개' || r.category === '죽') &&
+      HANGOVER_KEYWORDS.some((k) => r.title.includes(k) || r.subtitle.includes(k))
+  );
+  if (hangover.length > 0) return hangover[Math.floor(Math.random() * hangover.length)];
+
+  const quick = allRecipes.filter(
+    (r) => r.level === 'home' && r.difficulty === '아주 쉬움' && r.cookTime <= 15
+  );
+  if (quick.length > 0) return quick[Math.floor(Math.random() * quick.length)];
+  return null;
+}
+
+/** 저녁 시간 전(16~18시): 든든한 메인 요리 한 가지를 제안 */
+function pickDinnerMainRecipe(): Recipe | null {
+  const mains = allRecipes.filter((r) => r.category === '메인요리' && r.level !== 'chef');
+  if (mains.length === 0) return null;
+  return mains[Math.floor(Math.random() * mains.length)];
+}
+
+interface TimeSuggestion {
+  slot: Exclude<TimeSlot, null>;
+  message: string;
+  recipe: { id: string; title: string; heroImage: string } | null;
+}
+
+/** 지금 접속한 실시간 시간(한국시간 기준)을 감지해, 시간대에 맞는 유도 문구+추천을 만든다 */
+function buildTimeSuggestion(hour: number): TimeSuggestion | null {
+  const slot = getTimeSlot(hour);
+  if (!slot) return null;
+
+  if (slot === 'dawnQuick') {
+    const recipe = pickDawnRecipe();
+    return {
+      slot,
+      message: '든든한 해장이나 간편한 아침 한 끼가 필요한 시간이에요.',
+      recipe: recipe ? { id: recipe.id, title: recipe.title, heroImage: recipe.heroImage } : null,
+    };
+  }
+
+  const recipe = pickDinnerMainRecipe();
+  return {
+    slot,
+    message: '오늘 저녁 메뉴는 정하셨나요?',
+    recipe: recipe ? { id: recipe.id, title: recipe.title, heroImage: recipe.heroImage } : null,
+  };
 }
 
 /** 식사 여부를 묻는 사적인 인사말 대신, 시간대에 따라 톤만 살짝 바뀌는 담백한 인사 */
@@ -106,6 +170,7 @@ async function fetchPriceNote(ingredientName: string): Promise<string | null> {
 export async function GET(request: NextRequest) {
   const todayIngredient = pickTodaySeasonalIngredient();
   const user = getUserFromRequest(request);
+  const timeSuggestion = buildTimeSuggestion(getKoreaHour());
 
   const { searchParams } = new URL(request.url);
   const lat = Number(searchParams.get('lat'));
@@ -126,6 +191,7 @@ export async function GET(request: NextRequest) {
       recommendedRecipe: null,
       weatherNote,
       priceNote,
+      timeSuggestion,
     });
   }
 
@@ -153,6 +219,7 @@ export async function GET(request: NextRequest) {
       recommendedRecipe,
       weatherNote,
       priceNote,
+      timeSuggestion,
     });
   } catch (error) {
     console.error('Personalize error:', error);
@@ -164,6 +231,7 @@ export async function GET(request: NextRequest) {
       recommendedRecipe: null,
       weatherNote,
       priceNote,
+      timeSuggestion,
     });
   }
 }

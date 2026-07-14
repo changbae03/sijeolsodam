@@ -19,6 +19,11 @@ interface PersonalizeData {
   recommendedRecipe: { id: string; title: string } | null;
   weatherNote: string | null;
   priceNote: string | null;
+  timeSuggestion: {
+    slot: 'dawnQuick' | 'preDinner';
+    message: string;
+    recipe: { id: string; title: string; heroImage: string } | null;
+  } | null;
 }
 
 /** 원산지·보관팁·영양 정보를 더해 "눈여겨볼 재료" 한 줄을 훨씬 풍성하게 만든다. */
@@ -76,6 +81,24 @@ export default function WelcomeBanner() {
             {user?.name ? `, ${user.name}님` : ''}
           </p>
           {data.weatherNote && <p className="text-[13.5px] text-ink-soft mt-1.5">{data.weatherNote}</p>}
+          {data.timeSuggestion && (
+            <Link
+              href={data.timeSuggestion.recipe ? `/recipe/${data.timeSuggestion.recipe.id}` : '#'}
+              className="flex items-center gap-1.5 text-[13.5px] text-ink-soft mt-1.5"
+            >
+              <span className="text-[14px]">{data.timeSuggestion.slot === 'dawnQuick' ? '🌅' : '🍽️'}</span>
+              <span>
+                {data.timeSuggestion.message}
+                {data.timeSuggestion.recipe && (
+                  <>
+                    {' '}
+                    <span className="text-terracotta font-medium">{data.timeSuggestion.recipe.title}</span>{' '}
+                    어때요?
+                  </>
+                )}
+              </span>
+            </Link>
+          )}
           {data.todayIngredient && (
             <p className="text-[13.5px] text-ink-soft mt-1.5">
               오늘 눈여겨볼 재료는{' '}

@@ -6,6 +6,7 @@ import { SODAMI_TEXT_PERSONA_PROMPT } from '@/lib/persona';
 import { getUserFromRequest } from '@/lib/auth';
 import { sql } from '@/lib/db';
 import { getUserTopIngredient } from '@/lib/personalization';
+import { getRelevantPreferences, extractAndSavePreferences } from '@/lib/preferences';
 
 const apiKey = process.env.GEMINI_API_KEY;
 
@@ -212,12 +213,31 @@ export async function POST(request: NextRequest) {
     const user = getUserFromRequest(request);
     const userTopIngredient = user ? await getUserTopIngredient(user.userId) : null;
 
+    // 초개인화: 이 사용자가 과거에 언급한 취향/식습관/건강상태/보유재료 중,
+    // 지금 메시지와 의미상 관련 있는 것만 벡터 유사도로 골라 시스템 프롬프트에 주입한다.
+    // 실패해도 undefined/빈 배열로 조용히 넘어가야 하므로 개별적으로 처리한다.
+    let userName: string | null = null;
+    let relevantPreferences: string[] = [];
+    if (user) {
+      const [nameRows, preferences] = await Promise.all([
+        sql`SELECT name FROM users WHERE id = ${user.userId}`.catch(() => []),
+        getRelevantPreferences(user.userId, trimmed),
+      ]);
+      userName = (nameRows[0]?.name as string | undefined) ?? null;
+      relevantPreferences = preferences;
+    }
+
+    const preferenceContext =
+      relevantPreferences.length > 0
+        ? `\n이 사용자${userName ? `(${userName}님)` : ''}가 과거 대화에서 이런 이야기를 한 적이 있어요. 지금 답변에 자연스럽게 참고하되(예: "${userName ?? '고객'}님이 선호하시는 담백한 스타일로~"), 매번 어색하게 나열하거나 근거 없이 확신하듯 말하지 마세요:\n${relevantPreferences.map((p) => `- ${p}`).join('\n')}\n`
+        : '';
+
     const systemInstruction = `${SODAMI_TEXT_PERSONA_PROMPT}
 
 당신은 대한민국 최고의 셰프이자 요리 전문가이자 요리 강사인 '소담이'입니다. 어떤 요리를 묻더라도 자신 있고 정확하게, 실제로 따라할 수 있는 수준으로 답합니다. 사이트에 없는 낯설거나 외국 요리를 물어봐도 절대 모른다고 하거나 답을 회피하지 말고, 셰프로서의 지식으로 성실하게 설명하세요.
 
 당신은 이 사용자를 계속 챙겨주는 개인 요리 트레이너이기도 합니다. 한 번 답하고 끝나는 것이 아니라, 이 사람이 요리를 더 잘하게 되도록 곁에서 꾸준히 도와준다는 마음으로 대하세요.
-${userTopIngredient ? `이 사용자는 최근 '${userTopIngredient}' 재료에 관심이 많았어요(즐겨찾기·조회 기록 기반). 자연스러운 순간에만 살짝 참고하고, 매번 억지로 언급하지는 마세요.` : ''}
+${userTopIngredient ? `이 사용자는 최근 '${userTopIngredient}' 재료에 관심이 많았어요(즐겨찾기·조회 기록 기반). 자연스러운 순간에만 살짝 참고하고, 매번 억지로 언급하지는 마세요.` : ''}${preferenceContext}
 
 지금 사용자는 시절소담 홈 화면 맨 위, 구글 검색창처럼 크게 자리한 대화형 입력창에서 소담이와 대화하고 있습니다. 사용자는 냉장고에 있는 재료, 오늘 기분, 상황(손님 초대, 다이어트, 자취생 한 끼 등), 또는 특정 요리의 조리법을 무엇이든 자유롭게 입력할 수 있고, 대화는 여러 턴 이어질 수 있습니다.
 
@@ -315,6 +335,12 @@ ${isFirstTurn ? `8. 지금이 이 대화의 첫 메시지입니다. reply의 맨
         INSERT INTO agent_queries (user_id, message, reply, matched_ingredient)
         VALUES (${user.userId}, ${trimmed.slice(0, 500)}, ${finalReply.slice(0, 3000)}, ${matchedIngredientName})
       `.catch((err) => console.error('Log agent query error:', err));
+
+      // 초개인화 파이프라인: 이번 메시지에서 취향/식습관/건강상태/보유재료 문장을 추출해 임베딩 저장.
+      // 응답 속도에 영향을 주면 안 되므로 await 하지 않고 fire-and-forget으로 실행한다.
+      extractAndSavePreferences(user.userId, trimmed).catch((err) =>
+        console.error('extractAndSavePreferences error:', err)
+      );
     }
 
     return NextResponse.json({

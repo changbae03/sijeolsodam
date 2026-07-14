@@ -113,3 +113,26 @@ CREATE TABLE IF NOT EXISTS agent_queries (
 CREATE INDEX IF NOT EXISTS idx_agent_queries_user_id ON agent_queries(user_id, created_at DESC);
 ALTER TABLE agent_queries ADD COLUMN IF NOT EXISTS reply TEXT;
 
+-- ============================================
+-- 초개인화: 유저 선호/상태 임베딩 저장
+-- ============================================
+-- 유저가 소담이와 대화하며 언급한 취향/식습관/건강상태/보유재료 같은 문장을
+-- 임베딩(벡터)으로 저장해두고, 다음 대화에서 의미상 관련 있는 것만 골라
+-- 시스템 프롬프트에 주입하기 위한 테이블. Neon Postgres는 pgvector 확장을 지원함.
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE IF NOT EXISTS user_preferences (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  statement TEXT NOT NULL,        -- 원문을 다듬은 한 문장. 예: "매운 음식을 잘 못 먹어요"
+  category VARCHAR(30) NOT NULL,  -- 'dietary' | 'health' | 'taste' | 'pantry' | 'other'
+  embedding vector(768) NOT NULL, -- Gemini text-embedding-004 차원(768)
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_user_preferences_user_id ON user_preferences(user_id, created_at DESC);
+-- 코사인 거리 기반 유사도 검색용 인덱스. 데이터가 어느 정도(수천 건) 쌓이기 전에는
+-- 순차 스캔이 더 빠를 수 있어 IVFFlat 인덱스는 필수는 아니지만, 미리 만들어둠.
+CREATE INDEX IF NOT EXISTS idx_user_preferences_embedding
+  ON user_preferences USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
+
