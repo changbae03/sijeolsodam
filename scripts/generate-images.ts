@@ -107,6 +107,8 @@ interface RecipeLineInfo {
   category: string;
   description: string;
   mainIngredient: string;
+  cuisineCountry: string;
+  platingGuide: string;
   heroImageLineIndex: number;
   stepLineIndices: { lineIndex: number; title: string; description: string }[];
 }
@@ -130,6 +132,8 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
           category: current.category || '',
           description: current.description || '',
           mainIngredient: current.mainIngredient || '',
+          cuisineCountry: current.cuisineCountry || '',
+          platingGuide: current.platingGuide || '',
           heroImageLineIndex: current.heroImageLineIndex ?? -1,
           stepLineIndices: current.steps,
         });
@@ -163,6 +167,17 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
       current.mainIngredient = mainIngMatch[1];
     }
 
+    // cuisineContext: { country: '일본', note: '...' } — country만 뽑아온다
+    const countryMatch = line.match(/cuisineContext:\s*\{\s*country:\s*'((?:[^'\\]|\\.)*)'/);
+    if (countryMatch && current.id && !current.cuisineCountry) {
+      current.cuisineCountry = countryMatch[1];
+    }
+
+    const platingMatch = line.match(/^\s{4}platingGuide:\s*'((?:[^'\\]|\\.)*)'/);
+    if (platingMatch && current.id && !current.platingGuide) {
+      current.platingGuide = platingMatch[1];
+    }
+
     const heroMatch = line.match(/^\s{4}heroImage:\s*'/);
     if (heroMatch) {
       current.heroImageLineIndex = i;
@@ -182,6 +197,8 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
       category: current.category || '',
       description: current.description || '',
       mainIngredient: current.mainIngredient || '',
+      cuisineCountry: current.cuisineCountry || '',
+      platingGuide: current.platingGuide || '',
       heroImageLineIndex: current.heroImageLineIndex ?? -1,
       stepLineIndices: current.steps,
     });
@@ -224,7 +241,13 @@ async function processFile(fileName: string) {
     if (!isAlreadyBlobUrl(currentHeroUrl) || shouldForceThisOne) {
       console.log('  완성샷 생성 중...');
       try {
-        const prompt = `A food photograph of a real, correctly-made Korean dish called "${recipe.title}"${recipe.subtitle ? ` (${recipe.subtitle})` : ''}, a ${recipe.category} made with ${recipe.mainIngredient} as the main ingredient. What this dish actually is: ${recipe.description} Render exactly this dish, matching its real appearance, texture, and color — do not substitute a generic or different-looking dish just because the name is unfamiliar.${SODAMI_VISUAL_STYLE}`;
+        const cuisineLine = recipe.cuisineCountry
+          ? `This is an authentic ${recipe.cuisineCountry} dish — render it exactly the way it is actually served in ${recipe.cuisineCountry}, with the correct traditional plates, garnishes, and presentation style for that cuisine, not a Korean-style interpretation.`
+          : `This is a home-style dish — render it in a natural, everyday plating style appropriate to what this specific dish actually is.`;
+        const platingLine = recipe.platingGuide
+          ? ` Exact plating to follow: ${recipe.platingGuide}`
+          : '';
+        const prompt = `A food photograph of a real, correctly-made dish called "${recipe.title}"${recipe.subtitle ? ` (${recipe.subtitle})` : ''}, a ${recipe.category} made with ${recipe.mainIngredient} as the main ingredient. What this dish actually is: ${recipe.description} ${cuisineLine}${platingLine} This may be an unfamiliar or unusual dish — research your knowledge of what it truly looks like rather than guessing from the name alone, and never substitute a different, more generic-looking dish.${SODAMI_VISUAL_STYLE}`;
         const buffer = await generateImageBuffer(prompt);
         if (buffer) {
           const url = await uploadToBlob(buffer, `recipes/${recipe.id}/hero.png`);
