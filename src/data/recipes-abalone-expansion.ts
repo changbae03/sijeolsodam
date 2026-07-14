@@ -13,7 +13,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-home-4', month: 8, title: '전복 장조림', subtitle: '쫄깃하고 짭조름한 밑반찬',
     category: '밑반찬', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-home-4/hero.png',
     mainIngredient: '전복',
     description: '전복을 간장 양념에 조려낸, 쫄깃하고 짭조름한 고급 밑반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-home-5', month: 8, title: '전복 초무침', subtitle: '새콤달콤 쫄깃한 여름 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-home-5/hero.png',
     mainIngredient: '전복',
     description: '데친 전복을 오이, 미나리와 함께 새콤달콤한 초고추장에 무친, 여름 입맛을 돋우는 별미예요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-1', month: 8, title: '전복 갈비찜', subtitle: '보양식 두 가지의 만남',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-weekend-1/hero.png',
     mainIngredient: '전복',
     description: '소갈비와 전복을 함께 조린, 두 가지 보양식 재료가 만난 명절 대표 찜요리예요.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-2', month: 8, title: '전복 삼계탕', subtitle: '여름 보양식의 정수',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 80, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-weekend-2/hero.png',
     mainIngredient: '전복',
     description: '삼계탕에 전복을 더한, 여름철 최고의 보양식이에요.',
     masterclass: {
@@ -136,7 +136,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-3', month: 8, title: '전복 solo 솥밥', subtitle: '내장까지 활용한 향긋한 솥밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-weekend-3/hero.png',
     mainIngredient: '전복',
     description: '전복살과 내장을 함께 넣어 지은, 향긋하고 진한 감칠맛의 솥밥이에요.',
     masterclass: {
@@ -167,7 +167,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-4', month: 8, title: '전복 강정', subtitle: '바삭 달콤한 별미',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-weekend-4/hero.png',
     mainIngredient: '전복',
     description: '튀긴 전복에 달콤짭짤한 강정소스를 버무린, 색다르게 즐기는 고급 별미예요.',
     masterclass: {
@@ -197,7 +197,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-5', month: 8, title: '전복물회', subtitle: '시원하고 쫄깃한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-weekend-5/hero.png',
     mainIngredient: '전복',
     description: '얇게 저민 전복과 채소를 새콤달콤한 냉국물에 말아낸, 여름철 시원한 별미예요.',
     masterclass: {
@@ -230,7 +230,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-1', month: 8, title: '아와비노 니모노', subtitle: '일본식 전복 조림',
     category: '조림', difficulty: '보통', level: 'world', cookTime: 60, servings: 3,
     cuisineContext: { country: '일본', note: '아와비(鮑)는 일본어로 전복을 뜻해요. 일본에서는 전복을 사케와 간장에 오래 은근히 졸여 부드럽게 만드는 니모노가 고급 요리로 대접받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-world-1/hero.png',
     mainIngredient: '전복',
     description: '사케와 간장으로 오래 졸여 부드럽게 만든, 일본 고급 요리 스타일의 전복 조림이에요.',
     masterclass: {
@@ -260,7 +260,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-2', month: 8, title: '바오위쓰 차오판', subtitle: '중국식 전복 볶음밥',
     category: '밥', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '중국', note: '바오위(鲍鱼)는 중국어로 전복을 뜻해요. 중국 광둥 요리에서는 전복을 최고급 식재료로 여기며, 볶음밥이나 볶음요리에 넣어 감칠맛을 극대화해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-world-2/hero.png',
     mainIngredient: '전복',
     description: '전복과 계란, 파를 넣어 볶은, 중국식 고급 볶음밥이에요.',
     masterclass: {
@@ -291,7 +291,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-3', month: 8, title: '오레하스 아 라 갈레가', subtitle: '스페인식 전복 갈리시아 스타일',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '갈리시아 지방은 스페인 최고의 해산물 산지예요. 전복(오레하 데 마르)을 올리브오일과 마늘, 파프리카가루로 심플하게 조리하는 것이 정통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-world-3/hero.png',
     mainIngredient: '전복',
     description: '올리브오일과 마늘, 파프리카가루로 구운, 스페인 갈리시아식 심플한 전복요리예요.',
     masterclass: {
@@ -322,7 +322,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-4', month: 8, title: '전복 뵈르누아제트', subtitle: '프랑스식 브라운버터구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '프랑스', note: '프랑스 요리에서는 조개류나 해산물을 브라운버터(뵈르누아제트)로 마무리하는 것이 클래식한 기법이에요. 견과류향 나는 버터가 전복의 바다향과 잘 어우러져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-world-4/hero.png',
     mainIngredient: '전복',
     description: '전복을 버터에 구워 갈색버터소스로 마무리한, 프랑스식 우아한 전채예요.',
     masterclass: {
@@ -354,7 +354,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-5', month: 8, title: '전복 리소토 알 네로', subtitle: '이탈리아식 먹물 전복 리조또',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 50, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 베네치아 지방에서는 오징어먹물을 넣은 검은 리조또가 클래식 요리예요. 전복을 더하면 바다향이 두 배로 진해지는 고급스러운 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-world-5/hero.png',
     mainIngredient: '전복',
     description: '오징어먹물로 검게 물들인 쌀에 전복을 더한, 극적인 비주얼의 이탈리아식 리조또예요.',
     masterclass: {
@@ -388,7 +388,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-chef-1', month: 8, title: '전복 콩소메', subtitle: '맑고 깊은 바다향의 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 데친 전복 슬라이스와 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-chef-1/hero.png',
     mainIngredient: '전복',
     description: '전복 육수를 달걀흰자로 맑게 정제한, 투명하면서도 바다향이 진한 콩소메예요.',
     masterclass: {
@@ -419,7 +419,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-chef-2', month: 8, title: '전복 뵈르블랑', subtitle: '프랑스식 버터소스를 곁들인 전복',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 소테한 전복을 부채꼴로 펼쳐 담고, 뵈르블랑소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-chef-2/hero.png',
     mainIngredient: '전복',
     description: '버터에 소테한 전복에 화이트와인과 버터로 만든 뵈르블랑소스를 곁들인 프렌치 스타일 요리예요.',
     masterclass: {
@@ -451,7 +451,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-chef-3', month: 8, title: '전복 리조또', subtitle: '크리미하고 바다향 진한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 중앙에 소테한 전복 한 조각을 올린 뒤 트러플오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-chef-3/hero.png',
     mainIngredient: '전복',
     description: '전복 육수로 지어낸, 크리미하고 진한 바다향의 이탈리아식 리조또예요.',
     masterclass: {
@@ -483,7 +483,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-chef-4', month: 8, title: '전복 카르파치오', subtitle: '얇게 저민 전복의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '차갑게 식힌 넓은 접시에 전복을 종이처럼 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 유자 제스트와 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-chef-4/hero.png',
     mainIngredient: '전복',
     description: '신선한 전복을 종이처럼 얇게 저며 올리브오일과 유자로 마무리한, 재료 본연의 향을 즐기는 전채예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-chef-5', month: 8, title: '전복 콩피', subtitle: '올리브오일에 은근히 익힌 부드러운 전복',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '따뜻한 접시에 전복을 놓고, 콩피에 쓴 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/abalone-chef-5/hero.png',
     mainIngredient: '전복',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 전복요리예요.',
     masterclass: {
