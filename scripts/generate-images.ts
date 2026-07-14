@@ -10,13 +10,17 @@
  *    이렇게 저장한 이미지는 git에 커밋해서 그대로 배포하면 됩니다.
  *
  * 실행 방법:
- *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=1-1                (로컬 저장)
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=1-1                (로컬 저장, 1개만)
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --all --hero-only --limit=10  (아직 없는 완성샷 10개만)
  *   GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-images.ts --recipe=1-1  (Blob 저장)
- *   (전체 60개 실행: --all 플래그, 완성샷만: --hero-only)
+ *   (전체 다 실행: --all 플래그만, 완성샷만: --hero-only)
  *
  * 안전장치:
  *  - 기본은 1개 레시피(--recipe=ID)만 처리하도록 강제. --all을 명시해야 전체 실행.
  *  - 이미 이미지 URL(Blob 또는 로컬 경로)이 들어있는 항목은 건너뜀.
+ *  - --limit=N: 아직 이미지가 없는 항목을 N개까지만 새로 생성하고 멈춤. 조금씩 나눠서
+ *    생성하고 싶을 때(--all과 함께) 쓴다. 이미 있는 항목을 건너뛰는 것과는 별개로,
+ *    "새로 생성한 개수"만 세므로 여러 번 나눠 돌려도 정확히 이어서 진행된다.
  *  - 실행 중간에 에러가 나도 그 시점까지 결과는 파일에 저장됨(매 항목 처리 후 즉시 write).
  */
 import { GoogleGenAI } from '@google/genai';
@@ -43,6 +47,9 @@ const args = process.argv.slice(2);
 const recipeIdArg = args.find((a) => a.startsWith('--recipe='))?.split('=')[1];
 const runAll = args.includes('--all');
 const heroOnly = args.includes('--hero-only');
+const limitArg = args.find((a) => a.startsWith('--limit='))?.split('=')[1];
+const limit = limitArg ? Number(limitArg) : Infinity;
+let generatedCount = 0;
 
 if (!recipeIdArg && !runAll) {
   console.error(
@@ -175,6 +182,7 @@ async function processFile(fileName: string) {
 
   for (const recipe of recipes) {
     if (recipeIdArg && recipe.id !== recipeIdArg) continue;
+    if (generatedCount >= limit) break; // --limit에 도달하면 이 파일에서도 더 진행하지 않음
 
     console.log(`\n[${recipe.id}] ${recipe.title}`);
 
@@ -196,7 +204,8 @@ async function processFile(fileName: string) {
             url
           );
           writeFileSync(filePath, lines.join('\n'), 'utf-8');
-          console.log('    완성샷 업로드 완료:', url);
+          generatedCount += 1;
+          console.log(`    완성샷 업로드 완료(${generatedCount}/${limit === Infinity ? '∞' : limit}):`, url);
         } else {
           console.warn('    이미지 생성 결과 없음, 건너뜀');
         }
@@ -209,9 +218,11 @@ async function processFile(fileName: string) {
     }
 
     if (heroOnly) continue;
+    if (generatedCount >= limit) break;
 
     // 2) 단계별 이미지
     for (const step of recipe.stepLineIndices) {
+      if (generatedCount >= limit) break;
       const line = lines[step.lineIndex];
       if (/stepImage:\s*'/.test(line)) {
         continue; // 이미 있음
@@ -227,7 +238,8 @@ async function processFile(fileName: string) {
           );
           lines[step.lineIndex] = insertStepImageField(lines[step.lineIndex], url);
           writeFileSync(filePath, lines.join('\n'), 'utf-8');
-          console.log('    완료:', url);
+          generatedCount += 1;
+          console.log(`    완료(${generatedCount}/${limit === Infinity ? '∞' : limit}):`, url);
         } else {
           console.warn('    이미지 생성 결과 없음, 건너뜀');
         }
@@ -246,9 +258,10 @@ async function main() {
   );
   console.log(`대상 파일 ${files.length}개 발견`);
   for (const file of files) {
+    if (generatedCount >= limit) break;
     await processFile(file);
   }
-  console.log('\n완료!');
+  console.log(`\n완료! 이번 실행에서 새로 생성한 이미지: ${generatedCount}개`);
 }
 
 main();
