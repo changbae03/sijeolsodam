@@ -12,12 +12,16 @@
  * 실행 방법:
  *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=1-1                (로컬 저장, 1개만)
  *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --all --hero-only --limit=10  (아직 없는 완성샷 10개만)
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=abalone-weekend-1 --force  (특정 레시피 1개만 강제로 재생성)
  *   GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-images.ts --recipe=1-1  (Blob 저장)
  *   (전체 다 실행: --all 플래그만, 완성샷만: --hero-only)
  *
  * 안전장치:
  *  - 기본은 1개 레시피(--recipe=ID)만 처리하도록 강제. --all을 명시해야 전체 실행.
  *  - 이미 이미지 URL(Blob 또는 로컬 경로)이 들어있는 항목은 건너뜀.
+ *  - --force: --recipe=ID와 함께일 때만 동작. 이미 이미지가 있어도 그 1개 레시피만
+ *    다시 생성한다(생성된 사진이 요리와 안 맞을 때 다시 만들기 위한 용도). --all과
+ *    함께 쓰면 전체를 다 재생성해버릴 위험이 있어 --recipe 없이는 무시된다.
  *  - --limit=N: 아직 이미지가 없는 항목을 N개까지만 새로 생성하고 멈춤. 조금씩 나눠서
  *    생성하고 싶을 때(--all과 함께) 쓴다. 이미 있는 항목을 건너뛰는 것과는 별개로,
  *    "새로 생성한 개수"만 세므로 여러 번 나눠 돌려도 정확히 이어서 진행된다.
@@ -47,6 +51,7 @@ const args = process.argv.slice(2);
 const recipeIdArg = args.find((a) => a.startsWith('--recipe='))?.split('=')[1];
 const runAll = args.includes('--all');
 const heroOnly = args.includes('--hero-only');
+const forceRegenerate = args.includes('--force');
 const limitArg = args.find((a) => a.startsWith('--limit='))?.split('=')[1];
 const limit = limitArg ? Number(limitArg) : Infinity;
 let generatedCount = 0;
@@ -98,6 +103,9 @@ function isAlreadyBlobUrl(url: string): boolean {
 interface RecipeLineInfo {
   id: string;
   title: string;
+  subtitle: string;
+  category: string;
+  description: string;
   mainIngredient: string;
   heroImageLineIndex: number;
   stepLineIndices: { lineIndex: number; title: string; description: string }[];
@@ -118,6 +126,9 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
         recipes.push({
           id: current.id,
           title: current.title || '',
+          subtitle: current.subtitle || '',
+          category: current.category || '',
+          description: current.description || '',
           mainIngredient: current.mainIngredient || '',
           heroImageLineIndex: current.heroImageLineIndex ?? -1,
           stepLineIndices: current.steps,
@@ -130,6 +141,21 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
     const titleMatch = line.match(/^\s{4}title:\s*'((?:[^'\\]|\\.)*)'/);
     if (titleMatch && current.id && !current.title) {
       current.title = titleMatch[1];
+    }
+
+    const subtitleMatch = line.match(/subtitle:\s*'((?:[^'\\]|\\.)*)'/);
+    if (subtitleMatch && current.id && !current.subtitle) {
+      current.subtitle = subtitleMatch[1];
+    }
+
+    const categoryMatch = line.match(/category:\s*'((?:[^'\\]|\\.)*)'/);
+    if (categoryMatch && current.id && !current.category) {
+      current.category = categoryMatch[1];
+    }
+
+    const descriptionMatch = line.match(/^\s{4}description:\s*'((?:[^'\\]|\\.)*)'/);
+    if (descriptionMatch && current.id && !current.description) {
+      current.description = descriptionMatch[1];
     }
 
     const mainIngMatch = line.match(/^\s{4}mainIngredient:\s*'((?:[^'\\]|\\.)*)'/);
@@ -152,6 +178,9 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
     recipes.push({
       id: current.id,
       title: current.title || '',
+      subtitle: current.subtitle || '',
+      category: current.category || '',
+      description: current.description || '',
       mainIngredient: current.mainIngredient || '',
       heroImageLineIndex: current.heroImageLineIndex ?? -1,
       stepLineIndices: current.steps,
@@ -191,10 +220,11 @@ async function processFile(fileName: string) {
     const heroUrlMatch = currentHeroLine.match(/heroImage:\s*'([^']*)'/);
     const currentHeroUrl = heroUrlMatch?.[1] || '';
 
-    if (!isAlreadyBlobUrl(currentHeroUrl)) {
+    const shouldForceThisOne = forceRegenerate && recipeIdArg === recipe.id;
+    if (!isAlreadyBlobUrl(currentHeroUrl) || shouldForceThisOne) {
       console.log('  완성샷 생성 중...');
       try {
-        const prompt = `A beautifully plated Korean home-cooked dish: "${recipe.title}", made with ${recipe.mainIngredient}.${SODAMI_VISUAL_STYLE}`;
+        const prompt = `A food photograph of a real, correctly-made Korean dish called "${recipe.title}"${recipe.subtitle ? ` (${recipe.subtitle})` : ''}, a ${recipe.category} made with ${recipe.mainIngredient} as the main ingredient. What this dish actually is: ${recipe.description} Render exactly this dish, matching its real appearance, texture, and color — do not substitute a generic or different-looking dish just because the name is unfamiliar.${SODAMI_VISUAL_STYLE}`;
         const buffer = await generateImageBuffer(prompt);
         if (buffer) {
           const url = await uploadToBlob(buffer, `recipes/${recipe.id}/hero.png`);
