@@ -10,11 +10,13 @@
  *    이렇게 저장한 이미지는 git에 커밋해서 그대로 배포하면 됩니다.
  *
  * 실행 방법:
- *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=1-1                (로컬 저장, 1개만)
- *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --all --hero-only --limit=10  (아직 없는 완성샷 10개만)
- *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=abalone-weekend-1 --force  (특정 레시피 1개만 강제로 재생성)
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=1-1                (완성샷 1개만, 로컬 저장)
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --all --limit=10             (아직 없는 완성샷 10개만)
+ *   GEMINI_API_KEY=키 npx tsx scripts/generate-images.ts --recipe=abalone-weekend-1 --force  (특정 레시피 완성샷 1개만 강제로 재생성)
  *   GEMINI_API_KEY=키 BLOB_READ_WRITE_TOKEN=토큰 npx tsx scripts/generate-images.ts --recipe=1-1  (Blob 저장)
- *   (전체 다 실행: --all 플래그만, 완성샷만: --hero-only)
+ *   (전체 다 실행: --all 플래그만)
+ *
+ * 기본값: 완성샷(hero)만 생성합니다. 조리 단계별 사진까지 원하면 --with-steps를 명시하세요.
  *
  * 안전장치:
  *  - 기본은 1개 레시피(--recipe=ID)만 처리하도록 강제. --all을 명시해야 전체 실행.
@@ -50,7 +52,8 @@ const ai = new GoogleGenAI({ apiKey });
 const args = process.argv.slice(2);
 const recipeIdArg = args.find((a) => a.startsWith('--recipe='))?.split('=')[1];
 const runAll = args.includes('--all');
-const heroOnly = args.includes('--hero-only');
+const withSteps = args.includes('--with-steps');
+const heroOnly = !withSteps; // 기본값: 완성샷만. 단계별 사진까지 원하면 --with-steps 명시
 const forceRegenerate = args.includes('--force');
 const limitArg = args.find((a) => a.startsWith('--limit='))?.split('=')[1];
 const limit = limitArg ? Number(limitArg) : Infinity;
