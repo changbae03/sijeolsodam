@@ -69,7 +69,7 @@ function pickDinnerMainRecipe(): Recipe | null {
 interface TimeSuggestion {
   slot: Exclude<TimeSlot, null>;
   message: string;
-  recipe: { id: string; title: string; heroImage: string } | null;
+  recipe: { id: string; title: string; subtitle: string; heroImage: string } | null;
 }
 
 /** 지금 접속한 실시간 시간(한국시간 기준)을 감지해, 시간대에 맞는 유도 문구+추천을 만든다 */
@@ -82,7 +82,7 @@ function buildTimeSuggestion(hour: number): TimeSuggestion | null {
     return {
       slot,
       message: '든든한 해장이나 간편한 아침 한 끼가 필요한 시간이에요.',
-      recipe: recipe ? { id: recipe.id, title: recipe.title, heroImage: recipe.heroImage } : null,
+      recipe: recipe ? { id: recipe.id, title: recipe.title, subtitle: recipe.subtitle, heroImage: recipe.heroImage } : null,
     };
   }
 
@@ -90,7 +90,7 @@ function buildTimeSuggestion(hour: number): TimeSuggestion | null {
   return {
     slot,
     message: '오늘 저녁 메뉴는 정하셨나요?',
-    recipe: recipe ? { id: recipe.id, title: recipe.title, heroImage: recipe.heroImage } : null,
+    recipe: recipe ? { id: recipe.id, title: recipe.title, subtitle: recipe.subtitle, heroImage: recipe.heroImage } : null,
   };
 }
 
@@ -207,7 +207,7 @@ export async function GET(request: NextRequest) {
       const candidates = getRecipesByIngredient(topIngredient).filter((r) => !favoritedIds.has(r.id));
       if (candidates.length > 0) {
         const recipe = candidates[Math.floor(Math.random() * candidates.length)];
-        recommendedRecipe = { id: recipe.id, title: recipe.title, heroImage: recipe.heroImage };
+        recommendedRecipe = { id: recipe.id, title: recipe.title, subtitle: recipe.subtitle, heroImage: recipe.heroImage };
       }
     }
 

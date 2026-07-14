@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useAuth } from '@/lib/auth-context';
+import { josa } from '@/lib/korean';
 
 interface PersonalizeData {
   loggedIn: boolean;
@@ -16,22 +17,22 @@ interface PersonalizeData {
     nutrition?: string;
   } | null;
   topIngredient: string | null;
-  recommendedRecipe: { id: string; title: string } | null;
+  recommendedRecipe: { id: string; title: string; subtitle: string } | null;
   weatherNote: string | null;
   priceNote: string | null;
   timeSuggestion: {
     slot: 'dawnQuick' | 'preDinner';
     message: string;
-    recipe: { id: string; title: string; heroImage: string } | null;
+    recipe: { id: string; title: string; subtitle: string; heroImage: string } | null;
   } | null;
 }
 
-/** 원산지·보관팁·영양 정보를 더해 "눈여겨볼 재료" 한 줄을 훨씬 풍성하게 만든다. */
+/** 원산지·보관팁·영양 정보를 모두 더해 "눈여겨볼 재료" 한 줄을 훨씬 풍성하게 만든다. */
 function buildIngredientLine(ing: NonNullable<PersonalizeData['todayIngredient']>): string {
   const parts = [ing.description];
   if (ing.origin) parts.push(`${ing.origin}에서 온 제철 재료예요.`);
-  const extra = ing.tip ?? ing.nutrition;
-  if (extra) parts.push(extra);
+  if (ing.nutrition) parts.push(ing.nutrition);
+  if (ing.tip) parts.push(`💡 ${ing.tip}`);
   return parts.join(' ');
 }
 
@@ -139,7 +140,11 @@ export default function WelcomeBanner() {
         {data.timeSuggestion.recipe && (
           <>
             {' '}
-            <span className="text-ink font-medium">{data.timeSuggestion.recipe.title}</span> 어때요?
+            <span className="text-ink font-medium">{data.timeSuggestion.recipe.title}</span>
+            {josa(data.timeSuggestion.recipe.title, '은/는')} 어때요?
+            <span className="block text-[12.5px] text-ink-soft/70 mt-0.5">
+              {data.timeSuggestion.recipe.subtitle}
+            </span>
           </>
         )}
       </InsightRow>
@@ -181,7 +186,11 @@ export default function WelcomeBanner() {
         href={`/recipe/${data.recommendedRecipe.id}`}
       >
         <span className="text-ink font-medium">{data.topIngredient}</span> 즐겨 찾으시던데,{' '}
-        <span className="text-terracotta font-medium">{data.recommendedRecipe.title}</span>는 어떠세요?
+        <span className="text-terracotta font-medium">{data.recommendedRecipe.title}</span>
+        {josa(data.recommendedRecipe.title, '은/는')} 어떠세요?
+        <span className="block text-[12.5px] text-ink-soft/70 mt-0.5">
+          {data.recommendedRecipe.subtitle}
+        </span>
       </InsightRow>
     );
   }
