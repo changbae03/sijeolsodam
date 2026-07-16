@@ -37,7 +37,7 @@ export default function LoginPage() {
         className="text-center mb-10"
       >
         <Logo size="sm" />
-        <h1 className="font-display text-[22px] text-ink mt-1">다시 만나서 반가워요</h1>
+        <h1 className="text-[24px] font-bold tracking-[-0.02em] text-ink mt-5">다시 만나서 반가워요</h1>
       </motion.div>
 
       <motion.form

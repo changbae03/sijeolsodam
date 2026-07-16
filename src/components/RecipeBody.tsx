@@ -17,10 +17,10 @@ const fadeUp = {
 };
 
 const LEVEL_BADGE: Record<RecipeLevel, { label: string; className: string }> = {
-  home: { label: '🌱 데일리 홈쿡', className: 'bg-sage/10 text-sage' },
-  weekend: { label: '🔥 주말 요리', className: 'bg-terracotta/10 text-terracotta' },
-  world: { label: '🌍 세계 요리', className: 'bg-terracotta/10 text-terracotta' },
-  chef: { label: '👨\u200d🍳 셰프 컬렉션', className: 'bg-ink text-cream' },
+  home: { label: '데일리 홈쿡', className: 'bg-sage/10 text-sage' },
+  weekend: { label: '주말 요리', className: 'bg-terracotta/10 text-terracotta' },
+  world: { label: '세계 요리', className: 'bg-terracotta/10 text-terracotta' },
+  chef: { label: '셰프 컬렉션', className: 'bg-ink text-cream' },
 };
 
 /** "\n\n"으로 구분된 텍스트를 여러 문단(<p>)으로 나눠 렌더링 — 긴 마스터클래스 글의 가독성용 */
@@ -57,7 +57,7 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           </span>
           {recipe.masterclass && recipe.level === 'chef' && (
             <span className="text-[12px] font-semibold px-2 py-0.5 rounded-full bg-terracotta text-paper">
-              ✨ 마스터클래스
+              마스터클래스
             </span>
           )}
         </div>
@@ -87,7 +87,6 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           transition={{ duration: 0.35, delay: 0.08 }}
           className="flex items-start gap-2.5 mt-4 bg-terracotta/8 rounded-2xl px-4 py-3.5"
         >
-          <span className="text-[17px] shrink-0">🌍</span>
           <div>
             <p className="text-[13.5px] font-semibold text-terracotta">
               {recipe.cuisineContext.country} 요리
@@ -148,7 +147,7 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           transition={{ duration: 0.35 }}
           className="mt-7"
         >
-          <h2 className="font-display text-[17px] text-ink mb-3">🛒 재료 고르는 법</h2>
+          <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">재료 고르는 법</h2>
           <Paragraphs
             text={recipe.masterclass.ingredientSelection}
             className="text-[14.5px] text-ink-soft leading-relaxed"
@@ -207,7 +206,7 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
             />
           </div>
           <div className="bg-cream-warm rounded-2xl px-4 py-3.5">
-            <p className="text-[13px] font-semibold text-ink mb-1.5">🍳 추천 조리도구</p>
+            <p className="text-[13px] font-semibold text-ink mb-1.5">추천 조리도구</p>
             <p className="text-[14px] text-ink leading-relaxed">{recipe.masterclass.cookware.recommended}</p>
             {recipe.masterclass.cookware.alternatives.length > 0 && (
               <div className="mt-2">
@@ -256,7 +255,7 @@ export default function RecipeBody({ recipe }: RecipeBodyProps) {
           transition={{ duration: 0.35 }}
           className="mt-7"
         >
-          <h2 className="font-display text-[17px] text-ink mb-3">👨‍🍳 플레이팅 가이드</h2>
+          <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">플레이팅 가이드</h2>
           <div className="bg-ink/5 rounded-2xl px-4 py-3.5">
             <p className="text-[14px] text-ink leading-relaxed">
               {recipe.masterclass?.platingAndServing ?? recipe.platingGuide}

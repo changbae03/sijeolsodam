@@ -101,8 +101,13 @@ export default function ShopPage() {
       <div className="px-5">
         {/* 배송 안내 배너 */}
         <div className="bg-sage/10 border border-sage/20 rounded-2xl px-4 py-3 mb-5">
-          <p className="text-[14px] text-sage-dark font-medium">
-            🚚 지금 주문하면 내일 아침 7시 전에 도착해요
+          <p className="flex items-center gap-2 text-[14px] text-sage-dark font-medium">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+              <path d="M14 17h-9V5h9v12ZM14 8h4l3 4v5h-7" />
+              <circle cx="7.5" cy="17.5" r="1.8" />
+              <circle cx="17.5" cy="17.5" r="1.8" />
+            </svg>
+            지금 주문하면 내일 아침 7시 전에 도착해요
           </p>
         </div>
 

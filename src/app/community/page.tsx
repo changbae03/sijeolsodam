@@ -167,26 +167,17 @@ export default function CommunityPage() {
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3 pb-3 flex items-center justify-between">
           <Logo size="sm" />
-          <span className="text-[12px] tracking-[0.14em] uppercase text-terracotta font-semibold">
+          <span className="text-[12px] tracking-[0.06em] text-ink-soft/70 font-medium">
             오늘의 요리 자랑
           </span>
         </div>
       </header>
 
       <div className="max-w-md mx-auto px-5 pt-2">
-        <div className="flex items-center gap-3 mb-1">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sage/15 to-terracotta/10 text-[19px] leading-none">
-            📸
-          </span>
-          <div className="flex-1 min-w-0">
-            <p className="text-[11.5px] tracking-[0.16em] uppercase text-terracotta font-semibold mb-0.5">
-              함께 만드는 이야기
-            </p>
-            <h1 className="font-display text-[20px] tracking-tight text-ink font-semibold leading-tight">
-              소담
-            </h1>
-          </div>
-        </div>
+        <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">
+          함께 만드는 이야기
+        </p>
+        <h1 className="text-[26px] text-ink font-bold tracking-[-0.02em] leading-tight">소담</h1>
         <p className="text-[13.5px] text-ink-soft leading-relaxed mt-2 mb-4">
           오늘 만든 요리, 발견한 팁, 나만의 레시피를 편하게 나눠보세요.
         </p>
@@ -282,7 +273,9 @@ export default function CommunityPage() {
                       className="flex items-center gap-1.5"
                       aria-label="댓글"
                     >
-                      <span className="text-[18px]">💬</span>
+                      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft">
+                        <path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5Z" />
+                      </svg>
                       <span className="text-[14px] text-ink-soft">{post.commentCount}</span>
                     </button>
                   </div>
@@ -305,7 +298,9 @@ export default function CommunityPage() {
                       href={`/recipe/${post.recipeId}`}
                       className="mt-3 flex items-center gap-2 rounded-xl border border-border-soft bg-cream-warm/50 px-3 py-2 hover:border-sage/40 transition-colors"
                     >
-                      <span className="text-[14px]">🍳</span>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft shrink-0">
+                        <path d="M4 20V6a2 2 0 0 1 2-2h13v14H6a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h13" />
+                      </svg>
                       <span className="text-[13.5px] text-ink font-medium truncate flex-1">
                         연결된 레시피 보기
                       </span>
@@ -426,7 +421,7 @@ export default function CommunityPage() {
       <button
         type="button"
         onClick={() => openComposer(tab === 'feed' ? 'post' : 'recipe')}
-        className="fixed bottom-24 right-5 z-30 w-14 h-14 rounded-full bg-terracotta flex items-center justify-center"
+        className="fixed bottom-24 right-5 z-30 w-14 h-14 rounded-full bg-ink flex items-center justify-center"
         style={{ boxShadow: 'var(--shadow-lg)' }}
         aria-label={tab === 'feed' ? '요리 자랑하기' : '레시피 올리기'}
       >

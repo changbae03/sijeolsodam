@@ -27,7 +27,7 @@ export default function MyPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35 }}
         >
-          <p className="font-display text-[19px] text-ink mb-2">
+          <p className="text-[19px] font-bold tracking-[-0.01em] text-ink mb-2">
             로그인하고 즐겨찾기를 모아보세요
           </p>
           <p className="text-[14px] text-ink-soft mb-6">
@@ -36,7 +36,7 @@ export default function MyPage() {
           <motion.div whileTap={{ scale: 0.96 }} className="inline-block">
             <Link
               href="/login"
-              className="inline-block bg-sage text-cream rounded-xl px-8 py-3 text-[15px] font-medium"
+              className="inline-block bg-ink text-cream rounded-2xl px-8 py-3.5 text-[15px] font-semibold"
             >
               로그인하기
             </Link>
@@ -57,8 +57,8 @@ export default function MyPage() {
         className="mb-6 flex items-center justify-between"
       >
         <div>
-          <p className="text-[14px] text-sage font-medium">마이페이지</p>
-          <h1 className="font-display text-[20px] text-ink mt-0.5">
+          <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">마이페이지</p>
+          <h1 className="text-[24px] text-ink font-bold tracking-[-0.02em] leading-tight">
             {user.name ? `${user.name}님` : user.email}
           </h1>
         </div>
@@ -72,7 +72,7 @@ export default function MyPage() {
       </motion.header>
 
       <section>
-        <h2 className="font-display text-[17px] text-ink mb-3">
+        <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">
           즐겨찾기한 레시피 {favoriteRecipes.length > 0 && `· ${favoriteRecipes.length}`}
         </h2>
         {favoriteRecipes.length === 0 ? (

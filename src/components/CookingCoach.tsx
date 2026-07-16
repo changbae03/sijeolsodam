@@ -125,11 +125,13 @@ export default function CookingCoach({
       <motion.button
         onClick={() => setOpen(true)}
         whileTap={{ scale: 0.92 }}
-        className="fixed bottom-24 right-5 z-30 w-14 h-14 rounded-full bg-terracotta shadow-lg flex items-center justify-center"
+        className="fixed bottom-24 right-5 z-30 w-14 h-14 rounded-full bg-ink shadow-lg flex items-center justify-center text-cream"
         aria-label="AI 요리 코치 소담이 열기"
       >
-        <span className="text-[22px]">🧑‍🍳</span>
-        <span className="absolute -top-1 -right-1 min-w-[20px] h-5 px-1 rounded-full bg-sage text-cream text-[11px] font-medium flex items-center justify-center border-2 border-cream">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5Z" />
+        </svg>
+        <span className="absolute -top-1 -right-1 min-w-[20px] h-5 px-1 rounded-full bg-terracotta text-cream text-[11px] font-semibold flex items-center justify-center border-2 border-cream">
           {currentStepIndex + 1}
         </span>
       </motion.button>

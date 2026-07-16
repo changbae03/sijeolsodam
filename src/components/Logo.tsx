@@ -60,8 +60,8 @@ export default function Logo({ size = 'md', className = '' }: LogoProps) {
     <div className={`inline-flex items-center gap-1.5 ${className}`}>
       <LeafBowlIcon size={icon} />
       <span
-        className={`${text} text-sage leading-none`}
-        style={{ fontFamily: 'var(--font-logo)' }}
+        className={`${text} text-ink font-bold tracking-wide leading-none`}
+        style={{ fontFamily: 'var(--font-hahmlet), serif' }}
       >
         시절소담
       </span>

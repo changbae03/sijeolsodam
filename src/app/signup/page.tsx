@@ -38,7 +38,7 @@ export default function SignupPage() {
         className="text-center mb-10"
       >
         <Logo size="sm" />
-        <h1 className="font-display text-[22px] text-ink mt-1">함께 제철을 누려요</h1>
+        <h1 className="text-[24px] font-bold tracking-[-0.02em] text-ink mt-5">함께 제철을 누려요</h1>
       </motion.div>
 
       <motion.form
