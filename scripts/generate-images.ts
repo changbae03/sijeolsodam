@@ -57,9 +57,13 @@ const heroOnly = !withSteps; // 기본값: 완성샷만. 단계별 사진까지 
 const forceRegenerate = args.includes('--force');
 const limitArg = args.find((a) => a.startsWith('--limit='))?.split('=')[1];
 const limit = limitArg ? Number(limitArg) : Infinity;
+// --sample=N: 카테고리 x 국가가 골고루 섞인 검증 세트를 자동 선정해 N개만 생성 (기본 16)
+const sampleArg = args.find((a) => a.startsWith('--sample'))?.split('=')[1];
+const sampleSize = args.some((a) => a.startsWith('--sample')) ? Number(sampleArg || 16) : 0;
+const sampleIds = new Set<string>();
 let generatedCount = 0;
 
-if (!recipeIdArg && !runAll) {
+if (!recipeIdArg && !runAll && !sampleSize) {
   console.error(
     '안전장치: --recipe=ID 로 1개만 테스트하거나, 전체를 돌리려면 --all 을 명시하세요.\n' +
       '예: npx tsx scripts/generate-images.ts --recipe=1-1'
@@ -231,6 +235,7 @@ async function processFile(fileName: string) {
 
   for (const recipe of recipes) {
     if (recipeIdArg && recipe.id !== recipeIdArg) continue;
+    if (sampleIds.size > 0 && !sampleIds.has(recipe.id)) continue;
     if (generatedCount >= limit) break; // --limit에 도달하면 이 파일에서도 더 진행하지 않음
 
     console.log(`\n[${recipe.id}] ${recipe.title}`);
@@ -307,12 +312,48 @@ async function processFile(fileName: string) {
   }
 }
 
+/**
+ * 스타일 검증용 다양성 샘플 선정.
+ * 아직 생성 전(heroImage가 Blob/로컬이 아닌)인 레시피를 "국가|카테고리" 그룹으로 묶고
+ * 라운드로빈으로 하나씩 뽑아, 찜·구이·국물·세계요리·디저트가 골고루 섞이게 한다.
+ */
+function pickDiverseSample(files: string[], dataDir: string, n: number): string[] {
+  const groups = new Map<string, string[]>();
+  for (const file of files) {
+    const lines = readFileSync(join(dataDir, file), 'utf-8').split('\n');
+    for (const r of parseRecipes(lines)) {
+      const heroLine = lines[r.heroImageLineIndex] || '';
+      const url = heroLine.match(/heroImage:\s*'([^']*)'/)?.[1] || '';
+      if (isAlreadyBlobUrl(url)) continue; // 이미 생성됨
+      const key = `${r.cuisineCountry || '한국'}|${r.category}`;
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key)!.push(r.id);
+    }
+  }
+  const buckets = Array.from(groups.values());
+  const picked: string[] = [];
+  let round = 0;
+  while (picked.length < n && buckets.some((b) => b.length > round)) {
+    for (const b of buckets) {
+      if (picked.length >= n) break;
+      if (b.length > round) picked.push(b[round]);
+    }
+    round += 1;
+  }
+  return picked;
+}
+
 async function main() {
   const dataDir = join(__dirname, '..', 'src', 'data');
   const files = readdirSync(dataDir).filter(
     (f) => f.startsWith('recipes-') && f.endsWith('.ts')
   );
   console.log(`대상 파일 ${files.length}개 발견`);
+
+  if (sampleSize > 0) {
+    for (const id of pickDiverseSample(files, dataDir, sampleSize)) sampleIds.add(id);
+    console.log(`--sample: 검증 세트 ${sampleIds.size}개 선정 →`, Array.from(sampleIds).join(', '));
+  }
   for (const file of files) {
     if (generatedCount >= limit) break;
     await processFile(file);
