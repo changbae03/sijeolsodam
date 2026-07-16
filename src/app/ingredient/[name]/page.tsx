@@ -8,15 +8,15 @@ import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
 import { fetchPriceInsight, PriceInsight } from '@/lib/price-insight';
-import { Badge, Button, Card } from '@/components/ui';
+import { Card } from '@/components/ui';
 import RecipeCard from '@/components/RecipeCard';
 import { SeasonalIngredient, Recipe, RecipeLevel } from '@/data/types';
 
-const LEVEL_META: Record<RecipeLevel, { label: string; emoji: string; lead: string }> = {
-  home: { label: '데일리 홈쿡', emoji: '🌱', lead: '처음이라면 여기서부터 — 빠르고 쉬운 일상 요리' },
-  weekend: { label: '주말 요리', emoji: '🔥', lead: '시간 여유가 있을 때 도전해보는 한 단계 더 깊은 요리' },
-  world: { label: '세계 요리', emoji: '🌍', lead: '이 재료로 즐기는 세계 각국의 정통 요리' },
-  chef: { label: '셰프 컬렉션', emoji: '👨\u200d🍳', lead: '레스토랑급 기법과 플레이팅으로 완성하는 요리' },
+const LEVEL_META: Record<RecipeLevel, { label: string; lead: string }> = {
+  home: { label: '데일리 홈쿡', lead: '처음이라면 여기서부터 — 빠르고 쉬운 일상 요리' },
+  weekend: { label: '주말 요리', lead: '시간 여유가 있을 때 도전해보는 한 단계 더 깊은 요리' },
+  world: { label: '세계 요리', lead: '이 재료로 즐기는 세계 각국의 정통 요리' },
+  chef: { label: '셰프 컬렉션', lead: '레스토랑급 기법과 플레이팅으로 완성하는 요리' },
 };
 const LEVEL_ORDER: RecipeLevel[] = ['home', 'weekend', 'world', 'chef'];
 
@@ -129,17 +129,20 @@ export default function IngredientDetailPage() {
             2. 이름 + 제철 배지
            ============================================ */}
         <section className="pt-6 pb-1">
-          <div className="flex items-center gap-2.5">
-            <span className="text-[28px] leading-none">{ingredient.emoji}</span>
-            <h1 className="font-display text-[26px] text-ink font-medium tracking-tight">
-              {ingredient.name}
-            </h1>
-            <Badge variant="sage" size="sm">
-              제철 {formatSeasonMonths(months)}
-            </Badge>
-          </div>
+          <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">
+            {formatSeasonMonths(months)} 제철
+          </p>
+          <h1 className="text-[27px] text-ink font-bold tracking-[-0.02em] leading-tight">
+            {ingredient.name}
+          </h1>
           {ingredient.origin && (
-            <p className="text-[13px] text-ink-soft/70 mt-1.5">📍 {ingredient.origin}</p>
+            <p className="flex items-center gap-1 text-[13px] text-ink-soft/70 mt-2">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              {ingredient.origin}
+            </p>
           )}
         </section>
 
@@ -163,7 +166,10 @@ export default function IngredientDetailPage() {
         {recipes.length > 0 && (
           <section className="mb-10 -mx-5">
             <div className="px-5 mb-1">
-              <SectionHeader emoji="🍳" title="이 재료로 만들 수 있는 요리" />
+              <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">레시피</p>
+              <h2 className="text-[21px] font-bold tracking-[-0.02em] text-ink leading-tight">
+                이 재료로 만들 수 있는 요리
+              </h2>
             </div>
 
             {LEVEL_ORDER.map((level, levelIdx) => {
@@ -184,7 +190,7 @@ export default function IngredientDetailPage() {
                             : 'bg-sage/10 text-sage'
                       }`}
                     >
-                      {meta.emoji} {meta.label}
+                      {meta.label}
                     </span>
                     {!isFirst && (
                       <span className="text-[12px] text-ink-soft/50">→ 한 단계 더 도전</span>
@@ -198,7 +204,7 @@ export default function IngredientDetailPage() {
                         <RecipeCard recipe={recipe} />
                         {recipe.cuisineContext && (
                           <p className="text-[12px] text-ink-soft/60 mt-1.5 px-0.5">
-                            🌍 {recipe.cuisineContext.country} 요리
+                            {recipe.cuisineContext.country} 요리
                           </p>
                         )}
                       </div>
@@ -215,7 +221,7 @@ export default function IngredientDetailPage() {
            ============================================ */}
         {ingredient.tip && (
           <section className="mb-8">
-            <SectionHeader emoji="📦" title="보관 팁" />
+            <SectionHeader title="보관 팁" />
             <p className="text-[14.5px] text-ink leading-relaxed mt-3">{ingredient.tip}</p>
           </section>
         )}
@@ -225,7 +231,7 @@ export default function IngredientDetailPage() {
            ============================================ */}
         {priceInsight && (
           <section className="mb-8">
-            <SectionHeader emoji="💰" title="가격 정보" />
+            <SectionHeader title="가격 정보" />
             <Card padding="md" className="mt-3">
               <div className="flex items-baseline justify-between">
                 <span className="text-[13px] text-ink-soft">현재 평균가</span>
@@ -269,7 +275,7 @@ export default function IngredientDetailPage() {
            ============================================ */}
         {ingredient.nutrition && (
           <section className="mb-8">
-            <SectionHeader emoji="🌿" title="영양 요약" />
+            <SectionHeader title="영양 요약" />
             <Card padding="md" className="mt-3">
               <p className="text-[14.5px] text-ink leading-relaxed">{ingredient.nutrition}</p>
             </Card>
@@ -281,12 +287,15 @@ export default function IngredientDetailPage() {
            ============================================ */}
         {pairings.length > 0 && (
           <section className="mb-4">
-            <SectionHeader emoji="🧂" title="함께 쓰면 좋은 재료" />
+            <SectionHeader title="함께 쓰면 좋은 재료" />
             <div className="flex flex-wrap gap-2 mt-3.5">
               {pairings.map((p) => (
-                <Badge key={p} variant="cream" size="md">
+                <span
+                  key={p}
+                  className="rounded-full border border-border-soft bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft"
+                >
                   {p}
-                </Badge>
+                </span>
               ))}
             </div>
           </section>
@@ -298,10 +307,11 @@ export default function IngredientDetailPage() {
          ============================================ */}
       <div className="fixed bottom-16 left-0 right-0 z-30 px-5 pb-3 pt-4 bg-gradient-to-t from-cream via-cream/95 to-transparent">
         <div className="max-w-md mx-auto">
-          <Link href="/shop">
-            <Button variant="primary" size="lg" fullWidth>
-              🍳 이 재료로 요리 준비하기
-            </Button>
+          <Link
+            href="/shop"
+            className="flex h-[54px] w-full items-center justify-center rounded-2xl bg-ink text-[15.5px] font-semibold text-cream transition-transform active:scale-[0.98]"
+          >
+            이 재료로 요리 준비하기
           </Link>
         </div>
       </div>
@@ -309,11 +319,8 @@ export default function IngredientDetailPage() {
   );
 }
 
-function SectionHeader({ emoji, title }: { emoji: string; title: string }) {
+function SectionHeader({ title }: { title: string }) {
   return (
-    <h2 className="text-[16px] font-semibold text-ink flex items-center gap-1.5">
-      <span>{emoji}</span>
-      {title}
-    </h2>
+    <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink">{title}</h2>
   );
 }

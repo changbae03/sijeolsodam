@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { SeasonalIngredient } from '@/data/types';
-import { Badge } from '@/components/ui';
+
 import PriceBadge from './PriceBadge';
 
 interface IngredientGridCardProps {
@@ -44,19 +44,12 @@ export default function IngredientGridCard({ ingredient, hasPriceData }: Ingredi
         )}
       </div>
 
-      <div className="flex items-center gap-1.5 flex-wrap">
-        <span className="text-[13.5px] font-medium text-ink leading-tight">
-          {ingredient.emoji} {ingredient.name}
-        </span>
-        {seasonLabel && (
-          <Badge variant="sage" size="sm">
-            {seasonLabel} 제철
-          </Badge>
-        )}
-      </div>
-      {ingredient.origin && (
-        <p className="text-[11.5px] text-ink-soft/60 mt-0.5">{ingredient.origin}</p>
-      )}
+      <h3 className="text-[14.5px] font-bold tracking-[-0.01em] text-ink leading-tight">
+        {ingredient.name}
+      </h3>
+      <p className="text-[11.5px] text-ink-soft/60 mt-0.5">
+        {[seasonLabel && `${seasonLabel} 제철`, ingredient.origin].filter(Boolean).join(' · ')}
+      </p>
       <p className="text-[12px] text-ink-soft/70 leading-snug mt-1 line-clamp-1">
         {ingredient.description}
       </p>

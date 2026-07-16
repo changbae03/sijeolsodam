@@ -5,8 +5,8 @@ import { motion } from 'motion/react';
 import { getCurrentSolarTerm, SOLAR_TERMS } from '@/data/solar-terms';
 import { josa } from '@/lib/korean';
 
-/** 필름 그레인 — 그라디언트가 밋밋하지 않게 은은한 질감을 얹는다 */
-const GRAIN_URI =
+/** 필름 그레인 — 그라디언트가 밋밋하지 않게 은은한 질감을 얹는다 (절기 밴드류에서 공용) */
+export const GRAIN_URI =
   "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 
 interface SeasonHeroProps {

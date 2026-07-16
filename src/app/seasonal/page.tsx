@@ -9,7 +9,8 @@ import { IngredientCategory } from '@/data/types';
 import { SearchBar } from '@/components/ui';
 import MonthStrip from '@/components/MonthStrip';
 import IngredientGridCard from '@/components/IngredientGridCard';
-import Logo from '@/components/Logo';
+import { SOLAR_TERMS } from '@/data/solar-terms';
+import { GRAIN_URI } from '@/components/SeasonHero';
 
 // PM 결정에 따른 카테고리 칩. '버섯'·'곡물'은 현재 데이터에 아직 없어서
 // 선택해도 빈 상태가 뜨지만, 칩 자체는 그대로 노출합니다.
@@ -108,7 +109,9 @@ export default function SeasonalPage() {
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3 pb-3">
           <div className="flex items-center gap-3">
-            <Logo size="sm" />
+            <span className="font-season text-[17px] font-bold tracking-wide text-ink shrink-0">
+              시절소담
+            </span>
             <div className="flex-1">
               <SearchBar
                 placeholder="식재료를 검색해보세요"
@@ -122,22 +125,50 @@ export default function SeasonalPage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2. 에디토리얼 월 헤더 + 한 줄 노트
+            2. 절기 시즌 밴드 — 달을 넘기면 그 달 절기의 시즌 컬러로 바뀜
+               (홈 절기 히어로와 같은 컬러 시스템의 확장)
            ============================================ */}
         <section className="pt-5 pb-4">
-          <div className="flex items-baseline justify-between mb-2">
-            <h1 className="font-display text-[24px] text-ink font-medium tracking-tight">
-              {monthData.month}월 제철
-            </h1>
-            <span className="text-[13px] text-terracotta font-medium">{monthData.solarTerm}</span>
-          </div>
-          {editorialNote && (
-            <div className="bg-cream-warm rounded-2xl px-4 py-3.5 mt-2">
-              <p className="font-display text-[14.5px] text-ink leading-relaxed tracking-tight">
-                🌿 {editorialNote}
-              </p>
-            </div>
-          )}
+          {(() => {
+            const monthTerms = SOLAR_TERMS.filter((t) => t.month === monthData.month);
+            const theme = monthTerms[0]?.theme ?? { deep: '#1E4632', mid: '#2E6B45', warm: '#E9B84E' };
+            const note = editorialNote ?? monthData.headline;
+            return (
+              <div
+                className="relative overflow-hidden rounded-[28px] px-6 py-6 text-cream"
+                style={{
+                  background: `radial-gradient(120% 100% at 88% -12%, ${theme.warm}4D, transparent 55%), linear-gradient(165deg, ${theme.mid} 0%, ${theme.deep} 70%)`,
+                }}
+              >
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 opacity-10 pointer-events-none"
+                  style={{ backgroundImage: GRAIN_URI }}
+                />
+                <div className="relative">
+                  <p className="text-[11px] tracking-[0.16em] text-white/60 font-medium mb-2">
+                    열두 달 제철
+                  </p>
+                  <div className="flex items-end justify-between gap-3">
+                    <h1 className="font-season text-[42px] leading-none font-semibold">
+                      {monthData.month}월
+                    </h1>
+                    <p className="font-season text-[13.5px] text-white/75 pb-1 whitespace-nowrap">
+                      {monthTerms.map((t, i) => (
+                        <span key={t.name}>
+                          {i > 0 && <span className="mx-1.5 text-white/40">·</span>}
+                          {t.name} <span className="text-white/50">{t.hanja}</span>
+                        </span>
+                      ))}
+                    </p>
+                  </div>
+                  {note && (
+                    <p className="mt-3.5 text-[13.5px] leading-[1.7] text-white/85">{note}</p>
+                  )}
+                </div>
+              </div>
+            );
+          })()}
         </section>
 
         {/* ============================================
