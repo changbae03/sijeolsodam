@@ -4,29 +4,31 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getCurrentMonthData } from '@/lib/season';
-import { getRecipesByIngredient } from '@/data/recipes';
+import { getRecipesByIngredient, getRecipesByMonth } from '@/data/recipes';
 import { findBestValueInSeason } from '@/lib/price-insight';
 import { SeasonalIngredient } from '@/data/types';
-import IngredientFeatureCard from '@/components/IngredientFeatureCard';
-import Logo from '@/components/Logo';
+import { getCurrentSolarTerm } from '@/data/solar-terms';
+import SeasonHero from '@/components/SeasonHero';
+import IngredientCoverCard from '@/components/IngredientCoverCard';
 import HomeAgentHero from '@/components/HomeAgentHero';
-import SectionHeader from '@/components/SectionHeader';
 import WelcomeBanner from '@/components/WelcomeBanner';
 
-/** 설명을 "지금 ~로 ~를 만들어보세요" 같은 행동 유도형 문장으로 변환. 매칭 레시피가 없으면 원래 설명으로 대체. */
-function getActionLine(ingredient: SeasonalIngredient): string {
-  const recipe = getRecipesByIngredient(ingredient.name)[0];
-  if (recipe) {
-    return `지금 가장 맛있는 ${ingredient.name}로 ${recipe.title}를 만들어보세요.`;
-  }
-  return ingredient.description;
-}
+const CARD_WIDTH = 250; // px — 캐러셀 커버 카드 너비 (3:4)
+const CARD_GAP = 14; // px — gap-3.5
 
-const CARD_WIDTH = 280; // px — 캐러셀 카드 너비
-const CARD_GAP = 16; // px — gap-4
+/** 홈 전용 섹션 헤더 — 컬러 아이브로 + 볼드 산스 타이틀. (공용 SectionHeader의 이모지 칩 스타일 대신 에디토리얼 위계) */
+function HomeSectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {
+  return (
+    <div>
+      <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">{eyebrow}</p>
+      <h2 className="text-[21px] font-bold tracking-[-0.02em] text-ink leading-tight">{title}</h2>
+    </div>
+  );
+}
 
 export default function HomePage() {
   const monthData = getCurrentMonthData();
+  const { current: currentTerm } = getCurrentSolarTerm();
 
   const defaultHero = monthData?.ingredients.find((i) => i.imageUrl);
   const [bestPick, setBestPick] = useState<SeasonalIngredient | undefined>(defaultHero);
@@ -71,69 +73,55 @@ export default function HomePage() {
   const activeIngredient = carouselIngredients[activeIndex] ?? bestPick;
   const activeRecipe = activeIngredient ? getRecipesByIngredient(activeIngredient.name)[0] : undefined;
 
+  // 셰프 컬렉션 배너 — 이달의 chef 레벨 레시피 중 첫 번째
+  const chefRecipe = monthData
+    ? getRecipesByMonth(monthData.month).find((r) => r.level === 'chef')
+    : undefined;
+
   if (!monthData || !activeIngredient) return null;
 
   return (
     <main className="min-h-screen bg-cream pb-12">
       {/* ============================================
-          1. 헤더 — 로고만
+          1. 절기 히어로 — 매거진 표지. 워드마크·아이콘도 히어로 안에 있음
          ============================================ */}
-      <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
-        <div className="max-w-md mx-auto px-5 pt-3 pb-3">
-          <Logo size="sm" />
-        </div>
-      </header>
+      <SeasonHero featuredName={bestPick?.name} />
 
       {/* ============================================
-          2. 히어로 — 소담이 대화창이 메인. 24절기 시그니처로 브랜드 정체성을 열어줌
+          2. 소담이 — 히어로에 걸치는 플로팅 글래스 카드
          ============================================ */}
-      <section className="relative overflow-hidden">
+      <section className="relative z-10 max-w-md mx-auto px-4 -mt-11">
         <div
-          className="absolute inset-0 bg-gradient-to-b from-sage/[0.09] via-cream to-cream"
-          aria-hidden="true"
-        />
-        <div className="relative max-w-md mx-auto px-5 pt-3 pb-6">
-          <div className="flex items-center gap-2 mb-5">
-            <span className="text-[13px]">🌿</span>
-            <span className="text-[12px] tracking-[0.08em] text-sage font-medium">
-              {monthData.solarTerm} · {monthData.season}
-            </span>
-          </div>
+          className="rounded-3xl border border-white/70 bg-white/[0.88] px-4 pt-4 pb-3 backdrop-blur-xl"
+          style={{ boxShadow: '0 18px 40px rgba(20, 48, 31, 0.14)' }}
+        >
           <HomeAgentHero />
         </div>
       </section>
 
-      <section className="max-w-md mx-auto px-5 pb-1">
-        <WelcomeBanner />
-      </section>
-
       {/* ============================================
-          3. 오늘의 제철 / 이번 주 추천 — 스와이프 캐러셀
+          3. 오늘의 제철 / 이번 주 추천 — 3:4 커버 카드 캐러셀
              첫 카드만 제철+가격 모두 좋으면 "이번 주 추천"으로 승격
          ============================================ */}
-      <section className="max-w-md mx-auto pt-7 mb-2">
-        <div className="px-5">
-          <div className="mb-6">
-            <SectionHeader
-              eyebrow={activeIndex === 0 && isWeeklyPick ? '가격도 착해요' : '이달의 제철'}
-              title={activeIndex === 0 && isWeeklyPick ? '이번 주 추천' : '오늘의 제철'}
-              icon="🗓️"
-            />
-          </div>
+      <section className="max-w-md mx-auto pt-9 mb-2">
+        <div className="px-5 mb-5">
+          <HomeSectionHeader
+            eyebrow={activeIndex === 0 && isWeeklyPick ? '가격도 착해요' : '이달의 제철'}
+            title={activeIndex === 0 && isWeeklyPick ? '이번 주 추천' : '지금이 한복판'}
+          />
         </div>
 
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="flex gap-4 overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory px-5 pb-1"
+          className="flex gap-3.5 overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory px-5 pb-1"
           style={{ touchAction: 'pan-x' }}
         >
-          {carouselIngredients.map((ing) => (
+          {carouselIngredients.map((ing, idx) => (
             <div key={ing.name} className="flex-shrink-0 snap-center" style={{ width: CARD_WIDTH }}>
-              <IngredientFeatureCard
+              <IngredientCoverCard
                 ingredient={ing}
-                descriptionOverride={ing.name === bestPick?.name ? getActionLine(ing) : undefined}
-                priceDisplay="line"
+                badge={idx === 0 && isWeeklyPick ? '가격도 착해요' : '지금 제철'}
               />
             </div>
           ))}
@@ -156,12 +144,12 @@ export default function HomePage() {
 
       <div className="max-w-md mx-auto px-5">
         {/* ============================================
-            2. 오늘의 메뉴 추천 — 캐러셀에서 고른 식재료에 맞춰 같이 바뀜
+            4. 오늘의 메뉴 추천 — 캐러셀에서 고른 식재료에 맞춰 같이 바뀜
            ============================================ */}
         {activeRecipe && (
-          <section className="mt-10 mb-12">
+          <section className="mt-10">
             <div className="mb-5">
-              <SectionHeader eyebrow="오늘 뭐 먹지" title="오늘의 메뉴 추천" icon="🍳" />
+              <HomeSectionHeader eyebrow="오늘 뭐 먹지" title="오늘의 메뉴 추천" />
             </div>
 
             <Link href={`/recipe/${activeRecipe.id}`} className="block group">
@@ -177,7 +165,7 @@ export default function HomePage() {
                 <span className="text-[14px] text-ink font-semibold">{activeRecipe.title}</span>
               </div>
 
-              <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-cream-warm">
+              <div className="relative w-full aspect-[16/10] rounded-3xl overflow-hidden bg-cream-warm">
                 <Image
                   src={activeRecipe.heroImage}
                   alt={activeRecipe.title}
@@ -202,9 +190,45 @@ export default function HomePage() {
         )}
 
         {/* ============================================
-            3. CTA — 이번 달 제철 식재료 전체 보기
+            5. 개인화 인사이트 — 시간대·취향 기반 추천 스트립
            ============================================ */}
-        <section>
+        <section className="mt-10">
+          <WelcomeBanner />
+        </section>
+
+        {/* ============================================
+            6. 셰프 컬렉션 — 다크 배너, 절기 한자 워터마크
+           ============================================ */}
+        {chefRecipe && (
+          <section className="mt-6">
+            <Link
+              href={`/recipe/${chefRecipe.id}`}
+              className="relative block overflow-hidden rounded-3xl px-6 py-6 text-cream"
+              style={{ background: 'linear-gradient(150deg, #23211E, #121110 70%)' }}
+            >
+              <span
+                aria-hidden="true"
+                className="font-season absolute -right-2 -top-6 text-[104px] font-bold tracking-[-0.04em] text-white/[0.05] leading-none select-none"
+              >
+                {currentTerm.hanja}
+              </span>
+              <p className="relative text-[11px] font-semibold tracking-[0.16em] text-[#E9B84E] mb-2.5">
+                CHEF COLLECTION
+              </p>
+              <h3 className="relative text-[20px] font-bold tracking-[-0.01em] leading-[1.45]">
+                {chefRecipe.title}
+              </h3>
+              <p className="relative mt-2 text-[13px] leading-[1.55] text-white/60 line-clamp-2">
+                {chefRecipe.subtitle}
+              </p>
+            </Link>
+          </section>
+        )}
+
+        {/* ============================================
+            7. CTA — 이번 달 제철 식재료 전체 보기
+           ============================================ */}
+        <section className="mt-6">
           <Link
             href="/seasonal"
             className="flex items-center justify-between bg-paper border border-border-soft rounded-2xl px-5 py-4 group"

@@ -40,13 +40,14 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Hahmlet:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <style>{`
           :root {
             --font-pretendard: 'Pretendard', sans-serif;
             --font-logo: 'Nanum Pen Script', cursive;
+            --font-hahmlet: 'Hahmlet', serif;
           }
         `}</style>
       </head>

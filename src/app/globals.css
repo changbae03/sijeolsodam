@@ -106,6 +106,8 @@
   /* 폰트 */
   --font-serif-kr: var(--font-noto-serif-kr);
   --font-sans-kr: var(--font-pretendard);
+  /* 절기 히어로 전용 디스플레이 세리프 — 히어로와 워드마크에만 쓴다 */
+  --font-season: var(--font-hahmlet);
 
   /* 라디우스 */
   --radius-sm: var(--radius-sm);

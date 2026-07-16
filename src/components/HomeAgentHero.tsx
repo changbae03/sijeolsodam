@@ -203,23 +203,12 @@ export default function HomeAgentHero() {
 
   return (
     <div>
-      <div className="flex items-start gap-3 mb-2">
-        <span
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-[22px] leading-none shadow-sm"
-          style={{ background: 'linear-gradient(135deg, rgba(122,143,111,0.22), rgba(217,119,87,0.18))' }}
-        >
-          💬
-        </span>
-        <div className="flex-1 min-w-0">
-          <p className="inline-flex items-center gap-1 text-[10.5px] tracking-[0.14em] uppercase text-terracotta font-bold mb-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-terracotta" />
-            요리 시작 전 먼저 물어보세요
-          </p>
-          <h1 className="font-display text-[24px] tracking-tight text-ink font-extrabold leading-tight">
-            소담이에게 물어보세요
-          </h1>
-        </div>
-        <div className="flex items-center gap-3 shrink-0 pt-1">
+      <div className="flex items-center justify-between mb-2.5">
+        <h1 className="flex items-center gap-2 text-[12.5px] font-semibold text-sage-dark">
+          <span className="w-1.5 h-1.5 rounded-full bg-terracotta animate-pulse" aria-hidden="true" />
+          소담이에게 물어보세요
+        </h1>
+        <div className="flex items-center gap-3 shrink-0">
           <button
             type="button"
             onClick={openHistory}
@@ -238,10 +227,6 @@ export default function HomeAgentHero() {
           )}
         </div>
       </div>
-      <p className="text-[13.5px] text-ink-soft leading-relaxed mb-4">
-        재료, 오늘 기분, 손님 초대 같은 상황, 심지어 다른 나라 요리 조리법까지 —
-        요리에 관한 거라면 뭐든 편하게 물어보세요.
-      </p>
 
       <div>
         {hasConversation && (
@@ -344,10 +329,9 @@ export default function HomeAgentHero() {
         >
           <div
             className={cn(
-              'flex items-center gap-2 rounded-2xl bg-cream-warm/50 border border-sage/25 px-3.5 transition-all',
-              hasConversation ? 'h-12' : 'h-16'
+              'flex items-center gap-2 rounded-2xl bg-cream-warm/50 border border-border-soft px-3.5 transition-all',
+              hasConversation ? 'h-12' : 'h-[52px]'
             )}
-            style={!hasConversation ? { boxShadow: '0 0 0 3px rgba(122,143,111,0.06)' } : undefined}
           >
             <input
               ref={inputRef}
@@ -373,7 +357,7 @@ export default function HomeAgentHero() {
               className={cn(
                 'flex-shrink-0 p-2 -mr-1 rounded-full transition-colors',
                 query.trim() && !isLoading
-                  ? 'bg-terracotta text-cream'
+                  ? 'bg-ink text-cream'
                   : 'text-ink-soft/25 cursor-not-allowed'
               )}
             >
