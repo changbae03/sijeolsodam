@@ -36,33 +36,80 @@ function buildIngredientLine(ing: NonNullable<PersonalizeData['todayIngredient']
   return parts.join(' ');
 }
 
+/** 인사이트 행 앞의 라인 아이콘 — 이모지 칩 대신 스트로크 아이콘으로 새 홈 톤에 맞춤 */
+function RowIcon({ kind }: { kind: 'weather' | 'time' | 'ingredient' | 'price' | 'personal' }) {
+  const common = {
+    width: 14,
+    height: 14,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 1.9,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  };
+  switch (kind) {
+    case 'weather':
+      return (
+        <svg {...common}>
+          <path d="M17.5 19a4.5 4.5 0 0 0 .4-8.98A7 7 0 1 0 6 17.7" />
+          <path d="M9 19h8.5" />
+        </svg>
+      );
+    case 'time':
+      return (
+        <svg {...common}>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 3" />
+        </svg>
+      );
+    case 'ingredient':
+      return (
+        <svg {...common}>
+          <path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14Z" />
+          <path d="M5 19c3-6 7-9 10-10" />
+        </svg>
+      );
+    case 'price':
+      return (
+        <svg {...common}>
+          <path d="M3 7l6 6 4-4 8 8" />
+          <path d="M21 12v5h-5" />
+        </svg>
+      );
+    case 'personal':
+      return (
+        <svg {...common}>
+          <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z" />
+          <path d="M18.5 16.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z" />
+        </svg>
+      );
+  }
+}
+
 /** 배너 안의 각 인사이트를 아이콘 배지 + 라벨 + 본문으로 구성된 한 줄짜리 항목으로 보여준다.
- * 이렇게 카테고리별로 아이콘·라벨·색을 다르게 줘야, "오늘의 제철"과 "취향 저격 추천"처럼
- * 성격이 다른 정보가 비슷한 문단으로 뭉쳐 보이지 않고 한눈에 구분된다. */
+ * 아이콘 칩은 무채색으로 눌러 통일하고, 카테고리 구분은 라벨 컬러만 맡는다 —
+ * 새 홈의 "UI는 조용하게, 컬러는 최소한만" 원칙을 따른 것. */
 function InsightRow({
   icon,
-  iconBg,
   label,
   labelColor,
   children,
   href,
 }: {
-  icon: string;
-  iconBg: string;
+  icon: 'weather' | 'time' | 'ingredient' | 'price' | 'personal';
   label: string;
   labelColor: string;
   children: React.ReactNode;
   href?: string;
 }) {
   const content = (
-    <div className="flex items-start gap-2.5 py-2">
-      <span
-        className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[12px] ${iconBg}`}
-      >
-        {icon}
+    <div className="flex items-start gap-3 py-2.5">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ink/[0.04] text-ink-soft">
+        <RowIcon kind={icon} />
       </span>
       <div className="min-w-0 flex-1">
-        <p className={`text-[10.5px] font-bold tracking-wide ${labelColor}`}>{label}</p>
+        <p className={`text-[11.5px] font-semibold tracking-[0.04em] ${labelColor}`}>{label}</p>
         <p className="text-[13.5px] text-ink-soft leading-snug mt-0.5">{children}</p>
       </div>
       {href && <span className="text-ink-soft/30 shrink-0 mt-2">›</span>}
@@ -120,7 +167,7 @@ export default function WelcomeBanner() {
 
   if (data.weatherNote) {
     rows.push(
-      <InsightRow key="weather" icon="☁️" iconBg="bg-ink/[0.05]" label="오늘 날씨" labelColor="text-ink-soft/70">
+      <InsightRow key="weather" icon="weather" label="오늘 날씨" labelColor="text-ink-soft/70">
         {data.weatherNote}
       </InsightRow>
     );
@@ -130,8 +177,7 @@ export default function WelcomeBanner() {
     rows.push(
       <InsightRow
         key="time"
-        icon={data.timeSuggestion.slot === 'dawnQuick' ? '🌅' : '🍽️'}
-        iconBg="bg-terracotta/10"
+        icon="time"
         label={data.timeSuggestion.slot === 'dawnQuick' ? '지금 이 시간엔' : '저녁 메뉴 고민된다면'}
         labelColor="text-terracotta"
         href={data.timeSuggestion.recipe ? `/recipe/${data.timeSuggestion.recipe.id}` : undefined}
@@ -155,8 +201,7 @@ export default function WelcomeBanner() {
     rows.push(
       <InsightRow
         key="ingredient"
-        icon={data.todayIngredient.emoji}
-        iconBg="bg-sage/10"
+        icon="ingredient"
         label="오늘의 제철"
         labelColor="text-sage"
         href={`/ingredient/${encodeURIComponent(data.todayIngredient.name)}`}
@@ -169,7 +214,7 @@ export default function WelcomeBanner() {
     );
   } else if (data.priceNote) {
     rows.push(
-      <InsightRow key="price" icon="📉" iconBg="bg-terracotta/10" label="장보기 타이밍" labelColor="text-terracotta">
+      <InsightRow key="price" icon="price" label="장보기 타이밍" labelColor="text-terracotta">
         {data.priceNote}
       </InsightRow>
     );
@@ -179,8 +224,7 @@ export default function WelcomeBanner() {
     rows.push(
       <InsightRow
         key="personal"
-        icon="✨"
-        iconBg="bg-terracotta/10"
+        icon="personal"
         label="취향 저격 추천"
         labelColor="text-terracotta"
         href={`/recipe/${data.recommendedRecipe.id}`}
@@ -196,11 +240,14 @@ export default function WelcomeBanner() {
   }
 
   return (
-    <div className="rounded-2xl bg-cream-warm/50 border border-border-soft/70 px-4 py-3">
-      <p className="text-[14px] text-ink font-bold">
-        {data.greeting}
-        {data.loggedIn && user?.name ? `, ${user.name}님` : ''}
+    <div
+      className="rounded-3xl bg-paper border border-border-soft px-5 py-4"
+      style={{ boxShadow: '0 8px 24px rgba(44, 42, 38, 0.05)' }}
+    >
+      <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-0.5">
+        {data.loggedIn && user?.name ? `${user.name}님을 위한 오늘` : '오늘의 소담'}
       </p>
+      <p className="text-[17px] text-ink font-bold tracking-[-0.01em]">{data.greeting}</p>
 
       {rows.length > 0 && <div className="mt-1 divide-y divide-border-soft/50">{rows}</div>}
 
