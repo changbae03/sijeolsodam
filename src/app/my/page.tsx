@@ -20,6 +20,30 @@ export default function MyPage() {
   const { user, loading, logout } = useAuth();
   const { favoriteIds } = useFavorites();
   const [views, setViews] = useState<ViewSummary | null>(null);
+  const [deleting, setDeleting] = useState(false);
+
+  const handleDeleteAccount = async () => {
+    // 파괴적 동작이라 두 번 확인
+    if (!window.confirm('정말 탈퇴하시겠어요?\n즐겨찾기, 조회 기록, 게시물이 모두 삭제됩니다.')) return;
+    if (!window.confirm('삭제된 데이터는 되돌릴 수 없어요. 탈퇴를 진행할까요?')) return;
+
+    setDeleting(true);
+    try {
+      const res = await fetch('/api/account', { method: 'DELETE' });
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        alert(data?.error ?? '탈퇴 처리 중 문제가 발생했어요.');
+        setDeleting(false);
+        return;
+      }
+      // 쿠키는 서버가 지웠고, 클라이언트 상태 정리 겸 홈으로
+      await logout();
+      window.location.href = '/';
+    } catch {
+      alert('탈퇴 처리 중 문제가 발생했어요. 잠시 후 다시 시도해주세요.');
+      setDeleting(false);
+    }
+  };
 
   useEffect(() => {
     if (!user) return;
@@ -203,7 +227,31 @@ export default function MyPage() {
       </section>
 
       {/* ============================================
-          6. 계정
+          6. 지원
+         ============================================ */}
+      <section className="mb-8">
+        <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">지원</h2>
+        <div className="rounded-2xl bg-paper border border-border-soft divide-y divide-border-soft/70">
+          <a
+            href="mailto:hello.sijeolsodam@gmail.com?subject=%5B%EC%8B%9C%EC%A0%88%EC%86%8C%EB%8B%B4%20%EB%AC%B8%EC%9D%98%5D"
+            className="flex items-center justify-between px-4 py-3.5"
+          >
+            <span className="text-[14px] text-ink">문의하기</span>
+            <span className="text-ink-soft/40">›</span>
+          </a>
+          <Link href="/terms" className="flex items-center justify-between px-4 py-3.5">
+            <span className="text-[14px] text-ink">이용약관</span>
+            <span className="text-ink-soft/40">›</span>
+          </Link>
+          <Link href="/privacy" className="flex items-center justify-between px-4 py-3.5">
+            <span className="text-[14px] text-ink">개인정보처리방침</span>
+            <span className="text-ink-soft/40">›</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* ============================================
+          7. 계정
          ============================================ */}
       <section>
         <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">계정</h2>
@@ -220,7 +268,21 @@ export default function MyPage() {
             <span className="text-[14px] text-ink-soft">로그아웃</span>
             <span className="text-ink-soft/40">›</span>
           </button>
+          <button
+            type="button"
+            onClick={handleDeleteAccount}
+            disabled={deleting}
+            className="flex w-full items-center justify-between px-4 py-3.5 disabled:opacity-50"
+          >
+            <span className="text-[14px] text-terracotta">
+              {deleting ? '탈퇴 처리 중...' : '회원 탈퇴'}
+            </span>
+            <span className="text-ink-soft/40">›</span>
+          </button>
         </div>
+        <p className="text-[12px] text-ink-soft/60 leading-relaxed mt-2.5 px-1">
+          탈퇴하면 즐겨찾기, 조회 기록, 커뮤니티 게시물이 모두 삭제되며 되돌릴 수 없어요.
+        </p>
       </section>
     </main>
   );
