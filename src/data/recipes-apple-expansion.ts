@@ -10,7 +10,7 @@ export const recipesAppleExpansion: Recipe[] = [
   {
     id: 'apple-weekend-2', month: 10, title: '사과 크럼블', subtitle: '바삭한 토핑과 부드러운 사과의 대비를 즐기는 베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/apple-weekend-2/hero.webp',
     mainIngredient: '사과', description: '계피향 가득한 사과 위에 버터 크럼블을 올려 구운, 따뜻하게 먹는 영국식 디저트예요.',
     masterclass: {
       chefIntro: '오븐만 있으면 만들 수 있는, 비교적 손이 덜 가는 베이킹이에요. 가을 사과로 만들면 졸이는 동안 단맛이 더 깊어져요.',
@@ -197,7 +197,7 @@ export const recipesAppleExpansion: Recipe[] = [
     id: 'apple-chef-2', month: 10, title: '사과 콩포트와 푸아그라', subtitle: '단맛과 풍미가 만나는 프랑스 클래식 페어링',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '접시에 콩포트를 작은 동그라미로 펴 담고, 그 위에 시어드한 푸아그라를 살짝 올려보세요. 발사믹 글레이즈를 점으로 몇 방울 떨어뜨리면 완성이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/apple-chef-2/hero.webp',
     mainIngredient: '사과', description: '사과 콩포트의 단맛과 푸아그라의 풍부함이 만나는, 프랑스 파인다이닝의 고전적인 조합이에요.',
     masterclass: {
       chefIntro: '프랑스 요리에서 사과와 푸아그라는 클래식한 짝이에요. 사과의 산미가 푸아그라의 풍부한 기름기를 정리해줘요.',
