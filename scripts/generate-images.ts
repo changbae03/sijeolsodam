@@ -31,6 +31,7 @@
  */
 import { GoogleGenAI } from '@google/genai';
 import { put } from '@vercel/blob';
+import sharp from 'sharp';
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { SODAMI_VISUAL_STYLE } from '../src/lib/persona';
@@ -87,16 +88,31 @@ async function generateImageBuffer(prompt: string): Promise<Buffer | null> {
   return null;
 }
 
+/**
+ * Gemini가 주는 PNG(장당 1~2MB)를 WebP로 압축한다.
+ * 최대 변 1200px, 품질 80 -> 장당 100~150KB 수준.
+ * 전체 2,600여 장 기준 약 4GB -> 300~400MB로 줄어 Blob 무료 한도(1GB) 안에 들어가고,
+ * 모바일 로딩도 훨씬 빨라진다. 앱은 이 원본을 재최적화 없이 그대로 서빙한다.
+ */
+async function compressToWebp(buffer: Buffer): Promise<Buffer> {
+  return sharp(buffer)
+    .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true })
+    .webp({ quality: 80 })
+    .toBuffer();
+}
+
 async function uploadToBlob(buffer: Buffer, pathname: string): Promise<string> {
+  const webp = await compressToWebp(buffer);
+  const webpPath = pathname.replace(/\.png$/, '.webp');
   if (useLocalStorage) {
-    const localPath = join(__dirname, '..', 'public', 'images', pathname);
+    const localPath = join(__dirname, '..', 'public', 'images', webpPath);
     mkdirSync(dirname(localPath), { recursive: true });
-    writeFileSync(localPath, buffer);
-    return `/images/${pathname}`;
+    writeFileSync(localPath, webp);
+    return `/images/${webpPath}`;
   }
-  const blob = await put(pathname, buffer, {
+  const blob = await put(webpPath, webp, {
     access: 'public',
-    contentType: 'image/png',
+    contentType: 'image/webp',
     addRandomSuffix: false,
     token: blobToken,
   });
