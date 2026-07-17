@@ -26,6 +26,7 @@
  */
 import { GoogleGenAI } from '@google/genai';
 import { put } from '@vercel/blob';
+import sharp from 'sharp';
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { SODAMI_VISUAL_STYLE } from '../src/lib/persona';
@@ -108,16 +109,26 @@ async function generateImageBuffer(prompt: string): Promise<Buffer | null> {
   return null;
 }
 
+/** 레시피 스크립트와 동일한 압축: WebP 1200px q80 — 장당 1~2MB -> 100~150KB */
+async function compressToWebp(buffer: Buffer): Promise<Buffer> {
+  return sharp(buffer)
+    .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true })
+    .webp({ quality: 80 })
+    .toBuffer();
+}
+
 async function uploadToBlob(buffer: Buffer, pathname: string): Promise<string> {
+  const webp = await compressToWebp(buffer);
+  const webpPath = pathname.replace(/\.png$/, '.webp');
   if (useLocalStorage) {
-    const localPath = join(__dirname, '..', 'public', 'images', pathname);
+    const localPath = join(__dirname, '..', 'public', 'images', webpPath);
     mkdirSync(dirname(localPath), { recursive: true });
-    writeFileSync(localPath, buffer);
-    return `/images/${pathname}`;
+    writeFileSync(localPath, webp);
+    return `/images/${webpPath}`;
   }
-  const blob = await put(pathname, buffer, {
+  const blob = await put(webpPath, webp, {
     access: 'public',
-    contentType: 'image/png',
+    contentType: 'image/webp',
     addRandomSuffix: false,
     token: blobToken,
   });
