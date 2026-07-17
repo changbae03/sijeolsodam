@@ -18,7 +18,7 @@
  *  - 원본 삭제는 새 URL 업로드 + 파일 저장이 모두 성공한 뒤에만 수행
  */
 
-import { put, del } from '@vercel/blob';
+import { put, del, list } from '@vercel/blob';
 import sharp from 'sharp';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
@@ -29,6 +29,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const keepOld = args.includes('--keep-old');
+// --orphans: Blob 저장소 전체를 나열해 데이터 파일이 참조하지 않는 파일을 보여줌
+// --delete-orphans: 그 고아 파일들을 실제로 삭제 (참조 목록에 없는 것만)
+const orphanReport = args.includes('--orphans') || args.includes('--delete-orphans');
+const deleteOrphans = args.includes('--delete-orphans');
 
 const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
 if (!blobToken && !dryRun) {
@@ -69,6 +73,57 @@ function pathnameFromUrl(url: string): string {
   return decodeURIComponent(u.pathname.replace(/^\//, ''));
 }
 
+/** Blob 저장소 전체를 나열해, 데이터 파일이 참조하지 않는 고아 파일을 리포트/삭제 */
+async function runOrphanReport(referencedUrls: Set<string>) {
+  // 참조 URL의 경로만 뽑아 비교 (도메인 표기가 달라도 경로가 같으면 같은 파일)
+  const referencedPaths = new Set(Array.from(referencedUrls).map((u) => pathnameFromUrl(u)));
+
+  let cursor: string | undefined;
+  let totalCount = 0;
+  let totalBytes = 0;
+  const orphans: { url: string; pathname: string; size: number }[] = [];
+
+  do {
+    const page = await list({ token: blobToken, cursor, limit: 1000 });
+    for (const blob of page.blobs) {
+      totalCount += 1;
+      totalBytes += blob.size;
+      if (!referencedPaths.has(decodeURIComponent(blob.pathname))) {
+        orphans.push({ url: blob.url, pathname: blob.pathname, size: blob.size });
+      }
+    }
+    cursor = page.hasMore ? page.cursor : undefined;
+  } while (cursor);
+
+  const orphanBytes = orphans.reduce((a, b) => a + b.size, 0);
+  console.log(
+    `\nBlob 저장소 전체: ${totalCount}개 / ${(totalBytes / 1024 / 1024).toFixed(1)}MB`
+  );
+  console.log(
+    `데이터 파일이 참조하는 파일: ${referencedPaths.size}개 -> 고아 파일: ${orphans.length}개 / ${(orphanBytes / 1024 / 1024).toFixed(1)}MB`
+  );
+  for (const o of orphans.slice(0, 30)) {
+    console.log(`  - ${decodeURIComponent(o.pathname)} (${(o.size / 1024).toFixed(0)}KB)`);
+  }
+  if (orphans.length > 30) console.log(`  ... 외 ${orphans.length - 30}개`);
+
+  if (deleteOrphans && orphans.length > 0) {
+    console.log('\n--delete-orphans: 고아 파일 삭제 중...');
+    let deleted = 0;
+    for (const o of orphans) {
+      try {
+        await del(o.url, { token: blobToken });
+        deleted += 1;
+      } catch (e) {
+        console.warn(`  삭제 실패: ${o.pathname}`, e);
+      }
+    }
+    console.log(`고아 파일 ${deleted}개 삭제 완료, 약 ${(orphanBytes / 1024 / 1024).toFixed(1)}MB 확보`);
+  } else if (orphans.length > 0) {
+    console.log('\n삭제하려면 --delete-orphans 플래그로 다시 실행하세요.');
+  }
+}
+
 async function main() {
   const dataDir = join(__dirname, '..', 'src', 'data');
   const targets = collectTargets(dataDir);
@@ -76,6 +131,22 @@ async function main() {
   const uniqueUrls = Array.from(new Set(targets.map((t) => t.url)));
 
   console.log(`압축 대상 PNG: ${uniqueUrls.length}개 (참조 ${targets.length}곳)`);
+
+  if (orphanReport) {
+    if (!blobToken) {
+      console.error('--orphans / --delete-orphans 는 BLOB_READ_WRITE_TOKEN이 필요해요.');
+      process.exit(1);
+    }
+    // 참조 기준: PNG뿐 아니라 이미 변환된 webp 등 모든 blob URL 필드
+    const allRefRegex = /(?:imageUrl|heroImage|stepImage|image):\s*'(https:\/\/[^']*\.blob\.vercel-storage\.com\/[^']*)'/g;
+    const allRefs = new Set<string>();
+    for (const file of readdirSync(dataDir).filter((f) => f.endsWith('.ts'))) {
+      const content = readFileSync(join(dataDir, file), 'utf-8');
+      for (const m of content.matchAll(allRefRegex)) allRefs.add(m[1]);
+    }
+    await runOrphanReport(allRefs);
+    return;
+  }
 
   if (dryRun) {
     let totalBytes = 0;
