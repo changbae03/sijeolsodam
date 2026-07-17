@@ -11,7 +11,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: '/images/recipes/1-3/hero.png',
+    heroImage: '/images/recipes/1-3/hero.webp',
     mainIngredient: '시금치',
     description: '한파를 견디며 단맛이 응축된 노지 시금치를 듬뿍 넣어 만든 이탈리아식 오믈렛이에요. 영양 가득한 한 끼 브런치로 손색없습니다.',
     masterclass: {

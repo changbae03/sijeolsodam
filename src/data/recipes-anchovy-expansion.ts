@@ -12,7 +12,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-1', month: 6, title: '멸치볶음', subtitle: '바삭하고 짭짤한 국민 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: '/images/recipes/anchovy-home-1/hero.png',
+    heroImage: '/images/recipes/anchovy-home-1/hero.webp',
     mainIngredient: '멸치',
     description: '바삭한 잔멸치와 견과류를 간장 양념에 볶아낸, 한국인이 가장 사랑하는 밑반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-2', month: 6, title: '멸치육수 국수', subtitle: '깊은 육수의 여름 시원한 국수',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: '/images/recipes/anchovy-home-2/hero.png',
+    heroImage: '/images/recipes/anchovy-home-2/hero.webp',
     mainIngredient: '멸치',
     description: '진한 멸치육수를 차갑게 식혀 만든, 깔끔하고 시원한 여름 국수예요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-3', month: 6, title: '멸치고추장볶음', subtitle: '매콤한 밥도둑 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: '/images/recipes/anchovy-home-3/hero.png',
+    heroImage: '/images/recipes/anchovy-home-3/hero.webp',
     mainIngredient: '멸치',
     description: '잔멸치를 고추장 양념에 매콤달콤하게 볶아낸, 색다른 밥도둑 밑반찬이에요.',
     masterclass: {
