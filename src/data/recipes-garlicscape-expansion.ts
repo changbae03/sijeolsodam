@@ -307,7 +307,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-world-1', month: 6, title: '쏸타이 차오러우', subtitle: '중국식 마늘쫑볶음',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '중국', note: '쏸타이(蒜苔)는 중국어로 마늘쫑을 뜻해요. 중국에서는 돼지고기와 마늘쫑을 볶는 쏸타이 차오러우가 대표적인 가정식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-world-1/hero.webp',
     mainIngredient: '마늘쫑',
     description: '돼지고기와 마늘쫑을 매콤하게 볶은, 중국의 대표 가정식이에요.',
     masterclass: {

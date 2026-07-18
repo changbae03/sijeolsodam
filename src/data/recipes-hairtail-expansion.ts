@@ -12,7 +12,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-home-3', month: 7, title: '갈치조림(무)', subtitle: '무와 함께 조린 기본 갈치조림',
     category: '조림', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-home-3/hero.webp',
     mainIngredient: '갈치',
     description: '무를 깔고 갈치를 매콤한 양념장에 조린, 밥반찬으로 인기 좋은 기본 조림이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-home-4', month: 7, title: '갈치구이(간장)', subtitle: '짭짤하게 밑간한 담백한 구이',
     category: '구이', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-home-4/hero.webp',
     mainIngredient: '갈치',
     description: '간장으로 밑간한 갈치를 구운, 짭짤하고 담백한 기본 생선구이예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-home-5', month: 7, title: '갈치튀김', subtitle: '바삭한 겉면과 담백한 속살',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-home-5/hero.webp',
     mainIngredient: '갈치',
     description: '갈치를 한입 크기로 썰어 바삭하게 튀긴, 담백한 밑반찬 겸 안주예요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-weekend-1', month: 7, title: '갈치 감자조림', subtitle: '든든한 밥도둑 조림',
     category: '조림', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-weekend-1/hero.webp',
     mainIngredient: '갈치',
     description: '갈치와 감자를 함께 매콤하게 조린, 국물까지 든든한 밥도둑 조림이에요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-weekend-2', month: 7, title: '갈치매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-weekend-2/hero.webp',
     mainIngredient: '갈치',
     description: '갈치와 무, 채소를 넣고 얼큰하게 끓인, 시원하고 진한 국물의 매운탕이에요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-weekend-3', month: 7, title: '갈치 강정', subtitle: '바삭 달콤한 밥도둑',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-weekend-3/hero.webp',
     mainIngredient: '갈치',
     description: '튀긴 갈치에 달콤짭짤한 강정소스를 버무린, 밥도둑이 되는 별미예요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-weekend-4', month: 7, title: '갈치식해', subtitle: '제주식 발효 별미',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-weekend-4/hero.webp',
     mainIngredient: '갈치',
     description: '갈치살에 밥과 고춧가루, 무를 섞어 삭힌, 제주 지역의 전통 발효 밑반찬이에요.',
     masterclass: {
@@ -223,7 +223,7 @@ export const recipesHairtailExpansion: Recipe[] = [
   {
     id: 'hairtail-weekend-5', month: 7, title: '갈치 카레', subtitle: '향긋한 카레와 만난 생선요리',
     category: '카레', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-weekend-5/hero.webp',
     mainIngredient: '갈치',
     description: '갈치를 카레 국물에 넣고 끓인, 향긋하고 부드러운 별미 카레예요.',
     masterclass: {
@@ -254,7 +254,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-world-1', month: 7, title: '타치우오노 시오야키', subtitle: '일본식 갈치 소금구이',
     category: '구이', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '일본', note: '타치우오(太刀魚)는 일본어로 갈치를 뜻해요. 일본에서는 갈치를 소금구이나 회로 즐겨 먹으며, 특히 여름철 별미로 인기가 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-world-1/hero.webp',
     mainIngredient: '갈치',
     description: '소금간을 한 갈치를 일본식으로 구워, 무즙과 함께 즐기는 담백한 요리예요.',
     masterclass: {
@@ -285,7 +285,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-world-2', month: 7, title: '갈치 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-world-2/hero.webp',
     mainIngredient: '갈치',
     description: '토마토와 화이트와인, 조개를 함께 넣고 갈치를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -317,7 +317,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-world-3', month: 7, title: '갈치 아 라 플란차', subtitle: '스페인식 팬구이 생선',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-world-3/hero.webp',
     mainIngredient: '갈치',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 생선요리예요.',
     masterclass: {
@@ -347,7 +347,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-world-4', month: 7, title: '갈치 아 브라스', subtitle: '포르투갈식 감자·계란 생선요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '포르투갈', note: '아 브라스(à Brás)는 포르투갈의 대표 조리법으로, 원래 대구(바칼라우)에 감자채와 계란을 볶아 만들어요. 갈치로 만들면 비슷한 원리로 담백한 변형 요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-world-4/hero.webp',
     mainIngredient: '갈치',
     description: '갈치살과 가늘게 채 썬 감자, 계란을 함께 볶은, 포르투갈식 든든한 한 그릇이에요.',
     masterclass: {
@@ -378,7 +378,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-world-5', month: 7, title: '프소또 스코르달리아(갈치)', subtitle: '그리스식 생선구이와 마늘소스',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '그리스', note: '스코르달리아(skordalia)는 감자와 마늘을 갈아 만드는 그리스 전통 소스예요. 그리스에서는 구운 생선에 이 소스를 곁들여 먹는 것이 흔한 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-world-5/hero.webp',
     mainIngredient: '갈치',
     description: '올리브오일에 구운 갈치에 감자마늘소스를 곁들인, 그리스 지중해식 요리예요.',
     masterclass: {
@@ -409,7 +409,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-chef-1', month: 7, title: '갈치 뫼니에르', subtitle: '프랑스 요리의 정석',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 갈치를 놓고, 뵈르누아제트를 숟가락으로 지그재그로 두른 뒤 케이퍼와 파슬리, 레몬 슬라이스를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-chef-1/hero.webp',
     mainIngredient: '갈치',
     description: '밀가루옷을 입혀 버터에 구운 갈치에 견과류향 가득한 브라운버터소스를 끼얹은, 프랑스 요리의 정석이에요.',
     masterclass: {
@@ -441,7 +441,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-chef-2', month: 7, title: '갈치 콩피', subtitle: '올리브오일에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '따뜻한 접시에 갈치를 놓고, 콩피에 쓴 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-chef-2/hero.webp',
     mainIngredient: '갈치',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 살이 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -472,7 +472,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-chef-3', month: 7, title: '갈치 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 갈치 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-chef-3/hero.webp',
     mainIngredient: '갈치',
     description: '신선한 갈치를 얇게 저며 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -503,7 +503,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-chef-4', month: 7, title: '갈치 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일째 접시에 담아 상 앞에서 직접 열어 향이 퍼지도록 연출하고, 허브를 살짝 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-chef-4/hero.webp',
     mainIngredient: '갈치',
     description: '갈치와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -535,7 +535,7 @@ export const recipesHairtailExpansion: Recipe[] = [
     id: 'hairtail-chef-5', month: 7, title: '갈치 브라운버터 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 브라운버터소스를 숟가락으로 살짝 끼얹은 뒤 차이브를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hairtail-chef-5/hero.webp',
     mainIngredient: '갈치',
     description: '바삭하게 구운 바게트 위에 갈치살과 브라운버터소스를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {

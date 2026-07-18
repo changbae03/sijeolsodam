@@ -70,7 +70,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-home-3', month: 12, title: '과메기김말이', subtitle: '한입에 쏙, 간편한 별미',
     category: '전채', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-home-3/hero.webp',
     mainIngredient: '과메기',
     description: '과메기와 채소를 김에 돌돌 말아 한입에 먹기 좋게 만든, 간편한 별미예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-home-4', month: 12, title: '과메기무침샐러드', subtitle: '상큼하고 가벼운 겨울 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-home-4/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 채소와 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 겨울 샐러드예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-home-5', month: 12, title: '과메기무쌈', subtitle: '알싸하고 시원한 겨울 별미',
     category: '전채', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1601379329542-8feea90c775d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-home-5/hero.webp',
     mainIngredient: '과메기',
     description: '얇게 저민 무에 과메기를 돌돌 말아낸, 알싸하고 시원한 한입 별미예요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-weekend-1', month: 12, title: '과메기물회', subtitle: '시원하고 개운한 겨울 별미',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-weekend-1/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 시원한 냉국물에 채소와 함께 만, 개운하고 새콤한 겨울철 물회예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-weekend-2', month: 12, title: '과메기채소말이', subtitle: '푸짐하고 정성 가득한 손님상 메뉴',
     category: '전채', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-weekend-2/hero.webp',
     mainIngredient: '과메기',
     description: '과메기와 다양한 채소를 곱게 채 썰어 돌돌 말아낸, 손님상에 잘 어울리는 요리예요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-weekend-3', month: 12, title: '과메기비빔국수', subtitle: '쫄깃하고 개운한 별미 국수',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-weekend-3/hero.webp',
     mainIngredient: '과메기',
     description: '소면에 과메기와 매콤한 양념을 비벼낸, 쫄깃하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -249,7 +249,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-weekend-4', month: 12, title: '과메기전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-weekend-4/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 반죽에 섞어 부친, 고소하고 색다른 별미전이에요.',
     masterclass: {
@@ -278,7 +278,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-weekend-5', month: 12, title: '과메기 파채무침', subtitle: '알싸하고 쫄깃한 궁합',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-weekend-5/hero.webp',
     mainIngredient: '과메기',
     description: '알싸한 파채와 쫄깃한 과메기를 함께 무친, 술안주로 특히 좋은 반찬이에요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-world-1', month: 12, title: '히모노 스타일 과메기', subtitle: '일본식 건어물 구이',
     category: '구이', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '일본', note: '히모노(干物)는 일본에서 생선을 반건조시켜 만드는 대표적인 저장 방식이에요. 과메기와 원리가 매우 비슷하며, 살짝 구워 먹는 것이 일반적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-world-1/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 살짝 구워낸, 일본식 히모노 스타일의 담백한 별미예요.',
     masterclass: {
@@ -340,7 +340,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-world-2', month: 12, title: '보케로네스 스타일 과메기', subtitle: '스페인식 식초절임 응용',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '스페인', note: '보케로네스(boquerones)는 스페인의 대표 타파스로, 신선한 멸치를 식초에 절여 만들어요. 이미 건조된 과메기에 이 원리를 응용하면 색다른 절임 요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-world-2/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 올리브오일과 식초에 재운, 스페인식 타파스 스타일 전채예요.',
     masterclass: {
@@ -370,7 +370,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-world-3', month: 12, title: '과메기 브루스케타', subtitle: '이탈리아식 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 4,
     cuisineContext: { country: '이탈리아', note: '브루스케타는 구운 빵 위에 다양한 토핑을 올리는 이탈리아 전채예요. 훈제·건조 생선을 올리는 버전도 있어, 과메기와 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-world-3/hero.webp',
     mainIngredient: '과메기',
     description: '바삭하게 구운 바게트 위에 과메기와 채소를 올린, 이탈리아식 전채예요.',
     masterclass: {
@@ -400,7 +400,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-world-4', month: 12, title: '과메기 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요. 과메기의 감칠맛과 라임의 산미가 만나면 독특한 퓨전 전채가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-world-4/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 라임즙과 채소로 상큼하게 버무린, 페루식 세비체를 응용한 전채예요.',
     masterclass: {
@@ -431,7 +431,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-world-5', month: 12, title: '과메기 스뫼르고스', subtitle: '북유럽식 오픈 샌드위치',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '노르웨이', note: '스뫼르고스는 북유럽에서 즐기는 오픈 샌드위치로, 훈제·절임 생선을 호밀빵 위에 올려 먹는 것이 대표적이에요. 과메기도 비슷한 원리로 응용할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-world-5/hero.webp',
     mainIngredient: '과메기',
     description: '호밀빵 위에 과메기와 크림치즈를 올린, 북유럽식 오픈 샌드위치예요.',
     masterclass: {
@@ -463,7 +463,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-chef-1', month: 12, title: '과메기 세비체 그랑크뤼', subtitle: '고급스럽게 재해석한 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 과메기를 겹치듯 부채꼴로 펼쳐 담고, 세비체 국물을 붓으로 살짝 발라 광택을 낸 뒤 미니 허브와 에스플레트 고춧가루를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-chef-1/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 라임과 유자, 올리브오일로 고급스럽게 재해석한 세비체예요.',
     masterclass: {
@@ -494,7 +494,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-chef-2', month: 12, title: '과메기 카르파치오', subtitle: '얇게 저민 과메기의 감칠맛',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 과메기를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 케이퍼와 딜을 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-chef-2/hero.webp',
     mainIngredient: '과메기',
     description: '얇게 저민 과메기에 올리브오일과 케이퍼를 더한, 감칠맛 진한 전채예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-chef-3', month: 12, title: '과메기 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 크림치즈 위에 과메기를 살짝 얹은 뒤 딜과 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-chef-3/hero.webp',
     mainIngredient: '과메기',
     description: '바삭하게 구운 크로스티니 위에 과메기와 크림치즈를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {
@@ -555,7 +555,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-chef-4', month: 12, title: '과메기 오일파스타', subtitle: '고급 오일로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 과메기오일을 한 바퀴 두른 뒤 파마산치즈와 레몬 제스트를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-chef-4/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 오일에 우려 만든 향유로 완성한, 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -585,7 +585,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
     id: 'gwamegi-chef-5', month: 12, title: '과메기 콩피', subtitle: '향유에 은근히 익힌 부드러운 별미',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '따뜻한 접시에 과메기 콩피를 놓고, 콩피에 쓴 오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-chef-5/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 낮은 온도의 오일에 은근히 데워, 부드러운 질감으로 재해석한 프랑스식 별미예요.',
     masterclass: {

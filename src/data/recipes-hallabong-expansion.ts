@@ -16,7 +16,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-home-1', month: 1, title: '한라봉청', subtitle: '겨울 한라봉으로 만드는 향긋한 수제 청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-home-1/hero.webp',
     mainIngredient: '한라봉',
     description: '향긋하고 달콤한 한라봉으로 만드는 수제 청으로, 따뜻한 물에 타서 차로 마시거나 탄산수에 섞어 에이드로 즐기기 좋아요.',
     masterclass: {
@@ -45,7 +45,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-home-2', month: 2, title: '한라봉샐러드', subtitle: '상큼한 제주 한라봉으로 만드는 가벼운 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-home-2/hero.webp',
     mainIngredient: '한라봉',
     description: '달콤하고 향긋한 한라봉을 새콤한 드레싱과 함께 즐기는, 비타민C 가득한 산뜻한 샐러드예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-home-3', month: 1, title: '한라봉에이드', subtitle: '상큼하고 시원한 겨울 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-home-3/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉청을 탄산수에 타 만든, 상큼하고 시원한 겨울철 음료예요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-home-4', month: 1, title: '한라봉요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-home-4/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉과 그릭요거트를 섞은, 상큼하고 건강한 겨울철 간식이에요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-home-5', month: 1, title: '한라봉주스', subtitle: '향긋하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-home-5/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉을 직접 갈아 만든, 향긋하고 건강한 겨울철 생과일주스예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-weekend-1', month: 1, title: '한라봉타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-weekend-1/hero.webp',
     mainIngredient: '한라봉',
     description: '커스터드크림 위에 한라봉을 올려 만든, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
