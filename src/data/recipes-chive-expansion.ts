@@ -10,7 +10,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-home-1', month: 5, title: '부추무침', subtitle: '향긋하게 무친 가장 기본적인 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-home-1/hero.webp',
     mainIngredient: '부추', description: '부추를 간장양념에 가볍게 무친, 향긋하고 칼칼한 기본 밑반찬이에요.',
     masterclass: {
       chefIntro: '부추는 익히지 않고 양념만으로 완성하는 게 가장 맛있어요. 향이 날아가기 전에 빠르게 무치는 게 핵심이에요.',
@@ -44,7 +44,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-home-2', month: 5, title: '부추겉절이', subtitle: '매콤새콤하게 무친 즉석 김치',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-home-2/hero.webp',
     mainIngredient: '부추', description: '부추를 고춧가루 양념에 매콤새콤하게 무친, 발효 없이 바로 먹는 즉석 김치예요.',
     masterclass: {
       chefIntro: '부추무침보다 양념이 더 진하고 매콤해서, 입맛 없을 때 먹기 좋은 메뉴예요.',
@@ -75,7 +75,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-home-3', month: 5, title: '부추된장국', subtitle: '구수하고 향긋한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-home-3/hero.webp',
     mainIngredient: '부추', description: '된장국에 부추를 더해 향긋함을 살린, 끓이는 시간이 짧은 기본 국이에요.',
     masterclass: {
       chefIntro: '부추는 오래 끓이면 향이 다 날아가요. 마지막에 넣어 살짝만 익히는 게 이 국의 핵심이에요.',
@@ -107,7 +107,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-home-4', month: 5, title: '부추 계란말이', subtitle: '향긋함을 더한 도시락 반찬',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-home-4/hero.webp',
     mainIngredient: '부추', description: '달걀에 부추를 더해 말아낸, 향긋함이 더해진 기본 계란말이예요.',
     masterclass: {
       chefIntro: '평범한 계란말이에 부추 한 줌만 더해도 향이 확 살아나요. 도시락 반찬으로 특히 좋아요.',
@@ -142,7 +142,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-weekend-1', month: 5, title: '부추 만두', subtitle: '향긋한 부추를 듬뿍 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-weekend-1/hero.webp',
     mainIngredient: '부추', description: '부추를 듬뿍 넣어 빚은 만두로, 한입 베어 물면 향긋함이 가득 퍼져요.',
     masterclass: {
       chefIntro: '부추만두는 향이 생명이에요. 부추를 너무 일찍 다지면 향이 빠지니, 다른 재료를 다 준비한 뒤 마지막에 다지는 게 비결이에요.',
@@ -175,7 +175,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-weekend-2', month: 5, title: '부추 잡채', subtitle: '당면과 채소를 더한 손이 가는 잡채',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-weekend-2/hero.webp',
     mainIngredient: '부추', description: '당면과 여러 채소에 부추를 더해 만든, 마지막에 더해지는 향이 인상적인 잡채예요.',
     masterclass: {
       chefIntro: '일반 잡채에 부추를 더하면 마지막 향이 확 달라져요. 다른 재료를 다 볶은 후 가장 나중에 더하는 게 핵심이에요.',
@@ -213,7 +213,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-weekend-3', month: 5, title: '부추 두부전', subtitle: '부드러운 두부와 향긋한 부추의 조화',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-weekend-3/hero.webp',
     mainIngredient: '부추', description: '으깬 두부에 부추를 섞어 부친, 부드러운 식감과 향긋함이 함께 살아있는 전이에요.',
     masterclass: {
       chefIntro: '두부의 부드러움과 부추의 향긋함이 만나면 의외로 든든한 한 끼가 돼요.',
@@ -249,7 +249,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-weekend-4', month: 5, title: '부추 갈비찜', subtitle: '마지막 향을 더하는 갈비찜',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 120, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-weekend-4/hero.webp',
     mainIngredient: '부추', description: '오래 졸인 갈비찜에 부추를 마지막에 더해, 묵직한 양념에 산뜻한 향을 살린 메인 요리예요.',
     masterclass: {
       chefIntro: '갈비찜처럼 묵직한 양념 요리에 부추를 마지막에 더하면, 느끼함을 잡아주는 산뜻한 향이 생겨요.',
@@ -286,7 +286,7 @@ export const recipesChiveExpansion: Recipe[] = [
   {
     id: 'chive-weekend-5', month: 5, title: '부추 새우전', subtitle: '바삭하게 부쳐낸 향긋한 해물전',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-weekend-5/hero.webp',
     mainIngredient: '부추', description: '부추와 새우를 부침가루 반죽에 섞어 부친, 바삭하고 향긋한 해물전이에요.',
     masterclass: {
       chefIntro: '부추와 새우는 자연스럽게 잘 어울리는 조합이에요. 새우의 단맛이 부추 향과 함께 어우러져요.',
@@ -324,7 +324,7 @@ export const recipesChiveExpansion: Recipe[] = [
       country: '중국',
       note: '지에차이허즈는 중국 북부에서 즐기는 부추 만두전으로, 한국의 부추전과 비슷하지만 만두피처럼 얇은 반죽 사이에 속을 채워 굽는 점이 달라요. 아침 식사나 간식으로 흔히 먹어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-world-1/hero.webp',
     mainIngredient: '부추', description: '얇은 반죽 사이에 부추와 달걀 속을 채워 구운, 중국 북부의 대표적인 길거리 간식이에요.',
     masterclass: {
       chefIntro: '한국의 부추전과 다르게, 반죽 두 장 사이에 속을 채우는 방식이 독특해요. 만두와 전 사이의 중간 형태예요.',
@@ -362,7 +362,7 @@ export const recipesChiveExpansion: Recipe[] = [
       country: '일본',
       note: '일본에서는 차가운 소바에 부추 같은 향신 채소를 다져 곁들이는 경우가 많아요. 부추의 향이 메밀의 은은한 맛을 살려주는 산뜻한 조합이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-world-2/hero.webp',
     mainIngredient: '부추', description: '차가운 메밀면에 부추를 다져 올린, 일본식으로 산뜻하게 즐기는 여름 면 요리예요.',
     masterclass: {
       chefIntro: '일본 가정에서 차가운 소바에 향신 채소를 곁들이는 흔한 방식이에요. 부추가 메밀의 은은한 맛을 살려줘요.',
@@ -393,7 +393,7 @@ export const recipesChiveExpansion: Recipe[] = [
       country: '프랑스',
       note: '프랑스 요리에서는 차이브(서양 부추와 비슷한 허브)를 버터에 섞어 감자나 생선에 곁들이는 경우가 많아요. 단순하지만 신선한 향을 더하는 클래식한 조리법이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-world-3/hero.webp',
     mainIngredient: '부추', description: '부추를 곱게 다져 버터와 섞어 삶은 감자에 곁들인, 프랑스식의 단순하고 향긋한 사이드예요.',
     masterclass: {
       chefIntro: '프랑스 요리의 차이브 버터를 부추로 재해석한 메뉴예요. 재료가 단순할수록 신선한 향이 더 중요해요.',
@@ -425,7 +425,7 @@ export const recipesChiveExpansion: Recipe[] = [
       country: '멕시코',
       note: '멕시코식 아침 식사에서는 스크램블 에그에 다양한 허브와 채소를 더해 또르티야에 싸 먹는 경우가 많아요. 부추를 더하면 신선한 향이 더해지는 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-world-4/hero.webp',
     mainIngredient: '부추', description: '부추를 더한 스크램블 에그를 또르티야에 싸 먹는, 멕시코풍의 산뜻한 아침 식사예요.',
     masterclass: {
       chefIntro: '멕시코 가정의 아침 식사를 부추로 재해석한 메뉴예요. 또르티야에 싸 먹으면 한 끼가 든든해져요.',
@@ -462,7 +462,7 @@ export const recipesChiveExpansion: Recipe[] = [
       country: '중국',
       note: '산라탕은 중국의 새콤매콤한 수프로, 면을 더하면 든든한 한 끼가 돼요. 부추를 마지막에 올리면 신선한 향이 더해지는 변형이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-world-5/hero.webp',
     mainIngredient: '부추', description: '새콤매콤한 산라탕 국물에 면을 더하고 부추로 마무리한, 중국식 든든한 한 끼예요.',
     masterclass: {
       chefIntro: '산라탕 특유의 산미와 매운맛에 부추의 신선한 향이 더해지면 풍미가 한층 살아나요.',
@@ -497,7 +497,7 @@ export const recipesChiveExpansion: Recipe[] = [
     id: 'chive-chef-1', month: 5, title: '부추 오일과 관자', subtitle: '향긋한 오일과 시어드 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '접시에 부추오일을 가늘게 한 줄 그리고 시어드한 관자를 올려보세요. 부추 새싹이나 잘게 썬 부추를 점점이 흩뿌리면 완성이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-chef-1/hero.webp',
     mainIngredient: '부추', description: '부추를 갈아 만든 향긋한 오일에 시어드한 관자를 올린, 정교한 프렌치 비스트로풍 전채예요.',
     masterclass: {
       chefIntro: '부추를 오일로 만드는 발상이 신선해요. 색과 향을 동시에 살리는 모던 키친의 기법이에요.',
@@ -537,7 +537,7 @@ export const recipesChiveExpansion: Recipe[] = [
     id: 'chive-chef-2', month: 5, title: '부추 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 차이브를 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-chef-2/hero.webp',
     mainIngredient: '부추', description: '가볍게 휘핑한 부추 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 전채예요.',
     masterclass: {
       chefIntro: '부추를 무스로 만들면 향은 그대로 살리면서 훨씬 가벼운 질감을 경험할 수 있어요.',
@@ -571,7 +571,7 @@ export const recipesChiveExpansion: Recipe[] = [
     id: 'chive-chef-3', month: 5, title: '부추 퓌레와 오리가슴살', subtitle: '향긋한 부추 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 오리 기름 한 방울을 점으로 더하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-chef-3/hero.webp',
     mainIngredient: '부추', description: '향긋한 부추 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 한식 재료를 프렌치 비스트로풍으로 풀어낸 메인이에요.',
     masterclass: {
       chefIntro: '부추의 향긋함이 오리의 진한 풍미를 한층 살려줘요. 익숙한 재료의 새로운 가능성을 보여주는 메뉴예요.',
@@ -606,7 +606,7 @@ export const recipesChiveExpansion: Recipe[] = [
     id: 'chive-chef-4', month: 5, title: '부추 콩소메', subtitle: '맑게 거른 부추의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 부추 새싹 하나를 올려보세요. 옅은 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-chef-4/hero.webp',
     mainIngredient: '부추', description: '부추를 갈아 맑게 걸러낸, 향긋함이 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 부추에 적용한 요리예요. 향이 진한 만큼 적은 양으로도 풍미가 충분해요.',
@@ -641,7 +641,7 @@ export const recipesChiveExpansion: Recipe[] = [
     id: 'chive-chef-5', month: 5, title: '부추 크리스프와 참치 타르타르', subtitle: '바삭함과 신선함의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 참치 타르타르를 정확히 중앙에 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chive-chef-5/hero.webp',
     mainIngredient: '부추', description: '바삭하게 튀긴 부추 크리스프 위에 참치 타르타르를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '부추를 튀기면 향은 그대로 남으면서 전혀 다른 바삭한 질감으로 변해요.',

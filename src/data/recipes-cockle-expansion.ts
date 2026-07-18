@@ -12,7 +12,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-home-1', month: 1, title: '꼬막무침', subtitle: '매콤새콤한 겨울 대표 별미',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-home-1/hero.webp',
     mainIngredient: '꼬막',
     description: '겨울철 가장 살이 통통한 꼬막을 매콤새콤한 양념에 무친, 전남 벌교의 대표 별미예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-home-2', month: 1, title: '꼬막된장찌개', subtitle: '구수하고 시원한 겨울 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-home-2/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막을 넣어 끓인 된장찌개로, 구수하고 시원한 국물이 일품이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-home-3', month: 1, title: '꼬막비빔밥', subtitle: '매콤하고 든든한 한 그릇',
     category: '밥', difficulty: '보통', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-home-3/hero.webp',
     mainIngredient: '꼬막',
     description: '매콤하게 무친 꼬막을 밥에 올려 비벼 먹는, 든든한 한 그릇 요리예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-home-4', month: 1, title: '꼬막탕', subtitle: '시원하고 개운한 국물 요리',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-home-4/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막을 맑게 끓인, 시원하고 개운한 기본 국물 요리예요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-home-5', month: 1, title: '꼬막전', subtitle: '쫄깃하게 부쳐낸 별미전',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-home-5/hero.webp',
     mainIngredient: '꼬막',
     description: '삶은 꼬막살을 반죽에 섞어 부친, 쫄깃하고 고소한 별미전이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-weekend-1', month: 1, title: '꼬막찜', subtitle: '양념장 곁들인 정통 벌교식',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-weekend-1/hero.webp',
     mainIngredient: '꼬막',
     description: '삶은 꼬막에 매콤한 양념장을 끼얹은, 벌교의 정통 꼬막찜이에요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-weekend-2', month: 1, title: '꼬막전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-weekend-2/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막과 채소, 버섯을 넉넉히 넣고 끓인, 시원하고 푸짐한 겨울 전골이에요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-weekend-3', month: 1, title: '꼬막칼국수', subtitle: '시원한 국물의 든든한 한 그릇',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-weekend-3/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막 육수에 칼국수를 끓인, 시원하고 든든한 겨울철 한 그릇이에요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-weekend-4', month: 1, title: '꼬막파스타', subtitle: '진한 감칠맛의 이탈리아식 응용',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-weekend-4/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막을 화이트와인과 마늘에 볶아 파스타에 버무린, 봉골레와는 또 다른 감칠맛의 파스타예요.',
     masterclass: {
@@ -279,7 +279,7 @@ export const recipesCockleExpansion: Recipe[] = [
   {
     id: 'cockle-weekend-5', month: 1, title: '꼬막국밥', subtitle: '시원하고 개운한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-weekend-5/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막 국물에 밥을 말아낸, 시원하고 개운한 한 그릇 국밥이에요.',
     masterclass: {
@@ -311,7 +311,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-world-1', month: 1, title: '보라케 알레 콕클레', subtitle: '이탈리아식 조개파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 봉골레(바지락) 파스타가 유명하지만, 다른 조개류로 만드는 버전도 흔해요. 꼬막을 쓰면 훨씬 진한 국물의 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-world-1/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막과 토마토, 화이트와인으로 만든, 이탈리아식 로소(빨간) 스타일 조개파스타예요.',
     masterclass: {
@@ -343,7 +343,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-world-2', month: 1, title: '알메하스 알라 마리네라', subtitle: '스페인식 조개찜',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '알메하스 알라 마리네라(almejas a la marinera)는 스페인의 대표 조개요리로, 화이트와인과 마늘, 파프리카가루로 향을 낸 국물이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-world-2/hero.webp',
     mainIngredient: '꼬막',
     description: '화이트와인과 마늘, 파프리카가루로 향을 낸, 스페인식 조개찜이에요.',
     masterclass: {
@@ -374,7 +374,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-world-3', month: 1, title: '꼬막 화이트와인찜', subtitle: '프랑스식 물 마리니에르 응용',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '물 마리니에르(moules marinière)는 프랑스의 대표적인 홍합찜으로, 화이트와인과 버터, 샬롯으로 향을 내요. 꼬막으로 만들면 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694235947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-world-3/hero.webp',
     mainIngredient: '꼬막',
     description: '화이트와인과 버터, 샬롯으로 향을 낸, 프랑스식 조개찜을 응용한 요리예요.',
     masterclass: {
@@ -404,7 +404,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-world-4', month: 1, title: '꼬막 사카무시', subtitle: '일본식 청주찜',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '일본', note: '사카무시(酒蒸し)는 일본어로 청주에 재료를 찌는 요리를 뜻해요. 조개류에 자주 쓰이는 조리법으로, 청주의 은은한 향이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-world-4/hero.webp',
     mainIngredient: '꼬막',
     description: '청주와 생강으로 향을 낸, 일본식 담백한 꼬막찜이에요.',
     masterclass: {
@@ -434,7 +434,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-world-5', month: 1, title: '꼬막 느억맘 무침', subtitle: '베트남식 상큼한 무침',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남에서는 조개류를 라임즙과 느억맘(피시소스)으로 상큼하게 무치는 요리가 흔해요. 허브를 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-world-5/hero.webp',
     mainIngredient: '꼬막',
     description: '삶은 꼬막살을 라임즙과 허브로 상큼하게 무친, 베트남식 별미예요.',
     masterclass: {
@@ -466,7 +466,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-chef-1', month: 1, title: '꼬막 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 55, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 꼬막살 두어 개와 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-chef-1/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막 육수를 달걀흰자로 맑게 정제한, 투명하면서도 진한 감칠맛의 콩소메예요.',
     masterclass: {
@@ -497,7 +497,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-chef-2', month: 1, title: '꼬막 리조또', subtitle: '진한 감칠맛의 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 꼬막살 몇 개를 고명으로 올린 뒤 파슬리를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-chef-2/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막 육수로 지은, 진한 감칠맛의 이탈리아식 리조또예요.',
     masterclass: {
@@ -529,7 +529,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-chef-3', month: 1, title: '꼬막 오일파스타', subtitle: '고급 오일로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 꼬막살을 고명으로 올린 뒤 레몬 제스트를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-chef-3/hero.webp',
     mainIngredient: '꼬막',
     description: '꼬막을 오일에 우려 만든 향유로 완성한, 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -560,7 +560,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-chef-4', month: 1, title: '꼬막 세비체', subtitle: '남미식 상큼한 조개 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 꼬막살을 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-chef-4/hero.webp',
     mainIngredient: '꼬막',
     description: '삶은 꼬막살을 라임즙에 재운, 남미식 세비체를 응용한 전채예요.',
     masterclass: {
@@ -591,7 +591,7 @@ export const recipesCockleExpansion: Recipe[] = [
     id: 'cockle-chef-5', month: 1, title: '꼬막 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 꼬막',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '따뜻한 접시에 꼬막살을 담고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cockle-chef-5/hero.webp',
     mainIngredient: '꼬막',
     description: '삶은 꼬막살에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {

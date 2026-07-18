@@ -12,7 +12,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-home-1', month: 6, title: '민어탕', subtitle: '여름 보양식으로 으뜸인 맑은 생선탕',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-home-1/hero.webp',
     mainIngredient: '민어',
     description: '맑게 끓여낸 민어탕은 담백하고 부드러운 살 맛이 일품인, 여름철 대표 보양식이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-home-2', month: 6, title: '민어회', subtitle: '담백하고 고소한 여름 대표 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-home-2/hero.webp',
     mainIngredient: '민어',
     description: '여름 민어는 살이 두툼하고 담백해서, 얇게 썰어 회로 즐기기 좋아요.',
     masterclass: {
@@ -69,7 +69,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-home-3', month: 6, title: '민어구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-home-3/hero.webp',
     mainIngredient: '민어',
     description: '민어에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-home-4', month: 6, title: '민어찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-home-4/hero.webp',
     mainIngredient: '민어',
     description: '민어를 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-home-5', month: 6, title: '민어전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-home-5/hero.webp',
     mainIngredient: '민어',
     description: '민어살에 밀가루옷을 입혀 부친, 담백하고 부드러운 명절 대표 생선전이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-weekend-1', month: 6, title: '민어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-weekend-1/hero.webp',
     mainIngredient: '민어',
     description: '민어와 채소를 넣고 얼큰하게 끓인, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-weekend-2', month: 6, title: '민어부레찜', subtitle: '쫄깃한 별미 부위 요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-weekend-2/hero.webp',
     mainIngredient: '민어',
     description: '민어의 부레를 쫄깃하게 쪄낸, 미식가들이 즐기는 귀한 별미예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-weekend-3', month: 6, title: '민어전골', subtitle: '푸짐하고 시원한 여름 보양 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-weekend-3/hero.webp',
     mainIngredient: '민어',
     description: '민어와 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 여름 보양 전골이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-weekend-4', month: 6, title: '민어무침회', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-weekend-4/hero.webp',
     mainIngredient: '민어',
     description: '민어회를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesCroakerExpansion: Recipe[] = [
   {
     id: 'croaker-weekend-5', month: 6, title: '민어초밥', subtitle: '담백함이 살아있는 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-weekend-5/hero.webp',
     mainIngredient: '민어',
     description: '얇게 썬 민어를 초밥용 밥 위에 올린, 담백하고 고급스러운 초밥이에요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-world-1', month: 6, title: '이시모치노 시오야키', subtitle: '일본식 민어 소금구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '이시모치(イシモチ)는 일본어로 민어과 생선을 뜻해요. 일본에서는 담백한 흰살생선을 소금구이(시오야키)로 즐기는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-world-1/hero.webp',
     mainIngredient: '민어',
     description: '민어에 소금간만 해서 구운, 일본식 담백한 생선구이예요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-home-1', month: 11, title: '쪽파순무침', subtitle: '알싸한 향이 매력적인 초겨울 파 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-home-1/hero.webp',
     mainIngredient: '쪽파순',
     description: '알이 작고 향이 진한 쪽파순을 새콤하게 무쳐낸, 입맛을 돋우는 초겨울 반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-home-2', month: 11, title: '쪽파순전', subtitle: '향긋하게 부쳐낸 바삭한 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-home-2/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 반죽에 섞어 부친, 향긋하고 바삭한 초겨울 별미전이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-home-3', month: 11, title: '쪽파순된장국', subtitle: '구수하고 알싸한 초겨울 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-home-3/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 넣어 끓인 된장국으로, 구수하고 알싸한 초겨울 국이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-home-4', month: 11, title: '쪽파순김치', subtitle: '알싸하고 향긋한 초겨울 김치',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-home-4/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 양념에 버무려 담근, 알싸하고 향긋한 초겨울 김치예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-home-5', month: 11, title: '쪽파순계란찜', subtitle: '부드럽고 향긋한 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-home-5/hero.webp',
     mainIngredient: '쪽파순',
     description: '계란찜에 쪽파순을 더해 향긋함을 살린, 부드러운 별미 반찬이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-weekend-1', month: 11, title: '쪽파순해물전', subtitle: '푸짐하고 향긋한 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-weekend-1/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순에 해물을 더해 부친, 푸짐하고 향긋한 별미전이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-weekend-2', month: 11, title: '쪽파순굴전', subtitle: '고소하고 향긋한 겨울 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-weekend-2/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순과 굴을 함께 부친, 고소하고 향긋한 겨울철 별미전이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-weekend-3', month: 11, title: '쪽파순삼겹살볶음', subtitle: '알싸함이 어우러진 든든한 볶음',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-weekend-3/hero.webp',
     mainIngredient: '쪽파순',
     description: '삼겹살과 쪽파순을 함께 볶은, 알싸함이 어우러진 든든한 메인요리예요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-weekend-4', month: 11, title: '쪽파순굴국밥', subtitle: '시원하고 든든한 겨울 국밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-weekend-4/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순과 굴을 넣어 끓인 국물에 밥을 만, 시원하고 든든한 겨울 국밥이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
   {
     id: 'chiveshoots-weekend-5', month: 11, title: '쪽파순비빔국수', subtitle: '알싸하고 개운한 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-weekend-5/hero.webp',
     mainIngredient: '쪽파순',
     description: '소면에 쪽파순과 매콤한 양념을 비벼낸, 알싸하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-world-1', month: 11, title: '쪽파순 콘소메', subtitle: '프랑스식 맑은 파향 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스에서는 리크(서양대파)와 감자로 만든 수프가 대표적이에요. 쪽파순을 응용하면 훨씬 알싸하고 향긋한 수프가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-world-1/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 채소육수에 넣어 끓인, 프랑스식 담백하고 향긋한 맑은 수프예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-world-2', month: 11, title: '충칭식 총화유병', subtitle: '중국식 향긋한 파기름 국수',
     category: '면요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '중국', note: '충칭·상하이 지방에서는 파를 기름에 태우듯 볶아 향을 낸 파기름을 국수에 비벼 먹는 것이 유명해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-world-2/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 태우듯 볶아 향을 낸 파기름에 국수를 비빈, 중국식 향긋한 한 그릇이에요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-world-3', month: 11, title: '쪽파순 오코노미야키', subtitle: '일본식 채소 부침개',
     category: '전요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '오코노미야키는 일본 오사카의 대표 부침개로, 양배추와 채소를 듬뿍 넣고 부치는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-world-3/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순과 양배추를 듬뿍 넣어 부친, 일본식 채소 부침개예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-world-4', month: 11, title: '쪽파순 살사베르데', subtitle: '이탈리아식 그린소스',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '이탈리아', note: '살사베르데는 이탈리아의 대표적인 허브 그린소스로, 다양한 허브와 올리브오일을 갈아 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-world-4/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 파슬리와 함께 갈아 만든, 이탈리아식 향긋한 그린소스예요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-world-5', month: 11, title: '쪽파순 팟타이', subtitle: '태국식 볶음국수 응용',
     category: '면요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '태국', note: '팟타이는 태국의 대표 볶음국수예요. 쪽파순을 넣으면 알싸한 향이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-world-5/hero.webp',
     mainIngredient: '쪽파순',
     description: '쌀국수에 쪽파순과 새우를 넣어 볶은, 태국식 대표 볶음국수예요.',
     masterclass: {
@@ -453,7 +453,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-chef-1', month: 11, title: '총유병', subtitle: '중국식 파전병 반죽 접기 기법',
     category: '전요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '겹겹이 구운 총유병을 부채꼴로 잘라 접시에 담고, 초간장을 작은 종지에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-chef-1/hero.webp',
     mainIngredient: '쪽파순',
     description: '반죽을 여러 번 접고 밀어 쪽파순 향유를 겹겹이 쌓은, 중국의 대표적인 파전병이에요.',
     masterclass: {
@@ -484,7 +484,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-chef-2', month: 11, title: '쪽파순 비시수아즈', subtitle: '프랑스식 차가운 리크수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 4,
     platingGuide: '차갑게 식힌 수프를 얕은 그릇에 담고, 가운데에 다진 쪽파순 잎을 살짝 올려 색 대비를 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-chef-2/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순과 감자를 곱게 갈아 차갑게 낸, 프랑스의 대표적인 여름 수프를 응용한 요리예요.',
     masterclass: {
@@ -515,7 +515,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-chef-3', month: 11, title: '베트남식 파기름 반쎄오', subtitle: '뜨거운 기름 붓기 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '바삭한 반쎄오를 반으로 접어 접시에 담고, 뜨거운 파기름을 붓으로 마지막에 발라 지글거리는 소리와 향을 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-chef-3/hero.webp',
     mainIngredient: '쪽파순',
     description: '쌀가루 반죽을 바삭하게 부친 뒤, 뜨겁게 달군 쪽파순 기름을 부어 향을 폭발시킨 베트남식 크레페예요.',
     masterclass: {
@@ -546,7 +546,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-chef-4', month: 11, title: '네기마 야키토리', subtitle: '일본식 닭꼬치 그릴 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '꼬치를 나란히 접시에 담고, 남은 타레소스를 붓으로 발라 윤기를 낸 뒤 시치미(일본식 고춧가루)를 살짝 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-chef-4/hero.webp',
     mainIngredient: '쪽파순',
     description: '닭고기와 쪽파순을 번갈아 꿴 꼬치를 숯불에 구워 타레소스로 마무리한, 일본 야키토리 전문점의 대표 메뉴예요.',
     masterclass: {
@@ -577,7 +577,7 @@ export const recipesChiveShootsExpansion: Recipe[] = [
     id: 'chiveshoots-chef-5', month: 11, title: '쪽파순 수비즈 소스', subtitle: '프랑스식 양파크림소스',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '따뜻한 접시에 구운 닭고기나 생선을 놓고, 수비즈소스를 스푼으로 넉넉히 끼얹은 뒤 차이브를 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chiveshoots-chef-5/hero.webp',
     mainIngredient: '쪽파순',
     description: '쪽파순을 버터에 오래 뭉근히 볶아 크림과 함께 곱게 간, 프랑스의 클래식 양파 기반 소스예요.',
     masterclass: {

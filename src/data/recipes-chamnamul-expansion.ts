@@ -188,7 +188,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-weekend-2', month: 3, title: '참나물삼겹살쌈', subtitle: '향긋함이 어우러진 쌈 요리',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-weekend-2/hero.webp',
     mainIngredient: '참나물',
     description: '구운 삼겹살에 참나물을 곁들여 싸 먹는, 향긋함이 어우러진 쌈 요리예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-weekend-3', month: 3, title: '참나물무생채', subtitle: '아삭하고 향긋한 봄 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-weekend-3/hero.webp',
     mainIngredient: '참나물',
     description: '참나물과 무를 함께 새콤달콤하게 무친, 아삭하고 향긋한 봄철 별미예요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-weekend-4', month: 3, title: '참나물비빔국수', subtitle: '향긋하고 개운한 봄 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-weekend-4/hero.webp',
     mainIngredient: '참나물',
     description: '소면에 참나물과 매콤한 양념을 비벼낸, 향긋하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-weekend-5', month: 3, title: '참나물두부무침', subtitle: '담백하고 건강한 반찬',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-weekend-5/hero.webp',
     mainIngredient: '참나물',
     description: '참나물과 으깬 두부를 함께 무친, 담백하고 건강한 반찬이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-world-1', month: 3, title: '이탈리아식 참나물무침', subtitle: '올리브오일과 레몬의 상큼함',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 파슬리 계열 허브를 올리브오일과 레몬으로 심플하게 무쳐 먹는 것이 지중해식 전통이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-world-1/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 올리브오일과 레몬즙으로 심플하게 무친, 이탈리아식 상큼한 샐러드예요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-world-2', month: 3, title: '참나물 타뷸레', subtitle: '중동식 허브 곡물 샐러드',
     category: '샐러드', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '레바논', note: '타뷸레는 레바논의 대표 허브 샐러드로, 파슬리가 주인공이에요. 참나물을 더하면 훨씬 향긋한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-world-2/hero.webp',
     mainIngredient: '참나물',
     description: '불구르에 참나물과 파슬리를 듬뿍 넣은, 레바논식 허브 샐러드를 응용한 요리예요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-world-3', month: 3, title: '참나물 페스토 파스타', subtitle: '이탈리아식 향긋한 페스토',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 바질뿐 아니라 파슬리, 루꼴라 등 다양한 허브로 페스토를 만들어요. 참나물로 만들면 훨씬 개성 있는 향긋한 페스토가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-world-3/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 갈아 만든 향긋한 페스토를 파스타에 버무린, 개성 있는 이탈리아식 요리예요.',
     masterclass: {
@@ -395,7 +395,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-world-4', month: 3, title: '베트남식 참나물 스프링롤', subtitle: '신선한 여름 스프링롤',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남의 스프링롤(고이꾸온)은 라이스페이퍼에 신선한 채소와 허브, 새우 등을 말아 느억맘소스에 찍어 먹는 대표 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-world-4/hero.webp',
     mainIngredient: '참나물',
     description: '라이스페이퍼에 참나물과 새우, 허브를 말아낸, 신선한 베트남식 스프링롤이에요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-world-5', month: 3, title: '참나물 스무디', subtitle: '건강한 그린 스무디',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '미국', note: '미국에서는 다양한 잎채소를 과일과 함께 갈아 마시는 그린 스무디가 건강식으로 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-world-5/hero.webp',
     mainIngredient: '참나물',
     description: '참나물과 사과를 함께 갈아 만든, 건강한 그린 스무디예요.',
     masterclass: {
@@ -457,7 +457,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-chef-1', month: 3, title: '참나물 그레몰라타', subtitle: '이탈리아식 허브가니시',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 20, servings: 4,
     platingGuide: '오소부코나 구운 고기 위에 그레몰라타를 소복이 뿌려, 밝은 초록빛이 요리 전체를 화사하게 만들도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-chef-1/hero.webp',
     mainIngredient: '참나물',
     description: '참나물과 레몬 제스트, 마늘을 잘게 다져 섞은, 이탈리아 밀라노의 대표적인 허브 가니시예요.',
     masterclass: {
@@ -486,7 +486,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-chef-2', month: 3, title: '참나물 치미추리', subtitle: '아르헨티나식 그릴소스',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 4,
     platingGuide: '구운 스테이크 옆에 치미추리를 넉넉히 담아 곁들이고, 참나물잎 몇 장을 얹어 색감을 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-chef-2/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 다져 올리브오일과 식초에 버무린, 아르헨티나 아사도(숯불구이)의 필수 소스를 응용한 요리예요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-chef-3', month: 3, title: '허브크러스트 양갈비', subtitle: '프랑스식 페르시야드 크러스트',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '크러스트가 선명하게 보이도록 양갈비를 갈비뼈가 위로 오게 부채꼴로 세워 담고, 로즈마리 가지로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-chef-3/hero.webp',
     mainIngredient: '참나물',
     description: '참나물과 빵가루를 섞은 허브크러스트를 겉면에 입혀 구운, 프랑스식 고급 양갈비 요리예요.',
     masterclass: {
@@ -547,7 +547,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-chef-4', month: 3, title: '참나물 오믈렛 피네제르브', subtitle: '프랑스식 허브오믈렛',
     category: '브런치', difficulty: '보통', level: 'chef', cookTime: 20, servings: 1,
     platingGuide: '완성된 오믈렛을 반달 모양으로 접어 접시 가운데 놓고, 참나물잎 하나를 위에 올려 심플하게 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-chef-4/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 넣어 부드럽게 만 프랑스식 클래식 오믈렛이에요.',
     masterclass: {
@@ -577,7 +577,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
     id: 'chamnamul-chef-5', month: 3, title: '참나물 스페리피케이션 캐비어', subtitle: '분자요리 구체화 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '작은 스푼에 참나물 캐비어를 소복이 담아 카나페나 관자 요리 위에 보석처럼 올려 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamnamul-chef-5/hero.webp',
     mainIngredient: '참나물',
     description: '참나물즙을 알긴산나트륨과 반응시켜 캐비어처럼 톡톡 터지는 구슬로 만든, 스페인 모더니스트 요리의 대표 기법이에요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-home-1', month: 4, title: '취나물 된장무침', subtitle: '구수하게 무친 가장 기본적인 산나물 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-home-1/hero.webp',
     mainIngredient: '취나물', description: '데친 취나물을 된장으로 구수하게 무친, 산나물의 향이 가장 또렷하게 느껴지는 기본 반찬이에요.',
     masterclass: {
       chefIntro: '취나물은 들기름무침으로 가장 많이 알려져 있지만, 된장으로 무치면 또 다른 구수함이 살아나요. 들기름무침보다 양념이 더 묵직해서, 산나물 특유의 거친 향을 부드럽게 감싸줘요.',
@@ -48,7 +48,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-home-2', month: 4, title: '취나물밥', subtitle: '향긋함이 밥알 사이로 스며드는 기본 잡곡밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-home-2/hero.webp',
     mainIngredient: '취나물', description: '쌀에 데친 취나물을 더해 함께 지은, 양념장에 비벼 먹는 든든한 산나물밥이에요.',
     masterclass: {
       chefIntro: '취나물밥은 산골 식당에서 흔히 만나는 메뉴예요. 들기름으로 한 번 볶은 취나물을 밥에 더하면, 밥알 하나하나에 향이 배어들어요.',
@@ -78,7 +78,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-home-3', month: 4, title: '취나물 된장국', subtitle: '구수함을 더한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-home-3/hero.webp',
     mainIngredient: '취나물', description: '구수한 된장국에 취나물을 더해, 산나물 향이 은은하게 느껴지는 기본 국이에요.',
     masterclass: {
       chefIntro: '취나물을 국에 넣으면, 시금치나 미나리와는 다른 묵직하고 구수한 향이 국물에 배어들어요.',
@@ -107,7 +107,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-weekend-1', month: 4, title: '취나물 잡채', subtitle: '당면과 채소를 더한 손이 가는 잡채',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-weekend-1/hero.webp',
     mainIngredient: '취나물', description: '당면과 여러 채소에 취나물을 더한, 산나물 향이 더해진 색다른 잡채예요.',
     masterclass: {
       chefIntro: '잡채에 보통 시금치를 쓰는데, 취나물로 바꾸면 더 깊고 구수한 향이 느껴져요. 손이 많이 가는 만큼 명절이나 손님상에 잘 어울려요.',
@@ -137,7 +137,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-weekend-2', month: 4, title: '취나물 전', subtitle: '산나물 향을 가득 채운 전',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-weekend-2/hero.webp',
     mainIngredient: '취나물', description: '잘게 썬 취나물을 반죽에 섞어 부친, 산나물 향이 가득한 전이에요.',
     masterclass: {
       chefIntro: '취나물전은 부치는 동안 집안 가득 산나물 향이 퍼지는 게 가장 큰 매력이에요. 다른 봄나물전보다 향이 한층 진하고 구수해요.',
@@ -164,7 +164,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-weekend-3', month: 4, title: '취나물 두부쌈밥', subtitle: '두부와 취나물을 더한 영양 가득한 쌈밥',
     category: '메인', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-weekend-3/hero.webp',
     mainIngredient: '취나물', description: '구운 두부와 양념 밥을 취나물에 싸 먹는, 든든하고 건강한 쌈밥이에요.',
     masterclass: {
       chefIntro: '쌈밥은 보통 상추로 많이 싸 먹지만, 취나물로 싸면 산나물 특유의 구수한 향이 더해져 더 든든한 한 끼가 돼요.',
@@ -191,7 +191,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-weekend-4', month: 4, title: '취나물 갈비탕', subtitle: '향긋함이 더해진 보양 탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 150, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-weekend-4/hero.webp',
     mainIngredient: '취나물', description: '소갈비와 취나물을 함께 끓인, 산나물 향이 깊게 우러난 주말 보양식이에요.',
     masterclass: {
       chefIntro: '갈비탕에 취나물을 더하면, 묵직한 고기 국물에 산나물의 구수한 향이 스며들어 풍미가 한층 깊어져요.',
@@ -220,7 +220,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
   {
     id: 'chwinamul-weekend-5', month: 4, title: '취나물 만두', subtitle: '향긋한 산나물을 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-weekend-5/hero.webp',
     mainIngredient: '취나물', description: '다진 취나물을 듬뿍 넣어 빚은 만두로, 한입 베어 물면 구수한 산나물 향이 입안 가득 퍼져요.',
     masterclass: {
       chefIntro: '취나물만두는 다른 봄나물만두보다 향이 한층 묵직해요. 들기름에 볶은 취나물이 만두 속에서 그 향을 그대로 전해줘요.',
@@ -255,7 +255,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
       country: '이탈리아',
       note: '바질 페스토의 원리를 한식 산나물에 적용해본 메뉴예요. 취나물은 향이 묵직한 만큼, 견과류와 파마산의 고소함이 그 향을 잘 받쳐줘요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-world-1/hero.webp',
     mainIngredient: '취나물', description: '바질 대신 취나물로 만든 구수한 페스토를 곁들인, 한식 재료를 이탈리아식으로 풀어낸 파스타예요.',
     masterclass: {
       chefIntro: '취나물로 페스토를 만들면, 바질보다 더 깊고 흙내 나는 향이 느껴져요. 견과류와 만나면 그 향이 한층 부드러워져요.',
@@ -287,7 +287,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
       country: '일본',
       note: '일본에서는 봄철 산채를 밥에 섞어 오니기리(주먹밥)로 즐기는 문화가 있어요. 취나물도 같은 방식으로 만들면, 휴대하기 좋고 향긋한 한 끼 간식이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-world-2/hero.webp',
     mainIngredient: '취나물', description: '취나물을 섞은 밥을 김으로 감싸 만든, 일본식 산나물 주먹밥이에요.',
     masterclass: {
       chefIntro: '일본 가정에서 봄철 산채를 활용하는 흔한 방식이에요. 휴대하기 좋아서 도시락이나 간식으로도 좋아요.',
@@ -318,7 +318,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
       country: '인도',
       note: '인도 북부의 사그 파니르는 시금치를 곱게 갈아 치즈와 함께 끓이는 대표적인 채식 커리예요. 시금치 대신 취나물을 쓰면, 더 묵직하고 흙내 나는 향의 변형 커리가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-world-3/hero.webp',
     mainIngredient: '취나물', description: '곱게 간 취나물에 인도식 치즈 파니르를 넣어 끓인, 향신료 향 가득한 변형 커리예요.',
     masterclass: {
       chefIntro: '인도 채식 식당의 대표 메뉴를 취나물로 재해석해봤어요. 취나물 특유의 구수함이 향신료와 만나면 또 다른 깊이가 생겨요.',
@@ -351,7 +351,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
       country: '프랑스',
       note: '키슈는 프랑스 로렌 지방의 클래식한 짭짤한 파이예요. 시금치나 다른 채소를 베이컨, 치즈와 함께 채우는 변형이 흔한데, 취나물을 쓰면 한식 산나물의 구수함이 더해지는 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-world-4/hero.webp',
     mainIngredient: '취나물', description: '취나물과 베이컨, 치즈를 채운 프랑스식 짭짤한 파이로, 브런치에 잘 어울려요.',
     masterclass: {
       chefIntro: '프랑스 가정식의 클래식 메뉴에 한식 산나물을 더해본 변형이에요. 취나물의 구수함이 베이컨의 짠맛과 잘 어우러져요.',
@@ -384,7 +384,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
       country: '태국',
       note: '태국의 팟 카파오는 홀리바질을 듬뿍 넣어 향을 살리는 닭고기 볶음이에요. 취나물을 활용하면, 원래의 매운 향신채와는 다른 구수한 한식 향이 더해지는 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-world-5/hero.webp',
     mainIngredient: '취나물', description: '다진 닭고기를 매콤하게 볶아 취나물을 더한, 팟 카파오를 한식 재료로 재해석한 메뉴예요.',
     masterclass: {
       chefIntro: '태국 길거리 음식을 취나물로 재해석해봤어요. 구수한 산나물 향이 매콤한 양념을 잘 받쳐줘요.',
@@ -418,7 +418,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
     id: 'chwinamul-chef-1', month: 4, title: '취나물 명란 카나페', subtitle: '한입 핑거푸드로 즐기는 산나물과 명란의 조화',
     category: '메인', difficulty: '쉬움', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '바삭하게 구운 바게트 위에 취나물 버터를 펴 바르고, 명란을 살짝 올려보세요. 차이브를 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-chef-1/hero.webp',
     mainIngredient: '취나물', description: '구운 바게트에 취나물 버터와 명란을 올린, 한입에 즐기는 짭짤하고 향긋한 핑거푸드예요.',
     masterclass: {
       chefIntro: '취나물을 곱게 다져 버터에 섞으면, 산나물의 구수함이 버터의 고소함과 만나 전혀 다른 풍미가 돼요. 거기에 명란의 짭짤함을 더하면 한 입에 여러 맛이 동시에 느껴져요.',
@@ -448,7 +448,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
     id: 'chwinamul-chef-2', month: 4, title: '취나물 두부무스와 잣크럼블', subtitle: '가벼운 두부무스와 바삭한 견과류의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 잣크럼블을 듬뿍 올려보세요. 차가운 무스와 바삭한 크럼블의 대비가 핵심이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-chef-2/hero.webp',
     mainIngredient: '취나물', description: '두부를 베이스로 한 가벼운 취나물 무스에 잣크럼블을 더한, 한식 재료로 만든 정교한 전채예요.',
     masterclass: {
       chefIntro: '생크림 대신 두부를 베이스로 무스를 만들면, 훨씬 가볍고 담백한 질감이 돼요. 취나물의 구수함과 두부의 부드러움이 잘 어울려요.',
@@ -483,7 +483,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
     id: 'chwinamul-chef-3', month: 4, title: '취나물 된장 뵈르블랑과 도미', subtitle: '한식 양념을 프랑스식 버터소스로 재해석한 생선 요리',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '접시에 도미살을 올리고 된장 뵈르블랑을 끼얹은 뒤, 데친 취나물을 곁에 가지런히 놓으세요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-chef-3/hero.webp',
     mainIngredient: '취나물', description: '구운 도미에 된장으로 만든 프랑스식 버터소스를 끼얹고 취나물을 곁들인, 한식과 프랑스 기법이 만나는 정교한 메인이에요.',
     masterclass: {
       chefIntro: '뵈르블랑은 프랑스 요리의 클래식한 버터소스인데, 화이트와인 대신 된장을 베이스로 만들면 한식 풍미를 가진 색다른 소스가 돼요. 그 옆에 데친 취나물을 곁들이면 한식과 프랑스 기법이 한 접시에서 만나요.',
@@ -519,7 +519,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
     id: 'chwinamul-chef-4', month: 4, title: '취나물 메밀갈레트', subtitle: '프랑스식 메밀 크레프에 채운 짭짤한 산나물',
     category: '브런치', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '갈레트를 사각형으로 접어 가운데가 살짝 보이게 담으세요. 데친 취나물과 치즈가 보이도록 접는 게 핵심이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-chef-4/hero.webp',
     mainIngredient: '취나물', description: '프랑스 브르타뉴 지방의 메밀 크레프(갈레트)에 취나물과 치즈를 채운, 한식과 프랑스가 만나는 브런치예요.',
     masterclass: {
       chefIntro: '갈레트는 프랑스 브르타뉴 지방에서 메밀가루로 만드는 짭짤한 크레프예요. 메밀의 구수함이 취나물의 향과 의외로 잘 어울려요.',
@@ -553,7 +553,7 @@ export const recipesChwinamulExpansion: Recipe[] = [
     id: 'chwinamul-chef-5', month: 4, title: '취나물 잣소스 닭가슴살 롤라드', subtitle: '취나물을 채워 말아 구운 정교한 닭요리',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '롤라드를 슬라이스해 단면이 보이게 접시에 올리고 잣소스를 가늘게 그어보세요. 취나물의 초록빛 단면이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chwinamul-chef-5/hero.webp',
     mainIngredient: '취나물', description: '닭가슴살에 취나물을 돌돌 말아 구운 뒤 슬라이스한, 단면의 초록빛이 인상적인 정교한 메인이에요.',
     masterclass: {
       chefIntro: '롤라드는 고기를 평평하게 펴서 속을 채워 마는 서양식 기법이에요. 취나물을 속에 채우면, 자르는 순간 드러나는 초록빛 단면이 시각적으로도 인상적이에요.',

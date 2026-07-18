@@ -14,7 +14,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-home-1', month: 7, title: '초당옥수수솥밥', subtitle: '여름 옥수수의 단맛이 밥알에 스며든 별미밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601593768799-76c6d3f92dea?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-home-1/hero.webp',
     mainIngredient: '초당옥수수',
     description: '생으로도 달콤한 초당옥수수를 쌀과 함께 지어, 옥수수 알의 아삭함과 단맛을 그대로 즐기는 솥밥이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-home-2', month: 7, title: '옥수수전', subtitle: '달콤한 초당옥수수를 넣은 바삭한 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-home-2/hero.webp',
     mainIngredient: '초당옥수수',
     description: '여름 별미 초당옥수수를 듬뿍 넣어 바삭하게 부친, 달콤한 맛이 일품인 간식 같은 전이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-home-3', month: 7, title: '옥수수버터구이', subtitle: '고소하고 달콤한 여름 간식',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601593768799-76c6d3f92dea?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-home-3/hero.webp',
     mainIngredient: '초당옥수수',
     description: '초당옥수수를 버터에 구운, 고소하고 달콤한 여름철 대표 간식이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-home-4', month: 7, title: '옥수수샐러드', subtitle: '달콤하고 아삭한 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-home-4/hero.webp',
     mainIngredient: '초당옥수수',
     description: '초당옥수수와 채소를 함께 상큼한 드레싱에 버무린, 달콤하고 아삭한 여름철 샐러드예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-home-5', month: 7, title: '옥수수수프', subtitle: '부드럽고 고소한 여름 수프',
     category: '수프', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-home-5/hero.webp',
     mainIngredient: '초당옥수수',
     description: '초당옥수수를 곱게 갈아 만든, 부드럽고 고소한 여름철 수프예요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-weekend-1', month: 7, title: '옥수수치즈구이', subtitle: '진하고 고소한 별미',
     category: '간식', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1601593768799-76c6d3f92dea?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-weekend-1/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수알에 치즈를 올려 구운, 진하고 고소한 별미예요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-weekend-2', month: 7, title: '옥수수튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-weekend-2/hero.webp',
     mainIngredient: '초당옥수수',
     description: '초당옥수수를 반죽에 버무려 바삭하게 튀긴, 겉은 바삭하고 속은 달콤한 튀김이에요.',
     masterclass: {
@@ -214,7 +214,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-weekend-3', month: 7, title: '옥수수리조또', subtitle: '고소하고 달콤한 리조또',
     category: '리조또', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-weekend-3/hero.webp',
     mainIngredient: '초당옥수수',
     description: '초당옥수수를 넣어 지은, 고소하고 달콤한 이탈리아식 여름 리조또예요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-weekend-4', month: 7, title: '옥수수빵', subtitle: '고소하고 촉촉한 홈베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-weekend-4/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수알을 넣은 반죽으로 구운, 고소하고 촉촉한 홈베이킹 빵이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
   {
     id: 'chodangcorn-weekend-5', month: 7, title: '옥수수전병말이', subtitle: '재미있는 손님상 요리',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-weekend-5/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수알을 넣은 얇은 전병에 채소를 말아 넣은, 재미있고 고소한 손님상 요리예요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-world-1', month: 7, title: '엘로테', subtitle: '멕시코식 옥수수구이',
     category: '간식', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '멕시코', note: '엘로테(elote)는 멕시코 길거리의 대표 간식으로, 구운 옥수수에 마요네즈, 치즈, 칠리가루를 바르는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1601593768799-76c6d3f92dea?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-world-1/hero.webp',
     mainIngredient: '초당옥수수',
     description: '구운 옥수수에 마요네즈와 치즈, 칠리가루를 바른, 멕시코의 대표적인 길거리 간식이에요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-world-2', month: 7, title: '콘차우더', subtitle: '미국식 진한 옥수수수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '미국', note: '콘차우더는 미국 뉴잉글랜드 지방의 대표적인 진한 크림수프예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-world-2/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수와 감자를 넣어 끓인, 진하고 든든한 미국식 크림수프예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-world-3', month: 7, title: '옥수수 판코티토', subtitle: '이탈리아식 옥수수케이크',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '이탈리아', note: '이탈리아 북부에서는 폴렌타(옥수수가루)로 만든 케이크가 전통 디저트로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-world-3/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수가루와 생옥수수알을 넣어 구운, 이탈리아식 소박한 옥수수 케이크예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-world-4', month: 7, title: '슈미첸(콘프리터)', subtitle: '남아공식 옥수수전',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '남아프리카공화국', note: '슈미첸(mielie bread)은 남아공에서 즐기는 옥수수전으로, 생옥수수알을 반죽에 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-world-4/hero.webp',
     mainIngredient: '초당옥수수',
     description: '생옥수수알을 듬뿍 넣어 부친, 남아프리카공화국의 소박한 옥수수전이에요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-world-5', month: 7, title: '콘그리츠', subtitle: '미국 남부식 옥수수죽',
     category: '죽', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '미국', note: '그리츠는 미국 남부의 대표적인 아침식사로, 굵게 빻은 옥수수를 걸쭉하게 끓여 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-world-5/hero.webp',
     mainIngredient: '초당옥수수',
     description: '생옥수수알을 더해 끓인, 미국 남부식 크리미한 옥수수죽이에요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-chef-1', month: 7, title: '콘밀크', subtitle: '생옥수수 냉압착 밀크',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리잔에 담아 옥수수 알갱이 몇 개를 띄우고, 식전 아뮤즈부슈로 소량 내세요.',
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-chef-1/hero.webp',
     mainIngredient: '초당옥수수',
     description: '생옥수수를 갈아 짜낸 우윳빛 즙으로, 열을 가하지 않아 신선한 단맛이 그대로 살아있는 모던 음료예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-chef-2', month: 7, title: '콘콥스톡', subtitle: '옥수수속대 육수, 노즈투테일',
     category: '수프', difficulty: '쉬움', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '맑은 육수를 얕은 그릇에 담아 옥수수알과 허브잎을 살짝 띄워 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-chef-2/hero.webp',
     mainIngredient: '초당옥수수',
     description: '보통 버려지는 옥수수속대를 오래 우려 만든, 은은한 단맛의 채소육수예요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-chef-3', month: 7, title: '팝콘인퓨즈드크림', subtitle: '모던 향미 추출 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '휘핑한 크림을 작은 유리컵에 담아 팝콘 몇 알을 곁들이고, 디저트 코스의 마무리로 소량 내세요.',
-    heroImage: 'https://images.unsplash.com/photo-1595587637277-1ed9b48c4e51?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-chef-3/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수를 튀겨 만든 팝콘을 뜨거운 크림에 우려낸, 모던 파인다이닝의 대표적인 향미 추출 기법이에요.',
     masterclass: {
@@ -543,7 +543,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-chef-4', month: 7, title: '타말레', subtitle: '멕시코식 옥수수껍질 찜',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '옥수수껍질에 싸인 상태 그대로 접시에 담아, 껍질을 벗기며 김이 오르는 모습을 그대로 보여줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-chef-4/hero.webp',
     mainIngredient: '초당옥수수',
     description: '옥수수가루 반죽에 속을 채워 옥수수껍질에 싸서 찐, 멕시코의 대표적인 명절 음식이에요.',
     masterclass: {
@@ -573,7 +573,7 @@ export const recipesChodangCornExpansion: Recipe[] = [
     id: 'chodangcorn-chef-5', month: 7, title: '콘허스크 훈연 생선', subtitle: '옥수수껍질 훈연 매개체 활용',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '훈연된 생선을 접시에 담고, 태운 옥수수껍질 한 조각을 곁들여 훈연 과정을 짐작하게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chodangcorn-chef-5/hero.webp',
     mainIngredient: '초당옥수수',
     description: '말린 옥수수껍질을 훈연 재료로 태워 생선에 은은한 옥수수향을 입힌, 재료를 낭비 없이 쓰는 창의적인 훈연 기법이에요.',
     masterclass: {

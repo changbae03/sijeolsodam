@@ -12,7 +12,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-home-1', month: 1, title: '대구탕', subtitle: '시원한 국물이 일품인 겨울 생선탕',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-home-1/hero.webp',
     mainIngredient: '대구',
     description: '무와 콩나물을 넣고 맑게 끓여, 대구살 본연의 담백함을 살린 겨울철 대표 탕이에요.',
     masterclass: {
@@ -40,7 +40,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-home-2', month: 1, title: '대구구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-home-2/hero.webp',
     mainIngredient: '대구',
     description: '대구에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -69,7 +69,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-home-3', month: 1, title: '대구조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-home-3/hero.webp',
     mainIngredient: '대구',
     description: '무를 깔고 대구를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-home-4', month: 1, title: '대구전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-home-4/hero.webp',
     mainIngredient: '대구',
     description: '대구살에 밀가루옷을 입혀 부친, 담백하고 부드러운 명절 대표 생선전이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-home-5', month: 1, title: '대구튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-home-5/hero.webp',
     mainIngredient: '대구',
     description: '대구살을 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 피시앤칩스 스타일 튀김이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-weekend-1', month: 1, title: '대구맑은찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-weekend-1/hero.webp',
     mainIngredient: '대구',
     description: '대구를 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-weekend-2', month: 1, title: '대구뽈찜', subtitle: '쫄깃한 별미 찜요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-weekend-2/hero.webp',
     mainIngredient: '대구',
     description: '대구 볼살(뽈살)을 매콤한 양념에 찐, 쫄깃하고 진한 맛의 별미 찜이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-weekend-3', month: 1, title: '대구매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-weekend-3/hero.webp',
     mainIngredient: '대구',
     description: '대구와 채소를 넣고 얼큰하게 끓인, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-weekend-4', month: 1, title: '대구뫼니에르', subtitle: '프랑스식 버터구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-weekend-4/hero.webp',
     mainIngredient: '대구',
     description: '대구살에 밀가루를 살짝 입혀 버터에 구운, 고소하고 담백한 프랑스식 생선요리예요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesCodExpansion: Recipe[] = [
   {
     id: 'cod-weekend-5', month: 1, title: '대구국밥', subtitle: '시원하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-weekend-5/hero.webp',
     mainIngredient: '대구',
     description: '대구 국물에 밥을 말아낸, 시원하고 든든한 겨울철 한 그릇 국밥이에요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-world-1', month: 1, title: '바칼라오 알 필필', subtitle: '스페인 바스크식 대구요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '스페인', note: '바칼라오 알 필필(bacalao al pil pil)은 스페인 바스크 지방의 대표 대구요리로, 올리브오일과 대구의 젤라틴을 유화시켜 만드는 진한 소스가 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-world-1/hero.webp',
     mainIngredient: '대구',
     description: '올리브오일과 마늘, 대구 자체의 젤라틴을 유화시켜 만든, 스페인 바스크 지방의 클래식 요리예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-world-2', month: 1, title: '바칼라우 아 브라스', subtitle: '포르투갈식 대구볶음',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '포르투갈', note: '바칼랴우(bacalhau)는 포르투갈어로 대구를 뜻하며, 포르투갈에는 대구요리가 365가지가 넘는다는 말이 있을 정도예요. 아 브라스는 그중 가장 사랑받는 요리 중 하나예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-world-2/hero.webp',
     mainIngredient: '대구',
     description: '대구살을 감자채, 계란과 함께 볶은, 포르투갈의 대표 국민 요리예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-world-3', month: 1, title: '피시앤칩스', subtitle: '영국의 대표 국민 음식',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '영국', note: '피시앤칩스는 영국의 대표적인 국민 음식으로, 대구나 해덕대구를 맥주 반죽에 튀겨 두꺼운 감자튀김과 함께 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-world-3/hero.webp',
     mainIngredient: '대구',
     description: '대구를 맥주 반죽에 바삭하게 튀겨 두꺼운 감자튀김과 함께 내는, 영국의 대표 국민 음식이에요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-world-4', month: 1, title: '타라노 미소즈케', subtitle: '일본식 대구 된장절임구이',
     category: '구이', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '타라(たら)는 일본어로 대구를 뜻해요. 일본에서는 대구를 미소(된장)에 재워 구워 먹는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-world-4/hero.webp',
     mainIngredient: '대구',
     description: '대구를 일본 된장에 재워 구운, 구수하고 깊은 맛의 일본식 생선구이예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-world-5', month: 1, title: '대구 브랑다드', subtitle: '프랑스식 대구 퓌레',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '프랑스', note: '브랑다드(brandade)는 프랑스 남부 지방의 전통 요리로, 대구살과 감자, 올리브오일을 곱게 갈아 만드는 부드러운 퓌레예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-world-5/hero.webp',
     mainIngredient: '대구',
     description: '대구살과 감자를 곱게 갈아 만든, 부드럽고 고소한 프랑스 남부식 퓌레예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-chef-1', month: 1, title: '대구 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 구운 대구를 놓고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-chef-1/hero.webp',
     mainIngredient: '대구',
     description: '구운 대구에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -490,7 +490,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-chef-2', month: 1, title: '대구 콩피', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-chef-2/hero.webp',
     mainIngredient: '대구',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-chef-3', month: 1, title: '대구 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 허브와 레몬 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-chef-3/hero.webp',
     mainIngredient: '대구',
     description: '대구와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -554,7 +554,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-chef-4', month: 1, title: '대구 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 대구 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-chef-4/hero.webp',
     mainIngredient: '대구',
     description: '신선한 대구를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -585,7 +585,7 @@ export const recipesCodExpansion: Recipe[] = [
     id: 'cod-chef-5', month: 1, title: '대구 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cod-chef-5/hero.webp',
     mainIngredient: '대구',
     description: '대구 뼈와 자투리로 우린 육수를 곱게 갈아 크림으로 마무리한, 벨벳처럼 진한 프랑스식 수프예요.',
     masterclass: {

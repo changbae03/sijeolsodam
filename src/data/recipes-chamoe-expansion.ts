@@ -14,7 +14,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-home-1', month: 5, title: '참외화채', subtitle: '향긋한 단맛이 가득한 초여름 디저트',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-home-1/hero.webp',
     mainIngredient: '참외',
     description: '달콤한 참외를 시원한 우유와 함께 즐기는, 더위를 식히기 좋은 초여름 디저트예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-home-2', month: 5, title: '참외샐러드', subtitle: '달콤한 참외와 채소가 어우러진 가벼운 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-home-2/hero.webp',
     mainIngredient: '참외',
     description: '달콤한 참외와 신선한 채소를 함께 즐기는, 산뜻한 초여름 샐러드예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-home-3', month: 5, title: '참외주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-home-3/hero.webp',
     mainIngredient: '참외',
     description: '참외를 직접 갈아 만든, 상큼하고 건강한 여름철 생과일주스예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-home-4', month: 5, title: '참외무침', subtitle: '새콤달콤한 별미 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-home-4/hero.webp',
     mainIngredient: '참외',
     description: '참외를 새콤달콤한 초고추장에 무친, 색다른 여름철 별미 반찬이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-home-5', month: 5, title: '참외요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-home-5/hero.webp',
     mainIngredient: '참외',
     description: '참외와 그릭요거트를 섞은, 상큼하고 건강한 여름철 간식이에요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-weekend-1', month: 5, title: '참외 카나페', subtitle: '화려한 손님상 전채',
     category: '전채', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-weekend-1/hero.webp',
     mainIngredient: '참외',
     description: '크래커 위에 참외와 크림치즈를 올린, 화려하고 산뜻한 손님상 전채예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-weekend-2', month: 5, title: '참외 스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-weekend-2/hero.webp',
     mainIngredient: '참외',
     description: '참외와 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -213,7 +213,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-weekend-3', month: 5, title: '참외 셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-weekend-3/hero.webp',
     mainIngredient: '참외',
     description: '참외를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -242,7 +242,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-weekend-4', month: 5, title: '참외빙수', subtitle: '상큼하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-weekend-4/hero.webp',
     mainIngredient: '참외',
     description: '얼음 위에 참외와 연유를 듬뿍 올린, 상큼하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesChamoeExpansion: Recipe[] = [
   {
     id: 'chamoe-weekend-5', month: 5, title: '참외타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-weekend-5/hero.webp',
     mainIngredient: '참외',
     description: '커스터드크림 위에 참외를 올려 만든, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-world-1', month: 5, title: '참외 프로슈토', subtitle: '이탈리아식 응용 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 멜론과 프로슈토를 곁들이는 것이 클래식한 전채예요. 참외로 응용해도 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-world-1/hero.webp',
     mainIngredient: '참외',
     description: '참외에 프로슈토를 곁들인, 이탈리아식 전채를 응용한 요리예요.',
     masterclass: {
@@ -331,7 +331,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-world-2', month: 5, title: '참외 아과프레스카', subtitle: '멕시코식 시원한 과일음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 4,
     cuisineContext: { country: '멕시코', note: '아과프레스카는 멕시코의 대표적인 과일음료로, 다양한 과일로 만들 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-world-2/hero.webp',
     mainIngredient: '참외',
     description: '참외와 라임, 물을 섞어 만든, 멕시코의 대표적인 시원한 과일음료예요.',
     masterclass: {
@@ -360,7 +360,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-world-3', month: 5, title: '참외 가스파초', subtitle: '스페인식 차가운 여름 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '가스파초는 스페인 안달루시아의 대표적인 차가운 수프예요. 참외를 더하면 훨씬 상큼한 여름 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-world-3/hero.webp',
     mainIngredient: '참외',
     description: '참외와 오이를 곱게 갈아 차갑게 낸, 스페인식 여름 냉수프예요.',
     masterclass: {
@@ -389,7 +389,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-world-4', month: 5, title: '참외 판나코타', subtitle: '이탈리아 크림 디저트에 참외향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 참외소스를 곁들이면 향긋한 봄철 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-world-4/hero.webp',
     mainIngredient: '참외',
     description: '부드러운 이탈리아식 크림 디저트에 참외소스를 곁들인, 향긋한 여름 디저트예요.',
     masterclass: {
@@ -420,7 +420,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-world-5', month: 5, title: '참외 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-world-5/hero.webp',
     mainIngredient: '참외',
     description: '참외와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -450,7 +450,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-chef-1', month: 5, title: '참외 클래리파이드 주스', subtitle: '젤라틴 정화 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 480, servings: 4,
     platingGuide: '투명한 유리잔에 담아 물처럼 맑은 색을 그대로 보여주고, 참외 향이 은은하게 느껴지도록 심플하게 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-chef-1/hero.webp',
     mainIngredient: '참외',
     description: '참외즙을 얼려 녹이며 걸러, 색소는 제거하고 맑은 향과 맛만 남긴 모던 가스트로노미 기법이에요.',
     masterclass: {
@@ -481,7 +481,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-chef-2', month: 5, title: '참외장아찌', subtitle: '한국 전통 발효 절임',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '유리병째 상에 올려 숙성된 모습을 보여주고, 사용할 때는 얇게 썰어 접시에 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-chef-2/hero.webp',
     mainIngredient: '참외',
     description: '단단한 참외를 간장물에 몇 주간 발효시킨, 한국 전통 장아찌 기법을 참외에 응용한 저장 밑반찬이에요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-chef-3', month: 5, title: '후르츠산도', subtitle: '일본식 정교한 단면 과일샌드위치',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '대각선으로 반을 잘라 단면의 과일 배치가 정확히 보이게 세워 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-chef-3/hero.webp',
     mainIngredient: '참외',
     description: '식빵에 휘핑크림과 참외를 넣어, 자르는 순간 단면이 예술작품처럼 드러나는 일본의 정교한 과일샌드위치예요.',
     masterclass: {
@@ -543,7 +543,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-chef-4', month: 5, title: '참외 미소즈케', subtitle: '일본식 미소절임 보존',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 30, servings: 6,
     platingGuide: '숙성된 참외를 얇게 썰어 작은 접시에 부채꼴로 담고, 참깨를 살짝 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-chef-4/hero.webp',
     mainIngredient: '참외',
     description: '참외를 미소된장에 파묻어 며칠간 절인, 일본의 전통적인 발효 보존 기법이에요.',
     masterclass: {
@@ -574,7 +574,7 @@ export const recipesChamoeExpansion: Recipe[] = [
     id: 'chamoe-chef-5', month: 5, title: '참외 콜드인퓨전 스피릿', subtitle: '모던 냉침출 기법',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 4320, servings: 8,
     platingGuide: '차갑게 얼린 잔에 따라 참외 조각 하나를 띄우고, 식전주로 소량씩 내세요.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/chamoe-chef-5/hero.webp',
     mainIngredient: '참외',
     description: '참외를 고도수 증류주에 저온으로 오래 침출시킨, 향이 그대로 살아있는 모던 인퓨전 스피릿이에요.',
     masterclass: {

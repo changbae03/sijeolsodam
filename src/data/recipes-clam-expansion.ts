@@ -14,7 +14,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-home-3', month: 2, title: '바지락 된장국', subtitle: '시원하고 구수한 기본 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-home-3/hero.webp',
     mainIngredient: '바지락',
     description: '바지락 육수에 된장을 풀어 끓인, 시원함과 구수함이 함께 느껴지는 기본 국이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-home-4', month: 2, title: '바지락 볶음', subtitle: '매콤짭짤한 밥반찬',
     category: '볶음', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-home-4/hero.webp',
     mainIngredient: '바지락',
     description: '바지락 살을 발라 매콤한 양념에 볶은, 밥 위에 올려 먹기 좋은 반찬이에요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-home-5', month: 2, title: '바지락 미역국', subtitle: '시원한 국물이 일품인 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-home-5/hero.webp',
     mainIngredient: '바지락',
     description: '불린 미역과 바지락을 함께 끓여낸, 소고기 없이도 시원한 감칠맛이 나는 미역국이에요.',
     masterclass: {
@@ -106,7 +106,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-weekend-1', month: 2, title: '바지락 봉골레 파스타', subtitle: '이탈리아식 조개 파스타의 한국식 정석',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-weekend-1/hero.webp',
     mainIngredient: '바지락',
     description: '바지락 육수와 올리브오일, 마늘로 만든 심플하지만 깊은 맛의 파스타예요.',
     masterclass: {
@@ -136,7 +136,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-weekend-2', month: 2, title: '바지락 순두부찌개', subtitle: '시원하고 부드러운 얼큰한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-weekend-2/hero.webp',
     mainIngredient: '바지락',
     description: '바지락 육수에 순두부를 넣고 얼큰하게 끓인, 부드럽고 시원한 찌개예요.',
     masterclass: {
@@ -166,7 +166,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-weekend-3', month: 2, title: '바지락 파전', subtitle: '바삭하고 향긋한 해물전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-weekend-3/hero.webp',
     mainIngredient: '바지락',
     description: '바지락 살을 넉넉히 넣고 쪽파와 함께 부친, 바삭하고 향긋한 해물파전이에요.',
     masterclass: {
@@ -196,7 +196,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-weekend-4', month: 2, title: '바지락 감자탕', subtitle: '얼큰하고 시원한 조개 감자탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-weekend-4/hero.webp',
     mainIngredient: '바지락',
     description: '바지락 육수에 감자와 채소를 넉넉히 넣고 얼큰하게 끓인, 든든한 조개탕이에요.',
     masterclass: {
@@ -226,7 +226,7 @@ export const recipesClamExpansion: Recipe[] = [
   {
     id: 'clam-weekend-5', month: 2, title: '바지락 젓갈', subtitle: '오래 두고 먹는 짭조름한 밑반찬',
     category: '젓갈', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-weekend-5/hero.webp',
     mainIngredient: '바지락',
     description: '바지락살을 매콤한 양념에 무쳐 숙성시킨, 밥반찬으로 좋은 젓갈이에요.',
     masterclass: {
@@ -259,7 +259,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-world-1', month: 2, title: '바지락 봉골레 로쏘', subtitle: '이탈리아식 토마토 조개 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '이탈리아', note: '봉골레 로쏘(vongole rosso)는 토마토를 넣은 붉은 봉골레 파스타예요. 화이트 봉골레(비앙코)보다 더 깊고 진한 맛이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-world-1/hero.webp',
     mainIngredient: '바지락',
     description: '토마토소스와 바지락을 함께 끓여 만든, 붉고 진한 이탈리아식 조개 파스타예요.',
     masterclass: {
@@ -290,7 +290,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-world-2', month: 2, title: '알메하스 아 라 마리네라', subtitle: '스페인식 조개 화이트와인찜',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '알메하스 아 라 마리네라(almejas a la marinera)는 스페인 갈리시아 지방의 대표 해산물 요리예요. 화이트와인과 파프리카가루가 만드는 붉은빛 국물이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-world-2/hero.webp',
     mainIngredient: '바지락',
     description: '화이트와인과 파프리카가루로 향을 낸 국물에 바지락을 찐, 스페인식 해산물 요리예요.',
     masterclass: {
@@ -321,7 +321,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-world-3', month: 2, title: '바지락 껌 랑', subtitle: '베트남식 레몬그라스 조개찜',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남 해안 지방에서는 조개를 레몬그라스와 고추로 향을 내어 찌는 요리가 인기예요. 새콤달콤한 느억맘 디핑소스와 함께 즐기는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-world-3/hero.webp',
     mainIngredient: '바지락',
     description: '레몬그라스와 고추로 향을 낸 국물에 바지락을 찐, 상큼하고 향긋한 베트남식 요리예요.',
     masterclass: {
@@ -352,7 +352,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-world-4', month: 2, title: '아메이조아스 아 부라오', subtitle: '포르투갈식 조개와 초리조',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '포르투갈', note: '아메이조아스 아 부라오(ameijoas à Bulhão Pato)는 포르투갈의 대표 조개 요리예요. 고수와 마늘, 화이트와인의 조합이 특징이며, 포르투갈 알렌테주 지방에서는 초리조를 더하기도 해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-world-4/hero.webp',
     mainIngredient: '바지락',
     description: '고수와 마늘, 초리조를 더해 찐 바지락으로, 향과 감칠맛이 풍부한 포르투갈식 요리예요.',
     masterclass: {
@@ -384,7 +384,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-world-5', month: 2, title: '아사리 미소시루', subtitle: '일본식 조개 된장국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '아사리(浅蜊)는 일본어로 바지락을 뜻해요. 아사리 미소시루는 봄철 일본 가정식 밥상에 자주 오르는 국으로, 다시육수 없이도 바지락 자체의 감칠맛으로 국물을 낸다는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-world-5/hero.webp',
     mainIngredient: '바지락',
     description: '바지락만으로 우려낸 담백한 육수에 미소된장을 푼, 일본식 조개 된장국이에요.',
     masterclass: {
@@ -417,7 +417,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-chef-1', month: 2, title: '바지락 뵈르블랑 크로스티니', subtitle: '프랑스식 버터소스를 얹은 한입 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '나무 도마에 크로스티니를 나란히 배치하고, 바지락살을 하나씩 올린 뒤 뵈르블랑소스를 붓으로 그리듯 두르고 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-chef-1/hero.webp',
     mainIngredient: '바지락',
     description: '바삭하게 구운 바게트 위에 바지락살과 프랑스식 버터소스를 올린, 세련된 한입 전채예요.',
     masterclass: {
@@ -449,7 +449,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-chef-2', month: 2, title: '바지락 챠우더 그라탕', subtitle: '뉴잉글랜드식 크림수프를 그라탕으로',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '작은 그라탕 그릇에 챠우더를 채우고 오븐에서 그대로 구워, 표면이 진한 갈색으로 그을린 채 그릇째 상에 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-chef-2/hero.webp',
     mainIngredient: '바지락',
     description: '미국 뉴잉글랜드식 크리미한 조개수프를 그라탕 그릇에 담아 치즈를 올려 구운, 진한 풍미의 요리예요.',
     masterclass: {
@@ -481,7 +481,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-chef-3', month: 2, title: '바지락 XO소스 볶음', subtitle: '홍콩식 고급 해물소스 볶음',
     category: '볶음', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '검은 접시에 바지락을 소복이 담고, XO소스 볶은 대파를 위에 올려 윤기가 도는 국물을 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-chef-3/hero.webp',
     mainIngredient: '바지락',
     description: '홍콩의 고급 해물소스인 XO소스로 볶아낸, 감칠맛이 진한 바지락 요리예요.',
     masterclass: {
@@ -511,7 +511,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-chef-4', month: 2, title: '바지락 사프란 브로스', subtitle: '황금빛 향신료 국물의 우아한 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '얕은 수프 접시에 브로스를 붓고, 중앙에 바지락을 껍질째 소복이 담은 뒤 사프란 실 몇 가닥과 차이브를 올려 황금빛이 돋보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-chef-4/hero.webp',
     mainIngredient: '바지락',
     description: '사프란으로 향과 색을 낸 맑은 국물에 바지락을 끓인, 고급스러운 황금빛 수프예요.',
     masterclass: {
@@ -543,7 +543,7 @@ export const recipesClamExpansion: Recipe[] = [
     id: 'clam-chef-5', month: 2, title: '바지락 세비체', subtitle: '남미식 상큼한 조개 세비체',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 유리볼에 세비체를 담고, 가장자리에 옥수수칩을 꽂아 함께 서빙하며 고수잎을 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/clam-chef-5/hero.webp',
     mainIngredient: '바지락',
     description: '살짝 데친 바지락을 라임즙과 채소에 재운, 상큼하고 신선한 남미식 전채예요.',
     masterclass: {

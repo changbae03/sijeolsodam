@@ -14,7 +14,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-home-1', month: 2, title: '천혜향청', subtitle: '향이 진한 만감류로 만드는 홈메이드 과일청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-home-1/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향을 설탕에 재워 만든 과일청으로, 차로 마시거나 탄산수에 타 마시기 좋아요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-home-2', month: 2, title: '천혜향에이드', subtitle: '상큼하고 시원한 겨울 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-home-2/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향청을 탄산수에 타 만든, 상큼하고 시원한 겨울철 음료예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-home-3', month: 2, title: '천혜향샐러드', subtitle: '향긋하고 달콤한 겨울 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-home-3/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향과 채소를 함께 곁들인, 향긋하고 산뜻한 겨울철 샐러드예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-home-4', month: 2, title: '천혜향요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-home-4/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향과 그릭요거트를 섞은, 상큼하고 건강한 간식이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-home-5', month: 2, title: '천혜향주스', subtitle: '향긋하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-home-5/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향을 직접 갈아 만든, 향긋하고 건강한 생과일주스예요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-weekend-1', month: 2, title: '천혜향타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-weekend-1/hero.webp',
     mainIngredient: '천혜향',
     description: '커스터드크림 위에 천혜향을 올려 구운, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-weekend-2', month: 2, title: '천혜향젤리', subtitle: '상큼하고 탱글한 겨울 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-weekend-2/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향즙을 곱게 갈아 굳힌, 상큼하고 탱글한 겨울철 디저트예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-weekend-3', month: 2, title: '천혜향글레이즈 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-weekend-3/hero.webp',
     mainIngredient: '천혜향',
     description: '구운 돼지고기 폭찹에 천혜향글레이즈를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-weekend-4', month: 2, title: '천혜향스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-weekend-4/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향과 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
   {
     id: 'cheonhyehyang-weekend-5', month: 2, title: '천혜향빙수', subtitle: '향긋하고 시원한 겨울 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-weekend-5/hero.webp',
     mainIngredient: '천혜향',
     description: '얼음 위에 천혜향과 연유를 듬뿍 올린, 향긋하고 시원한 겨울철 디저트예요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-world-1', month: 2, title: '천혜향 상그리아', subtitle: '스페인식 겨울 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 겨울에는 감귤류를 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-world-1/hero.webp',
     mainIngredient: '천혜향',
     description: '레드와인에 천혜향과 겨울 과일을 넣어 만든, 스페인식 겨울 상그리아예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-world-2', month: 2, title: '천혜향 판나코타', subtitle: '이탈리아 크림 디저트에 시트러스향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 시트러스향을 더하는 것도 클래식한 변형이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-world-2/hero.webp',
     mainIngredient: '천혜향',
     description: '부드러운 이탈리아식 크림 디저트에 천혜향 소스를 곁들인, 향긋한 겨울 디저트예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-world-3', month: 2, title: '천혜향 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 시트러스향 트러플은 클래식한 조합으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-world-3/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향 제스트를 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -398,7 +398,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-world-4', month: 2, title: '천혜향 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-world-4/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향과 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-world-5', month: 2, title: '천혜향 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-world-5/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향을 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -460,7 +460,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-chef-1', month: 2, title: '프리저브드 천혜향', subtitle: '모로코식 소금절임 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '유리병째 상에 올려 소금물에 잠긴 모습을 보여주고, 사용할 때는 껍질만 얇게 저며 요리에 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-chef-1/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향을 소금과 즙에 몇 주간 절인, 모로코 요리의 필수 재료인 프리저브드 레몬 기법을 응용한 저장 식품이에요.',
     masterclass: {
@@ -491,7 +491,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-chef-2', month: 2, title: '천혜향 마멀레이드', subtitle: '영국식 통껍질 절임',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 90, servings: 8,
     platingGuide: '완성된 마멀레이드를 유리병에 담아 라벨을 붙이고, 토스트 옆에 곁들여 영국식 아침상을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-chef-2/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향의 껍질과 속껍질(펙틴)을 통째로 넣어 끓인, 쌉싸름함이 살아있는 영국의 대표적인 아침식사용 잼이에요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-chef-3', month: 2, title: '천혜향첼로', subtitle: '이탈리아식 껍질 알코올 침출',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '차갑게 얼린 작은 유리잔에 천혜향첼로를 담아 식후주로 내고, 껍질 한 조각을 잔 가장자리에 걸쳐 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-chef-3/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향 껍질만 고도수 알코올에 침출시켜 만든, 이탈리아 리몬첼로를 응용한 식후주예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-chef-4', month: 2, title: '카나르 아 라 천혜향', subtitle: '프랑스 클래식 오리요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 3,
     platingGuide: '슬라이스한 오리가슴살을 접시에 부채꼴로 담고, 천혜향소스를 스푼으로 지그재그로 두른 뒤 천혜향 세그먼트를 몇 조각 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-chef-4/hero.webp',
     mainIngredient: '천혜향',
     description: '오리가슴살을 구워 천혜향 소스를 곁들인, 프랑스의 상징적인 클래식 요리 카나르 아 로랑주를 응용한 메인요리예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesCheonhyehyangExpansion: Recipe[] = [
     id: 'cheonhyehyang-chef-5', month: 2, title: '천혜향 머랭 타르트', subtitle: '토치 머랭 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '완성된 타르트를 통째로 접시에 올려 토치로 그을린 머랭의 무늬가 보이게 하고, 조각내어 서빙합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cheonhyehyang-chef-5/hero.webp',
     mainIngredient: '천혜향',
     description: '천혜향 커드 위에 이탈리안 머랭을 올려 토치로 그을린, 레몬머랭파이를 응용한 클래식 디저트예요.',
     masterclass: {
