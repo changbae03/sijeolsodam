@@ -25,6 +25,9 @@ if (!apiKey) {
 const ai = new GoogleGenAI({ apiKey });
 const filePath = join(__dirname, '..', 'src', 'data', 'months.ts');
 
+// --refresh-nutrition: 이미 상세가 채워진 식재료도 nutrition 필드만 새 기준으로 재작성
+const refreshNutrition = process.argv.slice(2).includes('--refresh-nutrition');
+
 interface IngredientDetail {
   nutrition: string;
   howToChoose: string;
@@ -49,6 +52,11 @@ function extractNameAndDescription(line: string): { name: string; description: s
 
 function escapeForSingleQuote(text: string): string {
   return text.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+}
+
+/** 기존 라인에서 nutrition 값만 새 값으로 교체 (다른 필드는 보존) */
+function replaceNutritionOnly(line: string, nutrition: string): string {
+  return line.replace(/nutrition:\s*'(?:[^'\\]|\\.)*'/, `nutrition: '${escapeForSingleQuote(nutrition)}'`);
 }
 
 function insertDetailsIntoLine(line: string, detail: IngredientDetail): string {
@@ -76,13 +84,16 @@ async function generateDetail(
 이 식재료에 대해 아래 JSON 형식으로만 답해주세요. 다른 설명이나 코드블록(\`\`\`) 없이 순수 JSON 객체만 출력하세요.
 
 {
-  "nutrition": "주요 영양 성분이나 효능을 1문장으로 (15자 내외)",
-  "howToChoose": "신선한 것을 고르는 방법을 1문장으로 (20자 내외)",
-  "tip": "손질이나 보관할 때 알아두면 좋은 팁을 1문장으로 (20자 내외)",
-  "goesWellWith": "잘 어울리는 조리법이나 양념을 1문장으로 (15자 내외)"
+  "nutrition": "핵심 영양 성분의 '이름'을 2~3개 짚고, 각각이 몸의 어디에·왜 좋은지 연결한 2문장 (60~90자). 예시 톤: '칼륨이 풍부해 여름철 땀으로 빠져나간 전해질을 채우고 붓기를 빼는 데 좋아요. 식이섬유도 많아 더위에 지친 장을 편하게 해줘요.' — 이런 식으로 성분명 -> 효능을 구체적으로.",
+  "howToChoose": "신선한 것을 고르는 방법을 1~2문장으로 (30자 내외, 눈으로 확인 가능한 구체적 기준)",
+  "tip": "손질이나 보관할 때 알아두면 좋은 팁을 1~2문장으로 (30자 내외)",
+  "goesWellWith": "잘 어울리는 조리법이나 양념을 1문장으로 (20자 내외)"
 }
 
-확실하지 않은 구체적인 수치(예: 정확한 비타민 함량 mg)는 만들어내지 말고, "풍부해요", "도움이 돼요" 같은 일반적인 표현을 사용하세요.`;
+규칙:
+- 정확히 알지 못하는 수치(mg, %, 몇 배 등)는 절대 만들어내지 마세요. 성분 '이름'과 '효능 방향'까지만 구체적으로.
+- 이 식재료가 제철인 계절 맥락(더위/추위/환절기)과 효능을 자연스럽게 연결하면 좋습니다.
+- 의학적 치료 효과 단정("~을 치료한다", "~병을 예방한다")은 금지. "~에 도움이 돼요" 수준까지만.`;
 
   const response = await ai.models.generateContent({
     model: 'gemini-2.5-flash',
@@ -130,17 +141,25 @@ async function main() {
     }
 
     if (!isIngredientLine(line)) continue;
-    if (lineHasDetails(line)) continue; // 이미 처리됨
+
+    const alreadyDetailed = lineHasDetails(line);
+    // 기본 모드: 미처리 항목만 채움. --refresh-nutrition: 처리된 항목의 영양만 재작성.
+    if (alreadyDetailed && !refreshNutrition) continue;
+    if (!alreadyDetailed && refreshNutrition) continue; // refresh 모드에선 미처리 항목은 기본 모드 몫
 
     const parsed = extractNameAndDescription(line);
     if (!parsed) continue;
 
-    console.log(`[${currentMonth}월] ${parsed.name} 상세 정보 생성 중...`);
+    console.log(
+      `[${currentMonth}월] ${parsed.name} ${refreshNutrition ? '영양 정보 재작성' : '상세 정보 생성'} 중...`
+    );
 
     try {
       const detail = await generateDetail(parsed.name, parsed.description, currentMonth);
       if (detail) {
-        result[i] = insertDetailsIntoLine(result[i], detail);
+        result[i] = refreshNutrition
+          ? replaceNutritionOnly(result[i], detail.nutrition)
+          : insertDetailsIntoLine(result[i], detail);
         writeFileSync(filePath, result.join('\n'), 'utf-8');
         console.log('  완료');
       }

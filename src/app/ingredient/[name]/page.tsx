@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { findIngredientByName, formatSeasonMonths } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
-import { fetchPriceInsight, PriceInsight } from '@/lib/price-insight';
+import PriceTrendSection from '@/components/PriceTrendSection';
 import { Card } from '@/components/ui';
 import RecipeCard from '@/components/RecipeCard';
 import { SeasonalIngredient, Recipe, RecipeLevel } from '@/data/types';
@@ -49,19 +49,6 @@ export default function IngredientDetailPage() {
 
   const found = findIngredientByName(name);
 
-  const [priceInsight, setPriceInsight] = useState<PriceInsight | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- 식재료가 바뀔 때 이전 가격 정보를 정리
-    setPriceInsight(null);
-    fetchPriceInsight(name).then((result) => {
-      if (!cancelled) setPriceInsight(result);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [name]);
 
   if (!found) {
     return (
@@ -227,48 +214,9 @@ export default function IngredientDetailPage() {
         )}
 
         {/* ============================================
-            5-2. 가격 정보 — 컴팩트, 차트 없음
+            5-2. 가격 — 평결 + 비교 + 12개월 추이 + 도매시장
            ============================================ */}
-        {priceInsight && (
-          <section className="mb-8">
-            <SectionHeader title="가격 정보" />
-            <Card padding="md" className="mt-3">
-              <div className="flex items-baseline justify-between">
-                <span className="text-[13px] text-ink-soft">현재 평균가</span>
-                <span className="text-[17px] text-ink font-semibold tabular-nums">
-                  {priceInsight.currentPrice.toLocaleString()}원/kg
-                </span>
-              </div>
-              {priceInsight.vsLastWeekPct !== null && (
-                <div className="flex items-baseline justify-between mt-2">
-                  <span className="text-[13px] text-ink-soft">지난주 대비</span>
-                  <span
-                    className={`text-[14px] font-medium ${
-                      priceInsight.vsLastWeekPct < 0 ? 'text-sage' : 'text-terracotta'
-                    }`}
-                  >
-                    {priceInsight.vsLastWeekPct > 0 ? '+' : ''}
-                    {priceInsight.vsLastWeekPct}%
-                  </span>
-                </div>
-              )}
-              {priceInsight.vsLastMonthPct !== null && (
-                <div className="flex items-baseline justify-between mt-2">
-                  <span className="text-[13px] text-ink-soft">지난달 대비</span>
-                  <span
-                    className={`text-[14px] font-medium ${
-                      priceInsight.vsLastMonthPct < 0 ? 'text-sage' : 'text-terracotta'
-                    }`}
-                  >
-                    {priceInsight.vsLastMonthPct > 0 ? '+' : ''}
-                    {priceInsight.vsLastMonthPct}%
-                  </span>
-                </div>
-              )}
-              <p className="text-[14px] text-ink font-medium mt-3">{priceInsight.recommendation}</p>
-            </Card>
-          </section>
-        )}
+        <PriceTrendSection name={ingredient.name} />
 
         {/* ============================================
             6. 영양 요약
