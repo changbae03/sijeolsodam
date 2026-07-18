@@ -10,7 +10,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-home-1', month: 2, title: '대파무침', subtitle: '향긋하고 매콤한 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-home-1/hero.webp',
     mainIngredient: '대파', description: '대파를 고춧가루 양념에 매콤하게 무친, 향긋하고 칼칼한 기본 밑반찬이에요.',
     masterclass: {
       chefIntro: '대파는 익히지 않고 양념만으로 완성하는 게 가장 향긋해요. 매운 향이 날아가기 전에 빠르게 무치는 게 핵심이에요.',
@@ -45,7 +45,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-home-2', month: 2, title: '대파전', subtitle: '향긋하게 부쳐낸 기본 전',
     category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-home-2/hero.webp',
     mainIngredient: '대파', description: '대파를 가득 채워 부친, 향긋하고 고소한 가장 기본적인 전이에요.',
     masterclass: {
       chefIntro: '대파를 통째로 가지런히 펼쳐 부치면 한 장의 전 전체에 향이 골고루 퍼져요.',
@@ -78,7 +78,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-home-3', month: 2, title: '대파기름밥', subtitle: '대파 향을 가득 머금은 기본 볶음밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-home-3/hero.webp',
     mainIngredient: '대파', description: '대파를 기름에 천천히 볶아 향을 내고 그 기름으로 밥을 볶은, 단순하지만 깊은 맛의 볶음밥이에요.',
     masterclass: {
       chefIntro: '대파 향을 기름에 우려내는 게 이 요리의 전부예요. 재료는 단순하지만 향의 깊이는 의외로 깊어요.',
@@ -117,7 +117,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-home-4', month: 2, title: '대파달걀국', subtitle: '시원하고 든든한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-home-4/hero.webp',
     mainIngredient: '대파', description: '대파와 달걀만으로 끓인, 재료는 단순하지만 든든한 기본 국이에요.',
     masterclass: {
       chefIntro: '대파를 충분히 끓여 단맛을 끌어낸 뒤 달걀을 풀어 넣으면, 단순한 재료로도 깊은 맛이 나요.',
@@ -156,7 +156,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-weekend-2', month: 2, title: '대파 만두', subtitle: '향긋한 대파를 듬뿍 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-weekend-2/hero.webp',
     mainIngredient: '대파', description: '대파를 듬뿍 넣어 빚은 만두로, 한입 베어 물면 향긋함이 가득 퍼져요.',
     masterclass: {
       chefIntro: '대파만두는 향이 생명이에요. 대파를 미리 다져두면 향이 빠지니, 다른 재료를 다 준비한 뒤 마지막에 다지는 게 비결이에요.',
@@ -186,7 +186,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-weekend-3', month: 2, title: '대파 갈비찜', subtitle: '마지막 향을 더하는 갈비찜',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 120, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-weekend-3/hero.webp',
     mainIngredient: '대파', description: '오래 졸인 갈비찜에 대파를 듬뿍 더해, 묵직한 양념에 향긋함을 살린 메인 요리예요.',
     masterclass: {
       chefIntro: '갈비찜처럼 묵직한 양념 요리에 대파를 듬뿍 더하면, 양념의 깊은 맛에 산뜻한 향이 더해져요.',
@@ -223,7 +223,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-weekend-4', month: 2, title: '대파 새우 볶음밥', subtitle: '향긋한 대파기름으로 볶은 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-weekend-4/hero.webp',
     mainIngredient: '대파', description: '대파기름에 새우를 더해 볶은, 기본 대파기름밥보다 한 단계 더 든든한 볶음밥이에요.',
     masterclass: {
       chefIntro: '대파기름에 새우의 단맛이 더해지면 풍미가 한층 깊어져요. 손이 좀 더 가지만 그만큼 맛있어요.',
@@ -262,7 +262,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-weekend-5', month: 2, title: '대파 라멘', subtitle: '향긋한 대파기름이 더해진 일본식 라멘',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-weekend-5/hero.webp',
     mainIngredient: '대파', description: '대파기름을 듬뿍 올린 일본식 라멘으로, 평범한 국물에 깊은 향을 더한 메뉴예요.',
     masterclass: {
       chefIntro: '라멘 위에 대파기름을 올리는 건 일본 라멘집의 흔한 마무리예요. 기름 한 숟갈이 향을 확 살려줘요.',
@@ -297,7 +297,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
   {
     id: 'greenonion-weekend-6', month: 2, title: '대파 해물파전', subtitle: '해물을 더한 든든한 파전',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-weekend-6/hero.webp',
     mainIngredient: '대파', description: '대파에 오징어와 새우를 더해 부친, 기본 대파전보다 한층 든든한 해물파전이에요.',
     masterclass: {
       chefIntro: '해물이 더해지면 대파전이 한 끼 식사로도 충분할 만큼 든든해져요. 해물은 미리 데쳐서 준비하는 게 비결이에요.',
@@ -338,7 +338,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
       country: '중국',
       note: '총요우빙(葱油饼)은 중국 전역에서 즐기는 대파빵으로, 반죽을 켜켜이 접어 굽는 게 특징이에요. 한 입 베어 물면 바삭한 켜 사이로 대파 향이 퍼지는, 길거리 음식의 대표 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-world-1/hero.webp',
     mainIngredient: '대파', description: '반죽을 켜켜이 접어 대파와 함께 구운, 바삭한 켜가 살아있는 중국식 대파빵이에요.',
     masterclass: {
       chefIntro: '중국 길거리 음식의 대표 메뉴예요. 반죽을 접고 마는 기법이 바삭한 켜를 만들어내요.',
@@ -380,7 +380,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
       country: '일본',
       note: '네기마키는 일본 야키니쿠 식당에서 즐기는 메뉴로, 얇게 썬 소고기에 대파를 말아 달짝지근한 양념을 발라 구워요. 대파의 아삭함과 짠단 양념이 균형을 이루는 인기 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-world-2/hero.webp',
     mainIngredient: '대파', description: '얇게 썬 소고기에 대파를 말아 달짝지근하게 구운, 일본 야키니쿠 식당의 인기 메뉴예요.',
     masterclass: {
       chefIntro: '일본 식당에서 흔히 만나는 메뉴예요. 고기를 얇게 써는 게 가장 중요한 단계예요.',
@@ -418,7 +418,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
       country: '프랑스',
       note: '프랑스 요리에서는 다진 허브나 파를 식초, 오일과 섞어 만든 비네그레트를 구운 고기에 곁들이는 경우가 많아요. 대파를 활용하면 향긋하고 산뜻한 소스가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-world-3/hero.webp',
     mainIngredient: '대파', description: '대파를 다져 만든 비네그레트 소스를 구운 스테이크에 곁들인, 프랑스식의 향긋한 메인 요리예요.',
     masterclass: {
       chefIntro: '프랑스 비스트로에서 흔히 만나는 조합이에요. 대파의 산뜻함이 고기의 진한 맛을 정리해줘요.',
@@ -456,7 +456,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
       country: '중국',
       note: '중국 가정식에서는 대파를 듬뿍 넣어 닭고기나 돼지고기를 볶는 요리가 흔해요. 대파가 익으면서 단맛이 배어나와 매콤한 양념과 균형을 이뤄요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-world-4/hero.webp',
     mainIngredient: '대파', description: '대파를 듬뿍 넣고 매콤하게 볶은 중국식 닭고기 요리로, 대파의 단맛이 매운맛을 부드럽게 감싸줘요.',
     masterclass: {
       chefIntro: '중국 가정에서 자주 만드는 빠른 볶음 요리예요. 대파를 듬뿍 쓰는 게 이 요리의 특징이에요.',
@@ -495,7 +495,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
       country: '미국',
       note: '미국 남부에서는 비스킷에 그린어니언(대파)과 치즈를 더해 굽는 변형이 흔해요. 브런치나 바베큐 사이드로 곁들이는 친근한 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-world-5/hero.webp',
     mainIngredient: '대파', description: '대파와 치즈를 더해 구운, 미국 남부식의 향긋하고 짭짤한 비스킷이에요.',
     masterclass: {
       chefIntro: '미국 남부 가정에서 브런치에 즐겨 만드는 비스킷이에요. 대파가 더해지면 향긋함이 한층 살아나요.',
@@ -536,7 +536,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
     id: 'greenonion-chef-1', month: 2, title: '대파오일과 관자', subtitle: '향긋한 오일과 시어드 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '접시에 대파오일을 가늘게 한 줄 그리고 시어드한 관자를 올려보세요. 대파 흰 부분을 가늘게 채 썰어 튀겨 올리면 식감이 더해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-chef-1/hero.webp',
     mainIngredient: '대파', description: '대파를 갈아 만든 향긋한 오일에 시어드한 관자를 올린, 정교한 프렌치 비스트로풍 전채예요.',
     masterclass: {
       chefIntro: '대파를 오일로 만드는 발상이 신선해요. 색과 향을 동시에 살리는 모던 키친의 기법이에요.',
@@ -576,7 +576,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
     id: 'greenonion-chef-2', month: 2, title: '대파 퓌레와 오리가슴살', subtitle: '향긋한 대파 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 오리 기름 한 방울을 점으로 더하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-chef-2/hero.webp',
     mainIngredient: '대파', description: '향긋한 대파 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 프렌치 비스트로풍 메인이에요.',
     masterclass: {
       chefIntro: '대파의 향긋함이 오리의 진한 풍미를 한층 살려줘요. 익숙한 재료의 새로운 가능성을 보여주는 메뉴예요.',
@@ -611,7 +611,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
     id: 'greenonion-chef-3', month: 2, title: '대파 콩소메', subtitle: '맑게 거른 대파의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 대파 새싹이나 얇게 썬 대파 한 조각을 띄워보세요. 옅은 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-chef-3/hero.webp',
     mainIngredient: '대파', description: '대파를 갈아 맑게 걸러낸, 향긋함이 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 대파에 적용한 요리예요. 향이 진한 만큼 적은 양으로도 풍미가 충분해요.',
@@ -646,7 +646,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
     id: 'greenonion-chef-4', month: 2, title: '대파 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 대파 새싹을 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-chef-4/hero.webp',
     mainIngredient: '대파', description: '가볍게 휘핑한 대파 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 전채예요.',
     masterclass: {
       chefIntro: '대파를 무스로 만들면 향은 그대로 살리면서 훨씬 가벼운 질감을 경험할 수 있어요.',
@@ -680,7 +680,7 @@ export const recipesGreenOnionExpansion: Recipe[] = [
     id: 'greenonion-chef-5', month: 2, title: '대파 크리스프와 참치 타르타르', subtitle: '바삭함과 신선함의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 참치 타르타르를 정확히 중앙에 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenonion-chef-5/hero.webp',
     mainIngredient: '대파', description: '바삭하게 튀긴 대파 크리스프 위에 참치 타르타르를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '대파를 튀기면 향은 그대로 남으면서 전혀 다른 바삭한 질감으로 변해요.',

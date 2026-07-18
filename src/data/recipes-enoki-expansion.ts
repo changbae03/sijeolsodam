@@ -128,7 +128,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-home-5', month: 1, title: '팽이버섯달걀찜', subtitle: '부드럽고 고소한 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-home-5/hero.webp',
     mainIngredient: '팽이버섯',
     description: '달걀찜에 팽이버섯을 더해 식감을 살린, 부드러운 별미 반찬이에요.',
     masterclass: {

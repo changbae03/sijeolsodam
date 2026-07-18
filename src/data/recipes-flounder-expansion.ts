@@ -13,7 +13,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-home-1', month: 3, title: '도다리쑥국', subtitle: '봄을 알리는 대표 생선국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-home-1/hero.webp',
     mainIngredient: '도다리',
     description: '쑥의 향긋함과 도다리의 담백함이 어우러진, 봄철 대표 생선국이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-home-2', month: 3, title: '도다리회', subtitle: '담백하고 쫄깃한 봄 대표 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-home-2/hero.webp',
     mainIngredient: '도다리',
     description: '봄철 도다리는 산란 후 살이 차오르며 쫄깃해져서, 얇게 썰어 회로 즐기기 좋아요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-home-3', month: 3, title: '도다리조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-home-3/hero.webp',
     mainIngredient: '도다리',
     description: '무를 깔고 도다리를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-home-4', month: 3, title: '도다리구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-home-4/hero.webp',
     mainIngredient: '도다리',
     description: '도다리에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-home-5', month: 3, title: '도다리튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-home-5/hero.webp',
     mainIngredient: '도다리',
     description: '도다리살을 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-weekend-1', month: 3, title: '도다리무침회', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-weekend-1/hero.webp',
     mainIngredient: '도다리',
     description: '도다리회를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-weekend-2', month: 3, title: '도다리쑥찜', subtitle: '향긋하고 부드러운 봄 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-weekend-2/hero.webp',
     mainIngredient: '도다리',
     description: '도다리를 쑥과 함께 쪄낸, 향긋하고 부드러운 봄철 별미 찜이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-weekend-3', month: 3, title: '도다리회덮밥', subtitle: '고추장 양념의 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-weekend-3/hero.webp',
     mainIngredient: '도다리',
     description: '도다리회와 채소를 밥 위에 올려 고추장에 비벼 먹는, 든든한 한 그릇 요리예요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-weekend-4', month: 3, title: '도다리뫼니에르', subtitle: '프랑스식 버터구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-weekend-4/hero.webp',
     mainIngredient: '도다리',
     description: '도다리살에 밀가루를 살짝 입혀 버터에 구운, 고소하고 담백한 프랑스식 생선요리예요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesFlounderExpansion: Recipe[] = [
   {
     id: 'flounder-weekend-5', month: 3, title: '도다리전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-weekend-5/hero.webp',
     mainIngredient: '도다리',
     description: '도다리살에 밀가루옷을 입혀 부친, 담백하고 부드러운 전이에요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-world-1', month: 3, title: '솔 뫼니에르', subtitle: '프랑스식 서대 조리법을 도다리로',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '솔 뫼니에르(sole meunière)는 프랑스의 클래식 생선요리로, 원래 서대(솔)로 만들지만 도다리 같은 납작한 흰살생선으로도 훌륭하게 응용돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-world-1/hero.webp',
     mainIngredient: '도다리',
     description: '도다리에 밀가루를 입혀 버터에 구운, 프랑스 클래식 생선요리의 도다리 버전이에요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-world-2', month: 3, title: '가레이노 니츠케', subtitle: '일본식 도다리 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '가레이(カレイ)는 일본어로 도다리를 뜻해요. 일본에서는 도다리를 간장과 미림에 조리는 니츠케가 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-world-2/hero.webp',
     mainIngredient: '도다리',
     description: '도다리를 간장과 미림에 은근히 조린, 담백하고 깊은 맛의 일본식 조림이에요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-world-3', month: 3, title: '도다리 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-world-3/hero.webp',
     mainIngredient: '도다리',
     description: '토마토와 화이트와인에 도다리를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-world-4', month: 3, title: '도다리 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-world-4/hero.webp',
     mainIngredient: '도다리',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 도다리예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-world-5', month: 3, title: '그리스식 도다리구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-world-5/hero.webp',
     mainIngredient: '도다리',
     description: '도다리를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-chef-1', month: 3, title: '도다리 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 구운 도다리를 놓고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-chef-1/hero.webp',
     mainIngredient: '도다리',
     description: '구운 도다리에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-chef-2', month: 3, title: '도다리 콩피', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-chef-2/hero.webp',
     mainIngredient: '도다리',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -521,7 +521,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-chef-3', month: 3, title: '도다리 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 허브와 레몬 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-chef-3/hero.webp',
     mainIngredient: '도다리',
     description: '도다리와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-chef-4', month: 3, title: '도다리 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 도다리 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-chef-4/hero.webp',
     mainIngredient: '도다리',
     description: '신선한 도다리를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesFlounderExpansion: Recipe[] = [
     id: 'flounder-chef-5', month: 3, title: '도다리 카르파치오', subtitle: '얇게 저민 도다리의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 도다리를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flounder-chef-5/hero.webp',
     mainIngredient: '도다리',
     description: '얇게 저민 도다리에 올리브오일과 레몬을 더한, 재료 본연의 담백함을 즐기는 전채예요.',
     masterclass: {

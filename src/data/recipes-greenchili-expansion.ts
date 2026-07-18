@@ -14,7 +14,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-home-1', month: 8, title: '풋고추멸치볶음', subtitle: '아삭하고 알싸한 맛으로 여름 입맛 살리는 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1585329067437-e3dbf16fc3a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-home-1/hero.webp',
     mainIngredient: '풋고추',
     description: '아삭한 풋고추와 짭짤한 멸치를 함께 볶아낸, 알싸하고 고소한 대표 밥반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-home-2', month: 8, title: '풋고추된장무침', subtitle: '아삭하고 알싸한 입맛 살리는 여름 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1585329067437-e3dbf16fc3a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-home-2/hero.webp',
     mainIngredient: '풋고추',
     description: '아삭한 풋고추를 구수한 된장 양념에 무쳐낸, 알싸하고 입맛을 살리는 여름철 반찬이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-home-3', month: 8, title: '풋고추전', subtitle: '알싸하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-home-3/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추 속에 소를 채워 부친, 알싸하고 든든한 별미전이에요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-home-4', month: 8, title: '풋고추장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-home-4/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 간장물에 절인, 오래 두고 먹기 좋은 알싸한 장아찌예요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-home-5', month: 8, title: '풋고추튀김', subtitle: '바삭하고 알싸한 별미',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-home-5/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 반죽에 버무려 바삭하게 튀긴, 알싸하고 향긋한 별미예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-weekend-1', month: 8, title: '풋고추멸치주먹밥', subtitle: '고소하고 간편한 별미',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-weekend-1/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추멸치볶음을 섞은 밥을 동그랗게 뭉친, 고소하고 알싸한 별미 주먹밥이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-weekend-2', month: 8, title: '풋고추돼지고기볶음', subtitle: '알싸하고 든든한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-weekend-2/hero.webp',
     mainIngredient: '풋고추',
     description: '돼지고기와 풋고추를 매콤하게 볶은, 알싸함이 살아있는 든든한 메인요리예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-weekend-3', month: 8, title: '풋고추찜', subtitle: '담백하고 알싸한 찜요리',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-weekend-3/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 밀가루에 버무려 쪄낸, 담백하고 알싸한 별미 찜이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-weekend-4', month: 8, title: '풋고추떡갈비', subtitle: '알싸함을 더한 특별한 떡갈비',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-weekend-4/hero.webp',
     mainIngredient: '풋고추',
     description: '다진 소고기에 풋고추를 다져 섞어 구운, 알싸함을 더한 특별한 떡갈비예요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
   {
     id: 'greenchili-weekend-5', month: 8, title: '풋고추비빔국수', subtitle: '알싸하고 개운한 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-weekend-5/hero.webp',
     mainIngredient: '풋고추',
     description: '소면에 다진 풋고추와 매콤한 양념을 비벼낸, 알싸하고 개운한 여름철 별미예요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-world-1', month: 8, title: '살사베르데', subtitle: '멕시코식 그린 살사',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 4,
     cuisineContext: { country: '멕시코', note: '살사베르데는 멕시코의 대표적인 그린 살사로, 풋고추와 토마티요를 구워 갈아 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-world-1/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 구워 갈아 만든, 멕시코식 상큼하고 알싸한 그린 살사예요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-world-2', month: 8, title: '시시토 페퍼 구이', subtitle: '일본식 꽈리고추구이 응용',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '일본', note: '시시토는 일본의 작고 순한 고추로, 통째로 구워 소금을 뿌리는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-world-2/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 통째로 구워 소금을 뿌린, 일본식 간단한 안주예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-world-3', month: 8, title: '풋고추 살사크루다', subtitle: '멕시코식 생살사',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '멕시코', note: '살사크루다는 재료를 굽지 않고 생으로 다져 만드는 멕시코식 신선한 살사예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-world-3/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추와 토마토를 생으로 다져 만든, 신선하고 아삭한 멕시코식 살사예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-world-4', month: 8, title: '풋고추 사테소스 볶음', subtitle: '동남아식 땅콩소스 볶음',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '인도네시아', note: '사테소스는 인도네시아의 대표적인 땅콩소스로, 볶음 요리에 진한 감칠맛을 더해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-world-4/hero.webp',
     mainIngredient: '풋고추',
     description: '닭고기와 풋고추를 땅콩소스에 볶은, 동남아식 진하고 고소한 볶음이에요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-world-5', month: 8, title: '풋고추 프리터', subtitle: '영국식 채소 프리터',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '프리터는 채소를 두꺼운 반죽에 버무려 튀기는 영국·유럽식 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-world-5/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 두꺼운 반죽에 버무려 튀긴, 영국식 바삭한 프리터예요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-chef-1', month: 8, title: '칠리오일', subtitle: '중국식 라조유 향신오일 추출',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 10,
     platingGuide: '작은 유리병에 담아 상에 올리고, 사용할 때는 만두나 국수에 스푼으로 몇 방울 끼얹어 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-chef-1/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추와 향신료를 뜨거운 기름에 부어 향을 추출한, 중국의 만능 매운 조미유예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-chef-2', month: 8, title: '하리사', subtitle: '북아프리카식 로스팅+발효 고추페이스트',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 8,
     platingGuide: '작은 종지에 담아 올리브오일을 두르고, 쿠스쿠스나 구운 고기 옆에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-chef-2/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 직화로 구운 뒤 향신료와 함께 갈아 살짝 발효시킨, 북아프리카 마그레브 지방의 대표적인 매운 페이스트예요.',
     masterclass: {
@@ -513,7 +513,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-chef-3', month: 8, title: '칠레레예노', subtitle: '멕시코식 통고추 속채움 튀김',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '토마토소스를 접시 바닥에 깔고 그 위에 통째로 튀긴 고추를 올려, 반으로 잘라 속의 치즈가 흘러나오는 모습을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-chef-3/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추 속에 치즈를 채우고 계란옷을 입혀 튀긴, 멕시코의 대표적인 명절 요리예요.',
     masterclass: {
@@ -543,7 +543,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-chef-4', month: 8, title: '루이지애나식 발효 핫소스', subtitle: '몇 주 유산균 발효',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 10,
     platingGuide: '작은 유리병에 담아 상에 올리고, 사용할 때는 몇 방울씩 튀김이나 굴요리에 뿌려 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-chef-4/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 소금물에 몇 주간 발효시켜 만든, 미국 남부 루이지애나의 전통적인 액상 핫소스예요.',
     masterclass: {
@@ -574,7 +574,7 @@ export const recipesGreenChiliExpansion: Recipe[] = [
     id: 'greenchili-chef-5', month: 8, title: '에스칼리바다 스타일 풋고추', subtitle: '직화 로스팅+껍질 벗기기',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '길게 저민 풋고추를 접시에 가지런히 눕혀 담고, 올리브오일을 지그재그로 뿌려 스페인 카탈루냐 스타일로 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenchili-chef-5/hero.webp',
     mainIngredient: '풋고추',
     description: '풋고추를 직화로 완전히 태워 껍질을 벗긴, 스페인 카탈루냐의 전통적인 채소 로스팅 기법이에요.',
     masterclass: {

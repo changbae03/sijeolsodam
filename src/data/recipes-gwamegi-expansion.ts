@@ -12,7 +12,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-home-1', month: 12, title: '쌈채소 곁들인 과메기', subtitle: '쫄깃한 과메기를 채소에 싸먹는 겨울 별미',
     category: '메인요리', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-home-1/hero.webp',
     mainIngredient: '과메기',
     description: '꼬들꼬들하게 말린 과메기를 미역, 쪽파와 함께 채소에 싸 먹는, 포항 구룡포의 대표 겨울 별미예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesGwamegiExpansion: Recipe[] = [
   {
     id: 'gwamegi-home-2', month: 12, title: '과메기초무침', subtitle: '새콤달콤 쫄깃한 겨울 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gwamegi-home-2/hero.webp',
     mainIngredient: '과메기',
     description: '과메기를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {

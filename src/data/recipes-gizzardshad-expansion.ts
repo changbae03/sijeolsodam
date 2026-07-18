@@ -14,7 +14,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-home-1', month: 9, title: '전어구이', subtitle: '가을이 되면 가장 맛있는 전어 소금구이',
     category: '구이', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-home-1/hero.webp',
     mainIngredient: '전어',
     description: '"가을 전어는 며느리도 안 준다"는 말처럼, 통째로 구워 고소하게 즐기는 가을 별미예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-home-2', month: 9, title: '전어무침회', subtitle: '새콤달콤한 가을 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-home-2/hero.webp',
     mainIngredient: '전어',
     description: '전어를 뼈째 썰어 채소와 함께 새콤달콤하게 무친, 가을 대표 별미예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-home-3', month: 9, title: '전어회', subtitle: '고소한 가을 대표 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-home-3/hero.webp',
     mainIngredient: '전어',
     description: '가을 전어는 뼈째 썰어 고소하게 즐기는 대표적인 계절 회예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-home-4', month: 9, title: '전어젓갈', subtitle: '짭짤하고 감칠맛 나는 밥도둑',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-home-4/hero.webp',
     mainIngredient: '전어',
     description: '전어를 소금에 절인, 짭짤하고 감칠맛 나는 밥도둑 밑반찬이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-home-5', month: 9, title: '전어튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-home-5/hero.webp',
     mainIngredient: '전어',
     description: '전어를 통째로 바삭하게 튀긴, 겉은 바삭하고 속은 고소한 튀김이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-weekend-1', month: 9, title: '전어양념구이', subtitle: '매콤달콤한 별미구이',
     category: '구이', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-weekend-1/hero.webp',
     mainIngredient: '전어',
     description: '전어에 매콤달콤한 양념을 발라 구운, 소금구이와는 또 다른 별미예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-weekend-2', month: 9, title: '전어된장찌개', subtitle: '구수하고 고소한 가을 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-weekend-2/hero.webp',
     mainIngredient: '전어',
     description: '전어를 넣어 끓인 된장찌개로, 구수하고 고소한 가을 별미예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-weekend-3', month: 9, title: '전어밥', subtitle: '고소하고 든든한 가을 별미밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-weekend-3/hero.webp',
     mainIngredient: '전어',
     description: '전어를 구워 살만 발라 넣어 지은, 고소하고 든든한 가을 별미밥이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-weekend-4', month: 9, title: '전어물회', subtitle: '시원하고 새콤한 여름 별미',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-weekend-4/hero.webp',
     mainIngredient: '전어',
     description: '전어회를 시원한 냉국물에 말아 먹는, 새콤달콤한 가을철 별미예요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
   {
     id: 'gizzardshad-weekend-5', month: 9, title: '전어초밥', subtitle: '고소한 가을 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-weekend-5/hero.webp',
     mainIngredient: '전어',
     description: '전어를 초밥용 밥 위에 올린, 고소한 가을철 대표 초밥이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-world-1', month: 9, title: '코하다노 스지메', subtitle: '일본식 전어 식초절임',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '코하다(コハダ)는 일본어로 전어를 뜻해요. 일본에서는 전어를 소금과 식초로 절이는 스지메(酢締め) 기법으로 초밥 재료를 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-world-1/hero.webp',
     mainIngredient: '전어',
     description: '전어를 소금과 식초에 순서대로 절인, 일본식 초밥용 생선 손질 기법을 활용한 전채예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-world-2', month: 9, title: '전어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-world-2/hero.webp',
     mainIngredient: '전어',
     description: '토마토와 화이트와인에 전어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-world-3', month: 9, title: '그리스식 전어구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 작은 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-world-3/hero.webp',
     mainIngredient: '전어',
     description: '전어를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-world-4', month: 9, title: '전어 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-world-4/hero.webp',
     mainIngredient: '전어',
     description: '신선한 전어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-world-5', month: 9, title: '전어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-world-5/hero.webp',
     mainIngredient: '전어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 전어예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-chef-1', month: 9, title: '사르데 아 베카휘코', subtitle: '시칠리아식 속채움 말이 베이킹',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '말아 구운 전어를 접시에 나란히 세워 담고, 월계수잎을 사이사이 꽂아 장식한 뒤 레몬 웨지를 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-chef-1/hero.webp',
     mainIngredient: '전어',
     description: '전어를 빵가루, 잣, 건포도로 채워 돌돌 말아 구운, 시칠리아의 대표적인 정찬 요리예요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-chef-2', month: 9, title: '전어 나레즈시', subtitle: '일본 고대 쌀발효 초밥의 원형',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '숙성이 끝난 나레즈시를 얇게 썰어 작은 접시에 담고, 발효된 밥은 살짝 긁어내거나 함께 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-chef-2/hero.webp',
     mainIngredient: '전어',
     description: '전어를 소금과 밥 사이에 파묻어 몇 개월간 발효시킨, 현대 초밥의 원형이 된 일본 고대 발효 음식이에요.',
     masterclass: {
@@ -520,7 +520,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-chef-3', month: 9, title: '전어 보케로네스', subtitle: '스페인식 순수 식초절임',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '흰 접시에 보케로네스를 부채꼴로 겹쳐 담고, 다진 마늘과 파슬리를 뿌린 뒤 올리브오일을 둘러 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-chef-3/hero.webp',
     mainIngredient: '전어',
     description: '전어를 식초에만 절여 하얗게 "익힌", 스페인의 대표적인 화이트 앤초비 스타일 타파스예요.',
     masterclass: {
@@ -551,7 +551,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-chef-4', month: 9, title: '전어 콘세르바스', subtitle: '스페인·포르투갈식 오일보존',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '통조림처럼 오일에 잠긴 전어를 예쁜 유리병째 상에 올리고, 바게트와 함께 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-chef-4/hero.webp',
     mainIngredient: '전어',
     description: '전어를 소금물에 데친 뒤 올리브오일에 완전히 잠기게 저장한, 스페인·포르투갈의 전통적인 통조림식 보존법이에요.',
     masterclass: {
@@ -582,7 +582,7 @@ export const recipesGizzardShadExpansion: Recipe[] = [
     id: 'gizzardshad-chef-5', month: 9, title: '전어 다잉', subtitle: '필리핀식 태양건조',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '바삭하게 튀긴 다잉을 접시에 담고, 식초에 마늘과 고추를 넣은 디핑소스를 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/gizzardshad-chef-5/hero.webp',
     mainIngredient: '전어',
     description: '전어를 소금에 절여 햇볕에 말린 뒤 바삭하게 튀긴, 필리핀의 대표적인 아침식사용 건조 생선이에요.',
     masterclass: {

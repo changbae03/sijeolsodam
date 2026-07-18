@@ -99,7 +99,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-home-4', month: 11, title: '광어조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-home-4/hero.webp',
     mainIngredient: '광어',
     description: '무를 깔고 광어를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-home-5', month: 11, title: '광어튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-home-5/hero.webp',
     mainIngredient: '광어',
     description: '광어살을 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-weekend-1', month: 11, title: '광어무침회', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-weekend-1/hero.webp',
     mainIngredient: '광어',
     description: '광어회를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-weekend-2', month: 11, title: '광어초밥', subtitle: '쫄깃한 담백함이 살아있는 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-weekend-2/hero.webp',
     mainIngredient: '광어',
     description: '얇게 썬 광어를 초밥용 밥 위에 올린, 쫄깃하고 담백한 초밥이에요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-weekend-3', month: 11, title: '광어맑은탕', subtitle: '개운하고 깔끔한 겨울 보양탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-weekend-3/hero.webp',
     mainIngredient: '광어',
     description: '광어를 맑은 육수에 끓인, 개운하고 깔끔한 겨울철 보양탕이에요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-weekend-4', month: 11, title: '광어뫼니에르', subtitle: '프랑스식 버터구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-weekend-4/hero.webp',
     mainIngredient: '광어',
     description: '광어살에 밀가루를 살짝 입혀 버터에 구운, 고소하고 담백한 프랑스식 생선요리예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-weekend-5', month: 11, title: '광어전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-weekend-5/hero.webp',
     mainIngredient: '광어',
     description: '광어살에 밀가루옷을 입혀 부친, 담백하고 부드러운 전이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-world-1', month: 11, title: '히라메노 사시미', subtitle: '일본식 광어회 전통 방식',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '히라메(平目)는 일본어로 광어를 뜻해요. 일본에서는 광어를 얇게 저며(우스즈쿠리) 폰즈소스로 즐기는 것이 고급 요리로 유명해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-world-1/hero.webp',
     mainIngredient: '광어',
     description: '광어를 종이처럼 얇게 저며 폰즈소스에 곁들인, 일본식 고급 사시미예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-world-2', month: 11, title: '광어 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '뵈르블랑은 프랑스 루아르 지방에서 유래한 클래식 버터소스로, 흰살생선과 함께 내는 것이 전통적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-world-2/hero.webp',
     mainIngredient: '광어',
     description: '구운 광어에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-world-3', month: 11, title: '광어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694235947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-world-3/hero.webp',
     mainIngredient: '광어',
     description: '토마토와 화이트와인에 광어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-world-4', month: 11, title: '광어 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 흰살생선을 라임즙에 재워 만들어요. 담백한 광어가 세비체에 특히 잘 어울리는 생선이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-world-4/hero.webp',
     mainIngredient: '광어',
     description: '신선한 광어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -430,7 +430,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-world-5', month: 11, title: '광어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-world-5/hero.webp',
     mainIngredient: '광어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 광어예요.',
     masterclass: {
@@ -462,7 +462,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-chef-1', month: 11, title: '광어 세비체 그랑크뤼', subtitle: '고급스럽게 재해석한 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 광어를 겹치듯 부채꼴로 펼쳐 담고, 세비체 국물을 붓으로 살짝 발라 광택을 낸 뒤 미니 허브와 에스플레트 고춧가루를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-chef-1/hero.webp',
     mainIngredient: '광어',
     description: '광어를 라임과 유자, 올리브오일로 고급스럽게 재해석한 세비체예요.',
     masterclass: {
@@ -493,7 +493,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-chef-2', month: 11, title: '광어 카르파치오', subtitle: '얇게 저민 광어의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 광어를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 케이퍼를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-chef-2/hero.webp',
     mainIngredient: '광어',
     description: '얇게 저민 광어에 올리브오일과 레몬을 더한, 재료 본연의 담백함을 즐기는 전채예요.',
     masterclass: {
@@ -524,7 +524,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-chef-3', month: 11, title: '광어 콩피', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-chef-3/hero.webp',
     mainIngredient: '광어',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -556,7 +556,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-chef-4', month: 11, title: '광어 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 허브와 레몬 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-chef-4/hero.webp',
     mainIngredient: '광어',
     description: '광어와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -588,7 +588,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
     id: 'flatfish-chef-5', month: 11, title: '광어 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-chef-5/hero.webp',
     mainIngredient: '광어',
     description: '광어 뼈와 자투리로 우린 육수를 곱게 갈아 크림으로 마무리한, 벨벳처럼 진한 프랑스식 수프예요.',
     masterclass: {

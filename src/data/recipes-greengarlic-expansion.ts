@@ -14,7 +14,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-home-1', month: 5, title: '풋마늘무침', subtitle: '알싱하고 아삭한 초여름 마늘 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-home-1/hero.webp',
     mainIngredient: '풋마늘',
     description: '아삭한 풋마늘을 고춧가루 양념에 새콤하게 무쳐낸, 알싸한 초여름 반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-home-2', month: 5, title: '풋마늘된장무침', subtitle: '구수하고 알싸한 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-home-2/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 된장과 참기름으로 무친, 구수하고 알싸한 초여름 밑반찬이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-home-3', month: 5, title: '풋마늘전', subtitle: '알싸하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-home-3/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 반죽에 섞어 부친, 알싸하고 향긋한 별미전이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-home-4', month: 5, title: '풋마늘볶음', subtitle: '아삭하고 담백한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-home-4/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 간장과 참기름으로 볶은, 아삭하고 담백한 기본 반찬이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-home-5', month: 5, title: '풋마늘장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-home-5/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 간장물에 절인, 오래 두고 먹기 좋은 알싸한 장아찌예요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-weekend-1', month: 5, title: '풋마늘삼겹살볶음', subtitle: '알싸함이 어우러진 든든한 볶음',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-weekend-1/hero.webp',
     mainIngredient: '풋마늘',
     description: '삼겹살과 풋마늘을 함께 볶은, 알싸함이 어우러진 든든한 메인요리예요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-weekend-2', month: 5, title: '풋마늘된장찌개', subtitle: '구수하고 알싸한 봄 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-weekend-2/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 넣어 끓인 된장찌개로, 구수하고 알싸한 초여름 별미예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-weekend-3', month: 5, title: '풋마늘튀김', subtitle: '바삭하고 알싸한 별미',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-weekend-3/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 채 썰어 바삭하게 튀긴, 알싸하고 향긋한 별미예요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-weekend-4', month: 5, title: '풋마늘돼지고기볶음', subtitle: '알싸하고 든든한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-weekend-4/hero.webp',
     mainIngredient: '풋마늘',
     description: '돼지고기와 풋마늘을 매콤하게 볶은, 알싸함이 살아있는 든든한 메인요리예요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
   {
     id: 'greengarlic-weekend-5', month: 5, title: '풋마늘비빔국수', subtitle: '알싸하고 개운한 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-weekend-5/hero.webp',
     mainIngredient: '풋마늘',
     description: '소면에 풋마늘과 매콤한 양념을 비벼낸, 알싸하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-world-1', month: 5, title: '감바스 알 아히요', subtitle: '스페인식 마늘새우',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '감바스 알 아히요는 스페인의 대표 타파스로, 새우를 마늘과 올리브오일에 보글보글 끓여내는 것이 특징이에요. 풋마늘로 만들면 훨씬 향긋해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-world-1/hero.webp',
     mainIngredient: '풋마늘',
     description: '새우와 풋마늘을 올리브오일에 보글보글 끓여낸, 스페인식 대표 타파스예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-world-2', month: 5, title: '풋마늘 알리오올리오', subtitle: '이탈리아식 마늘오일 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '알리오올리오는 마늘과 올리브오일만으로 만드는 이탈리아의 가장 심플한 파스타예요. 풋마늘로 만들면 훨씬 향긋한 봄철 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-world-2/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘과 올리브오일로 만든, 심플하지만 향긋한 이탈리아식 파스타예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-world-3', month: 5, title: '풋마늘 프리터', subtitle: '영국식 채소 프리터',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '프리터는 채소나 과일에 반죽을 입혀 튀기는 영국·유럽식 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-world-3/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 반죽에 버무려 튀긴, 영국식 바삭한 채소 프리터예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-world-4', month: 5, title: '풋마늘 커리', subtitle: '인도식 향신 채소커리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '인도', note: '인도 요리에서는 마늘이 향신료의 기본 베이스로 쓰여요. 풋마늘로 만들면 훨씬 향긋한 커리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-world-4/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘을 향신료와 토마토소스에 끓인, 인도식 향긋한 채소커리예요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-world-5', month: 5, title: '풋마늘 갈릭브레드', subtitle: '미국식 마늘빵',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 4,
     cuisineContext: { country: '미국', note: '갈릭브레드는 미국식 이탈리안 레스토랑에서 흔한 전채예요. 풋마늘로 만들면 훨씬 향긋한 버터가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-world-5/hero.webp',
     mainIngredient: '풋마늘',
     description: '풋마늘버터를 발라 구운, 향긋하고 바삭한 마늘빵이에요.',
     masterclass: {
@@ -453,7 +453,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-chef-1', month: 5, title: '흑마늘', subtitle: '장기숙성 발효 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 90, servings: 8,
     platingGuide: '흑마늘을 작은 접시에 몇 알씩 담아 그대로 내거나, 곱게 갈아 소스로 만들어 스테이크에 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-chef-1/hero.webp',
     mainIngredient: '풋마늘',
     description: '마늘을 고온다습한 환경에서 몇 주간 숙성시켜, 색과 맛이 완전히 변한 발사믹처럼 달콤한 흑마늘로 만든 기법이에요.',
     masterclass: {
@@ -483,7 +483,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-chef-2', month: 5, title: '툼', subtitle: '레바논식 마늘 유화소스',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '작은 그릇에 툼을 담아 구운 고기나 채소 옆에 곁들이거나, 피타빵에 발라 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-chef-2/hero.webp',
     mainIngredient: '풋마늘',
     description: '마늘과 오일만으로 마요네즈처럼 풍성하게 유화시킨, 레바논의 대표적인 마늘 소스예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-chef-3', month: 5, title: '마늘 콩피', subtitle: '프랑스식 저온오일 조리',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '유리병에 콩피된 마늘과 오일을 함께 담아 상에 올리고, 바게트와 함께 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-chef-3/hero.webp',
     mainIngredient: '풋마늘',
     description: '통마늘을 올리브오일에 잠기게 넣어 아주 낮은 온도로 서서히 익힌, 프랑스의 클래식 저온 조리 기법이에요.',
     masterclass: {
@@ -544,7 +544,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-chef-4', month: 5, title: '아히요블랑코', subtitle: '스페인식 차가운 마늘아몬드수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '차갑게 식힌 수프를 얕은 그릇에 담고, 청포도 몇 알을 띄운 뒤 올리브오일을 몇 방울 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-chef-4/hero.webp',
     mainIngredient: '풋마늘',
     description: '마늘과 아몬드, 빵을 곱게 갈아 차갑게 낸, 스페인 안달루시아의 대표적인 여름 냉수프예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesGreenGarlicExpansion: Recipe[] = [
     id: 'greengarlic-chef-5', month: 5, title: '40쪽 마늘치킨', subtitle: '프랑스식 마늘 브레이즈',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '큰 코코트냄비째 상에 올려 마늘 40쪽이 그대로 보이게 뚜껑을 열고, 바게트를 곁들여 마늘을 눌러 발라 먹도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greengarlic-chef-5/hero.webp',
     mainIngredient: '풋마늘',
     description: '닭고기를 마늘 40쪽과 함께 냄비째 밀봉해 오래 브레이징한, 프랑스 프로방스의 전설적인 클래식 요리예요.',
     masterclass: {

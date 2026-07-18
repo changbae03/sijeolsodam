@@ -12,7 +12,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-home-1', month: 6, title: '마늘쫑볶음', subtitle: '밥반찬으로 좋은 아삭한 볶음',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-home-1/hero.webp',
     mainIngredient: '마늘쫑',
     description: '간장양념에 새우젓을 더해 짭짤하고 고소하게 볶아낸, 밥반찬으로 좋은 기본 볶음이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-home-2', month: 6, title: '마늘쫑무침', subtitle: '아삭하고 매콤한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-home-2/hero.webp',
     mainIngredient: '마늘쫑',
     description: '데친 마늘쫑을 고추장 양념에 무친, 아삭하고 매콤한 밑반찬이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-home-3', month: 6, title: '마늘쫑장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-home-3/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑을 간장물에 절인, 오래 두고 먹기 좋은 아삭한 장아찌예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-home-4', month: 6, title: '마늘쫑멸치볶음', subtitle: '고소하고 아삭한 밥도둑',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-home-4/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑과 잔멸치를 함께 볶은, 고소하고 아삭한 대표 밥도둑이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-home-5', month: 6, title: '마늘쫑전', subtitle: '아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-home-5/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑을 반죽에 섞어 부친, 아삭하고 향긋한 별미전이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-weekend-1', month: 6, title: '마늘쫑돼지고기볶음', subtitle: '고소하고 든든한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-weekend-1/hero.webp',
     mainIngredient: '마늘쫑',
     description: '돼지고기와 마늘쫑을 매콤하게 볶은, 밥도둑 메인요리예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-weekend-2', month: 6, title: '마늘쫑잡채', subtitle: '아삭함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-weekend-2/hero.webp',
     mainIngredient: '마늘쫑',
     description: '기본 잡채에 마늘쫑을 더해 아삭한 식감과 향을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-weekend-3', month: 6, title: '마늘쫑새우볶음', subtitle: '탱글하고 아삭한 조합',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-weekend-3/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑과 새우를 함께 볶은, 탱글하고 아삭한 조합이 매력적인 메인요리예요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-weekend-4', month: 6, title: '마늘쫑오징어볶음', subtitle: '매콤하고 쫄깃한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-weekend-4/hero.webp',
     mainIngredient: '마늘쫑',
     description: '오징어와 마늘쫑을 매콤하게 볶은, 쫄깃하고 아삭한 별미예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
   {
     id: 'garlicscape-weekend-5', month: 6, title: '마늘쫑베이컨말이', subtitle: '한입에 즐기는 술안주',
     category: '전채', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-weekend-5/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑을 베이컨으로 돌돌 말아 구운, 한입에 즐기는 술안주예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-world-2', month: 6, title: '마늘쫑 페스토 파스타', subtitle: '이탈리아식 알싸한 페스토',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 야생 마늘(램프)로 페스토를 만드는 전통이 있어요. 마늘쫑으로 만들면 비슷한 원리로 알싸하고 향긋한 페스토가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-world-2/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑을 갈아 만든 향긋한 페스토를 파스타에 버무린, 개성 있는 이탈리아식 요리예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-world-3', month: 6, title: '마늘쫑 콩피 생선', subtitle: '프랑스식 향유 생선요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '프랑스', note: '프랑스에서는 허브나 마늘로 향을 낸 오일에 생선을 저온으로 익히는 콩피 기법이 발달했어요. 마늘쫑으로 향유를 만들면 독특한 향의 요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-world-3/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑으로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 향긋한 요리예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-world-4', month: 6, title: '마늘쫑 느억맘 무침', subtitle: '베트남식 상큼한 무침',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남에서는 채소를 라임즙과 느억맘(피시소스)으로 상큼하게 무치는 요리가 흔해요. 마늘쫑으로 만들면 아삭함과 알싸함이 함께하는 별미가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-world-4/hero.webp',
     mainIngredient: '마늘쫑',
     description: '데친 마늘쫑을 라임즙과 피시소스로 상큼하게 무친, 베트남식 별미예요.',
     masterclass: {
@@ -429,7 +429,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-world-5', month: 6, title: '감바스 알 아히요 마늘쫑', subtitle: '스페인식 마늘새우 응용',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '감바스 알 아히요(gambas al ajillo)는 스페인의 대표 타파스로, 새우를 올리브오일과 마늘에 보글보글 끓여내는 것이 특징이에요. 마늘쫑을 더하면 향이 한층 풍부해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-world-5/hero.webp',
     mainIngredient: '마늘쫑',
     description: '새우와 마늘쫑을 올리브오일에 보글보글 끓여낸, 스페인식 대표 타파스를 응용한 요리예요.',
     masterclass: {
@@ -461,7 +461,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-chef-1', month: 6, title: '마늘쫑 페스토 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 마늘쫑 페스토를 바른 위에 부라타치즈를 얹은 뒤 미니 허브로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-chef-1/hero.webp',
     mainIngredient: '마늘쫑',
     description: '바삭하게 구운 크로스티니 위에 마늘쫑 페스토와 부라타치즈를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {
@@ -491,7 +491,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-chef-2', month: 6, title: '마늘쫑 콩소메', subtitle: '맑고 향긋한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 55, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 데친 마늘쫑 조각과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-chef-2/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑 향을 우린 맑은 콩소메로, 알싸하면서도 깊은 감칠맛이 살아있는 수프예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-chef-3', month: 6, title: '마늘쫑 오일파스타', subtitle: '고급 향유로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 데친 마늘쫑을 고명으로 올린 뒤 레몬 제스트와 올리브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-chef-3/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑을 오일에 우려 만든 향유로 완성한, 알싸하고 향긋한 파스타예요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-chef-4', month: 6, title: '마늘쫑 리조또', subtitle: '알싸하고 고소한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 살짝 볶은 마늘쫑을 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-chef-4/hero.webp',
     mainIngredient: '마늘쫑',
     description: '마늘쫑을 넣어 아삭한 식감과 알싸한 향을 살린, 초여름 이탈리아식 리조또예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesGarlicScapeExpansion: Recipe[] = [
     id: 'garlicscape-chef-5', month: 6, title: '마늘쫑 뵈르블랑 관자', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 마늘쫑 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 마늘쫑 어린싹으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/garlicscape-chef-5/hero.webp',
     mainIngredient: '마늘쫑',
     description: '바삭하게 시어링한 관자에 마늘쫑으로 향을 낸 프랑스식 버터소스를 곁들인, 우아한 메인요리예요.',
     masterclass: {

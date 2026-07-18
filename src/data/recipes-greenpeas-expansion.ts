@@ -14,7 +14,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-home-1', month: 5, title: '완두콩밥', subtitle: '달콤한 완두콩이 콕콕 박힌 봄철 별미밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-home-1/hero.webp',
     mainIngredient: '완두콩',
     description: '아삭하고 달콤한 봄 완두콩을 듬뿍 넣어 지은, 색감도 예쁘고 영양도 가득한 별미밥이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-home-2', month: 5, title: '완두콩베이컨볶음', subtitle: '달콤한 완두콩과 짭짤한 베이컨의 조화',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-home-2/hero.webp',
     mainIngredient: '완두콩',
     description: '아삭하고 달콤한 봄 완두콩을 베이컨과 함께 볶아낸, 도시락이나 술안주로도 좋은 간단한 반찬이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-home-3', month: 5, title: '완두콩수프', subtitle: '부드럽고 향긋한 봄 수프',
     category: '수프', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-home-3/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 곱게 갈아 만든, 부드럽고 향긋한 봄철 수프예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-home-4', month: 5, title: '완두콩전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-home-4/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 반죽에 섞어 부친, 고소하고 향긋한 별미전이에요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-home-5', month: 5, title: '완두콩샐러드', subtitle: '고소하고 가벼운 봄 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-home-5/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩과 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 봄철 샐러드예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-weekend-1', month: 5, title: '완두콩리조또', subtitle: '고소하고 크리미한 봄 리조또',
     category: '리조또', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-weekend-1/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 넣어 지은, 고소하고 크리미한 이탈리아식 봄 리조또예요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-weekend-2', month: 5, title: '완두콩크림파스타', subtitle: '고소하고 부드러운 이탈리아식',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-weekend-2/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 갈아 만든 크림소스에 버무린, 부드럽고 고소한 이탈리아식 파스타예요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-weekend-3', month: 5, title: '완두콩계란찜', subtitle: '부드럽고 고소한 별미',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-weekend-3/hero.webp',
     mainIngredient: '완두콩',
     description: '달걀찜에 완두콩을 더해 고소함을 살린, 부드러운 별미 반찬이에요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-weekend-4', month: 5, title: '완두콩고기완자', subtitle: '고소하고 든든한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-weekend-4/hero.webp',
     mainIngredient: '완두콩',
     description: '다진 고기에 완두콩을 섞어 빚은, 고소하고 든든한 별미 완자예요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
   {
     id: 'greenpeas-weekend-5', month: 5, title: '완두콩빈대떡', subtitle: '고소하고 든든한 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-weekend-5/hero.webp',
     mainIngredient: '완두콩',
     description: '녹두 대신 완두콩을 갈아 부친, 고소하고 든든한 별미 빈대떡이에요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-world-1', month: 5, title: '완두콩 후무스', subtitle: '중동식 콩퓌레 응용',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 4,
     cuisineContext: { country: '레바논', note: '중동에서는 병아리콩 후무스에 완두콩을 더해 색과 향을 살리는 응용이 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-world-1/hero.webp',
     mainIngredient: '완두콩',
     description: '병아리콩과 완두콩을 함께 갈아 만든, 초록빛의 향긋한 중동식 딥소스예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-world-2', month: 5, title: '완두콩 아란치니', subtitle: '이탈리아식 쌀볼 튀김',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '이탈리아', note: '아란치니는 남은 리조또를 튀겨 만드는 시칠리아의 대표 간식이에요. 완두콩을 넣으면 향긋한 봄 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-world-2/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩리조또에 치즈를 넣고 동그랗게 빚어 튀긴, 이탈리아 시칠리아의 대표 간식이에요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-world-3', month: 5, title: '완두콩 사모사', subtitle: '인도식 향신 튀김만두',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '인도', note: '사모사는 인도의 대표적인 튀김만두로, 감자와 완두콩을 넣은 것이 가장 클래식한 속재료예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-world-3/hero.webp',
     mainIngredient: '완두콩',
     description: '감자와 완두콩을 향신료에 볶아 만두피에 싸 튀긴, 인도의 대표적인 길거리 간식이에요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-world-4', month: 5, title: '완두콩 그린커리', subtitle: '태국식 향신 커리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '태국', note: '태국식 그린커리에는 다양한 채소가 들어가는데, 완두콩을 더하면 색이 훨씬 선명해지고 단맛이 살아나요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-world-4/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 넣은, 향긋하고 매콤한 태국식 그린커리예요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-world-5', month: 5, title: '완두콩 브루스케타', subtitle: '이탈리아식 전채',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '이탈리아', note: '브루스케타는 이탈리아의 대표적인 전채로, 다양한 토핑을 얹는데 완두콩 퓌레도 봄철 인기 토핑이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-world-5/hero.webp',
     mainIngredient: '완두콩',
     description: '구운 바게트에 완두콩퓌레와 민트를 올린, 이탈리아식 산뜻한 전채예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-chef-1', month: 5, title: '머시피', subtitle: '영국식 베이킹소다 삶기+으깨기',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '피시앤칩스 옆에 소복이 담거나, 작은 그릇에 담아 버터를 한 조각 올려 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-chef-1/hero.webp',
     mainIngredient: '완두콩',
     description: '말린 완두콩을 베이킹소다와 함께 오래 불려 삶아 걸쭉하게 으깬, 영국 피시앤칩스의 필수 사이드예요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-chef-2', month: 5, title: '프티푸아 알라 프랑세즈', subtitle: '프랑스식 상추 브레이즈',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '냄비째 상에 올려 상추로 감싼 완두콩의 모습을 그대로 보여주고, 스푼으로 떠서 접시에 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-chef-2/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 양상추, 진주양파와 함께 버터로 뭉근히 끓인, 프랑스의 클래식한 봄철 채소 요리예요.',
     masterclass: {
@@ -519,7 +519,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-chef-3', month: 5, title: '완두콩 전분 량펀', subtitle: '중국식 전분추출 젤리국수',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '투명한 젤리 국수를 접시에 돌돌 말아 담고, 참기름과 식초, 다진 마늘, 고추기름을 뿌려 중국 냉채 스타일로 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-chef-3/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩에서 전분만 추출해 굳혀 만든, 중국의 전통적인 투명한 젤리 국수예요.',
     masterclass: {
@@ -550,7 +550,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-chef-4', month: 5, title: '에르텐수프', subtitle: '네덜란드식 진한 완두콩수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 150, servings: 6,
     platingGuide: '깊은 그릇에 담아 숟가락이 서 있을 정도로 진한 농도를 보여주고, 훈제소시지 슬라이스를 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-chef-4/hero.webp',
     mainIngredient: '완두콩',
     description: '말린 완두콩과 훈제소시지를 몇 시간 동안 끓여 자연스럽게 걸쭉해진, 네덜란드의 국민 수프예요.',
     masterclass: {
@@ -580,7 +580,7 @@ export const recipesGreenPeasExpansion: Recipe[] = [
     id: 'greenpeas-chef-5', month: 5, title: '완두콩 아이스크림', subtitle: '모던 세이보리 아이스크림',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '작은 스쿱으로 떠서 접시에 올리고, 민트잎과 올리브오일 몇 방울을 뿌려 모던 파인다이닝 코스의 미각 전환 요리로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/greenpeas-chef-5/hero.webp',
     mainIngredient: '완두콩',
     description: '완두콩을 커스터드 베이스에 갈아 얼린, 달지 않고 짭짤한 모던 가스트로노미 아이스크림이에요.',
     masterclass: {

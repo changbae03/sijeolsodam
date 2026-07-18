@@ -127,7 +127,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-home-5', month: 7, title: '풋콩볶음', subtitle: '담백하고 고소한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-home-5/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 마늘과 함께 볶은, 담백하고 고소한 기본 반찬이에요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-weekend-1', month: 7, title: '풋콩전골', subtitle: '고소하고 든든한 여름 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-weekend-1/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩과 채소를 넉넉히 넣고 끓인, 고소하고 든든한 여름 전골이에요.',
     masterclass: {

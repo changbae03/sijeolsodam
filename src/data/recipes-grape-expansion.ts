@@ -14,7 +14,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-home-1', month: 8, title: '포도요거트파르페', subtitle: '당도 가득한 여름 끝물 포도로 만드는 디저트',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599819177626-08ed8aebec51?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-home-1/hero.webp',
     mainIngredient: '포도',
     description: '당도가 절정에 이르는 여름 끝물 포도를 그릭요거트, 그래놀라와 층층이 쌓은, 보기에도 예쁜 파르페예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-home-2', month: 8, title: '포도샹그리아', subtitle: '당도 가득한 여름 끝물 포도로 만드는 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-home-2/hero.webp',
     mainIngredient: '포도',
     description: '당도가 절정에 이르는 여름 끝물 포도로 만드는 무알콜 샹그리아로, 가족 모임에서도 부담 없이 즐길 수 있어요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-home-3', month: 8, title: '포도잼', subtitle: '진한 보랏빛 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-home-3/hero.webp',
     mainIngredient: '포도',
     description: '포도를 졸여 만든, 진한 보랏빛의 홈메이드 잼이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-home-4', month: 8, title: '포도주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-home-4/hero.webp',
     mainIngredient: '포도',
     description: '포도를 직접 갈아 만든, 상큼하고 건강한 여름철 생과일주스예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-home-5', month: 8, title: '포도샐러드', subtitle: '상큼하고 가벼운 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-home-5/hero.webp',
     mainIngredient: '포도',
     description: '포도와 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 여름철 샐러드예요.',
     masterclass: {
@@ -156,7 +156,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-weekend-1', month: 8, title: '포도타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-weekend-1/hero.webp',
     mainIngredient: '포도',
     description: '커스터드크림 위에 포도를 올려 만든, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-weekend-2', month: 8, title: '포도치즈플래터', subtitle: '화려한 손님상 전채',
     category: '전채', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-weekend-2/hero.webp',
     mainIngredient: '포도',
     description: '포도와 다양한 치즈, 견과류를 곁들인, 화려하고 근사한 손님상 전채예요.',
     masterclass: {
@@ -212,7 +212,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-weekend-3', month: 8, title: '포도셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-weekend-3/hero.webp',
     mainIngredient: '포도',
     description: '포도를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -241,7 +241,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-weekend-4', month: 8, title: '포도젤리', subtitle: '상큼하고 탱글한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-weekend-4/hero.webp',
     mainIngredient: '포도',
     description: '포도즙을 곱게 갈아 굳힌, 상큼하고 탱글한 여름철 디저트예요.',
     masterclass: {
@@ -270,7 +270,7 @@ export const recipesGrapeExpansion: Recipe[] = [
   {
     id: 'grape-weekend-5', month: 8, title: '포도빙수', subtitle: '상큼하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-weekend-5/hero.webp',
     mainIngredient: '포도',
     description: '얼음 위에 포도와 연유를 듬뿍 올린, 상큼하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -301,7 +301,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-world-1', month: 8, title: '포도 콩포트 요거트', subtitle: '프랑스식 과일 조림',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '콩포트(compote)는 과일을 설탕에 은근히 조려 만드는 프랑스의 대표 저장 디저트예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-world-1/hero.webp',
     mainIngredient: '포도',
     description: '포도를 향신료와 함께 은근히 조린 콩포트를, 요거트에 올린 프랑스식 디저트예요.',
     masterclass: {
@@ -329,7 +329,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-world-2', month: 8, title: '포도 프로슈토', subtitle: '이탈리아식 응용 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 멜론과 프로슈토를 곁들이는 것이 클래식한 전채예요. 포도로 응용해도 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-world-2/hero.webp',
     mainIngredient: '포도',
     description: '포도에 프로슈토를 곁들인, 이탈리아식 전채를 응용한 요리예요.',
     masterclass: {
@@ -357,7 +357,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-world-3', month: 8, title: '포도 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 과일향 트러플이 클래식한 조합으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-world-3/hero.webp',
     mainIngredient: '포도',
     description: '포도즙을 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -388,7 +388,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-world-4', month: 8, title: '포도 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-world-4/hero.webp',
     mainIngredient: '포도',
     description: '포도를 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -419,7 +419,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-world-5', month: 8, title: '포도 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-world-5/hero.webp',
     mainIngredient: '포도',
     description: '포도와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -449,7 +449,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-chef-1', month: 8, title: '홈메이드 포도주', subtitle: '전통 발효 와인 제조',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 60, servings: 8,
     platingGuide: '유리병째 상에 올려 발효되는 모습을 보여주고, 완성 후에는 와인잔에 따라 색을 감상하며 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-chef-1/hero.webp',
     mainIngredient: '포도',
     description: '포도를 으깨어 자연 효모로 발효시킨, 가장 원초적인 형태의 홈메이드 와인이에요.',
     masterclass: {
@@ -480,7 +480,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-chef-2', month: 8, title: '포도잎 돌마', subtitle: '그리스·터키식 잎 활용',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '작고 단단하게 말린 돌마를 접시에 나란히 담고, 레몬 웨지와 요거트소스를 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-chef-2/hero.webp',
     mainIngredient: '포도',
     description: '포도나무의 잎에 쌀과 허브를 채워 돌돌 만, 그리스·터키·중동 전역에서 사랑받는 전통 전채예요.',
     masterclass: {
@@ -511,7 +511,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-chef-3', month: 8, title: '베르쥐', subtitle: '프랑스식 덜 익은 포도즙 산미료',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 8,
     platingGuide: '작은 병에 담아 상에 올리고, 사용할 때는 소스나 드레싱에 소량 더해 산미를 조절합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-chef-3/hero.webp',
     mainIngredient: '포도',
     description: '아직 덜 익어 신맛이 강한 포도를 짜낸 즙으로, 식초 대신 쓰는 프랑스 중세 요리의 고전적인 산미료예요.',
     masterclass: {
@@ -541,7 +541,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-chef-4', month: 8, title: '로스티드그레이프 치즈보드', subtitle: '모던 오븐 로스팅 기법',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '구운 포도송이를 치즈보드 위에 통째로 올려, 터진 껍질 사이로 흘러나온 진한 시럽을 그대로 보여줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1601057459098-40734ca47a1f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-chef-4/hero.webp',
     mainIngredient: '포도',
     description: '포도를 오븐에 구워 껍질이 터지며 당분이 캐러멜화된, 모던 치즈보드의 대표적인 트렌드 요리예요.',
     masterclass: {
@@ -570,7 +570,7 @@ export const recipesGrapeExpansion: Recipe[] = [
     id: 'grape-chef-5', month: 8, title: '콩코드그레이프잼', subtitle: '미국식 펙틴 젤리 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 60, servings: 10,
     platingGuide: '작은 병에 담아 상에 올리고, 사용할 때는 갓 구운 빵이나 땅콩버터 샌드위치에 발라 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/grape-chef-5/hero.webp',
     mainIngredient: '포도',
     description: '포도 과육과 껍질을 분리해 끓인 뒤, 천연 펙틴만으로 걸쭉하게 굳힌 미국의 대표적인 젤리예요.',
     masterclass: {
