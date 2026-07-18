@@ -12,7 +12,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-home-1', month: 4, title: '꽃게탕', subtitle: '살이 꽉 찬 봄 꽃게로 끓인 시원한 탕',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-home-1/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게와 무, 청양고추를 넣고 얼큰하게 끓여낸, 시원한 봄철 해물탕이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-home-2', month: 4, title: '간장게장', subtitle: '밥도둑의 대명사',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-home-2/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게를 간장 양념장에 재운, 밥도둑의 대명사로 불리는 대표 밑반찬이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-home-3', month: 4, title: '꽃게찜', subtitle: '담백하고 촉촉한 게살 그대로',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1553247407-23251ce3c8ff?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-home-3/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게를 통째로 찐, 담백하고 촉촉한 게살을 그대로 즐기는 요리예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-home-4', month: 4, title: '꽃게볶음밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-home-4/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게살을 발라 넣고 볶은, 고소하고 든든한 볶음밥이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-home-5', month: 4, title: '꽃게라면', subtitle: '시원한 국물의 별미 라면',
     category: '면요리', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-home-5/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게를 넣어 끓인 라면으로, 시원하고 깊은 국물이 일품이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-weekend-1', month: 4, title: '양념게장', subtitle: '매콤달콤한 밥도둑',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-weekend-1/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게를 매콤한 양념에 버무린, 간장게장과는 또 다른 매력의 밥도둑이에요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-weekend-2', month: 4, title: '꽃게칼국수', subtitle: '진한 국물의 든든한 한 그릇',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-weekend-2/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게 육수에 칼국수를 끓인, 진하고 든든한 한 그릇 요리예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-weekend-3', month: 4, title: '꽃게전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-weekend-3/hero.webp',
     mainIngredient: '꽃게',
     description: '게살을 발라 반죽에 섞어 부친, 고소하고 든든한 별미전이에요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-weekend-4', month: 4, title: '꽃게튀김', subtitle: '겉바속촉 별미 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-weekend-4/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게를 통째로 바삭하게 튀긴, 껍질까지 즐기는 별미 튀김이에요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
   {
     id: 'bluecrab-weekend-5', month: 4, title: '꽃게죽', subtitle: '부드럽고 든든한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-weekend-5/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게살과 국물을 넣어 끓인, 부드럽고 든든한 봄철 보양죽이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-world-1', month: 4, title: '꽃게 스파게티', subtitle: '이탈리아식 감칠맛 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 40, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 게살을 넣은 파스타(스파게티 알 그랑키오)가 해안 지방의 대표 요리예요. 토마토나 오일 베이스 모두 즐겨 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-world-1/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게살과 토마토로 만든, 이탈리아식 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-world-2', month: 4, title: '아로스 콘 크랑카', subtitle: '스페인식 게살 빠에야',
     category: '밥', difficulty: '보통', level: 'world', cookTime: 50, servings: 3,
     cuisineContext: { country: '스페인', note: '스페인 해안 지방에서는 게살을 넣은 빠에야가 인기예요. 사프란과 파프리카가루로 향과 색을 낸 쌀요리가 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-world-2/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게살과 사프란으로 향을 낸, 스페인식 해물 빠에야예요.',
     masterclass: {
@@ -369,7 +369,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-world-3', month: 4, title: '푸팟퐁커리', subtitle: '태국식 꽃게 커리볶음',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '태국', note: '푸팟퐁커리(ปูผัดผงกะหรี่)는 태국의 대표 게요리로, 게를 커리가루와 계란물에 볶아내는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-world-3/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게를 커리가루와 계란물에 볶아낸, 태국의 대표 게요리예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-world-4', month: 4, title: '베트남식 꽃게볶음', subtitle: '마늘과 후추향 가득한 볶음',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남에서는 꽃게를 마늘과 후추로 강하게 볶아내는 것이 특징이에요. 특유의 알싸한 후추향이 게살의 단맛을 돋보이게 해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-world-4/hero.webp',
     mainIngredient: '꽃게',
     description: '마늘과 후추로 강하게 볶아낸, 베트남식 향긋한 꽃게볶음이에요.',
     masterclass: {
@@ -429,7 +429,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-world-5', month: 4, title: '메릴랜드 크랩케이크', subtitle: '미국 체서피크식 게살 케이크',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '미국(체서피크)', note: '크랩케이크는 미국 메릴랜드 체서피크만 지역의 대표 요리예요. 게살을 최대한 살리고 빵가루는 최소한으로 쓰는 것이 정통 레시피의 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-world-5/hero.webp',
     mainIngredient: '꽃게',
     description: '게살을 최대한 살려 구운, 미국 체서피크만식 대표 전채요리예요.',
     masterclass: {
@@ -461,7 +461,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-chef-1', month: 4, title: '꽃게 비스크', subtitle: '프랑스식 진한 갑각류 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '얕은 수프 접시에 비스크를 붓고, 중앙에 크렘프레슈를 한 스푼 올린 뒤 게살 한 조각과 차이브로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-chef-1/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게 껍질까지 오래 우려 만든, 프랑스식 진하고 고급스러운 갑각류 수프예요.',
     masterclass: {
@@ -493,7 +493,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-chef-2', month: 4, title: '꽃게살 리조또', subtitle: '진한 감칠맛의 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 게살을 고명으로 소복이 올린 뒤 레몬 제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-chef-2/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게 육수로 지어 게살을 듬뿍 올린, 진한 감칠맛의 이탈리아식 리조또예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-chef-3', month: 4, title: '꽃게 오일파스타', subtitle: '고급 향유로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 게살을 고명으로 올린 뒤 레몬 제스트와 올리브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-chef-3/hero.webp',
     mainIngredient: '꽃게',
     description: '꽃게 껍질을 오일에 우려 만든 향유로 완성한, 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -556,7 +556,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-chef-4', month: 4, title: '꽃게살 크림소스 뇨끼', subtitle: '부드럽고 진한 이탈리아식 감자경단',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '깊은 접시에 뇨끼를 담고 크림소스를 끼얹은 뒤, 게살을 고명으로 올리고 처빌잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-chef-4/hero.webp',
     mainIngredient: '꽃게',
     description: '부드러운 감자뇨끼에 게살 크림소스를 곁들인, 진하고 우아한 이탈리아식 요리예요.',
     masterclass: {
@@ -586,7 +586,7 @@ export const recipesBlueCrabExpansion: Recipe[] = [
     id: 'bluecrab-chef-5', month: 4, title: '꽃게살 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 크림치즈 위에 게살을 소복이 올린 뒤 딜과 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bluecrab-chef-5/hero.webp',
     mainIngredient: '꽃게',
     description: '바삭하게 구운 크로스티니 위에 게살과 크림치즈를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {

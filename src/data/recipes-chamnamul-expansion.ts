@@ -14,7 +14,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-home-1', month: 3, title: '참나물무침', subtitle: '향긋하게 무쳐낸 봄나물 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/chamnamul-home-1/hero.webp',
     mainIngredient: '참나물',
     description: '참기름과 국간장으로 슴슴하게 무쳐, 참나물 본연의 향을 살린 봄 반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-home-2', month: 3, title: '참나물비빔밥', subtitle: '향긋하고 개운한 봄 한 그릇',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/chamnamul-home-2/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 듬뿍 올려 비벼 먹는, 향긋하고 개운한 봄철 한 그릇이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-home-3', month: 3, title: '참나물전', subtitle: '향긋하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/chamnamul-home-3/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 반죽에 섞어 부친, 향긋하고 아삭한 별미전이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-home-4', month: 3, title: '참나물된장국', subtitle: '구수하고 향긋한 봄 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/chamnamul-home-4/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 넣어 끓인 된장국으로, 구수하고 향긋한 봄철 국이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-home-5', month: 3, title: '참나물겉절이', subtitle: '아삭하고 매콤한 봄철 별미',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/chamnamul-home-5/hero.webp',
     mainIngredient: '참나물',
     description: '참나물을 매콤달콤한 양념에 무친, 아삭하고 향긋한 봄철 별미예요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesChamnamulExpansion: Recipe[] = [
   {
     id: 'chamnamul-weekend-1', month: 3, title: '참나물잡채', subtitle: '향긋함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/chamnamul-weekend-1/hero.webp',
     mainIngredient: '참나물',
     description: '기본 잡채에 참나물을 더해 향긋함을 살린, 색다른 잡채예요.',
     masterclass: {
