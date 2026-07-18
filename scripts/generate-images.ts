@@ -75,14 +75,37 @@ if (!recipeIdArg && !runAll && !sampleSize) {
 // "시절소담" 사진 톤은 src/lib/persona.ts의 SODAMI_VISUAL_STYLE을 공유합니다.
 
 async function generateImageBuffer(prompt: string): Promise<Buffer | null> {
-  const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash-image',
-    contents: prompt,
-  });
-  const parts = response.candidates?.[0]?.content?.parts ?? [];
-  for (const part of parts) {
-    if (part.inlineData?.data) {
-      return Buffer.from(part.inlineData.data, 'base64');
+  // 500(INTERNAL)/503(과부하)/429(순간 한도)는 구글 쪽 일시 오류라 재시도로 대부분 해결됨.
+  // 그 외 오류(잘못된 키, 결제 등)는 재시도해도 소용없으니 바로 던진다.
+  const MAX_ATTEMPTS = 3;
+  const BACKOFF_MS = [0, 4000, 12000];
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    if (BACKOFF_MS[attempt - 1] > 0) {
+      await new Promise((r) => setTimeout(r, BACKOFF_MS[attempt - 1]));
+    }
+    try {
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash-image',
+        contents: prompt,
+      });
+      const parts = response.candidates?.[0]?.content?.parts ?? [];
+      for (const part of parts) {
+        if (part.inlineData?.data) {
+          return Buffer.from(part.inlineData.data, 'base64');
+        }
+      }
+      return null;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      const transient = /"code":\s*(500|503|429)|INTERNAL|UNAVAILABLE|RESOURCE_EXHAUSTED|ETIMEDOUT|ENOTFOUND|fetch failed/i.test(
+        message
+      );
+      if (transient && attempt < MAX_ATTEMPTS) {
+        console.warn(`    일시 오류(${attempt}/${MAX_ATTEMPTS - 1}회차 재시도 예정): ${message.slice(0, 90)}`);
+        continue;
+      }
+      throw err;
     }
   }
   return null;
