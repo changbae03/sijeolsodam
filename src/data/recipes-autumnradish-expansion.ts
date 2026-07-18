@@ -12,7 +12,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-home-1', month: 9, title: '가을무생채', subtitle: '단맛 가득한 새콤한 기본 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-home-1/hero.webp',
     mainIngredient: '가을무',
     description: '단맛이 응축된 가을무를 새콤하게 무친, 어느 메뉴에나 잘 어울리는 기본 반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-home-2', month: 9, title: '가을무나물', subtitle: '들기름 고소한 기본 나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-home-2/hero.webp',
     mainIngredient: '가을무',
     description: '얇게 썬 가을무를 들기름에 볶아낸, 구수하고 담백한 기본 나물 반찬이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-home-3', month: 9, title: '가을무맑은국', subtitle: '담백하고 시원한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-home-3/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 넣어 끓인 맑은 국으로, 담백하고 시원한 국물이 매력적이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-home-4', month: 9, title: '가을무조림', subtitle: '달큰짭짤한 밥도둑 조림',
     category: '조림', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-home-4/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 간장 양념에 조려낸, 달큰짭짤한 밥도둑 반찬이에요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-home-5', month: 9, title: '가을무말랭이무침', subtitle: '쫄깃하고 달콤한 밑반찬',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-home-5/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 말려 쫄깃하게 무친, 두고두고 꺼내 먹기 좋은 밑반찬이에요.',
     masterclass: {
@@ -163,7 +163,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-weekend-1', month: 9, title: '가을무갈비찜', subtitle: '단맛 가득한 명절 대표 찜',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-weekend-1/hero.webp',
     mainIngredient: '가을무',
     description: '소갈비에 가을무를 더해 조린, 단맛 가득한 명절 대표 찜요리예요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-weekend-2', month: 9, title: '가을무굴국밥', subtitle: '시원하고 개운한 겨울 초입 국밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-weekend-2/hero.webp',
     mainIngredient: '가을무',
     description: '가을무 국물에 굴을 넣어 끓인, 시원하고 개운한 국밥이에요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-weekend-3', month: 9, title: '가을무돈까스덮밥', subtitle: '아삭한 무채를 더한 든든한 한 끼',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-weekend-3/hero.webp',
     mainIngredient: '가을무',
     description: '바삭한 돈까스에 아삭한 가을무채를 곁들인, 든든한 한 그릇 요리예요.',
     masterclass: {
@@ -252,7 +252,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-weekend-4', month: 9, title: '가을무나박김치', subtitle: '시원하고 아삭한 별미 물김치',
     category: '김치', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1583224944844-5b268c057b72?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-weekend-4/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 나박썰기해 시원한 국물에 담근, 아삭한 별미 물김치예요.',
     masterclass: {
@@ -282,7 +282,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
   {
     id: 'autumnradish-weekend-5', month: 9, title: '가을무전', subtitle: '아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-weekend-5/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 채 썰어 반죽에 섞어 부친, 아삭하고 달콤한 별미전이에요.',
     masterclass: {
@@ -314,7 +314,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-world-1', month: 9, title: '다이콘노 니모노', subtitle: '일본식 무 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '일본', note: '다이콘(大根)은 일본어로 무를 뜻해요. 일본에서는 무를 다시육수에 오래 은근히 졸이는 니모노가 대표적인 가을·겨울 가정식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-world-1/hero.webp',
     mainIngredient: '가을무',
     description: '다시육수에 가을무를 은근히 졸인, 담백하고 깊은 맛의 일본식 조림이에요.',
     masterclass: {
@@ -344,7 +344,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-world-2', month: 9, title: '뤄보탕', subtitle: '중국식 무 탕',
     category: '국&찌개', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '중국', note: '뤄보(萝卜)는 중국어로 무를 뜻해요. 중국에서는 무와 갈비를 함께 끓인 탕이 겨울 보양식으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-world-2/hero.webp',
     mainIngredient: '가을무',
     description: '무와 돼지갈비를 넣고 끓인, 중국식 담백한 보양탕이에요.',
     masterclass: {
@@ -374,7 +374,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-world-3', month: 9, title: '나벳 글라세', subtitle: '프랑스식 버터 무 조림',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '나벳 글라세(navets glacés)는 프랑스에서 순무나 무를 버터와 설탕에 윤기 나게 조리는 클래식 사이드 디시예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-world-3/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 버터와 설탕에 윤기 나게 조린, 프랑스식 우아한 사이드 디시예요.',
     masterclass: {
@@ -405,7 +405,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-world-4', month: 9, title: '무 리소토', subtitle: '이탈리아식 담백한 리조또',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 무나 순무를 곱게 갈아 리조또에 넣어 은은한 단맛을 내는 경우가 있어요. 담백하면서도 색다른 리조또가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-world-4/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 갈아 넣어 은은한 단맛을 낸, 담백한 이탈리아식 리조또예요.',
     masterclass: {
@@ -437,7 +437,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-world-5', month: 9, title: '무 느억맘 무침', subtitle: '베트남식 상큼한 무침',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남에서는 무를 채 썰어 새콤달콤한 느억맘소스로 무친 반찬(도 쭈어)이 반미 샌드위치나 분짜에 곁들여지는 필수 재료예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-world-5/hero.webp',
     mainIngredient: '가을무',
     description: '채 썬 가을무를 새콤달콤한 느억맘소스에 무친, 상큼한 베트남식 반찬이에요.',
     masterclass: {
@@ -469,7 +469,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-chef-1', month: 9, title: '무 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 무와 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-chef-1/hero.webp',
     mainIngredient: '가을무',
     description: '가을무 육수를 달걀흰자로 맑게 정제한, 투명하면서도 은은한 단맛의 콩소메예요.',
     masterclass: {
@@ -500,7 +500,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-chef-2', month: 9, title: '무 그라탕', subtitle: '프랑스식 화이트소스 그라탕',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '작은 그라탕 그릇에 소스를 채우고 오븐에서 그대로 구워, 표면이 진한 갈색으로 그을린 채 그릇째 상에 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-chef-2/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 얇게 저며 뵈샤멜소스와 함께 겹겹이 쌓아 구운, 프랑스식 그라탕이에요.',
     masterclass: {
@@ -531,7 +531,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-chef-3', month: 9, title: '관자 무 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 얇게 저민 무를 그 옆에 곁들인 뒤 뵈르블랑소스를 숟가락으로 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-chef-3/hero.webp',
     mainIngredient: '가을무',
     description: '바삭하게 시어링한 관자와 무에 프랑스식 버터소스를 곁들인, 우아한 메인요리예요.',
     masterclass: {
@@ -564,7 +564,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-chef-4', month: 9, title: '무 카르파치오', subtitle: '얇게 저민 무의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 무를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-chef-4/hero.webp',
     mainIngredient: '가을무',
     description: '얇게 저민 가을무에 올리브오일과 레몬을 더한, 재료 본연의 단맛을 즐기는 전채예요.',
     masterclass: {
@@ -595,7 +595,7 @@ export const recipesAutumnRadishExpansion: Recipe[] = [
     id: 'autumnradish-chef-5', month: 9, title: '무 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumnradish-chef-5/hero.webp',
     mainIngredient: '가을무',
     description: '가을무를 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 단맛의 프랑스식 수프예요.',
     masterclass: {

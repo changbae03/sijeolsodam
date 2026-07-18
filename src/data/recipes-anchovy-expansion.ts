@@ -12,7 +12,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-1', month: 6, title: '멸치볶음', subtitle: '바삭하고 짭짤한 국민 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: '/images/recipes/anchovy-home-1/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-home-1/hero.webp',
     mainIngredient: '멸치',
     description: '바삭한 잔멸치와 견과류를 간장 양념에 볶아낸, 한국인이 가장 사랑하는 밑반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-2', month: 6, title: '멸치육수 국수', subtitle: '깊은 육수의 여름 시원한 국수',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: '/images/recipes/anchovy-home-2/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-home-2/hero.webp',
     mainIngredient: '멸치',
     description: '진한 멸치육수를 차갑게 식혀 만든, 깔끔하고 시원한 여름 국수예요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-3', month: 6, title: '멸치고추장볶음', subtitle: '매콤한 밥도둑 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: '/images/recipes/anchovy-home-3/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-home-3/hero.webp',
     mainIngredient: '멸치',
     description: '잔멸치를 고추장 양념에 매콤달콤하게 볶아낸, 색다른 밥도둑 밑반찬이에요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-4', month: 6, title: '멸치주먹밥', subtitle: '고소하고 짭짤한 간단 한 끼',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: '/images/recipes/anchovy-home-4/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-home-4/hero.webp',
     mainIngredient: '멸치',
     description: '멸치볶음을 밥에 섞어 동그랗게 뭉친, 간단하고 든든한 한 끼예요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-home-5', month: 6, title: '멸치다시마국물 계란찜', subtitle: '깊은 육수로 끓인 부드러운 계란찜',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: '/images/recipes/anchovy-home-5/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-home-5/hero.webp',
     mainIngredient: '멸치',
     description: '멸치다시마 육수로 끓인, 부드럽고 감칠맛 진한 계란찜이에요.',
     masterclass: {
@@ -163,7 +163,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-weekend-1', month: 6, title: '멸치액젓 김치찌개', subtitle: '깊은 감칠맛의 얼큰한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: '/images/recipes/anchovy-weekend-1/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-weekend-1/hero.webp',
     mainIngredient: '멸치',
     description: '멸치액젓으로 감칠맛을 더한, 깊고 진한 얼큰한 김치찌개예요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-weekend-2', month: 6, title: '멸치국수 잔치국수', subtitle: '깊은 육수의 정겨운 잔치국수',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: '/images/recipes/anchovy-weekend-2/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-weekend-2/hero.webp',
     mainIngredient: '멸치',
     description: '진한 멸치육수에 소면을 말아낸, 정겨운 잔치국수예요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-weekend-3', month: 6, title: '멸치볶음쌈장', subtitle: '고기쌈에 곁들이는 특별한 쌈장',
     category: '양념', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 4,
-    heroImage: '/images/recipes/anchovy-weekend-3/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-weekend-3/hero.webp',
     mainIngredient: '멸치',
     description: '멸치를 다져 넣은 쌈장으로, 고기쌈에 곁들이면 감칠맛이 배가되는 특별한 양념이에요.',
     masterclass: {
@@ -251,7 +251,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-weekend-4', month: 6, title: '멸치육수 어묵탕', subtitle: '깊은 국물의 든든한 어묵탕',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-weekend-4/hero.webp',
     mainIngredient: '멸치',
     description: '진한 멸치육수에 어묵과 무를 넣고 끓인, 든든하고 시원한 어묵탕이에요.',
     masterclass: {
@@ -280,7 +280,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
   {
     id: 'anchovy-weekend-5', month: 6, title: '멸치김밥', subtitle: '짭짤하고 고소한 별미 김밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-weekend-5/hero.webp',
     mainIngredient: '멸치',
     description: '멸치볶음을 넣어 만든, 짭짤하고 고소한 별미 김밥이에요.',
     masterclass: {
@@ -313,7 +313,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-world-1', month: 6, title: '안초비 알리오 올리오', subtitle: '이탈리아식 안초비 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '안초비(멸치)는 이탈리아 요리에서 감칠맛을 내는 필수 재료예요. 오일에 녹여 파스타 베이스로 쓰는 것이 대표적인 활용법이에요.' },
-    heroImage: '/images/recipes/anchovy-world-1/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-world-1/hero.webp',
     mainIngredient: '멸치',
     description: '멸치를 올리브오일에 녹여 향을 낸, 감칠맛 진한 이탈리아식 파스타예요.',
     masterclass: {
@@ -344,7 +344,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-world-2', month: 6, title: '보케로네스', subtitle: '스페인식 식초절임 멸치',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '스페인', note: '보케로네스(boquerones)는 스페인의 대표 타파스로, 신선한 멸치를 식초에 절여 만들어요. 상큼하고 짭짤한 맛이 특징이에요.' },
-    heroImage: '/images/recipes/anchovy-world-2/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-world-2/hero.webp',
     mainIngredient: '멸치',
     description: '신선한 멸치를 식초에 절인, 상큼하고 짭짤한 스페인식 타파스예요.',
     masterclass: {
@@ -375,7 +375,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-world-3', month: 6, title: '니보시다시 우동', subtitle: '일본식 멸치육수 우동',
     category: '면요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '니보시(煮干し)는 일본어로 말린 멸치를 뜻해요. 일본에서는 니보시로 우린 다시육수가 우동이나 미소시루의 기본 국물로 널리 쓰여요.' },
-    heroImage: '/images/recipes/anchovy-world-3/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-world-3/hero.webp',
     mainIngredient: '멸치',
     description: '멸치육수에 우동면을 말아낸, 담백하고 깊은 맛의 일본식 우동이에요.',
     masterclass: {
@@ -407,7 +407,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-world-4', month: 6, title: '느억맘 멸치조림', subtitle: '베트남식 짭짤한 캐러멜조림',
     category: '조림', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '베트남', note: '베트남에서는 생선이나 새우를 느억맘(피시소스)과 설탕으로 캐러멜라이즈시켜 조리는 코(kho) 조리법이 있어요. 멸치도 이 방식으로 만들면 짭짤달콤한 밥도둑이 돼요.' },
-    heroImage: '/images/recipes/anchovy-world-4/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-world-4/hero.webp',
     mainIngredient: '멸치',
     description: '멸치를 피시소스와 설탕에 캐러멜라이즈하듯 조린, 짭짤달콤한 베트남식 밑반찬이에요.',
     masterclass: {
@@ -437,7 +437,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-world-5', month: 6, title: '멸치 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '파피요트(en papillote)는 재료를 종이나 포일에 싸서 오븐에 찌듯 굽는 프랑스 요리 기법이에요. 신선한 멸치를 채소와 함께 싸서 구우면 부드럽고 향긋한 요리가 돼요.' },
-    heroImage: '/images/recipes/anchovy-world-5/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-world-5/hero.webp',
     mainIngredient: '멸치',
     description: '신선한 멸치와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -470,7 +470,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-chef-1', month: 6, title: '멸치 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 오이나 딜을 띄운 뒤 맑은 국물이 돋보이게 담습니다.',
-    heroImage: '/images/recipes/anchovy-chef-1/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-chef-1/hero.webp',
     mainIngredient: '멸치',
     description: '멸치육수를 달걀흰자로 한 번 더 맑게 정제한, 투명하고 진한 콩소메예요.',
     masterclass: {
@@ -501,7 +501,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-chef-2', month: 6, title: '멸치 뵈르블랑', subtitle: '프랑스식 버터소스를 곁들인 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 구운 흰살생선을 놓고, 멸치를 녹인 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: '/images/recipes/anchovy-chef-2/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-chef-2/hero.webp',
     mainIngredient: '멸치',
     description: '멸치로 감칠맛을 낸 프랑스식 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -533,7 +533,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-chef-3', month: 6, title: '멸치 안초비오일 파스타', subtitle: '고급 안초비오일로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 안초비오일을 한 바퀴 두른 뒤 파마산치즈와 레몬 제스트를 뿌려 완성합니다.',
-    heroImage: '/images/recipes/anchovy-chef-3/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-chef-3/hero.webp',
     mainIngredient: '멸치',
     description: '멸치를 오일에 오래 우려 만든 안초비오일로 완성한, 깊은 감칠맛의 파스타예요.',
     masterclass: {
@@ -563,7 +563,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-chef-4', month: 6, title: '멸치 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 멸치 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: '/images/recipes/anchovy-chef-4/hero.webp',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-chef-4/hero.webp',
     mainIngredient: '멸치',
     description: '신선한 멸치를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -593,7 +593,7 @@ export const recipesAnchovyExpansion: Recipe[] = [
     id: 'anchovy-chef-5', month: 6, title: '멸치 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 안초비버터소스를 살짝 끼얹은 뒤 차이브를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/anchovy-chef-5/hero.webp',
     mainIngredient: '멸치',
     description: '바삭하게 구운 바게트 위에 멸치와 버터를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {

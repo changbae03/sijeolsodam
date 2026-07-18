@@ -14,7 +14,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-home-1', month: 7, title: '보리새우소금구이', subtitle: '고소하고 탱탱한 여름 새우구이',
     category: '메인요리', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-home-1/hero.webp',
     mainIngredient: '보리새우',
     description: '소금만 뿌려 구워도 탱탱한 살과 고소한 맛이 그대로 살아나는, 간단한 여름 안주예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-home-2', month: 7, title: '보리새우장', subtitle: '탱글한 새우를 간장에 절인 별미',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1625943555017-a517a8e8d11a?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-home-2/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 간장 양념에 절여 만든, 짭짤하고 감칠맛 나는 밥도둑 반찬이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-home-3', month: 7, title: '보리새우볶음', subtitle: '탱글하고 고소한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-home-3/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 마늘과 버터에 볶아낸, 탱글하고 고소한 기본 볶음 요리예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-home-4', month: 7, title: '보리새우튀김', subtitle: '겉바속촉 기본 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-home-4/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 바삭하게 튀긴, 겉은 바삭하고 속은 탱글한 기본 튀김이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-home-5', month: 7, title: '보리새우볶음밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-home-5/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 넣어 볶은, 고소하고 든든한 기본 볶음밥이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-weekend-1', month: 7, title: '보리새우강정', subtitle: '매콤달콤 바삭한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-weekend-1/hero.webp',
     mainIngredient: '보리새우',
     description: '바삭하게 튀긴 보리새우를 매콤달콤한 소스에 버무린, 인기 만점 별미예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-weekend-2', month: 7, title: '보리새우파스타', subtitle: '갈릭향 진한 이탈리아식 응용',
     category: '파스타', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-weekend-2/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 마늘과 올리브오일에 볶아 파스타에 버무린, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-weekend-3', month: 7, title: '보리새우전골', subtitle: '푸짐하고 시원한 여름 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-weekend-3/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우와 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 전골이에요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-weekend-4', month: 7, title: '보리새우솥밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-weekend-4/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 올려 지은 솥밥으로, 고소하고 감칠맛 나는 든든한 한 그릇이에요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-weekend-5', month: 7, title: '보리새우비스크', subtitle: '진한 감칠맛의 수프',
     category: '수프', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-weekend-5/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우 껍질까지 우려 만든, 진하고 고소한 홈메이드 수프예요.',
     masterclass: {
@@ -309,7 +309,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-world-1', month: 7, title: '오도리 사시미', subtitle: '일본식 활새우회',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '일본', note: '오도리(踊り)는 일본어로 "춤춘다"는 뜻이에요. 살아있는 새우의 머리와 껍질을 튀기고 살은 회로 즐기는 것이 오도리 사시미의 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-world-1/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우의 몸통은 회로, 머리와 껍질은 튀겨서 함께 즐기는 일본식 별미예요.',
     masterclass: {
@@ -339,7 +339,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-world-2', month: 7, title: '감바스 알 아히요', subtitle: '스페인식 마늘새우',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '감바스 알 아히요(gambas al ajillo)는 스페인의 대표 타파스로, 새우를 올리브오일과 마늘에 보글보글 끓여내는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-world-2/hero.webp',
     mainIngredient: '보리새우',
     description: '올리브오일과 마늘에 보글보글 끓여낸, 스페인식 대표 새우 타파스예요.',
     masterclass: {
@@ -369,7 +369,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-world-3', month: 7, title: '똠얌꿍', subtitle: '태국식 새콤매콤한 새우탕',
     category: '국&찌개', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '태국', note: '똠얌꿍(ต้มยำกุ้ง)은 태국의 대표 수프로, 새우와 레몬그라스, 라임잎으로 새콤매콤한 국물을 내는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548943487-a2e4e43b4853?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-world-3/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우와 향신 재료로 끓인, 태국의 대표 새콤매콤한 수프예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-world-4', month: 7, title: '보리새우 텐푸라', subtitle: '일본식 새우튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '일본', note: '텐푸라는 일본식 튀김 기법으로, 얼음물 반죽과 낮은 온도의 기름이 바삭함의 비결이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-world-4/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 일본식 텐푸라 반죽으로 튀긴, 가볍고 바삭한 튀김이에요.',
     masterclass: {
@@ -429,7 +429,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-world-5', month: 7, title: '케이준 새우볶음', subtitle: '미국 남부식 매콤한 새우요리',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '미국(케이준)', note: '케이준 요리는 미국 루이지애나 지방의 대표 스타일로, 파프리카가루와 카옌페퍼 등 향신료를 강하게 쓰는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-world-5/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 케이준 향신료에 볶아낸, 매콤하고 스모키한 미국 남부식 요리예요.',
     masterclass: {
@@ -460,7 +460,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-chef-1', month: 7, title: '새우 크넬 낭튀아', subtitle: '프랑스식 포스미트 포칭',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 3,
     platingGuide: '얕은 접시에 크넬을 2~3개 나란히 놓고, 낭튀아소스(가재소스 응용)를 크넬 옆에 부어 접시를 반쯤 덮은 뒤 처빌잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-chef-1/hero.webp',
     mainIngredient: '보리새우',
     description: '새우살을 곱게 갈아 크림과 계란으로 매끄럽게 만든 반죽을 은은한 물에 데쳐 익힌, 리옹 지방의 클래식 프랑스 요리예요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-chef-2', month: 7, title: '프론 칵테일', subtitle: '영국식 레트로 클래식',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '쿠프 글라스(칵테일 잔)에 잘게 썬 양상추를 깔고, 새우를 소스에 버무려 소복이 담은 뒤 파프리카가루를 뿌리고 레몬 웨지를 잔 가장자리에 걸칩니다.',
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-chef-2/hero.webp',
     mainIngredient: '보리새우',
     description: '데친 새우를 마리로즈소스에 버무려 유리잔에 담은, 영국의 1970년대를 상징하는 레트로 전채예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-chef-3', month: 7, title: '새우토스트', subtitle: '중식 광둥 튀김 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '삼각형으로 자른 새우토스트를 부채꼴로 접시에 배치하고, 스위트칠리소스를 작은 종지에 곁들이며 실파를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-chef-3/hero.webp',
     mainIngredient: '보리새우',
     description: '새우살을 곱게 다져 빵에 발라 튀긴, 광둥식 딤섬 레스토랑의 대표 전채예요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-chef-4', month: 7, title: '카타이피 새우말이', subtitle: '그리스·중동식 페이스트리 튀김',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '길게 튀긴 새우말이를 접시에 통나무처럼 나란히 눕혀 담고, 타히니레몬소스를 지그재그로 두른 뒤 다진 피스타치오를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-chef-4/hero.webp',
     mainIngredient: '보리새우',
     description: '실처럼 가는 카타이피 반죽으로 새우를 돌돌 말아 튀긴, 그리스·중동식 바삭한 전채예요.',
     masterclass: {
@@ -583,7 +583,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
     id: 'barleyshrimp-chef-5', month: 7, title: '새우 앙 크루트', subtitle: '프랑스식 페이스트리 베이킹',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 55, servings: 4,
     platingGuide: '구운 크루트를 반으로 잘라 단면이 보이게 접시에 세워 담고, 버터소스를 접시 바닥에 살짝 깔아 크루트가 떠 있는 듯 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-chef-5/hero.webp',
     mainIngredient: '보리새우',
     description: '새우와 허브버터를 퍼프페이스트리에 감싸 구운, 프랑스식 "앙 크루트" 베이킹 기법의 전채예요.',
     masterclass: {

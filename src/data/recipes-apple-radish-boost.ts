@@ -9,7 +9,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'apple-home-4', month: 10, title: '사과 오트밀', subtitle: '아침을 든든하게 채우는 기본 메뉴',
     category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-home-4/hero.webp',
     mainIngredient: '사과', description: '오트밀에 사과와 계피를 더해 끓인, 든든하고 건강한 아침 메뉴예요.',
     masterclass: {
       chefIntro: '바쁜 아침에도 10분이면 충분한 메뉴예요. 사과를 끓이면 단맛이 오트밀 전체에 자연스럽게 퍼져요.',
@@ -41,7 +41,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'apple-home-5', month: 10, title: '사과 피클', subtitle: '아삭하게 절인 간단한 사과 피클',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-home-5/hero.webp',
     mainIngredient: '사과', description: '식초물에 가볍게 절인 사과는 고기 요리에 곁들이기 좋은 새콤달콤한 사이드예요.',
     masterclass: {
       chefIntro: '과일을 피클로 만든다는 발상이 재미있는 메뉴예요. 사과의 단맛과 식초의 산미가 잘 어우러져요.',
@@ -70,7 +70,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'apple-weekend-4', month: 10, title: '사과 시나몬롤', subtitle: '폭신한 반죽 속 달콤한 사과',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 110, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-weekend-4/hero.webp',
     mainIngredient: '사과', description: '계피향 가득한 반죽에 사과 필링을 채운, 손이 가지만 보람 있는 베이킹이에요.',
     masterclass: {
       chefIntro: '빵 반죽을 다뤄보는 좋은 연습이 돼요. 사과 필링이 더해져 더 든든하고 향긋해요.',
@@ -99,7 +99,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'apple-weekend-5', month: 10, title: '사과 콩포트', subtitle: '뭉근히 졸여 만드는 만능 사과 베이스',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-weekend-5/hero.webp',
     mainIngredient: '사과', description: '사과를 부드럽게 졸여 만든, 요거트나 빵에 두루 활용할 수 있는 만능 베이스예요.',
     masterclass: {
       chefIntro: '잼보다 덜 졸여서 더 신선한 사과 본연의 맛이 남아있는 베이스예요. 여러 요리에 활용하기 좋아요.',
@@ -136,7 +136,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       country: '중국',
       note: '빠스(拔丝)는 튀긴 재료에 설탕시럽을 입혀 실처럼 늘어나게 만드는 중국의 조리법이에요. 빠스핑궈(拔丝苹果)는 사과로 만든 버전으로, 중국 가정과 식당에서 즐기는 인기 디저트예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-world-4/hero.webp',
     mainIngredient: '사과', description: '튀긴 사과에 설탕시럽을 입혀 실처럼 늘어나는, 중국의 독특한 디저트예요.',
     masterclass: {
       chefIntro: '설탕을 실처럼 늘어나게 만드는 재미있는 중국 요리 기법이에요. 따뜻할 때 바로 먹어야 그 식감을 즐길 수 있어요.',
@@ -168,7 +168,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       country: '아르헨티나',
       note: '엠파나다는 남미 전역에서 즐기는 속을 채운 페이스트리예요. 사과 엠파나다는 디저트 버전으로, 아르헨티나와 칠레 등에서 간식이나 후식으로 즐기는 친근한 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-world-5/hero.webp',
     mainIngredient: '사과', description: '사과 속을 채워 반달 모양으로 빚어 구운, 남미식 달콤한 페이스트리예요.',
     masterclass: {
       chefIntro: '남미 길거리 음식의 친근함이 담긴 메뉴예요. 사과 속이 페이스트리와 만나 든든한 간식이 돼요.',
@@ -199,7 +199,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
     id: 'apple-chef-4', month: 10, title: '사과 타르트와 솔티드 캐러멜', subtitle: '단짠의 균형을 보여주는 정교한 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 슬라이스해 단면이 보이게 세워 담고, 솔티드 캐러멜을 가늘게 한 줄 그어보세요. 굵은소금 한 알을 올리면 마무리가 깔끔해요.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-chef-4/hero.webp',
     mainIngredient: '사과', description: '얇게 썬 사과를 타르트지에 가지런히 올리고 솔티드 캐러멜로 마무리한, 단짠의 정교한 디저트예요.',
     masterclass: {
       chefIntro: '단순한 사과 타르트에 짠맛을 더해 풍미를 한 단계 끌어올린 메뉴예요.',
@@ -233,7 +233,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
     id: 'apple-chef-5', month: 10, title: '사과 그라니타', subtitle: '코스 사이 입맛을 정리하는 차가운 샤베트',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 240, servings: 4,
     platingGuide: '작은 유리잔에 그라니타를 가볍게 담고 민트 잎 하나를 올려보세요. 거친 결정의 텍스처가 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-chef-5/hero.webp',
     mainIngredient: '사과', description: '사과를 갈아 얼린, 코스 요리 중간에 입맛을 정리해주는 차갑고 산뜻한 그라니타예요.',
     masterclass: {
       chefIntro: '레스토랑 코스에서 메인 사이에 내는 팔레트 클렌저 역할을 하는 디저트예요. 사과 향이 그대로 살아있어요.',
@@ -267,7 +267,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'radish-home-4', month: 11, title: '무생채(고춧가루)', subtitle: '집집마다 다른 기본 무생채',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-home-4/hero.webp',
     mainIngredient: '무', description: '고춧가루로 칼칼하게 무친, 집집마다 양념이 조금씩 다른 가장 기본적인 무생채예요.',
     masterclass: {
       chefIntro: '한식 밥상에 가장 자주 오르는 반찬 중 하나예요. 고춧가루의 칼칼함이 무의 단맛을 더 또렷하게 만들어줘요.',
@@ -294,7 +294,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'radish-home-5', month: 11, title: '무말랭이 무침', subtitle: '꼬들꼬들한 식감의 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-home-5/hero.webp',
     mainIngredient: '무', description: '말린 무를 불려 매콤짭짤하게 무친, 꼬들꼬들한 식감이 매력적인 밑반찬이에요.',
     masterclass: {
       chefIntro: '시판 무말랭이를 써도 충분히 맛있게 만들 수 있는 반찬이에요. 말린 식재료라 식감이 독특해요.',
@@ -323,7 +323,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'radish-weekend-4', month: 11, title: '무 만두', subtitle: '시원한 무를 듬뿍 넣은 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-weekend-4/hero.webp',
     mainIngredient: '무', description: '무를 듬뿍 넣어 시원하고 깔끔한 맛을 내는, 정성이 필요한 주말 만두예요.',
     masterclass: {
       chefIntro: '배추만두와는 또 다른 시원한 맛이 나는 메뉴예요. 무가 익으면서 단맛이 속에 가득 차요.',
@@ -351,7 +351,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
   {
     id: 'radish-weekend-5', month: 11, title: '무 스테이크', subtitle: '두툼하게 구워낸 색다른 채소 스테이크',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-weekend-5/hero.webp',
     mainIngredient: '무', description: '두툼하게 썬 무를 버터에 구워낸, 고기 스테이크 못지않은 색다른 메인 요리예요.',
     masterclass: {
       chefIntro: '무를 메인 요리로 끌어올린 색다른 발상이에요. 두툼하게 구우면 속까지 부드럽고 겉은 노릇해져요.',
@@ -389,7 +389,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       country: '일본',
       note: '오뎅나베는 일본의 대표적인 겨울 요리로, 무와 어묵, 다시마 등을 다시육수에 오래 끓여 만들어요. 편의점에서도 흔히 파는 일본 겨울철 국민 음식이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-world-4/hero.webp',
     mainIngredient: '무', description: '무와 다양한 어묵을 다시육수에 오래 끓인, 일본 겨울철 대표 국민 음식이에요.',
     masterclass: {
       chefIntro: '일본 편의점에서도 흔히 만나는 친근한 메뉴예요. 무가 오래 끓을수록 다시육수의 맛을 깊이 머금어요.',
@@ -425,7 +425,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
       country: '일본',
       note: '다이콘 사라다는 일본 가정에서 가볍게 곁들이는 무 샐러드예요. 채 썬 무에 폰즈 소스나 마요네즈를 더해 간단하게 즐기는, 일본식 양식의 영향을 받은 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-world-5/hero.webp',
     mainIngredient: '무', description: '채 썬 무에 폰즈 소스를 곁들인, 일본식 산뜻하고 가벼운 샐러드예요.',
     masterclass: {
       chefIntro: '일본 가정식에서 곁들임으로 흔히 만나는 메뉴예요. 무의 알싱함과 폰즈의 산미가 산뜻하게 어우러져요.',
@@ -455,7 +455,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
     id: 'radish-chef-4', month: 11, title: '무 그라니타와 캐비어', subtitle: '깔끔한 무 향과 짠맛의 모던 조합',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 240, servings: 4,
     platingGuide: '작은 유리잔에 그라니타를 가볍게 담고 캐비어를 살짝 올려보세요. 차갑고 짠맛이 어우러지는 의외의 조합이 비주얼로도 매력적이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-chef-4/hero.webp',
     mainIngredient: '무', description: '무를 갈아 얼린 그라니타에 캐비어를 더한, 의외의 신선함을 주는 모던 전채예요.',
     masterclass: {
       chefIntro: '무를 디저트가 아닌 모던 전채로 재해석한 메뉴예요. 짠맛의 캐비어와 산뜻한 무의 조합이 의외로 잘 맞아요.',
@@ -489,7 +489,7 @@ export const recipesAppleRadishBoost: Recipe[] = [
     id: 'radish-chef-5', month: 11, title: '무 콩소메', subtitle: '맑게 거른 무의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 무 슬라이스 한 조각을 띄워보세요. 맑은 색이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/radish-chef-5/hero.webp',
     mainIngredient: '무', description: '무를 갈아 맑게 걸러낸, 무 본연의 깔끔한 단맛만 남긴 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '토마토나 오이 콩소메와 같은 모던 기법을 무에 적용한 요리예요. 무의 단맛이 의외로 콩소메에 잘 어울려요.',

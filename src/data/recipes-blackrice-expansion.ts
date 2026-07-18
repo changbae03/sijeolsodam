@@ -14,7 +14,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-home-2', month: 1, title: '흑미죽', subtitle: '고소하고 든든한 아침 죽',
     category: '죽', difficulty: '쉬움', level: 'home', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-home-2/hero.webp',
     mainIngredient: '흑미',
     description: '흑미를 푹 끓여낸, 은은한 보랏빛과 고소한 향이 매력적인 죽이에요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-home-2', month: 9, title: '검은콩 조림', subtitle: '반짝이게 조려낸 기본 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 50, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-home-2/hero.webp',
     mainIngredient: '검은콩',
     description: '간장과 설탕으로 윤기 나게 조린, 두고두고 꺼내 먹는 검은콩 밑반찬이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-home-3', month: 9, title: '검은콩국수', subtitle: '고소하게 갈아낸 여름·가을 별미',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-home-3/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩을 곱게 갈아 만든 고소한 콩물에 국수를 말아낸, 든든한 별미 국수예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-home-4', month: 9, title: '검은콩 두유', subtitle: '고소함이 진한 아침 대용 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-home-4/hero.webp',
     mainIngredient: '검은콩',
     description: '삶은 검은콩을 우유와 함께 갈아 만든, 고소하고 든든한 아침 대용 음료예요.',
     masterclass: {
@@ -104,7 +104,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-home-5', month: 9, title: '검은콩 샐러드', subtitle: '가볍게 곁들이는 단백질 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-home-5/hero.webp',
     mainIngredient: '검은콩',
     description: '삶은 검은콩에 채소를 더해 상큼한 드레싱으로 버무린, 가볍게 즐기는 샐러드예요.',
     masterclass: {
@@ -134,7 +134,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-weekend-1', month: 9, title: '검은콩 영양찜', subtitle: '고기와 함께 든든하게 찐 영양요리',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-weekend-1/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩과 갈비, 밤, 대추를 함께 쪄낸, 명절이나 손님상에 어울리는 영양찜이에요.',
     masterclass: {
@@ -164,7 +164,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-weekend-2', month: 9, title: '검은콩 만두', subtitle: '고소한 콩소로 채운 손만두',
     category: '만두', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-weekend-2/hero.webp',
     mainIngredient: '검은콩',
     description: '삶아 으깬 검은콩과 두부, 채소를 섞은 소를 빚어 만든, 담백하고 고소한 채식 만두예요.',
     masterclass: {
@@ -194,7 +194,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-weekend-3', month: 9, title: '검은콩 대추죽', subtitle: '몸보신에 좋은 고소한 죽',
     category: '죽', difficulty: '쉬움', level: 'weekend', cookTime: 60, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-weekend-3/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩과 대추를 함께 끓여 만든, 든든하고 속이 편안한 보양죽이에요.',
     masterclass: {
@@ -224,7 +224,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-weekend-4', month: 9, title: '검은콩 강정', subtitle: '바삭 고소한 콩 간식',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-weekend-4/hero.webp',
     mainIngredient: '검은콩',
     description: '볶은 검은콩을 조청과 버무려 굳힌, 고소하고 바삭한 전통 간식이에요.',
     masterclass: {
@@ -254,7 +254,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
   {
     id: 'blackbean-weekend-5', month: 9, title: '검은콩 미숫가루', subtitle: '집에서 볶아 만드는 고소한 가루',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-weekend-5/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩을 볶아 곱게 갈아낸, 물이나 우유에 타 먹는 고소한 미숫가루예요.',
     masterclass: {
@@ -287,7 +287,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-world-1', month: 9, title: '구로마메노 니모노', subtitle: '일본 정월 대표 콩조림',
     category: '조림', difficulty: '쉬움', level: 'world', cookTime: 90, servings: 6,
     cuisineContext: { country: '일본', note: '구로마메(黒豆)는 일본 정월 오세치 요리에 빠지지 않는 검은콩 조림이에요. 한 해를 건강하고 부지런히("마메"는 부지런함을 뜻하는 말과 발음이 같아요) 지내길 바라는 마음을 담은 상징적인 음식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-world-1/hero.webp',
     mainIngredient: '검은콩',
     description: '설탕과 간장으로 오랜 시간 은근히 조려 윤기 나게 완성한, 일본 정월의 상징적인 콩조림이에요.',
     masterclass: {
@@ -318,7 +318,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-world-2', month: 9, title: '헤이또우 지앙', subtitle: '중국식 검은콩 두유',
     category: '음료', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '중국', note: '헤이또우 지앙(黑豆浆)은 중국 아침 식탁에 흔히 오르는 검은콩 두유예요. 중국에서는 검은콩이 신장 건강에 좋다고 여겨져 아침 대용 음료로 즐겨 마셔요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-world-2/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩을 갈아 끓인 걸쭉하고 고소한, 중국식 아침 음료예요.',
     masterclass: {
@@ -349,7 +349,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-world-3', month: 9, title: '프리홀레스 네그로스', subtitle: '멕시코식 검은콩 스튜',
     category: '스튜', difficulty: '쉬움', level: 'world', cookTime: 70, servings: 4,
     cuisineContext: { country: '멕시코', note: '프리홀레스 네그로스(frijoles negros)는 멕시코와 중남미 식탁의 기본 반찬이에요. 쿠민과 고추, 라임으로 향을 내는 것이 특징이고, 타코나 부리토의 속재료로도 자주 쓰여요.' },
-    heroImage: 'https://images.unsplash.com/photo-1623428187969-1cd5e3e3e5db?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-world-3/hero.webp',
     mainIngredient: '검은콩',
     description: '쿠민과 고추로 향을 낸 육수에 검은콩을 푹 끓인, 멕시코 가정식 콩 스튜예요.',
     masterclass: {
@@ -380,7 +380,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-world-4', month: 9, title: '검은콩 리조또', subtitle: '이탈리아식 콩 리조또',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 50, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 북부에서는 콩류를 넣은 리조또(리조토 에 파졸리)가 겨울철 든든한 요리로 사랑받아요. 검은콩을 쓰면 색이 짙어져 시각적으로도 인상적인 요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-world-4/hero.webp',
     mainIngredient: '검은콩',
     description: '삶은 검은콩을 으깨 육수에 섞어 만든, 짙은 색감의 이탈리아식 콩 리조또예요.',
     masterclass: {
@@ -412,7 +412,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-world-5', month: 9, title: '검은콩 칠리', subtitle: '미국식 매콤한 콩 칠리',
     category: '스튜', difficulty: '쉬움', level: 'world', cookTime: 55, servings: 4,
     cuisineContext: { country: '미국', note: '칠리 콘 카르네에서 고기 대신 콩을 듬뿍 넣은 베지테리언 칠리는 미국 남서부에서 즐겨 먹는 든든한 겨울 음식이에요. 여러 종류의 칠리파우더로 매운맛의 층을 쌓는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-world-5/hero.webp',
     mainIngredient: '검은콩',
     description: '토마토와 칠리파우더로 매콤하게 끓인 검은콩 스튜로, 빵이나 밥에 곁들이기 좋은 미국식 요리예요.',
     masterclass: {
@@ -445,7 +445,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-chef-1', month: 9, title: '검은콩 두유 무스', subtitle: '고소함을 가볍게 띄운 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '투명한 유리잔에 무스를 짤주머니로 짜 담고, 표면에 흑임자가루를 살짝 뿌린 뒤 콩자반 한 알을 장식으로 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-chef-1/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩 두유에 젤라틴과 생크림을 더해 가볍게 부풀린, 고소한 콩향의 무스 디저트예요.',
     masterclass: {
@@ -477,7 +477,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-chef-2', month: 9, title: '콩고물 파나코타', subtitle: '이탈리아 디저트에 콩고물을 더하다',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 파나코타를 굳혀 그대로 담고, 표면에 콩고물을 소복이 뿌린 뒤 조청을 가늘게 한 줄 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-chef-2/hero.webp',
     mainIngredient: '검은콩',
     description: '부드러운 이탈리아식 파나코타에 검은콩 고물과 조청을 더한, 한식과 양식이 만난 디저트예요.',
     masterclass: {
@@ -509,7 +509,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-chef-3', month: 9, title: '검은콩 크럼블 타르트', subtitle: '고소한 콩 크럼블을 얹은 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 75, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-chef-3/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩 앙금을 채운 타르트 위에 고소한 콩가루 크럼블을 얹어 구운, 한식과 양식이 어우러진 디저트예요.',
     masterclass: {
@@ -540,7 +540,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-chef-4', month: 9, title: '검은콩 브라운버터 뇨끼', subtitle: '이탈리아 감자경단에 콩을 더하다',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 3,
     platingGuide: '넓은 접시에 뇨끼를 나선형으로 담고, 브라운버터소스를 골고루 끼얹은 뒤 세이지 잎 튀김을 몇 개 올려 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-chef-4/hero.webp',
     mainIngredient: '검은콩',
     description: '삶아 으깬 검은콩을 반죽에 섞어 만든 뇨끼를 갈색버터소스로 마무리한, 고소함이 두 배가 된 요리예요.',
     masterclass: {
@@ -572,7 +572,7 @@ export const recipesBlackBeanExpansion: Recipe[] = [
     id: 'blackbean-chef-5', month: 9, title: '검은콩 카카오 트러플', subtitle: '콩과 초콜릿이 만난 한입 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 접시에 트러플을 3~4개씩 원형으로 배치하고, 코코아파우더 위에 금박이나 흑임자를 살짝 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackbean-chef-5/hero.webp',
     mainIngredient: '검은콩',
     description: '검은콩 앙금과 다크초콜릿을 섞어 동그랗게 빚은, 은은한 콩향이 도는 한입 트러플이에요.',
     masterclass: {

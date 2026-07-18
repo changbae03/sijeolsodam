@@ -12,7 +12,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-home-1', month: 10, title: '가을배추겉절이', subtitle: '단맛 오른 배추의 즉석 겉절이',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-home-1/hero.webp',
     mainIngredient: '가을배추',
     description: '단맛이 오른 가을배추를 매콤달콤한 양념에 무쳐낸, 만들자마자 바로 먹는 즉석 겉절이예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-home-2', month: 10, title: '가을배추된장국', subtitle: '구수하고 담백한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-home-2/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 넣어 끓인 된장국으로, 구수하고 담백한 맛이 매력적이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-home-3', month: 10, title: '가을배추전', subtitle: '달콤하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-home-3/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추 잎에 부침가루옷을 입혀 부친, 달콤하고 아삭한 별미전이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-home-4', month: 10, title: '가을배추무침', subtitle: '들기름 고소한 담백한 나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-home-4/hero.webp',
     mainIngredient: '가을배추',
     description: '데친 가을배추를 들기름에 고소하게 무친, 담백한 기본 나물무침이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-home-5', month: 10, title: '가을배추속대볶음', subtitle: '아삭 고소한 볶음 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-home-5/hero.webp',
     mainIngredient: '가을배추',
     description: '아삭한 배추속대를 마늘기름에 볶아낸, 고소하고 담백한 반찬이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-weekend-1', month: 10, title: '가을배추전골', subtitle: '푸짐하고 시원한 가을 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-weekend-1/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추와 각종 채소, 고기를 넉넉히 넣고 끓인, 푸짐하고 시원한 전골이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-weekend-2', month: 10, title: '가을배추롤', subtitle: '고기와 채소를 감싼 건강한 롤',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-weekend-2/hero.webp',
     mainIngredient: '가을배추',
     description: '데친 배추잎에 다진 고기와 채소를 채워 말아 찐, 건강하고 든든한 요리예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-weekend-3', month: 10, title: '가을배추굴국밥', subtitle: '시원하고 개운한 초겨울 국밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-weekend-3/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추 국물에 굴을 넣어 끓인, 시원하고 개운한 국밥이에요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-weekend-4', month: 10, title: '가을배추김치', subtitle: '아삭하고 단맛 나는 겉절이형 김치',
     category: '김치', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1583224944844-5b268c057b72?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-weekend-4/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 절여 양념에 버무린, 아삭하고 단맛 나는 김치예요.',
     masterclass: {
@@ -278,7 +278,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
   {
     id: 'autumncabbage-weekend-5', month: 10, title: '가을배추만두', subtitle: '아삭함이 살아있는 손만두',
     category: '만두', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-weekend-5/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추와 돼지고기로 속을 채운, 아삭하고 육즙 가득한 손만두예요.',
     masterclass: {
@@ -311,7 +311,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-world-1', month: 10, title: '수안차이', subtitle: '중국식 새콤한 배추절임',
     category: '반찬', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '중국', note: '수안차이(酸菜)는 중국 동북 지방의 대표 발효 배추절임이에요. 새콤한 맛이 특징이며, 만두나 훠궈에 곁들여 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-world-1/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 소금에 절여 발효시킨, 새콤한 중국식 배추절임이에요.',
     masterclass: {
@@ -341,7 +341,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-world-2', month: 10, title: '하쿠사이노 아사즈케', subtitle: '일본식 배추 즉석절임',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '일본', note: '하쿠사이(白菜)는 일본어로 배추를 뜻해요. 일본에서는 배추를 소금과 다시마로 짧게 절이는 아사즈케(浅漬け)를 밑반찬으로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-world-2/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 소금과 다시마로 짧게 절인, 담백하고 아삭한 일본식 즉석절임이에요.',
     masterclass: {
@@ -371,7 +371,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-world-3', month: 10, title: '슈크루트', subtitle: '독일식 발효 배추요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 90, servings: 4,
     cuisineContext: { country: '독일', note: '슈크루트(sauerkraut)는 독일의 대표적인 발효 배추요리예요. 원래는 양배추로 만들지만, 가을배추로도 비슷한 원리로 훌륭하게 만들 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-world-3/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 발효시켜 소시지와 함께 끓인, 독일식 대표 배추요리예요.',
     masterclass: {
@@ -402,7 +402,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-world-4', month: 10, title: '가을배추 리보리타', subtitle: '이탈리아식 배추 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '이탈리아', note: '리보리타(ribollita)는 이탈리아 토스카나 지방의 대표 채소수프로, 배추나 케일 같은 잎채소와 콩, 빵을 넣어 걸쭉하게 끓여요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-world-4/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추와 콩, 빵을 넣고 걸쭉하게 끓인, 이탈리아식 든든한 수프예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-world-5', month: 10, title: '배추 골루비', subtitle: '러시아식 배추롤',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '러시아', note: '골루비(голубцы)는 러시아와 동유럽에서 즐겨 먹는 양배추롤로, 다진 고기와 쌀을 채워 토마토소스에 끓여요. 배추로 만들면 훨씬 부드러운 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-world-5/hero.webp',
     mainIngredient: '가을배추',
     description: '배추잎에 고기와 쌀을 채워 토마토소스에 끓인, 러시아식 든든한 요리예요.',
     masterclass: {
@@ -466,7 +466,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-chef-1', month: 10, title: '배추 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 배추 속대와 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-chef-1/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추 육수를 달걀흰자로 맑게 정제한, 투명하면서도 은은한 단맛의 콩소메예요.',
     masterclass: {
@@ -497,7 +497,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-chef-2', month: 10, title: '배추 그라탕', subtitle: '프랑스식 화이트소스 그라탕',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '작은 그라탕 그릇에 소스를 채우고 오븐에서 그대로 구워, 표면이 진한 갈색으로 그을린 채 그릇째 상에 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-chef-2/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 뵈샤멜소스와 함께 겹겹이 쌓아 구운, 아삭함과 고소함이 함께 있는 그라탕이에요.',
     masterclass: {
@@ -528,7 +528,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-chef-3', month: 10, title: '배추롤 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 배추롤',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '따뜻한 접시에 배추롤을 반으로 잘라 단면이 보이게 세워 담고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-chef-3/hero.webp',
     mainIngredient: '가을배추',
     description: '가리비살을 채운 배추롤에 프랑스식 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {
@@ -561,7 +561,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-chef-4', month: 10, title: '배추 리조또', subtitle: '아삭함이 살아있는 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 살짝 볶은 배추 속대를 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-chef-4/hero.webp',
     mainIngredient: '가을배추',
     description: '가을배추를 넣어 아삭한 식감을 살린, 가을철 이탈리아식 리조또예요.',
     masterclass: {
@@ -593,7 +593,7 @@ export const recipesAutumnCabbageExpansion: Recipe[] = [
     id: 'autumncabbage-chef-5', month: 10, title: '배추 카르파치오', subtitle: '얇게 저민 배추의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 배추속대를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/autumncabbage-chef-5/hero.webp',
     mainIngredient: '가을배추',
     description: '얇게 저민 배추속대에 올리브오일과 레몬을 더한, 재료 본연의 단맛을 즐기는 전채예요.',
     masterclass: {
