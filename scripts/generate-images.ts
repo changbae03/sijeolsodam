@@ -132,15 +132,22 @@ interface RecipeLineInfo {
   mainIngredient: string;
   cuisineCountry: string;
   platingGuide: string;
+  level: string;
+  ingredientNames: string[];
   heroImageLineIndex: number;
   stepLineIndices: { lineIndex: number; title: string; description: string }[];
 }
 
 function parseRecipes(lines: string[]): RecipeLineInfo[] {
   const recipes: RecipeLineInfo[] = [];
-  let current: Partial<RecipeLineInfo> & { steps: RecipeLineInfo['stepLineIndices'] } = {
+  let current: Partial<RecipeLineInfo> & {
+    steps: RecipeLineInfo['stepLineIndices'];
+    ingredientNames?: string[];
+  } = {
     steps: [],
+    ingredientNames: [],
   };
+  let inIngredients = false;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -157,11 +164,14 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
           mainIngredient: current.mainIngredient || '',
           cuisineCountry: current.cuisineCountry || '',
           platingGuide: current.platingGuide || '',
+          level: current.level || '',
+          ingredientNames: current.ingredientNames || [],
           heroImageLineIndex: current.heroImageLineIndex ?? -1,
           stepLineIndices: current.steps,
         });
       }
-      current = { id: idMatch[1], steps: [] };
+      current = { id: idMatch[1], steps: [], ingredientNames: [] };
+      inIngredients = false;
       continue;
     }
 
@@ -173,6 +183,20 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
     const subtitleMatch = line.match(/subtitle:\s*'((?:[^'\\]|\\.)*)'/);
     if (subtitleMatch && current.id && !current.subtitle) {
       current.subtitle = subtitleMatch[1];
+    }
+
+    const levelMatch = line.match(/level:\s*'((?:[^'\\]|\\.)*)'/);
+    if (levelMatch && current.id && !current.level) {
+      current.level = levelMatch[1];
+    }
+
+    // ingredients 블록 안의 name들만 수집 (steps의 title과 섞이지 않게 상태 추적)
+    if (/ingredients:\s*\[/.test(line)) inIngredients = true;
+    if (inIngredients && current.id) {
+      for (const m of line.matchAll(/name:\s*'((?:[^'\\]|\\.)*)'/g)) {
+        (current.ingredientNames ||= []).push(m[1]);
+      }
+      if (/\]/.test(line)) inIngredients = false;
     }
 
     const categoryMatch = line.match(/category:\s*'((?:[^'\\]|\\.)*)'/);
@@ -222,6 +246,8 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
       mainIngredient: current.mainIngredient || '',
       cuisineCountry: current.cuisineCountry || '',
       platingGuide: current.platingGuide || '',
+      level: current.level || '',
+      ingredientNames: current.ingredientNames || [],
       heroImageLineIndex: current.heroImageLineIndex ?? -1,
       stepLineIndices: current.steps,
     });
@@ -267,11 +293,26 @@ async function processFile(fileName: string) {
       try {
         const cuisineLine = recipe.cuisineCountry
           ? `This is an authentic ${recipe.cuisineCountry} dish — render it exactly the way it is actually served in ${recipe.cuisineCountry}, with the correct traditional plates, garnishes, and presentation style for that cuisine, not a Korean-style interpretation.`
-          : `This is a home-style dish — render it in a natural, everyday plating style appropriate to what this specific dish actually is.`;
+          : `This is a Korean home-style dish — render it in a natural, everyday plating style appropriate to what this specific dish actually is.`;
+        // 셰프 컬렉션은 가정식이 아니라 파인다이닝 — 상차림·구도 자체가 달라야 한다
+        const levelLine =
+          recipe.level === 'chef'
+            ? ` This is a FINE-DINING CHEF COLLECTION dish. Plate and stage it like a serious restaurant, not a home meal: one refined, controlled portion with generous negative space on a large plate or wide shallow bowl; precise, minimal, intentional composition; deliberate sauce work (a pour, a swoosh, dots, a glaze) exactly as the recipe's technique dictates; restaurant-grade tableware and a clean, quiet restaurant table. Honor the technique's true appearance — a consommé is a crystal-clear refined broth, a beurre blanc is a smooth pale emulsified butter sauce, a tartare is neatly formed raw dice — never dumb the dish down into a rustic homestyle version.`
+            : '';
+        const keyComponents = recipe.ingredientNames.length
+          ? ` Key components actually in this dish: ${recipe.ingredientNames.slice(0, 12).join(', ')}.`
+          : '';
+        const lastStep = recipe.stepLineIndices[recipe.stepLineIndices.length - 1];
+        const finishLine = lastStep
+          ? ` How it is finished and served: ${lastStep.title} — ${lastStep.description}`
+          : '';
         const platingLine = recipe.platingGuide
           ? ` Exact plating to follow: ${recipe.platingGuide}`
           : '';
-        const prompt = `A food photograph of a real, correctly-made dish called "${recipe.title}"${recipe.subtitle ? ` (${recipe.subtitle})` : ''}, a ${recipe.category} made with ${recipe.mainIngredient} as the main ingredient. What this dish actually is: ${recipe.description} ${cuisineLine}${platingLine} This may be an unfamiliar or unusual dish — research your knowledge of what it truly looks like rather than guessing from the name alone, and never substitute a different, more generic-looking dish.${SODAMI_VISUAL_STYLE}`;
+        const prompt = `=== THE DISH — this section is authoritative; whenever anything later conflicts with it, the dish wins ===
+A food photograph of a real, correctly-made dish called "${recipe.title}"${recipe.subtitle ? ` (${recipe.subtitle})` : ''}, a ${recipe.category} made with ${recipe.mainIngredient} as the main ingredient. What this dish actually is: ${recipe.description}${keyComponents}${finishLine}${platingLine}${levelLine} ${cuisineLine}
+Before composing the photo, decide precisely what THIS dish looks like when correctly prepared — its overall form, colors, sauce consistency, whether the liquid is crystal-clear or thick and creamy, whether it is wet or dry, stacked or flat, rustic or refined — using the information above plus your knowledge of the real dish. This may be an unfamiliar dish — never substitute a more generic-looking dish, and never reuse the appearance of a different dish that happens to share the same main ingredient. Two different recipes with the same ingredient must look clearly different in the photo, because they ARE different dishes.
+=== PHOTOGRAPHY STYLE (applies only where it does not contradict THE DISH above) ===${SODAMI_VISUAL_STYLE}`;
         const buffer = await generateImageBuffer(prompt);
         if (buffer) {
           const url = await uploadToBlob(buffer, `recipes/${recipe.id}/hero.png`);
