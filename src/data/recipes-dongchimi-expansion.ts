@@ -12,7 +12,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-home-1', month: 12, title: '동치미', subtitle: '겨울 김장의 대표 시원한 물김치',
     category: '김치', difficulty: '보통', level: 'home', cookTime: 60, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-home-1/hero.webp',
     mainIngredient: '동치미무',
     description: '무를 소금물에 삭혀 만든, 겨울철 대표 시원한 물김치예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-home-2', month: 12, title: '동치미 막국수', subtitle: '시원한 겨울 동치미로 즐기는 별미',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-home-2/hero.webp',
     mainIngredient: '동치미무',
     description: '시원한 동치미 국물에 메밀면을 말아낸, 겨울철 별미 막국수예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-home-3', month: 12, title: '동치미 냉면', subtitle: '겨울철 시원한 별미 냉면',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-home-3/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 냉면 사리를 말아낸, 겨울철 별미로 즐기는 냉면이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-home-4', month: 12, title: '동치미 굴국밥', subtitle: '시원하고 개운한 겨울 국밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-home-4/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 굴을 넣어 끓인, 시원하고 개운한 겨울철 국밥이에요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-home-5', month: 12, title: '동치미말이 냉채', subtitle: '아삭하고 시원한 간단 냉채',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-home-5/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미무를 얇게 썰어 채소와 함께 낸, 아삭하고 시원한 간단 냉채예요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-weekend-1', month: 12, title: '동치미 굴전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-weekend-1/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 굴과 채소, 두부를 넉넉히 넣고 끓인 시원한 겨울 전골이에요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-weekend-2', month: 12, title: '동치미 국수전골', subtitle: '든든하고 시원한 겨울 한 끼',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-weekend-2/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 소면과 만두, 채소를 넣고 끓인, 든든하고 시원한 한 끼예요.',
     masterclass: {
@@ -221,7 +221,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-weekend-3', month: 12, title: '동치미 해장국', subtitle: '시원하고 개운한 해장용 국',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-weekend-3/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 콩나물을 더해 끓인, 시원하고 개운한 해장용 국이에요.',
     masterclass: {
@@ -250,7 +250,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-weekend-4', month: 12, title: '동치미 수육', subtitle: '개운한 국물과 함께하는 겨울 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-weekend-4/hero.webp',
     mainIngredient: '동치미무',
     description: '삶은 돼지고기 수육을 동치미와 함께 곁들이는, 겨울철 별미 조합이에요.',
     masterclass: {
@@ -280,7 +280,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
   {
     id: 'dongchimi-weekend-5', month: 12, title: '동치미 물냉면', subtitle: '겨울에도 즐기는 시원한 냉면',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-weekend-5/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물과 육수를 섞어 만든, 겨울에도 시원하게 즐기는 물냉면이에요.',
     masterclass: {
@@ -312,7 +312,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-world-1', month: 12, title: '오크로시카', subtitle: '러시아식 차가운 야채수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '러시아', note: '오크로시카(окрошка)는 러시아의 차가운 여름 수프로, 발효 음료인 크바스나 케피어에 채소와 고기를 썰어 넣어요. 동치미 국물의 새콤하고 시원한 성격이 이 수프와 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-world-1/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 채소와 삶은 달걀을 넣은, 러시아식 차가운 수프를 재해석한 요리예요.',
     masterclass: {
@@ -342,7 +342,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-world-2', month: 12, title: '히야시 다이콘 소멘', subtitle: '일본식 차가운 무국물 소면',
     category: '면요리', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '일본', note: '히야시(冷やし)는 일본어로 "차갑게 한"이라는 뜻이에요. 일본에서도 무절임 국물을 차가운 소면 국물로 활용하는 경우가 있는데, 동치미 국물도 비슷한 방식으로 훌륭하게 응용할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-world-2/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 소면을 말아낸, 일본식 히야시 소면 스타일의 시원한 면 요리예요.',
     masterclass: {
@@ -372,7 +372,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-world-3', month: 12, title: '가스파초 스타일 동치미', subtitle: '스페인식 차가운 수프 재해석',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '스페인', note: '가스파초는 스페인의 차가운 토마토 수프예요. 동치미 국물을 베이스로 만들면 산뜻한 신맛이 특징인 색다른 냉수프가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-world-3/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물과 채소를 갈아 만든, 산뜻하고 시원한 스페인식 냉수프예요.',
     masterclass: {
@@ -403,7 +403,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-world-4', month: 12, title: '동치미 살사베르데', subtitle: '멕시코식 살사에 동치미 국물을',
     category: '양념', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '멕시코', note: '멕시코의 살사베르데는 토마티요와 라임즙으로 산미를 내는데, 동치미무와 국물을 활용하면 비슷한 원리로 한국식 재료를 접목한 색다른 살사를 만들 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-world-4/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미무와 국물, 고수를 갈아 만든, 상큼하고 시원한 퓨전 살사예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-world-5', month: 12, title: '동치미 느억짬 국수', subtitle: '베트남식 새콤한 국수',
     category: '면요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '베트남', note: '느억짬은 베트남의 새콤달콤한 디핑소스예요. 동치미 국물과 비슷한 산미와 시원함을 가지고 있어, 두 재료를 섞으면 자연스럽게 어우러지는 국수 요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-world-5/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 느억맘과 라임을 더한, 새콤달콤한 베트남식 국수예요.',
     masterclass: {
@@ -466,7 +466,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-chef-1', month: 12, title: '동치미 콩소메', subtitle: '맑고 시원한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 동치미무를 작은 큐브로 썰어 띄운 뒤 딜을 올려 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-chef-1/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물을 달걀흰자로 한 번 더 맑게 정제한, 투명하고 시원한 콩소메예요.',
     masterclass: {
@@ -497,7 +497,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-chef-2', month: 12, title: '동치미 그라니타', subtitle: '이탈리아식 상큼한 셔벗',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '차갑게 식힌 유리잔에 그라니타를 포크로 긁어 소복이 담고, 민트잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-chef-2/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물을 얼려서 긁어낸, 코스 사이 입가심으로 좋은 이탈리아식 셔벗이에요.',
     masterclass: {
@@ -527,7 +527,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-chef-3', month: 12, title: '동치미 젤리 오이스터', subtitle: '일본식 세련된 한입 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '작은 껍질 접시나 도자기 스푼에 생굴을 놓고, 동치미 젤리를 그 위에 살짝 얹은 뒤 무순으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-chef-3/hero.webp',
     mainIngredient: '동치미무',
     description: '신선한 생굴 위에 동치미 국물을 젤리로 굳혀 올린, 세련된 한입 전채예요.',
     masterclass: {
@@ -557,7 +557,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-chef-4', month: 12, title: '관자 동치미 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 동치미 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 동치미무를 잘게 썰어 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-chef-4/hero.webp',
     mainIngredient: '동치미무',
     description: '바삭하게 시어링한 관자에 동치미 국물로 향을 낸 프랑스식 버터소스를 곁들인, 이색적인 전채예요.',
     masterclass: {
@@ -589,7 +589,7 @@ export const recipesDongchimiExpansion: Recipe[] = [
     id: 'dongchimi-chef-5', month: 12, title: '동치미 냉제 스프', subtitle: '스페인 살모레호 스타일 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 그릇에 스프를 담고, 잘게 썬 동치미무와 삶은 달걀을 고명으로 올린 뒤 올리브오일을 지그재그로 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dongchimi-chef-5/hero.webp',
     mainIngredient: '동치미무',
     description: '동치미 국물에 빵과 올리브오일을 더해 걸쭉하게 만든, 스페인 살모레호 스타일의 냉제 스프예요.',
     masterclass: {

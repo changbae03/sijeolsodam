@@ -12,7 +12,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-home-1', month: 11, title: '광어회', subtitle: '담백하고 쫄깃한 대표 흰살 생선회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-home-1/hero.webp',
     mainIngredient: '광어',
     description: '쫄깃한 식감이 매력인 광어를 얇게 썰어 즐기는, 가을·겨울 대표 담백한 회예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-home-2', month: 11, title: '광어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-home-2/hero.webp',
     mainIngredient: '광어',
     description: '광어 뼈와 자투리로 얼큰하게 끓인, 시원하고 깊은 맛의 매운탕이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesFlatfishExpansion: Recipe[] = [
   {
     id: 'flatfish-home-3', month: 11, title: '광어구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/flatfish-home-3/hero.webp',
     mainIngredient: '광어',
     description: '광어에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-home-2', month: 12, title: '곶감쌈', subtitle: '호두를 품은 명절 대표 다과',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-home-2/hero.webp',
     mainIngredient: '곶감',
     description: '곶감을 펼쳐 호두를 넣고 돌돌 말아 썬, 명절 다과상의 대표 간식이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-home-3', month: 12, title: '곶감식혜', subtitle: '은은한 단맛이 도는 전통 음료',
     category: '음료', difficulty: '보통', level: 'home', cookTime: 300, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-home-3/hero.webp',
     mainIngredient: '곶감',
     description: '엿기름으로 삭힌 식혜에 곶감을 더해 단맛과 향을 한층 깊게 만든 음료예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-home-4', month: 12, title: '곶감 요거트', subtitle: '자연스러운 단맛의 아침 대용',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1571212515416-fca325e3702a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-home-4/hero.webp',
     mainIngredient: '곶감',
     description: '플레인 요거트에 잘게 썬 곶감과 견과류를 올린, 설탕 없이도 달콤한 아침 대용식이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-home-5', month: 12, title: '곶감 크림치즈 토스트', subtitle: '달콤짭짤한 아침 토스트',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1620921575074-01b9e5b0b8f1?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-home-5/hero.webp',
     mainIngredient: '곶감',
     description: '구운 빵에 크림치즈를 바르고 곶감을 올린, 달콤짭짤한 간단한 토스트예요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-weekend-1', month: 12, title: '곶감 수정과', subtitle: '명절 후식의 대표주자',
     category: '음료', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-weekend-1/hero.webp',
     mainIngredient: '곶감',
     description: '생강과 계피를 우린 물에 곶감을 띄운, 향긋하고 시원한 전통 후식 음료예요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-weekend-2', month: 12, title: '곶감 잡채', subtitle: '단맛을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-weekend-2/hero.webp',
     mainIngredient: '곶감',
     description: '기본 잡채에 곶감을 채 썰어 더한, 은은한 단맛이 도는 명절식 잡채예요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-weekend-3', month: 12, title: '곶감 강정', subtitle: '쫄깃 바삭한 명절 다과',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-weekend-3/hero.webp',
     mainIngredient: '곶감',
     description: '곶감을 잘게 썰어 견과류와 함께 조청으로 버무린, 씹는 맛이 좋은 강정이에요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-weekend-4', month: 12, title: '곶감 삼합', subtitle: '한식 코스요리에 어울리는 한입 안주',
     category: '안주', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-weekend-4/hero.webp',
     mainIngredient: '곶감',
     description: '곶감, 치즈, 호두를 겹쳐 한입에 즐기는, 한식 술상에 어울리는 세련된 안주예요.',
     masterclass: {
@@ -251,7 +251,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
   {
     id: 'driedpersimmon-weekend-5', month: 12, title: '곶감 곤약젤리', subtitle: '쫄깃하고 건강한 홈메이드 젤리',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-weekend-5/hero.webp',
     mainIngredient: '곶감',
     description: '곶감을 갈아 넣은 즙에 한천을 더해 굳힌, 쫄깃하고 건강한 홈메이드 젤리예요.',
     masterclass: {
@@ -284,7 +284,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-world-1', month: 12, title: '곶감 하몬 타파스', subtitle: '스페인식 과일과 햄의 조화',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '스페인에는 멜론과 하몬을 곁들이는 전통 타파스가 있어요. 곶감으로 바꾸면 하몬의 짭짤함과 곶감의 농축된 단맛이 만나 색다른 조합이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-world-1/hero.webp',
     mainIngredient: '곶감',
     description: '얇게 썬 곶감에 하몬을 돌돌 말아낸, 스페인 타파스 스타일의 짭짤달콤한 전채예요.',
     masterclass: {
@@ -313,7 +313,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-world-2', month: 12, title: '카키 살라미노', subtitle: '이탈리아식 곶감 살라미 안주',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '이탈리아 안티파스토 상에는 말린 과일과 살라미를 함께 곁들이는 문화가 있어요. 곶감(카키, cachi)과 살라미의 조합은 가을·겨울 이탈리아 가정식 안주로 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-world-2/hero.webp',
     mainIngredient: '곶감',
     description: '곶감과 살라미, 페코리노치즈를 함께 담은, 이탈리아식 안티파스토 스타일 안주예요.',
     masterclass: {
@@ -343,7 +343,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-world-3', month: 12, title: '곶감 타진 치킨', subtitle: '중동식 달콤한 닭요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 3,
     cuisineContext: { country: '모로코', note: '타진은 모로코의 전통 조리 도구이자 요리 이름이에요. 말린 과일과 향신료를 고기와 함께 은근히 익히는 것이 특징인데, 곶감을 쓰면 대추야자나 살구를 대신할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1593560704563-f176a2eb61db?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-world-3/hero.webp',
     mainIngredient: '곶감',
     description: '닭다리살과 곶감을 향신료와 함께 은근히 조린, 달콤하고 이국적인 모로코식 요리예요.',
     masterclass: {
@@ -373,7 +373,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-world-4', month: 12, title: '곶감 크리스마스 푸딩', subtitle: '영국식 겨울 명절 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 120, servings: 6,
     cuisineContext: { country: '영국', note: '크리스마스 푸딩은 영국의 대표적인 겨울 명절 디저트로, 말린 과일을 듬뿍 넣어 오래 쪄서 만들어요. 건포도나 자두 대신 곶감을 쓰면 동아시아적인 색다른 변형이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-world-4/hero.webp',
     mainIngredient: '곶감',
     description: '곶감과 견과류, 향신료를 듬뿍 넣어 쪄낸, 진하고 촉촉한 영국식 겨울 디저트예요.',
     masterclass: {
@@ -404,7 +404,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-world-5', month: 12, title: '호시가키 디저트 플레이트', subtitle: '일본식 곶감 디저트 접시',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '호시가키(干し柿)는 일본식 곶감이에요. 일본에서는 곶감을 크림치즈나 화과자와 함께 다과 접시로 즐기는 문화가 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541599468348-e96984315921?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-world-5/hero.webp',
     mainIngredient: '곶감',
     description: '곶감을 크림치즈, 미소된장과 함께 낸, 일본식 세련된 다과 접시예요.',
     masterclass: {
@@ -435,7 +435,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-chef-1', month: 12, title: '곶감 고르곤졸라 카나페', subtitle: '단짠의 정석을 담은 한입 전채',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 6,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 발사믹 글레이즈를 지그재그로 뿌린 뒤 미니 허브를 하나씩 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-chef-1/hero.webp',
     mainIngredient: '곶감',
     description: '바삭한 크래커 위에 고르곤졸라치즈와 곶감을 올린, 파티에 어울리는 세련된 카나페예요.',
     masterclass: {
@@ -466,7 +466,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-chef-2', month: 12, title: '곶감 콩포트 타르트', subtitle: '진한 곶감 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-chef-2/hero.webp',
     mainIngredient: '곶감',
     description: '곶감을 와인과 향신료에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 디저트예요.',
     masterclass: {
@@ -497,7 +497,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-chef-3', month: 12, title: '곶감 소스 폭찹', subtitle: '진한 과일소스를 곁들인 돼지고기 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 구운 폭찹을 놓고, 곶감소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 폭찹 위에 소스를 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-chef-3/hero.webp',
     mainIngredient: '곶감',
     description: '두툼하게 구운 돼지고기 폭찹에 곶감으로 만든 진한 소스를 곁들인, 서양식 메인요리예요.',
     masterclass: {
@@ -529,7 +529,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-chef-4', month: 12, title: '곶감 파나코타', subtitle: '이탈리아 크림 디저트에 곶감을 더하다',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 파나코타를 굳혀 그대로 담고, 표면에 잘게 썬 곶감과 캐러멜소스를 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-chef-4/hero.webp',
     mainIngredient: '곶감',
     description: '부드러운 이탈리아식 크림 디저트에 곶감 조각과 캐러멜소스를 더한, 진한 단맛의 파나코타예요.',
     masterclass: {
@@ -561,7 +561,7 @@ export const recipesDriedPersimmonExpansion: Recipe[] = [
     id: 'driedpersimmon-chef-5', month: 12, title: '곶감 브랜디 트러플', subtitle: '술향이 은은한 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 접시에 트러플을 3~4개씩 원형으로 배치하고, 코코아파우더 위에 금박이나 곶감 조각을 살짝 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/driedpersimmon-chef-5/hero.webp',
     mainIngredient: '곶감',
     description: '브랜디에 재운 곶감을 다크초콜릿 가나슈에 섞어 빚은, 어른들을 위한 한입 트러플이에요.',
     masterclass: {

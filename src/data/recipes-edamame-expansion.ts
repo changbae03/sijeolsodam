@@ -13,7 +13,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-home-1', month: 7, title: '풋콩찜', subtitle: '소금물에 삶아 즐기는 여름 맥주 안주',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-home-1/hero.webp',
     mainIngredient: '풋콩',
     description: '소금물에 삶기만 하면 끝나는, 가장 간단한 여름 대표 별미예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-home-2', month: 7, title: '풋콩밥', subtitle: '고소하고 향긋한 여름 별미밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-home-2/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 넣어 지은, 고소하고 향긋한 여름철 별미밥이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-home-3', month: 7, title: '풋콩전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-home-3/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 반죽에 섞어 부친, 고소하고 향긋한 별미전이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-home-4', month: 7, title: '풋콩샐러드', subtitle: '고소하고 가벼운 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-home-4/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩과 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 여름철 샐러드예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-weekend-2', month: 7, title: '풋콩크림파스타', subtitle: '고소하고 부드러운 이탈리아식',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-weekend-2/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 갈아 만든 크림소스에 버무린, 부드럽고 고소한 이탈리아식 파스타예요.',
     masterclass: {
@@ -214,7 +214,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-weekend-3', month: 7, title: '풋콩주먹밥', subtitle: '고소하고 간편한 별미',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-weekend-3/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 섞은 밥을 동그랗게 뭉친, 고소하고 간편한 별미 주먹밥이에요.',
     masterclass: {
@@ -242,7 +242,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-weekend-4', month: 7, title: '풋콩수프', subtitle: '부드럽고 향긋한 여름 수프',
     category: '수프', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-weekend-4/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 곱게 갈아 만든, 부드럽고 향긋한 여름철 수프예요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesEdamameExpansion: Recipe[] = [
   {
     id: 'edamame-weekend-5', month: 7, title: '풋콩전병', subtitle: '고소하고 쫄깃한 별미',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-weekend-5/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 넣은 반죽을 얇게 부쳐 채소를 말아 넣은, 고소하고 쫄깃한 별미예요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-world-1', month: 7, title: '에다마메 시오유데', subtitle: '일본식 소금삶기',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '에다마메(枝豆)는 일본어로 풋콩을 뜻해요. 이자카야의 대표 안주로, 굵은소금에 비벼 삶는 것이 정통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-world-1/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 소금에 비벼 삶은, 일본 이자카야의 대표적인 안주예요.',
     masterclass: {
@@ -332,7 +332,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-world-2', month: 7, title: '풋콩 나초', subtitle: '멕시코식 응용 전채',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '멕시코', note: '멕시코의 과카몰레는 아보카도로 만드는 대표 소스인데, 풋콩으로 응용하면 색다른 초록빛 딥소스가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-world-2/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 으깨어 만든 딥소스를 나초와 곁들인, 멕시코식 응용 전채예요.',
     masterclass: {
@@ -361,7 +361,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-world-3', month: 7, title: '풋콩 그린스무디', subtitle: '건강한 미국식 스무디',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '미국', note: '미국에서는 다양한 채소와 콩류를 넣은 그린 스무디가 건강식으로 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-world-3/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩과 바나나를 함께 갈아 만든, 건강한 그린 스무디예요.',
     masterclass: {
@@ -389,7 +389,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-world-4', month: 7, title: '풋콩 리소토', subtitle: '이탈리아식 크리미 쌀요리',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 완두콩을 넣은 리조또가 봄철 클래식이에요. 풋콩으로 만들면 훨씬 고소한 여름 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-world-4/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 넣어 지은, 고소하고 크리미한 이탈리아식 여름 리조또예요.',
     masterclass: {
@@ -420,7 +420,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-world-5', month: 7, title: '풋콩 반미', subtitle: '베트남식 응용 샌드위치',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '베트남', note: '반미는 베트남의 대표 샌드위치예요. 풋콩 페이스트를 발라 채식 버전으로 응용할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-world-5/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩 페이스트와 채소를 곁들인, 베트남식 반미를 응용한 샌드위치예요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-chef-1', month: 7, title: '즌다모찌', subtitle: '일본 도호쿠식 풋콩페이스트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '떡을 접시에 담고 즌다소스를 듬뿍 끼얹은 뒤 소금을 한 자밤 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-chef-1/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 삶아 곱게 찧은 뒤 설탕과 소금으로 단맛과 짠맛의 균형을 맞춘, 일본 도호쿠 지방의 향토 소스예요.',
     masterclass: {
@@ -483,7 +483,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-chef-2', month: 7, title: '풋콩두유', subtitle: '전통 두유 제조 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '갓 만든 따뜻한 두유를 유리컵에 담아 그대로 내거나, 차갑게 식혀 얼음과 함께 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-chef-2/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩을 갈아 끓이고 걸러 만든, 신선한 콩 향이 살아있는 홈메이드 두유예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-chef-3', month: 7, title: '풋콩두부', subtitle: '응고 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '틀에서 꺼낸 두부를 정사각형으로 잘라 접시에 담고, 간장소스와 실파, 가쓰오부시를 올려 히야얏코 스타일로 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-chef-3/hero.webp',
     mainIngredient: '풋콩',
     description: '풋콩두유를 응고제로 굳혀 만든, 은은한 초록빛과 풋콩향이 살아있는 홈메이드 두부예요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-chef-4', month: 7, title: '풋콩 후무스', subtitle: '중동식 콩퓌레',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 4,
     platingGuide: '넓고 얕은 그릇에 후무스를 담아 스푼으로 소용돌이 무늬를 낸 뒤, 올리브오일을 두르고 파프리카가루를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-chef-4/hero.webp',
     mainIngredient: '풋콩',
     description: '병아리콩 대신 풋콩을 타히니와 함께 곱게 갈아 만든, 중동식 콩퓌레를 응용한 딥소스예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesEdamameExpansion: Recipe[] = [
     id: 'edamame-chef-5', month: 7, title: '풋콩미소', subtitle: '코지 발효 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 90, servings: 8,
     platingGuide: '완성된 미소를 병에 담아 상에 올리고, 사용할 때는 된장국이나 소스에 소량씩 풀어 활용합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/edamame-chef-5/hero.webp',
     mainIngredient: '풋콩',
     description: '삶은 풋콩에 누룩곰팡이(코지)를 더해 발효시킨, 일본 미소된장 제조법을 응용한 저장 발효식품이에요.',
     masterclass: {

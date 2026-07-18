@@ -10,7 +10,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-home-4', month: 7, title: '가지전', subtitle: '부드럽게 부쳐낸 가지 부침개',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-home-4/hero.webp',
     mainIngredient: '가지', description: '가지를 동그랗게 썰어 반죽을 입혀 부친, 부드럽고 고소한 부침개예요.',
     masterclass: {
       chefIntro: '가지는 기름과 만나면 더 고소해지는 채소예요. 전으로 부치면 그 매력이 가장 잘 드러나요.',
@@ -43,7 +43,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-home-5', month: 7, title: '가지구이', subtitle: '기름 없이 구워내는 담백한 가지',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-home-5/hero.webp',
     mainIngredient: '가지', description: '기름 없이 구워 양념장만 곁들인, 담백하고 가벼운 가지 반찬이에요.',
     masterclass: {
       chefIntro: '기름을 안 써도 가지 본연의 부드러운 맛을 즐길 수 있는 가벼운 메뉴예요.',
@@ -77,7 +77,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-weekend-1', month: 7, title: '가지 라자냐', subtitle: '면 대신 가지를 켜켜이 쌓은 이탈리아풍 베이킹',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-weekend-1/hero.webp',
     mainIngredient: '가지', description: '라자냐 면 대신 가지를 얇게 썰어 켜켜이 쌓은, 더 가볍고 채소가 풍성한 베이킹이에요.',
     masterclass: {
       chefIntro: '면 대신 가지를 쓰면 훨씬 가볍고 채소 본연의 맛이 살아나는 라자냐가 돼요.',
@@ -105,7 +105,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-weekend-2', month: 7, title: '가지 고기 만두', subtitle: '부드러운 가지를 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-weekend-2/hero.webp',
     mainIngredient: '가지', description: '다진 가지와 고기를 섞어 빚은 만두로, 부드럽고 촉촉한 속이 매력이에요.',
     masterclass: {
       chefIntro: '가지가 익으면서 수분을 내뿜어 만두 속이 유난히 촉촉해져요.',
@@ -133,7 +133,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-weekend-3', month: 7, title: '가지 피자', subtitle: '얇게 썬 가지 위에 올린 토핑 피자',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-weekend-3/hero.webp',
     mainIngredient: '가지', description: '얇게 썬 가지를 도우처럼 활용한, 탄수화물 부담을 줄인 색다른 피자예요.',
     masterclass: {
       chefIntro: '가지를 피자 도우 대신 사용하는 재미있는 발상이에요. 구우면 도우 같은 식감이 나와요.',
@@ -160,7 +160,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-weekend-4', month: 7, title: '가지 카레', subtitle: '부드럽게 익은 가지가 가득한 카레',
     category: '메인', difficulty: '쉬움', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-weekend-4/hero.webp',
     mainIngredient: '가지', description: '가지를 듬뿍 넣어 끓인 카레로, 가지가 카레의 향과 기름을 가득 머금어 풍부한 맛이 나요.',
     masterclass: {
       chefIntro: '가지는 카레의 향신료 기름을 스펀지처럼 흡수해요. 그래서 가지를 넣은 카레는 유난히 풍미가 깊어요.',
@@ -187,7 +187,7 @@ export const recipesEggplantExpansion: Recipe[] = [
   {
     id: 'eggplant-weekend-5', month: 7, title: '가지 스테이크', subtitle: '두툼하게 구워낸 채소 스테이크',
     category: '메인', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-weekend-5/hero.webp',
     mainIngredient: '가지', description: '두툼하게 썬 가지를 버터에 구워낸, 고기 스테이크 못지않은 채소 메인 요리예요.',
     masterclass: {
       chefIntro: '가지를 도톰하게 썰어 메인 요리처럼 즐기는 메뉴예요. 속까지 부드럽게 구워지면 고기 못지않은 만족감을 줘요.',
@@ -226,7 +226,7 @@ export const recipesEggplantExpansion: Recipe[] = [
       country: '레바논·중동',
       note: '바바가누쉬는 레바논을 비롯한 중동 전역에서 즐기는 가지 디핑소스예요. 가지를 직접 불에 구워 훈연향을 입히는 게 정통 조리법의 핵심이고, 피타빵에 곁들여 즐겨요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-world-1/hero.webp',
     mainIngredient: '가지', description: '가지를 직접 구워 훈연향을 입히고 곱게 으깨 만든, 중동의 대표적인 디핑소스예요.',
     masterclass: {
       chefIntro: '가지를 직접 불에 구워 태우는 게 이 요리의 영혼이에요. 그 훈연향이 바바가누쉬를 특별하게 만들어줘요.',
@@ -265,7 +265,7 @@ export const recipesEggplantExpansion: Recipe[] = [
       country: '이탈리아',
       note: '멜란자네 파르미지아나는 이탈리아 남부 캄파니아 지역의 대표 요리로, 튀긴 가지를 토마토소스와 치즈로 켜켜이 쌓아 구워요. 가지 라자냐의 원조라고도 불리는 클래식 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-world-2/hero.webp',
     mainIngredient: '가지', description: '튀긴 가지를 토마토소스와 치즈로 켜켜이 쌓아 구운, 이탈리아 남부의 클래식 메인 요리예요.',
     masterclass: {
       chefIntro: '이탈리아 남부 가정에서 자주 만드는 손이 가는 요리예요. 가지를 튀겨 켜를 쌓는 정성이 들어가요.',
@@ -298,7 +298,7 @@ export const recipesEggplantExpansion: Recipe[] = [
       country: '중국',
       note: '마파가지(干煸茄子 또는 麻婆茄子)는 중국 쓰촨 지역의 매콤한 조리법을 가지에 적용한 요리예요. 마파두부와 비슷한 향신료를 쓰며, 가지가 매콤한 소스를 잘 흡수해 풍미가 깊어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-world-3/hero.webp',
     mainIngredient: '가지', description: '매콤한 두반장 소스에 볶아낸, 중국 쓰촨식 매콤하고 향긋한 가지 요리예요.',
     masterclass: {
       chefIntro: '마파두부의 가지 버전이라고 생각하면 돼요. 가지가 매콤한 소스를 가득 흡수해 풍미가 깊어져요.',
@@ -329,7 +329,7 @@ export const recipesEggplantExpansion: Recipe[] = [
       country: '일본',
       note: '나스 덴가쿠는 일본 가정과 이자카야에서 즐기는 가지 요리로, 구운 가지에 달콤한 미소소스를 발라 마무리해요. 가지의 부드러움과 미소의 깊은 풍미가 잘 어우러지는 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-world-4/hero.webp',
     mainIngredient: '가지', description: '구운 가지에 달콤한 미소소스를 발라 마무리한, 일본 이자카야의 대표적인 가지 안주예요.',
     masterclass: {
       chefIntro: '일본 가정과 이자카야에서 흔히 만나는 메뉴예요. 미소의 깊은 풍미가 가지와 잘 어울려요.',
@@ -365,7 +365,7 @@ export const recipesEggplantExpansion: Recipe[] = [
       country: '튀르키예',
       note: '임람 바얄디는 튀르키예의 대표적인 가지 요리로, "이맘이 황홀해했다"는 뜻의 이름이 붙을 만큼 깊은 풍미를 가졌어요. 가지에 양파와 토마토를 채워 올리브오일에 천천히 익혀요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-world-5/hero.webp',
     mainIngredient: '가지', description: '가지 속에 양파와 토마토를 채워 올리브오일에 천천히 익힌, 튀르키예의 풍미 깊은 가지 요리예요.',
     masterclass: {
       chefIntro: '이름부터 흥미로운 튀르키예의 대표 요리예요. 올리브오일에 천천히 익혀 가지가 풍미를 가득 흡수해요.',
@@ -402,7 +402,7 @@ export const recipesEggplantExpansion: Recipe[] = [
     id: 'eggplant-chef-1', month: 7, title: '가지 캐비어와 부라타', subtitle: '곱게 으깬 가지와 부드러운 치즈의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '접시에 가지 캐비어를 한 스푼 자국 내듯 펴 바르고 부라타를 그 위에 올려보세요. 올리브오일을 뿌리고 처빌을 올리면 완성이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-chef-1/hero.webp',
     mainIngredient: '가지', description: '훈연향 입힌 가지를 곱게 으깨 캐비어처럼 다듬고 부라타와 함께 낸, 정교한 프렌치 비스트로풍 전채예요.',
     masterclass: {
       chefIntro: '가지를 "캐비어"라 부르는 건 프랑스 요리에서 곱게 다진 가지 요리에 붙이는 표현이에요. 부라타의 부드러움과 잘 어울려요.',
@@ -437,7 +437,7 @@ export const recipesEggplantExpansion: Recipe[] = [
     id: 'eggplant-chef-2', month: 7, title: '가지 밀푀유', subtitle: '겹겹이 쌓아 구운 정교한 가지 요리',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '뒤집어낸 그대로 도마에 올려 조각으로 잘라 단면이 보이게 담으세요. 토마토소스를 한 줄 그리고 바질오일을 점점이 뿌리세요.',
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-chef-2/hero.webp',
     mainIngredient: '가지', description: '폼므 안나의 기법을 가지에 적용해, 얇게 썬 가지를 겹겹이 눌러 구워 단면의 켜를 보여주는 정교한 메인이에요.',
     masterclass: {
       chefIntro: '감자로 만드는 폼므 안나의 원리를 가지에 적용한 메뉴예요. 가지는 수분이 많아 다른 방식의 주의가 필요해요.',
@@ -467,7 +467,7 @@ export const recipesEggplantExpansion: Recipe[] = [
     id: 'eggplant-chef-3', month: 7, title: '가지 퓌레와 양갈비', subtitle: '깔끔한 가지 퓌레와 진한 양갈비의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 구운 양갈비를 비스듬히 올려보세요. 로즈마리 한 줄기로 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-chef-3/hero.webp',
     mainIngredient: '가지', description: '훈연향 입힌 가지 퓌레와 바삭하게 구운 양갈비를 함께 낸, 풍미가 깊은 메인 요리예요.',
     masterclass: {
       chefIntro: '가지와 양고기는 지중해 요리에서 흔히 만나는 클래식한 조합이에요. 가지의 훈연향이 양고기의 풍미를 더 살려줘요.',
@@ -507,7 +507,7 @@ export const recipesEggplantExpansion: Recipe[] = [
     id: 'eggplant-chef-4', month: 7, title: '가지 콩소메', subtitle: '맑게 거른 가지의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 가지 큐브 한 조각을 띄워보세요. 옅은 갈색빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-chef-4/hero.webp',
     mainIngredient: '가지', description: '구운 가지를 갈아 맑게 걸러낸, 훈연향이 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 기법이지만, 가지는 구워서 만들어 훈연향이라는 독특한 차원이 더해져요.',
@@ -547,7 +547,7 @@ export const recipesEggplantExpansion: Recipe[] = [
     id: 'eggplant-chef-5', month: 7, title: '가지 크리스프와 참치 타르타르', subtitle: '바삭함과 부드러움의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 참치 타르타르를 정확히 중앙에 올려보세요. 차이브를 흩뿌리면 마무리가 깔끔해요.',
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggplant-chef-5/hero.webp',
     mainIngredient: '가지', description: '바삭하게 구운 가지 크리스프 위에 참치 타르타르를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '가지의 바삭함과 참치의 부드러움이 대비를 이루는 모던한 한입 요리예요.',

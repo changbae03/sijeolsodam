@@ -12,7 +12,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-home-1', month: 8, title: '무화과 샐러드', subtitle: '부드러운 단맛의 늦여름 과일 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601379329542-8feea90c775d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-home-1/hero.webp',
     mainIngredient: '무화과',
     description: '부드럽고 달콤한 무화과와 치즈를 함께 즐기는, 고급스러운 늦여름 샐러드예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-home-2', month: 8, title: '무화과 요거트볼', subtitle: '부드럽고 건강한 여름 아침',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1571212515416-fca325e3702a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-home-2/hero.webp',
     mainIngredient: '무화과',
     description: '달콤한 무화과와 그릭요거트를 함께 즐기는, 건강하고 가벼운 여름 아침 메뉴예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-home-3', month: 8, title: '무화과잼', subtitle: '두고두고 발라 먹는 늦여름 잼',
     category: '양념', difficulty: '쉬움', level: 'home', cookTime: 50, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-home-3/hero.webp',
     mainIngredient: '무화과',
     description: '무화과를 잘게 썰어 설탕과 레몬즙으로 조린, 은은한 단맛의 늦여름 잼이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-home-4', month: 8, title: '무화과 우유', subtitle: '부드럽고 달콤한 여름 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-home-4/hero.webp',
     mainIngredient: '무화과',
     description: '무화과와 우유를 갈아 만든, 부드럽고 자연스러운 단맛의 여름철 음료예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-home-5', month: 8, title: '무화과 크림치즈 토스트', subtitle: '달콤짭짤한 간단 브런치',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-home-5/hero.webp',
     mainIngredient: '무화과',
     description: '바삭한 토스트에 크림치즈와 무화과를 올린, 달콤짭짤한 간단 브런치예요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-weekend-1', month: 8, title: '무화과 프로슈토', subtitle: '이탈리아식 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-weekend-1/hero.webp',
     mainIngredient: '무화과',
     description: '무화과에 프로슈토를 곁들인, 단맛과 짠맛이 대비를 이루는 이탈리아식 전채예요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-weekend-2', month: 8, title: '무화과 피자', subtitle: '달콤짭짤한 이색 피자',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-weekend-2/hero.webp',
     mainIngredient: '무화과',
     description: '무화과와 고르곤졸라치즈를 올린, 달콤짭짤한 이색 피자예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-weekend-3', month: 8, title: '무화과 오리가슴살구이', subtitle: '고급스러운 손님상 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-weekend-3/hero.webp',
     mainIngredient: '무화과',
     description: '오리가슴살을 구워 무화과소스를 곁들인, 고급스러운 손님상 메인요리예요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-weekend-4', month: 8, title: '무화과 타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-weekend-4/hero.webp',
     mainIngredient: '무화과',
     description: '아몬드크림 위에 무화과를 올려 구운, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -278,7 +278,7 @@ export const recipesFigExpansion: Recipe[] = [
   {
     id: 'fig-weekend-5', month: 8, title: '무화과 스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-weekend-5/hero.webp',
     mainIngredient: '무화과',
     description: '무화과와 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-world-1', month: 8, title: '피치 디 마레', subtitle: '이탈리아식 무화과 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 여름철 무화과를 프로슈토, 고르곤졸라와 함께 파스타에 넣는 것이 별미로 알려져 있어요. 단맛과 짠맛의 조화가 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-world-1/hero.webp',
     mainIngredient: '무화과',
     description: '무화과와 고르곤졸라, 호두를 넣은, 이탈리아식 달콤짭짤한 파스타예요.',
     masterclass: {
@@ -341,7 +341,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-world-2', month: 8, title: '이고스 콘 하몽', subtitle: '스페인식 무화과 하몽 타파스',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '스페인', note: '이고스(higos)는 스페인어로 무화과를 뜻해요. 스페인에서는 무화과에 하몽을 곁들이는 것이 여름철 대표 타파스로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-world-2/hero.webp',
     mainIngredient: '무화과',
     description: '무화과에 하몽을 곁들인, 스페인식 여름철 대표 타파스예요.',
     masterclass: {
@@ -370,7 +370,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-world-3', month: 8, title: '무화과 타르트타탕', subtitle: '프랑스식 거꾸로 굽는 타르트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '타르트타탕은 프랑스의 대표 디저트로, 원래는 사과로 만들지만 무화과 같은 부드러운 과일로도 훌륭하게 응용돼요. 뒤집어냈을 때 드러나는 캐러멜라이즈된 윗면이 하이라이트예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-world-3/hero.webp',
     mainIngredient: '무화과',
     description: '캐러멜라이즈된 무화과를 바닥에 깔고 타르트지를 덮어 구운 뒤 뒤집어내는, 프랑스식 무화과 타르트예요.',
     masterclass: {
@@ -402,7 +402,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-world-4', month: 8, title: '무화과 그릭 살라타', subtitle: '그리스식 페타치즈 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스에서는 여름철 무화과가 흔한 과일이라, 페타치즈와 올리브오일만으로 심플하게 즐기는 것이 전통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-world-4/hero.webp',
     mainIngredient: '무화과',
     description: '무화과에 페타치즈와 꿀을 곁들인, 그리스식 심플한 여름 샐러드예요.',
     masterclass: {
@@ -431,7 +431,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-world-5', month: 8, title: '무화과 타진', subtitle: '중동식 향신료 타진 요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '중동', note: '중동과 북아프리카 지역에서는 말린 무화과를 향신료와 함께 고기 타진에 넣는 것이 전통 요리예요. 무화과의 단맛이 향신료의 매콤함과 균형을 이뤄요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-world-5/hero.webp',
     mainIngredient: '무화과',
     description: '닭고기와 무화과를 향신료에 은근히 끓인, 달콤짭짤한 중동식 타진 요리예요.',
     masterclass: {
@@ -465,7 +465,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-chef-1', month: 8, title: '무화과 프로슈토 부라타', subtitle: '이탈리아식 가을 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'chef', cookTime: 20, servings: 3,
     platingGuide: '넓은 접시에 부라타치즈를 중앙에 놓고 그 주위로 무화과와 프로슈토를 겹쳐 담은 뒤, 올리브오일을 두르고 발사믹글레이즈를 지그재그로 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-chef-1/hero.webp',
     mainIngredient: '무화과',
     description: '무화과에 프로슈토와 부라타치즈를 곁들인, 단맛과 짠맛이 대비를 이루는 이탈리아식 전채예요.',
     masterclass: {
@@ -495,7 +495,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-chef-2', month: 8, title: '무화과 콩포트 타르트', subtitle: '진한 무화과 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-chef-2/hero.webp',
     mainIngredient: '무화과',
     description: '무화과를 레드와인과 향신료에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 늦여름 디저트예요.',
     masterclass: {
@@ -526,7 +526,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-chef-3', month: 8, title: '무화과 판나코타', subtitle: '이탈리아 크림 디저트에 무화과를',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 얇게 썬 무화과와 꿀을 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-chef-3/hero.webp',
     mainIngredient: '무화과',
     description: '부드러운 이탈리아식 크림 디저트에 무화과 조각과 꿀을 더한, 늦여름 향 가득한 판나코타예요.',
     masterclass: {
@@ -558,7 +558,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-chef-4', month: 8, title: '무화과소스 폭찹', subtitle: '진한 과일소스를 곁들인 돼지고기 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 구운 폭찹을 놓고, 무화과소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 폭찹 위에 소스를 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-chef-4/hero.webp',
     mainIngredient: '무화과',
     description: '두툼하게 구운 돼지고기 폭찹에 무화과로 만든 진한 소스를 곁들인, 서양식 메인요리예요.',
     masterclass: {
@@ -590,7 +590,7 @@ export const recipesFigExpansion: Recipe[] = [
     id: 'fig-chef-5', month: 8, title: '무화과 카르파치오', subtitle: '얇게 저민 무화과의 투명한 아름다움',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 무화과를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1601379329542-8feea90c775d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/fig-chef-5/hero.webp',
     mainIngredient: '무화과',
     description: '얇게 저민 무화과에 올리브오일과 파마산치즈를 더한, 과일의 신선함을 그대로 보여주는 전채예요.',
     masterclass: {

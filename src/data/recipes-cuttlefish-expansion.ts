@@ -12,7 +12,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-home-3', month: 6, title: '갑오징어 볶음', subtitle: '매콤 쫄깃한 기본 밥반찬',
     category: '볶음', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-home-3/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어를 매콤한 양념에 볶은, 쫄깃한 식감이 매력인 기본 밥반찬이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-home-4', month: 6, title: '갑오징어 미소된장국', subtitle: '시원하고 감칠맛 나는 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-home-4/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어를 넣어 끓인 된장국으로, 쫄깃한 식감과 진한 감칠맛이 매력이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-home-5', month: 6, title: '갑오징어 무침', subtitle: '새콤달콤 쫄깃한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-home-5/hero.webp',
     mainIngredient: '갑오징어',
     description: '데친 갑오징어를 오이와 함께 초고추장에 무친, 입맛을 돋우는 여름 밑반찬이에요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-weekend-1', month: 6, title: '갑오징어 볼케이노', subtitle: '매콤한 국물 볶음',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-weekend-1/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어와 채소를 매콤한 국물에 볶아낸, 밥을 비벼 먹기 좋은 요리예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-weekend-2', month: 6, title: '갑오징어 전골', subtitle: '푸짐하고 시원한 여름 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-weekend-2/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어와 채소, 두부를 넉넉히 넣고 시원하게 끓인 전골이에요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-weekend-3', month: 6, title: '갑오징어 튀김', subtitle: '겉바속촉 여름 별미',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-weekend-3/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어에 튀김옷을 입혀 바삭하게 튀긴, 쫄깃한 속살이 매력인 튀김이에요.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-weekend-4', month: 6, title: '갑오징어 물회', subtitle: '시원하고 쫄깃한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-weekend-4/hero.webp',
     mainIngredient: '갑오징어',
     description: '얇게 썬 갑오징어와 채소를 새콤달콤한 냉국물에 말아낸, 여름철 시원한 별미예요.',
     masterclass: {
@@ -221,7 +221,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
   {
     id: 'cuttlefish-weekend-5', month: 6, title: '갑오징어 젓갈', subtitle: '오래 두고 먹는 짭조름한 밑반찬',
     category: '젓갈', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-weekend-5/hero.webp',
     mainIngredient: '갑오징어',
     description: '데친 갑오징어를 매콤한 양념에 무쳐 숙성시킨, 밥반찬으로 좋은 젓갈이에요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-world-1', month: 6, title: '세피아 아 라 플란차', subtitle: '스페인식 갑오징어 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '세피아(sepia)는 스페인어로 갑오징어를 뜻해요. 스페인에서는 갑오징어를 마늘과 올리브오일로 심플하게 구워내는 것이 흔한 타파스 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-world-1/hero.webp',
     mainIngredient: '갑오징어',
     description: '올리브오일과 마늘로 구운, 스페인식 팬구이 갑오징어예요.',
     masterclass: {
@@ -284,7 +284,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-world-2', month: 6, title: '세피아 알 네로', subtitle: '이탈리아식 먹물 갑오징어 스튜',
     category: '스튜', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아 베네치아 지방의 세피아 알 네로(seppia al nero)는 갑오징어를 자체 먹물로 끓여내는 전통 요리예요. 진한 검은 국물과 부드러운 갑오징어 살이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-world-2/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어 먹물로 끓여낸 진한 국물의 이탈리아식 스튜예요.',
     masterclass: {
@@ -315,7 +315,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-world-3', month: 6, title: '코이카노 스미야키', subtitle: '일본식 갑오징어 소금구이',
     category: '구이', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '일본', note: '코이카(甲イカ)는 일본어로 갑오징어를 뜻해요. 일본에서는 갑오징어를 회나 소금구이로 즐기며, 특유의 단맛과 쫄깃함을 살리는 조리법을 선호해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-world-3/hero.webp',
     mainIngredient: '갑오징어',
     description: '소금간을 한 갑오징어를 숯불처럼 구운, 담백하고 쫄깃한 일본식 요리예요.',
     masterclass: {
@@ -345,7 +345,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-world-4', month: 6, title: '흐타포디 스타일 갑오징어 스튜', subtitle: '그리스식 와인 스튜',
     category: '스튜', difficulty: '보통', level: 'world', cookTime: 50, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스 섬 지방에서는 두족류를 레드와인과 토마토에 오래 끓여 부드럽게 만드는 스튜가 흔해요. 갑오징어로 만들면 문어보다 훨씬 짧은 시간에 부드러운 스튜를 즐길 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-world-4/hero.webp',
     mainIngredient: '갑오징어',
     description: '레드와인과 토마토에 갑오징어를 은근히 끓인, 그리스 섬마을 스타일의 스튜예요.',
     masterclass: {
@@ -376,7 +376,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-world-5', month: 6, title: '갑오징어 팟팍붕파오', subtitle: '태국식 마늘후추 볶음',
     category: '볶음', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '태국', note: '팟팍붕파오는 원래 공심채 볶음이지만, 태국에서는 두족류도 마늘과 후추로 볶아내는 팟끄라티암프릭타이 스타일이 흔해요. 갑오징어의 쫄깃함과 마늘후추향이 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-world-5/hero.webp',
     mainIngredient: '갑오징어',
     description: '마늘과 후추로 향을 낸 태국식 갑오징어 볶음이에요.',
     masterclass: {
@@ -406,7 +406,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-chef-1', month: 6, title: '갑오징어 먹물 리조또', subtitle: '검은빛이 감도는 이탈리아식 리조또',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '검은 접시에 리조또를 담고, 중앙에 살짝 구운 갑오징어 한 조각을 올린 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-chef-1/hero.webp',
     mainIngredient: '갑오징어',
     description: '갑오징어 자체 먹물로 검게 물들인 쌀에 갑오징어를 더한, 극적인 비주얼의 이탈리아식 리조또예요.',
     masterclass: {
@@ -438,7 +438,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-chef-2', month: 6, title: '갑오징어 뵈르블랑', subtitle: '프랑스식 버터소스를 곁들인 갑오징어',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 소테한 갑오징어를 부채꼴로 펼쳐 담고, 뵈르블랑소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-chef-2/hero.webp',
     mainIngredient: '갑오징어',
     description: '버터에 소테한 갑오징어에 화이트와인과 버터로 만든 뵈르블랑소스를 곁들인 프렌치 스타일 요리예요.',
     masterclass: {
@@ -470,7 +470,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-chef-3', month: 6, title: '갑오징어 세비체', subtitle: '남미식 상큼한 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 갑오징어 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-chef-3/hero.webp',
     mainIngredient: '갑오징어',
     description: '신선한 갑오징어를 얇게 저며 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -501,7 +501,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-chef-4', month: 6, title: '갑오징어 갈릭콩피', subtitle: '올리브오일에 은근히 익힌 부드러운 갑오징어',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 갑오징어를 놓고, 콩피에 쓴 마늘 올리브오일을 끼얹은 뒤 구운 마늘 조각과 허브를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-chef-4/hero.webp',
     mainIngredient: '갑오징어',
     description: '마늘과 올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 갑오징어요리예요.',
     masterclass: {
@@ -532,7 +532,7 @@ export const recipesCuttlefishExpansion: Recipe[] = [
     id: 'cuttlefish-chef-5', month: 6, title: '갑오징어 카르파치오', subtitle: '얇게 저민 갑오징어의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 갑오징어를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 레몬 제스트와 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cuttlefish-chef-5/hero.webp',
     mainIngredient: '갑오징어',
     description: '신선한 갑오징어를 종이처럼 얇게 저며 올리브오일과 레몬으로 마무리한, 재료 본연의 단맛을 즐기는 전채예요.',
     masterclass: {

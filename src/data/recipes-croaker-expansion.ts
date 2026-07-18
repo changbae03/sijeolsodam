@@ -334,7 +334,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-world-2', month: 6, title: '민어 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '뵈르블랑은 프랑스 루아르 지방에서 유래한 클래식 버터소스로, 흰살생선과 함께 내는 것이 전통적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-world-2/hero.webp',
     mainIngredient: '민어',
     description: '구운 민어에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-world-3', month: 6, title: '민어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-world-3/hero.webp',
     mainIngredient: '민어',
     description: '토마토와 화이트와인에 민어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-world-4', month: 6, title: '민어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-world-4/hero.webp',
     mainIngredient: '민어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 민어예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-world-5', month: 6, title: '그리스식 민어구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-world-5/hero.webp',
     mainIngredient: '민어',
     description: '민어를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-chef-1', month: 6, title: '민어 콩피', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-chef-1/hero.webp',
     mainIngredient: '민어',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -490,7 +490,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-chef-2', month: 6, title: '민어 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 허브와 레몬 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-chef-2/hero.webp',
     mainIngredient: '민어',
     description: '민어와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-chef-3', month: 6, title: '민어 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 민어 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-chef-3/hero.webp',
     mainIngredient: '민어',
     description: '신선한 민어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-chef-4', month: 6, title: '민어 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-chef-4/hero.webp',
     mainIngredient: '민어',
     description: '민어 뼈와 자투리로 우린 육수를 곱게 갈아 크림으로 마무리한, 벨벳처럼 진한 프랑스식 수프예요.',
     masterclass: {
@@ -585,7 +585,7 @@ export const recipesCroakerExpansion: Recipe[] = [
     id: 'croaker-chef-5', month: 6, title: '민어 카르파치오', subtitle: '얇게 저민 민어의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 민어를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/croaker-chef-5/hero.webp',
     mainIngredient: '민어',
     description: '얇게 저민 민어에 올리브오일과 레몬을 더한, 재료 본연의 담백함을 즐기는 전채예요.',
     masterclass: {

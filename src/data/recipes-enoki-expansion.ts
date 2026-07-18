@@ -14,7 +14,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-home-1', month: 1, title: '팽이버섯베이컨말이', subtitle: '고소하고 짭짤한 인기 술안주',
     category: '전채', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-home-1/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 베이컨으로 돌돌 말아 구운, 고소하고 짭짤한 대표적인 인기 술안주예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-home-2', month: 1, title: '팽이버섯전', subtitle: '가늘고 아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-home-2/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 반죽에 섞어 부친, 가늘고 아삭한 식감이 매력적인 별미전이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-home-3', month: 1, title: '팽이버섯볶음', subtitle: '고소하고 담백한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-home-3/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 간장에 볶은, 고소하고 담백한 기본 반찬이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-home-4', month: 1, title: '팽이버섯된장국', subtitle: '구수하고 시원한 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-home-4/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 넣어 끓인 된장국으로, 구수하고 시원한 기본 국이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-weekend-1', month: 1, title: '팽이버섯전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-weekend-1/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯과 채소, 고기를 넉넉히 넣고 끓인, 시원하고 푸짐한 겨울철 전골이에요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-weekend-2', month: 1, title: '팽이버섯불고기말이', subtitle: '고급스러운 손님상 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-weekend-2/hero.webp',
     mainIngredient: '팽이버섯',
     description: '불고기양념한 소고기에 팽이버섯을 돌돌 말아 구운, 고급스러운 손님상 메인요리예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-weekend-3', month: 1, title: '팽이버섯튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-weekend-3/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 반죽에 버무려 바삭하게 튀긴, 겉은 바삭하고 속은 아삭한 튀김이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-weekend-4', month: 1, title: '팽이버섯탕수육스타일', subtitle: '아삭하고 새콤달콤한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-weekend-4/hero.webp',
     mainIngredient: '팽이버섯',
     description: '튀긴 팽이버섯에 탕수육소스를 끼얹은, 아삭하고 새콤달콤한 채식 별미예요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesEnokiExpansion: Recipe[] = [
   {
     id: 'enoki-weekend-5', month: 1, title: '팽이버섯장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-weekend-5/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 간장물에 절인, 오래 두고 먹기 좋은 아삭한 장아찌예요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-world-1', month: 1, title: '팽이버섯 미소국', subtitle: '일본식 기본 국물요리',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '일본', note: '미소시루는 일본의 대표적인 국물요리로, 팽이버섯을 넣으면 아삭한 식감이 더해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-world-1/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 넣어 끓인, 일본의 기본적인 된장국물 요리예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-world-2', month: 1, title: '팽이버섯 파스타', subtitle: '이탈리아식 응용 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아식 버섯파스타에 팽이버섯을 응용하면 색다른 아삭한 식감의 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-world-2/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 마늘과 올리브오일에 볶아 파스타에 버무린, 아삭한 식감의 요리예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-world-3', month: 1, title: '팽이버섯 훠궈', subtitle: '중국식 매운 샤부샤부',
     category: '전골', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '중국', note: '훠궈는 중국의 대표적인 매운 샤부샤부로, 팽이버섯은 훠궈에 빠지지 않는 필수 재료예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-world-3/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯과 채소, 고기를 매운 훠궈 육수에 데쳐 먹는, 중국식 얼큰한 샤부샤부예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-world-4', month: 1, title: '팽이버섯 스프링롤', subtitle: '베트남식 응용 스프링롤',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남식 스프링롤은 라이스페이퍼에 다양한 재료를 싸는데, 팽이버섯을 넣으면 아삭한 식감이 더해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-world-4/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯과 채소를 라이스페이퍼에 싼, 가볍고 아삭한 베트남식 스프링롤이에요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-world-5', month: 1, title: '팽이버섯 크림수프', subtitle: '프랑스식 부드러운 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스식 버섯크림수프는 다양한 버섯을 활용하는데, 팽이버섯을 응용하면 부드러우면서도 은은한 아삭함이 남는 독특한 수프가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-world-5/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 곱게 갈아 만든, 부드럽고 은은한 프랑스식 크림수프예요.',
     masterclass: {
@@ -454,7 +454,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-chef-1', month: 1, title: '팽이버섯 채식장어', subtitle: '비건 장어 모방 - 찢어서 글레이즈 굽기',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '밥 위에 결대로 찢어 구운 팽이버섯을 장어 모양으로 겹쳐 올리고, 산초가루를 살짝 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-chef-1/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 결대로 찢어 데리야키소스로 구운, 최근 화제가 된 비건 장어덮밥 모방 요리예요.',
     masterclass: {
@@ -485,7 +485,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-chef-2', month: 1, title: '팽이버섯 부케튀김', subtitle: '꽃다발 모양 셰이핑 튀김',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '튀긴 부케를 세워 담아 활짝 핀 꽃송이처럼 보이게 연출하고, 말차소금을 살짝 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-chef-2/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯 다발을 부채처럼 펼쳐 튀긴, 튀겼을 때 꽃다발처럼 활짝 벌어지는 모던 파인다이닝 전채예요.',
     masterclass: {
@@ -515,7 +515,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-chef-3', month: 1, title: '팽이버섯 다시', subtitle: '일본식 감칠맛 육수 추출',
     category: '국&찌개', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '맑은 육수를 얕은 그릇에 담아 팽이버섯 몇 가닥과 실파를 살짝 띄워 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-chef-3/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 오래 우려 만든, 감칠맛이 풍부한 채식 다시육수예요.',
     masterclass: {
@@ -546,7 +546,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-chef-4', month: 1, title: '팽이버섯김치', subtitle: '발효',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '숙성된 팽이버섯김치를 먹기 좋게 썰어 접시에 담고, 통깨를 뿌려 발효된 실의 질감이 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-chef-4/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 김치 양념에 버무려 발효시킨, 아삭함과 감칠맛을 동시에 노린 실험적인 김치예요.',
     masterclass: {
@@ -577,7 +577,7 @@ export const recipesEnokiExpansion: Recipe[] = [
     id: 'enoki-chef-5', month: 1, title: '팽이버섯 누들 볶음', subtitle: '면 대체 모던 기법',
     category: '면요리', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '면처럼 돌돌 말아 그릇에 담고, 실제 국수와 구분이 안 갈 정도로 윤기 나게 볶은 모습을 강조해 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/enoki-chef-5/hero.webp',
     mainIngredient: '팽이버섯',
     description: '팽이버섯을 국수처럼 볶아낸, 밀가루 없이 채소만으로 만드는 모던 저탄수 면요리예요.',
     masterclass: {

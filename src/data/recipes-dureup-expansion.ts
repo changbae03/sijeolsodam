@@ -15,7 +15,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-home-1', month: 4, title: '두릅 초장무침', subtitle: '가장 기본적인 데친 두릅 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-home-1/hero.webp',
     mainIngredient: '두릅', description: '살짝 데친 두릅을 초고추장에 찍어 먹는, 봄 두릅을 가장 정직하게 즐기는 방식이에요.',
     masterclass: {
       chefIntro: '두릅은 손질이 까다로운 편이라 다른 봄나물보다 손이 더 가지만, 그만큼 다 듬어 한 입 베어 물었을 때의 만족감이 커요. 쌉쌀한 맛과 아삭한 식감이 동시에 느껴지는 게 두릅만의 매력이에요.',
@@ -49,7 +49,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-home-2', month: 4, title: '두릅 된장국', subtitle: '향긋함을 더한 구수한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-home-2/hero.webp',
     mainIngredient: '두릅', description: '구수한 된장국에 두릅을 더해, 쌉쌀한 봄 향이 함께 느껴지는 기본 국이에요.',
     masterclass: {
       chefIntro: '두릅을 국에 넣는다는 게 낯설 수 있지만, 된장의 구수함이 두릅의 쌉쌀함을 부드럽게 받쳐줘서 의외로 자연스러운 조합이 돼요.',
@@ -78,7 +78,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-weekend-1', month: 4, title: '두릅 탕수', subtitle: '바삭하게 튀긴 두릅에 새콤달콤한 소스',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-weekend-1/hero.webp',
     mainIngredient: '두릅', description: '두릅을 바삭하게 튀겨 새콤달콤한 탕수소스를 끼얹은, 중식 탕수육을 봄나물로 재해석한 메뉴예요.',
     masterclass: {
       chefIntro: '두릅을 튀긴다는 발상이 색다른데, 의외로 바삭한 튀김옷과 쌉쌀한 두릅 향이 잘 어울려요. 탕수소스의 새콤달콤함이 두릅의 쌉쌀함을 깔끔하게 정리해줘요.',
@@ -107,7 +107,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-weekend-2', month: 4, title: '두릅 갈비찜', subtitle: '봄 향을 더한 묵직한 갈비찜',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 120, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-weekend-2/hero.webp',
     mainIngredient: '두릅', description: '오래 졸인 갈비찜에 두릅을 더해, 묵직한 양념에 쌉쌀한 봄 향을 살린 메뉴예요.',
     masterclass: {
       chefIntro: '갈비찜의 진한 양념과 두릅의 쌉쌀함이 만나면, 느끼함을 잡아주는 균형이 생겨요.',
@@ -136,7 +136,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-weekend-3', month: 4, title: '두릅 영양밥', subtitle: '여러 재료를 더한 든든한 영양밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-weekend-3/hero.webp',
     mainIngredient: '두릅', description: '두릅과 견과류, 대추 등을 더해 지은, 영양 가득한 봄철 영양밥이에요.',
     masterclass: {
       chefIntro: '영양밥은 여러 재료가 한꺼번에 들어가는 만큼, 손이 가지만 한 그릇으로 든든한 한 끼가 완성돼요. 두릅이 더해지면 다른 영양밥과는 다른 향긋함이 느껴져요.',
@@ -165,7 +165,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-weekend-4', month: 4, title: '두릅 산적', subtitle: '꼬치에 꿰어 구운 명절식 산적',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-weekend-4/hero.webp',
     mainIngredient: '두릅', description: '두릅과 고기, 채소를 꼬치에 꿰어 구운, 명절상에도 자주 오르는 전통 산적이에요.',
     masterclass: {
       chefIntro: '산적은 손이 많이 가는 명절 음식이지만, 두릅이 더해지면 일반 산적보다 향이 한층 깊어져요. 꼬치에 색을 맞춰 꿰는 정성이 보기에도 좋아요.',
@@ -193,7 +193,7 @@ export const recipesDureupExpansion: Recipe[] = [
   {
     id: 'dureup-weekend-5', month: 4, title: '두릅 크림 파스타', subtitle: '쌉쌀함과 크리미함이 만나는 파스타',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-weekend-5/hero.webp',
     mainIngredient: '두릅', description: '크리미한 화이트소스에 두릅을 더한, 쌉쌀함과 부드러움이 동시에 느껴지는 파스타예요.',
     masterclass: {
       chefIntro: '두릅을 크림소스에 넣으면, 쌉쌀한 맛이 한층 부드러워지면서도 향은 그대로 남아요. 베이컨의 짠맛이 그 균형을 더 또렷하게 만들어줘요.',
@@ -227,7 +227,7 @@ export const recipesDureupExpansion: Recipe[] = [
       country: '일본',
       note: '일본에서는 봄철 산채를 텐푸라로 즐기는 문화가 발달해 있는데, 두릅과 비슷한 타라노메(楤の芽)라는 채소를 실제로 튀김으로 즐겨요. 쌉쌀한 향과 바삭한 튀김옷의 조합이 봄을 대표하는 맛으로 여겨져요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-world-1/hero.webp',
     mainIngredient: '두릅', description: '얇은 튀김옷을 입혀 가볍게 튀긴 두릅으로, 일본 산채 텐푸라의 정통적인 봄맛이에요.',
     masterclass: {
       chefIntro: '일본에서는 두릅과 매우 비슷한 채소를 실제로 이런 방식으로 즐겨요. 튀김옷이 얇아야 두릅 본연의 쌉쌀한 향이 가려지지 않아요.',
@@ -268,7 +268,7 @@ export const recipesDureupExpansion: Recipe[] = [
       country: '이탈리아',
       note: '프리타타는 이탈리아 가정에서 그때그때 있는 채소를 활용해 만드는 두툼한 오믈렛이에요. 두릅 같은 향 강한 봄채소를 더하면 색다른 풍미의 프리타타가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-world-2/hero.webp',
     mainIngredient: '두릅', description: '두릅과 치즈를 더해 두툼하게 구운, 이탈리아 가정식의 따뜻한 오믈렛이에요.',
     masterclass: {
       chefIntro: '이탈리아 가정에서 아침이나 가벼운 저녁으로 즐기는 메뉴예요. 두릅이 더해지면 쌉쌀한 향이 치즈의 짠맛과 잘 어우러져요.',
@@ -306,7 +306,7 @@ export const recipesDureupExpansion: Recipe[] = [
       country: '이탈리아',
       note: '살사 베르데는 이탈리아의 향긋한 허브 소스로, 삶은 고기나 채소에 곁들여 먹어요. 파슬리와 케이퍼, 안초비로 만드는 정통 소스를 두릅에 적용하면 쌉쌀함과 짠맛, 산미가 한 번에 느껴지는 조합이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-world-3/hero.webp',
     mainIngredient: '두릅', description: '데친 두릅에 이탈리아식 살사 베르데를 곁들인, 쌉쌀함과 짠맛, 산미가 동시에 느껴지는 메뉴예요.',
     masterclass: {
       chefIntro: '살사 베르데의 강렬한 향이 두릅의 쌉쌀함과 만나면, 두 향이 서로 가려지지 않고 동시에 느껴지는 게 재미있어요.',
@@ -338,7 +338,7 @@ export const recipesDureupExpansion: Recipe[] = [
       country: '태국',
       note: '태국 요리에서는 향이 강한 채소를 다진 고기 볶음에 듬뿍 더하는 경우가 많아요. 두릅을 활용하면 원래의 향신채와는 다른, 한식 특유의 쌉쌀한 향이 더해지는 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-world-4/hero.webp',
     mainIngredient: '두릅', description: '다진 돼지고기를 매콤하게 볶아 두릅을 더한, 태국풍 향신 볶음을 한식 재료로 재해석한 메뉴예요.',
     masterclass: {
       chefIntro: '태국 길거리 음식의 매콤한 볶음 방식에 두릅을 더해봤어요. 쌉쌀한 향이 매운 양념과 만나면 또 다른 깊이가 생겨요.',
@@ -371,7 +371,7 @@ export const recipesDureupExpansion: Recipe[] = [
       country: '일본',
       note: '일본 가정에서는 봄철 산채를 살짝 데쳐 폰즈소스에 가볍게 무치는 방식을 즐겨요. 두릅도 이 방식으로 만들면 한식 양념과는 또 다른 산뜻함을 느낄 수 있어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-world-5/hero.webp',
     mainIngredient: '두릅', description: '살짝 데친 두릅에 폰즈소스를 곁들인, 일본식의 깔끔하고 산뜻한 사라다예요.',
     masterclass: {
       chefIntro: '일본식 사라다는 양념이 단순하고 재료 본연의 맛을 살리는 데 집중해요. 두릅도 이 방식대로 만들면 쌉쌀한 향이 더 또렷하게 느껴져요.',
@@ -404,7 +404,7 @@ export const recipesDureupExpansion: Recipe[] = [
     id: 'dureup-chef-1', month: 4, title: '두릅 타르타르와 캐비어', subtitle: '데친 두릅을 곱게 다져 만든 정교한 타르타르',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '무스링에 다진 두릅을 채워 모양을 잡고 들어올린 뒤, 캐비어를 한 줄로 올려보세요. 레몬오일을 점점이 뿌리면 완성이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-chef-1/hero.webp',
     mainIngredient: '두릅', description: '살짝 데친 두릅을 곱게 다져 타르타르처럼 정교하게 쌓아낸, 두릅 본연의 향을 가장 직접적으로 느낄 수 있는 전채예요.',
     masterclass: {
       chefIntro: '두릅을 회처럼 다뤄본 메뉴예요. 익히지 않은 듯 살짝만 데쳐서, 두릅의 쌉쌀한 향과 아삭한 식감을 가장 날것에 가깝게 느낄 수 있어요.',
@@ -439,7 +439,7 @@ export const recipesDureupExpansion: Recipe[] = [
     id: 'dureup-chef-2', month: 4, title: '두릅 그라탕', subtitle: '치즈와 크림으로 구워낸 정교한 그라탕',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '작은 그라탕 그릇 그대로 식탁에 올려, 보글보글 끓는 채로 한 입씩 떠먹게 하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-chef-2/hero.webp',
     mainIngredient: '두릅', description: '두릅을 크림소스와 치즈로 구워낸, 쌉쌀함이 느끼함과 균형을 이루는 정교한 그라탕이에요.',
     masterclass: {
       chefIntro: '그라탕은 보통 부드러운 채소로 만드는데, 두릅처럼 쌉쌀한 채소를 쓰면 진한 크림과 치즈 사이에서 의외의 산뜻함이 느껴져요.',
@@ -474,7 +474,7 @@ export const recipesDureupExpansion: Recipe[] = [
     id: 'dureup-chef-3', month: 4, title: '두릅구이와 초장 미루아르', subtitle: '전통 페어링을 플레이팅으로 끌어올린 메뉴',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '구운 두릅을 비스듬히 겹쳐 담고, 초고추장을 졸여 만든 미루아르(반짝이는 소스)를 가늘게 한 줄 그려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-chef-3/hero.webp',
     mainIngredient: '두릅', description: '두릅과 초고추장이라는 가장 전통적인 페어링을, 굽는 기법과 정교한 플레이팅으로 새롭게 풀어낸 메뉴예요.',
     masterclass: {
       chefIntro: '데치는 대신 직접 구우면 두릅의 쌉쌀한 향이 훨씬 진해지고, 겉에 살짝 그릴 자국이 생기면서 향도 더해져요. 거기에 초고추장을 졸여 소스처럼 만들면, 익숙한 양념이 전혀 다른 모습으로 보여요.',
@@ -513,7 +513,7 @@ export const recipesDureupExpansion: Recipe[] = [
     id: 'dureup-chef-4', month: 4, title: '두릅 크림수프와 양송이', subtitle: '쌉쌀함과 버섯향이 어우러지는 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '깊은 수프 그릇에 따르고 양송이를 얇게 슬라이스해 띄워보세요. 트러플오일을 한 방울 떨어뜨리면 향이 한층 깊어져요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-chef-4/hero.webp',
     mainIngredient: '두릅', description: '두릅과 양송이를 함께 끓여 곱게 간, 쌉쌀함과 버섯향이 동시에 느껴지는 부드러운 크림수프예요.',
     masterclass: {
       chefIntro: '두릅의 쌉쌀함과 양송이의 흙내가 만나면, 둘 다 본연의 향을 잃지 않으면서도 더 깊은 맛으로 어우러져요.',
@@ -543,7 +543,7 @@ export const recipesDureupExpansion: Recipe[] = [
     id: 'dureup-chef-5', month: 4, title: '두릅과 삼겹살 테린', subtitle: '전통 조합을 차가운 테린으로 재구성한 정교한 전채',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '식힌 테린을 슬라이스해 접시에 단면이 보이게 담으세요. 두릅의 초록빛과 삼겹살의 단면이 켜를 이루며 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/dureup-chef-5/hero.webp',
     mainIngredient: '두릅', description: '두릅과 삼겹살이라는 익숙한 조합을 켜켜이 눌러 차갑게 굳힌, 단면이 아름다운 정교한 테린이에요.',
     masterclass: {
       chefIntro: '두릅과 삼겹살은 한식에서 흔히 함께 먹는 조합이에요. 이걸 따뜻하게 먹는 대신, 프랑스식 테린 기법으로 차갑게 굳혀 단면을 보여주는 요리로 재구성해봤어요.',

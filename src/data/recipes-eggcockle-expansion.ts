@@ -14,7 +14,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-home-1', month: 3, title: '새조개샤브샤브', subtitle: '데치면 쫄깃해지는 봄 조개의 별미',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-home-1/hero.webp',
     mainIngredient: '새조개',
     description: '맑은 육수에 살짝 데쳐 먹는, 봄철 대표 별미 샤브샤브예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-home-2', month: 3, title: '새조개초무침', subtitle: '새콤달콤한 봄철 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-home-2/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 채소와 함께 새콤달콤한 초고추장에 무친, 봄철 대표 별미예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-home-3', month: 3, title: '새조개전골', subtitle: '푸짐하고 시원한 봄 전골',
     category: '전골', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-home-3/hero.webp',
     mainIngredient: '새조개',
     description: '새조개와 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 봄철 전골이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-home-4', month: 3, title: '새조개볶음', subtitle: '탱글하고 고소한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-home-4/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 마늘과 버터에 볶아낸, 탱글하고 고소한 기본 볶음 요리예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-home-5', month: 3, title: '새조개탕', subtitle: '시원하고 담백한 봄 국물',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-home-5/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 넣어 맑게 끓인, 시원하고 담백한 봄철 국물 요리예요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-weekend-1', month: 3, title: '새조개무침회', subtitle: '고소하고 쫄깃한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-weekend-1/hero.webp',
     mainIngredient: '새조개',
     description: '데친 새조개를 채소와 함께 매콤달콤하게 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-weekend-2', month: 3, title: '새조개파스타', subtitle: '향긋한 이탈리아식 응용',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-weekend-2/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 화이트와인과 마늘에 볶아 파스타에 버무린, 향긋한 이탈리아식 파스타예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-weekend-3', month: 3, title: '새조개비빔국수', subtitle: '쫄깃하고 개운한 봄 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-weekend-3/hero.webp',
     mainIngredient: '새조개',
     description: '소면에 새조개와 매콤한 양념을 비벼낸, 쫄깃하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-weekend-4', month: 3, title: '새조개죽', subtitle: '부드럽고 고소한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-weekend-4/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 넣어 끓인, 부드럽고 고소한 봄철 보양죽이에요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
   {
     id: 'eggcockle-weekend-5', month: 3, title: '새조개덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-weekend-5/hero.webp',
     mainIngredient: '새조개',
     description: '데친 새조개와 채소를 밥 위에 올려 간장소스로 비벼 먹는, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-world-1', month: 3, title: '토리가이 스노모노', subtitle: '일본식 새조개 초회',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '토리가이(とり貝)는 일본어로 새조개를 뜻해요. 일본에서는 새조개를 고급 초밥 재료이자 초회로 즐기는 것이 대표적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-world-1/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 폰즈소스와 오이에 무친, 담백하고 향긋한 일본식 초회예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-world-2', month: 3, title: '감바스 알 아히요 응용', subtitle: '스페인식 마늘조개',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '감바스 알 아히요(gambas al ajillo)는 스페인의 대표 타파스로, 새우를 올리브오일과 마늘에 보글보글 끓여내는 것이 특징이에요. 조개류로도 응용돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-world-2/hero.webp',
     mainIngredient: '새조개',
     description: '새조개를 올리브오일과 마늘에 보글보글 끓여낸, 스페인식 대표 타파스를 응용한 요리예요.',
     masterclass: {
@@ -362,7 +362,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-world-3', month: 3, title: '새조개 아쿠아파짜', subtitle: '이탈리아식 토마토 해물찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 해산물을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-world-3/hero.webp',
     mainIngredient: '새조개',
     description: '토마토와 화이트와인에 새조개를 살짝 익힌, 이탈리아식 해물찜이에요.',
     masterclass: {
@@ -393,7 +393,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-world-4', month: 3, title: '새조개 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 해산물을 라임즙에 재워 만들어요. 새조개로 만들면 쫄깃한 식감과 산미가 만나는 색다른 세비체가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-world-4/hero.webp',
     mainIngredient: '새조개',
     description: '신선한 새조개를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -423,7 +423,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-world-5', month: 3, title: '새조개 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 조개',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '뵈르블랑은 프랑스 루아르 지방에서 유래한 클래식 버터소스로, 조개류와 함께 내는 것이 전통적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-world-5/hero.webp',
     mainIngredient: '새조개',
     description: '살짝 데친 새조개에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {
@@ -456,7 +456,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-chef-1', month: 3, title: '새조개 차완무시', subtitle: '일본식 계란찜 커스터드',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '작은 찻잔에 담긴 차완무시 표면 위에 새조개 한 점을 살짝 올리고, 실파와 유자껍질을 곱게 채썰어 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-chef-1/hero.webp',
     mainIngredient: '새조개',
     description: '달걀과 다시육수를 곱게 섞어 부드럽게 쪄낸, 새조개를 품은 일본식 계란찜이에요.',
     masterclass: {
@@ -487,7 +487,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-chef-2', month: 3, title: '새조개 에스카베체', subtitle: '스페인·필리핀식 조리 후 절임',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 45, servings: 4,
     platingGuide: '차갑게 식힌 새조개를 절임채소와 함께 넓은 접시에 담고, 절임국물을 자작하게 붓은 뒤 고수와 오렌지 제스트로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-chef-2/hero.webp',
     mainIngredient: '새조개',
     description: '살짝 익힌 새조개를 새콤한 식초 절임국물에 재운, 스페인과 필리핀에서 공통적으로 발달한 조리 후 절임 기법의 전채예요.',
     masterclass: {
@@ -518,7 +518,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-chef-3', month: 3, title: '새조개 베녜', subtitle: '프랑스식 튀김반죽 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '베녜를 부채꼴로 접시에 담고, 레몬아이올리를 작은 종지에 곁들이며 차이브를 흩뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-chef-3/hero.webp',
     mainIngredient: '새조개',
     description: '이스트로 부풀린 프랑스식 반죽에 새조개를 넣어 튀긴, 구름처럼 가벼운 전채예요.',
     masterclass: {
@@ -548,7 +548,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-chef-4', month: 3, title: '새조개 나쥬', subtitle: '프랑스식 향신 포칭 육수',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 그릇에 새조개를 담고 따뜻한 나쥬 국물을 자작하게 부은 뒤, 허브잎과 얇게 썬 당근·회향 조각을 국물 위에 띄웁니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-chef-4/hero.webp',
     mainIngredient: '새조개',
     description: '향신 채소를 우린 맑은 국물(나쥬)에 새조개를 살짝 데쳐 낸, 프랑스 클래식 해산물 조리법이에요.',
     masterclass: {
@@ -578,7 +578,7 @@ export const recipesEggCockleExpansion: Recipe[] = [
     id: 'eggcockle-chef-5', month: 3, title: '새조개 수비드 유자버터', subtitle: '모던 저온진공조리 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '따뜻한 접시에 새조개를 놓고, 유자버터소스를 스푼으로 끼얹은 뒤 유자 제스트와 처빌잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eggcockle-chef-5/hero.webp',
     mainIngredient: '새조개',
     description: '진공팩에 밀봉해 정밀한 온도로 익힌 새조개에, 유자향 버터소스를 곁들인 모던 요리예요.',
     masterclass: {

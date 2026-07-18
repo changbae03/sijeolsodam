@@ -14,7 +14,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-home-1', month: 7, title: '장어구이', subtitle: '복날 대표 보양식, 양념장에 구운 장어',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-home-1/hero.webp',
     mainIngredient: '장어',
     description: '달콤짭짤한 양념을 발라 구운, 여름철 대표 보양식이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-home-2', month: 7, title: '장어덮밥', subtitle: '고소하고 든든한 여름 보양식',
     category: '밥', difficulty: '보통', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-home-2/hero.webp',
     mainIngredient: '장어',
     description: '구운 장어를 밥 위에 올린, 고소하고 든든한 여름철 대표 보양식이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-home-3', month: 7, title: '장어탕', subtitle: '기력 보충에 좋은 보양탕',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 60, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-home-3/hero.webp',
     mainIngredient: '장어',
     description: '장어를 푹 고아 끓인, 기력 보충에 좋은 여름철 보양탕이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-home-4', month: 7, title: '장어된장국', subtitle: '구수하고 든든한 보양국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-home-4/hero.webp',
     mainIngredient: '장어',
     description: '장어를 넣어 끓인 된장국으로, 구수하고 든든한 보양국이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-home-5', month: 7, title: '장어튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-home-5/hero.webp',
     mainIngredient: '장어',
     description: '장어를 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-weekend-1', month: 7, title: '장어초밥', subtitle: '고소하고 달콤한 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-weekend-1/hero.webp',
     mainIngredient: '장어',
     description: '구운 장어를 초밥용 밥 위에 올린, 고소하고 달콤한 초밥이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-weekend-2', month: 7, title: '장어전골', subtitle: '푸짐하고 든든한 보양 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-weekend-2/hero.webp',
     mainIngredient: '장어',
     description: '장어와 채소를 넉넉히 넣고 끓인, 푸짐하고 든든한 여름 보양 전골이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-weekend-3', month: 7, title: '장어소금구이', subtitle: '담백하고 고소한 시라야키',
     category: '구이', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-weekend-3/hero.webp',
     mainIngredient: '장어',
     description: '양념 없이 소금간만 해서 구운, 장어 본연의 맛을 즐기는 담백한 구이예요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-weekend-4', month: 7, title: '장어솥밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-weekend-4/hero.webp',
     mainIngredient: '장어',
     description: '장어를 올려 지은 솥밥으로, 고소하고 든든한 향이 밥알에 배어드는 요리예요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesEelExpansion: Recipe[] = [
   {
     id: 'eel-weekend-5', month: 7, title: '장어산적', subtitle: '고소하고 든든한 꼬치구이',
     category: '구이', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-weekend-5/hero.webp',
     mainIngredient: '장어',
     description: '장어와 채소를 꼬치에 꿰어 구운, 고소하고 든든한 별미예요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-world-1', month: 7, title: '우나기동', subtitle: '일본식 장어덮밥의 정석',
     category: '밥', difficulty: '보통', level: 'world', cookTime: 40, servings: 2,
     cuisineContext: { country: '일본', note: '우나기동(鰻丼)은 일본의 대표적인 장어덮밥으로, 여름 복날(도요노 우시노 히)에 즐기는 전통 보양식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-world-1/hero.webp',
     mainIngredient: '장어',
     description: '달콤짭짤한 타레소스를 발라 구운 장어를 밥 위에 올린, 일본의 정통 장어덮밥이에요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-world-2', month: 7, title: '차이니즈 장어볶음', subtitle: '중국식 매콤한 장어볶음',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 장어를 두반장과 채소와 함께 매콤하게 볶는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-world-2/hero.webp',
     mainIngredient: '장어',
     description: '장어를 두반장과 채소와 함께 매콤하게 볶은, 중국식 대표 장어요리예요.',
     masterclass: {
@@ -364,7 +364,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-world-3', month: 7, title: '프렌치 장어스튜', subtitle: '프랑스식 화이트와인 장어찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스 루아르 지방에서는 장어를 화이트와인과 허브로 은근히 끓이는 것이 전통 요리(마틀로트)예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-world-3/hero.webp',
     mainIngredient: '장어',
     description: '장어를 화이트와인과 허브에 은근히 끓인, 프랑스 루아르 지방의 전통 요리예요.',
     masterclass: {
@@ -393,7 +393,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-world-4', month: 7, title: '장어 템푸라', subtitle: '일본식 튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '텐푸라는 일본식 튀김 기법으로, 얼음물 반죽과 낮은 온도의 기름이 바삭함의 비결이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-world-4/hero.webp',
     mainIngredient: '장어',
     description: '장어를 일본식 텐푸라 반죽으로 튀긴, 가볍고 바삭한 튀김이에요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-world-5', month: 7, title: '벨기에식 장어스튜', subtitle: '허브 크림소스 장어',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 50, servings: 3,
     cuisineContext: { country: '벨기에', note: '벨기에에서는 장어를 다양한 허브와 크림소스에 끓이는 "안길 오 베르(anguille au vert)"가 대표 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-world-5/hero.webp',
     mainIngredient: '장어',
     description: '장어를 여러 허브와 크림소스에 끓인, 벨기에의 대표적인 향긋한 전통 요리예요.',
     masterclass: {
@@ -454,7 +454,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-chef-1', month: 7, title: '우나기 세이로무시', subtitle: '일본 관동식 찜+굽기 반복 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '대나무 찜통이나 그릇에 밥을 담고 그 위에 장어를 올려, 찜통을 상 위에서 직접 열어 김이 피어오르는 모습을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-chef-1/hero.webp',
     mainIngredient: '장어',
     description: '장어를 초벌구이한 뒤 쪄서 기름기를 빼고, 다시 양념구이하는 도쿄(관동) 지방의 정통 우나기 기법이에요.',
     masterclass: {
@@ -485,7 +485,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-chef-2', month: 7, title: '젤리드 일스', subtitle: '영국식 콜드 젤리 세팅',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '작은 그릇이나 유리컵에 굳힌 젤리드 일스를 담아 투명한 젤리 속 장어가 보이게 하고, 파슬리와 레몬 웨지를 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-chef-2/hero.webp',
     mainIngredient: '장어',
     description: '장어를 향신 육수에 삶은 뒤 그 국물이 자체적으로 굳어 만들어지는 젤리에 넣어 차갑게 식힌, 영국 런던의 전통적인 길거리 음식이에요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-chef-3', month: 7, title: '삼배장어조림', subtitle: '중국·대만식 삼배 브레이즈 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '뚝배기나 무쇠냄비째 상에 올려 지글거리는 소리와 함께 내고, 바질잎을 마지막에 올려 향이 피어오르게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-chef-3/hero.webp',
     mainIngredient: '장어',
     description: '참기름, 간장, 미주(쌀술)를 동일한 비율로 넣어 조린, 대만의 대표적인 삼배(三杯) 기법 요리예요.',
     masterclass: {
@@ -546,7 +546,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-chef-4', month: 7, title: '앙굴라스 알 아히요', subtitle: '스페인 바스크식 마늘기름 튀김',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '작은 도자기 그릇에 뜨거운 기름과 함께 담아내고, 나무 포크를 곁들여 상 위에서 지글거리는 소리를 즐기게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-chef-4/hero.webp',
     mainIngredient: '장어',
     description: '가늘게 채 썬 장어살을 뜨거운 마늘기름에 순식간에 볶아낸, 스페인 바스크 지방의 고급 타파스예요.',
     masterclass: {
@@ -576,7 +576,7 @@ export const recipesEelExpansion: Recipe[] = [
     id: 'eel-chef-5', month: 7, title: '아귈라 인 우미도', subtitle: '이탈리아 코마키오식 토마토식초 스튜',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '넓은 접시에 국물과 함께 담고, 폴렌타(옥수수죽)를 곁들여 이탈리아식 정통 플레이팅을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/eel-chef-5/hero.webp',
     mainIngredient: '장어',
     description: '토마토와 식초를 넣어 새콤하게 끓인, 이탈리아 코마키오 지역의 전통 장어 스튜예요.',
     masterclass: {
