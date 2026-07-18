@@ -14,7 +14,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-home-1', month: 2, title: '키위스무디', subtitle: '비타민 가득한 새콤달콤 키위 스무디',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1585059895524-72359e06133a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-home-1/hero.webp',
     mainIngredient: '키위',
     description: '키위와 우유, 꿀만 있으면 5분 안에 만들 수 있는, 비타민 가득 스무디예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-home-2', month: 2, title: '키위요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-home-2/hero.webp',
     mainIngredient: '키위',
     description: '키위와 그릭요거트를 섞은, 상큼하고 건강한 간식이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-home-3', month: 2, title: '키위샐러드', subtitle: '상큼하고 가벼운 겨울 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-home-3/hero.webp',
     mainIngredient: '키위',
     description: '키위와 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 겨울철 샐러드예요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-home-4', month: 2, title: '키위잼', subtitle: '상큼한 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-home-4/hero.webp',
     mainIngredient: '키위',
     description: '키위를 졸여 만든, 상큼한 초록빛의 홈메이드 잼이에요.',
     masterclass: {
@@ -126,7 +126,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-home-5', month: 2, title: '키위주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-home-5/hero.webp',
     mainIngredient: '키위',
     description: '키위를 직접 갈아 만든, 상큼하고 건강한 생과일주스예요.',
     masterclass: {
@@ -156,7 +156,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-weekend-1', month: 2, title: '키위불고기', subtitle: '부드럽게 연화된 특별한 불고기',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-weekend-1/hero.webp',
     mainIngredient: '키위',
     description: '키위를 갈아 넣은 양념에 재운 소고기로 만든, 부드럽고 특별한 불고기예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-weekend-2', month: 2, title: '키위타르트', subtitle: '상큼하고 화려한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-weekend-2/hero.webp',
     mainIngredient: '키위',
     description: '커스터드크림 위에 키위를 올려 만든, 상큼하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -214,7 +214,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-weekend-3', month: 2, title: '키위스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-weekend-3/hero.webp',
     mainIngredient: '키위',
     description: '키위와 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -242,7 +242,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-weekend-4', month: 2, title: '키위셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-weekend-4/hero.webp',
     mainIngredient: '키위',
     description: '키위를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesKiwiExpansion: Recipe[] = [
   {
     id: 'kiwi-weekend-5', month: 2, title: '키위빙수', subtitle: '상큼하고 시원한 겨울 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-weekend-5/hero.webp',
     mainIngredient: '키위',
     description: '얼음 위에 키위와 연유를 듬뿍 올린, 상큼하고 시원한 겨울철 디저트예요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-world-1', month: 2, title: '키위 파블로바', subtitle: '뉴질랜드 국민 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 90, servings: 6,
     cuisineContext: { country: '뉴질랜드', note: '키위는 뉴질랜드의 대표 과일이자, 파블로바는 뉴질랜드와 호주가 서로 원조를 주장하는 국민 디저트예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-world-1/hero.webp',
     mainIngredient: '키위',
     description: '겉바속쫀 머랭 베이스에 키위를 올린, 뉴질랜드의 대표적인 국민 디저트예요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-world-2', month: 2, title: '키위 살사', subtitle: '멕시코식 상큼한 살사',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '멕시코', note: '멕시코에서는 열대과일을 활용한 살사가 대중적이에요. 키위로 만들면 상큼함이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-world-2/hero.webp',
     mainIngredient: '키위',
     description: '키위와 양파, 고추를 다져 만든, 멕시코식 상큼한 살사예요.',
     masterclass: {
@@ -364,7 +364,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-world-3', month: 2, title: '키위 프로슈토', subtitle: '이탈리아식 응용 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 멜론과 프로슈토를 곁들이는 것이 클래식한 전채예요. 키위로 응용하면 색다른 산미가 더해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-world-3/hero.webp',
     mainIngredient: '키위',
     description: '키위에 프로슈토를 곁들인, 이탈리아식 전채를 응용한 요리예요.',
     masterclass: {
@@ -393,7 +393,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-world-4', month: 2, title: '키위 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-world-4/hero.webp',
     mainIngredient: '키위',
     description: '키위와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-world-5', month: 2, title: '키위 모히토', subtitle: '쿠바식 상큼한 칵테일 응용',
     category: '음료', difficulty: '쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '쿠바', note: '모히토는 쿠바의 대표적인 칵테일이에요. 라임과 민트에 키위를 더하면 훨씬 상큼한 논알코올 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-world-5/hero.webp',
     mainIngredient: '키위',
     description: '키위와 민트, 라임을 으깨어 만든, 쿠바식 모히토를 응용한 상큼한 음료예요.',
     masterclass: {
@@ -454,7 +454,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-chef-1', month: 2, title: '키위 효소 스테이크 마리네이드', subtitle: '액티니딘 효소 연화 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '슬라이스한 스테이크를 접시에 부채꼴로 담고, 키위 소스를 스푼으로 끼얹은 뒤 키위 슬라이스 몇 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-chef-1/hero.webp',
     mainIngredient: '키위',
     description: '키위에 함유된 액티니딘 효소로 고기의 단백질을 분해해 부드럽게 만든, 과학적 원리를 활용한 마리네이드 기법이에요.',
     masterclass: {
@@ -485,7 +485,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-chef-2', month: 2, title: '키위식초', subtitle: '초산 발효 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 60, servings: 8,
     platingGuide: '완성된 식초를 예쁜 병에 담아 라벨을 붙이고, 샐러드드레싱이나 생선요리에 몇 방울 뿌려 활용합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-chef-2/hero.webp',
     mainIngredient: '키위',
     description: '키위즙을 알코올 발효를 거쳐 다시 초산 발효시킨, 과일식초 만들기의 정통 기법이에요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-chef-3', month: 2, title: '키위 처트니', subtitle: '인도식 향신 절임',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 종지에 처트니를 담아 커리나 치즈플래터 옆에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-chef-3/hero.webp',
     mainIngredient: '키위',
     description: '키위를 향신료와 식초에 뭉근히 조린, 인도의 대표적인 향신 과일 절임이에요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-chef-4', month: 2, title: '키위 빈코토', subtitle: '이탈리아식 리덕션 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '작은 병에 담긴 진한 시럽을 치즈플래터나 아이스크림 위에 실처럼 가늘게 흘려 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-chef-4/hero.webp',
     mainIngredient: '키위',
     description: '키위즙을 몇 시간에 걸쳐 극도로 졸인, 이탈리아 전통 빈코토 기법을 응용한 진한 시럽이에요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesKiwiExpansion: Recipe[] = [
     id: 'kiwi-chef-5', month: 2, title: '키위 파스타 베르데', subtitle: '초록 생면 반죽 기법',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 60, servings: 3,
     platingGuide: '삶은 초록빛 면을 접시에 돌돌 말아 담고, 버터세이지소스를 끼얹은 뒤 파마산치즈를 갈아 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/kiwi-chef-5/hero.webp',
     mainIngredient: '키위',
     description: '키위 퓌레를 반죽에 섞어 초록빛을 낸, 이탈리아식 컬러 생면 기법을 응용한 파스타예요.',
     masterclass: {

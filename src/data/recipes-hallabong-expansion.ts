@@ -189,7 +189,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-weekend-2', month: 1, title: '한라봉젤리', subtitle: '상큼하고 탱글한 겨울 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-weekend-2/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉즙을 곱게 갈아 굳힌, 상큼하고 탱글한 겨울철 디저트예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-weekend-3', month: 1, title: '한라봉글레이즈 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-weekend-3/hero.webp',
     mainIngredient: '한라봉',
     description: '구운 돼지고기 폭찹에 한라봉글레이즈를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-weekend-4', month: 1, title: '한라봉케이크', subtitle: '향긋한 홈베이킹 시트케이크',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-weekend-4/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉 제스트와 즙을 넣은 반죽으로 구운, 향긋하고 촉촉한 홈베이킹 케이크예요.',
     masterclass: {
@@ -277,7 +277,7 @@ export const recipesHallabongExpansion: Recipe[] = [
   {
     id: 'hallabong-weekend-5', month: 1, title: '한라봉샹그리아', subtitle: '스페인식 겨울 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'weekend', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-weekend-5/hero.webp',
     mainIngredient: '한라봉',
     description: '레드와인에 한라봉과 겨울 과일을 넣어 만든, 스페인식 겨울 상그리아예요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-world-1', month: 1, title: '한라봉 판나코타', subtitle: '이탈리아 크림 디저트에 시트러스향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 시트러스향을 더하는 것도 클래식한 변형이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-world-1/hero.webp',
     mainIngredient: '한라봉',
     description: '부드러운 이탈리아식 크림 디저트에 한라봉소스를 곁들인, 향긋한 겨울 디저트예요.',
     masterclass: {
@@ -341,7 +341,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-world-2', month: 1, title: '한라봉 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 시트러스향 트러플은 클래식한 조합으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-world-2/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉 제스트를 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -372,7 +372,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-world-3', month: 1, title: '한라봉 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-world-3/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉과 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -401,7 +401,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-world-4', month: 1, title: '한라봉 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-world-4/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉을 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -432,7 +432,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-world-5', month: 1, title: '한라봉 상큼드레싱 파스타', subtitle: '이탈리아식 응용 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 남부에서는 시트러스를 활용한 상큼한 파스타가 여름·겨울 별미로 즐겨져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-world-5/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉즙과 올리브오일로 만든 상큼한 소스를 버무린, 가벼운 이탈리아식 파스타예요.',
     masterclass: {
@@ -464,7 +464,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-chef-1', month: 1, title: '한라봉 커드', subtitle: '영국식 시트러스 커스터드 커드',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '작은 유리병에 담아 상에 올리고, 스콘이나 팬케이크에 두껍게 발라 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-chef-1/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉즙에 버터와 달걀노른자를 넣고 걸쭉하게 익힌, 영국의 대표적인 시트러스 커스터드예요.',
     masterclass: {
@@ -494,7 +494,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-chef-2', month: 1, title: '한라봉 아그로돌체', subtitle: '이탈리아식 새콤달콤 리덕션 소스',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 6,
     platingGuide: '구운 고기 옆에 소스를 스푼으로 지그재그로 뿌리고, 한라봉 제스트를 살짝 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-chef-2/hero.webp',
     mainIngredient: '한라봉',
     description: '식초와 설탕을 졸인 베이스에 한라봉을 더한, 이탈리아 요리의 새콤달콤한 클래식 소스예요.',
     masterclass: {
@@ -524,7 +524,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-chef-3', month: 1, title: '한라봉 카이피리냐', subtitle: '브라질식 머들 칵테일',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 15, servings: 2,
     platingGuide: '올드패션드 글라스에 으깬 한라봉과 얼음을 그대로 담아, 잔 속에 재료가 보이는 러스틱한 모습을 그대로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-chef-3/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉을 통째로 으깨어 설탕, 카샤사와 섞은, 브라질의 국민 칵테일 카이피리냐를 응용한 음료예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-chef-4', month: 1, title: '타르트 오 시트론', subtitle: '프랑스 클래식 구운 커스터드 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '타르트를 통째로 상에 올려 매끈한 표면을 보여주고, 얇게 저민 한라봉 한 조각으로 가운데를 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-chef-4/hero.webp',
     mainIngredient: '한라봉',
     description: '한라봉 커스터드를 타르트지에 채워 오븐에서 그대로 구운, 머랭 없는 프랑스 클래식 타르트예요.',
     masterclass: {
@@ -583,7 +583,7 @@ export const recipesHallabongExpansion: Recipe[] = [
     id: 'hallabong-chef-5', month: 1, title: '한라봉 브레이즈드 덕', subtitle: '오리다리 저온 브레이즈',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 120, servings: 4,
     platingGuide: '오리다리를 뼈째 접시에 담고 졸인 브레이즈 국물을 끼얹은 뒤, 한라봉 슬라이스 몇 조각을 곁들여 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hallabong-chef-5/hero.webp',
     mainIngredient: '한라봉',
     description: '오리다리를 한라봉과 함께 몇 시간 저온으로 브레이징한, 뼈에서 살이 스르르 떨어지는 깊은 맛의 메인요리예요.',
     masterclass: {

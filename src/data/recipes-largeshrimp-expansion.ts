@@ -13,7 +13,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-home-1', month: 9, title: '대하장', subtitle: '탱글한 대하를 간장에 절인 별미',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1625943555017-a517a8e8d11a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-home-1/hero.webp',
     mainIngredient: '대하',
     description: '가을 대하를 간장 양념에 절여 만든, 짭짤하고 감칠맛 나는 밥도둑 반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-home-2', month: 9, title: '대하소금구이', subtitle: '껍질까지 바삭한 가을 별미',
     category: '메인요리', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-home-2/hero.webp',
     mainIngredient: '대하',
     description: '굵은소금 위에 구워내면 껍질째 바삭하게 즐길 수 있는, 간단하고 맛있는 가을 별미예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-home-3', month: 9, title: '대하찜', subtitle: '탱글한 살이 촉촉하게 살아있는 찜',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1553247407-23251ce3c8ff?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-home-3/hero.webp',
     mainIngredient: '대하',
     description: '대하를 청주와 함께 쪄낸, 탱글하고 촉촉한 살을 그대로 즐기는 요리예요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-home-4', month: 9, title: '대하볶음밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-home-4/hero.webp',
     mainIngredient: '대하',
     description: '대하를 넣어 볶은, 고소하고 든든한 기본 볶음밥이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-home-5', month: 9, title: '대하튀김', subtitle: '겉바속촉 기본 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-home-5/hero.webp',
     mainIngredient: '대하',
     description: '대하를 바삭하게 튀긴, 겉은 바삭하고 속은 탱글한 기본 튀김이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-weekend-1', month: 9, title: '갈릭대하파스타', subtitle: '고소한 마늘향 파스타',
     category: '파스타', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-weekend-1/hero.webp',
     mainIngredient: '대하',
     description: '대하를 마늘과 올리브오일에 볶아 파스타에 버무린, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-weekend-2', month: 9, title: '대하전골', subtitle: '푸짐하고 시원한 가을 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-weekend-2/hero.webp',
     mainIngredient: '대하',
     description: '대하와 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 전골이에요.',
     masterclass: {

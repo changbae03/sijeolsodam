@@ -12,7 +12,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-home-1', month: 5, title: '뱅어포무침', subtitle: '간단하게 무쳐먹는 봄 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-home-1/hero.webp',
     mainIngredient: '뱅어',
     description: '구운 뱅어포에 고춧가루 양념을 더해 바삭하고 짭짤하게 즐기는, 간단한 봄 밑반찬이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-home-2', month: 5, title: '뱅어포부각', subtitle: '바삭하고 고소한 마른반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-home-2/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어포를 기름에 튀기듯 구워낸, 바삭하고 고소한 마른반찬이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-home-3', month: 5, title: '뱅어포볶음밥', subtitle: '고소하고 짭짤한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-home-3/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어포를 잘게 부숴 넣어 볶은, 고소하고 짭짤한 볶음밥이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-home-4', month: 5, title: '뱅어탕', subtitle: '담백하고 시원한 봄 국물',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-home-4/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 넣어 맑게 끓인, 담백하고 시원한 봄철 별미탕이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-home-5', month: 5, title: '뱅어전', subtitle: '부드럽고 고소한 봄 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-home-5/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 반죽에 섞어 부친, 부드럽고 고소한 봄철 별미전이에요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-weekend-1', month: 5, title: '뱅어튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-weekend-1/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 별미 튀김이에요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-weekend-2', month: 5, title: '뱅어파스타', subtitle: '고소한 감칠맛의 이탈리아식 응용',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-weekend-2/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 마늘과 올리브오일에 볶아 파스타에 버무린, 고소하고 순한 파스타예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-weekend-3', month: 5, title: '뱅어무침샐러드', subtitle: '상큼하고 가벼운 봄 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-weekend-3/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어포와 채소를 상큼한 드레싱에 버무린, 가볍고 산뜻한 봄 샐러드예요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-weekend-4', month: 5, title: '뱅어달걀찜', subtitle: '부드럽고 고소한 별미',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-weekend-4/hero.webp',
     mainIngredient: '뱅어',
     description: '달걀찜에 뱅어를 더해 고소함을 살린, 부드러운 별미 반찬이에요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesIcefishExpansion: Recipe[] = [
   {
     id: 'icefish-weekend-5', month: 5, title: '뱅어죽', subtitle: '부드럽고 담백한 봄 별미죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-weekend-5/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 넣어 끓인, 부드럽고 담백한 봄철 별미죽이에요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-world-1', month: 5, title: '시라스동', subtitle: '일본식 뱅어덮밥',
     category: '밥', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '일본', note: '시라스(しらす)는 일본어로 뱅어(치어)를 뜻해요. 일본에서는 시라스동이라는 밥 위에 뱅어를 올린 간단한 덮밥이 대표적인 봄철 별미예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-world-1/hero.webp',
     mainIngredient: '뱅어',
     description: '밥 위에 뱅어를 소복이 올린, 일본식 간단하고 담백한 덮밥이에요.',
     masterclass: {
@@ -334,7 +334,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-world-2', month: 5, title: '스파게티 알레 비앙케티', subtitle: '이탈리아식 뱅어파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '비앙케티(bianchetti)는 이탈리아어로 뱅어(화이트베이트)를 뜻해요. 이탈리아 해안 지방에서는 뱅어를 마늘, 올리브오일과 함께 파스타에 즐겨 넣어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-world-2/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 마늘과 올리브오일에 볶아 완성한, 이탈리아식 클래식 파스타예요.',
     masterclass: {
@@ -364,7 +364,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-world-3', month: 5, title: '앙쿠아 프리타', subtitle: '스페인식 뱅어튀김',
     category: '튀김', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '스페인', note: '앙쿠아스(angulas)는 스페인 바스크 지방의 별미인데, 값비싼 장어 치어 대신 뱅어를 비슷하게 튀겨 즐기는 저렴한 대체 요리(감바 블랑카 스타일)도 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-world-3/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 마늘, 올리브오일과 함께 살짝 튀기듯 볶은, 스페인식 별미예요.',
     masterclass: {
@@ -393,7 +393,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-world-4', month: 5, title: '화이트베이트 프리터', subtitle: '영국식 뱅어튀김',
     category: '튀김', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '화이트베이트(whitebait)는 영국에서 즐기는 뱅어류 튀김이에요. 밀가루를 살짝 입혀 통째로 바삭하게 튀기는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-world-4/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어에 밀가루를 살짝 입혀 통째로 바삭하게 튀긴, 영국식 전통 튀김이에요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-world-5', month: 5, title: '뱅어 브랑다드', subtitle: '프랑스식 뱅어 퓌레',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '프랑스', note: '브랑다드(brandade)는 프랑스 남부 지방의 전통 요리로, 생선살과 감자, 올리브오일을 곱게 갈아 만드는 부드러운 퓌레예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-world-5/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어와 감자를 곱게 갈아 만든, 부드럽고 고소한 프랑스 남부식 퓌레예요.',
     masterclass: {
@@ -455,7 +455,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-chef-1', month: 5, title: '뱅어포 콩소메', subtitle: '맑고 고소한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 뱅어 한 줌과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-chef-1/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어 향을 우린 맑은 콩소메로, 코스요리의 시작에 어울리는 담백한 수프예요.',
     masterclass: {
@@ -486,7 +486,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-chef-2', month: 5, title: '뱅어 오일파스타', subtitle: '고급 향유로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 뱅어를 고명으로 올린 뒤 레몬 제스트와 올리브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-chef-2/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 오일에 우려 만든 향유로 완성한, 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-chef-3', month: 5, title: '뱅어 리조또', subtitle: '고소하고 담백한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 뱅어를 고명으로 소복이 올린 뒤 레몬 제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-chef-3/hero.webp',
     mainIngredient: '뱅어',
     description: '뱅어를 넣어 고소함을 살린, 봄철 이탈리아식 리조또예요.',
     masterclass: {
@@ -547,7 +547,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-chef-4', month: 5, title: '뱅어 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 크림치즈 위에 뱅어를 소복이 올린 뒤 딜과 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-chef-4/hero.webp',
     mainIngredient: '뱅어',
     description: '바삭하게 구운 크로스티니 위에 뱅어와 크림치즈를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {
@@ -576,7 +576,7 @@ export const recipesIcefishExpansion: Recipe[] = [
     id: 'icefish-chef-5', month: 5, title: '뱅어 콩피 마늘오일', subtitle: '향유에 은근히 익힌 부드러운 뱅어',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '따뜻한 접시에 뱅어를 소복이 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icefish-chef-5/hero.webp',
     mainIngredient: '뱅어',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 뱅어요리예요.',
     masterclass: {

@@ -12,7 +12,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-home-1', month: 9, title: '대추차', subtitle: '몸을 따뜻하게 데워주는 가을 보양 차',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-home-1/hero.webp',
     mainIngredient: '대추',
     description: '달큰하고 쫄깃한 대추를 푹 끓여낸, 몸을 따뜻하게 데워주는 가을 보양 차예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-home-2', month: 9, title: '대추약밥', subtitle: '달콤한 대추가 듬뿍 들어간 영양밥',
     category: '밥', difficulty: '보통', level: 'home', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-home-2/hero.webp',
     mainIngredient: '대추',
     description: '달콤한 대추와 견과류를 듬뿍 넣어 지은, 영양 가득한 가을 약밥이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-home-3', month: 9, title: '대추고', subtitle: '푹 고아 만든 진한 대추 농축액',
     category: '양념', difficulty: '보통', level: 'home', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-home-3/hero.webp',
     mainIngredient: '대추',
     description: '대추를 오래 고아 껍질과 씨를 걸러낸, 진한 단맛의 전통 농축액이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-home-4', month: 9, title: '대추정과', subtitle: '쫀득하게 조려낸 전통 다과',
     category: '간식', difficulty: '보통', level: 'home', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-home-4/hero.webp',
     mainIngredient: '대추',
     description: '대추를 꿀에 조려 쫀득하게 만든, 명절 다과상에 올리기 좋은 전통 정과예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-home-5', month: 9, title: '대추죽', subtitle: '부드럽고 든든한 보양죽',
     category: '죽', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-home-5/hero.webp',
     mainIngredient: '대추',
     description: '대추를 곱게 갈아 쌀과 함께 끓인, 부드럽고 속이 편안한 보양죽이에요.',
     masterclass: {
@@ -163,7 +163,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-weekend-1', month: 9, title: '대추곰탕', subtitle: '깊고 진한 가을 보양 곰탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 150, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-weekend-1/hero.webp',
     mainIngredient: '대추',
     description: '사골 국물에 대추를 더해 은은한 단맛을 낸, 깊고 진한 가을 보양 곰탕이에요.',
     masterclass: {
@@ -193,7 +193,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-weekend-2', month: 9, title: '대추편', subtitle: '쫄깃하고 향긋한 전통 떡',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-weekend-2/hero.webp',
     mainIngredient: '대추',
     description: '대추를 갈아 넣은 쌀가루를 쪄낸, 쫄깃하고 향긋한 전통 떡이에요.',
     masterclass: {
@@ -224,7 +224,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-weekend-3', month: 9, title: '대추백숙', subtitle: '보양 가득한 가을 삼계탕 변형',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-weekend-3/hero.webp',
     mainIngredient: '대추',
     description: '닭을 대추와 인삼, 찹쌀과 함께 푹 고아낸, 가을철 든든한 보양식이에요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-weekend-4', month: 9, title: '대추잼', subtitle: '두고두고 발라 먹는 가을 잼',
     category: '양념', difficulty: '쉬움', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-weekend-4/hero.webp',
     mainIngredient: '대추',
     description: '대추를 곱게 갈아 설탕과 레몬즙으로 조린, 은은한 단맛의 가을 잼이에요.',
     masterclass: {
@@ -282,7 +282,7 @@ export const recipesJujubeExpansion: Recipe[] = [
   {
     id: 'jujube-weekend-5', month: 9, title: '대추 라떼', subtitle: '고소하고 달콤한 가을 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-weekend-5/hero.webp',
     mainIngredient: '대추',
     description: '대추고를 우유에 녹여 만든, 부드럽고 고소한 가을철 대표 음료예요.',
     masterclass: {
@@ -314,7 +314,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-world-1', month: 9, title: '홍자오糖水', subtitle: '중국식 대추 디저트탕',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '중국', note: '홍자오(红枣)는 중국어로 대추를 뜻해요. 중국에서는 대추를 은이버섯이나 연자육과 함께 달콤하게 끓인 탕수이(糖水, 디저트탕)를 즐겨 먹어요. 몸을 보하는 디저트로 여겨져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-world-1/hero.webp',
     mainIngredient: '대추',
     description: '대추와 은이버섯을 달콤하게 끓인, 중국식 보양 디저트탕이에요.',
     masterclass: {
@@ -344,7 +344,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-world-2', month: 9, title: '나츠메노 니모노', subtitle: '일본식 대추 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '나츠메(なつめ)는 일본어로 대추를 뜻해요. 일본에서는 대추를 간장과 미림에 은근히 졸여 반찬처럼 즐기는 경우가 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-world-2/hero.webp',
     mainIngredient: '대추',
     description: '간장과 미림에 대추를 은근히 졸인, 담백하고 은은하게 단 일본식 조림이에요.',
     masterclass: {
@@ -374,7 +374,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-world-3', month: 9, title: '모로칸 타진 (대추·닭)', subtitle: '모로코식 대추 닭 타진',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '모로코', note: '모로코에서는 말린 대추(데이츠)를 향신료와 함께 닭이나 양고기 타진에 넣는 것이 전통 요리예요. 대추의 단맛이 향신료의 매콤함과 균형을 이뤄요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-world-3/hero.webp',
     mainIngredient: '대추',
     description: '닭고기와 대추를 향신료에 은근히 끓인, 달콤짭짤한 모로코식 타진 요리예요.',
     masterclass: {
@@ -406,7 +406,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-world-4', month: 9, title: '스티키 데이트 푸딩', subtitle: '영국식 대추 캐러멜 케이크',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '영국', note: '스티키 토피 푸딩(sticky toffee pudding)은 영국의 대표 디저트로, 말린 대추를 케이크 반죽에 넣고 진한 캐러멜소스를 끼얹어 먹어요. 촉촉하고 진한 단맛이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-world-4/hero.webp',
     mainIngredient: '대추',
     description: '대추를 넣은 촉촉한 케이크에 진한 캐러멜소스를 끼얹은, 영국식 대표 디저트예요.',
     masterclass: {
@@ -438,7 +438,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-world-5', month: 9, title: '대추 타르트타탕', subtitle: '프랑스식 거꾸로 굽는 타르트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 70, servings: 6,
     cuisineContext: { country: '프랑스', note: '타르트타탕은 프랑스의 대표 디저트로, 원래는 사과로 만들지만 다른 단 과일로도 응용돼요. 대추로 만들면 훨씬 진하고 이국적인 단맛의 타르트가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-world-5/hero.webp',
     mainIngredient: '대추',
     description: '캐러멜라이즈된 대추를 바닥에 깔고 타르트지를 덮어 구운 뒤 뒤집어내는, 프랑스식 대추 타르트예요.',
     masterclass: {
@@ -472,7 +472,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-chef-1', month: 9, title: '대추 콩포트 타르트', subtitle: '진한 대추 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-chef-1/hero.webp',
     mainIngredient: '대추',
     description: '대추를 브랜디와 향신료에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 가을 디저트예요.',
     masterclass: {
@@ -503,7 +503,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-chef-2', month: 9, title: '대추 브랜디 트러플', subtitle: '술향이 은은한 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 접시에 트러플을 3~4개씩 원형으로 배치하고, 코코아파우더 위에 대추 조각을 살짝 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-chef-2/hero.webp',
     mainIngredient: '대추',
     description: '브랜디에 재운 대추를 다크초콜릿 가나슈에 섞어 빚은, 어른들을 위한 한입 트러플이에요.',
     masterclass: {
@@ -535,7 +535,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-chef-3', month: 9, title: '대추 판나코타', subtitle: '이탈리아 크림 디저트에 대추를',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 얇게 썬 대추와 캐러멜소스를 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-chef-3/hero.webp',
     mainIngredient: '대추',
     description: '부드러운 이탈리아식 크림 디저트에 대추향을 우려낸, 가을 향 가득한 판나코타예요.',
     masterclass: {
@@ -566,7 +566,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-chef-4', month: 9, title: '대추소스 폭찹', subtitle: '진한 과일소스를 곁들인 돼지고기 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 구운 폭찹을 놓고, 대추소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 폭찹 위에 소스를 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-chef-4/hero.webp',
     mainIngredient: '대추',
     description: '두툼하게 구운 돼지고기 폭찹에 대추로 만든 진한 소스를 곁들인, 서양식 메인요리예요.',
     masterclass: {
@@ -598,7 +598,7 @@ export const recipesJujubeExpansion: Recipe[] = [
     id: 'jujube-chef-5', month: 9, title: '대추 리조또', subtitle: '은은한 단맛의 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 얇게 썬 대추 몇 조각과 구운 아몬드를 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jujube-chef-5/hero.webp',
     mainIngredient: '대추',
     description: '대추를 갈아 넣어 은은한 단맛을 낸, 독특하고 세련된 이탈리아식 리조또예요.',
     masterclass: {

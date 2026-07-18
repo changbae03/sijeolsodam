@@ -14,7 +14,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-home-1', month: 3, title: '씀바귀무침', subtitle: '입맛을 돋우는 새콤달콤 봄나물 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-home-1/hero.webp',
     mainIngredient: '씀바귀',
     description: '쌉싸름한 씀바귀를 고춧가루 양념에 새콤달콤하게 무친, 입맛을 돋우는 봄나물 반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-home-2', month: 3, title: '씀바귀된장무침', subtitle: '구수하고 쌉싸름한 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-home-2/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 된장과 참기름으로 무친, 구수하고 쌉싸름한 봄철 밑반찬이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-home-3', month: 3, title: '씀바귀비빔밥', subtitle: '쌉싸름하고 개운한 봄 한 그릇',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-home-3/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀무침을 밥에 비벼 먹는, 쌉싸름하고 개운한 봄철 한 그릇이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-home-4', month: 3, title: '씀바귀된장국', subtitle: '쌉싸름하고 구수한 봄 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-home-4/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 넣어 끓인 된장국으로, 쌉싸름하고 구수한 봄철 국이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-home-5', month: 3, title: '씀바귀전', subtitle: '쌉싸름하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-home-5/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 반죽에 섞어 부친, 쌉싸름하고 향긋한 별미전이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-weekend-1', month: 3, title: '씀바귀고추장쌈장무침', subtitle: '진한 쌈장 스타일 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-weekend-1/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 진한 쌈장 스타일 양념에 무친, 밥과 고기에 곁들이기 좋은 반찬이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-weekend-2', month: 3, title: '씀바귀삼겹살쌈', subtitle: '쌉싸름한 향이 어우러진 쌈 요리',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-weekend-2/hero.webp',
     mainIngredient: '씀바귀',
     description: '구운 삼겹살에 씀바귀를 곁들여 싸 먹는, 쌉싸름한 향이 어우러진 쌈 요리예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-weekend-3', month: 3, title: '씀바귀나물비빔국수', subtitle: '쌉싸름하고 개운한 봄 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-weekend-3/hero.webp',
     mainIngredient: '씀바귀',
     description: '소면에 씀바귀와 매콤한 양념을 비벼낸, 쌉싸름하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-weekend-4', month: 3, title: '씀바귀장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-weekend-4/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 간장물에 절인, 오래 두고 먹기 좋은 쌉싸름한 장아찌예요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesIxerisExpansion: Recipe[] = [
   {
     id: 'ixeris-weekend-5', month: 3, title: '씀바귀두부무침', subtitle: '담백하고 건강한 반찬',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-weekend-5/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀와 으깬 두부를 함께 무친, 담백하고 건강한 반찬이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-world-1', month: 3, title: '이탈리아식 씀바귀무침', subtitle: '올리브오일과 레몬의 상큼함',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 치커리류의 쓴맛 채소를 올리브오일과 레몬으로 심플하게 무쳐 먹는 것이 지중해식 전통이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-world-1/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 올리브오일과 레몬즙으로 심플하게 무친, 이탈리아식 상큼한 샐러드예요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-world-2', month: 3, title: '태국식 씀바귀 얌', subtitle: '새콤매콤한 태국식 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '태국', note: '얌은 태국의 대표 샐러드 스타일로, 라임즙과 피시소스, 고추로 새콤매콤하게 무치는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-world-2/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 라임즙과 피시소스로 무친, 새콤매콤한 태국식 얌 샐러드예요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-world-3', month: 3, title: '씀바귀 페스토 파스타', subtitle: '이탈리아식 쓴맛 페스토',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 루꼴라나 쓴맛 나는 잎채소로 페스토를 만드는 전통이 있어요. 씀바귀로 만들면 훨씬 개성 있는 쌉쌀한 페스토가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-world-3/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 갈아 만든 향긋한 페스토를 파스타에 버무린, 개성 있는 이탈리아식 요리예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-world-4', month: 3, title: '씀바귀 스무디', subtitle: '건강한 그린 스무디',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '미국', note: '미국에서는 케일이나 쓴맛 채소를 과일과 함께 갈아 마시는 그린 스무디가 건강식으로 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-world-4/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀와 사과를 함께 갈아 만든, 건강한 그린 스무디예요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-world-5', month: 3, title: '씀바귀 타뷸레', subtitle: '중동식 허브 곡물 샐러드 응용',
     category: '샐러드', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '레바논', note: '타뷸레는 레바논의 대표 허브 샐러드로, 파슬리가 주인공이에요. 씀바귀를 더하면 쌉쌀한 향이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-world-5/hero.webp',
     mainIngredient: '씀바귀',
     description: '불구르에 씀바귀와 파슬리를 듬뿍 넣은, 레바논식 허브 샐러드를 응용한 요리예요.',
     masterclass: {
@@ -457,7 +457,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-chef-1', month: 3, title: '씀바귀 비터스 팅크처', subtitle: '알코올 침출 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '작은 갈색 병에 완성된 비터스를 담아 라벨을 붙이고, 서빙할 때는 위스키나 소다수 몇 방울에 떨어뜨려 칵테일 잔에 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-chef-1/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 고도수 술에 침출시켜 만든, 칵테일 비터스(쓴맛 농축액)예요.',
     masterclass: {
@@ -487,7 +487,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-chef-2', month: 3, title: '씀바귀 리파사토', subtitle: '이탈리아식 쓴맛채소 볶음',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '따뜻한 접시에 씀바귀를 소복이 담고, 팬에 남은 마늘·안초비 오일을 스푼으로 끼얹은 뒤 페페론치노 조각을 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-chef-2/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 데친 뒤 마늘, 안초비, 페페론치노와 함께 볶아낸, 이탈리아 남부식 쓴맛채소 요리예요.',
     masterclass: {
@@ -517,7 +517,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-chef-3', month: 3, title: '씀바귀 클로로필 소스', subtitle: '모던 색소 추출 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '흰 접시에 클로로필 소스로 붓 자국을 남기듯 선을 그리고, 그 위에 생선이나 관자 요리를 올려 선명한 초록빛 대비를 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-chef-3/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀에서 순수한 초록 색소만 추출한, 선명하고 쌉쌀한 향의 모던 소스예요.',
     masterclass: {
@@ -548,7 +548,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-chef-4', month: 3, title: '씀바귀김치', subtitle: '한국 전통 발효 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '발효가 끝난 씀바귀김치를 먹기 좋게 썰어 그릇에 담고, 통깨를 살짝 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-chef-4/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 양념에 버무려 발효시킨, 쓴맛과 감칠맛이 함께 깊어지는 전통 발효 김치예요.',
     masterclass: {
@@ -579,7 +579,7 @@ export const recipesIxerisExpansion: Recipe[] = [
     id: 'ixeris-chef-5', month: 3, title: '씀바귀 아뮤즈부슈 샷', subtitle: '냉압착 웰컴드링크 기법',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 20, servings: 4,
     platingGuide: '작은 샷글라스에 씀바귀 주스를 담고, 가장자리에 꿀을 살짝 발라 장식한 뒤 코스 요리 시작 전 웰컴 드링크처럼 내놓습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/ixeris-chef-5/hero.webp',
     mainIngredient: '씀바귀',
     description: '씀바귀를 사과, 생강과 함께 차갑게 갈아낸, 코스요리 시작을 알리는 웰컴 샷이에요.',
     masterclass: {

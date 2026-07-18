@@ -14,7 +14,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-home-1', month: 1, title: '청어구이', subtitle: '기름지고 고소한 등푸른 생선구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-home-1/hero.webp',
     mainIngredient: '청어',
     description: '소금만 뿌려 노릇하게 구워내면, 청어 특유의 기름진 맛이 가장 살아나는 겨울 생선구이예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-home-2', month: 1, title: '청어조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-home-2/hero.webp',
     mainIngredient: '청어',
     description: '무를 깔고 청어를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-home-3', month: 1, title: '청어찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-home-3/hero.webp',
     mainIngredient: '청어',
     description: '청어를 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-home-4', month: 1, title: '청어튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-home-4/hero.webp',
     mainIngredient: '청어',
     description: '청어살을 바삭하게 튀긴, 겉은 바삭하고 속은 촉촉한 튀김이에요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-home-5', month: 1, title: '청어무침', subtitle: '새콤달콤한 겨울 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-home-5/hero.webp',
     mainIngredient: '청어',
     description: '청어를 채소와 함께 새콤달콤한 초고추장에 무친, 겨울 대표 별미예요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-weekend-1', month: 1, title: '과메기쌈', subtitle: '겨울철 별미 과메기 쌈',
     category: '전채', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-weekend-1/hero.webp',
     mainIngredient: '청어',
     description: '청어를 얼렸다 녹이기를 반복해 말린 과메기를 김에 싸 먹는, 경북 포항의 겨울 별미예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-weekend-2', month: 1, title: '청어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-weekend-2/hero.webp',
     mainIngredient: '청어',
     description: '청어와 채소를 넣고 얼큰하게 끓인, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-weekend-3', month: 1, title: '청어젓갈', subtitle: '짭짤하고 감칠맛 나는 밥도둑',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 5,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-weekend-3/hero.webp',
     mainIngredient: '청어',
     description: '청어를 소금에 절인, 짭짤하고 감칠맛 나는 겨울철 밥도둑 밑반찬이에요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-weekend-4', month: 1, title: '청어알구이', subtitle: '고소하고 짭짤한 별미',
     category: '구이', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-weekend-4/hero.webp',
     mainIngredient: '청어',
     description: '청어알을 노릇하게 구운, 고소하고 짭짤한 겨울철 별미예요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesHerringExpansion: Recipe[] = [
   {
     id: 'herring-weekend-5', month: 1, title: '청어덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-weekend-5/hero.webp',
     mainIngredient: '청어',
     description: '구운 청어를 밥 위에 올린, 고소하고 든든한 겨울철 한 그릇이에요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-world-1', month: 1, title: '니신노 시오야키', subtitle: '일본식 청어 소금구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '일본', note: '니신(にしん)은 일본어로 청어를 뜻해요. 일본 홋카이도 지방에서는 청어를 소금구이나 다시마말이로 즐기는 전통이 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-world-1/hero.webp',
     mainIngredient: '청어',
     description: '청어에 소금간만 해서 구운, 일본 홋카이도식 담백한 생선구이예요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-world-2', month: 1, title: '청어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-world-2/hero.webp',
     mainIngredient: '청어',
     description: '토마토와 화이트와인에 청어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-world-3', month: 1, title: '청어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-world-3/hero.webp',
     mainIngredient: '청어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 청어예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-world-4', month: 1, title: '청어 프리터', subtitle: '영국식 채소·생선 프리터',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '영국에서는 청어(허링)를 오트밀에 굴려 바삭하게 튀기는 것이 스코틀랜드의 전통 아침식사 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-world-4/hero.webp',
     mainIngredient: '청어',
     description: '청어살에 오트밀을 입혀 바삭하게 튀긴, 스코틀랜드 전통 아침식사 요리예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-world-5', month: 1, title: '청어 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-world-5/hero.webp',
     mainIngredient: '청어',
     description: '신선한 청어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-chef-1', month: 1, title: '홀란제 니우어', subtitle: '네덜란드식 생청어',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '청어를 꼬리를 잡고 세워 접시에 담고, 다진 양파와 피클을 옆에 곁들여 네덜란드 길거리 방식 그대로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-chef-1/hero.webp',
     mainIngredient: '청어',
     description: '살짝 절인 어린 청어를 다진 양파와 함께 통째로 즐기는, 네덜란드의 여름 전통 길거리 음식이에요.',
     masterclass: {
@@ -488,7 +488,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-chef-2', month: 1, title: '실 스웨디시 피클드 헤링', subtitle: '스웨덴식 겨자·딜 피클링',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '작은 유리그릇에 소스별로 나눠 담아 딜과 함께 장식하고, 크네케브뢰드(스웨덴 크래커)를 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-chef-2/hero.webp',
     mainIngredient: '청어',
     description: '청어를 소금에 절인 뒤 겨자, 딜, 식초 등 여러 소스에 나눠 재운, 스웨덴의 대표적인 명절 전채예요.',
     masterclass: {
@@ -519,7 +519,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-chef-3', month: 1, title: '청어 키퍼', subtitle: '스코틀랜드식 냉훈제',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '구운 키퍼를 접시에 통째로 담고, 삶은 달걀과 버터 한 조각을 곁들여 영국식 아침상을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-chef-3/hero.webp',
     mainIngredient: '청어',
     description: '청어를 등을 갈라 소금에 절인 뒤 차가운 연기로 훈제한, 영국의 대표적인 아침식사용 생선이에요.',
     masterclass: {
@@ -550,7 +550,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-chef-4', month: 1, title: '청어 롤몹스', subtitle: '독일식 청어말이 피클',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '롤몹스를 이쑤시개로 고정한 채 작은 접시에 나란히 담고, 절임 양파와 월계수잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-chef-4/hero.webp',
     mainIngredient: '청어',
     description: '청어 필렛으로 오이피클과 양파를 돌돌 말아 식초에 절인, 독일의 대표적인 청어 요리예요.',
     masterclass: {
@@ -581,7 +581,7 @@ export const recipesHerringExpansion: Recipe[] = [
     id: 'herring-chef-5', month: 1, title: '청어알 가즈노코', subtitle: '일본식 정월 청어알 절임',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 접시에 가즈노코를 가지런히 담고, 가쓰오부시를 살짝 뿌려 일본 정월 오세치요리 스타일로 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/herring-chef-5/hero.webp',
     mainIngredient: '청어',
     description: '청어알을 다시육수 절임물에 재운, 일본 정월 명절상에 오르는 귀한 전통 음식이에요.',
     masterclass: {

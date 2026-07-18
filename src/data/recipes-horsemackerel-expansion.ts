@@ -14,7 +14,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-home-1', month: 6, title: '전갱이소금구이', subtitle: '기름지고 고소한 초여름 등푸른 생선구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-home-1/hero.webp',
     mainIngredient: '전갱이',
     description: '소금만으로 간을 해 구워도 충분히 고소한, 전갱이 본연의 맛을 즐기는 초여름 생선구이예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-home-2', month: 6, title: '전갱이회', subtitle: '고소하고 쫄깃한 여름 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-home-2/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이는 지방이 올라 고소하고 쫄깃해서, 회로 즐기기 좋은 여름 대표 생선이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-home-3', month: 6, title: '전갱이튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-home-3/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 통째로 바삭하게 튀긴, 겉은 바삭하고 속은 촉촉한 튀김이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-home-4', month: 6, title: '전갱이조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-home-4/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-home-5', month: 6, title: '전갱이무침회', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-home-5/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이회를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-weekend-1', month: 6, title: '전갱이초밥', subtitle: '고소한 초여름 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-weekend-1/hero.webp',
     mainIngredient: '전갱이',
     description: '얇게 썬 전갱이를 초밥용 밥 위에 올린, 고소한 초여름 대표 초밥이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-weekend-2', month: 6, title: '전갱이매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-weekend-2/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이와 채소를 넣고 얼큰하게 끓인, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-weekend-3', month: 6, title: '전갱이간장조림', subtitle: '일본식 니츠케 응용',
     category: '조림', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-weekend-3/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 간장과 미림에 은근히 조린, 담백하고 깊은 맛의 조림이에요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-weekend-4', month: 6, title: '전갱이완자탕', subtitle: '탱글하고 고소한 별미탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-weekend-4/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이살을 다져 만든 완자를 넣어 끓인, 탱글하고 고소한 별미탕이에요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
   {
     id: 'horsemackerel-weekend-5', month: 6, title: '전갱이덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-weekend-5/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이회와 채소를 밥 위에 올려 간장소스로 비벼 먹는, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-world-1', month: 6, title: '전갱이 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-world-1/hero.webp',
     mainIngredient: '전갱이',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 전갱이예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-world-2', month: 6, title: '전갱이 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-world-2/hero.webp',
     mainIngredient: '전갱이',
     description: '신선한 전갱이를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-world-3', month: 6, title: '전갱이 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-world-3/hero.webp',
     mainIngredient: '전갱이',
     description: '토마토와 화이트와인에 전갱이를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -398,7 +398,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-world-4', month: 6, title: '그리스식 전갱이구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-world-4/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-world-5', month: 6, title: '전갱이 피시앤칩스', subtitle: '영국의 대표 국민 음식',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '영국', note: '피시앤칩스는 영국의 대표적인 국민 음식으로, 흰살생선을 맥주 반죽에 튀겨 두꺼운 감자튀김과 함께 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-world-5/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 맥주 반죽에 바삭하게 튀겨 두꺼운 감자튀김과 함께 내는, 영국식 대중 음식이에요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-chef-1', month: 6, title: '아지타타키', subtitle: '일본식 다짐회',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '얼음을 깐 접시에 다진 전갱이를 소복이 담고, 그 위에 실파와 생강, 깨를 뿌린 뒤 참기름을 살짝 둘러 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-chef-1/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 뼈째 칼로 두드려 다진 뒤 파, 생강, 미소를 섞은, 일본 어촌의 전통적인 다짐회예요.',
     masterclass: {
@@ -490,7 +490,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-chef-2', month: 6, title: '전갱이 오시즈시', subtitle: '일본식 눌러만든 초밥',
     category: '밥', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '틀에서 뺀 오시즈시를 가지런히 잘라 접시에 나란히 배치하고, 위에 얇게 썬 생강초절임을 하나씩 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-chef-2/hero.webp',
     mainIngredient: '전갱이',
     description: '식초에 절인 전갱이를 초밥용 밥과 함께 나무틀에 넣어 눌러 만든, 오사카의 전통 초밥 기법이에요.',
     masterclass: {
@@ -521,7 +521,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-chef-3', month: 6, title: '전갱이 난반즈케', subtitle: '일본-포르투갈 퓨전 튀김절임',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '차갑게 식힌 난반즈케를 채소와 함께 넓은 접시에 담고 국물을 자작하게 부은 뒤 실고추를 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-chef-3/hero.webp',
     mainIngredient: '전갱이',
     description: '튀긴 전갱이를 채소와 함께 새콤달콤한 식초절임물에 재운, 16세기 포르투갈 상인의 영향을 받은 일본 요리예요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-chef-4', month: 6, title: '전갱이 사오르', subtitle: '베네치아식 새콤달콤 양파절임',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '차갑게 식힌 사오르를 넓은 접시에 양파와 함께 담고, 잣과 건포도를 흩뿌려 베네치아식 색감을 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-chef-4/hero.webp',
     mainIngredient: '전갱이',
     description: '튀긴 전갱이를 새콤달콤한 양파, 잣, 건포도와 함께 재운, 베네치아의 대표적인 전통 전채예요.',
     masterclass: {
@@ -583,7 +583,7 @@ export const recipesHorseMackerelExpansion: Recipe[] = [
     id: 'horsemackerel-chef-5', month: 6, title: '팍시우 나 이스다', subtitle: '필리핀식 식초브레이즈',
     category: '메인요리', difficulty: '쉬움', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '뚝배기나 냄비째 상에 올려 국물이 자작한 상태 그대로 내고, 채소를 곁들여 필리핀 가정식의 소박한 정취를 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/horsemackerel-chef-5/hero.webp',
     mainIngredient: '전갱이',
     description: '전갱이를 식초와 생강에 직접 브레이징한, 튀기지 않고 만드는 필리핀의 대표적인 생선 요리예요.',
     masterclass: {

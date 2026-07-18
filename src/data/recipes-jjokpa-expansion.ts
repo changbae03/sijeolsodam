@@ -12,7 +12,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-home-2', month: 2, title: '쪽파무침', subtitle: '알싸하고 향긋한 기본 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-home-2/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파를 간장 양념에 무친, 향긋하고 알싸한 기본 반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-home-3', month: 2, title: '쪽파김치', subtitle: '알싸한 향이 살아있는 봄철 김치',
     category: '김치', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1583224944844-5b268c057b72?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-home-3/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파를 멸치액젓 양념에 절여 만든, 알싸한 향이 매력적인 봄철 별미 김치예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-home-4', month: 2, title: '쪽파달걀말이', subtitle: '향긋한 파향이 밴 기본 달걀말이',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-home-4/hero.webp',
     mainIngredient: '쪽파',
     description: '잘게 썬 쪽파를 넣어 부친, 색과 향이 살아있는 달걀말이예요.',
     masterclass: {
@@ -106,7 +106,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-home-5', month: 2, title: '쪽파간장', subtitle: '만능 양념장으로 활용하는 기본',
     category: '양념', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-home-5/hero.webp',
     mainIngredient: '쪽파',
     description: '잘게 썬 쪽파와 간장, 참기름을 섞은, 어디에나 곁들이기 좋은 만능 양념장이에요.',
     masterclass: {
@@ -137,7 +137,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-weekend-1', month: 2, title: '쪽파 굴국밥', subtitle: '향긋함이 더해진 겨울 별미',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-weekend-1/hero.webp',
     mainIngredient: '쪽파',
     description: '굴과 쪽파를 듬뿍 넣어 끓인, 시원하고 향긋한 국밥이에요.',
     masterclass: {
@@ -169,7 +169,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-weekend-2', month: 2, title: '쪽파산적', subtitle: '명절상에 어울리는 정갈한 요리',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-weekend-2/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파와 소고기, 맛살을 꼬치에 꿰어 부친, 정갈한 명절 산적이에요.',
     masterclass: {
@@ -200,7 +200,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-weekend-3', month: 2, title: '쪽파해물전', subtitle: '푸짐한 해물이 들어간 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-weekend-3/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파와 오징어, 새우를 듬뿍 넣어 부친, 든든하고 향긋한 해물파전이에요.',
     masterclass: {
@@ -232,7 +232,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-weekend-4', month: 2, title: '쪽파닭볶음', subtitle: '향긋한 파향이 감도는 매콤한 닭요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-weekend-4/hero.webp',
     mainIngredient: '쪽파',
     description: '매콤하게 볶은 닭고기에 쪽파를 듬뿍 넣어 마무리한, 향긋함이 더해진 닭볶음이에요.',
     masterclass: {
@@ -264,7 +264,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
   {
     id: 'jjokpa-weekend-5', month: 2, title: '쪽파장아찌', subtitle: '두고두고 꺼내 먹는 알싸한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-weekend-5/hero.webp',
     mainIngredient: '쪽파',
     description: '간장물에 절인 쪽파를 새콤짭짤하게 즐기는, 오래 두고 먹는 밑반찬이에요.',
     masterclass: {
@@ -298,7 +298,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-world-1', month: 2, title: '충위빙', subtitle: '중국식 파기름 팬케이크',
     category: '전요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '중국', note: '충위빙(葱油饼)은 중국을 대표하는 파전병이에요. 반죽 사이사이에 파기름을 발라 겹겹이 접어 굽는 방식으로, 겹마다 파향이 스며들면서 바삭한 층을 만드는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622480916113-9000ac49b79d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-world-1/hero.webp',
     mainIngredient: '쪽파',
     description: '반죽을 겹겹이 접어 쪽파와 기름으로 향을 낸, 바삭한 층이 매력적인 중국식 파전병이에요.',
     masterclass: {
@@ -330,7 +330,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-world-2', month: 2, title: '쪽파 허브 프렌치오믈렛', subtitle: '프랑스식 부드러운 오믈렛',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '프랑스', note: '프렌치 오믈렛은 겉면에 색이 거의 나지 않고 속이 촉촉한 크리미한 질감이 특징이에요. 허브를 다져 넣는 것이 정통 방식인데, 쪽파를 쓰면 은은한 향이 더해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-world-2/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파를 넣어 부드럽게 만든, 겉은 매끈하고 속은 촉촉한 프랑스식 오믈렛이에요.',
     masterclass: {
@@ -362,7 +362,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-world-3', month: 2, title: '짜조 느억맘 쪽파오일', subtitle: '베트남식 튀김에 쪽파오일을 더하다',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 50, servings: 3,
     cuisineContext: { country: '베트남', note: '짜조(chả giò)는 베트남식 튀김만두예요. 베트남에서는 쪽파나 대파로 만든 향유(모 하잉)를 여러 요리에 곁들이는데, 짜조에 뿌리면 바삭함과 향긋함이 함께 살아나요.' },
-    heroImage: 'https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-world-3/hero.webp',
     mainIngredient: '쪽파',
     description: '바삭하게 튀긴 베트남식 만두에 쪽파오일과 느억맘소스를 곁들인, 향과 바삭함이 겹겹이 쌓인 요리예요.',
     masterclass: {
@@ -394,7 +394,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-world-4', month: 2, title: '쪽파 살사베르데 타코', subtitle: '멕시코식 그린살사를 곁들인 타코',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '멕시코', note: '살사베르데(salsa verde)는 멕시코의 초록빛 매운 소스예요. 원래는 토마티요와 고추로 만들지만, 쪽파를 더하면 알싸한 향이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-world-4/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파와 고수, 고추를 갈아 만든 살사베르데를 곁들인, 상큼하고 매콤한 멕시코식 타코예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-world-5', month: 2, title: '네기토로동', subtitle: '일본식 쪽파 참치덮밥',
     category: '밥', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '일본', note: '네기토로(ねぎとろ)는 잘게 다진 참치와 파(네기)를 함께 낸 일본 초밥집의 인기 메뉴예요. 참치의 기름진 맛과 파의 알싸함이 만나 균형 잡힌 맛을 내요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580301762395-83c8a4bc4bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-world-5/hero.webp',
     mainIngredient: '쪽파',
     description: '잘게 다진 참치와 쪽파를 밥 위에 올린, 일본 초밥집 스타일의 간편한 덮밥이에요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-chef-1', month: 2, title: '가리비 쪽파 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 가리비',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 가리비를 부채꼴로 배치하고, 쪽파를 넣은 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 쪽파 잎을 가늘게 채 썰어 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-chef-1/hero.webp',
     mainIngredient: '쪽파',
     description: '바삭하게 시어링한 가리비에 쪽파를 더한 프랑스식 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-chef-2', month: 2, title: '쪽파 벨루테 수프', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 쪽파오일을 몇 방울 떨어뜨려 자연스러운 무늬를 만든 뒤 쪽파 잎을 가늘게 채 썰어 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-chef-2/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파를 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 초록빛의 프랑스식 수프예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-chef-3', month: 2, title: '쪽파 오일 콩피 흰살생선', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 쪽파오일을 끼얹은 뒤 구운 쪽파 조각과 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-chef-3/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 향긋한 요리예요.',
     masterclass: {
@@ -557,7 +557,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-chef-4', month: 2, title: '쪽파 타르트타탕', subtitle: '거꾸로 굽는 프랑스식 짭짤한 타르트',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '타르트를 뒤집어 담을 때 접시를 팬 위에 덮고 재빨리 뒤집어, 캐러멜라이즈된 쪽파가 윗면에 오도록 연출한 뒤 치즈가루를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-chef-4/hero.webp',
     mainIngredient: '쪽파',
     description: '캐러멜라이즈된 쪽파를 바닥에 깔고 페이스트리를 덮어 구운 뒤 뒤집어내는, 짭짤한 프랑스식 타르트타탕이에요.',
     masterclass: {
@@ -590,7 +590,7 @@ export const recipesJjokpaExpansion: Recipe[] = [
     id: 'jjokpa-chef-5', month: 2, title: '쪽파 판나코타', subtitle: '짭짤한 이탈리아식 크림 디저트',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 쪽파오일을 몇 방울 떨어뜨린 뒤 쪽파 잎을 가늘게 채 썰어 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/jjokpa-chef-5/hero.webp',
     mainIngredient: '쪽파',
     description: '쪽파로 향을 낸 짭짤한 크림을 부드럽게 굳힌, 전채로 즐기는 이탈리아식 판나코타예요.',
     masterclass: {

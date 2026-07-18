@@ -15,7 +15,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-home-1', month: 4, title: '황금향샐러드', subtitle: '향긋하고 달콤한 봄 만감류 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-home-1/hero.webp',
     mainIngredient: '황금향',
     description: '황금향의 달콤한 과즙과 채소를 곁들여, 산뜻하게 즐기는 봄철 샐러드예요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-home-2', month: 4, title: '황금향에이드', subtitle: '상큼하고 시원한 봄 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-home-2/hero.webp',
     mainIngredient: '황금향',
     description: '황금향청을 탄산수에 타 만든, 상큼하고 시원한 봄철 음료예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-home-3', month: 4, title: '황금향청', subtitle: '향이 진한 만감류로 만드는 홈메이드 과일청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-home-3/hero.webp',
     mainIngredient: '황금향',
     description: '황금향을 설탕에 재워 만든 과일청으로, 차로 마시거나 탄산수에 타 마시기 좋아요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-home-4', month: 4, title: '황금향요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-home-4/hero.webp',
     mainIngredient: '황금향',
     description: '황금향과 그릭요거트를 섞은, 상큼하고 건강한 간식이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-home-5', month: 4, title: '황금향주스', subtitle: '향긋하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-home-5/hero.webp',
     mainIngredient: '황금향',
     description: '황금향을 직접 갈아 만든, 향긋하고 건강한 생과일주스예요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-weekend-1', month: 4, title: '황금향타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-weekend-1/hero.webp',
     mainIngredient: '황금향',
     description: '커스터드크림 위에 황금향을 올려 만든, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-weekend-2', month: 4, title: '황금향젤리', subtitle: '상큼하고 탱글한 봄 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-weekend-2/hero.webp',
     mainIngredient: '황금향',
     description: '황금향즙을 곱게 갈아 굳힌, 상큼하고 탱글한 봄철 디저트예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-weekend-3', month: 4, title: '황금향글레이즈 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-weekend-3/hero.webp',
     mainIngredient: '황금향',
     description: '구운 돼지고기 폭찹에 황금향글레이즈를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-weekend-4', month: 4, title: '황금향스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-weekend-4/hero.webp',
     mainIngredient: '황금향',
     description: '황금향과 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
   {
     id: 'hwanggeumhyang-weekend-5', month: 4, title: '황금향빙수', subtitle: '향긋하고 시원한 봄 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-weekend-5/hero.webp',
     mainIngredient: '황금향',
     description: '얼음 위에 황금향과 연유를 듬뿍 올린, 향긋하고 시원한 봄철 디저트예요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-world-1', month: 4, title: '황금향 상그리아', subtitle: '스페인식 봄 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 봄에는 감귤류를 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-world-1/hero.webp',
     mainIngredient: '황금향',
     description: '화이트와인에 황금향과 봄 과일을 넣어 만든, 스페인식 상그리아예요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-world-2', month: 4, title: '황금향 판나코타', subtitle: '이탈리아 크림 디저트에 시트러스향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 시트러스향을 더하는 것도 클래식한 변형이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-world-2/hero.webp',
     mainIngredient: '황금향',
     description: '부드러운 이탈리아식 크림 디저트에 황금향 소스를 곁들인, 향긋한 봄 디저트예요.',
     masterclass: {
@@ -369,7 +369,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-world-3', month: 4, title: '황금향 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 시트러스향 트러플은 클래식한 조합으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-world-3/hero.webp',
     mainIngredient: '황금향',
     description: '황금향 제스트를 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -400,7 +400,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-world-4', month: 4, title: '황금향 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-world-4/hero.webp',
     mainIngredient: '황금향',
     description: '황금향을 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -431,7 +431,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-world-5', month: 4, title: '황금향 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-world-5/hero.webp',
     mainIngredient: '황금향',
     description: '황금향과 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -462,7 +462,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-chef-1', month: 4, title: '황금향 캔디드필', subtitle: '프랑스식 설탕결정화 저장',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 8,
     platingGuide: '설탕에 굴려 반짝이는 캔디드필을 유리병에 담아 상에 올리거나, 다크초콜릿에 절반 담가 굳혀 디저트 접시에 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-chef-1/hero.webp',
     mainIngredient: '황금향',
     description: '황금향 껍질을 시럽에 여러 번 데쳐 설탕으로 결정화시킨, 프랑스 파티세리의 정교한 저장 기법이에요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-chef-2', month: 4, title: '황금향 진피', subtitle: '중국식 장기건조 숙성 귤껍질',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 10,
     platingGuide: '완성된 진피를 밀폐용기에 담아 상에 올리고, 사용할 때는 몇 조각 부숴 국물요리나 차에 넣어 향을 더합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-chef-2/hero.webp',
     mainIngredient: '황금향',
     description: '황금향 껍질을 통째로 말려 몇 개월에서 몇 년간 숙성시킨, 중국의 전통 약선 재료예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-chef-3', month: 4, title: '황금향 세미프레도', subtitle: '이탈리아식 휘핑동결 무스',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '틀에서 꺼낸 세미프레도를 도톰하게 슬라이스해 접시에 담고, 황금향 제스트와 민트잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-chef-3/hero.webp',
     mainIngredient: '황금향',
     description: '휘핑한 크림과 머랭에 황금향을 섞어 얼린, 아이스크림 기계 없이 만드는 이탈리아식 반동결 디저트예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-chef-4', month: 4, title: '황금향 느억짬', subtitle: '베트남식 새콤짭짤 디핑소스',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 20, servings: 4,
     platingGuide: '작은 종지에 소스를 담아 튀김이나 스프링롤 옆에 곁들이고, 다진 고추와 마늘을 위에 살짝 올려 색감을 더합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-chef-4/hero.webp',
     mainIngredient: '황금향',
     description: '황금향즙을 피시소스, 설탕, 고추와 균형 있게 섞은, 베트남 요리의 필수 디핑소스를 응용한 요리예요.',
     masterclass: {
@@ -582,7 +582,7 @@ export const recipesHwanggeumhyangExpansion: Recipe[] = [
     id: 'hwanggeumhyang-chef-5', month: 4, title: '황금향소금', subtitle: '탈수 보존 기법',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 10,
     platingGuide: '작은 병에 담아 상에 올리고, 사용할 때는 생선구이나 스테이크 위에 마지막에 뿌려 향을 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/hwanggeumhyang-chef-5/hero.webp',
     mainIngredient: '황금향',
     description: '황금향 제스트를 소금과 함께 건조시켜 만든, 향이 응축된 모던 조미료예요.',
     masterclass: {

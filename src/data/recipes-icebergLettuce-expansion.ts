@@ -14,7 +14,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-home-1', month: 4, title: '양상추샐러드', subtitle: '담백하고 상큼한 봄철 기본 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-home-1/hero.webp',
     mainIngredient: '양상추',
     description: '아삭한 양상추에 다양한 채소를 더해 만든, 가볍고 담백한 기본 샐러드예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-home-2', month: 4, title: '양상추쌈밥', subtitle: '쌈채소에 양념밥을 올려 싸먹는 봄철 별미',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-home-2/hero.webp',
     mainIngredient: '양상추',
     description: '아삭한 양상추에 양념한 밥과 갖은 재료를 올려 쌈으로 싸먹는, 든든한 한 끼예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-home-3', month: 4, title: '양상추겉절이', subtitle: '아삭하고 매콤한 봄철 별미',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-home-3/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 매콤달콤한 양념에 무친, 아삭하고 향긋한 봄철 별미예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-home-4', month: 4, title: '양상추볶음', subtitle: '아삭하고 담백한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-home-4/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 굴소스에 볶은, 아삭하고 담백한 기본 반찬이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-home-5', month: 4, title: '양상추물쌈', subtitle: '시원하고 개운한 여름 쌈',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-home-5/hero.webp',
     mainIngredient: '양상추',
     description: '얼음물에 담가 아삭함을 살린 양상추를 쌈장에 곁들인, 시원하고 개운한 반찬이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-weekend-1', month: 4, title: '양상추불고기쌈', subtitle: '든든하고 아삭한 쌈요리',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-weekend-1/hero.webp',
     mainIngredient: '양상추',
     description: '구운 불고기에 양상추를 곁들여 싸 먹는, 든든하고 아삭한 쌈요리예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-weekend-2', month: 4, title: '양상추새우볶음', subtitle: '탱글하고 아삭한 조합',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-weekend-2/hero.webp',
     mainIngredient: '양상추',
     description: '양상추와 새우를 함께 볶은, 탱글하고 아삭한 조합이 매력적인 메인요리예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-weekend-3', month: 4, title: '양상추스테이크쌈', subtitle: '고급스러운 스테이크 쌈요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-weekend-3/hero.webp',
     mainIngredient: '양상추',
     description: '구운 스테이크를 양상추에 싸 먹는, 고급스럽고 산뜻한 쌈요리예요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-weekend-4', month: 4, title: '양상추굴소스볶음면', subtitle: '아삭하고 든든한 볶음면',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-weekend-4/hero.webp',
     mainIngredient: '양상추',
     description: '양상추와 면을 굴소스에 볶은, 아삭하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
   {
     id: 'icebergLettuce-weekend-5', month: 4, title: '양상추만두피쌈', subtitle: '재미있는 손님상 요리',
     category: '전채', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-weekend-5/hero.webp',
     mainIngredient: '양상추',
     description: '볶은 고기와 양상추를 만두피에 싸 먹는, 재미있고 든든한 손님상 요리예요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-world-1', month: 4, title: '양상추 시저샐러드', subtitle: '미국식 클래식 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '시저샐러드는 로메인 상추가 정통이지만, 양상추로 만들면 훨씬 아삭한 식감의 대중적인 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-world-1/hero.webp',
     mainIngredient: '양상추',
     description: '양상추에 시저드레싱과 크루통, 파마산치즈를 곁들인, 미국식 클래식 샐러드예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-world-2', month: 4, title: '레터스랩', subtitle: '중국식 다진고기 상추쌈',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '중국', note: '레터스랩(생차이바오)은 중국 광둥 요리에서 다진 고기볶음을 양상추에 싸 먹는 대표적인 딤섬 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-world-2/hero.webp',
     mainIngredient: '양상추',
     description: '다진 닭고기와 채소를 볶아 양상추에 싸 먹는, 중국 광둥식 대표 요리예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-world-3', month: 4, title: '양상추 타코', subtitle: '멕시코식 저탄수 응용 타코',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '멕시코', note: '멕시코 요리에서는 토르티야 대신 양상추를 껍질로 쓰는 저탄수화물 버전의 타코가 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-world-3/hero.webp',
     mainIngredient: '양상추',
     description: '토르티야 대신 양상추에 타코 속재료를 담은, 가볍고 아삭한 저탄수 타코예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-world-4', month: 4, title: '오코노미야키', subtitle: '일본식 채소 부침개',
     category: '전요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '오코노미야키는 일본 오사카의 대표 부침개로, 양배추가 정통이지만 양상추로도 아삭하게 응용할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-world-4/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 듬뿍 넣어 부친, 일본식 채소 부침개예요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-world-5', month: 4, title: '팟타이 상추말이', subtitle: '태국식 저탄수 응용',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '태국', note: '태국 요리에서는 밥 대신 양상추에 볶음 요리를 싸 먹는 것이 가벼운 한 끼로 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-world-5/hero.webp',
     mainIngredient: '양상추',
     description: '팟타이 재료를 양상추에 싸 먹는, 태국식 저탄수 응용 요리예요.',
     masterclass: {
@@ -456,7 +456,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-chef-1', month: 4, title: '웨지샐러드', subtitle: '미국 스테이크하우스 클래식',
     category: '샐러드', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '수직으로 세운 웨지 위에 블루치즈드레싱을 두껍게 끼얹고, 베이컨비트와 방울토마토를 흩뿌려 스테이크하우스 스타일로 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-chef-1/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 통째로 웨지 모양으로 잘라 블루치즈드레싱을 끼얹은, 미국 스테이크하우스의 상징적인 전채예요.',
     masterclass: {
@@ -486,7 +486,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-chef-2', month: 4, title: '그릴드양상추', subtitle: '모던 직화 그릴 기법',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 20, servings: 3,
     platingGuide: '그을린 웨지를 접시에 눕혀 담고, 발사믹글레이즈를 지그재그로 뿌린 뒤 파마산치즈를 갈아 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-chef-2/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 웨지로 잘라 강한 불에 그을린, 모던 파인다이닝에서 유행하는 의외의 조리법이에요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-chef-3', month: 4, title: '양상추 사천식 화끈볶음', subtitle: '중국 사천식 웍헤이 급속볶음',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 20, servings: 3,
     platingGuide: '뜨거운 웍에서 바로 접시에 옮겨 담아 아직 지글거리는 상태로 상에 올리고, 마른 고추를 몇 개 장식으로 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-chef-3/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 극도로 뜨거운 웍에서 순식간에 볶아, 불맛(웍헤이)을 입힌 중국 사천식 볶음이에요.',
     masterclass: {
@@ -546,7 +546,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-chef-4', month: 4, title: '양상추 블루테', subtitle: '프랑스식 채소 크림수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '얕은 수프접시에 담아 가운데 크림을 한 스푼 떨어뜨리고 나뭇잎 무늬로 살짝 끌어 장식한 뒤, 바게트 크루통을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-chef-4/hero.webp',
     mainIngredient: '양상추',
     description: '평소 날것으로만 먹는 양상추를 완전히 익혀 곱게 간, 프랑스식 채소 크림수프예요.',
     masterclass: {
@@ -576,7 +576,7 @@ export const recipesIcebergLettuceExpansion: Recipe[] = [
     id: 'icebergLettuce-chef-5', month: 4, title: '양상추김치', subtitle: '발효 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '숙성된 양상추김치를 먹기 좋게 썰어 접시에 담고, 통깨를 뿌려 발효된 잎맥의 반투명한 질감이 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/icebergLettuce-chef-5/hero.webp',
     mainIngredient: '양상추',
     description: '양상추를 김치 양념에 버무려 짧게 발효시킨, 아삭함과 발효의 감칠맛을 동시에 노린 실험적인 김치예요.',
     masterclass: {
