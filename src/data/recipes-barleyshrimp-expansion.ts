@@ -99,7 +99,7 @@ export const recipesBarleyShrimpExpansion: Recipe[] = [
   {
     id: 'barleyshrimp-home-4', month: 7, title: '보리새우튀김', subtitle: '겉바속촉 기본 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barleyshrimp-home-4/hero.webp',
+    heroImage: '/images/recipes/barleyshrimp-home-4/hero.webp',
     mainIngredient: '보리새우',
     description: '보리새우를 바삭하게 튀긴, 겉은 바삭하고 속은 탱글한 기본 튀김이에요.',
     masterclass: {

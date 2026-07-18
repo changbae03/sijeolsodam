@@ -253,7 +253,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-weekend-4', month: 4, title: '머위 순두부찌개', subtitle: '쌉싸름함이 도는 얼큰한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-weekend-4/hero.webp',
+    heroImage: '/images/recipes/butterbur-weekend-4/hero.webp',
     mainIngredient: '머위',
     description: '순두부찌개에 머위를 더해 쌉싸름한 향을 살린, 봄철 얼큰한 찌개예요.',
     masterclass: {
@@ -284,7 +284,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-weekend-5', month: 4, title: '머위 전', subtitle: '쌉싸름하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-weekend-5/hero.webp',
+    heroImage: '/images/recipes/butterbur-weekend-5/hero.webp',
     mainIngredient: '머위',
     description: '머위를 반죽에 섞어 부친, 쌉싸름한 향이 고소하게 살아있는 전이에요.',
     masterclass: {
@@ -317,7 +317,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-world-1', month: 4, title: '치메 디 라파 스타일 머위', subtitle: '이탈리아식 쌉싸름한 볶음채소',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '이탈리아', note: '치메 디 라파(cime di rapa)는 이탈리아 풀리아 지방의 대표 채소로, 쓴맛이 강한 십자화과 채소예요. 마늘과 올리브오일에 볶는 조리법이 머위처럼 쌉싸름한 나물에도 잘 맞아요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-world-1/hero.webp',
+    heroImage: '/images/recipes/butterbur-world-1/hero.webp',
     mainIngredient: '머위',
     description: '마늘과 올리브오일, 페페론치노로 볶아낸, 이탈리아 남부식 쌉싸름한 채소 반찬이에요.',
     masterclass: {
@@ -441,7 +441,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-world-5', month: 4, title: '머위 뵈르누아제트', subtitle: '프랑스식 브라운버터구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '프랑스', note: '프랑스 요리에서는 쌉싸름한 채소를 브라운버터(뵈르누아제트)로 마무리하는 것이 클래식한 기법이에요. 견과류향 나는 버터가 머위의 쓴맛과 잘 어우러져요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-world-5/hero.webp',
+    heroImage: '/images/recipes/butterbur-world-5/hero.webp',
     mainIngredient: '머위',
     description: '머위를 버터에 구워 갈색버터소스로 마무리한, 프랑스식 우아한 채소요리예요.',
     masterclass: {
@@ -475,7 +475,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-chef-1', month: 4, title: '머위 페스토 크루도', subtitle: '이탈리아식 신선한 페스토',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '넓은 접시에 차가운 파스타를 둥지 모양으로 담고, 그 위에 머위 페스토를 스푼으로 얹은 뒤 견과류를 흩뿌려 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-chef-1/hero.webp',
+    heroImage: '/images/recipes/butterbur-chef-1/hero.webp',
     mainIngredient: '머위',
     description: '머위를 갈아 만든 신선한 페스토를 차가운 파스타에 얹은, 산뜻한 봄철 전채예요.',
     masterclass: {
@@ -506,7 +506,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-chef-2', month: 4, title: '머위 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크렘프레슈를 한 스푼 올린 뒤 머위 잎 하나로 장식합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-chef-2/hero.webp',
+    heroImage: '/images/recipes/butterbur-chef-2/hero.webp',
     mainIngredient: '머위',
     description: '머위를 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 초록빛의 프랑스식 수프예요.',
     masterclass: {
@@ -539,7 +539,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-chef-3', month: 4, title: '머위 템퓨라 안초비버터', subtitle: '일본식 튀김과 서양식 소스의 만남',
     category: '튀김', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '대나무 채반에 템퓨라를 비스듬히 겹쳐 담고, 안초비버터소스를 작은 종지에 따로 곁들여 찍어 먹도록 연출합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-chef-3/hero.webp',
+    heroImage: '/images/recipes/butterbur-chef-3/hero.webp',
     mainIngredient: '머위',
     description: '가볍게 튀긴 머위 템퓨라에 짭짤한 안초비버터소스를 곁들인, 동서양이 만난 전채예요.',
     masterclass: {
@@ -570,7 +570,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-chef-4', month: 4, title: '머위 리조또 베르데', subtitle: '초록빛이 감도는 이탈리아식 리조또',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 머위오일을 몇 방울 떨어뜨려 자연스러운 무늬를 만든 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-chef-4/hero.webp',
+    heroImage: '/images/recipes/butterbur-chef-4/hero.webp',
     mainIngredient: '머위',
     description: '머위를 갈아 넣어 은은한 초록빛을 낸, 봄향이 가득한 이탈리아식 리조또예요.',
     masterclass: {
@@ -602,7 +602,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-chef-5', month: 4, title: '머위 오일 콩피 흰살생선', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 머위오일을 끼얹은 뒤 구운 머위 조각과 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-chef-5/hero.webp',
+    heroImage: '/images/recipes/butterbur-chef-5/hero.webp',
     mainIngredient: '머위',
     description: '머위로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 향긋한 요리예요.',
     masterclass: {

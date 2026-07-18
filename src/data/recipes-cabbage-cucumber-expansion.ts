@@ -10,7 +10,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
   {
     id: 'cabbage-home-3', month: 11, title: '배추 겉절이', subtitle: '바로 무쳐 먹는 즉석 김치',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-home-3/hero.webp',
+    heroImage: '/images/recipes/cabbage-home-3/hero.webp',
     mainIngredient: '알배추', description: '숙성 없이 바로 무쳐 먹는, 아삭한 식감이 살아있는 즉석 배추 김치예요.',
     masterclass: {
       chefIntro: '발효 없이 바로 먹을 수 있어 가장 빠른 김치예요. 알배추는 속이 연해서 겉절이로 만들면 양념이 빨리 배어들어요.',
@@ -44,7 +44,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
   {
     id: 'cabbage-weekend-2', month: 11, title: '배추 동그랑땡', subtitle: '배추를 듬뿍 넣어 빚은 전',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-weekend-2/hero.webp',
+    heroImage: '/images/recipes/cabbage-weekend-2/hero.webp',
     mainIngredient: '알배추', description: '다진 배추와 고기를 섞어 동글동글하게 빚어 부친, 명절에도 자주 만나는 전이에요.',
     masterclass: {
       chefIntro: '명절 음식으로도 익숙하지만 주말에 시간 들여 만들면 더 풍성해요. 알배추는 다지면 수분이 적당해 반죽이 잘 뭉쳐요.',
@@ -78,7 +78,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
   {
     id: 'cabbage-weekend-3', month: 11, title: '배추 찜 쌈', subtitle: '부드럽게 쪄낸 배추로 고기를 싸 먹는 요리',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-weekend-3/hero.webp',
+    heroImage: '/images/recipes/cabbage-weekend-3/hero.webp',
     mainIngredient: '알배추', description: '부드럽게 쪄낸 배추잎으로 수육이나 보쌈김치를 싸 먹는, 손이 가지만 만족스러운 메뉴예요.',
     masterclass: {
       chefIntro: '보쌈집에서 먹던 그 느낌을 집에서 재현할 수 있어요. 알배추를 살짝 찌면 단맛이 더 또렷해져요.',
@@ -117,7 +117,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       country: '아일랜드',
       note: '콜캐넌은 아일랜드의 대표 가정식으로, 으깬 감자에 양배추나 케일을 섞어 만들어요. 핼러윈 전통 음식으로도 알려져 있고, 버터를 듬뿍 넣어 먹는 것이 특징이에요.',
     },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-world-2/hero.webp',
+    heroImage: '/images/recipes/cabbage-world-2/hero.webp',
     mainIngredient: '알배추', description: '으깬 감자에 배추를 볶아 섞은, 아일랜드의 따뜻하고 든든한 가정식이에요.',
     masterclass: {
       chefIntro: '아일랜드 가정에서 흔히 만들어 먹는 든든한 음식이에요. 배추를 버터에 볶으면 알배추 특유의 단맛이 더 살아나요.',
@@ -148,7 +148,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       country: '중국',
       note: '사천식 볶음배추(干煸白菜)는 중국 쓰촨 지역의 매콤한 조리법을 적용한 배추 요리예요. 고추기름과 마늘로 빠르게 볶아내 매콤하면서도 배추 본연의 단맛이 살아있어요.',
     },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-world-3/hero.webp',
+    heroImage: '/images/recipes/cabbage-world-3/hero.webp',
     mainIngredient: '알배추', description: '고추기름과 마늘로 빠르게 볶아낸, 매콤하면서도 배추의 단맛이 살아있는 중국식 볶음이에요.',
     masterclass: {
       chefIntro: '중국 가정에서 빠르게 만들어 먹는 매콤한 반찬이에요. 센불에서 짧게 볶아야 배추의 아삭함이 살아요.',
@@ -184,7 +184,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
     id: 'cabbage-chef-2', month: 11, title: '배추 카르파치오', subtitle: '얇게 저민 배추로 완성하는 의외의 신선함',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 20, servings: 2,
     platingGuide: '접시에 배추를 겹쳐 원형으로 펼쳐 담고 올리브오일, 레몬즙을 뿌려보세요. 파마산 치즈를 얇게 셰이빙해 올리면 풍미가 더해져요.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-chef-2/hero.webp',
+    heroImage: '/images/recipes/cabbage-chef-2/hero.webp',
     mainIngredient: '알배추', description: '배추 속잎을 얇게 저며 올리브오일과 파마산으로 마무리한, 익히지 않은 신선함을 즐기는 전채예요.',
     masterclass: {
       chefIntro: '배추를 생으로 카르파치오처럼 즐기는 색다른 발상이에요. 알배추 속잎은 부드럽고 단맛이 있어 날것으로도 맛있어요.',
@@ -212,7 +212,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
     id: 'cabbage-chef-3', month: 11, title: '배추 퓌레와 베이컨 칩', subtitle: '부드러운 퓌레와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '퓌레를 접시에 둥글게 펴 담고 바삭한 베이컨 칩을 세워 꽂아보세요. 차이브를 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cabbage-chef-3/hero.webp',
+    heroImage: '/images/recipes/cabbage-chef-3/hero.webp',
     mainIngredient: '알배추', description: '부드럽게 갈아낸 배추 퓌레 위에 바삭한 베이컨 칩을 올린, 질감의 대비가 즐거운 사이드예요.',
     masterclass: {
       chefIntro: '배추를 퓌레로 만들면 전혀 새로운 질감을 경험할 수 있어요. 짭짤한 베이컨과의 대비가 이 요리의 핵심이에요.',
@@ -241,7 +241,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
   {
     id: 'cucumber-weekend-2', month: 6, title: '오이 크림치즈 롤', subtitle: '얇게 깎은 오이로 만드는 한입 핑거푸드',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cucumber-weekend-2/hero.webp',
+    heroImage: '/images/recipes/cucumber-weekend-2/hero.webp',
     mainIngredient: '오이', description: '얇게 깎은 오이에 크림치즈와 허브를 채워 만, 손님 초대상에 좋은 산뜻한 한입 메뉴예요.',
     masterclass: {
       chefIntro: '주말 손님 초대상에 내기 좋은 비주얼이에요. 오이는 신선할수록 리본처럼 깎기 쉬워요.',
@@ -268,7 +268,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
   {
     id: 'cucumber-weekend-3', month: 6, title: '오이소박이', subtitle: '속을 채워 발효시킨 여름 김치',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cucumber-weekend-3/hero.webp',
+    heroImage: '/images/recipes/cucumber-weekend-3/hero.webp',
     mainIngredient: '오이', description: '오이에 칼집을 내 매콤한 속을 채운, 여름철 입맛을 살려주는 별미 김치예요.',
     masterclass: {
       chefIntro: '여름 오이가 가장 아삭하고 시원할 때 만들면 좋은 김치예요. 칼집을 내는 정성이 필요해 주말에 만들기 좋아요.',
@@ -302,7 +302,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       country: '일본',
       note: '아사즈케(浅漬け)는 "옅게 절인다"는 뜻으로, 일본에서 짧은 시간만 절여 채소 본연의 맛을 살리는 절임 방식이에요. 오이나 배추로 흔히 만들고, 일본 가정식 식탁에 자주 오르는 가벼운 반찬이에요.',
     },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cucumber-world-2/hero.webp',
+    heroImage: '/images/recipes/cucumber-world-2/hero.webp',
     mainIngredient: '오이', description: '소금과 다시마로 짧게 절인, 일본식 산뜻하고 가벼운 오이 절임이에요.',
     masterclass: {
       chefIntro: '일본 가정에서 매일 만드는 가장 간단한 절임이에요. 오이의 수분을 살짝만 빼내 아삭함을 그대로 살려요.',
@@ -338,7 +338,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
       country: '베트남',
       note: '느억짬은 베트남 요리 전반에 쓰이는 만능 소스로, 피시소스·라임·설탕·고추를 섞어 만들어요. 오이에 무치면 베트남 길거리 음식에서 흔히 만나는 산뜻한 샐러드가 돼요.',
     },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cucumber-world-3/hero.webp',
+    heroImage: '/images/recipes/cucumber-world-3/hero.webp',
     mainIngredient: '오이', description: '새콤달콤짭짤한 베트남식 느억짬 소스에 무친, 더운 날 입맛을 살리는 오이무침이에요.',
     masterclass: {
       chefIntro: '베트남 길거리 음식의 활기를 담은 소스예요. 오이의 수분과 소스의 산미가 만나면 더운 날 식욕을 돋워줘요.',
@@ -368,7 +368,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
     id: 'cucumber-chef-2', month: 6, title: '오이 그라니타와 민트', subtitle: '코스 사이 입맛을 정리하는 차가운 샤베트',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 240, servings: 4,
     platingGuide: '작은 유리잔에 그라니타를 가볍게 담고 민트 잎 하나만 올려보세요. 차갑고 투명한 색이 그대로 비주얼이 돼요.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cucumber-chef-2/hero.webp',
+    heroImage: '/images/recipes/cucumber-chef-2/hero.webp',
     mainIngredient: '오이', description: '오이와 민트를 갈아 얼린, 코스 요리 중간에 입맛을 정리해주는 차갑고 산뜻한 그라니타예요.',
     masterclass: {
       chefIntro: '레스토랑 코스에서 메인 사이에 내는 "팔레트 클렌저" 역할을 하는 디저트예요. 오이의 수분이 얼었을 때 결정이 곱게 생겨요.',
@@ -401,7 +401,7 @@ export const recipesCabbageCucumberExpansion: Recipe[] = [
     id: 'cucumber-chef-3', month: 6, title: '오이 콩소메', subtitle: '맑게 거른 오이의 청량함만 남긴 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 270, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 오이 슬라이스 한 장을 띄워보세요. 맑고 연한 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/cucumber-chef-3/hero.webp',
+    heroImage: '/images/recipes/cucumber-chef-3/hero.webp',
     mainIngredient: '오이', description: '오이를 갈아 맑게 걸러낸, 청량함만 남긴 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '오이를 익히지 않고 그 정수만 추출하는 기법이에요. 신선한 오이일수록 더 청량한 맛이 나와요.',

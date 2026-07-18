@@ -214,7 +214,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-weekend-3', month: 3, title: '보리쑥떡', subtitle: '향긋하고 쫄깃한 봄 떡',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-weekend-3/hero.webp',
+    heroImage: '/images/recipes/barley-weekend-3/hero.webp',
     mainIngredient: '보리',
     description: '보릿가루와 쑥을 섞어 찐, 향긋하고 쫄깃한 봄철 전통 떡이에요.',
     masterclass: {
