@@ -14,7 +14,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-home-1', month: 1, title: '우엉솥밥', subtitle: '구수한 우엉 향이 밥알 사이로 스며드는 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-home-1/hero.webp',
+    heroImage: '/images/recipes/burdock-home-1/hero.webp',
     mainIngredient: '우엉',
     description: '겨울철 우엉의 단맛과 식이섬유를 가장 맛있게 즐기는, 구수한 향이 밥알 사이로 스며드는 한 그릇이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-home-2', month: 1, title: '우엉조림', subtitle: '달콤짭짤한 대표 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-home-2/hero.webp',
+    heroImage: '/images/recipes/burdock-home-2/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 간장 양념에 졸여낸, 달콤짭짤한 겨울 대표 밑반찬이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-home-3', month: 1, title: '우엉차', subtitle: '구수하고 따뜻한 겨울 음료',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-home-3/hero.webp',
+    heroImage: '/images/recipes/burdock-home-3/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 볶아 달인, 구수하고 따뜻한 겨울철 건강 음료예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-home-4', month: 1, title: '우엉무침', subtitle: '아삭하고 고소한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-home-4/hero.webp',
+    heroImage: '/images/recipes/burdock-home-4/hero.webp',
     mainIngredient: '우엉',
     description: '데친 우엉을 고추장에 무친, 아삭하고 매콤한 밑반찬이에요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-home-5', month: 1, title: '우엉볶음', subtitle: '아삭하고 담백한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-home-5/hero.webp',
+    heroImage: '/images/recipes/burdock-home-5/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 간장과 참기름으로 볶은, 아삭하고 담백한 기본 반찬이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-weekend-1', month: 1, title: '우엉갈비찜', subtitle: '아삭함을 더한 특별한 갈비찜',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-weekend-1/hero.webp',
+    heroImage: '/images/recipes/burdock-weekend-1/hero.webp',
     mainIngredient: '우엉',
     description: '갈비찜에 우엉을 더해, 아삭한 식감과 구수함을 살린 특별한 메인요리예요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-weekend-2', month: 1, title: '우엉튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-weekend-2/hero.webp',
+    heroImage: '/images/recipes/burdock-weekend-2/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 채 썰어 바삭하게 튀긴, 겉은 바삭하고 속은 아삭한 튀김이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-weekend-3', month: 1, title: '우엉돼지고기볶음', subtitle: '아삭하고 든든한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-weekend-3/hero.webp',
+    heroImage: '/images/recipes/burdock-weekend-3/hero.webp',
     mainIngredient: '우엉',
     description: '돼지고기와 우엉을 매콤하게 볶은, 아삭함이 살아있는 든든한 메인요리예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-weekend-4', month: 1, title: '우엉맛탕', subtitle: '달콤하고 바삭한 별미',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-weekend-4/hero.webp',
+    heroImage: '/images/recipes/burdock-weekend-4/hero.webp',
     mainIngredient: '우엉',
     description: '바삭하게 튀긴 우엉에 캐러멜 시럽을 입힌, 고구마맛탕처럼 달콤한 별미예요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesBurdockExpansion: Recipe[] = [
   {
     id: 'burdock-weekend-5', month: 1, title: '우엉죽', subtitle: '부드럽고 구수한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-weekend-5/hero.webp',
+    heroImage: '/images/recipes/burdock-weekend-5/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 잘게 썰어 끓인, 부드럽고 구수한 겨울철 보양죽이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-world-1', month: 1, title: '고보노 킨피라', subtitle: '일본식 우엉 단짠볶음',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '일본', note: '고보(ごぼう)는 일본어로 우엉을 뜻해요. 킨피라(金平)는 채소를 간장과 미림으로 달콤짭짤하게 볶아내는 일본의 대표적인 반찬 조리법이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-world-1/hero.webp',
+    heroImage: '/images/recipes/burdock-world-1/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 간장과 미림에 달콤짭짤하게 볶은, 일본의 대표적인 밑반찬이에요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-world-2', month: 1, title: '우엉 프리터', subtitle: '영국식 채소 프리터',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '프리터(fritter)는 채소나 과일에 반죽을 입혀 튀기는 영국·유럽식 조리법이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-world-2/hero.webp',
+    heroImage: '/images/recipes/burdock-world-2/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 반죽에 버무려 튀긴, 영국식 바삭한 채소 프리터예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-world-3', month: 1, title: '뉴방고보', subtitle: '중국식 우엉볶음',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 우엉(뉴방)을 목이버섯, 당근 등과 함께 새콤달콤하게 볶는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-world-3/hero.webp',
+    heroImage: '/images/recipes/burdock-world-3/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 목이버섯, 당근과 함께 새콤달콤하게 볶은, 중국식 대표 채소볶음이에요.',
     masterclass: {
@@ -395,7 +395,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-world-4', month: 1, title: '우엉 커리', subtitle: '인도식 향신 채소커리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '인도', note: '인도에서는 다양한 뿌리채소를 향신료와 함께 커리로 즐기는 전통이 있어요. 우엉의 구수함이 커리 향신료와 잘 어울려요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-world-4/hero.webp',
+    heroImage: '/images/recipes/burdock-world-4/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 향신료와 토마토소스에 끓인, 인도식 향긋한 채소커리예요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-world-5', month: 1, title: '우엉 스틱칩', subtitle: '미국식 바삭한 뿌리채소칩',
     category: '간식', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '미국', note: '미국에서는 다양한 뿌리채소를 얇게 썰어 튀기거나 구운 베지터블칩이 건강 간식으로 인기예요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-world-5/hero.webp',
+    heroImage: '/images/recipes/burdock-world-5/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 얇게 썰어 바삭하게 튀긴, 구수한 향이 매력적인 베지터블칩이에요.',
     masterclass: {
@@ -456,7 +456,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-chef-1', month: 1, title: '우엉 카바야키', subtitle: '일본 정진요리의 장어 흉내내기',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '가늘게 편 우엉 카바야키를 김에 말아 초밥용 밥 위에 올리고, 남은 소스를 붓으로 발라 윤기를 낸 뒤 산초가루를 뿌려 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-chef-1/hero.webp',
+    heroImage: '/images/recipes/burdock-chef-1/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 두드려 펴고 달콤짭짤한 소스로 조려, 장어구이(카바야키)의 식감과 맛을 흉내낸 일본 사찰음식이에요.',
     masterclass: {
@@ -488,7 +488,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-chef-2', month: 1, title: '규고보마키', subtitle: '일본식 소고기 우엉말이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '규고보마키를 어슷하게 잘라 단면이 보이게 접시에 세워 담고, 남은 소스를 붓으로 발라 윤기를 낸 뒤 통깨를 뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-chef-2/hero.webp',
+    heroImage: '/images/recipes/burdock-chef-2/hero.webp',
     mainIngredient: '우엉',
     description: '데친 우엉을 얇게 저민 소고기로 돌돌 말아 달콤짭짤한 소스에 조린, 일본식 명절·도시락 대표 메뉴예요.',
     masterclass: {
@@ -519,7 +519,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-chef-3', month: 1, title: '우엉커피', subtitle: '볶아 내리는 대체커피 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 커피잔에 우엉커피를 담아 우유 거품을 살짝 올리고, 계핏가루를 뿌려 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-chef-3/hero.webp',
+    heroImage: '/images/recipes/burdock-chef-3/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 짙게 볶아 곱게 갈아 내린, 카페인 없이 커피 향을 흉내낸 대체 음료예요.',
     masterclass: {
@@ -550,7 +550,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-chef-4', month: 1, title: '우엉 누카즈케', subtitle: '쌀겨 발효절임 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 30, servings: 6,
     platingGuide: '발효된 우엉을 얇게 썰어 작은 접시에 부채꼴로 담고, 참깨를 살짝 뿌려 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-chef-4/hero.webp',
+    heroImage: '/images/recipes/burdock-chef-4/hero.webp',
     mainIngredient: '우엉',
     description: '쌀겨를 발효시킨 상비 절임 베드에 우엉을 파묻어 만든, 일본 전통 발효 절임이에요.',
     masterclass: {
@@ -581,7 +581,7 @@ export const recipesBurdockExpansion: Recipe[] = [
     id: 'burdock-chef-5', month: 1, title: '살시프 그라탕', subtitle: '프랑스식 뿌리채소 그라탕',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '그라탕 그릇째 상에 올려 표면이 노릇하게 그을린 모습을 그대로 보여주고, 숟가락으로 떠서 개인 접시에 나눠 담습니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/burdock-chef-5/hero.webp',
+    heroImage: '/images/recipes/burdock-chef-5/hero.webp',
     mainIngredient: '우엉',
     description: '우엉을 프랑스의 유사한 뿌리채소(살시프)처럼 크림소스에 구운, 유럽식 그라탕이에요.',
     masterclass: {

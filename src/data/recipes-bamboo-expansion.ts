@@ -12,7 +12,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-home-4', month: 4, title: '죽순된장국', subtitle: '아삭함이 살아있는 봄 된장국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-home-4/hero.webp',
+    heroImage: '/images/recipes/bamboo-home-4/hero.webp',
     mainIngredient: '죽순',
     description: '죽순을 넣어 끓인 된장국으로, 아삭한 식감이 구수한 된장과 잘 어우러져요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-home-5', month: 4, title: '죽순전', subtitle: '아삭하게 부쳐낸 봄 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-home-5/hero.webp',
+    heroImage: '/images/recipes/bamboo-home-5/hero.webp',
     mainIngredient: '죽순',
     description: '얇게 썬 죽순에 부침가루옷을 입혀 부친, 아삭한 식감이 매력인 전이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-weekend-1', month: 4, title: '죽순 잡채', subtitle: '아삭함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-weekend-1/hero.webp',
+    heroImage: '/images/recipes/bamboo-weekend-1/hero.webp',
     mainIngredient: '죽순',
     description: '기본 잡채에 죽순을 더해 아삭한 식감을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-weekend-2', month: 4, title: '죽순 갈비찜', subtitle: '아삭함을 더한 명절 대표 찜',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-weekend-2/hero.webp',
+    heroImage: '/images/recipes/bamboo-weekend-2/hero.webp',
     mainIngredient: '죽순',
     description: '소갈비에 죽순을 더해 조린, 아삭함과 부드러움이 함께 있는 찜요리예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-weekend-3', month: 4, title: '죽순 장아찌', subtitle: '두고두고 꺼내 먹는 아삭한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-weekend-3/hero.webp',
+    heroImage: '/images/recipes/bamboo-weekend-3/hero.webp',
     mainIngredient: '죽순',
     description: '간장물에 절인 죽순을 새콤짭짤하게 즐기는, 오래 두고 먹는 밑반찬이에요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-weekend-4', month: 4, title: '죽순 탕수', subtitle: '아삭바삭 새콤달콤 별미',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-weekend-4/hero.webp',
+    heroImage: '/images/recipes/bamboo-weekend-4/hero.webp',
     mainIngredient: '죽순',
     description: '튀긴 죽순에 새콤달콤한 탕수소스를 끼얹은, 아삭바삭한 별미예요.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
   {
     id: 'bamboo-weekend-5', month: 4, title: '죽순 냉채', subtitle: '아삭하고 시원한 여러 채소의 조화',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-weekend-5/hero.webp',
+    heroImage: '/images/recipes/bamboo-weekend-5/hero.webp',
     mainIngredient: '죽순',
     description: '죽순에 여러 채소와 겨자소스를 곁들인, 아삭하고 시원한 냉채예요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-world-1', month: 4, title: '순쓰차오러우쓰', subtitle: '중국식 죽순 돼지고기 볶음',
     category: '볶음', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '중국', note: '순(笋)은 중국어로 죽순을 뜻해요. 죽순과 돼지고기를 함께 볶는 요리는 중국 요리에서 흔한 조합으로, 죽순의 아삭함과 고기의 감칠맛이 잘 어우러져요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-world-1/hero.webp',
+    heroImage: '/images/recipes/bamboo-world-1/hero.webp',
     mainIngredient: '죽순',
     description: '죽순과 돼지고기를 굴소스로 볶은, 중국식 가정식 볶음요리예요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-world-2', month: 4, title: '타케노코노 니모노', subtitle: '일본식 죽순 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '타케노코(たけのこ)는 일본어로 죽순을 뜻해요. 봄철 일본에서는 다시육수에 죽순을 은근히 졸이는 니모노가 계절 별미로 사랑받아요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-world-2/hero.webp',
+    heroImage: '/images/recipes/bamboo-world-2/hero.webp',
     mainIngredient: '죽순',
     description: '다시육수에 죽순을 은근히 졸인, 담백하고 깔끔한 일본식 봄철 조림이에요.',
     masterclass: {
@@ -283,7 +283,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-world-3', month: 4, title: '까잉 쭈아 마웅', subtitle: '베트남식 시큼한 죽순 국물요리',
     category: '국&찌개', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남에서는 죽순(마웅)을 새콤한 국물요리에 즐겨 넣어요. 까잉 쭈아는 타마린드로 신맛을 낸 남부식 국물요리로, 죽순을 더하면 아삭한 식감이 더해져요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-world-3/hero.webp',
+    heroImage: '/images/recipes/bamboo-world-3/hero.webp',
     mainIngredient: '죽순',
     description: '새콤한 타마린드 국물에 죽순과 새우를 더한, 베트남 남부식 시원한 국물요리예요.',
     masterclass: {
@@ -314,7 +314,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-world-4', month: 4, title: '깽쏨 마이', subtitle: '태국식 새콤매콤한 죽순 커리',
     category: '카레', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '태국', note: '태국에서는 죽순(마이)을 새콤매콤한 커리인 깽쏨에 즐겨 넣어요. 다른 커리보다 국물이 맑고 신맛이 강한 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-world-4/hero.webp',
+    heroImage: '/images/recipes/bamboo-world-4/hero.webp',
     mainIngredient: '죽순',
     description: '새콤매콤한 커리페이스트 국물에 죽순과 새우를 끓인, 태국 남부식 요리예요.',
     masterclass: {
@@ -345,7 +345,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-world-5', month: 4, title: '죽순 프랑세즈 그라탕', subtitle: '프랑스식 화이트소스 그라탕',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스 요리에서는 아스파라거스나 아티초크 같은 봄 채소를 그라탕으로 즐기는 전통이 있어요. 죽순도 비슷한 방식으로 뵈샤멜소스와 잘 어울려요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-world-5/hero.webp',
+    heroImage: '/images/recipes/bamboo-world-5/hero.webp',
     mainIngredient: '죽순',
     description: '죽순을 뵈샤멜소스와 함께 겹겹이 쌓아 구운, 아삭함이 살아있는 프랑스식 그라탕이에요.',
     masterclass: {
@@ -376,7 +376,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-chef-1', month: 4, title: '죽순 콩소메', subtitle: '맑고 깊은 프랑스식 봄 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 죽순과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-chef-1/hero.webp',
+    heroImage: '/images/recipes/bamboo-chef-1/hero.webp',
     mainIngredient: '죽순',
     description: '죽순 육수를 달걀흰자로 맑게 정제한, 투명하면서도 은은한 향의 봄철 콩소메예요.',
     masterclass: {
@@ -407,7 +407,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-chef-2', month: 4, title: '관자 죽순 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 얇게 썬 죽순을 그 옆에 곁들인 뒤 뵈르블랑소스를 숟가락으로 지그재그로 두릅니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-chef-2/hero.webp',
+    heroImage: '/images/recipes/bamboo-chef-2/hero.webp',
     mainIngredient: '죽순',
     description: '바삭하게 시어링한 관자와 죽순에 프랑스식 버터소스를 곁들인, 봄철 우아한 메인요리예요.',
     masterclass: {
@@ -440,7 +440,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-chef-3', month: 4, title: '죽순 리조또', subtitle: '아삭함이 살아있는 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 얇게 썬 생죽순 몇 조각을 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-chef-3/hero.webp',
+    heroImage: '/images/recipes/bamboo-chef-3/hero.webp',
     mainIngredient: '죽순',
     description: '죽순을 넣어 아삭한 식감을 살린, 봄철 이탈리아식 리조또예요.',
     masterclass: {
@@ -472,7 +472,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-chef-4', month: 4, title: '죽순 카르파치오', subtitle: '얇게 저민 죽순의 아삭한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 죽순을 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-chef-4/hero.webp',
+    heroImage: '/images/recipes/bamboo-chef-4/hero.webp',
     mainIngredient: '죽순',
     description: '삶은 죽순을 얇게 저며 올리브오일과 파마산치즈를 더한, 아삭함을 그대로 즐기는 전채예요.',
     masterclass: {
@@ -503,7 +503,7 @@ export const recipesBambooShootExpansion: Recipe[] = [
     id: 'bamboo-chef-5', month: 4, title: '죽순 크림수프', subtitle: '벨벳처럼 부드러운 프랑스식 봄 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 수프 접시에 크림수프를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/bamboo-chef-5/hero.webp',
+    heroImage: '/images/recipes/bamboo-chef-5/hero.webp',
     mainIngredient: '죽순',
     description: '죽순을 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 향의 프랑스식 봄 수프예요.',
     masterclass: {

@@ -16,7 +16,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-home-1', month: 7, title: '복분자에이드', subtitle: '새콤달콤한 향이 진한 여름 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-home-1/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-home-1/hero.webp',
     mainIngredient: '복분자',
     description: '진한 향과 새콤달콤한 맛의 복분자청으로 만든, 시원한 여름 음료예요.',
     masterclass: {
@@ -45,7 +45,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-home-2', month: 7, title: '복분자청', subtitle: '두고두고 활용하는 홈메이드 청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 8,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-home-2/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-home-2/hero.webp',
     mainIngredient: '복분자',
     description: '복분자를 설탕에 재워 만든 청으로, 여름 내내 여러 음료와 요리에 활용하기 좋아요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-home-3', month: 7, title: '복분자화채', subtitle: '향긋하고 시원한 여름 화채',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-home-3/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-home-3/hero.webp',
     mainIngredient: '복분자',
     description: '복분자청 국물에 과일을 띄운, 향긋하고 시원한 여름철 화채예요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-home-4', month: 7, title: '복분자요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-home-4/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-home-4/hero.webp',
     mainIngredient: '복분자',
     description: '복분자와 그릭요거트를 섞은, 상큼하고 건강한 간식이에요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-home-5', month: 7, title: '복분자잼', subtitle: '진한 향의 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-home-5/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-home-5/hero.webp',
     mainIngredient: '복분자',
     description: '복분자를 졸여 만든, 진한 향과 색의 홈메이드 잼이에요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-weekend-1', month: 7, title: '복분자소스 삼겹살', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-weekend-1/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-weekend-1/hero.webp',
     mainIngredient: '복분자',
     description: '구운 삼겹살에 복분자소스를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-weekend-2', month: 7, title: '복분자셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-weekend-2/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-weekend-2/hero.webp',
     mainIngredient: '복분자',
     description: '복분자를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -221,7 +221,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-weekend-3', month: 7, title: '복분자타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-weekend-3/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-weekend-3/hero.webp',
     mainIngredient: '복분자',
     description: '커스터드크림 위에 복분자를 올려 구운, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -251,7 +251,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-weekend-4', month: 7, title: '복분자오리주스', subtitle: '진하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'weekend', cookTime: 15, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-weekend-4/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-weekend-4/hero.webp',
     mainIngredient: '복분자',
     description: '복분자와 오이를 함께 갈아 만든, 진하고 건강한 생과일주스예요.',
     masterclass: {
@@ -280,7 +280,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
   {
     id: 'blackraspberry-weekend-5', month: 7, title: '복분자샐러드', subtitle: '상큼하고 가벼운 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'weekend', cookTime: 15, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-weekend-5/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-weekend-5/hero.webp',
     mainIngredient: '복분자',
     description: '복분자와 치즈, 채소를 함께 곁들인, 상큼하고 산뜻한 여름 샐러드예요.',
     masterclass: {
@@ -311,7 +311,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-world-1', month: 7, title: '복분자 상그리아', subtitle: '스페인식 여름 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 계절 과일을 듬뿍 넣는 것이 특징이에요. 복분자를 넣으면 진한 색과 향의 여름 버전이 돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-world-1/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-world-1/hero.webp',
     mainIngredient: '복분자',
     description: '레드와인에 복분자와 여름 과일을 넣어 만든, 스페인식 여름 상그리아예요.',
     masterclass: {
@@ -342,7 +342,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-world-2', month: 7, title: '복분자 판나코타', subtitle: '이탈리아 크림 디저트에 베리향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 베리류 소스를 곁들이는 것이 클래식한 조합이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-world-2/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-world-2/hero.webp',
     mainIngredient: '복분자',
     description: '부드러운 이탈리아식 크림 디저트에 복분자소스를 곁들인, 향긋한 여름 디저트예요.',
     masterclass: {
@@ -373,7 +373,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-world-3', month: 7, title: '복분자 마카롱', subtitle: '프랑스식 아몬드 머랭 과자',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '마카롱은 프랑스의 대표적인 아몬드 머랭 과자로, 다양한 필링과 향을 조합해 만드는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-world-3/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-world-3/hero.webp',
     mainIngredient: '복분자',
     description: '복분자 필링을 넣은, 프랑스식 아몬드 머랭 과자예요.',
     masterclass: {
@@ -404,7 +404,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-world-4', month: 7, title: '복분자 스무디볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '미국', note: '스무디볼은 미국 서부에서 유행한 건강식으로, 갈아 만든 스무디를 그릇에 담고 여러 토핑을 올려 즐겨요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-world-4/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-world-4/hero.webp',
     mainIngredient: '복분자',
     description: '복분자와 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-world-5', month: 7, title: '복분자 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 프랄린과 트러플 같은 정교한 초콜릿 과자가 발달했어요. 베리류 필링은 클래식한 조합이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-world-5/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-world-5/hero.webp',
     mainIngredient: '복분자',
     description: '복분자 퓌레를 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -467,7 +467,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-chef-1', month: 7, title: '복분자 무스 앙트르메', subtitle: '프랑스식 레이어드 무스케이크',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '앙트르메를 원통형으로 굳혀 조각내고, 접시에 세워 담아 거울처럼 반짝이는 글레이즈를 두른 뒤 금박이나 식용 꽃으로 장식합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-chef-1/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-chef-1/hero.webp',
     mainIngredient: '복분자',
     description: '스펀지, 무스, 콩피(과일 젤리층)를 층층이 쌓아 굳힌, 프랑스 정통 파티세리의 레이어드 케이크예요.',
     masterclass: {
@@ -498,7 +498,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-chef-2', month: 7, title: '복분자 클라푸티', subtitle: '프랑스식 구운 커스터드 과일 디저트',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '오븐용 그릇째 상에 올려 따뜻한 김이 나는 채로 서빙하고, 슈가파우더를 체에 걸러 눈처럼 뿌린 뒤 민트잎으로 장식합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-chef-2/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-chef-2/hero.webp',
     mainIngredient: '복분자',
     description: '복분자를 커스터드 반죽에 넣고 오븐에 구운, 프랑스 리무쟁 지방의 소박하고 우아한 전통 디저트예요.',
     masterclass: {
@@ -529,7 +529,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-chef-3', month: 7, title: '오리가슴살 복분자 가스트리크', subtitle: '프랑스식 새콤달콤 리덕션소스',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '따뜻한 접시에 슬라이스한 오리가슴살을 부채꼴로 배치하고, 가스트리크소스를 숟가락으로 지그재그로 두른 뒤 신선한 복분자 몇 알을 흩뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-chef-3/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-chef-3/hero.webp',
     mainIngredient: '복분자',
     description: '설탕을 캐러멜화한 뒤 식초와 복분자로 신맛을 더한 프랑스 클래식 소스를, 바삭하게 구운 오리가슴살에 곁들인 메인요리예요.',
     masterclass: {
@@ -561,7 +561,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-chef-4', month: 7, title: '복분자 파블로바', subtitle: '호주·뉴질랜드식 머랭 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '구운 머랭 베이스를 넓은 접시에 놓고 휘핑크림을 소복이 올린 뒤, 복분자를 듬뿍 올리고 민트잎으로 장식해 접시 가운데 화려하게 세웁니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-chef-4/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-chef-4/hero.webp',
     mainIngredient: '복분자',
     description: '겉은 바삭하고 속은 마시멜로처럼 쫀득한 머랭 베이스에 크림과 복분자를 올린, 호주·뉴질랜드의 대표 디저트예요.',
     masterclass: {
@@ -593,7 +593,7 @@ export const recipesBlackRaspberryExpansion: Recipe[] = [
     id: 'blackraspberry-chef-5', month: 7, title: '복분자 컬드 타르트', subtitle: '과일커드 기법의 클래식 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 표면에 토치로 살짝 그을린 자국을 내고, 조각 하나를 빼내어 단면이 보이게 연출한 뒤 신선한 복분자와 민트잎을 올립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackraspberry-chef-5/hero.webp',
+    heroImage: '/images/recipes/blackraspberry-chef-5/hero.webp',
     mainIngredient: '복분자',
     description: '복분자즙을 달걀노른자와 버터로 걸쭉하게 만든 커드를 타르트지에 채운, 진하고 광택 나는 클래식 디저트예요.',
     masterclass: {

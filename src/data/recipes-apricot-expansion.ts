@@ -14,7 +14,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-home-1', month: 5, title: '살구잼', subtitle: '새콤달콤한 초여름 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-home-1/hero.webp',
+    heroImage: '/images/recipes/apricot-home-1/hero.webp',
     mainIngredient: '살구',
     description: '살구와 설탕만으로 만드는 향긋한 잼으로, 빵에 발라 먹기 좋아요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-home-2', month: 5, title: '살구화채', subtitle: '향긋하고 시원한 초여름 화채',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-home-2/hero.webp',
+    heroImage: '/images/recipes/apricot-home-2/hero.webp',
     mainIngredient: '살구',
     description: '살구를 사이다와 함께 시원하게 즐기는, 향긋한 초여름 화채예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-home-3', month: 5, title: '살구청', subtitle: '두고두고 활용하는 홈메이드 청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 8,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-home-3/hero.webp',
+    heroImage: '/images/recipes/apricot-home-3/hero.webp',
     mainIngredient: '살구',
     description: '살구를 설탕에 재워 만든 청으로, 여름 내내 다양한 음료에 활용하기 좋아요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-home-4', month: 5, title: '살구요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-home-4/hero.webp',
+    heroImage: '/images/recipes/apricot-home-4/hero.webp',
     mainIngredient: '살구',
     description: '살구와 그릭요거트를 섞은, 상큼하고 건강한 간식이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-home-5', month: 5, title: '살구샐러드', subtitle: '상큼하고 가벼운 초여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-home-5/hero.webp',
+    heroImage: '/images/recipes/apricot-home-5/hero.webp',
     mainIngredient: '살구',
     description: '살구와 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 초여름 샐러드예요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-weekend-1', month: 5, title: '살구타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-weekend-1/hero.webp',
+    heroImage: '/images/recipes/apricot-weekend-1/hero.webp',
     mainIngredient: '살구',
     description: '아몬드크림 위에 살구를 올려 구운, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-weekend-2', month: 5, title: '살구셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-weekend-2/hero.webp',
+    heroImage: '/images/recipes/apricot-weekend-2/hero.webp',
     mainIngredient: '살구',
     description: '살구를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-weekend-3', month: 5, title: '살구스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-weekend-3/hero.webp',
+    heroImage: '/images/recipes/apricot-weekend-3/hero.webp',
     mainIngredient: '살구',
     description: '살구와 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-weekend-4', month: 5, title: '살구소스 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-weekend-4/hero.webp',
+    heroImage: '/images/recipes/apricot-weekend-4/hero.webp',
     mainIngredient: '살구',
     description: '구운 돼지고기 폭찹에 살구소스를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -278,7 +278,7 @@ export const recipesApricotExpansion: Recipe[] = [
   {
     id: 'apricot-weekend-5', month: 5, title: '살구빙수', subtitle: '향긋하고 시원한 초여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-weekend-5/hero.webp',
+    heroImage: '/images/recipes/apricot-weekend-5/hero.webp',
     mainIngredient: '살구',
     description: '얼음 위에 살구와 연유를 듬뿍 올린, 향긋하고 시원한 초여름 디저트예요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-world-1', month: 5, title: '살구 콩포트 요거트', subtitle: '프랑스식 과일 조림',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '콩포트(compote)는 과일을 설탕에 은근히 조려 만드는 프랑스의 대표 저장 디저트예요. 잼보다 과육의 형태가 살아있는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-world-1/hero.webp',
+    heroImage: '/images/recipes/apricot-world-1/hero.webp',
     mainIngredient: '살구',
     description: '살구를 향신료와 함께 은근히 조린 콩포트를, 요거트에 올린 프랑스식 디저트예요.',
     masterclass: {
@@ -339,7 +339,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-world-2', month: 5, title: '살구 카프레제', subtitle: '이탈리아식 응용 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '이탈리아', note: '카프레제는 토마토, 모짜렐라, 바질로 만드는 이탈리아 대표 샐러드예요. 여름 과일을 더하는 변형도 인기예요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-world-2/hero.webp',
+    heroImage: '/images/recipes/apricot-world-2/hero.webp',
     mainIngredient: '살구',
     description: '살구와 모짜렐라, 바질을 곁들인, 이탈리아식 카프레제를 응용한 샐러드예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-world-3', month: 5, title: '살구 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트(galette)는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요. 정교한 타르트보다 훨씬 편하게 만들 수 있어요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-world-3/hero.webp',
+    heroImage: '/images/recipes/apricot-world-3/hero.webp',
     mainIngredient: '살구',
     description: '살구를 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-world-4', month: 5, title: '살구 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-world-4/hero.webp',
+    heroImage: '/images/recipes/apricot-world-4/hero.webp',
     mainIngredient: '살구',
     description: '살구와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -428,7 +428,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-world-5', month: 5, title: '살구 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 프랄린과 트러플 같은 정교한 초콜릿 과자가 발달했어요. 살구는 초콜릿과 클래식하게 어울리는 조합이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-world-5/hero.webp',
+    heroImage: '/images/recipes/apricot-world-5/hero.webp',
     mainIngredient: '살구',
     description: '살구 퓌레를 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -462,7 +462,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-chef-1', month: 5, title: '살구 타르트 타탱', subtitle: '프랑스 캐러멜 뒤집기 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '뒤집은 타르트를 접시에 통째로 올려 캐러멜이 반짝이는 표면을 그대로 보여주고, 조각 하나를 잘라 바닐라아이스크림 한 스쿱과 함께 냅니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-chef-1/hero.webp',
+    heroImage: '/images/recipes/apricot-chef-1/hero.webp',
     mainIngredient: '살구',
     description: '살구를 캐러멜에 조린 뒤 반죽을 덮어 구워 뒤집는, 프랑스의 상징적인 "실수에서 탄생한" 타르트예요.',
     masterclass: {
@@ -494,7 +494,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-chef-2', month: 5, title: '살구 소르베', subtitle: '아이스크림 기계 churning 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '차갑게 식힌 유리볼에 소르베를 스쿱으로 동그랗게 담고, 얇게 썬 신선한 살구 조각과 민트잎으로 장식합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-chef-2/hero.webp',
+    heroImage: '/images/recipes/apricot-chef-2/hero.webp',
     mainIngredient: '살구',
     description: '살구 퓌레를 아이스크림 기계로 churning해 매끄럽게 완성한, 정교한 프랑스식 소르베예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-chef-3', month: 5, title: '양고기 살구타진', subtitle: '모로코식 달콤짭짤한 브레이즈',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '타진냄비 뚜껑을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 쿠스쿠스를 곁들여 담습니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-chef-3/hero.webp',
+    heroImage: '/images/recipes/apricot-chef-3/hero.webp',
     mainIngredient: '살구',
     description: '양고기와 말린 살구를 향신료와 함께 은근히 끓인, 모로코의 대표적인 달콤짭짤한 브레이즈 요리예요.',
     masterclass: {
@@ -557,7 +557,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-chef-4', month: 5, title: '살구 브레드푸딩', subtitle: '영국식 구운 빵 커스터드',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '오븐용 그릇째 따뜻하게 서빙하고, 위에 캐러멜소스를 지그재그로 뿌린 뒤 바닐라아이스크림 한 스쿱을 곁들입니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-chef-4/hero.webp',
+    heroImage: '/images/recipes/apricot-chef-4/hero.webp',
     mainIngredient: '살구',
     description: '마르기 시작한 빵을 커스터드에 적셔 살구와 함께 구운, 영국의 대표적인 알뜰한 베이킹 디저트예요.',
     masterclass: {
@@ -587,7 +587,7 @@ export const recipesApricotExpansion: Recipe[] = [
     id: 'apricot-chef-5', month: 5, title: '살구 크레페 수제트', subtitle: '프랑스 플랑베 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '접힌 크레페를 접시에 부채꼴로 담고, 상 위에서 브랜디에 불을 붙여 플람베하는 퍼포먼스를 보여준 뒤 소스를 끼얹어 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apricot-chef-5/hero.webp',
+    heroImage: '/images/recipes/apricot-chef-5/hero.webp',
     mainIngredient: '살구',
     description: '살구 캐러멜소스에 크레페를 적셔 브랜디로 플람베한, 프랑스의 상징적인 테이블사이드 디저트예요.',
     masterclass: {

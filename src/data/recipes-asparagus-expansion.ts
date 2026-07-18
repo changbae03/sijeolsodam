@@ -14,7 +14,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-home-1', month: 5, title: '아스파라거스 베이컨말이', subtitle: '부드러운 봄 채소와 고소한 베이컨의 만남',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-home-1/hero.webp',
+    heroImage: '/images/recipes/asparagus-home-1/hero.webp',
     mainIngredient: '아스파라거스',
     description: '부드럽고 향긋한 봄 아스파라거스를 베이컨으로 말아 구운, 손쉬운 별미예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-home-2', month: 5, title: '아스파라거스볶음', subtitle: '아삭하고 담백한 기본 볶음',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-home-2/hero.webp',
+    heroImage: '/images/recipes/asparagus-home-2/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 마늘과 함께 볶은, 아삭하고 담백한 기본 반찬이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-home-3', month: 5, title: '아스파라거스무침', subtitle: '고소하고 아삭한 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-home-3/hero.webp',
+    heroImage: '/images/recipes/asparagus-home-3/hero.webp',
     mainIngredient: '아스파라거스',
     description: '데친 아스파라거스를 참기름과 간장으로 무친, 고소하고 아삭한 밑반찬이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-home-4', month: 5, title: '아스파라거스수프', subtitle: '부드럽고 향긋한 봄 수프',
     category: '수프', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-home-4/hero.webp',
+    heroImage: '/images/recipes/asparagus-home-4/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 곱게 갈아 만든, 부드럽고 향긋한 봄철 수프예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-home-5', month: 5, title: '아스파라거스튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-home-5/hero.webp',
+    heroImage: '/images/recipes/asparagus-home-5/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 바삭하게 튀긴, 겉은 바삭하고 속은 아삭한 튀김이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-weekend-1', month: 5, title: '아스파라거스리조또', subtitle: '봄철 향긋한 크리미 쌀요리',
     category: '리조또', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-weekend-1/hero.webp',
+    heroImage: '/images/recipes/asparagus-weekend-1/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 넣어 향긋하게 지은, 봄철 이탈리아식 리조또예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-weekend-2', month: 5, title: '아스파라거스 크림파스타', subtitle: '부드럽고 향긋한 이탈리아식',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-weekend-2/hero.webp',
+    heroImage: '/images/recipes/asparagus-weekend-2/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 크림소스에 버무린, 부드럽고 향긋한 봄철 파스타예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-weekend-3', month: 5, title: '아스파라거스프리타타', subtitle: '이탈리아식 오픈 오믈렛',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-weekend-3/hero.webp',
+    heroImage: '/images/recipes/asparagus-weekend-3/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스와 치즈를 넣어 구운, 이탈리아식 오픈 오믈렛이에요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-weekend-4', month: 5, title: '아스파라거스타르트', subtitle: '고급스러운 브런치 타르트',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-weekend-4/hero.webp',
+    heroImage: '/images/recipes/asparagus-weekend-4/hero.webp',
     mainIngredient: '아스파라거스',
     description: '퍼프페이스트리 위에 아스파라거스를 올려 구운, 고급스러운 브런치 타르트예요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
   {
     id: 'asparagus-weekend-5', month: 5, title: '아스파라거스새우볶음', subtitle: '탱글하고 아삭한 조합',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-weekend-5/hero.webp',
+    heroImage: '/images/recipes/asparagus-weekend-5/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스와 새우를 함께 볶은, 탱글하고 아삭한 조합이 매력적인 메인요리예요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-world-1', month: 5, title: '슈파겔 아 라 부르기뇽', subtitle: '독일식 백아스파라거스 요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '독일', note: '독일에서는 봄철 슈파겔(아스파라거스) 시즌을 국가적으로 기념할 만큼 아스파라거스를 사랑해요. 특히 백아스파라거스를 버터에 데쳐 햄과 함께 내는 것이 전통이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-world-1/hero.webp',
+    heroImage: '/images/recipes/asparagus-world-1/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 버터에 데쳐 햄과 삶은 감자를 곁들인, 독일의 대표 봄철 요리예요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-world-2', month: 5, title: '아스파라거스 미소구이', subtitle: '일본식 된장구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '일본에서는 아스파라거스를 미소(된장) 양념에 구워 먹는 것이 인기 있는 조리법이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-world-2/hero.webp',
+    heroImage: '/images/recipes/asparagus-world-2/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 미소 양념에 구운, 일본식 구수하고 아삭한 구이예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-world-3', month: 5, title: '아스파라거스 카르보나라', subtitle: '이탈리아식 계란 유화 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '카르보나라는 로마의 대표 파스타로, 판체타와 계란, 페코리노치즈로 만드는 것이 전통이에요. 아스파라거스를 더하면 봄철 버전이 돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-world-3/hero.webp',
+    heroImage: '/images/recipes/asparagus-world-3/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 더한 카르보나라로, 봄철 채소의 아삭함이 진한 소스와 어우러지는 파스타예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-world-4', month: 5, title: '아스파라거스 스파나코피타', subtitle: '그리스식 필로페이스트리',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '그리스', note: '스파나코피타는 그리스의 대표 시금치 파이인데, 봄철에는 아스파라거스로 응용하는 버전도 즐겨요. 얇은 필로반죽을 겹겹이 쌓는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-world-4/hero.webp',
+    heroImage: '/images/recipes/asparagus-world-4/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스와 페타치즈를 얇은 필로반죽으로 감싸 구운, 그리스식 바삭한 파이예요.',
     masterclass: {
@@ -430,7 +430,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-world-5', month: 5, title: '아스파라거스 팟타이', subtitle: '태국식 볶음국수 응용',
     category: '면요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '태국', note: '팟타이는 태국의 대표 볶음국수예요. 계절 채소를 다양하게 활용하는데, 아스파라거스를 넣으면 봄철 색다른 버전이 돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-world-5/hero.webp',
+    heroImage: '/images/recipes/asparagus-world-5/hero.webp',
     mainIngredient: '아스파라거스',
     description: '쌀국수에 아스파라거스와 새우를 넣어 볶은, 태국식 대표 볶음국수예요.',
     masterclass: {
@@ -462,7 +462,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-chef-1', month: 5, title: '아스파라거스 홀란데이즈', subtitle: '프랑스 유화소스의 클래식',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '따뜻한 접시에 데친 아스파라거스를 가지런히 담고, 홀란데이즈소스를 스푼으로 넉넉히 끼얹은 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-chef-1/hero.webp',
+    heroImage: '/images/recipes/asparagus-chef-1/hero.webp',
     mainIngredient: '아스파라거스',
     description: '데친 아스파라거스에 달걀노른자와 버터로 만든 프랑스 클래식 홀란데이즈소스를 곁들인, 정통 조합의 전채예요.',
     masterclass: {
@@ -493,7 +493,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-chef-2', month: 5, title: '슈파겔 클래식', subtitle: '독일·오스트리아 전통의 정수',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '넓은 접시에 백아스파라거스를 가지런히 담고, 홀란데이즈소스와 갈은 견과류버터를 각각 옆에 곁들이며 삶은 감자와 햄을 균형 있게 배치합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-chef-2/hero.webp',
+    heroImage: '/images/recipes/asparagus-chef-2/hero.webp',
     mainIngredient: '아스파라거스',
     description: '백아스파라거스를 정성껏 데쳐 홀란데이즈, 삶은 감자, 햄과 함께 내는, 독일 봄철의 국가적인 미식 전통이에요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-chef-3', month: 5, title: '아스파라거스 플랑', subtitle: '구운 채소 커스터드',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '작은 라메킨째 서빙하거나, 틀에서 조심스럽게 꺼내 접시 중앙에 놓고 아스파라거스 팁 몇 개와 처빌잎으로 장식합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-chef-3/hero.webp',
+    heroImage: '/images/recipes/asparagus-chef-3/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 곱게 갈아 만든 반죽을 중탕으로 구운, 부드럽고 향긋한 프랑스식 채소 커스터드예요.',
     masterclass: {
@@ -554,7 +554,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-chef-4', month: 5, title: '아스파라거스 리본 샐러드', subtitle: '생채 슬라이스 기법',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '넓은 접시에 리본처럼 슬라이스한 아스파라거스를 느슨하게 말아 소복이 담고, 레몬드레싱을 뿌린 뒤 파마산 셰이빙과 처빌잎을 올립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-chef-4/hero.webp',
+    heroImage: '/images/recipes/asparagus-chef-4/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 필러로 얇게 리본처럼 저며 날것 그대로 즐기는, 신선한 샐러드예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesAsparagusExpansion: Recipe[] = [
     id: 'asparagus-chef-5', month: 5, title: '칼솟츠 스타일 숯불아스파라거스', subtitle: '카탈루냐식 직화구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '숯불 자국이 선명한 아스파라거스를 나무 도마에 통째로 담고, 로메스코소스를 옆에 듬뿍 곁들여 손으로 찍어 먹도록 연출합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/asparagus-chef-5/hero.webp',
+    heroImage: '/images/recipes/asparagus-chef-5/hero.webp',
     mainIngredient: '아스파라거스',
     description: '아스파라거스를 숯불에 직접 그을려 로메스코소스를 곁들인, 스페인 카탈루냐 지방의 칼솟츠 전통을 응용한 요리예요.',
     masterclass: {

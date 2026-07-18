@@ -10,7 +10,7 @@ export const recipesAppleExpansion: Recipe[] = [
   {
     id: 'apple-weekend-2', month: 10, title: '사과 크럼블', subtitle: '바삭한 토핑과 부드러운 사과의 대비를 즐기는 베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-weekend-2/hero.webp',
+    heroImage: '/images/recipes/apple-weekend-2/hero.webp',
     mainIngredient: '사과', description: '계피향 가득한 사과 위에 버터 크럼블을 올려 구운, 따뜻하게 먹는 영국식 디저트예요.',
     masterclass: {
       chefIntro: '오븐만 있으면 만들 수 있는, 비교적 손이 덜 가는 베이킹이에요. 가을 사과로 만들면 졸이는 동안 단맛이 더 깊어져요.',
@@ -50,7 +50,7 @@ export const recipesAppleExpansion: Recipe[] = [
   {
     id: 'apple-weekend-3', month: 10, title: '구운 사과와 캐러멜소스', subtitle: '속을 채워 통째로 구워내는 따뜻한 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-weekend-3/hero.webp',
+    heroImage: '/images/recipes/apple-weekend-3/hero.webp',
     mainIngredient: '사과', description: '사과 속을 파내 견과류와 버터를 채워 통째로 구운, 따뜻하고 향긋한 디저트예요.',
     masterclass: {
       chefIntro: '사과 한 알이 그대로 디저트가 되는 메뉴예요. 통째로 구워서 사과 본연의 모양과 향을 다 즐길 수 있어요.',
@@ -100,7 +100,7 @@ export const recipesAppleExpansion: Recipe[] = [
       country: '미국',
       note: '애플파이는 "미국만큼 미국적인 것"이라는 표현이 있을 정도로 미국 가정식의 상징이에요. 추수감사절 식탁에 빠지지 않고, 격자무늬 파이지가 특징적인 비주얼을 만들어요.',
     },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-world-2/hero.webp',
+    heroImage: '/images/recipes/apple-world-2/hero.webp',
     mainIngredient: '사과', description: '계피향 가득한 사과 필링을 격자무늬 파이지로 감싸 구운, 미국의 대표적인 명절 디저트예요.',
     masterclass: {
       chefIntro: '미국 가정의 명절 식탁을 상징하는 디저트예요. 가을 사과로 만들면 필링의 단맛과 산미가 균형을 이뤄요.',
@@ -150,7 +150,7 @@ export const recipesAppleExpansion: Recipe[] = [
       country: '오스트리아',
       note: '아펠슈트루델은 오스트리아 빈을 대표하는 디저트로, 종이처럼 얇게 늘린 반죽으로 사과 필링을 말아 구워요. 오스트리아-헝가리 제국 시절부터 전해진 전통 디저트예요.',
     },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-world-3/hero.webp',
+    heroImage: '/images/recipes/apple-world-3/hero.webp',
     mainIngredient: '사과', description: '얇게 늘린 페이스트리로 사과와 건포도 필링을 말아 구운, 오스트리아 빈의 대표 디저트예요.',
     masterclass: {
       chefIntro: '빈의 카페 문화를 대표하는 디저트예요. 가을 사과의 산미가 슈트루델 특유의 산뜻한 맛을 잘 살려줘요.',
@@ -197,7 +197,7 @@ export const recipesAppleExpansion: Recipe[] = [
     id: 'apple-chef-2', month: 10, title: '사과 콩포트와 푸아그라', subtitle: '단맛과 풍미가 만나는 프랑스 클래식 페어링',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '접시에 콩포트를 작은 동그라미로 펴 담고, 그 위에 시어드한 푸아그라를 살짝 올려보세요. 발사믹 글레이즈를 점으로 몇 방울 떨어뜨리면 완성이에요.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-chef-2/hero.webp',
+    heroImage: '/images/recipes/apple-chef-2/hero.webp',
     mainIngredient: '사과', description: '사과 콩포트의 단맛과 푸아그라의 풍부함이 만나는, 프랑스 파인다이닝의 고전적인 조합이에요.',
     masterclass: {
       chefIntro: '프랑스 요리에서 사과와 푸아그라는 클래식한 짝이에요. 사과의 산미가 푸아그라의 풍부한 기름기를 정리해줘요.',
@@ -242,7 +242,7 @@ export const recipesAppleExpansion: Recipe[] = [
     id: 'apple-chef-3', month: 10, title: '사과 셔벗과 캐러멜 크럼블', subtitle: '차가움과 바삭함의 모던 디저트 구성',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 4,
     platingGuide: '작은 유리잔에 크럼블을 깔고 셔벗을 한 스쿱 올린 뒤, 캐러멜소스를 가늘게 한 줄 그어보세요. 사과칩 한 조각을 꽂으면 입체감이 살아나요.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/apple-chef-3/hero.webp',
+    heroImage: '/images/recipes/apple-chef-3/hero.webp',
     mainIngredient: '사과', description: '차가운 사과 셔벗과 바삭한 캐러멜 크럼블을 함께 구성한, 온도와 질감의 대비를 즐기는 모던 디저트예요.',
     masterclass: {
       chefIntro: '코스 요리의 마지막을 장식할 만한 구성이에요. 차가운 셔벗과 바삭한 크럼블, 두 가지 대비를 한 그릇에 담아요.',

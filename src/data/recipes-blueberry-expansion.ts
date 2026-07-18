@@ -14,7 +14,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-home-1', month: 6, title: '블루베리스무디', subtitle: '항산화 가득한 여름 베리 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-home-1/hero.webp',
+    heroImage: '/images/recipes/blueberry-home-1/hero.webp',
     mainIngredient: '블루베리',
     description: '항산화 성분이 풍부한 여름 블루베리를 시원하게 갈아 만든, 아침 대용으로도 좋은 건강 음료예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-home-2', month: 6, title: '블루베리요거트볼', subtitle: '건강한 여름 브런치',
     category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 1,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-home-2/hero.webp',
+    heroImage: '/images/recipes/blueberry-home-2/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리와 그릭요거트, 견과류를 곁들인, 간단하지만 영양 가득한 건강한 아침 식사예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-home-3', month: 6, title: '블루베리잼', subtitle: '진한 보랏빛 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-home-3/hero.webp',
+    heroImage: '/images/recipes/blueberry-home-3/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 졸여 만든, 진한 보랏빛의 홈메이드 잼이에요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-home-4', month: 6, title: '블루베리팬케이크', subtitle: '상큼하고 폭신한 브런치',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-home-4/hero.webp',
+    heroImage: '/images/recipes/blueberry-home-4/hero.webp',
     mainIngredient: '블루베리',
     description: '반죽에 블루베리를 콕콕 박아 부친, 상큼하고 폭신한 브런치 팬케이크예요.',
     masterclass: {
@@ -126,7 +126,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-home-5', month: 6, title: '블루베리주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-home-5/hero.webp',
+    heroImage: '/images/recipes/blueberry-home-5/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 직접 갈아 만든, 상큼하고 건강한 생과일주스예요.',
     masterclass: {
@@ -155,7 +155,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-weekend-1', month: 6, title: '블루베리타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-weekend-1/hero.webp',
+    heroImage: '/images/recipes/blueberry-weekend-1/hero.webp',
     mainIngredient: '블루베리',
     description: '커스터드크림 위에 블루베리를 소복이 올려 만든, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -184,7 +184,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-weekend-2', month: 6, title: '블루베리머핀', subtitle: '폭신하고 향긋한 홈베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-weekend-2/hero.webp',
+    heroImage: '/images/recipes/blueberry-weekend-2/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 듬뿍 넣어 구운, 폭신하고 향긋한 홈베이킹 머핀이에요.',
     masterclass: {
@@ -213,7 +213,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-weekend-3', month: 6, title: '블루베리셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-weekend-3/hero.webp',
+    heroImage: '/images/recipes/blueberry-weekend-3/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -242,7 +242,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-weekend-4', month: 6, title: '블루베리치즈케이크', subtitle: '진하고 부드러운 홈베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-weekend-4/hero.webp',
+    heroImage: '/images/recipes/blueberry-weekend-4/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리소스를 곁들인, 진하고 부드러운 노베이크 치즈케이크예요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
   {
     id: 'blueberry-weekend-5', month: 6, title: '블루베리빙수', subtitle: '상큼하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-weekend-5/hero.webp',
+    heroImage: '/images/recipes/blueberry-weekend-5/hero.webp',
     mainIngredient: '블루베리',
     description: '얼음 위에 블루베리와 연유를 듬뿍 올린, 상큼하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -302,7 +302,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-world-1', month: 6, title: '블루베리 콩포트 요거트', subtitle: '프랑스식 과일 조림',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '콩포트(compote)는 과일을 설탕에 은근히 조려 만드는 프랑스의 대표 저장 디저트예요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-world-1/hero.webp',
+    heroImage: '/images/recipes/blueberry-world-1/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 향신료와 함께 은근히 조린 콩포트를, 요거트에 올린 프랑스식 디저트예요.',
     masterclass: {
@@ -330,7 +330,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-world-2', month: 6, title: '블루베리 클라푸티', subtitle: '프랑스식 구운 과일 커스터드',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '프랑스', note: '클라푸티는 프랑스 리무쟁 지방의 전통 디저트로, 과일 위에 팬케이크 반죽 같은 커스터드를 부어 굽는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-world-2/hero.webp',
+    heroImage: '/images/recipes/blueberry-world-2/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리 위에 부드러운 커스터드 반죽을 부어 구운, 프랑스의 소박한 전통 디저트예요.',
     masterclass: {
@@ -360,7 +360,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-world-3', month: 6, title: '블루베리 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-world-3/hero.webp',
+    heroImage: '/images/recipes/blueberry-world-3/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -388,7 +388,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-world-4', month: 6, title: '블루베리 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-world-4/hero.webp',
+    heroImage: '/images/recipes/blueberry-world-4/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -419,7 +419,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-world-5', month: 6, title: '블루베리 상그리아', subtitle: '스페인식 여름 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 계절 과일을 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-world-5/hero.webp',
+    heroImage: '/images/recipes/blueberry-world-5/hero.webp',
     mainIngredient: '블루베리',
     description: '레드와인에 블루베리와 여름 과일을 넣어 만든, 스페인식 여름 상그리아예요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-chef-1', month: 6, title: '블루베리 파이 래티스', subtitle: '미국식 격자무늬 파이 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 8,
     platingGuide: '완성된 파이를 통째로 상에 올려 격자무늬 사이로 보이는 진한 블루베리 필링을 그대로 보여주고, 조각내어 바닐라아이스크림과 함께 냅니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-chef-1/hero.webp',
+    heroImage: '/images/recipes/blueberry-chef-1/hero.webp',
     mainIngredient: '블루베리',
     description: '반죽을 길게 잘라 격자무늬로 짜 올린, 미국의 대표적인 홈베이킹 파이예요.',
     masterclass: {
@@ -484,7 +484,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-chef-2', month: 6, title: '블루베리 셔럽', subtitle: '미국 식민지시대 식초시럽 음료',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 6,
     platingGuide: '작은 병에 담긴 셔럽을 상에 올리고, 마실 때는 탄산수에 소량 타서 색이 퍼지는 모습을 보여주며 냅니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-chef-2/hero.webp',
+    heroImage: '/images/recipes/blueberry-chef-2/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 설탕, 식초와 함께 재운 진한 시럽으로, 냉장고 없던 시절 과일을 보존하던 미국 식민지시대의 전통 음료 베이스예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-chef-3', month: 6, title: '블루베리 버클', subtitle: '미국식 크럼블 베이킹',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '오븐용 그릇째 상에 올려 갈라진 겉면과 흘러나온 블루베리즙이 보이게 담고, 바닐라아이스크림을 한 스쿱 곁들입니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-chef-3/hero.webp',
+    heroImage: '/images/recipes/blueberry-chef-3/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 넣은 케이크 반죽에 버터크럼블을 뿌려 구운, 반죽이 "버클(찌그러진다)"처럼 갈라지는 미국의 전통 홈베이킹이에요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-chef-4', month: 6, title: '블루베리 키셀', subtitle: '러시아식 전분 냉과일수프',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '투명한 유리잔에 담아 층이 살짝 보이게 하고, 차갑게 식힌 상태로 스푼과 함께 냅니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-chef-4/hero.webp',
+    heroImage: '/images/recipes/blueberry-chef-4/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리즙을 전분으로 걸쭉하게 만든, 러시아와 북유럽의 전통적인 차가운 과일 디저트예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesBlueberryExpansion: Recipe[] = [
     id: 'blueberry-chef-5', month: 6, title: '블루베리 파우더', subtitle: '동결건조 분말화 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 480, servings: 10,
     platingGuide: '완성된 파우더를 작은 체에 담아 케이크나 아이스크림 위에 눈처럼 흩뿌려 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blueberry-chef-5/hero.webp',
+    heroImage: '/images/recipes/blueberry-chef-5/hero.webp',
     mainIngredient: '블루베리',
     description: '블루베리를 완전히 건조시켜 곱게 갈아 만든, 향이 응축된 모던 가스트로노미 조미료예요.',
     masterclass: {

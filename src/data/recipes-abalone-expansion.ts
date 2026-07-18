@@ -13,7 +13,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-home-4', month: 8, title: '전복 장조림', subtitle: '쫄깃하고 짭조름한 밑반찬',
     category: '밑반찬', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-home-4/hero.webp',
+    heroImage: '/images/recipes/abalone-home-4/hero.webp',
     mainIngredient: '전복',
     description: '전복을 간장 양념에 조려낸, 쫄깃하고 짭조름한 고급 밑반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-home-5', month: 8, title: '전복 초무침', subtitle: '새콤달콤 쫄깃한 여름 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-home-5/hero.webp',
+    heroImage: '/images/recipes/abalone-home-5/hero.webp',
     mainIngredient: '전복',
     description: '데친 전복을 오이, 미나리와 함께 새콤달콤한 초고추장에 무친, 여름 입맛을 돋우는 별미예요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-1', month: 8, title: '전복 갈비찜', subtitle: '보양식 두 가지의 만남',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-weekend-1/hero.webp',
+    heroImage: '/images/recipes/abalone-weekend-1/hero.webp',
     mainIngredient: '전복',
     description: '소갈비와 전복을 함께 조린, 두 가지 보양식 재료가 만난 명절 대표 찜요리예요.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-2', month: 8, title: '전복 삼계탕', subtitle: '여름 보양식의 정수',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 80, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-weekend-2/hero.webp',
+    heroImage: '/images/recipes/abalone-weekend-2/hero.webp',
     mainIngredient: '전복',
     description: '삼계탕에 전복을 더한, 여름철 최고의 보양식이에요.',
     masterclass: {
@@ -136,7 +136,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-3', month: 8, title: '전복 solo 솥밥', subtitle: '내장까지 활용한 향긋한 솥밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-weekend-3/hero.webp',
+    heroImage: '/images/recipes/abalone-weekend-3/hero.webp',
     mainIngredient: '전복',
     description: '전복살과 내장을 함께 넣어 지은, 향긋하고 진한 감칠맛의 솥밥이에요.',
     masterclass: {
@@ -167,7 +167,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-4', month: 8, title: '전복 강정', subtitle: '바삭 달콤한 별미',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-weekend-4/hero.webp',
+    heroImage: '/images/recipes/abalone-weekend-4/hero.webp',
     mainIngredient: '전복',
     description: '튀긴 전복에 달콤짭짤한 강정소스를 버무린, 색다르게 즐기는 고급 별미예요.',
     masterclass: {
@@ -197,7 +197,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
   {
     id: 'abalone-weekend-5', month: 8, title: '전복물회', subtitle: '시원하고 쫄깃한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-weekend-5/hero.webp',
+    heroImage: '/images/recipes/abalone-weekend-5/hero.webp',
     mainIngredient: '전복',
     description: '얇게 저민 전복과 채소를 새콤달콤한 냉국물에 말아낸, 여름철 시원한 별미예요.',
     masterclass: {
@@ -291,7 +291,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-3', month: 8, title: '오레하스 아 라 갈레가', subtitle: '스페인식 전복 갈리시아 스타일',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '갈리시아 지방은 스페인 최고의 해산물 산지예요. 전복(오레하 데 마르)을 올리브오일과 마늘, 파프리카가루로 심플하게 조리하는 것이 정통 방식이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-world-3/hero.webp',
+    heroImage: '/images/recipes/abalone-world-3/hero.webp',
     mainIngredient: '전복',
     description: '올리브오일과 마늘, 파프리카가루로 구운, 스페인 갈리시아식 심플한 전복요리예요.',
     masterclass: {
@@ -322,7 +322,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-4', month: 8, title: '전복 뵈르누아제트', subtitle: '프랑스식 브라운버터구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '프랑스', note: '프랑스 요리에서는 조개류나 해산물을 브라운버터(뵈르누아제트)로 마무리하는 것이 클래식한 기법이에요. 견과류향 나는 버터가 전복의 바다향과 잘 어우러져요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-world-4/hero.webp',
+    heroImage: '/images/recipes/abalone-world-4/hero.webp',
     mainIngredient: '전복',
     description: '전복을 버터에 구워 갈색버터소스로 마무리한, 프랑스식 우아한 전채예요.',
     masterclass: {
@@ -354,7 +354,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-world-5', month: 8, title: '전복 리소토 알 네로', subtitle: '이탈리아식 먹물 전복 리조또',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 50, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 베네치아 지방에서는 오징어먹물을 넣은 검은 리조또가 클래식 요리예요. 전복을 더하면 바다향이 두 배로 진해지는 고급스러운 버전이 돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-world-5/hero.webp',
+    heroImage: '/images/recipes/abalone-world-5/hero.webp',
     mainIngredient: '전복',
     description: '오징어먹물로 검게 물들인 쌀에 전복을 더한, 극적인 비주얼의 이탈리아식 리조또예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesAbaloneExpansion: Recipe[] = [
     id: 'abalone-chef-5', month: 8, title: '전복 콩피', subtitle: '올리브오일에 은근히 익힌 부드러운 전복',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '따뜻한 접시에 전복을 놓고, 콩피에 쓴 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/abalone-chef-5/hero.webp',
+    heroImage: '/images/recipes/abalone-chef-5/hero.webp',
     mainIngredient: '전복',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 전복요리예요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-home-2', month: 1, title: '흑미죽', subtitle: '고소하고 든든한 아침 죽',
     category: '죽', difficulty: '쉬움', level: 'home', cookTime: 45, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-home-2/hero.webp',
+    heroImage: '/images/recipes/blackrice-home-2/hero.webp',
     mainIngredient: '흑미',
     description: '흑미를 푹 끓여낸, 은은한 보랏빛과 고소한 향이 매력적인 죽이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-home-3', month: 1, title: '흑미 주먹밥', subtitle: '고소하고 든든한 한입 간식',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-home-3/hero.webp',
+    heroImage: '/images/recipes/blackrice-home-3/hero.webp',
     mainIngredient: '흑미',
     description: '흑미밥을 참기름과 소금으로 간해 동그랗게 뭉친, 간단한 도시락 메뉴예요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-home-4', month: 1, title: '흑미 누룽지', subtitle: '구수하게 눌러 만든 간식 겸 숭늉',
     category: '간식', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-home-4/hero.webp',
+    heroImage: '/images/recipes/blackrice-home-4/hero.webp',
     mainIngredient: '흑미',
     description: '흑미밥을 팬에 얇게 눌러 바삭하게 구운, 간식으로도 숭늉으로도 좋은 누룽지예요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-home-5', month: 1, title: '흑미 스크램블', subtitle: '색다른 아침 한 그릇',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-home-5/hero.webp',
+    heroImage: '/images/recipes/blackrice-home-5/hero.webp',
     mainIngredient: '흑미',
     description: '흑미밥에 달걀 스크램블과 채소를 더한, 색다른 색감의 아침 한 그릇이에요.',
     masterclass: {
@@ -135,7 +135,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-weekend-1', month: 1, title: '흑미 영양밥', subtitle: '갖은 재료를 넣어 지은 든든한 밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-weekend-1/hero.webp',
+    heroImage: '/images/recipes/blackrice-weekend-1/hero.webp',
     mainIngredient: '흑미',
     description: '흑미에 밤, 대추, 은행을 함께 넣어 지은, 영양 가득한 명절식 밥이에요.',
     masterclass: {
@@ -165,7 +165,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-weekend-2', month: 1, title: '흑미 떡갈비', subtitle: '고소한 밥알이 씹히는 떡갈비',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 55, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-weekend-2/hero.webp',
+    heroImage: '/images/recipes/blackrice-weekend-2/hero.webp',
     mainIngredient: '흑미',
     description: '다진 고기에 흑미밥을 섞어 빚은, 씹는 맛이 독특한 떡갈비예요.',
     masterclass: {
@@ -194,7 +194,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-weekend-3', month: 1, title: '흑미 김밥', subtitle: '색다른 색감의 김밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-weekend-3/hero.webp',
+    heroImage: '/images/recipes/blackrice-weekend-3/hero.webp',
     mainIngredient: '흑미',
     description: '흑미밥으로 만 김밥으로, 짙은 색감과 고소한 향이 색다른 별미예요.',
     masterclass: {
@@ -224,7 +224,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-weekend-4', month: 1, title: '흑미 리조또', subtitle: '이탈리아식으로 즐기는 색다른 흑미',
     category: '리조또', difficulty: '보통', level: 'weekend', cookTime: 55, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-weekend-4/hero.webp',
+    heroImage: '/images/recipes/blackrice-weekend-4/hero.webp',
     mainIngredient: '흑미',
     description: '흑미를 육수에 조금씩 부어가며 끓인, 짙은 색감과 씹는 맛이 독특한 리조또예요.',
     masterclass: {
@@ -254,7 +254,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
   {
     id: 'blackrice-weekend-5', month: 1, title: '흑미 식혜', subtitle: '은은한 색이 도는 전통 음료',
     category: '음료', difficulty: '보통', level: 'weekend', cookTime: 300, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-weekend-5/hero.webp',
+    heroImage: '/images/recipes/blackrice-weekend-5/hero.webp',
     mainIngredient: '흑미',
     description: '엿기름과 흑미밥을 삭혀 만든, 은은한 색과 향이 매력적인 전통 식혜예요.',
     masterclass: {
@@ -287,7 +287,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-world-1', month: 1, title: '카오냐우 담', subtitle: '태국식 흑미 코코넛 디저트',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '태국', note: '카오냐우 담(ข้าวเหนียวดำ)은 태국의 대표적인 흑미 찹쌀 디저트예요. 코코넛밀크와 함께 달콤하게 끓여내며, 망고와 곁들여 먹는 것으로도 유명해요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-world-1/hero.webp',
+    heroImage: '/images/recipes/blackrice-world-1/hero.webp',
     mainIngredient: '흑미',
     description: '흑미를 코코넛밀크와 설탕으로 달콤하게 끓인, 태국의 전통 디저트예요.',
     masterclass: {
@@ -318,7 +318,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-world-2', month: 1, title: '흑미 살팀보카', subtitle: '이탈리아식 고기말이에 흑미 크로켓을',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '이탈리아', note: '살팀보카(saltimbocca)는 얇게 편 고기에 프로슈토와 세이지를 올려 구운 이탈리아 로마 요리예요. 흑미로 만든 사이드를 곁들이면 색과 영양이 더 풍부한 접시가 완성돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-world-2/hero.webp',
+    heroImage: '/images/recipes/blackrice-world-2/hero.webp',
     mainIngredient: '흑미',
     description: '얇게 편 돼지고기에 프로슈토와 세이지를 올려 구운 이탈리아 요리에 흑미밥을 곁들인, 색이 화려한 한 접시예요.',
     masterclass: {
@@ -349,7 +349,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-world-3', month: 1, title: '헤이미 자오판', subtitle: '중국식 흑미 볶음밥',
     category: '밥', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '중국', note: '자오판(炒饭)은 중국식 볶음밥의 기본형이에요. 헤이미(黑米, 흑미)로 만들면 색이 짙어지고 고소함이 진해지는 건강식 변형이 돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-world-3/hero.webp',
+    heroImage: '/images/recipes/blackrice-world-3/hero.webp',
     mainIngredient: '흑미',
     description: '흑미밥에 새우와 채소를 더해 센 불에 빠르게 볶은, 중국식 흑미 볶음밥이에요.',
     masterclass: {
@@ -380,7 +380,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-world-4', month: 1, title: '흑미 필라프', subtitle: '인도식 향신료 흑미밥',
     category: '밥', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '인도', note: '필라프(또는 풀라오)는 향신료를 넣고 기름에 볶은 뒤 육수로 지어내는 쌀 요리예요. 흑미로 만들면 색이 짙어지고 향신료 향이 더 깊이 배어들어요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-world-4/hero.webp',
+    heroImage: '/images/recipes/blackrice-world-4/hero.webp',
     mainIngredient: '흑미',
     description: '흑미를 향신료와 함께 볶아 육수로 지어낸, 향이 진한 인도식 볶음밥이에요.',
     masterclass: {
@@ -411,7 +411,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-world-5', month: 1, title: '아로스 네그로', subtitle: '스페인식 흑미 해물밥',
     category: '밥', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '스페인', note: '아로스 네그로(arroz negro)는 오징어 먹물로 밥을 검게 지어내는 스페인 발렌시아 지방의 해물밥이에요. 흑미로 지으면 먹물 없이도 비슷한 색감과 새로운 풍미를 낼 수 있어요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-world-5/hero.webp',
+    heroImage: '/images/recipes/blackrice-world-5/hero.webp',
     mainIngredient: '흑미',
     description: '흑미에 해산물과 채소를 더해 팬에 지어낸, 스페인 파에야를 닮은 해물밥이에요.',
     masterclass: {
@@ -444,7 +444,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-chef-1', month: 1, title: '흑미 크래커 참치 타르타르', subtitle: '바삭한 흑미크래커에 올린 신선한 타르타르',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 45, servings: 4,
     platingGuide: '검은 슬레이트 접시에 흑미크래커를 부채꼴로 배치하고, 각 크래커 위에 타르타르를 스푼으로 살짝 얹은 뒤 미니 허브를 하나씩 올립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-chef-1/hero.webp',
+    heroImage: '/images/recipes/blackrice-chef-1/hero.webp',
     mainIngredient: '흑미',
     description: '흑미로 만든 바삭한 크래커 위에 신선한 참치 타르타르를 올린, 한입 크기의 세련된 전채예요.',
     masterclass: {
@@ -476,7 +476,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-chef-2', month: 1, title: '흑미 아란치니', subtitle: '바삭하게 튀긴 흑미 리조또 크로켓',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '흰 접시에 아란치니를 3개씩 삼각형으로 배치하고, 한 개는 반으로 잘라 속의 치즈가 늘어지는 단면이 보이게 놓은 뒤 마리나라소스를 점점이 뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-chef-2/hero.webp',
+    heroImage: '/images/recipes/blackrice-chef-2/hero.webp',
     mainIngredient: '흑미',
     description: '흑미 리조또에 모짜렐라치즈를 넣고 동그랗게 빚어 튀긴, 겉바속촉의 이탈리아식 크로켓이에요.',
     masterclass: {
@@ -507,7 +507,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-chef-3', month: 1, title: '흑미 크렘', subtitle: '고소함이 응축된 흑미 크림 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 55, servings: 4,
     platingGuide: '작은 유리컵에 흑미크렘을 담아 표면을 매끈하게 정리하고, 볶은 통들깨와 얇게 썬 무화과 조각을 올려 마무리합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-chef-3/hero.webp',
+    heroImage: '/images/recipes/blackrice-chef-3/hero.webp',
     mainIngredient: '흑미',
     description: '흑미를 곱게 갈아 우유와 크림에 우려낸, 고소함이 응축된 프랑스식 크림 디저트예요.',
     masterclass: {
@@ -539,7 +539,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-chef-4', month: 1, title: '흑미 크러스트 치즈타르트', subtitle: '고소한 흑미 크러스트의 짭짤한 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 75, servings: 6,
     platingGuide: '타르트를 통째로 나무 도마에 올려 자연스럽게 자른 조각 하나를 빼내어 단면이 보이게 연출하고, 조각 위에 흑후추를 살짝 갈아 뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-chef-4/hero.webp',
+    heroImage: '/images/recipes/blackrice-chef-4/hero.webp',
     mainIngredient: '흑미',
     description: '흑미가루를 섞은 크러스트에 크림치즈 필링을 채워 구운, 고소하고 짭짤한 타르트예요.',
     masterclass: {
@@ -570,7 +570,7 @@ export const recipesBlackRiceExpansion: Recipe[] = [
     id: 'blackrice-chef-5', month: 1, title: '흑미 아이스크림 산도', subtitle: '흑미 쿠키 사이에 끼운 아이스크림',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '나무 도마 위에 산도를 비스듬히 겹쳐 담고, 아이스크림 단면이 보이도록 세워서 볶은 흑미 몇 알을 접시 위에 흩뿌립니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/blackrice-chef-5/hero.webp',
+    heroImage: '/images/recipes/blackrice-chef-5/hero.webp',
     mainIngredient: '흑미',
     description: '흑미가루로 구운 쿠키 사이에 바닐라 아이스크림을 끼운, 고소함과 달콤함이 겹겹이 쌓인 디저트예요.',
     masterclass: {

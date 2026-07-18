@@ -12,7 +12,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-home-1', month: 4, title: '머위 된장무침', subtitle: '쌉싸름한 맛으로 입맛을 돋우는 나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-home-1/hero.webp',
+    heroImage: '/images/recipes/butterbur-home-1/hero.webp',
     mainIngredient: '머위',
     description: '쌉싸름한 머위를 된장 양념에 무쳐낸, 봄철 입맛을 돋우는 대표적인 나물 반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-home-2', month: 4, title: '머위 들깨탕', subtitle: '구수함과 쌉싸름함의 조화',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-home-2/hero.webp',
+    heroImage: '/images/recipes/butterbur-home-2/hero.webp',
     mainIngredient: '머위',
     description: '쌉싸름한 머위와 구수한 들깨를 함께 끓여낸, 깊은 맛의 봄철 국물요리예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-home-3', month: 4, title: '머위나물볶음', subtitle: '고소하게 볶아낸 기본 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-home-3/hero.webp',
+    heroImage: '/images/recipes/butterbur-home-3/hero.webp',
     mainIngredient: '머위',
     description: '데친 머위를 들기름에 볶아낸, 고소하고 쌉싸름한 기본 나물 반찬이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-home-4', month: 4, title: '머위 된장국', subtitle: '구수하고 쌉싸름한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-home-4/hero.webp',
+    heroImage: '/images/recipes/butterbur-home-4/hero.webp',
     mainIngredient: '머위',
     description: '머위를 넣어 끓인 된장국으로, 구수함과 쌉싸름함이 함께 느껴지는 봄철 국이에요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-home-5', month: 4, title: '머위 장아찌', subtitle: '두고두고 꺼내 먹는 쌉싸름한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-home-5/hero.webp',
+    heroImage: '/images/recipes/butterbur-home-5/hero.webp',
     mainIngredient: '머위',
     description: '간장물에 절인 머위를 짭짤하게 즐기는, 오래 두고 먹는 봄철 밑반찬이에요.',
     masterclass: {
@@ -164,7 +164,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-weekend-1', month: 4, title: '머위 들깨찜닭', subtitle: '쌉싸름함을 더한 든든한 찜닭',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-weekend-1/hero.webp',
+    heroImage: '/images/recipes/butterbur-weekend-1/hero.webp',
     mainIngredient: '머위',
     description: '닭과 머위를 들깨국물에 함께 조린, 구수하고 든든한 봄철 찜닭이에요.',
     masterclass: {
@@ -193,7 +193,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-weekend-2', month: 4, title: '머위 삼겹살구이', subtitle: '알싸함이 잡아주는 쌈채소',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-weekend-2/hero.webp',
+    heroImage: '/images/recipes/butterbur-weekend-2/hero.webp',
     mainIngredient: '머위',
     description: '구운 삼겹살을 머위잎에 싸 먹는, 쌉싸름함이 느끼함을 잡아주는 별미예요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesButterburExpansion: Recipe[] = [
   {
     id: 'butterbur-weekend-3', month: 4, title: '머위 잡채', subtitle: '쌉싸름함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-weekend-3/hero.webp',
+    heroImage: '/images/recipes/butterbur-weekend-3/hero.webp',
     mainIngredient: '머위',
     description: '기본 잡채에 머위를 더해 쌉싸름한 봄향을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -349,7 +349,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-world-2', month: 4, title: '후키노 니모노', subtitle: '일본식 머위 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '후키(蕗)는 일본어로 머위를 뜻해요. 일본에서는 머위를 다시육수에 은근히 졸이는 니모노가 봄철 대표 가정식이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-world-2/hero.webp',
+    heroImage: '/images/recipes/butterbur-world-2/hero.webp',
     mainIngredient: '머위',
     description: '다시육수에 머위를 은근히 졸인, 담백하고 쌉싸름한 일본식 봄철 조림이에요.',
     masterclass: {
@@ -379,7 +379,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-world-3', month: 4, title: '머위 마늘볶음', subtitle: '중국식 쌉싸름한 채소볶음',
     category: '볶음', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 다양한 잎채소를 마늘과 굴소스로 간단히 볶아 먹는 것이 흔한 가정식이에요. 쌉싸름한 채소도 이 조리법으로 감칠맛을 더할 수 있어요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-world-3/hero.webp',
+    heroImage: '/images/recipes/butterbur-world-3/hero.webp',
     mainIngredient: '머위',
     description: '마늘과 굴소스로 센 불에 빠르게 볶은, 중국식 채소볶음의 정석이에요.',
     masterclass: {
@@ -411,7 +411,7 @@ export const recipesButterburExpansion: Recipe[] = [
     id: 'butterbur-world-4', month: 4, title: '호르타 스타일 머위', subtitle: '그리스식 데친 채소 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '그리스', note: '호르타(χόρτα)는 그리스어로 "야생 채소"를 뜻해요. 그리스에서는 다양한 쓴맛 나는 채소를 데쳐서 올리브오일과 레몬만으로 간단히 무쳐 먹는 것이 오랜 전통이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/butterbur-world-4/hero.webp',
+    heroImage: '/images/recipes/butterbur-world-4/hero.webp',
     mainIngredient: '머위',
     description: '데친 머위에 올리브오일과 레몬을 두른, 그리스식 심플한 채소 샐러드예요.',
     masterclass: {

@@ -13,7 +13,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-home-1', month: 3, title: '보리비빔밥', subtitle: '식이섬유 가득한 구수한 비빔밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-home-1/hero.webp',
+    heroImage: '/images/recipes/barley-home-1/hero.webp',
     mainIngredient: '보리',
     description: '구수한 보리밥에 나물과 고추장을 더해 비벼 먹는, 건강한 봄철 한 끼예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-home-2', month: 3, title: '보리차', subtitle: '구수하고 개운한 국민 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 6,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-home-2/hero.webp',
+    heroImage: '/images/recipes/barley-home-2/hero.webp',
     mainIngredient: '보리',
     description: '볶은 보리를 우려낸, 구수하고 개운한 우리나라 대표 물 대용 음료예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-home-3', month: 3, title: '보리개떡', subtitle: '구수하고 쫄깃한 옛날 간식',
     category: '간식', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-home-3/hero.webp',
+    heroImage: '/images/recipes/barley-home-3/hero.webp',
     mainIngredient: '보리',
     description: '보릿가루를 반죽해 쪄낸, 구수하고 쫄깃한 옛날 간식이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-home-4', month: 3, title: '보리새싹된장국', subtitle: '구수하고 향긋한 봄 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-home-4/hero.webp',
+    heroImage: '/images/recipes/barley-home-4/hero.webp',
     mainIngredient: '보리',
     description: '보리새싹을 넣어 끓인 된장국으로, 구수하고 향긋한 봄철 국이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-home-5', month: 3, title: '보리새싹무침', subtitle: '알싸하고 향긋한 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-home-5/hero.webp',
+    heroImage: '/images/recipes/barley-home-5/hero.webp',
     mainIngredient: '보리',
     description: '보리새싹을 초고추장에 무친, 알싸하고 향긋한 봄철 밑반찬이에요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-weekend-1', month: 3, title: '보리굴비정식', subtitle: '구수하고 깊은 맛의 한 상',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-weekend-1/hero.webp',
+    heroImage: '/images/recipes/barley-weekend-1/hero.webp',
     mainIngredient: '보리',
     description: '보리굴비와 보리밥을 곁들인, 구수하고 깊은 맛의 한 상이에요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-weekend-2', month: 3, title: '보리수제비', subtitle: '구수하고 든든한 별미',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-weekend-2/hero.webp',
+    heroImage: '/images/recipes/barley-weekend-2/hero.webp',
     mainIngredient: '보리',
     description: '보릿가루를 섞은 반죽으로 만든 수제비를 끓인, 구수하고 든든한 별미예요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-weekend-4', month: 3, title: '보리새우죽', subtitle: '구수하고 고소한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-weekend-4/hero.webp',
+    heroImage: '/images/recipes/barley-weekend-4/hero.webp',
     mainIngredient: '보리',
     description: '보리와 새우를 함께 끓인, 구수하고 고소한 든든한 보양죽이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesBarleyExpansion: Recipe[] = [
   {
     id: 'barley-weekend-5', month: 3, title: '보리강정', subtitle: '고소하고 바삭한 전통 간식',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-weekend-5/hero.webp',
+    heroImage: '/images/recipes/barley-weekend-5/hero.webp',
     mainIngredient: '보리',
     description: '볶은 보리를 조청에 버무려 굳힌, 고소하고 바삭한 전통 간식이에요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-world-1', month: 3, title: '보리 스카치 브로스', subtitle: '스코틀랜드식 보리 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '영국(스코틀랜드)', note: '스카치 브로스(Scotch broth)는 스코틀랜드의 대표 전통 수프로, 양고기와 보리, 채소를 넣어 걸쭉하게 끓이는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-world-1/hero.webp',
+    heroImage: '/images/recipes/barley-world-1/hero.webp',
     mainIngredient: '보리',
     description: '보리와 양고기, 채소를 넣어 걸쭉하게 끓인, 스코틀랜드의 대표 전통 수프예요.',
     masterclass: {
@@ -334,7 +334,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-world-2', month: 3, title: '보리 필라프', subtitle: '터키식 향신 곡물밥',
     category: '밥', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '터키', note: '필라프는 터키를 비롯한 중동·중앙아시아의 대표 곡물밥으로, 버터에 곡물을 볶은 뒤 육수로 짓는 것이 특징이에요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-world-2/hero.webp',
+    heroImage: '/images/recipes/barley-world-2/hero.webp',
     mainIngredient: '보리',
     description: '보리를 버터에 볶아 육수로 지은, 터키식 향신 곡물밥이에요.',
     masterclass: {
@@ -364,7 +364,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-world-3', month: 3, title: '보리 미네스트로네', subtitle: '이탈리아식 곡물채소수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '이탈리아', note: '미네스트로네는 이탈리아의 대표 채소수프로, 지역에 따라 쌀이나 파스타, 보리 등 다양한 곡물을 넣어요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-world-3/hero.webp',
+    heroImage: '/images/recipes/barley-world-3/hero.webp',
     mainIngredient: '보리',
     description: '보리와 채소를 듬뿍 넣어 끓인, 이탈리아식 든든한 곡물채소수프예요.',
     masterclass: {
@@ -394,7 +394,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-world-4', month: 3, title: '보리 그래놀라볼', subtitle: '건강한 아침 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요. 보리 플레이크를 쓰면 색다른 버전이 돼요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-world-4/hero.webp',
+    heroImage: '/images/recipes/barley-world-4/hero.webp',
     mainIngredient: '보리',
     description: '보리 플레이크와 요거트, 과일을 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -423,7 +423,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-world-5', month: 3, title: '보리 콩지', subtitle: '중국식 보리죽',
     category: '죽', difficulty: '쉬움', level: 'world', cookTime: 50, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 쌀 대신 보리나 좁쌀 등 다양한 곡물로 죽(콩지, 粥)을 끓여 아침이나 보양식으로 즐겨요.' },
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-world-5/hero.webp',
+    heroImage: '/images/recipes/barley-world-5/hero.webp',
     mainIngredient: '보리',
     description: '보리를 오래 끓여 부드럽게 만든, 중국식 담백한 보리죽이에요.',
     masterclass: {
@@ -454,7 +454,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-chef-1', month: 3, title: '보리 오르조토 트러플', subtitle: '이탈리아식 곡물 크리미 조리법',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 55, servings: 2,
     platingGuide: '넓은 접시에 오르조토를 살짝 흐르는 농도로 펴 담고, 트러플을 얇게 셰이빙해 올린 뒤 파마산치즈 튀일을 세워 꽂습니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-chef-1/hero.webp',
+    heroImage: '/images/recipes/barley-chef-1/hero.webp',
     mainIngredient: '보리',
     description: '쌀 대신 보리로 만든 크리미한 이탈리아식 곡물요리(오르조토)에, 트러플 향을 더한 고급 버전이에요.',
     masterclass: {
@@ -485,7 +485,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-chef-2', month: 3, title: '보리 타뷸레', subtitle: '중동식 허브 곡물 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '넓은 접시에 타뷸레를 낮은 봉우리 모양으로 소복이 담고, 상추잎을 옆에 곁들여 손으로 떠먹을 수 있게 연출합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-chef-2/hero.webp',
+    heroImage: '/images/recipes/barley-chef-2/hero.webp',
     mainIngredient: '보리',
     description: '보리를 곡물로 쓴, 파슬리가 주인공인 레바논식 허브 샐러드예요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-chef-3', month: 3, title: '보리 아란치니', subtitle: '이탈리아식 튀긴 곡물볼',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '작은 접시에 아란치니를 반으로 잘라 단면이 보이게 세워 담고, 토마토소스를 점을 찍듯 소스 스푼으로 흩뿌린 뒤 바질잎으로 장식합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-chef-3/hero.webp',
+    heroImage: '/images/recipes/barley-chef-3/hero.webp',
     mainIngredient: '보리',
     description: '보리 오르조토를 동그랗게 빚어 빵가루를 입혀 튀긴, 겉바속촉 이탈리아식 전채예요.',
     masterclass: {
@@ -547,7 +547,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-chef-4', month: 3, title: '몰트글레이즈 폭찹', subtitle: '브루잉 기법을 응용한 소스구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 폭찹을 놓고, 몰트글레이즈를 붓으로 겹겹이 발라 윤기를 낸 뒤 볶은 보리 알갱이를 흩뿌려 완성합니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-chef-4/hero.webp',
+    heroImage: '/images/recipes/barley-chef-4/hero.webp',
     mainIngredient: '보리',
     description: '보리를 발아·당화시켜 만든 몰트시럽으로 윤기 나게 조린, 브루잉 기법을 응용한 돼지고기 요리예요.',
     masterclass: {
@@ -578,7 +578,7 @@ export const recipesBarleyExpansion: Recipe[] = [
     id: 'barley-chef-5', month: 3, title: '보리 그래놀라 크럼블 타르트', subtitle: '베이킹 기법의 곡물 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌린 뒤 바닐라아이스크림 한 스쿱을 곁들입니다.',
-    heroImage: 'https://v38estqimd9lwwub.public.blob.vercel-storage.com/recipes/barley-chef-5/hero.webp',
+    heroImage: '/images/recipes/barley-chef-5/hero.webp',
     mainIngredient: '보리',
     description: '보리 플레이크로 만든 바삭한 크럼블을 과일 콩포트 위에 얹어 구운, 베이킹 기법의 디저트예요.',
     masterclass: {
