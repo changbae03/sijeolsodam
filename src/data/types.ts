@@ -89,6 +89,8 @@ export interface SeasonalIngredient {
   tip?: string;
   /** 잘 어울리는 조리법이나 양념 (선택적) */
   goesWellWith?: string;
+  /** 이 산지에서 나는 것만의 특징 (선택적, 지도 카드에 표시) */
+  originNote?: string;
   /** 궁합이 좋은 재료와 그 이유 (선택적) */
   pairings?: { name: string; reason: string }[];
   /** 함께 쓰면 손해 보는 재료와 그 이유 (선택적) */

@@ -37,6 +37,7 @@ interface Pairing {
 
 interface IngredientDetail {
   nutrition: string;
+  originNote?: string;
   pairings?: Pairing[];
   avoidPairings?: Pairing[];
   howToChoose: string;
@@ -52,11 +53,14 @@ function lineHasDetails(line: string): boolean {
   return /nutrition:\s*'/.test(line);
 }
 
-function extractNameAndDescription(line: string): { name: string; description: string } | null {
+function extractNameAndDescription(
+  line: string
+): { name: string; description: string; origin: string } | null {
   const nameMatch = line.match(/name:\s*'((?:[^'\\]|\\.)*)'/);
   const descMatch = line.match(/description:\s*'((?:[^'\\]|\\.)*)'/);
+  const originMatch = line.match(/origin:\s*'((?:[^'\\]|\\.)*)'/);
   if (!nameMatch || !descMatch) return null;
-  return { name: nameMatch[1], description: descMatch[1] };
+  return { name: nameMatch[1], description: descMatch[1], origin: originMatch?.[1] ?? '' };
 }
 
 function escapeForSingleQuote(text: string): string {
@@ -81,6 +85,7 @@ function upgradeDetailFields(line: string, detail: IngredientDetail): string {
   };
   setString('howToChoose', detail.howToChoose);
   setString('tip', detail.tip);
+  if (detail.originNote) setString('originNote', detail.originNote);
 
   // pairings / avoidPairings: 기존 것이 있으면 통째로 교체, 없으면 추가
   for (const [field, list] of [
@@ -106,6 +111,7 @@ function insertDetailsIntoLine(line: string, detail: IngredientDetail): string {
   const withoutTrailing = trimmedEnd.slice(0, -2).trimEnd();
   const fields = [
     `nutrition: '${escapeForSingleQuote(detail.nutrition)}'`,
+    ...(detail.originNote ? [`originNote: '${escapeForSingleQuote(detail.originNote)}'`] : []),
     `howToChoose: '${escapeForSingleQuote(detail.howToChoose)}'`,
     `tip: '${escapeForSingleQuote(detail.tip)}'`,
     `goesWellWith: '${escapeForSingleQuote(detail.goesWellWith)}'`,
@@ -118,16 +124,18 @@ function insertDetailsIntoLine(line: string, detail: IngredientDetail): string {
 async function generateDetail(
   name: string,
   description: string,
-  month: number
+  month: number,
+  origin: string
 ): Promise<IngredientDetail | null> {
   const prompt = `${SODAMI_TEXT_PERSONA_PROMPT}
 
-"${name}"은 ${month}월 한국의 제철 식재료입니다. 간단한 소개: "${description}"
+"${name}"은 ${month}월 한국의 제철 식재료입니다. 간단한 소개: "${description}"${origin ? `\n대표 산지: ${origin}` : ''}
 
 이 식재료에 대해 아래 JSON 형식으로만 답해주세요. 다른 설명이나 코드블록(\`\`\`) 없이 순수 JSON 객체만 출력하세요.
 
 {
   "nutrition": "핵심 영양 성분의 '이름'을 2~3개 짚고, 각각이 몸의 어디에·왜 좋은지 연결한 2문장 (60~90자). 예시 톤: '칼륨이 풍부해 여름철 땀으로 빠져나간 전해질을 채우고 붓기를 빼는 데 좋아요. 식이섬유도 많아 더위에 지친 장을 편하게 해줘요.' — 이런 식으로 성분명 -> 효능을 구체적으로.",
+  "originNote": "${origin ? `대표 산지인 '${origin}'에서 나는 ${name}만의 특징을 2문장으로 (60~90자). 그 지역의 기후·토양·바다 환경(해풍, 일교차, 갯벌, 모래땅, 물살 등)이 맛·크기·식감에 어떻게 이어지는지 연결하고, 지역 이름의 유래나 그 산지가 유명해진 배경이 잘 알려져 있다면 함께. 잘 알려진 사실만 쓰고 확실하지 않으면 일반적인 표현으로.` : '빈 문자열'}",
   "howToChoose": "고르는 법을 2문장으로 (50~80자). 매장에서 눈·손으로 바로 확인 가능한 기준만: 색·윤기·단단함·무게감·꼭지/껍질/아가미 상태 등. '신선한 것을 고르세요' 같은 동어반복 금지.",
   "tip": "손질과 보관을 각각 짚어 2문장으로 (50~80자). 예: 어떻게 다듬고(씻는 순서·제거할 부위), 어디에 어떤 상태로 며칠쯤 두는지. 냉장/냉동/실온 중 무엇이 맞는지 명시.",
   "goesWellWith": "잘 어울리는 조리법이나 양념을 1문장으로 (20자 내외)",
@@ -178,6 +186,9 @@ async function generateDetail(
           : [];
       return {
         ...parsed,
+        originNote: typeof parsed.originNote === 'string' && parsed.originNote !== '빈 문자열'
+          ? parsed.originNote
+          : undefined,
         pairings: clean(parsed.pairings),
         avoidPairings: clean(parsed.avoidPairings),
       };
@@ -219,7 +230,7 @@ async function main() {
     console.log(`[${currentMonth}월] ${parsed.name} ${modeLabel} 중...`);
 
     try {
-      const detail = await generateDetail(parsed.name, parsed.description, currentMonth);
+      const detail = await generateDetail(parsed.name, parsed.description, currentMonth, parsed.origin);
       if (detail) {
         result[i] = refreshDetails
           ? upgradeDetailFields(result[i], detail)

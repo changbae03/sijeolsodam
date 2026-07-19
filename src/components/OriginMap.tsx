@@ -87,7 +87,16 @@ export function resolveOriginCoord(origin: string): { lat: number; lon: number; 
   return null;
 }
 
-export default function OriginMap({ origin, name }: { origin: string; name: string }) {
+export default function OriginMap({
+  origin,
+  name,
+  note,
+}: {
+  origin: string;
+  name: string;
+  /** 이 산지에서 나는 것만의 특징 (없으면 일반 문구) */
+  note?: string;
+}) {
   const coord = resolveOriginCoord(origin);
   if (!coord) return null;
 
@@ -124,11 +133,19 @@ export default function OriginMap({ origin, name }: { origin: string; name: stri
           <div className="min-w-0">
             <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1">대표 산지</p>
             <p className="text-[17px] font-bold tracking-[-0.01em] text-ink leading-snug">{origin}</p>
-            <p className="text-[12.5px] text-ink-soft/70 mt-2 leading-relaxed">
-              같은 {name}라도 산지에 따라 맛과 크기가 조금씩 달라요.
-            </p>
+            {!note && (
+              <p className="text-[12.5px] text-ink-soft/70 mt-2 leading-relaxed">
+                같은 {name}라도 산지에 따라 맛과 크기가 조금씩 달라요.
+              </p>
+            )}
           </div>
         </div>
+
+        {note && (
+          <p className="mt-4 pt-4 border-t border-border-soft/60 text-[14px] text-ink leading-relaxed">
+            {note}
+          </p>
+        )}
       </div>
     </section>
   );

@@ -235,7 +235,9 @@ export default function IngredientDetailPage() {
         {/* ============================================
             5-3. 산지 지도
            ============================================ */}
-        {ingredient.origin && <OriginMap origin={ingredient.origin} name={ingredient.name} />}
+        {ingredient.origin && (
+          <OriginMap origin={ingredient.origin} name={ingredient.name} note={ingredient.originNote} />
+        )}
 
         {/* ============================================
             6. 영양 요약
