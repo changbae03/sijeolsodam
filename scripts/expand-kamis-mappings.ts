@@ -83,7 +83,7 @@ const CANDIDATES: Candidate[] = [
   { displayName: '새우', expect: '새우', itemCategoryCode: '600', itemCode: '630', kindCodes: ['00', '01'], relatedMonths: [11], aliases: ['대하', '흰다리새우'] },
 ];
 
-const KAMIS_BASE_URL = 'http://www.kamis.or.kr/service/price/xml.do';
+const KAMIS_BASE_URLS = ['http://www.kamis.or.kr/service/price/xml.do', 'https://www.kamis.or.kr/service/price/xml.do'];
 
 function toKamisDate(d: Date): string {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -118,14 +118,21 @@ async function verify(c: Candidate): Promise<VerifyResult & { debug?: string }> 
       p_cert_id: certId!,
       p_returntype: 'json',
     });
+    let res: Response | null = null;
     try {
-      const res = await fetch(`${KAMIS_BASE_URL}?${qs.toString()}`, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh) sijeolsodam-price-check' },
-      });
-      if (!res.ok) {
-        lastDebug = `HTTP ${res.status}`;
-        continue;
+      for (const base of KAMIS_BASE_URLS) {
+        try {
+          res = await fetch(`${base}?${qs.toString()}`, {
+            headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh) sijeolsodam-price-check' },
+          });
+          if (res.ok) break;
+          lastDebug = `HTTP ${res.status} (${base.startsWith('https') ? 'https' : 'http'})`;
+        } catch (fetchErr) {
+          lastDebug = `요청 실패(${base.startsWith('https') ? 'https' : 'http'}): ${fetchErr instanceof Error ? fetchErr.message : fetchErr}`;
+          res = null;
+        }
       }
+      if (!res || !res.ok) continue;
       const raw = await res.text();
       lastDebug = raw.slice(0, 400);
       let json: {
@@ -150,7 +157,8 @@ async function verify(c: Candidate): Promise<VerifyResult & { debug?: string }> 
       }
       const latest = priced[priced.length - 1];
       return { ok: true, kindCode, itemname, latestPrice: Number(latest.price.replace(/,/g, '')) };
-    } catch {
+    } catch (err) {
+      lastDebug = `처리 실패: ${err instanceof Error ? err.message : err}`;
       continue;
     }
     // eslint 방지용 — 도달 안 함
