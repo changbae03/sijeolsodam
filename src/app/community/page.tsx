@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
 import Logo from '@/components/Logo';
+import PhotoPicker from '@/components/PhotoPicker';
 import { useAuth } from '@/lib/auth-context';
 
 interface Post {
@@ -66,7 +67,12 @@ function CommunityPageInner() {
   const [expandedPostId, setExpandedPostId] = useState<number | null>(null);
   const [commentsByPost, setCommentsByPost] = useState<Record<number, Comment[]>>({});
   const [commentDraft, setCommentDraft] = useState('');
-  const [composer, setComposer] = useState<'post' | 'recipe' | null>(null);
+  const [composer, setComposer] = useState<'post' | 'recipe' | null>(
+    // 레시피 상세의 "만들었어요 -> 사진 올리기"로 들어온 경우 글쓰기를 바로 연다
+    typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('compose') === 'post'
+      ? 'post'
+      : null
+  );
   // 내 글 수정/삭제
   const [menuPostId, setMenuPostId] = useState<number | null>(null);
   const [editingPostId, setEditingPostId] = useState<number | null>(null);
@@ -119,10 +125,6 @@ function CommunityPageInner() {
   const linkedRecipeId = searchParams.get('recipeId');
   const linkedRecipeTitle = searchParams.get('title');
 
-  useEffect(() => {
-    if (searchParams.get('compose') === 'post') setComposer('post');
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- 최초 진입 시 1회
-  }, []);
 
   useEffect(() => {
     fetch('/api/community/posts')
@@ -639,42 +641,46 @@ function PostComposer({
   linkedRecipeTitle?: string | null;
 }) {
   const { user } = useAuth();
-  const fileRef = useRef<HTMLInputElement>(null);
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [photoFile, setPhotoFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
   const [caption, setCaption] = useState('');
   const [hashtagsInput, setHashtagsInput] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  async function handleFile(file: File) {
+  /** 게시 직전에 업로드한다 — 필터를 바꿔가며 고르는 동안 서버에 여러 장이 쌓이지 않게 */
+  async function uploadSelected(): Promise<string | null> {
+    if (!photoFile) return null;
     setUploading(true);
     setError(null);
     try {
       const formData = new FormData();
-      formData.append('image', file);
+      formData.append('image', photoFile);
       const res = await fetch('/api/community/upload', { method: 'POST', body: formData });
       const data = await res.json();
       if (!res.ok) {
         setError(data.error || '사진을 올리지 못했어요.');
-        return;
+        return null;
       }
-      setImageUrl(data.url);
+      return data.url as string;
     } catch {
       setError('사진을 올리지 못했어요. 잠시 후 다시 시도해주세요.');
+      return null;
     } finally {
       setUploading(false);
     }
   }
 
   async function handleSubmit() {
-    if (!imageUrl) {
-      setError('먼저 사진을 올려주세요.');
+    if (!photoFile) {
+      setError('먼저 사진을 골라주세요.');
       return;
     }
     setSubmitting(true);
     setError(null);
     try {
+      const imageUrl = await uploadSelected();
+      if (!imageUrl) return;
       const hashtags = hashtagsInput
         .split(/[\s,]+/)
         .map((t) => t.replace(/^#/, ''))
@@ -724,29 +730,7 @@ function PostComposer({
           </span>
         </div>
       )}
-      <input
-        ref={fileRef}
-        type="file"
-        accept="image/*"
-        className="hidden"
-        onChange={(e) => {
-          const file = e.target.files?.[0];
-          if (file) handleFile(file);
-        }}
-      />
-      <button
-        type="button"
-        onClick={() => fileRef.current?.click()}
-        className="w-full aspect-[4/3] rounded-2xl border border-dashed border-border-soft bg-cream-warm/40 flex items-center justify-center overflow-hidden relative"
-      >
-        {imageUrl ? (
-          <Image src={imageUrl} alt="업로드한 사진" fill sizes="448px" className="object-cover" />
-        ) : (
-          <span className="text-[14px] text-ink-soft">
-            {uploading ? '사진 올리는 중...' : '탭해서 사진 선택하기 📷'}
-          </span>
-        )}
-      </button>
+      <PhotoPicker onReady={setPhotoFile} disabled={submitting || uploading} />
 
       <textarea
         value={caption}
@@ -768,7 +752,7 @@ function PostComposer({
       <button
         type="button"
         onClick={handleSubmit}
-        disabled={submitting || uploading || !imageUrl}
+        disabled={submitting || uploading || !photoFile}
         className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[15px] font-medium py-3 disabled:opacity-40"
       >
         {submitting ? '올리는 중...' : '자랑하기'}
