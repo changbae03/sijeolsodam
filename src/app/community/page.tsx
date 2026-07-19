@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useEffect, useRef, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
@@ -55,7 +55,7 @@ function timeAgo(iso: string) {
   return new Date(iso).toLocaleDateString('ko-KR');
 }
 
-export default function CommunityPage() {
+function CommunityPageInner() {
   const { user } = useAuth();
   const router = useRouter();
 
@@ -67,6 +67,16 @@ export default function CommunityPage() {
   const [commentsByPost, setCommentsByPost] = useState<Record<number, Comment[]>>({});
   const [commentDraft, setCommentDraft] = useState('');
   const [composer, setComposer] = useState<'post' | 'recipe' | null>(null);
+  // 레시피 상세의 "만들었어요 -> 사진 올리기"에서 넘어온 경우 글쓰기를 바로 열고
+  // 어떤 레시피에서 왔는지 게시글에 함께 저장한다.
+  const searchParams = useSearchParams();
+  const linkedRecipeId = searchParams.get('recipeId');
+  const linkedRecipeTitle = searchParams.get('title');
+
+  useEffect(() => {
+    if (searchParams.get('compose') === 'post') setComposer('post');
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- 최초 진입 시 1회
+  }, []);
 
   useEffect(() => {
     fetch('/api/community/posts')
@@ -434,6 +444,8 @@ export default function CommunityPage() {
         <PostComposer
           onClose={() => setComposer(null)}
           onCreated={(post) => setPosts((prev) => [post, ...(prev ?? [])])}
+          linkedRecipeId={linkedRecipeId}
+          linkedRecipeTitle={linkedRecipeTitle}
         />
       )}
       {composer === 'recipe' && (
@@ -492,9 +504,14 @@ function ComposerShell({
 function PostComposer({
   onClose,
   onCreated,
+  linkedRecipeId,
+  linkedRecipeTitle,
 }: {
   onClose: () => void;
   onCreated: (post: Post) => void;
+  /** 레시피 상세에서 넘어왔다면 그 레시피 ID (게시글에 함께 저장) */
+  linkedRecipeId?: string | null;
+  linkedRecipeTitle?: string | null;
 }) {
   const { user } = useAuth();
   const fileRef = useRef<HTMLInputElement>(null);
@@ -540,7 +557,7 @@ function PostComposer({
       const res = await fetch('/api/community/posts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ imageUrl, caption, hashtags }),
+        body: JSON.stringify({ imageUrl, caption, hashtags, recipeId: linkedRecipeId ?? undefined }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -552,7 +569,7 @@ function PostComposer({
         imageUrl,
         caption,
         hashtags,
-        recipeId: null,
+        recipeId: linkedRecipeId ?? null,
         userRecipeId: null,
         createdAt: data.createdAt,
         authorId: user?.id ?? 0,
@@ -572,6 +589,16 @@ function PostComposer({
 
   return (
     <ComposerShell title="오늘의 요리 자랑" onClose={onClose}>
+      {linkedRecipeTitle && (
+        <div className="mb-3 flex items-center gap-2 rounded-xl bg-cream-warm/60 px-3.5 py-2.5">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft shrink-0">
+            <path d="M4 20V6a2 2 0 0 1 2-2h13v14H6a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h13" />
+          </svg>
+          <span className="text-[13px] text-ink-soft truncate">
+            <span className="font-semibold text-ink">{linkedRecipeTitle}</span> 만든 사진이에요
+          </span>
+        </div>
+      )}
       <input
         ref={fileRef}
         type="file"
@@ -763,5 +790,14 @@ function RecipeComposer({
         {submitting ? '올리는 중...' : '레시피 올리기'}
       </button>
     </ComposerShell>
+  );
+}
+
+export default function CommunityPage() {
+  // useSearchParams는 Suspense 경계가 필요 (Next.js 정적 렌더 규칙)
+  return (
+    <Suspense fallback={null}>
+      <CommunityPageInner />
+    </Suspense>
   );
 }
