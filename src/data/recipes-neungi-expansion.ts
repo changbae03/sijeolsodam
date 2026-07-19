@@ -15,7 +15,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-home-1', month: 9, title: '능이버섯전골', subtitle: '향긋하고 진한 가을철 대표 전골',
     category: '전골', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-home-1/hero.webp',
     mainIngredient: '능이버섯',
     description: '향이 진한 능이버섯을 채소, 고기와 함께 끓인, 가을철 대표적인 고급 전골이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-home-2', month: 9, title: '능이버섯볶음', subtitle: '향긋하고 쫄깃한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-home-2/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 들기름에 볶은, 향긋하고 쫄깃한 가을철 기본 반찬이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-home-3', month: 9, title: '능이버섯죽', subtitle: '부드럽고 향긋한 보양죽',
     category: '죽', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-home-3/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 넣어 끓인, 부드럽고 향긋한 가을철 보양죽이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-home-4', month: 9, title: '능이버섯전', subtitle: '향긋하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-home-4/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 반죽에 섞어 부친, 향긋하고 고급스러운 가을철 전이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-home-5', month: 9, title: '능이버섯국', subtitle: '맑고 향긋한 가을 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-home-5/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 넣어 끓인 맑은국으로, 은은한 향이 매력적인 가을철 국이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-weekend-1', month: 9, title: '능이버섯삼계탕', subtitle: '향긋하고 진한 보양식',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-weekend-1/hero.webp',
     mainIngredient: '능이버섯',
     description: '닭과 능이버섯을 오래 고아낸, 향긋하고 진한 가을철 보양식이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-weekend-2', month: 9, title: '능이버섯불고기', subtitle: '향긋함을 더한 특별한 불고기',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-weekend-2/hero.webp',
     mainIngredient: '능이버섯',
     description: '소고기와 능이버섯을 함께 볶은, 향긋함이 더해진 특별한 불고기예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-weekend-3', month: 9, title: '능이버섯백숙', subtitle: '담백하고 향긋한 보양식',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 100, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-weekend-3/hero.webp',
     mainIngredient: '능이버섯',
     description: '닭과 능이버섯을 통째로 넣고 푹 고아낸, 담백하고 향긋한 가을철 보양식이에요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-weekend-4', month: 9, title: '능이버섯탕수', subtitle: '아삭하고 향긋한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-weekend-4/hero.webp',
     mainIngredient: '능이버섯',
     description: '튀긴 능이버섯에 새콤달콤한 탕수소스를 끼얹은, 아삭하고 향긋한 별미예요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesNeungiExpansion: Recipe[] = [
   {
     id: 'neungi-weekend-5', month: 9, title: '능이버섯장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-weekend-5/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 간장물에 절인, 오래 두고 먹기 좋은 향긋한 장아찌예요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-world-1', month: 9, title: '능이버섯 리조또', subtitle: '이탈리아식 크리미 쌀요리',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 귀한 야생버섯을 넣은 리조또가 고급 가을 요리로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-world-1/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 넣어 지은, 향긋하고 고급스러운 이탈리아식 가을 리조또예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-world-2', month: 9, title: '능이버섯 파스타', subtitle: '이탈리아식 응용 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아식 버섯파스타에 능이버섯을 응용하면 훨씬 진한 향의 고급스러운 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-world-2/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 마늘과 올리브오일에 볶아 파스타에 버무린, 향긋한 요리예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-world-3', month: 9, title: '능이버섯 크림수프', subtitle: '프랑스식 진한 버섯수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스식 버섯크림수프는 귀한 야생버섯을 갈아 넣어 만드는 것이 고급 요리의 정석이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-world-3/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 곱게 갈아 만든, 진하고 향긋한 프랑스식 크림수프예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-world-4', month: 9, title: '능이버섯 스티어프라이', subtitle: '중국식 마늘볶음',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 귀한 야생버섯을 마늘과 함께 센 불에 볶아 향을 살리는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-world-4/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 마늘과 함께 센 불에 볶은, 중국식 향긋한 채소볶음이에요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-world-5', month: 9, title: '능이버섯 그라탕', subtitle: '프랑스식 오븐구이',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '프랑스', note: '그라탕은 프랑스식 오븐구이 요리로, 귀한 버섯을 넣으면 고급스러운 전채가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-world-5/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 크림소스와 치즈로 구운, 프랑스식 고급스러운 오븐요리예요.',
     masterclass: {
@@ -457,7 +457,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-chef-1', month: 9, title: '능이버섯 도빈무시', subtitle: '일본식 찻주전자 찜 - 향을 가두는 그릇 찜',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '뚜껑 덮인 도빈(찻주전자)째 상에 올려, 손님이 직접 뚜껑을 열며 향이 퍼지는 순간을 경험하게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-chef-1/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯과 해산물을 작은 도자기 주전자에 담아 찐, 일본에서 마쓰타케버섯에 쓰는 고급 찜 기법을 응용한 요리예요.',
     masterclass: {
@@ -488,7 +488,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-chef-2', month: 9, title: '능이버섯 뒥셀', subtitle: '프랑스식 농축 버섯페이스트',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '작은 병에 담아 상에 올리고, 사용할 때는 토스트나 크로스티니 위에 두껍게 발라 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-chef-2/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯을 아주 잘게 다져 수분이 완전히 날아갈 때까지 볶은, 프랑스 요리의 기본 향미 재료예요.',
     masterclass: {
@@ -517,7 +517,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-chef-3', month: 9, title: '능이버섯 오일 인퓨전', subtitle: '저온 향 추출 오일',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 480, servings: 8,
     platingGuide: '작은 유리병에 담아 상에 올리고, 사용할 때는 파스타나 리조또, 스테이크에 마지막 순간 몇 방울 뿌려 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-chef-3/hero.webp',
     mainIngredient: '능이버섯',
     description: '건조시킨 능이버섯을 올리브오일에 저온으로 오래 침출시킨, 향이 응축된 모던 조미유예요.',
     masterclass: {
@@ -547,7 +547,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-chef-4', month: 9, title: '능이백숙', subtitle: '한국 전통 장시간 고음 보양식',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 180, servings: 4,
     platingGuide: '큰 뚝배기째 상에 올려 뽀얗게 우러난 국물과 부드러운 닭고기를 그대로 보여주며 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-chef-4/hero.webp',
     mainIngredient: '능이버섯',
     description: '닭과 능이버섯을 몇 시간에 걸쳐 뭉근히 고아낸, 한국 전통 보양식의 정수예요.',
     masterclass: {
@@ -577,7 +577,7 @@ export const recipesNeungiExpansion: Recipe[] = [
     id: 'neungi-chef-5', month: 9, title: '능이버섯 스테이크', subtitle: '통째로 시어링하는 모던 플레이팅',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '두툼하게 썬 능이버섯 스테이크를 나무판에 올려 고기스테이크처럼 슬라이스해 담고, 버터소스를 끼얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/neungi-chef-5/hero.webp',
     mainIngredient: '능이버섯',
     description: '능이버섯 갓을 두툼하게 통째로 썰어 스테이크처럼 시어링한, 버섯을 고기처럼 대접하는 모던 플레이팅이에요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-home-1', month: 11, title: '홍합탕', subtitle: '시원하고 진한 국물의 홍합탕',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-home-1/hero.webp',
     mainIngredient: '홍합',
     description: '쫄깃하고 진한 국물 맛을 내는 늦가을 홍합으로 끓인, 술안주로도 식사로도 좋은 시원한 탕이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-home-2', month: 11, title: '홍합미역국', subtitle: '쫄깃한 홍합으로 진한 국물 맛을 낸 미역국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-home-2/hero.webp',
     mainIngredient: '홍합',
     description: '쫄깃하고 진한 국물 맛을 내는 가을 홍합으로 끓인, 깊고 시원한 미역국이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-home-3', month: 11, title: '홍합찜', subtitle: '담백하고 시원한 술안주',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-home-3/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 마늘, 대파와 함께 찐, 담백하고 시원한 대표 술안주예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-home-4', month: 11, title: '홍합볶음', subtitle: '매콤하고 시원한 볶음',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-home-4/hero.webp',
     mainIngredient: '홍합',
     description: '홍합살을 매콤한 양념에 볶은, 시원하고 든든한 밥반찬이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-home-5', month: 11, title: '홍합밥', subtitle: '시원한 감칠맛의 별미밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601593768799-76c6d3f92dea?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-home-5/hero.webp',
     mainIngredient: '홍합',
     description: '홍합살을 넣어 지은, 시원한 감칠맛이 밥알에 배어드는 별미밥이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-weekend-1', month: 11, title: '홍합파스타', subtitle: '시원하고 감칠맛 나는 봉골레 응용',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-weekend-1/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 화이트와인과 마늘에 볶아 파스타에 버무린, 시원하고 감칠맛 나는 이탈리아식 요리예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-weekend-2', month: 11, title: '홍합전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-weekend-2/hero.webp',
     mainIngredient: '홍합',
     description: '홍합살을 반죽에 섞어 부친, 고소하고 든든한 별미전이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-weekend-3', month: 11, title: '홍합짬뽕', subtitle: '얼큰하고 시원한 별미 짬뽕',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-weekend-3/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 듬뿍 넣고 얼큰하게 끓인, 시원한 감칠맛의 별미 짬뽕이에요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-weekend-4', month: 11, title: '홍합튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-weekend-4/hero.webp',
     mainIngredient: '홍합',
     description: '홍합살을 반죽에 버무려 바삭하게 튀긴, 겉은 바삭하고 속은 탱탱한 튀김이에요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesMusselExpansion: Recipe[] = [
   {
     id: 'mussel-weekend-5', month: 11, title: '홍합순두부찌개', subtitle: '얼큰하고 시원한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-weekend-5/hero.webp',
     mainIngredient: '홍합',
     description: '홍합과 순두부를 얼큰하게 끓인, 시원한 감칠맛의 찌개예요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-world-1', month: 11, title: '무 마리니에르', subtitle: '프랑스식 화이트와인 홍합찜',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '프랑스', note: '물 마리니에르는 프랑스의 대표적인 홍합요리로, 화이트와인과 버터로 만든 국물이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-world-1/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 화이트와인과 버터, 샬롯에 찐, 프랑스의 대표적인 국민 요리예요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-world-2', month: 11, title: '홍합 팟타이', subtitle: '태국식 볶음 국수',
     category: '면요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '태국', note: '팟타이는 태국의 대표적인 볶음국수로, 다양한 해산물을 넣어 만들 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-world-2/hero.webp',
     mainIngredient: '홍합',
     description: '홍합살을 넣은, 새콤달콤하고 감칠맛 나는 태국식 볶음국수예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-world-3', month: 11, title: '홍합 파에야', subtitle: '스페인식 사프란 쌀요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '스페인', note: '파에야는 스페인 발렌시아의 대표 쌀요리로, 해산물을 넣은 버전이 특히 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-world-3/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 올려 지은, 스페인의 대표적인 해산물 파에야예요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-world-4', month: 11, title: '홍합 커리', subtitle: '태국식 향신 커리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '태국', note: '태국식 커리는 코코넛밀크와 커리페이스트를 기본으로, 다양한 해산물을 넣어 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-world-4/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 넣은, 향긋하고 매콤한 태국식 코코넛 커리예요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-world-5', month: 11, title: '홍합 차우더', subtitle: '미국식 진한 크림수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '미국', note: '차우더는 미국 뉴잉글랜드 지방의 대표적인 진한 크림수프예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-world-5/hero.webp',
     mainIngredient: '홍합',
     description: '홍합과 감자를 넣어 끓인, 진하고 든든한 미국식 크림수프예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-chef-1', month: 11, title: '무 알 라 비에르', subtitle: '벨기에식 맥주찜',
     category: '메인요리', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '큰 냄비째 상에 올려 김이 오르는 모습을 그대로 보여주고, 프리츠(감자튀김)를 곁들여 벨기에식 무프리트 상차림으로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-chef-1/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 벨기에 맥주에 찐, 무프리트(홍합과 감자튀김)의 벨기에 국민 요리예요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-chef-2', month: 11, title: '홍합 에스카베체', subtitle: '스페인식 식초절임 보존',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '작은 병에 담아 상에 올리고, 사용할 때는 접시에 덜어 크래커나 바게트와 함께 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-chef-2/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 식초와 향신료에 절인, 스페인 통조림 홍합(메히요네스 엔 에스카베체)의 전통 보존 기법이에요.',
     masterclass: {
@@ -520,7 +520,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-chef-3', month: 11, title: '홍합 하프쉘 그라탕', subtitle: '뉴질랜드식 마늘버터 그라탕',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '반쪽 껍데기에 담긴 홍합을 넓은 접시에 방사형으로 담아, 노릇하게 그을린 표면을 보여줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-chef-3/hero.webp',
     mainIngredient: '홍합',
     description: '뉴질랜드산 초록입홍합을 반쪽 껍데기에 담아 마늘버터와 빵가루로 구운, 파티용 인기 전채예요.',
     masterclass: {
@@ -551,7 +551,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-chef-4', month: 11, title: '팟차', subtitle: '태국식 바질 매운볶음',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '뜨거운 웍에서 바로 접시에 옮겨 담아 홀리바질의 향이 살아있는 모습을 그대로 보여줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-chef-4/hero.webp',
     mainIngredient: '홍합',
     description: '홍합을 고추페이스트와 홀리바질에 재빨리 볶은, 태국 남부의 화끈한 해산물 볶음이에요.',
     masterclass: {
@@ -581,7 +581,7 @@ export const recipesMusselExpansion: Recipe[] = [
     id: 'mussel-chef-5', month: 11, title: '홍합 비스크', subtitle: '프랑스식 껍데기 우린 진한 크림수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프접시에 담아 생크림을 살짝 두르고, 홍합살 몇 개와 차이브를 띄워 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mussel-chef-5/hero.webp',
     mainIngredient: '홍합',
     description: '홍합 껍데기를 으깨어 오래 우려낸 육수로 만든, 프랑스의 진하고 고급스러운 크림수프예요.',
     masterclass: {

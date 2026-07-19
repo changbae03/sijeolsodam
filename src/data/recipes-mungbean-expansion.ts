@@ -12,7 +12,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-home-1', month: 8, title: '녹두빈대떡', subtitle: '고소하고 바삭한 여름 전통 부침',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-home-1/hero.webp',
     mainIngredient: '녹두',
     description: '불린 녹두를 갈아 채소와 함께 부쳐낸, 고소하고 바삭한 전통 부침이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-home-2', month: 8, title: '숙주나물', subtitle: '녹두로 기른 아삭한 담백 나물',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-home-2/hero.webp',
     mainIngredient: '녹두',
     description: '녹두를 발아시켜 기른 숙주를 살짝 데쳐 무친, 아삭하고 담백한 기본 나물이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-home-3', month: 8, title: '녹두죽', subtitle: '부드럽고 속 편한 여름 보양죽',
     category: '죽', difficulty: '보통', level: 'home', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-home-3/hero.webp',
     mainIngredient: '녹두',
     description: '불린 녹두를 곱게 갈아 끓인, 부드럽고 속이 편안한 여름철 보양죽이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-home-4', month: 8, title: '숙주볶음', subtitle: '고소하게 볶아낸 기본 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-home-4/hero.webp',
     mainIngredient: '녹두',
     description: '숙주를 마늘기름에 볶아낸, 아삭하고 고소한 기본 볶음 반찬이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-home-5', month: 8, title: '녹두전', subtitle: '부드럽고 고소한 기본 부침',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-home-5/hero.webp',
     mainIngredient: '녹두',
     description: '불린 녹두를 갈아 간단하게 부친, 부드럽고 고소한 기본 전이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-weekend-1', month: 8, title: '탕평채', subtitle: '오색 채소를 곁들인 궁중요리',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-weekend-1/hero.webp',
     mainIngredient: '녹두',
     description: '녹두묵과 여러 채소를 색스럽게 무친, 조선시대 궁중요리 탕평채예요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-weekend-2', month: 8, title: '녹두빈대떡전골', subtitle: '고소하고 든든한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-weekend-2/hero.webp',
     mainIngredient: '녹두',
     description: '녹두빈대떡을 넣어 끓인, 고소하고 든든한 전골이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-weekend-3', month: 8, title: '숙주잡채', subtitle: '아삭함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-weekend-3/hero.webp',
     mainIngredient: '녹두',
     description: '기본 잡채에 숙주를 더해 아삭한 식감을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-weekend-4', month: 8, title: '녹두빈대떡 샌드위치', subtitle: '색다르게 즐기는 퓨전 브런치',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-weekend-4/hero.webp',
     mainIngredient: '녹두',
     description: '녹두빈대떡을 빵처럼 활용한, 색다르고 재미있는 퓨전 샌드위치예요.',
     masterclass: {
@@ -277,7 +277,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
   {
     id: 'mungbean-weekend-5', month: 8, title: '숙주냉채', subtitle: '아삭하고 시원한 여름 별미',
     category: '샐러드', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-weekend-5/hero.webp',
     mainIngredient: '녹두',
     description: '숙주와 여러 채소를 겨자소스에 무친, 아삭하고 시원한 여름 별미예요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-world-1', month: 8, title: '뤼따우 탕', subtitle: '중국식 녹두탕',
     category: '음료', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '중국', note: '뤼따우탕(绿豆汤)은 중국의 대표 여름 보양 음료로, 녹두를 끓여 만든 달콤한 탕이에요. 더위를 식혀주는 효능으로 유명해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-world-1/hero.webp',
     mainIngredient: '녹두',
     description: '녹두를 끓여 만든, 중국의 대표 여름 보양 음료예요.',
     masterclass: {
@@ -340,7 +340,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-world-2', month: 8, title: '달 카레', subtitle: '인도식 녹두 커리',
     category: '카레', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '인도', note: '달(dal)은 인도의 대표적인 콩요리로, 녹두를 비롯한 여러 콩을 향신료와 함께 끓여 만들어요. 밥이나 난에 곁들이는 인도의 국민 반찬이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-world-2/hero.webp',
     mainIngredient: '녹두',
     description: '녹두를 향신료와 함께 끓인, 인도의 대표적인 콩요리예요.',
     masterclass: {
@@ -370,7 +370,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-world-3', month: 8, title: '반쎄오', subtitle: '베트남식 녹두 부침개',
     category: '전요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '베트남', note: '반쎄오(bánh xèo)는 베트남의 대표적인 부침개로, 쌀가루 반죽에 녹두를 넣어 바삭하게 부치는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-world-3/hero.webp',
     mainIngredient: '녹두',
     description: '쌀가루 반죽에 녹두와 새우, 숙주를 넣어 바삭하게 부친, 베트남의 대표 부침개예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-world-4', month: 8, title: '태국식 녹두디저트', subtitle: '달콤한 코코넛 녹두 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '태국', note: '태국에서는 녹두를 삶아 코코넛밀크와 함께 달콤한 디저트로 즐기는 문화가 있어요. 카오니여우(찹쌀)와 함께 내는 경우도 많아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-world-4/hero.webp',
     mainIngredient: '녹두',
     description: '삶은 녹두에 코코넛밀크와 설탕을 더한, 달콤하고 부드러운 태국식 디저트예요.',
     masterclass: {
@@ -429,7 +429,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-world-5', month: 8, title: '그리스식 녹두수프', subtitle: '담백한 지중해식 콩수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스에서는 여러 콩류를 올리브오일과 레몬으로 담백하게 끓인 수프를 즐겨 먹어요. 녹두로 만들면 훨씬 부드러운 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-world-5/hero.webp',
     mainIngredient: '녹두',
     description: '녹두와 채소를 올리브오일에 끓인, 담백한 그리스식 콩수프예요.',
     masterclass: {
@@ -461,7 +461,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-chef-1', month: 8, title: '녹두 크림수프', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '얕은 수프 접시에 크림수프를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-chef-1/hero.webp',
     mainIngredient: '녹두',
     description: '녹두를 곱게 갈아 크림으로 부드럽게 마무리한, 고소한 프랑스식 수프예요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-chef-2', month: 8, title: '녹두 후무스', subtitle: '중동식 콩 디핑소스 재해석',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '넓은 접시에 후무스를 숟가락 뒷면으로 소용돌이 모양으로 펴 바르고, 중앙에 올리브오일 웅덩이를 만든 뒤 구운 잣과 파프리카가루를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-chef-2/hero.webp',
     mainIngredient: '녹두',
     description: '삶은 녹두를 타히니와 함께 갈아 만든, 병아리콩 후무스를 재해석한 디핑소스예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-chef-3', month: 8, title: '녹두전 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '긴 접시에 미니 녹두전을 일렬로 배치하고, 그 위에 사워크림과 훈제연어를 올린 뒤 딜로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-chef-3/hero.webp',
     mainIngredient: '녹두',
     description: '작게 부친 녹두전 위에 사워크림과 훈제연어를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-chef-4', month: 8, title: '녹두 리조또', subtitle: '고소하고 든든한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 구운 숙주 몇 가닥을 고명으로 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-chef-4/hero.webp',
     mainIngredient: '녹두',
     description: '녹두 퓌레를 넣어 고소함을 더한, 든든한 이탈리아식 리조또예요.',
     masterclass: {

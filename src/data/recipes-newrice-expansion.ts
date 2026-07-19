@@ -14,7 +14,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-home-1', month: 9, title: '햅쌀밥', subtitle: '그해 첫 수확한 쌀로 짓는 향긋한 밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-home-1/hero.webp',
     mainIngredient: '햅쌀',
     description: '특별한 양념 없이 그냥 지어도, 향긋하고 차진 햅쌀밥 자체가 별미예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-home-2', month: 9, title: '햅쌀누룽지', subtitle: '구수하고 고소한 별미',
     category: '간식', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-home-2/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀밥을 얇게 눌어붙게 구운, 구수하고 고소한 누룽지예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-home-3', month: 9, title: '햅쌀주먹밥', subtitle: '고소하고 간편한 별미',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-home-3/hero.webp',
     mainIngredient: '햅쌀',
     description: '갓 지은 햅쌀밥을 동그랗게 뭉친, 고소하고 간편한 별미 주먹밥이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-home-4', month: 9, title: '햅쌀죽', subtitle: '부드럽고 향긋한 보양죽',
     category: '죽', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-home-4/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀을 곱게 끓인, 부드럽고 향긋한 가을철 보양죽이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-home-5', month: 9, title: '햅쌀떡', subtitle: '쫄깃하고 향긋한 가을 별미',
     category: '디저트', difficulty: '보통', level: 'home', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-home-5/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀가루를 쪄서 만든, 쫄깃하고 향긋한 가을철 떡이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-weekend-1', month: 9, title: '햅쌀솥밥', subtitle: '향긋하고 고소한 별미밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-weekend-1/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀을 버섯과 함께 솥에 지은, 향긋하고 고소한 가을철 별미밥이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-weekend-2', month: 9, title: '햅쌀약식', subtitle: '달콤하고 쫄깃한 명절 별미',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-weekend-2/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀찹쌀을 밤, 대추와 함께 달콤하게 찐, 쫄깃한 명절 별미예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-weekend-3', month: 9, title: '햅쌀식혜', subtitle: '달콤하고 시원한 전통 음료',
     category: '음료', difficulty: '보통', level: 'weekend', cookTime: 480, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-weekend-3/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀밥을 엿기름물에 삭힌, 달콤하고 시원한 한국 전통 음료예요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-weekend-4', month: 9, title: '햅쌀김밥', subtitle: '고소하고 든든한 별미 김밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-weekend-4/hero.webp',
     mainIngredient: '햅쌀',
     description: '갓 지은 햅쌀밥으로 만든, 고소하고 든든한 별미 김밥이에요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
   {
     id: 'newrice-weekend-5', month: 9, title: '햅쌀전', subtitle: '고소하고 쫄깃한 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-weekend-5/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀밥을 반죽해 부친, 고소하고 쫄깃한 별미전이에요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-world-1', month: 9, title: '라이스푸딩', subtitle: '서양식 우유조림 디저트',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '영국', note: '라이스푸딩은 영국을 비롯한 여러 유럽 국가의 전통 디저트로, 쌀을 우유에 은근히 조려 만드는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-world-1/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀을 우유와 설탕에 은근히 조린, 부드럽고 달콤한 서양식 쌀 디저트예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-world-2', month: 9, title: '오니기리', subtitle: '일본식 삼각 주먹밥',
     category: '밥', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '일본', note: '오니기리는 일본의 대표적인 삼각 주먹밥으로, 다양한 속재료를 채워 즐기는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-world-2/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀밥에 속재료를 채워 삼각으로 빚은, 일본의 대표적인 주먹밥이에요.',
     masterclass: {
@@ -362,7 +362,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-world-3', month: 9, title: '리조볼라', subtitle: '이탈리아식 쌀볼 튀김',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '이탈리아', note: '아란치니는 남은 리조또를 튀겨 만드는 시칠리아의 대표 간식이에요. 햅쌀로 만들면 훨씬 향긋한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-world-3/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀밥에 치즈를 넣고 동그랗게 빚어 튀긴, 이탈리아 시칠리아의 대표 간식이에요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-world-4', month: 9, title: '나시고랭', subtitle: '인도네시아식 볶음밥',
     category: '밥', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '인도네시아', note: '나시고랭은 인도네시아의 대표 볶음밥으로, 케첩마니스(단 간장소스)가 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-world-4/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀밥을 달콤짭짤한 케첩마니스에 볶은, 인도네시아의 대표 볶음밥이에요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-world-5', month: 9, title: '콘지', subtitle: '중국식 흰죽',
     category: '죽', difficulty: '아주 쉬움', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '중국', note: '콘지(粥)는 중국의 대표적인 쌀죽으로, 담백하게 끓여 다양한 고명을 올려 먹는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-world-5/hero.webp',
     mainIngredient: '햅쌀',
     description: '햅쌀을 넉넉한 물에 오래 끓인, 담백한 중국식 흰죽이에요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-chef-1', month: 9, title: '파에야 소카랏', subtitle: '스페인식 눌은밥 크러스트 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '파에야 팬째 상에 올려, 숟가락으로 바닥의 바삭한 소카랏을 긁어 함께 뜨도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-chef-1/hero.webp',
     mainIngredient: '햅쌀',
     description: '해산물과 사프란으로 지은 스페인식 쌀요리에서, 냄비 바닥에 일부러 눌은 바삭한 크러스트를 만드는 정통 기법이에요.',
     masterclass: {
@@ -483,7 +483,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-chef-2', month: 9, title: '햅쌀 막걸리', subtitle: '한국 전통 쌀 발효주 제조',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 90, servings: 10,
     platingGuide: '막걸리를 병에 담아 상에 올리고, 마시기 전 잘 흔들어 뿌옇게 만든 뒤 사기잔에 따라 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-chef-2/hero.webp',
     mainIngredient: '햅쌀',
     description: '갓 수확한 햅쌀을 누룩으로 발효시켜 만든, 한국의 전통적인 쌀 발효주예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-chef-3', month: 9, title: '라이스 브륄레', subtitle: '서양식 우유조림+토치 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '라메킨째 서빙하고, 상 앞에서 설탕을 뿌려 토치로 그을려 바삭한 캐러멜층을 만드는 순간을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-chef-3/hero.webp',
     mainIngredient: '햅쌀',
     description: '크리미하게 조린 라이스푸딩 위에 설탕을 그을려 바삭한 캐러멜층을 입힌, 크렘 브륄레 기법을 응용한 디저트예요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-chef-4', month: 9, title: '야키오니기리', subtitle: '일본식 미소구이 주먹밥',
     category: '밥', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '꼬치에 꽂거나 접시에 담아, 겉면의 그을린 미소소스 무늬가 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-chef-4/hero.webp',
     mainIngredient: '햅쌀',
     description: '주먹밥 겉면에 미소소스를 발라 직화로 구운, 일본 이자카야의 대표적인 밥 요리예요.',
     masterclass: {
@@ -576,7 +576,7 @@ export const recipesNewRiceExpansion: Recipe[] = [
     id: 'newrice-chef-5', month: 9, title: '쌀강정', subtitle: '팽화 기법',
     category: '간식', difficulty: '보통', level: 'chef', cookTime: 60, servings: 8,
     platingGuide: '완성된 쌀강정을 사각으로 썰어 접시에 가지런히 담고, 색색의 고명이 겉면에 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newrice-chef-5/hero.webp',
     mainIngredient: '햅쌀',
     description: '쌀을 튀겨 뻥튀기처럼 팽창시킨 뒤 조청에 버무려 굳힌, 한국 전통 명절 과자예요.',
     masterclass: {

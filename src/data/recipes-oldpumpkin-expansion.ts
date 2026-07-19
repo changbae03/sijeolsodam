@@ -12,7 +12,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-home-1', month: 10, title: '늙은호박죽', subtitle: '가을 햇볕을 머금은 진한 단맛',
     category: '죽', difficulty: '보통', level: 'home', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-home-1/hero.webp',
     mainIngredient: '늙은호박',
     description: '서리가 내리기 시작하며 달큰한 맛이 응축된 늙은호박으로 끓인, 구수하고 소화가 편한 죽이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-home-2', month: 10, title: '호박전', subtitle: '달콤하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-home-2/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 채 썰어 반죽에 섞어 부친, 달콤하고 고소한 별미전이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-home-3', month: 10, title: '호박고지나물', subtitle: '쫄깃하고 담백한 밑반찬',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-home-3/hero.webp',
     mainIngredient: '늙은호박',
     description: '말린 호박고지를 불려 볶아낸, 쫄깃하고 담백한 겨울철 밑반찬이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-home-4', month: 10, title: '호박된장국', subtitle: '구수하고 달콤한 가을 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-home-4/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 넣어 끓인 된장국으로, 구수하고 은은한 단맛이 매력적이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-home-5', month: 10, title: '호박범벅', subtitle: '달콤하고 든든한 간식',
     category: '간식', difficulty: '쉬움', level: 'home', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-home-5/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박과 콩, 찹쌀을 함께 끓인, 달콤하고 든든한 전통 간식이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-weekend-1', month: 10, title: '호박찜케이크', subtitle: '촉촉하고 건강한 떡 케이크',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-weekend-1/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 넣어 찐, 촉촉하고 건강한 떡 스타일 케이크예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-weekend-2', month: 10, title: '호박수제비', subtitle: '구수하고 든든한 가을 별미',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-weekend-2/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 넣어 끓인 국물에 수제비를 뜯어 넣은, 구수하고 든든한 가을 별미예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-weekend-3', month: 10, title: '호박식혜', subtitle: '향긋하고 달콤한 전통 음료',
     category: '음료', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-weekend-3/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 더해 만든, 향긋하고 은은한 단맛의 전통 식혜예요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-weekend-4', month: 10, title: '호박고지떡', subtitle: '쫄깃하고 향긋한 전통 떡',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-weekend-4/hero.webp',
     mainIngredient: '늙은호박',
     description: '불린 호박고지를 멥쌀가루에 섞어 찐, 쫄깃하고 향긋한 전통 떡이에요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
   {
     id: 'oldpumpkin-weekend-5', month: 10, title: '늙은호박탕수', subtitle: '바삭달콤한 별미 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-weekend-5/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 바삭하게 튀겨 새콤달콤한 탕수소스에 버무린, 색다른 별미예요.',
     masterclass: {
@@ -309,7 +309,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-world-1', month: 10, title: '펌킨 파이', subtitle: '미국의 대표 가을 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 80, servings: 8,
     cuisineContext: { country: '미국', note: '펌킨 파이는 미국 추수감사절의 대표 디저트예요. 늙은호박을 계핏가루, 넛맥 같은 향신료와 함께 커스터드 필링으로 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-world-1/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박 퓌레에 향신료를 더한 필링을 파이지에 채워 구운, 미국의 대표 가을 디저트예요.',
     masterclass: {
@@ -339,7 +339,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-world-2', month: 10, title: '주카 그라탕', subtitle: '이탈리아식 호박 그라탕',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '이탈리아', note: '주카(zucca)는 이탈리아어로 호박을 뜻해요. 이탈리아에서는 늙은호박을 얇게 저며 그라탕이나 라비올리 소로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-world-2/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 얇게 저며 뵈샤멜소스와 함께 구운, 이탈리아식 그라탕이에요.',
     masterclass: {
@@ -370,7 +370,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-world-3', month: 10, title: '호박 벨루테', subtitle: '프랑스식 부드러운 호박수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '프랑스', note: '벨루테(velouté)는 프랑스 클래식 수프 기법으로, 늙은호박은 벨루테로 만들기에 특히 좋은 재료예요. 부드러운 질감과 진한 색감이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-world-3/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 곱게 갈아 크림으로 마무리한, 부드럽고 진한 프랑스식 수프예요.',
     masterclass: {
@@ -401,7 +401,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-world-4', month: 10, title: '카보차 니모노', subtitle: '일본식 호박 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '일본', note: '카보차(かぼちゃ)는 일본어로 호박을 뜻해요. 일본에서는 호박을 다시육수에 은근히 졸이는 니모노가 대표적인 가정식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-world-4/hero.webp',
     mainIngredient: '늙은호박',
     description: '다시육수에 늙은호박을 은근히 졸인, 담백하고 깊은 맛의 일본식 조림이에요.',
     masterclass: {
@@ -430,7 +430,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-world-5', month: 10, title: '칼라바사 엔 타차', subtitle: '멕시코식 호박 콩피테',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 90, servings: 6,
     cuisineContext: { country: '멕시코', note: '칼라바사 엔 타차(calabaza en tacha)는 멕시코 죽은 자들의 날에 즐기는 전통 디저트로, 호박을 시나몬과 흑설탕에 은근히 조려 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-world-5/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 시나몬과 흑설탕에 은근히 조린, 멕시코의 전통 명절 디저트예요.',
     masterclass: {
@@ -461,7 +461,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-chef-1', month: 10, title: '늙은호박 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 55, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 작게 썬 늙은호박 조각과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-chef-1/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박 육수를 달걀흰자로 맑게 정제한, 투명하면서도 은은한 단맛의 콩소메예요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-chef-2', month: 10, title: '늙은호박 판나코타', subtitle: '이탈리아 크림 디저트에 호박향을',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 캐러멜소스와 호박씨를 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-chef-2/hero.webp',
     mainIngredient: '늙은호박',
     description: '부드러운 이탈리아식 크림 디저트에 늙은호박 퓌레를 섞은, 향긋한 가을 디저트예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-chef-3', month: 10, title: '늙은호박 리조또', subtitle: '고소하고 든든한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 구운 세이지잎을 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-chef-3/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박 퓌레를 넣어 고소함을 더한, 든든한 이탈리아식 리조또예요.',
     masterclass: {
@@ -555,7 +555,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-chef-4', month: 10, title: '늙은호박 뇨끼', subtitle: '부드러운 이탈리아식 감자경단',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '깊은 접시에 뇨끼를 담고 브라운버터소스를 끼얹은 뒤, 구운 호박씨를 흩뿌리고 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-chef-4/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박을 넣어 반죽한 부드러운 뇨끼에, 브라운버터소스를 곁들인 이탈리아식 파스타예요.',
     masterclass: {
@@ -587,7 +587,7 @@ export const recipesOldPumpkinExpansion: Recipe[] = [
     id: 'oldpumpkin-chef-5', month: 10, title: '늙은호박 크렘브륄레', subtitle: '바삭한 캐러멜을 곁들인 프랑스식 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '작은 라메킨에 크렘브륄레를 담고, 설탕을 뿌려 토치로 캐러멜라이즈한 뒤 바로 서빙합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oldpumpkin-chef-5/hero.webp',
     mainIngredient: '늙은호박',
     description: '늙은호박 퓌레를 섞은 부드러운 커스터드에 바삭한 캐러멜을 올린, 우아한 프랑스식 디저트예요.',
     masterclass: {

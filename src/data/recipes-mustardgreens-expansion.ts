@@ -12,7 +12,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-home-1', month: 8, title: '갓김치', subtitle: '알싸하고 향긋한 대표 김치',
     category: '김치', difficulty: '보통', level: 'home', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1583224944844-5b268c057b72?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-home-1/hero.webp',
     mainIngredient: '갓',
     description: '알싸하고 향긋한 갓으로 담근, 익을수록 깊은 풍미가 더해지는 대표 김치예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-home-2', month: 8, title: '갓나물무침', subtitle: '알싸하고 고소한 기본 나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-home-2/hero.webp',
     mainIngredient: '갓',
     description: '데친 갓을 들기름에 고소하게 무친, 알싸한 향이 매력적인 기본 나물이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-home-3', month: 8, title: '갓겉절이', subtitle: '알싸한 즉석 겉절이',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-home-3/hero.webp',
     mainIngredient: '갓',
     description: '갓을 매콤달콤한 양념에 무쳐낸, 알싸한 향이 입맛을 돋우는 즉석 겉절이예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-home-4', month: 8, title: '갓된장국', subtitle: '알싸함이 도는 구수한 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-home-4/hero.webp',
     mainIngredient: '갓',
     description: '갓을 넣어 끓인 된장국으로, 알싸함과 구수함이 함께 느껴지는 별미 국이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-home-5', month: 8, title: '갓전', subtitle: '알싸하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-home-5/hero.webp',
     mainIngredient: '갓',
     description: '갓을 반죽에 섞어 부친, 알싸한 향이 고소하게 살아있는 전이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-weekend-1', month: 8, title: '갓김치찌개', subtitle: '알싸하고 깊은 얼큰한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-weekend-1/hero.webp',
     mainIngredient: '갓',
     description: '잘 익은 갓김치와 돼지고기로 끓인, 알싸하고 깊은 얼큰한 찌개예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-weekend-2', month: 8, title: '갓삼겹살쌈', subtitle: '알싸함이 느끼함을 잡아주는 쌈',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-weekend-2/hero.webp',
     mainIngredient: '갓',
     description: '구운 삼겹살을 갓잎에 싸 먹는, 알싸함이 느끼함을 확실하게 잡아주는 별미예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-weekend-3', month: 8, title: '갓비빔국수', subtitle: '알싸하고 새콤한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-weekend-3/hero.webp',
     mainIngredient: '갓',
     description: '소면에 갓김치와 매콤한 양념을 비벼낸, 알싸하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-weekend-4', month: 8, title: '갓만두', subtitle: '알싸함이 살아있는 손만두',
     category: '만두', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-weekend-4/hero.webp',
     mainIngredient: '갓',
     description: '갓과 돼지고기로 속을 채운, 알싸한 향이 살아있는 손만두예요.',
     masterclass: {
@@ -277,7 +277,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
   {
     id: 'mustardgreens-weekend-5', month: 8, title: '갓전복죽', subtitle: '알싸함을 더한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-weekend-5/hero.webp',
     mainIngredient: '갓',
     description: '전복죽에 갓을 고명으로 올려, 알싸한 향으로 개운함을 더한 보양죽이에요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-world-1', month: 8, title: '가라시나노 오히타시', subtitle: '일본식 알싸한 나물무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '가라시나(からし菜)는 일본어로 갓을 뜻해요. 일본에서도 갓을 데쳐서 간장육수에 무치는 오히타시로 즐기는 지역 요리가 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-world-1/hero.webp',
     mainIngredient: '갓',
     description: '데친 갓을 다시육수 양념에 무친, 담백하고 알싸한 일본식 반찬이에요.',
     masterclass: {
@@ -340,7 +340,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-world-2', month: 8, title: '지에차이 볶음', subtitle: '중국식 갓 마늘볶음',
     category: '볶음', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '지에차이(芥菜)는 중국어로 갓을 뜻해요. 중국 남부 지방에서는 갓을 마늘과 굴소스로 간단히 볶아 먹는 것이 흔한 가정식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-world-2/hero.webp',
     mainIngredient: '갓',
     description: '마늘과 굴소스로 센 불에 빠르게 볶은, 중국식 갓 볶음이에요.',
     masterclass: {
@@ -370,7 +370,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-world-3', month: 8, title: '갓 알리오 올리오', subtitle: '이탈리아식 알싸한 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 브로콜리 라베 같은 쌉싸름한 잎채소를 마늘, 올리브오일과 함께 파스타에 즐겨 넣어요. 갓을 쓰면 씹는 맛이 좋은 색다른 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-world-3/hero.webp',
     mainIngredient: '갓',
     description: '갓을 마늘, 올리브오일에 볶아 파스타에 버무린, 알싸하고 향긋한 한 그릇이에요.',
     masterclass: {
@@ -402,7 +402,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-world-4', month: 8, title: '사르손 카 사그', subtitle: '인도 펀자브식 갓 커리',
     category: '카레', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '인도', note: '사르손 카 사그(sarson ka saag)는 인도 펀자브 지방의 대표 요리로, 갓(사르손)을 향신료와 함께 곱게 끓여 만드는 진한 채소 커리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-world-4/hero.webp',
     mainIngredient: '갓',
     description: '갓을 향신료와 함께 곱게 끓여 만든, 인도 펀자브식 진한 채소 커리예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-world-5', month: 8, title: '서던 스타일 갓 조림', subtitle: '미국 남부식 베이컨 갓조림',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '미국(남부)', note: '미국 남부에서는 콜라드그린이나 머스타드그린(갓)을 베이컨과 함께 오래 조려 먹는 것이 전통 소울푸드예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-world-5/hero.webp',
     mainIngredient: '갓',
     description: '갓을 베이컨과 함께 은근히 조린, 미국 남부식 소울푸드 반찬이에요.',
     masterclass: {
@@ -466,7 +466,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-chef-1', month: 8, title: '갓 페스토 파스타', subtitle: '이탈리아식 알싸한 페스토',
     category: '파스타', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '넓은 접시에 차가운 파스타를 둥지 모양으로 담고, 그 위에 갓 페스토를 스푼으로 얹은 뒤 견과류를 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-chef-1/hero.webp',
     mainIngredient: '갓',
     description: '갓을 갈아 만든 알싸한 페스토를 파스타에 버무린, 개성 있는 이탈리아식 요리예요.',
     masterclass: {
@@ -497,7 +497,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-chef-2', month: 8, title: '갓 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 갓과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-chef-2/hero.webp',
     mainIngredient: '갓',
     description: '갓 육수를 달걀흰자로 맑게 정제한, 투명하면서도 알싸한 향의 콩소메예요.',
     masterclass: {
@@ -528,7 +528,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-chef-3', month: 8, title: '갓 오일 콩피 흰살생선', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 갓오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-chef-3/hero.webp',
     mainIngredient: '갓',
     description: '갓으로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 향긋한 요리예요.',
     masterclass: {
@@ -560,7 +560,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-chef-4', month: 8, title: '갓 리조또', subtitle: '알싸함이 살아있는 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 갓오일을 몇 방울 떨어뜨려 자연스러운 무늬를 만든 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-chef-4/hero.webp',
     mainIngredient: '갓',
     description: '갓을 갈아 넣어 은은한 초록빛을 낸, 알싸한 향이 가득한 이탈리아식 리조또예요.',
     masterclass: {
@@ -592,7 +592,7 @@ export const recipesMustardGreensExpansion: Recipe[] = [
     id: 'mustardgreens-chef-5', month: 8, title: '갓 카르파치오', subtitle: '얇게 저민 갓의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 갓을 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mustardgreens-chef-5/hero.webp',
     mainIngredient: '갓',
     description: '얇게 저민 갓 줄기에 올리브오일과 레몬을 더한, 알싸한 향을 즐기는 전채예요.',
     masterclass: {

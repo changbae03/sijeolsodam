@@ -44,7 +44,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-home-2', month: 3, title: '숭어구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-home-2/hero.webp',
     mainIngredient: '숭어',
     description: '숭어에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-home-3', month: 3, title: '숭어조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-home-3/hero.webp',
     mainIngredient: '숭어',
     description: '무를 깔고 숭어를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-home-4', month: 3, title: '숭어찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-home-4/hero.webp',
     mainIngredient: '숭어',
     description: '숭어를 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-home-5', month: 3, title: '숭어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-home-5/hero.webp',
     mainIngredient: '숭어',
     description: '숭어와 채소를 넣고 얼큰하게 끓인, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-weekend-1', month: 3, title: '숭어무침회', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-weekend-1/hero.webp',
     mainIngredient: '숭어',
     description: '숭어회를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-weekend-2', month: 3, title: '숭어전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-weekend-2/hero.webp',
     mainIngredient: '숭어',
     description: '숭어살에 밀가루옷을 입혀 부친, 담백하고 부드러운 전이에요.',
     masterclass: {
@@ -220,7 +220,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-weekend-3', month: 3, title: '숭어튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-weekend-3/hero.webp',
     mainIngredient: '숭어',
     description: '숭어살을 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -249,7 +249,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-weekend-4', month: 3, title: '숭어초밥', subtitle: '담백함이 살아있는 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-weekend-4/hero.webp',
     mainIngredient: '숭어',
     description: '얇게 썬 숭어를 초밥용 밥 위에 올린, 담백하고 깔끔한 초밥이에요.',
     masterclass: {
@@ -278,7 +278,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-weekend-5', month: 3, title: '숭어묵은지찜', subtitle: '깊은 감칠맛의 별미 찜',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-weekend-5/hero.webp',
     mainIngredient: '숭어',
     description: '숭어를 묵은지와 함께 조린, 깊고 시원한 감칠맛의 별미 찜이에요.',
     masterclass: {
@@ -310,7 +310,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-world-1', month: 3, title: '보라 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 숭어(리사)는 스페인 남부 해안에서 흔히 즐기는 생선이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-world-1/hero.webp',
     mainIngredient: '숭어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 숭어예요.',
     masterclass: {
@@ -340,7 +340,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-world-2', month: 3, title: '보라노 시오야키', subtitle: '일본식 숭어 소금구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '보라(ボラ)는 일본어로 숭어를 뜻해요. 일본에서는 숭어를 소금구이나 어란(카라스미)의 원재료로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-world-2/hero.webp',
     mainIngredient: '숭어',
     description: '숭어에 소금간만 해서 구운, 일본식 담백한 생선구이예요.',
     masterclass: {
@@ -370,7 +370,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-world-3', month: 3, title: '숭어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-world-3/hero.webp',
     mainIngredient: '숭어',
     description: '토마토와 화이트와인에 숭어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -401,7 +401,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-world-4', month: 3, title: '그리스식 숭어구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 숭어(케팔로스)를 신선한 생선으로 즐기는 문화가 오래됐고, 올리브오일과 레몬으로 심플하게 굽는 것이 전통이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-world-4/hero.webp',
     mainIngredient: '숭어',
     description: '숭어를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -430,7 +430,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-world-5', month: 3, title: '피시 앤 칩스', subtitle: '영국의 대표 국민 음식',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '영국', note: '피시앤칩스는 영국의 대표적인 국민 음식으로, 흰살생선을 맥주 반죽에 튀겨 두꺼운 감자튀김과 함께 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-world-5/hero.webp',
     mainIngredient: '숭어',
     description: '숭어를 맥주 반죽에 바삭하게 튀겨 두꺼운 감자튀김과 함께 내는, 영국의 대표 국민 음식이에요.',
     masterclass: {
@@ -462,7 +462,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-chef-1', month: 3, title: '숭어어란(보타르가)', subtitle: '염장·건조 기법의 정수',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '완성된 어란을 얇게 저며 파스타나 카르파치오 위에 눈처럼 갈아 뿌리거나, 그 자체로 얇게 썰어 올리브오일과 함께 작은 접시에 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-chef-1/hero.webp',
     mainIngredient: '숭어',
     description: '숭어알을 소금에 절여 압착한 뒤 서서히 말린, 지중해와 일본에서 공통적으로 발달한 최고급 저장 식재료예요.',
     masterclass: {
@@ -493,7 +493,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-chef-2', month: 3, title: '소금크러스트 숭어구이', subtitle: '통생선 밀봉 베이킹 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '소금크러스트를 통째로 상 위에 올려 손님 앞에서 망치나 칼등으로 깨뜨리는 퍼포먼스를 연출하고, 크러스트를 걷어낸 뒤 살만 발라 접시에 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-chef-2/hero.webp',
     mainIngredient: '숭어',
     description: '통숭어를 두꺼운 소금 반죽으로 완전히 밀봉해 오븐에 구운, 지중해와 중국에서 공통으로 발달한 극적인 조리법이에요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-chef-3', month: 3, title: '푸아송 크뤼', subtitle: '타히티식 코코넛밀크 회',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 코코넛볼에 숭어와 채소를 소복이 담고, 코코넛밀크국물을 자작하게 부은 뒤 라임 제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-chef-3/hero.webp',
     mainIngredient: '숭어',
     description: '라임즙에 재운 생선을 코코넛밀크에 버무린, 타히티의 국민 요리를 재해석한 전채예요.',
     masterclass: {
@@ -555,7 +555,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-chef-4', month: 3, title: '피시파이', subtitle: '영국식 매시드포테이토 베이킹',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '오븐용 그라탕 그릇째 상에 올려 매시드포테이토 표면이 노릇하게 그을린 모습을 그대로 보여주고, 숟가락으로 떠서 개인 접시에 나눠 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-chef-4/hero.webp',
     mainIngredient: '숭어',
     description: '크림소스에 익힌 숭어살 위에 매시드포테이토를 덮어 구운, 영국의 대표적인 겨울철 가정식이에요.',
     masterclass: {
@@ -586,7 +586,7 @@ export const recipesMulletExpansion: Recipe[] = [
     id: 'mullet-chef-5', month: 3, title: '숭어 테린', subtitle: '프랑스식 압착 냉테린',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '테린을 틀에서 꺼내 두툼하게 슬라이스해 접시에 눕혀 담고, 코르니숑과 겨자, 바게트를 곁들여 클래식하게 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-chef-5/hero.webp',
     mainIngredient: '숭어',
     description: '숭어살과 채소를 층층이 쌓아 눌러 굳힌, 프랑스 정통 요리의 차가운 압착 요리예요.',
     masterclass: {

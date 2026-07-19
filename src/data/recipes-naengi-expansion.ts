@@ -10,7 +10,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-home-1', month: 3, title: '냉이무침', subtitle: '봄의 첫 향을 그대로 담은 기본 나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-home-1/hero.webp',
     mainIngredient: '냉이', description: '뿌리째 캐낸 냉이를 데쳐 된장과 들기름으로 무친, 봄을 가장 먼저 알리는 향긋한 나물이에요.',
     masterclass: {
       chefIntro: '냉이는 뿌리에 향이 가장 진하게 모여있는 채소라서, 다른 봄나물과 달리 뿌리를 버리지 않고 함께 무치는 게 중요해요. 흙 속에서 겨울을 견디고 올라온 뿌리라 그만큼 향과 영양이 깊게 응축되어 있거든요. 다듬는 데 시간이 좀 걸리지만, 그 수고를 들인 만큼 향이 확실히 다르게 느껴져요.',
@@ -54,7 +54,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-home-2', month: 3, title: '냉이전', subtitle: '봄 향을 가득 채운 기본 전',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-home-2/hero.webp',
     mainIngredient: '냉이', description: '잘게 썬 냉이를 반죽에 섞어 부친, 향긋한 봄의 향이 가득한 전이에요.',
     masterclass: {
       chefIntro: '냉이전은 다른 봄나물전보다 향이 한층 진하게 느껴져요. 뿌리째 다지기 때문에 그 안에 응축된 향이 반죽 전체에 퍼지거든요. 부치는 동안 집안 가득 퍼지는 그 향이 이 전의 가장 큰 매력이에요.',
@@ -86,7 +86,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-home-3', month: 3, title: '냉이 콩가루무침', subtitle: '구수한 콩가루를 입힌 봄나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-home-3/hero.webp',
     mainIngredient: '냉이', description: '데친 냉이에 콩가루를 입혀 구수하게 무친, 강원도식 봄나물 반찬이에요.',
     masterclass: {
       chefIntro: '콩가루를 입혀 무치는 방식은 강원도 산골 지역에서 흔히 만나는 조리법이에요. 냉이의 흙내와 콩가루의 구수함이 만나면, 일반 무침보다 훨씬 깊고 든든한 맛이 나요.',
@@ -116,7 +116,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-weekend-1', month: 3, title: '냉이 솥밥', subtitle: '향긋한 봄을 그대로 지어낸 솥밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-weekend-1/hero.webp',
     mainIngredient: '냉이', description: '쌀과 함께 지어 뚜껑을 여는 순간 봄 향이 확 퍼지는, 정성스러운 봄철 솥밥이에요.',
     masterclass: {
       chefIntro: '솥밥은 뚜껑을 여는 순간의 향이 절반이에요. 냉이를 밥 위에 올려 함께 지으면, 밥이 다 되는 동안 냉이 향이 밥알 사이사이로 스며들어요. 그 향을 가장 잘 느끼려면 뚜껑을 열고 바로 비비지 말고, 한 번 숨을 깊게 들이마시는 순간을 즐겨보세요.',
@@ -150,7 +150,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-weekend-2', month: 3, title: '냉이 두부전', subtitle: '부드러운 두부와 향긋한 냉이의 조화',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-weekend-2/hero.webp',
     mainIngredient: '냉이', description: '으깬 두부에 냉이를 더해 부친, 부드러운 식감과 향긋함이 함께 살아있는 전이에요.',
     masterclass: {
       chefIntro: '두부의 부드러움과 냉이의 흙내가 만나면, 의외로 깊은 조화가 느껴져요. 두부가 냉이의 강한 향을 부드럽게 받쳐주는 역할을 해요.',
@@ -186,7 +186,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-weekend-3', month: 3, title: '냉이 떡국', subtitle: '향긋한 봄 향을 더한 떡국',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-weekend-3/hero.webp',
     mainIngredient: '냉이', description: '맑은 떡국에 냉이를 더해, 명절 음식이 봄철 별미로 다시 태어난 메뉴예요.',
     masterclass: {
       chefIntro: '떡국은 보통 명절에만 먹는 음식이라 생각하기 쉬운데, 냉이를 더하면 봄철에 새롭게 즐길 수 있는 메뉴가 돼요. 떡의 쫄깃함과 냉이의 향긋함이 의외로 잘 어울려요.',
@@ -215,7 +215,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-weekend-4', month: 3, title: '냉이 크림 리소토', subtitle: '향긋한 봄나물을 더한 이탈리아풍 리소토',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-weekend-4/hero.webp',
     mainIngredient: '냉이', description: '크리미한 리소토에 냉이를 더해, 이탈리아 요리와 한식 봄나물이 만나는 색다른 메뉴예요.',
     masterclass: {
       chefIntro: '리소토는 어떤 재료를 더해도 부드럽게 받아주는 베이스 요리라서, 냉이 같은 향 강한 한식 재료를 더해도 의외로 자연스럽게 어우러져요. 파마산의 짠맛과 냉이의 흙내가 묘하게 잘 맞아요.',
@@ -248,7 +248,7 @@ export const recipesNaengiExpansion: Recipe[] = [
   {
     id: 'naengi-weekend-5', month: 3, title: '냉이 만두', subtitle: '향긋한 봄나물을 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-weekend-5/hero.webp',
     mainIngredient: '냉이', description: '다진 냉이를 듬뿍 넣어 빚은 만두로, 한입 베어 물면 봄의 흙내가 입안 가득 퍼져요.',
     masterclass: {
       chefIntro: '냉이만두는 다른 봄나물만두보다 향이 한층 깊어요. 뿌리째 다진 냉이가 만두 속에서 그 진한 향을 그대로 전해주거든요.',
@@ -284,7 +284,7 @@ export const recipesNaengiExpansion: Recipe[] = [
       country: '이탈리아',
       note: '미네스트로네는 이탈리아 가정에서 그때그때 있는 채소를 활용해 끓이는 수프예요. 봄에는 채소가 더 다양해지는데, 냉이 같은 향 강한 채소를 더하면 봄철 특유의 깊은 풍미가 더해져요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-world-1/hero.webp',
     mainIngredient: '냉이', description: '토마토 베이스 수프에 냉이를 더한, 봄나물의 향긋함이 이탈리아식 수프와 만나는 변형이에요.',
     masterclass: {
       chefIntro: '이탈리아의 가정식 수프에 한식 봄나물을 더한 색다른 조합이에요. 냉이의 흙내가 토마토의 산미를 부드럽게 받쳐줘요.',
@@ -316,7 +316,7 @@ export const recipesNaengiExpansion: Recipe[] = [
       country: '이탈리아',
       note: '바질 페스토의 원리를 그대로 한식 봄나물에 적용해본 메뉴예요. 냉이는 향이 강한 만큼, 적은 양으로도 페스토 전체에 깊은 풍미를 남겨요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-world-2/hero.webp',
     mainIngredient: '냉이', description: '바질 대신 냉이로 만든 향긋한 페스토를 곁들인, 한식 재료를 이탈리아식으로 풀어낸 파스타예요.',
     masterclass: {
       chefIntro: '냉이로 페스토를 만든다는 발상이 신선해요. 흙내 가득한 향이 올리브오일과 만나면 또 다른 깊이가 생겨요.',
@@ -352,7 +352,7 @@ export const recipesNaengiExpansion: Recipe[] = [
       country: '일본',
       note: '일본에서는 봄철 산나물을 텐푸라로 튀겨 즐기는 문화가 있어요. 냉이도 같은 방식으로 튀기면, 그 흙내와 바삭함이 만나는 독특한 식감을 즐길 수 있어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-world-3/hero.webp',
     mainIngredient: '냉이', description: '뿌리째 통으로 튀긴 냉이로, 일본 산채 텐푸라의 향긋한 봄맛을 느낄 수 있는 메뉴예요.',
     masterclass: {
       chefIntro: '일본 튀김집에서 봄이면 흔히 만나는 메뉴예요. 냉이를 뿌리째 통으로 튀기면 모양도 살고 향도 한층 진하게 남아요.',
@@ -393,7 +393,7 @@ export const recipesNaengiExpansion: Recipe[] = [
       country: '이탈리아',
       note: '이탈리아의 감자 뇨끼에 시금치 같은 채소를 더해 색을 내는 방식을 냉이에 적용해본 메뉴예요. 봄나물 특유의 흙내가 더해져 더 깊은 풍미의 뇨끼가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-world-4/hero.webp',
     mainIngredient: '냉이', description: '감자 뇨끼에 냉이를 더해 초록빛과 향긋함을 동시에 살린, 봄철 정교한 면 요리예요.',
     masterclass: {
       chefIntro: '냉이를 더하면 뇨끼가 초록빛으로 물들면서 시각적으로도, 풍미로도 한층 풍부해져요.',
@@ -427,7 +427,7 @@ export const recipesNaengiExpansion: Recipe[] = [
       country: '일본',
       note: '일본 가정에서는 봄철 산채를 살짝 데쳐 폰즈소스에 가볍게 무치는 방식을 즐겨요. 냉이도 이 방식으로 만들면 한식 양념과는 또 다른 산뜻함을 느낄 수 있어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-world-5/hero.webp',
     mainIngredient: '냉이', description: '살짝 데친 냉이에 폰즈소스를 곁들인, 일본식의 깔끔하고 산뜻한 사라다예요.',
     masterclass: {
       chefIntro: '일본식 사라다는 양념이 단순하고 재료 본연의 맛을 살리는 데 집중해요. 냉이도 이 방식대로 만들면 진한 흙내가 산뜻하게 정리돼요.',
@@ -457,7 +457,7 @@ export const recipesNaengiExpansion: Recipe[] = [
     id: 'naengi-chef-1', month: 3, title: '냉이오일과 관자', subtitle: '향긋한 오일과 시어드 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '접시에 냉이오일을 가늘게 한 줄 그리고 시어드한 관자를 올려보세요. 냉이 잎을 살짝 튀겨 올리면 식감이 더해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-chef-1/hero.webp',
     mainIngredient: '냉이', description: '냉이를 갈아 만든 향긋한 오일에 시어드한 관자를 올린, 한식 향을 모던하게 풀어낸 정교한 전채예요.',
     masterclass: {
       chefIntro: '냉이를 오일로 만든다는 발상이 신선해요. 봄의 흙내를 오일에 우려내면, 익숙한 향이 전혀 다른 모습으로 다가와요.',
@@ -497,7 +497,7 @@ export const recipesNaengiExpansion: Recipe[] = [
     id: 'naengi-chef-2', month: 3, title: '냉이 콩소메', subtitle: '맑게 거른 냉이의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 냉이 잎 한 장을 띄워보세요. 짙은 갈색빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-chef-2/hero.webp',
     mainIngredient: '냉이', description: '냉이를 갈아 맑게 걸러낸, 봄의 흙내가 진하게 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 냉이에 적용한 요리예요. 향이 워낙 진한 재료라서, 적은 양으로도 풍미가 충분히 느껴져요.',
@@ -532,7 +532,7 @@ export const recipesNaengiExpansion: Recipe[] = [
     id: 'naengi-chef-3', month: 3, title: '냉이 퓌레와 오리가슴살', subtitle: '향긋한 냉이 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 오리 기름 한 방울을 점으로 더하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-chef-3/hero.webp',
     mainIngredient: '냉이', description: '향긋한 냉이 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 한식 재료를 프렌치 비스트로풍으로 풀어낸 메인이에요.',
     masterclass: {
       chefIntro: '냉이의 흙내가 오리의 진한 풍미를 한층 살려줘요. 익숙한 봄나물의 새로운 가능성을 보여주는 메뉴예요.',
@@ -567,7 +567,7 @@ export const recipesNaengiExpansion: Recipe[] = [
     id: 'naengi-chef-4', month: 3, title: '냉이 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 냉이 새싹을 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-chef-4/hero.webp',
     mainIngredient: '냉이', description: '가볍게 휘핑한 냉이 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 정교한 전채예요.',
     masterclass: {
       chefIntro: '냉이를 무스로 만들면 흙내는 그대로 살리면서 훨씬 가벼운 질감을 경험할 수 있어요.',
@@ -601,7 +601,7 @@ export const recipesNaengiExpansion: Recipe[] = [
     id: 'naengi-chef-5', month: 3, title: '냉이 크리스프와 참치 타르타르', subtitle: '바삭함과 신선함의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 참치 타르타르를 정확히 중앙에 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/naengi-chef-5/hero.webp',
     mainIngredient: '냉이', description: '바삭하게 튀긴 냉이 위에 참치 타르타르를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '냉이를 튀기면 흙내는 그대로 남으면서 전혀 다른 바삭한 질감으로 변해요.',

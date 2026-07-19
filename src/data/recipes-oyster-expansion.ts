@@ -13,7 +13,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-home-4', month: 11, title: '굴무국', subtitle: '시원하고 깊은 감칠맛의 겨울 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-home-4/hero.webp',
     mainIngredient: '굴',
     description: '무와 굴을 함께 끓인, 시원하고 깊은 감칠맛의 겨울철 대표 국이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-home-5', month: 11, title: '초고추장 생굴', subtitle: '가장 신선하게 즐기는 방법',
     category: '안주', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-home-5/hero.webp',
     mainIngredient: '굴',
     description: '신선한 생굴을 초고추장에 찍어 먹는, 가장 단순하지만 정직한 겨울 별미예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-weekend-1', month: 11, title: '굴국밥', subtitle: '뜨끈하고 시원한 해장 국밥',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-weekend-1/hero.webp',
     mainIngredient: '굴',
     description: '굴과 콩나물을 넣어 얼큰하게 끓인 국물에 밥을 만, 뜨끈한 해장용 국밥이에요.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-weekend-2', month: 11, title: '굴튀김', subtitle: '바삭한 겉면과 통통한 속살',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-weekend-2/hero.webp',
     mainIngredient: '굴',
     description: '통통한 생굴에 튀김옷을 입혀 바삭하게 튀긴, 겨울철 대표 별미예요.',
     masterclass: {

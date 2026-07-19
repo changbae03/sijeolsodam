@@ -15,7 +15,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-home-1', month: 6, title: '햇마늘장아찌', subtitle: '아삭하게 절여 두고 먹는 마늘 장아찌',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-home-1/hero.webp',
     mainIngredient: '햇마늘',
     description: '알이 통통한 햇마늘을 간장물에 절여두면, 아삭하고 알싸한 밑반찬이 돼요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-home-2', month: 6, title: '마늘종볶음', subtitle: '아삭하고 알싸한 기본 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-home-2/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘종을 간장에 볶은, 아삭하고 알싸한 초여름 기본 반찬이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-home-3', month: 6, title: '통마늘구이', subtitle: '고소하고 담백한 별미',
     category: '구이', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-home-3/hero.webp',
     mainIngredient: '햇마늘',
     description: '햇마늘을 통째로 구운, 고소하고 담백한 여름철 별미예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-home-4', month: 6, title: '마늘종장아찌', subtitle: '두고두고 꺼내 먹는 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-home-4/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘종을 간장물에 절인, 오래 두고 먹기 좋은 아삭한 장아찌예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-home-5', month: 6, title: '마늘종멸치볶음', subtitle: '짭짤하고 고소한 밥도둑',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-home-5/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘종과 멸치를 함께 볶은, 짭짤하고 고소한 대표 밥도둑이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-weekend-1', month: 6, title: '마늘종제육볶음', subtitle: '알싸하고 든든한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-weekend-1/hero.webp',
     mainIngredient: '햇마늘',
     description: '돼지고기와 마늘종을 매콤하게 볶은, 알싸함이 살아있는 든든한 메인요리예요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-weekend-2', month: 6, title: '마늘종새우볶음', subtitle: '탱글하고 아삭한 조합',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-weekend-2/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘종과 새우를 함께 볶은, 탱글하고 아삭한 조합이 매력적인 메인요리예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-weekend-3', month: 6, title: '갈릭라이스', subtitle: '고소하고 향긋한 마늘볶음밥',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-weekend-3/hero.webp',
     mainIngredient: '햇마늘',
     description: '다진 햇마늘을 듬뿍 넣고 볶은, 고소하고 향긋한 마늘볶음밥이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-weekend-4', month: 6, title: '마늘종파스타', subtitle: '알싸하고 고소한 이탈리아식',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-weekend-4/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘종과 베이컨을 볶아 파스타에 버무린, 알싸하고 고소한 요리예요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
   {
     id: 'newgarlic-weekend-5', month: 6, title: '마늘보쌈', subtitle: '알싸함이 어우러진 별미 보쌈',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-weekend-5/hero.webp',
     mainIngredient: '햇마늘',
     description: '삶은 돼지고기에 통마늘을 곁들여 싸 먹는, 알싸함이 어우러진 별미 보쌈이에요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-world-1', month: 6, title: '갈릭슈림프', subtitle: '하와이식 마늘새우',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국(하와이)', note: '갈릭슈림프는 하와이의 대표적인 길거리 음식 트럭 메뉴예요. 버터와 마늘을 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-world-1/hero.webp',
     mainIngredient: '햇마늘',
     description: '새우를 버터와 마늘에 볶은, 하와이의 대표적인 길거리 음식이에요.',
     masterclass: {
@@ -332,7 +332,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-world-2', month: 6, title: '갈릭치킨', subtitle: '필리핀식 마늘치킨',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '필리핀', note: '아도보와 함께 필리핀의 대표 요리인 갈릭치킨은 마늘을 튀겨 올리는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-world-2/hero.webp',
     mainIngredient: '햇마늘',
     description: '닭고기를 튀겨 바삭한 마늘칩을 듬뿍 올린, 필리핀식 대표 마늘치킨이에요.',
     masterclass: {
@@ -362,7 +362,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-world-3', month: 6, title: '알리오올리오', subtitle: '이탈리아식 마늘오일 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '알리오올리오는 마늘과 올리브오일만으로 만드는 이탈리아의 가장 심플한 파스타예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-world-3/hero.webp',
     mainIngredient: '햇마늘',
     description: '햇마늘과 올리브오일로 만든, 심플하지만 향긋한 이탈리아식 파스타예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-world-4', month: 6, title: '마늘빵', subtitle: '미국식 갈릭브레드',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '미국', note: '갈릭브레드는 미국식 이탈리안 레스토랑에서 흔한 전채예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-world-4/hero.webp',
     mainIngredient: '햇마늘',
     description: '햇마늘버터를 발라 구운, 향긋하고 바삭한 마늘빵이에요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-world-5', month: 6, title: '마늘프라이드라이스', subtitle: '태국식 마늘볶음밥',
     category: '밥', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '태국', note: '카오팟끄라티암은 태국식 마늘볶음밥으로, 마늘의 향이 밥알 전체에 배어드는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-world-5/hero.webp',
     mainIngredient: '햇마늘',
     description: '햇마늘을 듬뿍 넣고 볶은, 태국식 향긋한 마늘볶음밥이에요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-chef-1', month: 6, title: '갈릭허니', subtitle: '꿀절임 보존 기법',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 8,
     platingGuide: '작은 유리병에 마늘과 꿀을 함께 담아 상에 올리고, 사용할 때는 마늘 한 쪽과 꿀을 함께 떠서 빵이나 치즈에 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-chef-1/hero.webp',
     mainIngredient: '햇마늘',
     description: '통마늘을 꿀에 통째로 담가 몇 주간 숙성시킨, 서양의 전통적인 저장 조미료예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-chef-2', month: 6, title: '쏸룽펀쓰정', subtitle: '중국식 마늘다짐 해물찜',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '조개껍질째 넓은 접시에 담아 상 위에 뜨거운 채로 올리고, 실파를 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-chef-2/hero.webp',
     mainIngredient: '햇마늘',
     description: '조개나 새우 위에 다진 마늘과 당면을 올려 찐, 중국 광둥 지방의 대표적인 해물찜이에요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-chef-3', month: 6, title: '바냐카우다', subtitle: '이탈리아식 따뜻한 앤초비마늘딥',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '작은 도자기 냄비(포르타 바냐카우다)에 소스를 뜨겁게 담아 상에 올리고, 신선한 채소스틱을 부채꼴로 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-chef-3/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘과 앤초비를 올리브오일에 뭉근히 녹인, 이탈리아 피에몬테의 대표적인 따뜻한 딥소스예요.',
     masterclass: {
@@ -542,7 +542,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-chef-4', month: 6, title: '알리고', subtitle: '프랑스식 마늘치즈매시',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '뜨거운 알리고를 국자로 높이 들어 올려 실처럼 늘어지는 치즈 가닥을 보여주며 접시에 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-chef-4/hero.webp',
     mainIngredient: '햇마늘',
     description: '으깬 감자에 마늘과 치즈를 섞어 길게 늘어나도록 저은, 프랑스 오베르뉴 지방의 대표적인 요리예요.',
     masterclass: {
@@ -573,7 +573,7 @@ export const recipesNewGarlicExpansion: Recipe[] = [
     id: 'newgarlic-chef-5', month: 6, title: '스코르달리아', subtitle: '그리스식 마늘감자딥',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '넓은 그릇에 담아 올리브오일을 두르고, 구운 생선이나 튀긴 채소를 옆에 곁들여 그리스식 메제 상차림으로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/newgarlic-chef-5/hero.webp',
     mainIngredient: '햇마늘',
     description: '마늘과 감자(또는 빵)를 곱게 으깨 올리브오일과 유화시킨, 그리스의 강렬한 마늘 딥소스예요.',
     masterclass: {
