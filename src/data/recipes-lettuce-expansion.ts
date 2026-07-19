@@ -14,7 +14,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-home-1', month: 4, title: '상추겉절이', subtitle: '아삭하고 매콤한 봄철 입맛 살리는 겉절이',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-home-1/hero.webp',
     mainIngredient: '상추',
     description: '부드럽고 아삭한 상추를 매콤달콤한 양념에 무쳐낸, 봄철 대표 즉석 겉절이예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-home-2', month: 4, title: '상추쌈밥', subtitle: '아삭하고 개운한 쌈 한 끼',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-home-2/hero.webp',
     mainIngredient: '상추',
     description: '상추에 밥과 쌈장, 고기를 싸 먹는, 아삭하고 든든한 봄철 쌈 한 끼예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-home-3', month: 4, title: '상추된장국', subtitle: '구수하고 담백한 봄 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-home-3/hero.webp',
     mainIngredient: '상추',
     description: '상추를 넣어 끓인 된장국으로, 구수하고 담백한 봄철 국이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-home-4', month: 4, title: '상추무침', subtitle: '아삭하고 고소한 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-home-4/hero.webp',
     mainIngredient: '상추',
     description: '상추를 된장과 참기름으로 무친, 아삭하고 고소한 기본 밑반찬이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-home-5', month: 4, title: '상추비빔밥', subtitle: '아삭하고 개운한 한 그릇',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-home-5/hero.webp',
     mainIngredient: '상추',
     description: '상추를 채 썰어 밥에 비벼 먹는, 아삭하고 개운한 봄철 한 그릇이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-weekend-1', month: 4, title: '상추전', subtitle: '아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-weekend-1/hero.webp',
     mainIngredient: '상추',
     description: '상추를 반죽에 섞어 부친, 아삭하고 향긋한 별미전이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-weekend-2', month: 4, title: '상추물김치', subtitle: '시원하고 개운한 봄 물김치',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-weekend-2/hero.webp',
     mainIngredient: '상추',
     description: '상추를 넣어 시원하게 담근, 개운하고 아삭한 봄철 물김치예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-weekend-3', month: 4, title: '상추튀김', subtitle: '바삭하고 색다른 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-weekend-3/hero.webp',
     mainIngredient: '상추',
     description: '상추를 튀김옷에 입혀 바삭하게 튀긴, 색다르고 재미있는 튀김이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-weekend-4', month: 4, title: '상추두부쌈', subtitle: '담백하고 건강한 쌈 요리',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-weekend-4/hero.webp',
     mainIngredient: '상추',
     description: '상추에 구운 두부와 쌈장을 곁들인, 담백하고 건강한 쌈 요리예요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesLettuceExpansion: Recipe[] = [
   {
     id: 'lettuce-weekend-5', month: 4, title: '상추겉절이비빔국수', subtitle: '아삭하고 개운한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-weekend-5/hero.webp',
     mainIngredient: '상추',
     description: '소면에 상추겉절이를 비빈, 아삭하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-world-1', month: 4, title: '레터스 랩', subtitle: '중국식 다진고기 상추쌈',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '중국', note: '레터스 랩(생차이바오, 生菜包)은 홍콩·광둥 지역의 대표 딤섬 메뉴로, 매콤달콤하게 볶은 다진고기를 상추에 싸 먹는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-world-1/hero.webp',
     mainIngredient: '상추',
     description: '매콤달콤하게 볶은 다진고기를 상추에 싸 먹는, 중국 광둥식 대표 전채예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-world-2', month: 4, title: '그릴드 시저 샐러드', subtitle: '미국식 구운 로메인 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '시저샐러드는 원래 멕시코 티후아나에서 이탈리아계 셰프가 만든 것이 미국에서 대중화된 요리예요. 로메인상추를 그릴에 살짝 구워내는 그릴드 버전이 최근 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-world-2/hero.webp',
     mainIngredient: '상추',
     description: '로메인상추를 반으로 갈라 그릴에 살짝 구운 뒤 시저드레싱을 곁들인, 색다른 샐러드예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-world-3', month: 4, title: '샴락 살라드', subtitle: '프랑스식 상추 버터찜',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스에서는 상추를 생으로만 먹지 않고 버터에 볶거나 쪄서 따뜻한 채소요리로도 즐겨요. 완두콩과 함께 익히는 것이 클래식한 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-world-3/hero.webp',
     mainIngredient: '상추',
     description: '상추와 완두콩을 버터에 볶아 낸, 프랑스식 따뜻한 채소요리예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-world-4', month: 4, title: '독일식 원티드 샐러드', subtitle: '뜨거운 베이컨드레싱 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '독일', note: '독일과 미국 펜실베이니아 더치 지역에서는 뜨거운 베이컨 드레싱을 상추에 부어 살짝 숨죽이는 "윌티드 샐러드"가 전통 요리로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-world-4/hero.webp',
     mainIngredient: '상추',
     description: '뜨거운 베이컨 식초 드레싱을 상추에 부어 살짝 숨죽인, 독일식 따뜻한 샐러드예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-world-5', month: 4, title: '태국식 상추쌈 랍', subtitle: '새콤매콤한 고기무침 쌈',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '태국', note: '랍(laab)은 태국·라오스의 대표 요리로, 다진 고기를 라임즙과 향신료로 새콤매콤하게 무쳐 상추에 싸 먹는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-world-5/hero.webp',
     mainIngredient: '상추',
     description: '다진 고기를 라임즙과 허브로 무친 랍을 상추에 싸 먹는, 태국·라오스의 대표 요리예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-chef-1', month: 4, title: '프티 뿌아 아 라 프랑세즈', subtitle: '프랑스식 채소 브레이징',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '따뜻한 접시에 브레이즈드 상추를 완두콩과 함께 소복이 담고, 베이컨을 위에 흩뿌린 뒤 버터소스를 스푼으로 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-chef-1/hero.webp',
     mainIngredient: '상추',
     description: '상추와 완두콩, 베이컨, 진주양파를 버터에 은근히 브레이징한, 프랑스 클래식 채소요리예요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-chef-2', month: 4, title: '숯불 그릴드 로메인', subtitle: '미국식 구이 기법의 정수',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '숯불 자국이 선명한 로메인 반쪽을 접시에 세워 담고, 안초비크림소스를 접시 바닥에 지그재그로 흐르게 두른 뒤 파마산치즈 튀일과 크루통 부스러기를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-chef-2/hero.webp',
     mainIngredient: '상추',
     description: '로메인상추를 숯불에 직접 그을려 훈연향을 입힌, 미국 스테이크하우스 스타일의 고급 전채예요.',
     masterclass: {
@@ -521,7 +521,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-chef-3', month: 4, title: '상추 파르시', subtitle: '아시아식 정교한 쌈 포장 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 45, servings: 4,
     platingGuide: '작은 상추쌈 6~8개를 대나무 찜기나 긴 접시에 나란히 배치하고, 각각의 쌈 위에 캐비아나 실파를 한 점씩 올려 균일하게 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-chef-3/hero.webp',
     mainIngredient: '상추',
     description: '새우와 관자를 곱게 다져 채운 소를 상추로 정교하게 감싼, 고급 레스토랑 스타일의 한입 전채예요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-chef-4', month: 4, title: '상추 애쉬 오일 스테이크', subtitle: '모던 탄화·향유 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '접시에 검은 상추애쉬오일로 붓 자국을 남기듯 스와이프를 그리고, 그 위에 슬라이스한 스테이크를 올린 뒤 상추 새싹을 몇 장 올려 대비를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-chef-4/hero.webp',
     mainIngredient: '상추',
     description: '상추를 완전히 태워 재로 만든 뒤 오일에 섞어 만든 검은 향유를, 스테이크에 곁들인 모던 가스트로노미 요리예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesLettuceExpansion: Recipe[] = [
     id: 'lettuce-chef-5', month: 4, title: '상추 스프링롤 베트남식', subtitle: '신선함을 그대로 감싸는 생 포장 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '스프링롤을 어슷하게 잘라 단면이 보이게 접시에 세워 담고, 땅콩느억맘소스를 작은 종지에 곁들이며 고수잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lettuce-chef-5/hero.webp',
     mainIngredient: '상추',
     description: '상추를 안쪽 겹으로 삼아 새우와 허브를 라이스페이퍼로 감싼, 베트남의 신선한 생스프링롤이에요.',
     masterclass: {

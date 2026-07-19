@@ -10,7 +10,7 @@ export const recipesLevelExpansion2: Recipe[] = [
   {
     id: 'apple-weekend-1', month: 10, title: '겹겹이 바삭한 사과 타르트', subtitle: '버터향 가득한 페이스트리에 담은 가을 사과',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 80, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/apple-weekend-1/hero.webp',
     mainIngredient: '사과', description: '버터를 켜켜이 접은 페이스트리 위에 사과를 얇게 펼쳐 구워낸, 주말에 시간 들여 만드는 디저트예요.',
     masterclass: {
       chefIntro: '사과타르트는 얇게 편 사과와 버터 향 페이스트리가 만나는 클래식 프렌치 디저트예요.',
@@ -64,7 +64,7 @@ export const recipesLevelExpansion2: Recipe[] = [
       country: '프랑스',
       note: '타르트 타탱은 19세기 프랑스 라모트뵈브롱의 한 호텔을 운영하던 타탱 자매가 사과 타르트를 만들다 실수로 사과를 먼저 캐러멜화한 채 깜빡한 데서 시작됐다는 이야기가 전해져요. 결국 그 위에 반죽을 덮어 뒤집어 구운 것이 오늘날 프랑스의 대표 디저트가 됐어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/apple-world-1/hero.webp',
     mainIngredient: '사과', description: '사과를 버터와 설탕에 먼저 캐러멜화한 뒤 반죽을 덮어 구워, 뒤집어서 완성하는 프랑스의 전설적인 디저트예요.',
     masterclass: {
       chefIntro: '타르트 타탱은 캐러멜화한 사과 위에 반죽을 덮어 굽고 뒤집어 완성하는 프랑스 클래식이에요.',
@@ -119,7 +119,7 @@ export const recipesLevelExpansion2: Recipe[] = [
     id: 'apple-chef-1', month: 10, title: '사과 밀푀유', subtitle: '얇게 겹친 사과로 완성하는 정교한 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '접시 중앙에 살짝 비스듬히 올리고, 옆에 바닐라 아이스크림 한 스쿱과 캐러멜 소스를 가늘게 한 줄 그어주세요. 위에 민트 잎이나 식용 금박을 살짝 올리면 한층 정교해 보여요.',
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/apple-chef-1/hero.webp',
     mainIngredient: '사과', description: '폼므 안나의 기법을 디저트에 적용해, 얇게 썬 사과를 겹겹이 눌러 구워 단면의 켜를 그대로 보여주는 정교한 디저트예요.',
     masterclass: {
       chefIntro: '이 디저트는 폼므 안나의 기법을 사과에 그대로 적용해, 얇은 켜가 압착되며 단면이 아름답게 드러나는 것이 핵심이에요.',
@@ -171,7 +171,7 @@ export const recipesLevelExpansion2: Recipe[] = [
   {
     id: 'tomato-weekend-1', month: 6, title: '슬로우 토마토 파스타', subtitle: '오래 졸여 깊은 맛을 낸 토마토 소스 파스타',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-weekend-1/hero.webp',
     mainIngredient: '방울토마토', description: '방울토마토를 오랜 시간 졸여 단맛과 산미를 끌어낸 소스로 완성하는, 시간을 들인 만큼 깊어지는 파스타예요.',
     masterclass: {
       chefIntro: '슬로우 토마토파스타는 방울토마토를 오래 졸여 감칠맛을 응축시키는, 시간이 만드는 파스타예요.',
@@ -224,7 +224,7 @@ export const recipesLevelExpansion2: Recipe[] = [
       country: '스페인',
       note: '가스파초는 스페인 남부 안달루시아 지역에서 무더운 여름을 견디기 위해 발달한 차가운 수프예요. originally 농부들이 빵, 올리브오일, 채소로 간단히 만들어 먹던 음식이 오늘날 스페인을 대표하는 여름 요리로 자리잡았어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-world-1/hero.webp',
     mainIngredient: '방울토마토', description: '잘 익은 토마토와 채소를 갈아 차갑게 즐기는 스페인 안달루시아의 여름 대표 수프예요.',
     masterclass: {
       chefIntro: '가스파초는 스페인 남부 농부들이 빵과 채소로 간단히 만들어 먹던 데서 시작된 차가운 수프예요.',
@@ -272,7 +272,7 @@ export const recipesLevelExpansion2: Recipe[] = [
     id: 'tomato-chef-1', month: 6, title: '토마토 타르타르', subtitle: '정교한 칼질로 완성하는 비주얼 전채',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '원형 무스링에 타르타르를 눌러 담아 모양을 잡은 뒤 조심스럽게 들어올리면 깔끔한 원통형이 나와요. 위에 바질오일을 點으로 찍듯 뿌리고, 마이크로그린이나 바질 잎 하나를 세워 꽂으면 레스토랑 플레이팅처럼 완성돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-chef-1/hero.webp',
     mainIngredient: '방울토마토', description: '토마토를 콩카세(껍질과 씨를 제거해 일정하게 써는 프랑스 기법)로 손질해 깔끔하게 완성하는 전채요리예요.',
     masterclass: {
       chefIntro: '토마토 타르타르는 콩카세 기법으로 손질한 토마토를 정교하게 쌓아내는 프랑스식 전채예요.',
@@ -322,7 +322,7 @@ export const recipesLevelExpansion2: Recipe[] = [
   {
     id: 'cucumber-weekend-1', month: 6, title: '오이 피클(딜 피클)', subtitle: '발효의 원리를 이해하며 만드는 홈메이드 피클',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-weekend-1/hero.webp',
     mainIngredient: '오이', description: '식초물의 비율과 향신료의 조합을 제대로 이해하면서 만드는, 아삭함이 살아있는 홈메이드 피클이에요.',
     masterclass: {
       chefIntro: '오이피클은 절이는 시간과 피클물의 비율을 이해하면 실패 없이 만들 수 있는 발효 저장식품이에요.',
@@ -373,7 +373,7 @@ export const recipesLevelExpansion2: Recipe[] = [
       country: '그리스·튀르키예',
       note: '차지키는 그리스에서는 차지키, 튀르키예에서는 자즉이라 불리며 지중해와 중동 일대에서 폭넓게 즐기는 요거트 소스예요. 그릴에 구운 고기나 피타빵에 곁들이거나, 그 자체로 더운 여름철 입맛을 식혀주는 음식으로도 즐겨요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-world-1/hero.webp',
     mainIngredient: '오이', description: '오이와 그릭 요거트, 마늘, 딜로 만드는 시원하고 산뜻한 지중해식 디핑 소스예요.',
     masterclass: {
       chefIntro: '차지키는 그리스와 튀르키예에서 두루 즐기는, 오이의 수분을 빼는 것이 핵심인 요거트 소스예요.',
@@ -421,7 +421,7 @@ export const recipesLevelExpansion2: Recipe[] = [
     id: 'cucumber-chef-1', month: 6, title: '오이 리본 롤 with 게살 무스', subtitle: '얇게 깎은 오이로 감싸는 정교한 전채',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '롤을 비스듬히 잘라 단면이 보이게 세워 담고, 접시에 오이즙을 살짝 발라 베이스를 만들어주세요. 게살 무스 색과 오이의 초록이 대비되도록 흰 접시를 쓰면 색이 또렷하게 살아나요. 캐비어나 날치알을 한 점 올리면 포인트가 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-chef-1/hero.webp',
     mainIngredient: '오이', description: '오이를 얇게 리본처럼 깎아 부드러운 게살 무스를 말아낸, 손이 많이 가지만 비주얼이 화려한 전채요리예요.',
     masterclass: {
       chefIntro: '오이 리본 롤은 채소를 얇게 깎아 무스를 마는, 정교한 손기술이 필요한 화려한 전채예요.',

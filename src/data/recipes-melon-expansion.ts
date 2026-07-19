@@ -12,7 +12,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-home-1', month: 7, title: '멜론프로슈토', subtitle: '달콤한 멜론과 짭짤한 햄의 조화',
     category: '전채', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-home-1/hero.webp',
     mainIngredient: '멜론',
     description: '달콤한 멜론에 짭짤한 프로슈토를 곁들인, 간단하고 우아한 전채요리예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-home-2', month: 7, title: '멜론주스', subtitle: '향긋하고 시원한 여름 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-home-2/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 직접 갈아 만든, 향긋하고 시원한 여름철 생과일주스예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-home-3', month: 7, title: '멜론화채', subtitle: '향긋하고 시원한 여름 화채',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-home-3/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 사이다와 함께 시원하게 즐기는, 향긋한 여름 화채예요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-home-4', month: 7, title: '멜론샐러드', subtitle: '상큼하고 가벼운 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-home-4/hero.webp',
     mainIngredient: '멜론',
     description: '멜론과 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 여름 샐러드예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-home-5', month: 7, title: '멜론빙수', subtitle: '향긋하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-home-5/hero.webp',
     mainIngredient: '멜론',
     description: '얼음 위에 멜론과 연유를 듬뿍 올린, 향긋하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-weekend-1', month: 7, title: '멜론스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-weekend-1/hero.webp',
     mainIngredient: '멜론',
     description: '멜론과 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-weekend-2', month: 7, title: '멜론셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-weekend-2/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-weekend-3', month: 7, title: '멜론타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-weekend-3/hero.webp',
     mainIngredient: '멜론',
     description: '커스터드크림 위에 멜론을 올린, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-weekend-4', month: 7, title: '멜론모히토', subtitle: '상큼하고 시원한 여름 음료',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-weekend-4/hero.webp',
     mainIngredient: '멜론',
     description: '멜론과 민트, 라임을 넣어 만든, 상큼하고 시원한 여름 논알콜 모히토예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesMelonExpansion: Recipe[] = [
   {
     id: 'melon-weekend-5', month: 7, title: '멜론오이냉국', subtitle: '시원하고 향긋한 여름 별미',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-weekend-5/hero.webp',
     mainIngredient: '멜론',
     description: '멜론과 오이를 새콤달콤한 냉국물에 담근, 시원하고 향긋한 여름 별미예요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-world-1', month: 7, title: '멜론 가스파초', subtitle: '스페인식 차가운 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '가스파초는 스페인 안달루시아 지방의 대표 차가운 수프예요. 원래는 토마토가 주재료지만, 여름철에는 멜론으로 만드는 상큼한 버전도 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-world-1/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 곱게 갈아 만든, 스페인식 차갑고 상큼한 여름 수프예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-world-2', month: 7, title: '태국식 멜론 샐러드', subtitle: '새콤매콤한 이국적 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '태국', note: '태국에서는 파파야뿐 아니라 멜론 같은 단 과일도 새콤매콤한 얌(태국식 샐러드) 스타일로 즐기는 문화가 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-world-2/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 라임즙, 피시소스, 고추로 무친, 새콤매콤한 태국식 샐러드예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-world-3', month: 7, title: '멜론 젤라토', subtitle: '이탈리아식 부드러운 아이스크림',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '이탈리아', note: '젤라토는 이탈리아식 아이스크림으로, 일반 아이스크림보다 지방 함량이 낮고 밀도가 높아 훨씬 진한 맛이 나요. 여름철 멜론 젤라토가 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-world-3/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 곱게 갈아 만든, 이탈리아식 부드럽고 진한 젤라토예요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-world-4', month: 7, title: '멜론 소면', subtitle: '일본식 시원한 여름 국수',
     category: '면요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '일본', note: '일본에서는 여름철 소면(소멘)에 과일을 곁들여 시원하게 즐기는 문화가 있어요. 멜론을 더하면 달콤함과 시원함이 함께하는 별미가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-world-4/hero.webp',
     mainIngredient: '멜론',
     description: '차가운 소면에 멜론을 곁들인, 일본식 여름철 별미 국수예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-world-5', month: 7, title: '멜론 수프 프루아드', subtitle: '프랑스식 차가운 과일 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '수프 프루아드(soupe froide)는 프랑스어로 차가운 수프를 뜻해요. 여름철 프랑스에서는 멜론으로 만든 차가운 수프를 전채로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-world-5/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 화이트와인과 함께 곱게 간, 프랑스식 우아한 차가운 여름 수프예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-chef-1', month: 7, title: '멜론 가스파초(셰프)', subtitle: '스페인식 차가운 수프 고급 버전',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '차갑게 식힌 유리볼에 가스파초를 붓고, 중앙에 생햄 한 조각을 세워 올린 뒤 올리브오일을 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-chef-1/hero.webp',
     mainIngredient: '멜론',
     description: '멜론을 곱게 갈아 생햄과 함께 낸, 스페인식 고급스러운 차가운 수프예요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-chef-2', month: 7, title: '멜론 판나코타', subtitle: '이탈리아 크림 디저트에 멜론향을',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 멜론 퓌레를 얹은 뒤 민트잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-chef-2/hero.webp',
     mainIngredient: '멜론',
     description: '부드러운 이탈리아식 크림 디저트에 멜론 퓌레를 곁들인, 향긋한 여름 디저트예요.',
     masterclass: {
@@ -520,7 +520,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-chef-3', month: 7, title: '멜론 그라니타', subtitle: '이탈리아식 상큼한 셔벗',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '차갑게 식힌 유리잔에 그라니타를 포크로 긁어 소복이 담고, 민트잎과 멜론 조각으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-chef-3/hero.webp',
     mainIngredient: '멜론',
     description: '멜론즙을 얼려서 긁어낸, 향긋하고 상큼한 이탈리아식 셔벗이에요.',
     masterclass: {
@@ -551,7 +551,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-chef-4', month: 7, title: '생햄 멜론 카르파치오', subtitle: '얇게 저민 멜론의 우아한 재해석',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 멜론을 얇게 겹치듯 원형으로 펼쳐 담고, 생햄을 사이사이에 곁들인 뒤 올리브오일을 붓으로 얇게 발라 광택을 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-chef-4/hero.webp',
     mainIngredient: '멜론',
     description: '얇게 저민 멜론에 생햄과 올리브오일을 더한, 재료 본연의 단맛을 즐기는 우아한 전채예요.',
     masterclass: {
@@ -581,7 +581,7 @@ export const recipesMelonExpansion: Recipe[] = [
     id: 'melon-chef-5', month: 7, title: '멜론 콩소메', subtitle: '맑고 향긋한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 멜론 과육 조각과 민트잎을 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/melon-chef-5/hero.webp',
     mainIngredient: '멜론',
     description: '멜론 향을 우린 맑은 콩소메로, 코스요리의 시작에 어울리는 산뜻한 여름 수프예요.',
     masterclass: {

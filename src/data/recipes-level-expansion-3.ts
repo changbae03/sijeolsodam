@@ -11,7 +11,7 @@ export const recipesLevelExpansion3: Recipe[] = [
   {
     id: 'radish-weekend-1', month: 11, title: '갈비 무조림', subtitle: '갈비 육수를 가득 머금은 묵직한 주말 조림',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-weekend-1/hero.webp',
     mainIngredient: '무', description: '소갈비와 무를 함께 오래 졸여, 무가 갈비 육수를 가득 머금어 깊은 맛을 내는 주말 메인 요리예요.',
     masterclass: {
       chefIntro: '갈비무조림은 무가 갈비 육수를 흠뻑 머금어 갈비 못지않게 맛있어지는 것이 매력인 요리예요.',
@@ -67,7 +67,7 @@ export const recipesLevelExpansion3: Recipe[] = [
       country: '일본',
       note: '후로후키 다이콘은 일본 가정식과 가이세키 요리에서 흔히 만나는 메뉴로, 무를 다시육수에 오래 끓여 부드럽게 만든 뒤 달콤한 미소소스를 얹어 먹어요. 추운 계절 일본 가정의 식탁에 자주 오르는, 검소하지만 정성이 들어간 요리예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-world-1/hero.webp',
     mainIngredient: '무', description: '다시육수에 오래 끓여 속까지 부드러워진 무에 달콤한 일본식 미소소스를 얹어 먹는 정갈한 요리예요.',
     masterclass: {
       chefIntro: '후로후키 다이콘은 무를 오래 끓여 속까지 부드럽게 만드는 것이 핵심인 일본 가정식이에요.',
@@ -118,7 +118,7 @@ export const recipesLevelExpansion3: Recipe[] = [
     id: 'radish-chef-1', month: 11, title: '시어드 스캘럽과 무 콩포트', subtitle: '단맛 머금은 무와 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 흰 접시에 무 콩포트를 한 스푼 자국 내듯 펴 바르고, 그 위에 시어드한 관자를 비스듬히 2~3개 올려주세요. 버터소스를 점점이 뿌리고 차이브나 처빌을 살짝 올리면 색의 대비가 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-chef-1/hero.webp',
     mainIngredient: '무', description: '버터에 졸여 단맛을 끌어낸 무 위에 겉은 바삭하고 속은 부드러운 관자를 올린, 정교한 프렌치 스타일 전채예요.',
     masterclass: {
       chefIntro: '이 요리는 무를 버터에 졸여 단맛을 끌어내고, 관자를 짧게 시어링해 겉바속촉을 살리는 정교한 전채예요.',
@@ -171,7 +171,7 @@ export const recipesLevelExpansion3: Recipe[] = [
   {
     id: 'cabbage-weekend-1', month: 11, title: '배추 만두', subtitle: '꽉 찬 속을 빚어내는 손이 많이 가는 주말 요리',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-weekend-1/hero.webp',
     mainIngredient: '알배추', description: '배추를 듬뿍 넣어 채소의 단맛이 살아있는 만두를 직접 빚어 즐기는, 정성이 필요한 주말 요리예요.',
     masterclass: {
       chefIntro: '배추만두는 배추의 은은한 단맛이 소에 배어드는, 정성이 필요한 주말 요리예요.',
@@ -229,7 +229,7 @@ export const recipesLevelExpansion3: Recipe[] = [
       country: '독일',
       note: '자우어크라우트는 독일을 비롯한 중북부 유럽에서 겨울을 나기 위해 양배추를 발효시켜 만든 저장 음식이에요. 소시지나 슈바인스브라텐 곁에 곁들이는 독일 가정식의 핵심 사이드 디시로, 발효로 겨울에도 비타민C를 섭취하게 한 선조들의 지혜가 담긴 음식이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-world-1/hero.webp',
     mainIngredient: '알배추', description: '배추(또는 양배추)를 소금에 절여 자연 발효시켜 만드는 독일의 대표 전통 절임이에요.',
     masterclass: {
       chefIntro: '자우어크라우트는 배추를 소금만으로 자연 발효시키는, 독일의 대표적인 전통 절임이에요.',
@@ -278,7 +278,7 @@ export const recipesLevelExpansion3: Recipe[] = [
     id: 'cabbage-chef-1', month: 11, title: '배추 두부롤 with 들깨 크림소스', subtitle: '한식 재료를 정교한 기법으로 재해석한 요리',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '롤을 비스듬히 잘라 단면이 보이게 세워 담고, 들깨 크림소스를 접시에 한 줄 그어 베이스로 깔아주세요. 위에 통들깨를 살짝 뿌리고 미나리 잎 한 장을 올리면 정갈하게 마무리돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-chef-1/hero.webp',
     mainIngredient: '알배추', description: '데친 배추잎으로 두부와 채소를 말아 만든 롤에 고소한 들깨 크림소스를 곁들인, 한식 재료를 서양식 플레이팅으로 풀어낸 요리예요.',
     masterclass: {
       chefIntro: '배추두부롤은 한식 재료인 들깨를 서양식 크림소스로 응용한 퓨전 요리예요.',
@@ -333,7 +333,7 @@ export const recipesLevelExpansion3: Recipe[] = [
   {
     id: 'pear-weekend-1', month: 9, title: '배 고르곤졸라 샐러드', subtitle: '단맛과 짠맛의 균형을 배우는 주말 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-weekend-1/hero.webp',
     mainIngredient: '배', description: '달콤한 배와 짭짤한 고르곤졸라 치즈, 견과류의 식감이 어우러진 균형 잡힌 샐러드예요.',
     masterclass: {
       chefIntro: '배고르곤졸라샐러드는 배의 단맛과 치즈의 짭짤함이 균형을 이루는 손님상 전채예요.',
@@ -378,7 +378,7 @@ export const recipesLevelExpansion3: Recipe[] = [
       country: '프랑스',
       note: '푸아레(Poire Pochée)는 배를 레드와인과 향신료에 천천히 데워 만드는 프랑스의 클래식 디저트예요. 와인의 색이 배에 곱게 물들어 우아한 비주얼 덕분에 격식 있는 저녁 식사의 디저트로도 자주 등장해요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-world-1/hero.webp',
     mainIngredient: '배', description: '레드와인과 시나몬, 정향에 배를 천천히 데워 붉은 빛과 향이 깊게 배어들게 만드는 프랑스 디저트예요.',
     masterclass: {
       chefIntro: '푸아레는 배를 레드와인에 천천히 데워 붉은 빛과 향을 입히는 프랑스 클래식 디저트예요.',
@@ -422,7 +422,7 @@ export const recipesLevelExpansion3: Recipe[] = [
     id: 'pear-chef-1', month: 9, title: '배 카르파치오 with 고르곤졸라 발사믹', subtitle: '얇게 저민 배로 완성하는 정교한 전채',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '넓은 접시에 배 슬라이스를 꽃잎처럼 겹쳐 원형으로 펼쳐 담고, 고르곤졸라를 작은 점들로 올려주세요. 발사믹 글레이즈를 가늘게 지그재그로 뿌리고 처빌이나 어린 루꼴라 잎을 중앙에 올리면 완성도가 올라가요.',
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-chef-1/hero.webp',
     mainIngredient: '배', description: '배를 카르파치오처럼 투명하게 얇게 저며 고르곤졸라와 발사믹으로 마무리한, 단맛과 짠맛이 정교하게 균형 잡힌 전채요리예요.',
     masterclass: {
       chefIntro: '배카르파치오는 배를 투명하게 얇게 저며 재료 본연의 단맛을 극대화하는 정교한 전채예요.',
@@ -467,7 +467,7 @@ export const recipesLevelExpansion3: Recipe[] = [
   {
     id: 'sweetpotato-weekend-1', month: 10, title: '고구마 그라탕', subtitle: '겹겹이 쌓아 구운 달콤하고 고소한 주말 메인',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-weekend-1/hero.webp',
     mainIngredient: '고구마', description: '얇게 썬 고구마를 크림소스와 함께 겹겹이 쌓아 구운, 달콤하고 고소한 맛이 살아있는 그라탕이에요.',
     masterclass: {
       chefIntro: '고구마그라탕은 얇게 썬 고구마를 크림소스와 겹겹이 쌓아 구운 든든한 홈베이킹이에요.',
@@ -513,7 +513,7 @@ export const recipesLevelExpansion3: Recipe[] = [
       country: '미국',
       note: '스위트포테이토 캐서롤은 미국 추수감사절과 크리스마스 식탁에 빠지지 않는 대표 사이드 디시예요. 으깬 고구마 위에 마시멜로를 올려 구워내는 독특한 조합은 20세기 초 미국에서 시작돼, 오늘날까지 명절의 상징적인 메뉴로 자리잡았어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-world-1/hero.webp',
     mainIngredient: '고구마', description: '으깬 고구마에 버터와 향신료를 더하고 마시멜로를 올려 구워낸, 달콤하고 독특한 미국 명절 음식이에요.',
     masterclass: {
       chefIntro: '스위트포테이토캐서롤은 미국 추수감사절 식탁에 빠지지 않는 달콤한 명절 음식이에요.',
@@ -556,7 +556,7 @@ export const recipesLevelExpansion3: Recipe[] = [
     id: 'sweetpotato-chef-1', month: 10, title: '고구마 퓌레와 시어드 두부', subtitle: '부드러운 퓌레 위에 바삭하게 구운 두부를 올린 정교한 메인',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 55, servings: 2,
     platingGuide: '고구마 퓌레를 숟가락 뒷면으로 접시에 둥글게 스미어 자국을 내고, 시어드한 두부를 비스듬히 올려주세요. 캐러멜소스를 점으로 몇 방울 떨어뜨리고 차이브를 잘게 썰어 흩뿌리면 색감이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-chef-1/hero.webp',
     mainIngredient: '고구마', description: '곱게 간 고구마 퓌레 위에 겉은 바삭하고 속은 부드러운 두부를 올려, 단순한 재료를 정교한 기법으로 완성한 메인 요리예요.',
     masterclass: {
       chefIntro: '이 요리는 고구마퓌레의 부드러움과 시어드 두부의 바삭함이 대비를 이루는 정교한 메인이에요.',
@@ -603,7 +603,7 @@ export const recipesLevelExpansion3: Recipe[] = [
   {
     id: 'strawberry-weekend-1', month: 4, title: '딸기 타르트', subtitle: '바삭한 타르트지에 올린 신선한 봄 딸기',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 80, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-weekend-1/hero.webp',
     mainIngredient: '딸기', description: '바삭하게 구운 타르트지 위에 부드러운 커스터드 크림과 신선한 딸기를 올린, 손이 많이 가지만 그만큼 보람 있는 디저트예요.',
     masterclass: {
       chefIntro: '딸기타르트는 바삭한 타르트지와 부드러운 커스터드, 신선한 딸기의 삼박자가 맞아야 하는 디저트예요.',
@@ -657,7 +657,7 @@ export const recipesLevelExpansion3: Recipe[] = [
       country: '일본',
       note: '딸기 쇼트케이크는 일본에서 크리스마스 시즌 가장 사랑받는 케이크예요. 서양의 비스킷 베이스 쇼트케이크와 달리, 일본식은 폭신한 스펀지케이크에 가벼운 생크림과 딸기를 켜켜이 쌓은 형태로 독자적으로 발전했어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-world-1/hero.webp',
     mainIngredient: '딸기', description: '폭신한 스펀지케이크에 가벼운 생크림과 신선한 딸기를 켜켜이 쌓은, 일본의 대표적인 딸기 디저트예요.',
     masterclass: {
       chefIntro: '일본식 딸기쇼트케이크는 폭신한 스펀지와 가벼운 생크림이 특징인 일본 대표 디저트예요.',
@@ -708,7 +708,7 @@ export const recipesLevelExpansion3: Recipe[] = [
     id: 'strawberry-chef-1', month: 4, title: '딸기 콩소메와 바질', subtitle: '맑게 거른 딸기 본연의 맛을 보여주는 모던 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '투명한 유리잔이나 넓은 접시에 콩소메를 살짝만 부어 바닥이 보이게 하고, 가운데에 작게 썬 신선한 딸기 조각을 쌓아 올려주세요. 바질 새싹잎을 살짝 올리면 향과 색이 함께 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-chef-1/hero.webp',
     mainIngredient: '딸기', description: '딸기를 곱게 갈아 맑게 걸러낸 콩소메(투명한 육수)에 바질 향을 더한, 딸기 본연의 맛을 가장 순수하게 느낄 수 있는 모던 디저트예요.',
     masterclass: {
       chefIntro: '딸기콩소메는 딸기즙을 맑게 정제해 본연의 맛만 남기는 모던 가스트로노미 기법이에요.',

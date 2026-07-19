@@ -12,7 +12,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-home-1', month: 1, title: '매생이 굴국', subtitle: '향긋한 겨울 보양국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-home-1/hero.webp',
     mainIngredient: '매생이',
     description: '부드러운 매생이와 향긋한 굴을 함께 끓여낸, 겨울철 대표 보양국이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-home-2', month: 1, title: '매생이전', subtitle: '바삭함과 부드러움의 대비',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-home-2/hero.webp',
     mainIngredient: '매생이',
     description: '향긋한 매생이를 부침가루와 섞어 부쳐낸, 바삭한 가장자리와 부드러운 속이 매력인 전이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-home-3', month: 1, title: '매생이 떡국', subtitle: '향긋함을 더한 새해 별미',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-home-3/hero.webp',
     mainIngredient: '매생이',
     description: '기본 떡국에 매생이를 더해 향긋함을 살린, 겨울철 별미 떡국이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-home-4', month: 1, title: '매생이 계란국', subtitle: '부드럽고 든든한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-home-4/hero.webp',
     mainIngredient: '매생이',
     description: '매생이와 계란을 함께 풀어 끓인, 부드럽고 든든한 기본 국이에요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-home-5', month: 1, title: '매생이 만두국', subtitle: '향긋함을 더한 든든한 만두국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-home-5/hero.webp',
     mainIngredient: '매생이',
     description: '만두국에 매생이를 더해 향긋함을 살린, 겨울철 든든한 한 끼예요.',
     masterclass: {
@@ -163,7 +163,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-weekend-1', month: 1, title: '매생이 굴전', subtitle: '겨울 별미의 조합',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-weekend-1/hero.webp',
     mainIngredient: '매생이',
     description: '매생이와 굴을 함께 부친, 겨울철 두 가지 별미가 만난 전이에요.',
     masterclass: {
@@ -193,7 +193,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-weekend-2', month: 1, title: '매생이 수제비', subtitle: '쫄깃하고 향긋한 겨울 별미',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-weekend-2/hero.webp',
     mainIngredient: '매생이',
     description: '쫄깃한 수제비와 향긋한 매생이가 만난, 든든하고 따뜻한 겨울 별미예요.',
     masterclass: {
@@ -224,7 +224,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-weekend-3', month: 1, title: '매생이 새우전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-weekend-3/hero.webp',
     mainIngredient: '매생이',
     description: '매생이와 새우, 채소를 넉넉히 넣고 시원하게 끓인 겨울철 전골이에요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-weekend-4', month: 1, title: '매생이 굴죽', subtitle: '부드럽고 든든한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-weekend-4/hero.webp',
     mainIngredient: '매생이',
     description: '매생이와 굴을 넣어 끓인, 부드럽고 속이 편안한 겨울철 보양죽이에요.',
     masterclass: {
@@ -283,7 +283,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
   {
     id: 'maesaengi-weekend-5', month: 1, title: '매생이 부추전', subtitle: '향긋함이 두 배가 되는 전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-weekend-5/hero.webp',
     mainIngredient: '매생이',
     description: '매생이에 부추를 더해 부친, 향긋함이 배가 되는 겨울철 별미전이에요.',
     masterclass: {
@@ -315,7 +315,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-world-1', month: 1, title: '아오사노 미소시루', subtitle: '일본식 해초 된장국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '일본', note: '아오사(あおさ)는 일본어로 매생이와 비슷한 파래류 해초를 뜻해요. 일본에서는 이 해초를 미소시루에 넣어 향긋하게 즐기는 것이 흔한 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-world-1/hero.webp',
     mainIngredient: '매생이',
     description: '매생이를 넣어 끓인 일본식 된장국으로, 담백하고 향긋한 맛이에요.',
     masterclass: {
@@ -346,7 +346,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-world-2', month: 1, title: '즈차이 하이차이탕', subtitle: '중국식 해초 계란탕',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '하이차이(海菜)는 중국어로 해초를 뜻해요. 중국 요리에서는 해초를 계란과 함께 끓인 맑은 탕이 가정식으로 인기 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-world-2/hero.webp',
     mainIngredient: '매생이',
     description: '매생이와 계란을 넣어 끓인, 중국식 담백한 해초 계란탕이에요.',
     masterclass: {
@@ -378,7 +378,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-world-3', month: 1, title: '매생이 봉골레', subtitle: '이탈리아식 향긋한 조개파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '이탈리아', note: '봉골레는 조개(vongole)를 뜻하는 이탈리아식 파스타예요. 매생이를 더하면 조개 국물과 만나 훨씬 향긋하고 진한 바다향의 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-world-3/hero.webp',
     mainIngredient: '매생이',
     description: '바지락 육수와 올리브오일에 매생이를 더한, 향긋한 이탈리아식 조개파스타예요.',
     masterclass: {
@@ -409,7 +409,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-world-4', month: 1, title: '매생이 뵈샤멜 그라탕', subtitle: '프랑스식 화이트소스 그라탕',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '프랑스', note: '뵈샤멜은 프랑스 요리의 5대 기본 소스 중 하나예요. 해초를 넣은 그라탕은 프랑스 브르타뉴 해안 지방에서 즐겨 만드는 스타일로, 매생이가 그 원리와 잘 맞아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-world-4/hero.webp',
     mainIngredient: '매생이',
     description: '매생이를 뵈샤멜소스와 섞어 구운, 향긋하고 고소한 프랑스식 그라탕이에요.',
     masterclass: {
@@ -440,7 +440,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-world-5', month: 1, title: '매생이 알가스 크로켓', subtitle: '스페인식 바삭한 해초 크로켓',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '스페인', note: '크로케타스(croquetas)는 스페인 타파스 바에서 흔히 볼 수 있는 대표 메뉴예요. 베샤멜소스에 재료를 섞어 튀겨내는데, 해초(알가스)를 넣은 버전도 갈리시아 지방에서 즐겨 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-world-5/hero.webp',
     mainIngredient: '매생이',
     description: '매생이를 베샤멜소스와 섞어 튀긴, 겉바속촉의 스페인식 크로켓이에요.',
     masterclass: {
@@ -474,7 +474,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-chef-1', month: 1, title: '매생이 크림수프', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '얕은 수프 접시에 크림수프를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-chef-1/hero.webp',
     mainIngredient: '매생이',
     description: '매생이를 곱게 갈아 크림으로 부드럽게 마무리한, 진한 바다향의 프랑스식 수프예요.',
     masterclass: {
@@ -507,7 +507,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-chef-2', month: 1, title: '관자 매생이 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 매생이를 넣은 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 매생이를 소량 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-chef-2/hero.webp',
     mainIngredient: '매생이',
     description: '바삭하게 시어링한 관자에 매생이로 향을 낸 프랑스식 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {
@@ -540,7 +540,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-chef-3', month: 1, title: '매생이 리조또', subtitle: '진한 바다향의 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 매생이를 소량 흩뿌린 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-chef-3/hero.webp',
     mainIngredient: '매생이',
     description: '매생이를 넣어 은은한 초록빛과 진한 바다향을 낸, 겨울철 이탈리아식 리조또예요.',
     masterclass: {
@@ -572,7 +572,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-chef-4', month: 1, title: '매생이 오일 파스타', subtitle: '이탈리아식 바다향 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 매생이를 위에 소복이 올린 뒤 레몬 제스트를 뿌리고 올리브오일을 한 바퀴 둘러 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-chef-4/hero.webp',
     mainIngredient: '매생이',
     description: '매생이를 마늘과 올리브오일에 볶아 만든, 진한 바다향이 감도는 이탈리아식 파스타예요.',
     masterclass: {
@@ -603,7 +603,7 @@ export const recipesSeaMustardExpansion: Recipe[] = [
     id: 'maesaengi-chef-5', month: 1, title: '매생이 오일 콩피 흰살생선', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 매생이오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesaengi-chef-5/hero.webp',
     mainIngredient: '매생이',
     description: '매생이로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 향긋한 요리예요.',
     masterclass: {

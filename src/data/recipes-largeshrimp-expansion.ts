@@ -216,7 +216,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-weekend-3', month: 9, title: '대하강정', subtitle: '매콤달콤 바삭한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-weekend-3/hero.webp',
     mainIngredient: '대하',
     description: '바삭하게 튀긴 대하를 매콤달콤한 소스에 버무린, 인기 만점 별미예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-weekend-4', month: 9, title: '대하솥밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-weekend-4/hero.webp',
     mainIngredient: '대하',
     description: '대하를 올려 지은 솥밥으로, 고소하고 감칠맛 나는 든든한 한 그릇이에요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
   {
     id: 'largeshrimp-weekend-5', month: 9, title: '대하완자탕', subtitle: '탱글하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-weekend-5/hero.webp',
     mainIngredient: '대하',
     description: '대하살을 다져 완자로 빚어 끓인, 탱글하고 시원한 국물 요리예요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-world-1', month: 9, title: '감바스 알 아히요', subtitle: '스페인식 마늘새우',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '감바스 알 아히요(gambas al ajillo)는 스페인의 대표 타파스로, 새우를 올리브오일과 마늘에 보글보글 끓여내는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-world-1/hero.webp',
     mainIngredient: '대하',
     description: '올리브오일과 마늘에 보글보글 끓여낸, 스페인식 대표 새우 타파스예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-world-2', month: 9, title: '감베로니 파스타', subtitle: '이탈리아식 대하파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '감베로니(gamberoni)는 이탈리아어로 큰 새우를 뜻해요. 이탈리아 해안 지방에서는 큰 새우를 토마토나 오일 파스타에 즐겨 넣어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-world-2/hero.webp',
     mainIngredient: '대하',
     description: '대하와 체리토마토로 만든, 이탈리아식 상큼한 새우파스타예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-world-3', month: 9, title: '똠얌꿍', subtitle: '태국식 새콤매콤한 대하탕',
     category: '국&찌개', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '태국', note: '똠얌꿍(ต้มยำกุ้ง)은 태국의 대표 수프로, 새우와 레몬그라스, 라임잎으로 새콤매콤한 국물을 내는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548943487-a2e4e43b4853?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-world-3/hero.webp',
     mainIngredient: '대하',
     description: '대하와 향신 재료로 끓인, 태국의 대표 새콤매콤한 수프예요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-world-4', month: 9, title: '대하 텐푸라', subtitle: '일본식 새우튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '일본', note: '텐푸라는 일본식 튀김 기법으로, 얼음물 반죽과 낮은 온도의 기름이 바삭함의 비결이에요. 큰 새우로 만들면 특히 존재감 있는 튀김이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-world-4/hero.webp',
     mainIngredient: '대하',
     description: '대하를 일본식 텐푸라 반죽으로 튀긴, 가볍고 바삭한 튀김이에요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-world-5', month: 9, title: '케이준 대하볶음', subtitle: '미국 남부식 매콤한 새우요리',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '미국(케이준)', note: '케이준 요리는 미국 루이지애나 지방의 대표 스타일로, 파프리카가루와 카옌페퍼 등 향신료를 강하게 쓰는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-world-5/hero.webp',
     mainIngredient: '대하',
     description: '대하를 케이준 향신료에 볶아낸, 매콤하고 스모키한 미국 남부식 요리예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-chef-1', month: 9, title: '대하 비스크', subtitle: '프랑스식 진한 갑각류 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 65, servings: 4,
     platingGuide: '얕은 수프 접시에 비스크를 붓고, 중앙에 크렘프레슈를 한 스푼 올린 뒤 대하 한 마리와 차이브로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-chef-1/hero.webp',
     mainIngredient: '대하',
     description: '대하 껍질까지 오래 우려 만든, 프랑스식 진하고 고급스러운 갑각류 수프예요.',
     masterclass: {
@@ -490,7 +490,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-chef-2', month: 9, title: '대하 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 새우',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 대하를 부채꼴로 배치하고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-chef-2/hero.webp',
     mainIngredient: '대하',
     description: '살짝 구운 대하에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {
@@ -521,7 +521,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-chef-3', month: 9, title: '대하 콩피', subtitle: '향유에 은근히 익힌 탱글한 새우',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '따뜻한 접시에 대하를 놓고, 콩피에 쓴 오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-chef-3/hero.webp',
     mainIngredient: '대하',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드럽고 탱글한 새우요리예요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-chef-4', month: 9, title: '대하 리조또', subtitle: '진한 감칠맛의 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 대하를 고명으로 소복이 올린 뒤 레몬 제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-chef-4/hero.webp',
     mainIngredient: '대하',
     description: '대하 껍질 육수로 지어 대하를 올린, 진한 감칠맛의 이탈리아식 리조또예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesLargeShrimpExpansion: Recipe[] = [
     id: 'largeshrimp-chef-5', month: 9, title: '대하 카르파치오', subtitle: '얇게 저민 새우의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 대하를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/largeshrimp-chef-5/hero.webp',
     mainIngredient: '대하',
     description: '얇게 저민 신선한 대하에 올리브오일과 레몬을 더한, 재료 본연의 단맛을 즐기는 전채예요.',
     masterclass: {

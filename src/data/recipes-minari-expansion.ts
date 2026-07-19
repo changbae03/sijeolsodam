@@ -14,7 +14,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-home-1', month: 4, title: '미나리무침', subtitle: '향긋하게 데쳐 무친 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-home-1/hero.webp',
     mainIngredient: '미나리', description: '살짝 데친 미나리를 고추장 양념에 새콤하게 무친, 향긋함이 살아있는 기본 봄나물 반찬이에요.',
     masterclass: {
       chefIntro: '미나리는 향이 워낙 강한 채소라서, 데치는 시간을 살짝만 잘못 잡아도 그 향이 다 날아가버리거나 반대로 풋내가 너무 진하게 남아요. 그래서 짧고 정확하게 데치는 게 이 반찬의 전부라고 할 수 있어요. 봄 미나리는 줄기가 아삭하고 향이 가장 진한 시기라, 이 시기에 만들면 양념을 많이 쓰지 않아도 충분히 맛있어요.',
@@ -59,7 +59,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-home-2', month: 4, title: '미나리 된장국', subtitle: '향긋함을 더한 구수한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-home-2/hero.webp',
     mainIngredient: '미나리', description: '구수한 된장국 마지막에 미나리를 더해 향을 살린, 봄철에 특히 잘 어울리는 기본 국이에요.',
     masterclass: {
       chefIntro: '된장국은 어떤 채소를 넣어도 무난하게 어울리지만, 미나리를 넣으면 평범한 된장국이 한순간에 봄을 담은 국으로 바뀌어요. 미나리는 오래 끓이면 향이 다 빠져나가는 재료라서, 국물 간을 먼저 다 맞춘 다음 가장 마지막에 넣는 순서를 지키는 게 중요해요.',
@@ -99,7 +99,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-home-3', month: 4, title: '미나리 콩나물밥', subtitle: '향긋함이 밥알 사이로 스며드는 기본 밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-home-3/hero.webp',
     mainIngredient: '미나리', description: '콩나물밥에 미나리를 더해 향을 살린, 양념장에 비벼 먹는 든든한 기본 밥이에요.',
     masterclass: {
       chefIntro: '콩나물밥은 원래도 향이 강하지 않은 재료라서, 미나리를 더하면 밥 전체에 향이 훨씬 풍성하게 퍼져요. 콩나물은 밥과 함께 익혀야 하지만, 미나리는 밥이 다 된 뒤에 얹어서 잔열로만 살짝 익히는 게 비결이에요. 두 재료를 다루는 방식이 완전히 다르다는 걸 기억해두면 실패할 일이 거의 없어요.',
@@ -140,7 +140,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-weekend-1', month: 4, title: '미나리 새우전', subtitle: '향긋한 미나리와 탱탱한 새우의 조합',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-weekend-1/hero.webp',
     mainIngredient: '미나리', description: '미나리와 새우를 부침가루 반죽에 섞어 부친, 향긋함과 탱탱한 식감이 함께 느껴지는 전이에요.',
     masterclass: {
       chefIntro: '미나리전만 부치면 자칫 심심하게 느껴질 수 있는데, 새우를 더하면 씹는 맛이 더해지면서 한 끼 식사로도 충분한 든든함이 생겨요. 새우의 단맛과 미나리의 알싱한 향이 한 입에서 같이 느껴지는 게 이 전의 매력이에요.',
@@ -175,7 +175,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-weekend-2', month: 4, title: '미나리 매운탕', subtitle: '향긋함이 진한 맛을 살려주는 매운탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-weekend-2/hero.webp',
     mainIngredient: '미나리', description: '매콤한 생선 매운탕에 미나리를 듬뿍 더한, 향긋함과 칼칼함이 함께 어우러지는 주말 메뉴예요.',
     masterclass: {
       chefIntro: '매운탕집에서 미나리를 듬뿍 올려주는 이유가 있어요. 생선의 진한 맛과 매콤한 양념 사이에서, 미나리가 향으로 그 모든 걸 정리해주는 역할을 하거든요. 미나리 없이 끓인 매운탕과 비교해보면 그 차이가 확실히 느껴져요.',
@@ -213,7 +213,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-weekend-3', month: 4, title: '미나리 만두', subtitle: '향긋한 미나리를 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-weekend-3/hero.webp',
     mainIngredient: '미나리', description: '잘게 썬 미나리를 듬뿍 넣어 빚은 만두로, 한입 베어 물면 알싱한 향이 입안 가득 퍼져요.',
     masterclass: {
       chefIntro: '미나리만두는 흔히 만나는 메뉴는 아니지만, 부추만두나 깻잎만두와 비교해보면 또 다른 매력이 있어요. 미나리는 향이 더 청량하고 산뜻해서, 만두 속이 자칫 무거워질 수 있는 돼지고기와 만나면 그 무게감을 한층 가볍게 잡아줘요.',
@@ -243,7 +243,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-weekend-4', month: 4, title: '미나리 갈치조림', subtitle: '향긋함이 더해진 칼칼한 생선조림',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-weekend-4/hero.webp',
     mainIngredient: '미나리', description: '칼칼하게 조린 갈치에 미나리를 듬뿍 더한, 비린 맛은 줄고 향긋함은 살아나는 메인 요리예요.',
     masterclass: {
       chefIntro: '갈치조림은 본래도 인기 있는 메뉴지만, 미나리를 더하면 생선 비린내가 한층 줄어들고 양념의 칼칼함이 더 또렷하게 느껴져요. 미나리가 양념과 생선 사이에서 향으로 균형을 잡아주는 역할을 해요.',
@@ -277,7 +277,7 @@ export const recipesMinariExpansion: Recipe[] = [
   {
     id: 'minari-weekend-5', month: 4, title: '미나리 곱창전골', subtitle: '향긋함으로 느끼함을 잡아주는 곱창전골',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-weekend-5/hero.webp',
     mainIngredient: '미나리', description: '곱창전골에 미나리를 듬뿍 넣어, 기름진 곱창의 느끼함을 향긋함으로 정리한 메뉴예요.',
     masterclass: {
       chefIntro: '곱창전골 식당에 가면 항상 미나리가 한 무더기 같이 나오는 이유가 있어요. 곱창 자체가 워낙 기름지고 진해서, 미나리의 알싱한 향이 없으면 몇 점 못 먹고 금방 느끼해지거든요. 집에서 끓일 때도 이 점을 기억하면 훨씬 만족스러운 전골이 돼요.',
@@ -317,7 +317,7 @@ export const recipesMinariExpansion: Recipe[] = [
       country: '서양',
       note: '미나리는 서양의 셀러리와 식물학적으로 가까운 친척이에요. 향과 식감이 비슷한 점을 살려, 서양식 샐러드 조리법을 그대로 미나리에 적용해본 메뉴예요. 셀러리 샐러드처럼 레몬즙과 올리브오일로 가볍게 드레싱하면 두 향이 자연스럽게 어우러져요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-world-1/hero.webp',
     mainIngredient: '미나리', description: '생미나리를 레몬즙과 올리브오일로 가볍게 버무린, 서양식 셀러리 샐러드를 떠올리게 하는 산뜻한 메뉴예요.',
     masterclass: {
       chefIntro: '미나리를 익히지 않고 생으로 먹는다는 발상이 신선해요. 서양에서 셀러리를 생으로 즐기는 방식을 그대로 가져와봤는데, 익혔을 때와는 전혀 다른 아삭함과 청량감이 느껴져요.',
@@ -348,7 +348,7 @@ export const recipesMinariExpansion: Recipe[] = [
       country: '베트남',
       note: '베트남에서는 향이 강한 채소를 라이스페이퍼에 함께 싸 먹는 문화가 발달해 있어요. 미나리를 그 자리에 더하면, 베트남 허브들과는 또 다른 향의 층이 더해지는 흥미로운 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-world-2/hero.webp',
     mainIngredient: '미나리', description: '라이스페이퍼에 돼지고기와 미나리, 채소를 함께 싸 먹는, 향긋함이 풍성한 베트남풍 쌈이에요.',
     masterclass: {
       chefIntro: '베트남식 쌈에 한식 미나리를 더해보는 발상이에요. 향신 채소 여러 가지가 한 번에 느껴지는 게 이 쌈의 매력이에요.',
@@ -381,7 +381,7 @@ export const recipesMinariExpansion: Recipe[] = [
       country: '일본',
       note: '일본 가정에서는 미나리(미츠바와 비슷한 미나리과 채소)를 살짝 데쳐 폰즈소스에 무치는 가벼운 사라다(샐러드)를 즐겨요. 깔끔하고 산뜻하게 채소 본연의 향을 살리는 방식이 특징이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-world-3/hero.webp',
     mainIngredient: '미나리', description: '살짝 데친 미나리에 폰즈소스를 곁들인, 일본식의 깔끔하고 산뜻한 사라다예요.',
     masterclass: {
       chefIntro: '일본식 사라다는 양념이 단순하고 재료 본연의 맛을 살리는 데 집중해요. 미나리도 이 방식대로 만들면 한식 양념과는 또 다른 산뜻함을 느낄 수 있어요.',
@@ -412,7 +412,7 @@ export const recipesMinariExpansion: Recipe[] = [
       country: '태국',
       note: '똠얌은 태국의 대표적인 새콤매콤한 수프예요. 보통 레몬그라스와 고수를 향신채로 쓰는데, 미나리를 더하면 향의 결이 한층 풍부해지는 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-world-4/hero.webp',
     mainIngredient: '미나리', description: '새우와 함께 끓인 새콤매콤한 똠얌 국물에 미나리를 더한, 향이 한층 풍부해진 태국식 수프예요.',
     masterclass: {
       chefIntro: '똠얌의 새콤매콤한 국물에 미나리를 더하면, 원래의 향신채와는 다른 결의 향이 더해져요. 의외로 잘 어울리는 조합이라 한 번 맛보면 계속 찾게 돼요.',
@@ -443,7 +443,7 @@ export const recipesMinariExpansion: Recipe[] = [
       country: '프랑스',
       note: '프랑스 가정에서는 오믈렛에 차이브나 파슬리 같은 허브를 잘게 썰어 넣는 경우가 많아요. 미나리를 활용하면 비슷한 역할을 하면서도 더 독특한 향을 가진 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-world-5/hero.webp',
     mainIngredient: '미나리', description: '잘게 썬 미나리를 더한 프랑스식 오믈렛으로, 부드러운 달걀과 향긋한 미나리가 함께 느껴지는 브런치예요.',
     masterclass: {
       chefIntro: '프랑스식 오믈렛은 약불로 천천히, 부드럽게 익히는 게 핵심이에요. 미나리를 더하면 그 부드러움 사이로 산뜻한 향이 느껴지는 게 매력이에요.',
@@ -479,7 +479,7 @@ export const recipesMinariExpansion: Recipe[] = [
     id: 'minari-chef-1', month: 4, title: '미나리오일과 관자', subtitle: '향긋한 오일과 시어드 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '접시에 미나리오일을 가늘게 한 줄 그리고 시어드한 관자를 올려보세요. 미나리 잎을 살짝 튀겨 올리면 식감이 더해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-chef-1/hero.webp',
     mainIngredient: '미나리', description: '미나리를 갈아 만든 향긋한 오일에 시어드한 관자를 올린, 한식 향을 모던하게 풀어낸 정교한 전채예요.',
     masterclass: {
       chefIntro: '미나리를 오일로 만든다는 발상이 신선해요. 색과 향을 동시에 살리는 모던 키친의 기법을 한식 재료에 적용해본 메뉴예요.',
@@ -519,7 +519,7 @@ export const recipesMinariExpansion: Recipe[] = [
     id: 'minari-chef-2', month: 4, title: '미나리 콩소메', subtitle: '맑게 거른 미나리의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 미나리 잎 한 장을 띄워보세요. 옅은 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-chef-2/hero.webp',
     mainIngredient: '미나리', description: '미나리를 갈아 맑게 걸러낸, 향긋함이 진하게 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 미나리에 적용한 요리예요. 향이 워낙 진한 재료라서, 적은 양으로도 풍미가 충분히 느껴져요.',
@@ -554,7 +554,7 @@ export const recipesMinariExpansion: Recipe[] = [
     id: 'minari-chef-3', month: 4, title: '미나리 퓌레와 오리가슴살', subtitle: '향긋한 미나리 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 오리 기름 한 방울을 점으로 더하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-chef-3/hero.webp',
     mainIngredient: '미나리', description: '향긋한 미나리 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 한식 재료를 프렌치 비스트로풍으로 풀어낸 메인이에요.',
     masterclass: {
       chefIntro: '미나리의 알싱한 향이 오리의 진한 풍미를 한층 살려줘요. 익숙한 재료의 새로운 가능성을 보여주는 메뉴예요.',
@@ -589,7 +589,7 @@ export const recipesMinariExpansion: Recipe[] = [
     id: 'minari-chef-4', month: 4, title: '미나리 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 미나리 새싹을 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-chef-4/hero.webp',
     mainIngredient: '미나리', description: '가볍게 휘핑한 미나리 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 정교한 전채예요.',
     masterclass: {
       chefIntro: '미나리를 무스로 만들면 향은 그대로 살리면서 훨씬 가벼운 질감을 경험할 수 있어요.',
@@ -623,7 +623,7 @@ export const recipesMinariExpansion: Recipe[] = [
     id: 'minari-chef-5', month: 4, title: '미나리 크리스프와 참치 타르타르', subtitle: '바삭함과 신선함의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 참치 타르타르를 정확히 중앙에 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/minari-chef-5/hero.webp',
     mainIngredient: '미나리', description: '바삭하게 튀긴 미나리 위에 참치 타르타르를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '미나리를 튀기면 향은 그대로 남으면서 전혀 다른 바삭한 질감으로 변해요.',

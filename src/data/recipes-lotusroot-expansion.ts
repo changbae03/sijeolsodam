@@ -14,7 +14,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-home-1', month: 1, title: '연근조림', subtitle: '달콤짭짤한 간장 양념이 밴 겨울 반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-home-1/hero.webp',
     mainIngredient: '연근',
     description: '아삭한 식감의 연근을 간장 양념에 졸여낸, 도시락 반찬으로도 좋은 겨울 밑반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-home-2', month: 1, title: '연근전', subtitle: '아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-home-2/hero.webp',
     mainIngredient: '연근',
     description: '연근을 얇게 썰어 반죽을 입혀 부친, 아삭하고 고소한 별미전이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-home-3', month: 1, title: '연근볶음', subtitle: '아삭하고 담백한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-home-3/hero.webp',
     mainIngredient: '연근',
     description: '연근을 간장과 참기름으로 볶은, 아삭하고 담백한 기본 반찬이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-home-4', month: 1, title: '연근차', subtitle: '구수하고 따뜻한 겨울 음료',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-home-4/hero.webp',
     mainIngredient: '연근',
     description: '연근을 달여 만든, 구수하고 따뜻한 겨울철 건강 음료예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-home-5', month: 1, title: '연근무침', subtitle: '아삭하고 새콤달콤한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-home-5/hero.webp',
     mainIngredient: '연근',
     description: '데친 연근을 초고추장에 무친, 아삭하고 새콤달콤한 밑반찬이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-weekend-1', month: 1, title: '연근갈비찜', subtitle: '아삭함을 더한 특별한 갈비찜',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-weekend-1/hero.webp',
     mainIngredient: '연근',
     description: '갈비찜에 연근을 더해, 아삭한 식감과 단맛을 살린 특별한 메인요리예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-weekend-2', month: 1, title: '연근튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-weekend-2/hero.webp',
     mainIngredient: '연근',
     description: '연근을 얇게 썰어 바삭하게 튀긴, 겉은 바삭하고 속은 아삭한 튀김이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-weekend-3', month: 1, title: '연근돼지고기볶음', subtitle: '아삭하고 든든한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-weekend-3/hero.webp',
     mainIngredient: '연근',
     description: '돼지고기와 연근을 매콤하게 볶은, 아삭함이 살아있는 든든한 메인요리예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-weekend-4', month: 1, title: '연근피클', subtitle: '새콤달콤한 아삭한 피클',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-weekend-4/hero.webp',
     mainIngredient: '연근',
     description: '연근을 새콤달콤한 피클물에 절인, 아삭하고 개운한 밑반찬이에요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
   {
     id: 'lotusroot-weekend-5', month: 1, title: '연근죽', subtitle: '부드럽고 구수한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-weekend-5/hero.webp',
     mainIngredient: '연근',
     description: '연근을 갈아 끓인, 부드럽고 구수한 겨울철 보양죽이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-world-1', month: 1, title: '렌콘노 킨피라', subtitle: '일본식 연근 단짠볶음',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '일본', note: '렌콘(れんこん)은 일본어로 연근을 뜻해요. 킨피라(金平)는 채소를 간장과 미림으로 달콤짭짤하게 볶아내는 일본의 대표적인 반찬 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-world-1/hero.webp',
     mainIngredient: '연근',
     description: '연근을 간장과 미림에 달콤짭짤하게 볶은, 일본의 대표적인 밑반찬이에요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-world-2', month: 1, title: '롄어우 볶음', subtitle: '중국식 연근볶음',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '중국', note: '롄어우(莲藕)는 중국어로 연근을 뜻해요. 중국에서는 연근을 목이버섯, 피망 등과 함께 새콤달콤하게 볶는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-world-2/hero.webp',
     mainIngredient: '연근',
     description: '연근을 목이버섯, 피망과 함께 새콤달콤하게 볶은, 중국식 대표 채소볶음이에요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-world-3', month: 1, title: '연근 프리터', subtitle: '영국식 채소 프리터',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '프리터(fritter)는 채소나 과일에 반죽을 입혀 튀기는 영국·유럽식 조리법이에요. 연근으로 만들면 특유의 예쁜 모양이 돋보여요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-world-3/hero.webp',
     mainIngredient: '연근',
     description: '연근을 반죽에 버무려 튀긴, 영국식 바삭한 채소 프리터예요.',
     masterclass: {
@@ -395,7 +395,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-world-4', month: 1, title: '연근 커리', subtitle: '인도식 향신 채소커리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '인도', note: '인도에서는 연근(카말 카카디)을 향신료와 함께 커리로 즐기는 전통이 있어요. 아삭한 식감이 커리 국물과 대비를 이뤄요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-world-4/hero.webp',
     mainIngredient: '연근',
     description: '연근을 향신료와 토마토소스에 끓인, 인도식 향긋한 채소커리예요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-world-5', month: 1, title: '연근칩', subtitle: '미국식 바삭한 베지터블칩',
     category: '간식', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '미국', note: '미국에서는 다양한 뿌리채소를 얇게 썰어 튀기거나 구운 베지터블칩이 건강 간식으로 인기예요. 연근은 특유의 구멍 무늬가 시각적으로도 매력적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-world-5/hero.webp',
     mainIngredient: '연근',
     description: '연근을 얇게 썰어 바삭하게 튀긴, 예쁜 무늬가 매력적인 베지터블칩이에요.',
     masterclass: {
@@ -456,7 +456,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-chef-1', month: 1, title: '연근전분국수', subtitle: '전분 추출·제면 기법',
     category: '면요리', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '투명한 유리그릇에 국수를 담아 은은한 광택이 보이게 하고, 얇게 저민 오이와 실고추를 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-chef-1/hero.webp',
     mainIngredient: '연근',
     description: '연근을 갈아 전분만 분리한 뒤 반죽해 만든, 쫄깃하고 투명한 수제 국수예요.',
     masterclass: {
@@ -487,7 +487,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-chef-2', month: 1, title: '밀연근', subtitle: '중국식 꿀절임 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '완성된 밀연근을 얇게 슬라이스해 접시에 부채꼴로 담고, 남은 꿀시럽을 스푼으로 끼얹은 뒤 계핏가루를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-chef-2/hero.webp',
     mainIngredient: '연근',
     description: '연근을 꿀과 설탕시럽에 오래 조려 만든, 중국의 전통 명절 디저트예요.',
     masterclass: {
@@ -518,7 +518,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-chef-3', month: 1, title: '연근 크리스프 관자구이', subtitle: '모던 가니시 튀김 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '시어링한 관자를 접시에 놓고, 연근 크리스프를 부채꼴로 세워 꽂아 입체감을 주며, 버터소스를 스푼으로 끼얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-chef-3/hero.webp',
     mainIngredient: '연근',
     description: '얇게 튀긴 연근 크리스프를 관자구이의 장식이자 식감 포인트로 활용한, 모던 플레이팅 요리예요.',
     masterclass: {
@@ -549,7 +549,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-chef-4', month: 1, title: '연근 도쭈아', subtitle: '베트남식 퀵 피클링',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 6,
     platingGuide: '작은 유리병이나 접시에 도쭈아를 소복이 담아 반미샌드위치나 그릴 요리 옆에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-chef-4/hero.webp',
     mainIngredient: '연근',
     description: '연근을 식초와 설탕물에 빠르게 절인, 베트남 반미 샌드위치의 대표 사이드예요.',
     masterclass: {
@@ -580,7 +580,7 @@ export const recipesLotusRootExpansion: Recipe[] = [
     id: 'lotusroot-chef-5', month: 1, title: '연근돼지등뼈탕', subtitle: '중국식 장시간 보양탕',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 150, servings: 4,
     platingGuide: '큰 뚝배기나 탕그릇에 통째로 담아 상 위에 올리고, 각자 그릇에 덜어 실파를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/lotusroot-chef-5/hero.webp',
     mainIngredient: '연근',
     description: '연근과 돼지등뼈를 장시간 은근히 끓인, 중국 광둥 지방의 대표적인 보양탕이에요.',
     masterclass: {

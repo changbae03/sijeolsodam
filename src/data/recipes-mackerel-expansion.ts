@@ -14,7 +14,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-home-2', month: 2, title: '삼치 조림', subtitle: '매콤달콤한 기본 생선조림',
     category: '조림', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-home-2/hero.webp',
     mainIngredient: '삼치',
     description: '무를 깔고 매콤한 양념장으로 조린, 밥반찬으로 인기 좋은 기본 삼치조림이에요.',
     masterclass: {
@@ -45,7 +45,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-home-3', month: 2, title: '삼치 소금구이', subtitle: '재료 본연의 맛을 살린 기본 구이',
     category: '구이', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-home-3/hero.webp',
     mainIngredient: '삼치',
     description: '소금만으로 간을 해 구운, 삼치 본연의 기름진 맛을 가장 잘 느낄 수 있는 구이예요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-home-4', month: 2, title: '삼치 무조림', subtitle: '얼큰하고 든든한 밥반찬',
     category: '조림', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-home-4/hero.webp',
     mainIngredient: '삼치',
     description: '큼직하게 썬 무와 함께 얼큰하게 조린, 국물까지 맛있는 삼치 무조림이에요.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-home-5', month: 2, title: '삼치 튀김', subtitle: '바삭하게 튀겨낸 겉바속촉 생선튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-home-5/hero.webp',
     mainIngredient: '삼치',
     description: '한입 크기로 썬 삼치에 튀김옷을 입혀 바삭하게 튀긴, 아이들도 좋아하는 반찬이에요.',
     masterclass: {
@@ -137,7 +137,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-weekend-1', month: 2, title: '삼치 강정', subtitle: '달콤짭짤한 소스를 입힌 생선강정',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-weekend-1/hero.webp',
     mainIngredient: '삼치',
     description: '튀긴 삼치에 달콤짭짤한 강정소스를 버무린, 밥도둑이 되는 별미예요.',
     masterclass: {
@@ -167,7 +167,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-weekend-2', month: 2, title: '삼치 매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-weekend-2/hero.webp',
     mainIngredient: '삼치',
     description: '삼치와 무, 채소를 넣고 얼큰하게 끓인, 시원하고 진한 국물의 매운탕이에요.',
     masterclass: {
@@ -197,7 +197,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-weekend-3', month: 2, title: '삼치 유린기', subtitle: '중식당 스타일 바삭 새콤 소스구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-weekend-3/hero.webp',
     mainIngredient: '삼치',
     description: '바삭하게 튀긴 삼치에 새콤달콤한 채소소스를 끼얹은, 중식당에서 즐기던 그 맛이에요.',
     masterclass: {
@@ -227,7 +227,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-weekend-4', month: 2, title: '삼치 카레', subtitle: '향긋한 카레와 만난 생선요리',
     category: '카레', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-weekend-4/hero.webp',
     mainIngredient: '삼치',
     description: '삼치를 카레 국물에 넣고 끓인, 향긋하고 부드러운 별미 카레예요.',
     masterclass: {
@@ -257,7 +257,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
   {
     id: 'mackerel-weekend-5', month: 2, title: '삼치 데리야끼 오차즈케', subtitle: '남은 구이로 만드는 일본식 국밥',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-weekend-5/hero.webp',
     mainIngredient: '삼치',
     description: '구운 삼치살을 밥에 올리고 뜨거운 다시육수를 부어 먹는, 담백하고 든든한 일본식 국밥이에요.',
     masterclass: {
@@ -290,7 +290,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-world-1', month: 2, title: '사바노 시오야키', subtitle: '일본식 고등어과 생선 소금구이',
     category: '구이', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '일본', note: '시오야키(塩焼き)는 소금만으로 간을 해 굽는 일본의 대표적인 생선 조리법이에요. 재료 본연의 신선함이 그대로 드러나는 조리 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-world-1/hero.webp',
     mainIngredient: '삼치',
     description: '소금간을 한 삼치를 일본식으로 구워, 무즙과 함께 즐기는 담백한 요리예요.',
     masterclass: {
@@ -321,7 +321,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-world-2', month: 2, title: '카바예 아 라 플란차', subtitle: '스페인식 팬구이 고등어과 생선',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-world-2/hero.webp',
     mainIngredient: '삼치',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 생선요리예요.',
     masterclass: {
@@ -351,7 +351,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-world-3', month: 2, title: '삼치 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-world-3/hero.webp',
     mainIngredient: '삼치',
     description: '토마토와 화이트와인, 조개를 함께 넣고 삼치를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -383,7 +383,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-world-4', month: 2, title: '삼치 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '프랑스', note: '파피요트(en papillote)는 재료를 종이나 포일에 싸서 오븐에 찌듯 굽는 프랑스 요리 기법이에요. 재료의 수분과 향이 그대로 갇혀 촉촉하게 완성돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-world-4/hero.webp',
     mainIngredient: '삼치',
     description: '삼치와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -415,7 +415,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-world-5', month: 2, title: '프소또 스코르달리아', subtitle: '그리스식 생선구이와 마늘소스',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '그리스', note: '스코르달리아(skordalia)는 감자와 마늘을 갈아 만드는 그리스 전통 소스예요. 그리스에서는 구운 생선에 이 소스를 곁들여 먹는 것이 흔한 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-world-5/hero.webp',
     mainIngredient: '삼치',
     description: '올리브오일에 구운 삼치에 감자마늘소스를 곁들인, 그리스 지중해식 요리예요.',
     masterclass: {
@@ -448,7 +448,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-chef-1', month: 2, title: '삼치 타르타르', subtitle: '신선함을 그대로 살린 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '원형 무스링을 접시 중앙에 놓고 타르타르를 눌러 담은 뒤 조심스럽게 들어 올려 원통형으로 세우고, 그 위에 캐비어나 날치알을 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-chef-1/hero.webp',
     mainIngredient: '삼치',
     description: '신선한 삼치를 잘게 다져 아보카도, 간장 드레싱과 섞은, 산뜻한 일식 스타일 전채예요.',
     masterclass: {
@@ -479,7 +479,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-chef-2', month: 2, title: '삼치 뫼니에르', subtitle: '프랑스식 버터구이의 정석',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '따뜻한 접시에 삼치를 놓고, 브라운버터소스를 숟가락으로 지그재그로 두른 뒤 케이퍼와 레몬 슬라이스를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-chef-2/hero.webp',
     mainIngredient: '삼치',
     description: '밀가루옷을 입혀 버터에 구운 뒤 브라운버터소스를 끼얹은, 프랑스 비스트로 스타일 생선요리예요.',
     masterclass: {
@@ -511,7 +511,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-chef-3', month: 2, title: '삼치 세비체 크루도', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 삼치 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-chef-3/hero.webp',
     mainIngredient: '삼치',
     description: '신선한 삼치를 얇게 저며 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -542,7 +542,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-chef-4', month: 2, title: '삼치 콩피', subtitle: '올리브오일에 저온으로 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '따뜻한 접시에 삼치를 놓고, 콩피에 쓴 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-chef-4/hero.webp',
     mainIngredient: '삼치',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 살이 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -573,7 +573,7 @@ export const recipesSpanishMackerelExpansion: Recipe[] = [
     id: 'mackerel-chef-5', month: 2, title: '삼치 캐비어 블리니', subtitle: '러시아식 한입 카나페',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '작은 접시에 블리니를 3~4개씩 배치하고 각각의 위에 삼치와 사워크림, 날치알을 순서대로 쌓은 뒤 딜을 하나씩 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mackerel-chef-5/hero.webp',
     mainIngredient: '삼치',
     description: '작은 메밀팬케이크에 훈제한 삼치와 사워크림, 날치알을 올린, 러시아식 파티 전채예요.',
     masterclass: {

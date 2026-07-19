@@ -15,7 +15,7 @@ export const recipesMulletExpansion: Recipe[] = [
   {
     id: 'mullet-home-1', month: 3, title: '숭어회', subtitle: '봄 숭어로 즐기는 쫄깃한 회 한 접시',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mullet-home-1/hero.webp',
     mainIngredient: '숭어',
     description: '봄에 살이 차오른 숭어를 회로 떠서, 쫄깃한 식감을 즐기는 대표 봄 별미예요.',
     masterclass: {

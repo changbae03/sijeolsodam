@@ -4,7 +4,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   // ===== 채소 =====
   {
     id: 'ing-부추-1', month: 5, title: '고소한 부추전', subtitle: '향긋한 부추로 부쳐낸 바삭한 전',
-    category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2, heroImage: '/images/recipes/ing-부추-1/hero.webp',
     mainIngredient: '부추', description: '부추 향이 가득한 반죽을 바삭하게 부쳐낸, 막걸리와 잘 어울리는 전이에요.',
     masterclass: {
       chefIntro: '부추전은 재료도 손질도 간단하지만, 부추 향이 살아있어야 진짜 맛있는 전이에요.',
@@ -30,7 +30,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-애호박-1', month: 6, title: '부드러운 애호박볶음', subtitle: '간단하고 부드러운 여름 호박 볶음',
-    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3, heroImage: '/images/recipes/ing-애호박-1/hero.webp',
     mainIngredient: '애호박', description: '새우젓으로 간을 한 애호박볶음은 부드럽고 감칠맛이 좋은 기본 반찬이에요.',
     masterclass: {
       chefIntro: '애호박볶음은 새우젓 한 스푼으로 감칠맛을 확 끌어올리는 한식 기본기 반찬이에요.',
@@ -60,7 +60,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   // ===== 곡물 =====
   {
     id: 'ing-검은콩-1', month: 2, title: '고소한 검은콩밥', subtitle: '구수하고 영양 가득한 검은콩 잡곡밥',
-    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 40, servings: 3, heroImage: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80',
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 40, servings: 3, heroImage: '/images/recipes/ing-검은콩-1/hero.webp',
     mainIngredient: '검은콩', description: '쌀에 검은콩을 섞어 지으면 구수한 맛과 영양을 한 번에 챙길 수 있어요.',
     masterclass: {
       chefIntro: '검은콩밥은 콩을 불리는 정성만 들이면 실패 없이 구수하게 완성되는 잡곡밥이에요.',
@@ -87,7 +87,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-들깨-1', month: 1, title: '고소한 들깨미역국', subtitle: '들깨가루로 더 구수해진 국',
-    category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3, heroImage: '/images/recipes/ing-들깨-1/hero.webp',
     mainIngredient: '들깨', description: '미역국에 들깨가루를 더하면 더 구수하고 고소한 맛이 살아나요.',
     masterclass: {
       chefIntro: '들깨미역국은 평범한 미역국에 들깨가루 한 줌으로 훨씬 진한 풍미를 더하는 요리예요.',
@@ -114,7 +114,7 @@ export const recipesIngredientCoverage: Recipe[] = [
   },
   {
     id: 'ing-흑미-1', month: 1, title: '고소한 흑미밥', subtitle: '안토시아닌이 풍부한 건강 잡곡밥',
-    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 35, servings: 3, heroImage: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80',
+    category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 35, servings: 3, heroImage: '/images/recipes/ing-흑미-1/hero.webp',
     mainIngredient: '흑미', description: '쌀에 흑미를 섞어 지으면 은은한 보랏빛과 구수한 맛을 함께 즐길 수 있어요.',
     masterclass: {
       chefIntro: '흑미밥은 색과 영양 두 가지를 한 번에 챙길 수 있는 건강 잡곡밥이에요.',

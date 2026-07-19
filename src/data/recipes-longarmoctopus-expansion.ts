@@ -12,7 +12,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-home-1', month: 9, title: '낙지볶음', subtitle: '매콤하고 쫄깃한 가을 보양 별미',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-home-1/hero.webp',
     mainIngredient: '낙지',
     description: '쫄깃한 낙지를 매콤한 양념에 볶아낸, 가을철 대표 보양 별미예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-home-2', month: 9, title: '연포탕', subtitle: '시원하고 담백한 낙지 국물요리',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-home-2/hero.webp',
     mainIngredient: '낙지',
     description: '낙지와 채소를 맑게 끓인, 시원하고 담백한 국물 요리예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-home-3', month: 9, title: '낙지숙회', subtitle: '데쳐서 쫄깃하게 즐기는 별미',
     category: '전채', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-home-3/hero.webp',
     mainIngredient: '낙지',
     description: '살짝 데친 낙지를 초고추장에 찍어 먹는, 쫄깃하고 담백한 별미예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-home-4', month: 9, title: '낙지비빔밥', subtitle: '매콤하고 든든한 한 그릇',
     category: '밥', difficulty: '보통', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-home-4/hero.webp',
     mainIngredient: '낙지',
     description: '매콤하게 볶은 낙지를 밥에 올려 비벼 먹는, 든든한 한 그릇 요리예요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-home-5', month: 9, title: '낙지죽', subtitle: '부드럽고 든든한 보양죽',
     category: '죽', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-home-5/hero.webp',
     mainIngredient: '낙지',
     description: '낙지를 잘게 썰어 넣은, 부드럽고 든든한 가을철 보양죽이에요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-weekend-1', month: 9, title: '낙지전골', subtitle: '푸짐하고 얼큰한 보양 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-weekend-1/hero.webp',
     mainIngredient: '낙지',
     description: '낙지와 채소, 버섯을 넉넉히 넣고 얼큰하게 끓인, 푸짐한 보양 전골이에요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-weekend-2', month: 9, title: '낙지호롱', subtitle: '꼬치에 감아 구운 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-weekend-2/hero.webp',
     mainIngredient: '낙지',
     description: '낙지를 짚이나 꼬치에 돌돌 말아 구운, 전라도의 전통 별미예요.',
     masterclass: {
@@ -220,7 +220,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-weekend-3', month: 9, title: '낙지연포탕 칼국수', subtitle: '든든하고 시원한 한 그릇',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-weekend-3/hero.webp',
     mainIngredient: '낙지',
     description: '연포탕 국물에 칼국수를 더한, 든든하고 시원한 한 그릇 요리예요.',
     masterclass: {
@@ -250,7 +250,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-weekend-4', month: 9, title: '낙지무침', subtitle: '새콤달콤 매콤한 별미',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-weekend-4/hero.webp',
     mainIngredient: '낙지',
     description: '데친 낙지를 채소와 함께 새콤달콤한 양념에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -279,7 +279,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
   {
     id: 'longarmoctopus-weekend-5', month: 9, title: '갈낙탕', subtitle: '갈비와 낙지의 보양 조합',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-weekend-5/hero.webp',
     mainIngredient: '낙지',
     description: '소갈비와 낙지를 함께 끓인, 든든하고 진한 보양 국물요리예요.',
     masterclass: {
@@ -311,7 +311,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-world-1', month: 9, title: '풀포 아 라 가예가', subtitle: '스페인 갈리시아식 문어요리',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '스페인', note: '풀포 아 라 가예가(pulpo a la gallega)는 스페인 갈리시아 지방의 대표 문어요리로, 삶은 문어에 올리브오일과 파프리카가루를 뿌려 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-world-1/hero.webp',
     mainIngredient: '낙지',
     description: '삶은 낙지에 올리브오일과 파프리카가루를 뿌린, 스페인 갈리시아식 대표 전채예요.',
     masterclass: {
@@ -342,7 +342,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-world-2', month: 9, title: '타코야키', subtitle: '일본식 문어빵',
     category: '간식', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '일본', note: '타코야키(たこ焼き)는 오사카의 대표 길거리 음식으로, 밀가루 반죽 속에 잘게 썬 낙지(문어)를 넣어 동그랗게 구워요.' },
-    heroImage: 'https://images.unsplash.com/photo-1554502078-ef0fc409efce?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-world-2/hero.webp',
     mainIngredient: '낙지',
     description: '잘게 썬 낙지를 반죽에 넣어 동그랗게 구운, 일본 오사카의 대표 길거리 음식이에요.',
     masterclass: {
@@ -373,7 +373,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-world-3', month: 9, title: '인살라타 디 폴포', subtitle: '이탈리아식 문어 샐러드',
     category: '샐러드', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '이탈리아', note: '인살라타 디 폴포(insalata di polpo)는 이탈리아 해안 지방의 대표 문어 샐러드예요. 올리브오일과 레몬으로 심플하게 무치는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-world-3/hero.webp',
     mainIngredient: '낙지',
     description: '삶은 낙지를 올리브오일과 레몬으로 무친, 이탈리아식 상큼한 샐러드예요.',
     masterclass: {
@@ -403,7 +403,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-world-4', month: 9, title: '그리스식 낙지구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스에서는 문어를 숯불에 구워 올리브오일과 레몬, 오레가노로 마무리하는 것이 전통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-world-4/hero.webp',
     mainIngredient: '낙지',
     description: '삶은 낙지를 그릴에 구워 올리브오일과 오레가노로 마무리한, 그리스식 요리예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-world-5', month: 9, title: '뽈보 아 페이라', subtitle: '포르투갈식 문어 스튜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 50, servings: 3,
     cuisineContext: { country: '포르투갈', note: '포르투갈에서는 문어를 와인과 향신료에 끓여 스튜처럼 즐기는 요리가 발달했어요. 감자와 함께 먹는 것이 일반적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-world-5/hero.webp',
     mainIngredient: '낙지',
     description: '낙지와 감자를 레드와인에 끓인, 포르투갈식 진한 스튜예요.',
     masterclass: {
@@ -465,7 +465,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-chef-1', month: 9, title: '낙지 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 낙지를 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-chef-1/hero.webp',
     mainIngredient: '낙지',
     description: '살짝 데친 낙지를 라임즙에 재운, 남미식 세비체를 응용한 전채예요.',
     masterclass: {
@@ -496,7 +496,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-chef-2', month: 9, title: '낙지 갈릭콩피', subtitle: '향유에 은근히 익힌 부드러운 낙지',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '따뜻한 접시에 낙지를 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-chef-2/hero.webp',
     mainIngredient: '낙지',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 낙지요리예요.',
     masterclass: {
@@ -527,7 +527,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-chef-3', month: 9, title: '낙지 오일파스타', subtitle: '고급 향유로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 낙지를 고명으로 올린 뒤 레몬 제스트와 올리브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-chef-3/hero.webp',
     mainIngredient: '낙지',
     description: '낙지를 오일에 우려 만든 향유로 완성한, 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -558,7 +558,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-chef-4', month: 9, title: '낙지 카르파치오', subtitle: '얇게 저민 낙지의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 낙지를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-chef-4/hero.webp',
     mainIngredient: '낙지',
     description: '얇게 저민 삶은 낙지에 올리브오일과 레몬을 더한, 우아한 이탈리아식 전채예요.',
     masterclass: {
@@ -589,7 +589,7 @@ export const recipesLongArmOctopusExpansion: Recipe[] = [
     id: 'longarmoctopus-chef-5', month: 9, title: '갈리시아식 낙지 감자퓌레', subtitle: '스페인식 셰프 플레이팅',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '넓은 접시에 감자퓌레를 넓게 펴 바르고, 그 위에 구운 낙지 다리를 세워 올린 뒤 파프리카가루를 흩뿌리고 올리브오일을 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/longarmoctopus-chef-5/hero.webp',
     mainIngredient: '낙지',
     description: '부드러운 감자퓌레 위에 구운 낙지를 올린, 갈리시아식 요리를 셰프 스타일로 재해석한 메인요리예요.',
     masterclass: {

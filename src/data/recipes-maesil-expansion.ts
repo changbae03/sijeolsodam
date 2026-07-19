@@ -15,7 +15,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-home-1', month: 5, title: '매실청', subtitle: '새콤달콤한 홈메이드 과일청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-home-1/hero.webp',
     mainIngredient: '매실',
     description: '매실을 설탕에 재워 만든 과일청으로, 여름철 시원한 음료나 요리 양념으로 두루 활용하기 좋아요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-home-2', month: 5, title: '매실장아찌', subtitle: '아삭하고 새콤한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-home-2/hero.webp',
     mainIngredient: '매실',
     description: '매실을 간장물에 절인, 아삭하고 새콤한 두고두고 먹기 좋은 밑반찬이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-home-3', month: 5, title: '매실에이드', subtitle: '상큼하고 시원한 여름 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-home-3/hero.webp',
     mainIngredient: '매실',
     description: '매실청을 탄산수에 타 만든, 상큼하고 시원한 여름철 음료예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-home-4', month: 5, title: '매실소스 삼겹살', subtitle: '느끼함을 잡아주는 새콤한 구이',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-home-4/hero.webp',
     mainIngredient: '매실',
     description: '구운 삼겹살에 매실청소스를 곁들인, 느끼함을 잡아주는 새콤달콤한 구이예요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-home-5', month: 5, title: '매실물냉면', subtitle: '새콤하고 시원한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-home-5/hero.webp',
     mainIngredient: '매실',
     description: '매실청을 넣은 시원한 육수에 면을 말아 먹는, 새콤달콤한 여름철 별미예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-weekend-1', month: 5, title: '매실갈비찜', subtitle: '향긋한 매실향이 더해진 부드러운 갈비찜',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-weekend-1/hero.webp',
     mainIngredient: '매실',
     description: '매실청을 더해 깊은 풍미를 낸, 명절이나 손님 초대 메뉴로 손색없는 갈비찜이에요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-weekend-2', month: 5, title: '매실떡갈비', subtitle: '새콤함을 더한 특별한 떡갈비',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-weekend-2/hero.webp',
     mainIngredient: '매실',
     description: '다진 소고기에 매실청을 섞어 구운, 새콤함을 더한 특별한 떡갈비예요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-weekend-3', month: 5, title: '매실빙수', subtitle: '상큼하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-weekend-3/hero.webp',
     mainIngredient: '매실',
     description: '얼음 위에 매실청과 연유를 듬뿍 올린, 상큼하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-weekend-4', month: 5, title: '매실불고기', subtitle: '새콤달콤하고 부드러운 불고기',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-weekend-4/hero.webp',
     mainIngredient: '매실',
     description: '매실청을 넣은 양념에 재운 소고기를 볶은, 새콤달콤하고 부드러운 불고기예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesMaesilExpansion: Recipe[] = [
   {
     id: 'maesil-weekend-5', month: 5, title: '매실오이무침', subtitle: '새콤달콤한 별미 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'weekend', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-weekend-5/hero.webp',
     mainIngredient: '매실',
     description: '오이를 매실청 양념에 무친, 새콤달콤하고 아삭한 여름철 별미 반찬이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-world-1', month: 5, title: '매실 상그리아', subtitle: '스페인식 여름 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 다양한 과일청을 응용해 만들 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-world-1/hero.webp',
     mainIngredient: '매실',
     description: '화이트와인에 매실청과 여름 과일을 넣어 만든, 스페인식 상그리아예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-world-2', month: 5, title: '매실드레싱 샐러드', subtitle: '일본식 상큼한 응용 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '일본', note: '일본에서는 우메(매실)로 만든 드레싱을 샐러드에 즐겨 활용해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-world-2/hero.webp',
     mainIngredient: '매실',
     description: '매실청으로 만든 드레싱을 채소에 곁들인, 상큼하고 가벼운 일본식 샐러드예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-world-3', month: 5, title: '매실 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 폭찹구이에 매실청글레이즈를 응용하면 훨씬 산뜻한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-world-3/hero.webp',
     mainIngredient: '매실',
     description: '구운 돼지고기 폭찹에 매실청글레이즈를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-world-4', month: 5, title: '매실 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일청을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-world-4/hero.webp',
     mainIngredient: '매실',
     description: '매실청과 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-world-5', month: 5, title: '매실 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-world-5/hero.webp',
     mainIngredient: '매실',
     description: '매실을 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-chef-1', month: 5, title: '매실고', subtitle: '전통 장시간 농축 페이스트',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 240, servings: 10,
     platingGuide: '작은 도자기 병에 담아 상에 올리고, 사용할 때는 젓가락 끝으로 아주 소량만 떠서 요리에 더합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-chef-1/hero.webp',
     mainIngredient: '매실',
     description: '매실즙을 몇 시간에 걸쳐 거의 고체에 가깝게 졸인, 한국 전통 약선요리의 만능 조미료예요.',
     masterclass: {
@@ -488,7 +488,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-chef-2', month: 5, title: '매실주', subtitle: '고도수 소주 침출',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 10,
     platingGuide: '유리병째 상에 올려 숙성되는 모습을 보여주고, 완성 후에는 작은 잔에 따라 매실 한 알을 함께 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-chef-2/hero.webp',
     mainIngredient: '매실',
     description: '매실을 고도수 소주에 담가 몇 달간 침출시킨, 한국과 일본에서 모두 사랑받는 전통 과실주예요.',
     masterclass: {
@@ -518,7 +518,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-chef-3', month: 5, title: '매실소스 돈카츠', subtitle: '일본식 우메소스 짭짤한 응용',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '두툼하게 썬 돈카츠를 접시에 부채꼴로 담고, 매실소스를 옆에 곁들여 찍어 먹도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-chef-3/hero.webp',
     mainIngredient: '매실',
     description: '바삭하게 튀긴 돈카츠에 매실 베이스의 짭짤한 소스를 곁들인, 일본식 우메 응용 요리예요.',
     masterclass: {
@@ -548,7 +548,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-chef-4', month: 5, title: '매실무스', subtitle: '프랑스식 젤라틴 무스',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '투명한 유리컵에 담아 무스의 부드러운 층과 위에 얹은 매실청 소스가 대비되게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-chef-4/hero.webp',
     mainIngredient: '매실',
     description: '매실청과 휘핑크림을 젤라틴으로 가볍게 굳힌, 프랑스식 부드러운 무스 디저트예요.',
     masterclass: {
@@ -579,7 +579,7 @@ export const recipesMaesilExpansion: Recipe[] = [
     id: 'maesil-chef-5', month: 5, title: '매실 록슈가 시럽', subtitle: '일본식 얼음설탕 저온 침출',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 60, servings: 10,
     platingGuide: '투명한 유리병에 담아 얼음설탕이 서서히 녹는 층을 보여주고, 완성 후에는 얼음물에 소량 타서 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/maesil-chef-5/hero.webp',
     mainIngredient: '매실',
     description: '매실을 굵은 얼음설탕과 함께 재워 몇 주에 걸쳐 서서히 녹이며 우려낸, 일본식 정교한 매실시럽이에요.',
     masterclass: {
