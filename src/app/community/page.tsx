@@ -67,6 +67,52 @@ function CommunityPageInner() {
   const [commentsByPost, setCommentsByPost] = useState<Record<number, Comment[]>>({});
   const [commentDraft, setCommentDraft] = useState('');
   const [composer, setComposer] = useState<'post' | 'recipe' | null>(null);
+  // 내 글 수정/삭제
+  const [menuPostId, setMenuPostId] = useState<number | null>(null);
+  const [editingPostId, setEditingPostId] = useState<number | null>(null);
+  const [editCaption, setEditCaption] = useState('');
+  const [editHashtags, setEditHashtags] = useState('');
+  const [savingEdit, setSavingEdit] = useState(false);
+
+  const startEdit = (post: Post) => {
+    setEditingPostId(post.id);
+    setEditCaption(post.caption ?? '');
+    setEditHashtags((post.hashtags ?? []).join(' '));
+    setMenuPostId(null);
+  };
+
+  const saveEdit = async (postId: number) => {
+    setSavingEdit(true);
+    try {
+      const hashtags = editHashtags
+        .split(/[\s,]+/)
+        .map((h) => h.replace(/^#/, '').trim())
+        .filter(Boolean);
+      const res = await fetch(`/api/community/posts/${postId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ caption: editCaption, hashtags }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setPosts((prev) =>
+          (prev ?? []).map((p) =>
+            p.id === postId ? { ...p, caption: data.caption, hashtags: data.hashtags } : p
+          )
+        );
+        setEditingPostId(null);
+      }
+    } finally {
+      setSavingEdit(false);
+    }
+  };
+
+  const deletePost = async (postId: number) => {
+    if (!window.confirm('이 글을 삭제할까요? 되돌릴 수 없어요.')) return;
+    setMenuPostId(null);
+    const res = await fetch(`/api/community/posts/${postId}`, { method: 'DELETE' });
+    if (res.ok) setPosts((prev) => (prev ?? []).filter((p) => p.id !== postId));
+  };
   // 레시피 상세의 "만들었어요 -> 사진 올리기"에서 넘어온 경우 글쓰기를 바로 열고
   // 어떤 레시피에서 왔는지 게시글에 함께 저장한다.
   const searchParams = useSearchParams();
@@ -262,6 +308,42 @@ function CommunityPageInner() {
                     </Link>
                     <p className="text-[12px] text-ink-soft/70">{timeAgo(post.createdAt)}</p>
                   </div>
+
+                  {/* 내 글에만 수정·삭제 메뉴 */}
+                  {user?.id === post.authorId && (
+                    <div className="relative shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => setMenuPostId(menuPostId === post.id ? null : post.id)}
+                        aria-label="게시물 메뉴"
+                        className="px-2 py-1 text-ink-soft/60"
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                          <circle cx="12" cy="5" r="1.6" />
+                          <circle cx="12" cy="12" r="1.6" />
+                          <circle cx="12" cy="19" r="1.6" />
+                        </svg>
+                      </button>
+                      {menuPostId === post.id && (
+                        <div className="absolute right-0 top-8 z-20 w-28 overflow-hidden rounded-xl border border-border-soft bg-paper shadow-lg">
+                          <button
+                            type="button"
+                            onClick={() => startEdit(post)}
+                            className="block w-full px-3.5 py-2.5 text-left text-[13.5px] text-ink"
+                          >
+                            수정
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => deletePost(post.id)}
+                            className="block w-full border-t border-border-soft px-3.5 py-2.5 text-left text-[13.5px] text-terracotta"
+                          >
+                            삭제
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 <div className="relative w-full aspect-[4/3] bg-cream-warm">
@@ -305,10 +387,45 @@ function CommunityPageInner() {
                     </p>
                   )}
 
-                  {post.hashtags.length > 0 && (
-                    <p className="text-[13.5px] text-sage mt-1.5">
-                      {post.hashtags.map((tag) => `#${tag}`).join(' ')}
-                    </p>
+                  {editingPostId === post.id ? (
+                    <div className="mt-2 space-y-2">
+                      <textarea
+                        value={editCaption}
+                        onChange={(e) => setEditCaption(e.target.value)}
+                        rows={3}
+                        className="w-full rounded-xl border border-border-soft bg-paper px-3 py-2 text-[14px] text-ink outline-none focus:border-sage"
+                        placeholder="어떤 요리인지 적어주세요"
+                      />
+                      <input
+                        value={editHashtags}
+                        onChange={(e) => setEditHashtags(e.target.value)}
+                        className="w-full rounded-xl border border-border-soft bg-paper px-3 py-2 text-[13.5px] text-ink outline-none focus:border-sage"
+                        placeholder="해시태그 (띄어쓰기로 구분)"
+                      />
+                      <div className="flex gap-2">
+                        <button
+                          type="button"
+                          onClick={() => saveEdit(post.id)}
+                          disabled={savingEdit}
+                          className="rounded-xl bg-ink px-4 py-2 text-[13.5px] font-semibold text-cream disabled:opacity-60"
+                        >
+                          저장
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setEditingPostId(null)}
+                          className="rounded-xl border border-border-soft px-4 py-2 text-[13.5px] text-ink-soft"
+                        >
+                          취소
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    post.hashtags.length > 0 && (
+                      <p className="text-[13.5px] text-sage mt-1.5">
+                        {post.hashtags.map((tag) => `#${tag}`).join(' ')}
+                      </p>
+                    )
                   )}
 
                   {post.recipeId && (
