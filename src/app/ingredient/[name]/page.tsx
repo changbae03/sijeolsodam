@@ -74,9 +74,17 @@ export default function IngredientDetailPage() {
     { home: [], weekend: [], world: [], chef: [] }
   );
 
-  // "OO월이 가장 맛있는 시기입니다" — 지금 달이 제철이면 그대로, 아니면 제철 중 첫 달을 기준으로
+  // "OO월이 가장 맛있는 시기입니다" — 지금 달이 제철이면 그대로,
+  // 아니면 앞으로 가장 가까운 제철 달을 고른다. (꽃게처럼 봄·가을로 제철이 나뉜 재료에서
+  // 무조건 첫 달을 쓰면 11월에 "4월이 가장 맛있다"고 나와 어색해짐)
   const currentMonth = getCurrentMonth();
-  const peakMonth = months.includes(currentMonth) ? currentMonth : months[0];
+  const peakMonth = months.includes(currentMonth)
+    ? currentMonth
+    : months.reduce((best, m) => {
+        const dist = (m - currentMonth + 12) % 12;
+        const bestDist = (best - currentMonth + 12) % 12;
+        return dist < bestDist ? m : best;
+      }, months[0]);
 
   const pairings = getPairingIngredients(ingredient);
 
