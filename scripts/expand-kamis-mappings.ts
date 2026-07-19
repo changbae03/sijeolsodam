@@ -96,7 +96,8 @@ interface VerifyResult {
   latestPrice?: number;
 }
 
-async function verify(c: Candidate): Promise<VerifyResult> {
+async function verify(c: Candidate): Promise<VerifyResult & { debug?: string }> {
+  let lastDebug = '';
   const end = new Date();
   const start = new Date();
   start.setDate(start.getDate() - 30);
@@ -118,11 +119,23 @@ async function verify(c: Candidate): Promise<VerifyResult> {
       p_returntype: 'json',
     });
     try {
-      const res = await fetch(`${KAMIS_BASE_URL}?${qs.toString()}`);
-      if (!res.ok) continue;
-      const json = (await res.json()) as {
+      const res = await fetch(`${KAMIS_BASE_URL}?${qs.toString()}`, {
+        headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh) sijeolsodam-price-check' },
+      });
+      if (!res.ok) {
+        lastDebug = `HTTP ${res.status}`;
+        continue;
+      }
+      const raw = await res.text();
+      lastDebug = raw.slice(0, 400);
+      let json: {
         data?: { item?: { itemname?: string | string[]; price: string }[]; error_code?: string };
       };
+      try {
+        json = JSON.parse(raw) as typeof json;
+      } catch {
+        continue; // JSON이 아니면 (에러 페이지 등) 디버그에 원문 남김
+      }
       const rows = json?.data?.item;
       if (!Array.isArray(rows) || rows.length === 0) continue;
 
@@ -142,7 +155,7 @@ async function verify(c: Candidate): Promise<VerifyResult> {
     }
     // eslint 방지용 — 도달 안 함
   }
-  return { ok: false };
+  return { ok: false, debug: lastDebug };
 }
 
 function appendMappings(verified: { c: Candidate; kindCode: string }[]) {
@@ -170,6 +183,21 @@ function appendMappings(verified: { c: Candidate; kindCode: string }[]) {
 }
 
 async function main() {
+  // 사전 점검: 이미 검증돼 서비스 중인 감자(100/152/01)로 API 자체가 살아있는지 확인.
+  // 이것도 실패하면 후보 코드 문제가 아니라 인증키/차단/API 변경 문제다.
+  const sanity = await verify({
+    displayName: '감자(사전점검)', expect: '감자',
+    itemCategoryCode: '100', itemCode: '152', kindCodes: ['01'], relatedMonths: [6],
+  });
+  if (!sanity.ok) {
+    console.error('사전 점검 실패 — 검증된 기존 매핑(감자)조차 데이터가 오지 않습니다.');
+    console.error('원본 응답 (앞 400자):');
+    console.error(sanity.debug || '(응답 없음)');
+    console.error('\n-> 인증키 오류(error_code), 차단, 혹은 API 스펙 변경 여부를 위 응답에서 확인하세요.');
+    process.exit(1);
+  }
+  console.log(`사전 점검 통과: 감자 — "${sanity.itemname}", 최근가 ${sanity.latestPrice?.toLocaleString()}원\n`);
+
   console.log(`후보 ${CANDIDATES.length}개 검증 시작 (최근 30일 · 서울 소매가 · 품목명 일치 확인)\n`);
   const verified: { c: Candidate; kindCode: string }[] = [];
 
@@ -181,7 +209,8 @@ async function main() {
     } else if (r.itemname) {
       console.log(`✗ ${c.displayName} — 코드는 응답하지만 품목명 불일치("${r.itemname}") -> 등록 안 함`);
     } else {
-      console.log(`✗ ${c.displayName} — 데이터 없음`);
+      const hint = r.debug && /error|인증|해당/i.test(r.debug) ? ` [응답: ${r.debug.slice(0, 80)}]` : '';
+      console.log(`✗ ${c.displayName} — 데이터 없음${hint}`);
     }
     await new Promise((res) => setTimeout(res, 400));
   }
