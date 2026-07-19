@@ -11,18 +11,23 @@ interface IngredientGridCardProps {
   ingredient: SeasonalIngredient;
   /** KAMIS에 실제로 매핑된 품목일 때만 true — 불필요한 가격 API 호출을 막기 위함 */
   hasPriceData?: boolean;
+  /** 어느 달 목록에서 눌렀는지 — 상세에서 그 달 기준 설명을 보여주기 위해 */
+  month?: number;
 }
 
 /**
  * 제철 탭의 단일 식재료 그리드에 쓰는 카드.
  * 에디토리얼 이미지 + 이름 + 제철 배지 + 구매 인사이트 배지 + 한 줄 설명.
  */
-export default function IngredientGridCard({ ingredient, hasPriceData }: IngredientGridCardProps) {
+export default function IngredientGridCard({ ingredient, hasPriceData, month }: IngredientGridCardProps) {
   const found = findIngredientByName(ingredient.name);
   const seasonLabel = found ? formatSeasonMonths(found.months) : '';
 
   return (
-    <Link href={`/ingredient/${encodeURIComponent(ingredient.name)}`} className="block group">
+    <Link
+      href={`/ingredient/${encodeURIComponent(ingredient.name)}${month ? `?month=${month}` : ''}`}
+      className="block group"
+    >
       <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-cream-warm mb-2">
         {ingredient.imageUrl ? (
           <Image

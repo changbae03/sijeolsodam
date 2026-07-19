@@ -225,8 +225,9 @@ export default function SeasonalPage() {
               <div className="grid grid-cols-2 gap-4">
                 {filtered.map((ing) => (
                   <IngredientGridCard
-                    key={ing.name}
-                    ingredient={ing}
+                  key={ing.name}
+                  ingredient={ing}
+                  month={monthData.month}
                     hasPriceData={Boolean(getKamisMappingByName(ing.name))}
                   />
                 ))}

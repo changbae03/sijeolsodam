@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { Suspense } from 'react';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { findIngredientByName, formatSeasonMonths, resolveIngredientForMonth } from '@/data/months';
@@ -43,9 +43,10 @@ function getPairingIngredients(ingredient: SeasonalIngredient): string[] {
   return PAIRING_OVERRIDES[ingredient.name] ?? PAIRING_OVERRIDES[bare] ?? PAIRING_DEFAULTS[ingredient.category];
 }
 
-export default function IngredientDetailPage() {
+function IngredientDetailContent() {
   const params = useParams<{ name: string }>();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const name = decodeURIComponent(params.name);
 
   const found = findIngredientByName(name);
@@ -70,6 +71,10 @@ export default function IngredientDetailPage() {
   // 지금 보는 시점에 해당하는 달의 정보를 쓴다. peakMonth 계산은 아래에 있어
   // 여기서 동일한 규칙(현재 달이 제철이면 그 달, 아니면 가장 가까운 제철 달)을 적용.
   const viewMonth = (() => {
+    // 1순위: 어느 달 목록에서 눌러 들어왔는지 (?month=5)
+    const fromQuery = Number(searchParams.get('month'));
+    if (fromQuery && months.includes(fromQuery)) return fromQuery;
+    // 2순위: 지금이 제철이면 이번 달, 아니면 가장 가까운 제철 달
     const now = getCurrentMonth();
     if (months.includes(now)) return now;
     return months.reduce((best, m) => {
@@ -312,5 +317,14 @@ export default function IngredientDetailPage() {
 function SectionHeader({ title }: { title: string }) {
   return (
     <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink">{title}</h2>
+  );
+}
+
+export default function IngredientDetailPage() {
+  // useSearchParams는 Suspense 경계가 필요 (Next.js 정적 렌더 규칙)
+  return (
+    <Suspense fallback={null}>
+      <IngredientDetailContent />
+    </Suspense>
   );
 }
