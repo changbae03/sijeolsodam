@@ -20,6 +20,8 @@ export interface KamisItemMapping {
   productRankCode?: string;
   /** 어느 월에 제철로 다루는 식재료인지 (months.ts와 매칭, 참고용) */
   relatedMonths: number[];
+  /** 이 시세를 그대로 써도 되는 파생 품목명 (정확 일치로만 매칭) */
+  aliases?: string[];
 }
 
 export const kamisItemMappings: KamisItemMapping[] = [
@@ -29,6 +31,7 @@ export const kamisItemMappings: KamisItemMapping[] = [
     itemCode: '152',
     kindCode: '01', // 수미(노지)
     relatedMonths: [6],
+    aliases: ['감자', '햇감자'],
   },
   {
     displayName: '배추',
@@ -36,6 +39,7 @@ export const kamisItemMappings: KamisItemMapping[] = [
     itemCode: '211',
     kindCode: '01', // 봄
     relatedMonths: [11],
+    aliases: ['알배추', '가을배추'],
   },
   {
     displayName: '무',
@@ -43,6 +47,7 @@ export const kamisItemMappings: KamisItemMapping[] = [
     itemCode: '231',
     kindCode: '01', // 봄
     relatedMonths: [1, 9, 12],
+    aliases: ['가을무', '동치미무'],
   },
   {
     displayName: '사과',
@@ -99,9 +104,16 @@ export function getKamisMappingForMonth(month: number): KamisItemMapping[] {
  */
 export function getKamisMappingByName(name: string): KamisItemMapping | undefined {
   const normalized = name.trim();
-  return kamisItemMappings.find(
-    (m) => m.displayName.includes(normalized) || normalized.includes(m.displayName.replace(/\(.*\)/, ''))
-  );
+  // 포함 매칭은 '무화과' -> '무' 같은 오매칭(엉뚱한 시세가 진짜처럼 표시)을 일으키므로
+  // 정확 일치 + 명시적 aliases 로만 매칭한다.
+  return kamisItemMappings.find((m) => {
+    const stripped = m.displayName.replace(/\(.*\)/, '').trim();
+    return (
+      normalized === m.displayName ||
+      normalized === stripped ||
+      (m.aliases ?? []).includes(normalized)
+    );
+  });
 }
 
 /**
