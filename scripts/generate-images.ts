@@ -248,8 +248,10 @@ function parseRecipes(lines: string[]): RecipeLineInfo[] {
       current.platingGuide = platingMatch[1];
     }
 
-    const heroMatch = line.match(/^\s{4}heroImage:\s*'/);
-    if (heroMatch) {
+    // heroImage가 별도 줄이 아니라 다른 필드들과 한 줄에 있는 파일도 있어
+    // 줄 시작 앵커 없이 찾는다. 레시피당 첫 매칭만 사용.
+    const heroMatch = line.match(/heroImage:\s*'/);
+    if (heroMatch && current.heroImageLineIndex === undefined) {
       current.heroImageLineIndex = i;
     }
 
@@ -336,6 +338,10 @@ async function processFile(fileName: string) {
 A food photograph of a real, correctly-made dish called "${recipe.title}"${recipe.subtitle ? ` (${recipe.subtitle})` : ''}, a ${recipe.category} made with ${recipe.mainIngredient} as the main ingredient. What this dish actually is: ${recipe.description}${keyComponents}${finishLine}${platingLine}${levelLine} ${cuisineLine}
 Before composing the photo, decide precisely what THIS dish looks like when correctly prepared — its overall form, colors, sauce consistency, whether the liquid is crystal-clear or thick and creamy, whether it is wet or dry, stacked or flat, rustic or refined — using the information above plus your knowledge of the real dish. This may be an unfamiliar dish — never substitute a more generic-looking dish, and never reuse the appearance of a different dish that happens to share the same main ingredient. Two different recipes with the same ingredient must look clearly different in the photo, because they ARE different dishes.
 === PHOTOGRAPHY STYLE (applies only where it does not contradict THE DISH above) ===${SODAMI_VISUAL_STYLE}`;
+        if (recipe.heroImageLineIndex < 0 || !lines[recipe.heroImageLineIndex]) {
+          console.warn('    heroImage 필드 위치를 찾지 못해 건너뜀 (데이터 형식 확인 필요)');
+          continue;
+        }
         const buffer = await generateImageBuffer(prompt);
         if (buffer) {
           const url = await uploadToBlob(buffer, `recipes/${recipe.id}/hero.png`);
