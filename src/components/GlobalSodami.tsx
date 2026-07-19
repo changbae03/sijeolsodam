@@ -31,11 +31,16 @@ interface Exchange {
 
 const QUICK_PROMPTS = ['이거 어떻게 만들어?', '냉장고 파먹기 도와줘', '오늘은 매콤한 게 당겨요'];
 
-/** 이미 자체 소담이 입력창/코치가 있는 페이지에서는 전역 버튼을 띄우지 않는다 */
+/**
+ * 전역 소담이 버튼을 띄울 페이지를 좁게 제한한다.
+ *
+ * 떠 있는 버튼은 화면을 가리고, 탭마다 자기 액션(커뮤니티의 글쓰기 +, 레시피 상세의
+ * 요리 코치)과 겹쳐 두 개가 포개진다. 소담이가 실제로 필요한 지점은
+ * "이 재료로 뭘 하지"를 고민하는 식재료 상세 정도라, 거기서만 노출한다.
+ */
 function shouldHideOnPath(pathname: string) {
-  if (pathname === '/') return true; // 홈은 이미 큰 대화창이 있음
-  if (pathname.startsWith('/recipe/')) return true; // 레시피 상세는 CookingCoach가 있음
-  return false;
+  if (pathname.startsWith('/ingredient/')) return false; // 재료를 보며 물어볼 여지가 있는 유일한 화면
+  return true;
 }
 
 export default function GlobalSodami() {
