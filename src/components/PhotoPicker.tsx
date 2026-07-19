@@ -75,6 +75,19 @@ export const SODAM_FILTERS: SodamFilter[] = [
 
 const MAX_EDGE = 1600;
 
+/**
+ * 촬영 가이드 — 음식 사진에서 실제로 결과가 달라지는 것만 골랐다.
+ * 필터는 이미 찍은 사진을 다듬을 뿐이고, 구도와 빛은 찍는 순간에만 잡을 수 있다.
+ */
+const SHOOTING_TIPS: { title: string; body: string }[] = [
+  { title: '창가로, 조명은 끄고', body: '형광등 아래선 누렇게 나와요. 낮이면 창 옆, 밤이면 가장 밝은 자연광 쪽으로.' },
+  { title: '빛을 옆이나 뒤에서', body: '빛이 정면에서 오면 납작해져요. 옆·뒤에서 오면 그림자가 생겨 입체감이 살아요.' },
+  { title: '45도에서 한 장, 위에서 한 장', body: '국물·높이 있는 요리는 45도, 접시에 펼친 요리는 바로 위에서.' },
+  { title: '한 걸음 더 가까이', body: '접시 전체를 다 넣기보다 가장 맛있어 보이는 부분을 크게. 가장자리가 잘려도 괜찮아요.' },
+  { title: '주인공만 남기기', body: '리모컨·휴지·다른 그릇은 프레임 밖으로. 천이나 나무 도마 하나면 충분해요.' },
+  { title: '김이 오를 때 바로', body: '갓 만든 순간이 가장 예뻐요. 김·윤기는 1~2분이면 사라져요.' },
+];
+
 /** 원본 파일 + 필터 -> 업로드용 WebP File */
 async function renderToFile(
   image: HTMLImageElement,
@@ -134,6 +147,7 @@ export default function PhotoPicker({
   const [fileName, setFileName] = useState('photo.jpg');
   const [filterId, setFilterId] = useState('sodam'); // 기본값을 보정으로 — 대부분 원본보다 낫다
   const [processing, setProcessing] = useState(false);
+  const [showGrid, setShowGrid] = useState(true); // 3분할 구도 격자
 
   useEffect(() => {
     return () => {
@@ -172,6 +186,39 @@ export default function PhotoPicker({
 
   const selected = SODAM_FILTERS.find((f) => f.id === filterId) ?? SODAM_FILTERS[0];
 
+  /**
+   * 필터를 적용한 사진을 폰 공유 시트로 넘긴다 (인스타그램·카톡 등).
+   * 인스타그램은 외부 앱이 사용자 개인 계정에 직접 게시하는 것을 허용하지 않으므로
+   * (Graph API는 프로페셔널 계정 + 페이지 연결 + 심사 필요),
+   * 실질적으로 가능한 최선은 이 네이티브 공유다.
+   */
+  const shareToApps = async () => {
+    if (!imgRef.current) return;
+    setProcessing(true);
+    try {
+      const filter = SODAM_FILTERS.find((f) => f.id === filterId) ?? SODAM_FILTERS[0];
+      const file = await renderToFile(imgRef.current, filter, fileName);
+      const nav = navigator as Navigator & {
+        canShare?: (data?: { files?: File[] }) => boolean;
+      };
+      if (nav.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], text: '#시절소담' });
+      } else {
+        // 데스크톱 등 공유 미지원 환경에서는 내려받기로 대체
+        const url = URL.createObjectURL(file);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = file.name;
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+    } catch {
+      // 사용자가 공유를 취소한 경우 등 — 조용히 무시
+    } finally {
+      setProcessing(false);
+    }
+  };
+
   return (
     <div>
       <input
@@ -190,7 +237,7 @@ export default function PhotoPicker({
         onChange={(e) => handleSelect(e.target.files?.[0])}
       />
 
-      {!previewUrl ? (
+      {!previewUrl && (
         <div className="grid grid-cols-2 gap-2.5">
           <button
             type="button"
@@ -218,7 +265,25 @@ export default function PhotoPicker({
             <span className="text-[14px] font-semibold">앨범에서 고르기</span>
           </button>
         </div>
-      ) : (
+      )}
+
+      {!previewUrl && (
+        <div className="mt-3 rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
+          <p className="text-[12.5px] font-semibold text-ink mb-2">맛있게 찍는 법</p>
+          <ul className="space-y-2">
+            {SHOOTING_TIPS.map((t) => (
+              <li key={t.title} className="flex gap-2">
+                <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-sage" />
+                <p className="text-[12.5px] leading-relaxed text-ink-soft">
+                  <span className="font-semibold text-ink">{t.title}</span> — {t.body}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {previewUrl && (
         <div>
           <div className="relative w-full aspect-square overflow-hidden rounded-2xl bg-cream-warm">
             {/* 미리보기는 CSS 필터로 즉시 반영하고, 업로드용 파일은 캔버스로 따로 만든다 */}
@@ -243,6 +308,15 @@ export default function PhotoPicker({
                 }}
               />
             ) : null}
+            {/* 3분할 격자 — 주인공을 선이 만나는 지점에 두면 구도가 안정된다 */}
+            {showGrid && (
+              <div className="pointer-events-none absolute inset-0">
+                <div className="absolute left-1/3 top-0 h-full w-px bg-white/35" />
+                <div className="absolute left-2/3 top-0 h-full w-px bg-white/35" />
+                <div className="absolute left-0 top-1/3 h-px w-full bg-white/35" />
+                <div className="absolute left-0 top-2/3 h-px w-full bg-white/35" />
+              </div>
+            )}
             <button
               type="button"
               onClick={() => {
@@ -253,6 +327,13 @@ export default function PhotoPicker({
               className="absolute right-2.5 top-2.5 rounded-full bg-ink/70 px-3 py-1.5 text-[12.5px] font-medium text-cream backdrop-blur-sm"
             >
               다시 고르기
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowGrid((v) => !v)}
+              className="absolute left-2.5 top-2.5 rounded-full bg-ink/70 px-3 py-1.5 text-[12.5px] font-medium text-cream backdrop-blur-sm"
+            >
+              격자 {showGrid ? '끄기' : '켜기'}
             </button>
           </div>
 
@@ -282,6 +363,19 @@ export default function PhotoPicker({
                 </button>
               ))}
             </div>
+
+            <button
+              type="button"
+              onClick={shareToApps}
+              disabled={processing}
+              className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-xl border border-border-soft bg-paper text-[13px] font-medium text-ink-soft"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 16V4M8 8l4-4 4 4" />
+                <path d="M4 14v4.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V14" />
+              </svg>
+              필터 적용한 사진 저장·공유하기
+            </button>
           </div>
         </div>
       )}
