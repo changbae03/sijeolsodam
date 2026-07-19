@@ -309,7 +309,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-world-1', month: 12, title: '유자 판나코타', subtitle: '이탈리아 크림 디저트에 유자향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 유자를 곁들이면 동서양이 만난 독특한 향의 디저트가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-world-1/hero.webp',
     mainIngredient: '유자',
     description: '부드러운 이탈리아식 크림 디저트에 유자소스를 곁들인, 향긋한 겨울 디저트예요.',
     masterclass: {
@@ -340,7 +340,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-world-2', month: 12, title: '유자 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-world-2/hero.webp',
     mainIngredient: '유자',
     description: '유자청을 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -371,7 +371,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-world-3', month: 12, title: '유자 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 유자(유즈)향 트러플은 일본을 통해 서양에도 알려진 인기 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-world-3/hero.webp',
     mainIngredient: '유자',
     description: '유자청을 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -402,7 +402,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-world-4', month: 12, title: '유자 상그리아', subtitle: '스페인식 겨울 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 겨울에는 감귤류를 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-world-4/hero.webp',
     mainIngredient: '유자',
     description: '화이트와인에 유자와 겨울 과일을 넣어 만든, 스페인식 겨울 상그리아예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-world-5', month: 12, title: '유자 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-world-5/hero.webp',
     mainIngredient: '유자',
     description: '유자청과 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -463,7 +463,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-chef-1', month: 12, title: '유자고추장', subtitle: '한국 전통 발효 고추장 응용',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 10,
     platingGuide: '작은 항아리째 상에 올리거나, 종지에 소량 덜어 회나 튀김 요리에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-chef-1/hero.webp',
     mainIngredient: '유자',
     description: '전통 고추장에 유자즙과 유자청을 섞어 숙성시킨, 향긋함이 더해진 한국 전통 발효장이에요.',
     masterclass: {
@@ -493,7 +493,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-chef-2', month: 12, title: '유자후추', subtitle: '일본식 유즈코쇼 발효 향신페이스트',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '작은 병에 담아 상에 올리고, 사용할 때는 나베요리나 회에 젓가락 끝으로 살짝 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-chef-2/hero.webp',
     mainIngredient: '유자',
     description: '유자껍질과 풋고추를 소금에 절여 발효시킨, 일본 규슈 지방의 대표적인 매운 향신 조미료예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-chef-3', month: 12, title: '폰즈소스', subtitle: '일본식 감귤간장 숙성소스',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 8,
     platingGuide: '작은 종지에 담아 나베요리나 회, 튀김에 디핑소스로 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-chef-3/hero.webp',
     mainIngredient: '유자',
     description: '유자즙과 간장, 가쓰오부시육수를 섞어 며칠간 숙성시킨, 일본의 대표적인 만능 디핑소스예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-chef-4', month: 12, title: '유자미소 뎅가쿠', subtitle: '일본식 된장구이 글레이즈',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '나무 꼬치에 꽂은 두부나 채소를 접시에 나란히 담고, 그을린 미소글레이즈의 무늬가 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-chef-4/hero.webp',
     mainIngredient: '유자',
     description: '미소된장에 유자즙을 섞어 만든 글레이즈를 두부나 채소에 발라 구운, 일본의 전통적인 뎅가쿠 요리예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesYujaExpansion: Recipe[] = [
     id: 'yuja-chef-5', month: 12, title: '유자 크렘카라멜', subtitle: '프랑스식 캐러멜 커스터드',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '틀을 뒤집어 접시에 담아, 바닥에 있던 캐러멜이 위로 흘러내리는 순간을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-chef-5/hero.webp',
     mainIngredient: '유자',
     description: '틀 바닥에 캐러멜을 깔고 유자향 커스터드를 부어 중탕으로 구운, 뒤집으면 캐러멜소스가 흘러내리는 프랑스 클래식 디저트예요.',
     masterclass: {

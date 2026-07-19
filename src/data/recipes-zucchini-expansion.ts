@@ -10,7 +10,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-home-1', month: 7, title: '애호박전', subtitle: '가장 기본적인 애호박 부침개',
     category: '브런치', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-home-1/hero.webp',
     mainIngredient: '애호박', description: '동그랗게 썬 애호박에 반죽을 입혀 부친, 한식 밥상에 자주 오르는 기본 전이에요.',
     masterclass: {
       chefIntro: '애호박은 수분이 많아서 부치면 겉은 바삭, 속은 촉촉한 대비가 자연스럽게 살아나는 재료예요.',
@@ -49,7 +49,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-home-2', month: 7, title: '애호박볶음(새우젓)', subtitle: '슴슴하고 고소한 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-home-2/hero.webp',
     mainIngredient: '애호박', description: '채 썬 애호박을 새우젓으로 슴슴하게 볶은, 가장 기본적인 한식 밑반찬이에요.',
     masterclass: {
       chefIntro: '새우젓이 애호박의 단맛을 자연스럽게 끌어올려주는, 한식 반찬의 정석 같은 조합이에요.',
@@ -82,7 +82,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-home-3', month: 7, title: '애호박된장국', subtitle: '구수하고 든든한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-home-3/hero.webp',
     mainIngredient: '애호박', description: '애호박을 듬뿍 넣고 끓인 구수한 된장국으로, 매일 먹어도 부담 없는 기본 국이에요.',
     masterclass: {
       chefIntro: '애호박이 익으면서 국물에 자연스러운 단맛을 더해줘서, 별다른 재료 없이도 깊은 맛이 나요.',
@@ -115,7 +115,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-home-4', month: 7, title: '애호박밥', subtitle: '부드러운 애호박이 섞인 기본 잡곡밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-home-4/hero.webp',
     mainIngredient: '애호박', description: '쌀에 애호박을 깍둑썰어 함께 지은, 부드럽고 은은한 단맛이 도는 잡곡밥이에요.',
     masterclass: {
       chefIntro: '애호박은 수분이 많아서 밥물 역할을 살짝 도와줘요. 그래서 물 양을 약간 줄이는 게 비결이에요.',
@@ -149,7 +149,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-weekend-1', month: 7, title: '애호박 라자냐', subtitle: '면 대신 애호박을 켜켜이 쌓은 가벼운 베이킹',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-weekend-1/hero.webp',
     mainIngredient: '애호박', description: '라자냐 면 대신 애호박을 얇게 썰어 켜켜이 쌓은, 가볍고 채소가 풍성한 베이킹이에요.',
     masterclass: {
       chefIntro: '애호박은 수분이 많아서, 미리 살짝 구워 수분을 빼는 한 단계가 완성도를 결정해요.',
@@ -187,7 +187,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-weekend-2', month: 7, title: '애호박 새우 만두', subtitle: '아삭한 애호박을 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-weekend-2/hero.webp',
     mainIngredient: '애호박', description: '다진 애호박과 새우를 섞어 빚은 만두로, 산뜻하고 촉촉한 속이 매력이에요.',
     masterclass: {
       chefIntro: '애호박과 새우는 자연스럽게 잘 어울리는 조합이에요. 애호박의 수분이 만두 속을 촉촉하게 만들어줘요.',
@@ -220,7 +220,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-weekend-3', month: 7, title: '애호박전(고기소 채운)', subtitle: '소를 채워 부친 든든한 전',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-weekend-3/hero.webp',
     mainIngredient: '애호박', description: '애호박에 칼집을 내 고기소를 채워 부친, 명절에도 자주 만나는 손이 가는 전이에요.',
     masterclass: {
       chefIntro: '기본 애호박전보다 한 단계 더 정성이 들어가는 메뉴예요. 소를 채우는 칼집의 깊이가 완성도를 결정해요.',
@@ -258,7 +258,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-weekend-4', month: 7, title: '애호박 카르보나라', subtitle: '크림소스에 채소를 더한 든든한 파스타',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-weekend-4/hero.webp',
     mainIngredient: '애호박', description: '애호박을 얇게 채 썰어 더한, 크리미한 카르보나라에 산뜻함을 더한 파스타예요.',
     masterclass: {
       chefIntro: '카르보나라는 달걀이 익는 타이밍이 핵심이에요. 애호박이 더해지면 묵직한 크림소스에 산뜻함이 더해져요.',
@@ -291,7 +291,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
   {
     id: 'zucchini-weekend-5', month: 7, title: '애호박 크림수프', subtitle: '곱게 갈아 부드럽게 즐기는 수프',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-weekend-5/hero.webp',
     mainIngredient: '애호박', description: '애호박과 양파를 부드럽게 익혀 곱게 갈아낸, 산뜻하고 부드러운 크림수프예요.',
     masterclass: {
       chefIntro: '애호박은 익으면 색이 더 진해지고 부드러워져서, 갈았을 때 자연스럽게 고운 초록빛이 나와요.',
@@ -330,7 +330,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
       country: '이탈리아',
       note: '프리타타는 이탈리아 가정에서 남은 채소를 활용해 만드는 두툼한 오믈렛이에요. 주키니(서양 애호박)는 여름철 프리타타에 가장 흔히 들어가는 재료 중 하나예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-world-1/hero.webp',
     mainIngredient: '애호박', description: '애호박과 치즈를 더해 두툼하게 구운, 이탈리아 가정식의 따뜻한 오믈렛이에요.',
     masterclass: {
       chefIntro: '이탈리아 가정에서 아침이나 가벼운 저녁으로 즐기는 메뉴예요. 오믈렛보다 두툼하고 채소가 듬뿍 들어가는 게 특징이에요.',
@@ -367,7 +367,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
       country: '프랑스',
       note: '라타투이는 프랑스 남부 프로방스 지방의 대표적인 채소 스튜로, 애호박·가지·토마토·피망을 천천히 익혀 만들어요. 각 채소를 따로 볶은 뒤 합치는 게 정통 조리법의 핵심이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-world-2/hero.webp',
     mainIngredient: '애호박', description: '애호박, 가지, 토마토를 각각 볶아 합쳐 끓인, 프랑스 남부의 향긋한 채소 스튜예요.',
     masterclass: {
       chefIntro: '프로방스 가정에서 여름 채소가 풍성할 때 즐기는 요리예요. 채소를 따로 볶는 정성이 맛의 깊이를 만들어줘요.',
@@ -404,7 +404,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
       country: '그리스',
       note: '그리스에서는 얇게 썬 주키니를 가볍게 튀겨 차지키(요거트 소스)에 곁들이는 메뉴가 흔해요. 여름철 타베르나(그리스 식당)에서 자주 만날 수 있는 전채예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-world-3/hero.webp',
     mainIngredient: '애호박', description: '얇게 썬 애호박을 가볍게 튀겨 차지키를 곁들인, 그리스 타베르나의 여름철 대표 전채예요.',
     masterclass: {
       chefIntro: '그리스 식당에서 여름이면 흔히 만나는 메뉴예요. 얇게 썰어 튀기는 게 바삭함의 핵심이에요.',
@@ -441,7 +441,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
       country: '태국',
       note: '애호박을 면처럼 길게 채 썰어 팟타이 소스에 볶는 방식은 태국 요리의 매콤달콤한 풍미를 가볍게 즐기려는 현대적인 변형이에요. 탄수화물 부담을 줄이면서도 정통의 맛은 살려요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-world-4/hero.webp',
     mainIngredient: '애호박', description: '애호박을 국수처럼 길게 채 썰어 팟타이 소스에 볶은, 태국 풍미를 가볍게 즐기는 메뉴예요.',
     masterclass: {
       chefIntro: '애호박을 면처럼 쓰는 발상이 재미있는 메뉴예요. 짧게 볶아야 면 같은 식감이 살아있어요.',
@@ -479,7 +479,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
       country: '멕시코',
       note: '칼라바씨타스는 멕시코 가정에서 흔히 만드는 애호박 볶음으로, 옥수수와 고추, 치즈를 더해 만들어요. 타코 속재료나 사이드 디시로 두루 활용되는 멕시코 가정식이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-world-5/hero.webp',
     mainIngredient: '애호박', description: '애호박과 옥수수, 고추를 볶아 치즈를 더한, 멕시코 가정식의 친근한 채소 볶음이에요.',
     masterclass: {
       chefIntro: '멕시코 가정에서 거의 매주 만드는 메뉴예요. 애호박과 옥수수의 단맛, 고추의 칼칼함이 균형을 이뤄요.',
@@ -515,7 +515,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
     id: 'zucchini-chef-1', month: 7, title: '주키니 카르파치오와 부라타', subtitle: '얇게 저민 애호박과 부드러운 치즈의 조화',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '접시에 애호박을 겹쳐 원형으로 펼쳐 담고 중앙에 부라타를 올려보세요. 올리브오일과 레몬즙을 뿌려 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-chef-1/hero.webp',
     mainIngredient: '애호박', description: '애호박을 투명하게 얇게 저며 부라타 치즈를 올린, 익히지 않은 신선함을 즐기는 전채예요.',
     masterclass: {
       chefIntro: '애호박을 생으로 즐기는 색다른 발상이에요. 신선한 애호박은 익히지 않아도 부드럽고 산뜻해요.',
@@ -543,7 +543,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
     id: 'zucchini-chef-2', month: 7, title: '주키니 밀푀유', subtitle: '겹겹이 쌓아 구운 정교한 채소 요리',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '뒤집어낸 그대로 도마에 올려 조각으로 잘라 단면이 보이게 담으세요. 토마토소스를 한 줄 그리고 바질오일을 점점이 뿌리세요.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-chef-2/hero.webp',
     mainIngredient: '애호박', description: '폼므 안나의 기법을 애호박에 적용해, 얇게 썬 애호박을 겹겹이 눌러 구워 단면의 켜를 보여주는 정교한 메인이에요.',
     masterclass: {
       chefIntro: '감자로 만드는 폼므 안나의 원리를 애호박에 적용한 메뉴예요. 애호박은 수분이 많아 다른 방식의 주의가 필요해요.',
@@ -573,7 +573,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
     id: 'zucchini-chef-3', month: 7, title: '주키니 퓌레와 시어드 가리비', subtitle: '깔끔한 애호박 퓌레와 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '퓌레를 접시에 한 스푼 자국 내듯 펴 바르고 시어드한 관자를 비스듬히 올려보세요. 버터소스를 점점이 뿌리세요.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-chef-3/hero.webp',
     mainIngredient: '애호박', description: '곱게 간 애호박 퓌레 위에 겉은 바삭하고 속은 부드러운 관자를 올린, 정교한 프렌치 비스트로풍 전채예요.',
     masterclass: {
       chefIntro: '애호박의 선명한 초록빛과 관자의 흰 속살이 시각적으로도 아름다운 조합이에요.',
@@ -613,7 +613,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
     id: 'zucchini-chef-4', month: 7, title: '주키니 콩소메', subtitle: '맑게 거른 애호박의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 애호박 큐브 한 조각을 띄워보세요. 선명한 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-chef-4/hero.webp',
     mainIngredient: '애호박', description: '애호박을 갈아 맑게 걸러낸, 선명한 초록빛과 산뜻함이 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 애호박에 적용한 요리예요. 색이 유난히 선명하게 나오는 채소예요.',
@@ -648,7 +648,7 @@ export const recipesZucchiniExpansion: Recipe[] = [
     id: 'zucchini-chef-5', month: 7, title: '주키니 플라워 튀김(속 채운)', subtitle: '애호박꽃 속을 채워 튀긴 정교한 전채',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '튀긴 꽃을 비스듬히 세워 담고 레몬 한 조각과 처빌을 곁들이세요. 바삭한 튀김옷이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/zucchini-chef-5/hero.webp',
     mainIngredient: '애호박', description: '애호박꽃 속에 리코타를 채워 가볍게 튀긴, 이탈리아 파인다이닝에서 즐겨 쓰는 섬세한 전채예요.',
     masterclass: {
       chefIntro: '애호박꽃은 다루기 까다롭지만, 완성하면 가장 화려한 전채 중 하나가 돼요. 꽃이 찢어지지 않게 다루는 게 핵심이에요.',
