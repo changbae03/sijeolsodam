@@ -89,7 +89,7 @@ export default function IngredientDetailPage() {
   const pairings = getPairingIngredients(ingredient);
 
   return (
-    <main className="min-h-screen bg-cream pb-32">
+    <main className="min-h-screen bg-cream pb-24">
       {/* ============================================
           1. Hero image
          ============================================ */}
@@ -258,19 +258,8 @@ export default function IngredientDetailPage() {
         )}
       </div>
 
-      {/* ============================================
-          Primary CTA — 화면 하단 고정
-         ============================================ */}
-      <div className="fixed bottom-16 left-0 right-0 z-30 px-5 pb-3 pt-4 bg-gradient-to-t from-cream via-cream/95 to-transparent">
-        <div className="max-w-md mx-auto">
-          <Link
-            href="/shop"
-            className="flex h-[54px] w-full items-center justify-center rounded-2xl bg-ink text-[15.5px] font-semibold text-cream transition-transform active:scale-[0.98]"
-          >
-            이 재료로 요리 준비하기
-          </Link>
-        </div>
-      </div>
+      {/* 커머스(장보기) 유입 CTA는 커뮤니티 집중을 위해 비활성화.
+          되살릴 때는 아래 블록을 복구하고 /shop 링크를 노출하면 됨. */}
     </main>
   );
 }
