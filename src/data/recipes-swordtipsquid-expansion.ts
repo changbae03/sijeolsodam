@@ -14,7 +14,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-home-1', month: 5, title: '한치숙회', subtitle: '담백하고 쫄깃한 초여름 별미 안주',
     category: '전채', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-home-1/hero.webp',
     mainIngredient: '한치',
     description: '쫄깃하고 담백한 한치를 데쳐서 초고추장에 곁들여 먹는, 깔끔한 초여름 안주예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-home-2', month: 5, title: '한치회', subtitle: '쫄깃하고 담백한 초여름 대표 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-home-2/hero.webp',
     mainIngredient: '한치',
     description: '한치는 살이 쫄깃하고 담백해서, 회로 즐기기 좋은 초여름 대표 별미예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-home-3', month: 5, title: '한치볶음', subtitle: '매콤달콤한 밥도둑',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-home-3/hero.webp',
     mainIngredient: '한치',
     description: '한치를 매콤달콤하게 볶은, 밥도둑 대표 메인요리예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-home-4', month: 5, title: '한치무침', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-home-4/hero.webp',
     mainIngredient: '한치',
     description: '한치를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-home-5', month: 5, title: '한치라면', subtitle: '시원하고 칼칼한 별미 라면',
     category: '면요리', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-home-5/hero.webp',
     mainIngredient: '한치',
     description: '한치를 넣어 끓인 라면으로, 시원하고 칼칼한 별미예요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-weekend-1', month: 5, title: '한치물회', subtitle: '시원하고 새콤한 여름 별미',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-weekend-1/hero.webp',
     mainIngredient: '한치',
     description: '한치회를 시원한 냉국물에 말아 먹는, 새콤달콤한 제주도식 별미예요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-weekend-2', month: 5, title: '한치두루치기', subtitle: '매콤하고 든든한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-weekend-2/hero.webp',
     mainIngredient: '한치',
     description: '한치와 채소를 매콤하게 볶은, 든든한 별미 두루치기예요.',
     masterclass: {
@@ -214,7 +214,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-weekend-3', month: 5, title: '한치튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-weekend-3/hero.webp',
     mainIngredient: '한치',
     description: '한치를 바삭하게 튀긴, 겉은 바삭하고 속은 쫄깃한 튀김이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-weekend-4', month: 5, title: '한치초밥', subtitle: '쫄깃하고 담백한 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-weekend-4/hero.webp',
     mainIngredient: '한치',
     description: '얇게 썬 한치를 초밥용 밥 위에 올린, 쫄깃하고 담백한 초밥이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
   {
     id: 'swordtipsquid-weekend-5', month: 5, title: '한치파스타', subtitle: '고소한 이탈리아식 응용',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-weekend-5/hero.webp',
     mainIngredient: '한치',
     description: '한치를 화이트와인과 마늘에 볶아 파스타에 버무린, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-world-1', month: 5, title: '치피로네스', subtitle: '스페인식 마늘새우 응용',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '치피로네스(chipirones)는 스페인 바스크 지방의 작은 오징어 요리예요. 마늘과 올리브오일에 볶는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-world-1/hero.webp',
     mainIngredient: '한치',
     description: '한치를 마늘과 올리브오일에 볶은, 스페인 바스크식 대표 전채예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-world-2', month: 5, title: '한치 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 해산물을 라임즙에 재워 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-world-2/hero.webp',
     mainIngredient: '한치',
     description: '신선한 한치를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -364,7 +364,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-world-3', month: 5, title: '한치 텐푸라', subtitle: '일본식 튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '일본', note: '텐푸라는 일본식 튀김 기법으로, 얼음물 반죽과 낮은 온도의 기름이 바삭함의 비결이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-world-3/hero.webp',
     mainIngredient: '한치',
     description: '한치를 일본식 텐푸라 반죽으로 튀긴, 가볍고 바삭한 튀김이에요.',
     masterclass: {
@@ -394,7 +394,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-world-4', month: 5, title: '한치 아쿠아파짜', subtitle: '이탈리아식 토마토 해물찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 해산물을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-world-4/hero.webp',
     mainIngredient: '한치',
     description: '토마토와 화이트와인에 한치를 살짝 익힌, 이탈리아식 해물찜이에요.',
     masterclass: {
@@ -425,7 +425,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-world-5', month: 5, title: '이카 야키', subtitle: '일본식 오징어 소금구이',
     category: '구이', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '일본', note: '이카야키(いか焼き)는 일본 축제 노점의 대표 간식으로, 통오징어를 소스에 발라 구운 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-world-5/hero.webp',
     mainIngredient: '한치',
     description: '한치를 통째로 구워 간장소스를 바른, 일본 축제 노점의 대표 간식이에요.',
     masterclass: {
@@ -457,7 +457,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-chef-1', month: 5, title: '한치 먹물 파스타', subtitle: '이탈리아식 먹물 색소·풍미 기법',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '검은 파스타를 돌돌 말아 흰 접시에 담고, 살짝 구운 한치 조각을 올린 뒤 레몬 제스트를 뿌려 색 대비를 살립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-chef-1/hero.webp',
     mainIngredient: '한치',
     description: '한치의 먹물을 소스에 녹여 만든, 이탈리아의 대표적인 네로 디 세피아(오징어먹물 파스타)예요.',
     masterclass: {
@@ -488,7 +488,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-chef-2', month: 5, title: '한치순대', subtitle: '한국 전통 속채움 순대',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '통째로 찐 한치순대를 도톰하게 썰어 접시에 담고, 초고추장을 곁들여 단면이 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-chef-2/hero.webp',
     mainIngredient: '한치',
     description: '한치 몸통 안에 채소와 찹쌀을 채워 넣고 찐, 한국의 전통적인 오징어순대예요.',
     masterclass: {
@@ -519,7 +519,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-chef-3', month: 5, title: '세피아 탈리아텔레', subtitle: '칼로 저미는 이탈리아식 국수 기법',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '한치를 국수처럼 담아 데친 뒤 접시에 돌돌 말아 담고, 레몬버터소스를 끼얹은 뒤 처빌잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-chef-3/hero.webp',
     mainIngredient: '한치',
     description: '한치 몸통을 밀가루 없이 칼로 가늘게 저며 국수처럼 만든, 이탈리아 셰프들이 즐겨 쓰는 재치있는 기법이에요.',
     masterclass: {
@@ -550,7 +550,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-chef-4', month: 5, title: '한치젓갈', subtitle: '한국 전통 발효 저장',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '숙성된 한치젓갈을 먹기 좋게 썰어 참기름과 통깨를 곁들여 작은 종지에 담아냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-chef-4/hero.webp',
     mainIngredient: '한치',
     description: '한치를 소금에 절여 발효시킨, 한국의 전통적인 저장 발효 반찬이에요.',
     masterclass: {
@@ -581,7 +581,7 @@ export const recipesSwordtipSquidExpansion: Recipe[] = [
     id: 'swordtipsquid-chef-5', month: 5, title: '칼라마레스 프리토스', subtitle: '스페인식 밀가루 드레지 튀김',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '바삭하게 튀긴 링 모양 한치를 접시에 쌓아 담고, 레몬 웨지와 아이올리소스를 곁들여 스페인 바 스타일로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/swordtipsquid-chef-5/hero.webp',
     mainIngredient: '한치',
     description: '한치를 링 모양으로 썰어 오직 밀가루만 입혀 튀긴, 스페인 안달루시아의 대표적인 심플한 튀김 요리예요.',
     masterclass: {

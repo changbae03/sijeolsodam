@@ -10,7 +10,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-home-3', month: 10, title: '고구마조림', subtitle: '달콤짭짤한 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-home-3/hero.webp',
     mainIngredient: '고구마', description: '간장양념에 졸여낸 고구마는 달콤짭짤한 맛이 매력적인 기본 밑반찬이에요.',
     masterclass: {
       chefIntro: '감자조림과 비슷하지만 고구마 특유의 단맛이 더해져 더 부드러운 반찬이 돼요. 가을 고구마로 만들면 단맛이 더 깊어요.',
@@ -44,7 +44,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-home-4', month: 10, title: '고구마전', subtitle: '바삭하게 부쳐낸 고구마 부침개',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-home-4/hero.webp',
     mainIngredient: '고구마', description: '갈아낸 고구마를 노릇하게 부쳐낸, 달콤하고 고소한 부침개예요.',
     masterclass: {
       chefIntro: '감자전과 같은 방식이지만 고구마의 단맛이 더해져 아이들도 좋아하는 메뉴예요.',
@@ -77,7 +77,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-home-5', month: 10, title: '고구마밥', subtitle: '달콤함이 밥알에 스며드는 기본 잡곡밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-home-5/hero.webp',
     mainIngredient: '고구마', description: '쌀에 고구마를 깍둑썰어 함께 지은, 자연스러운 단맛이 도는 잡곡밥이에요.',
     masterclass: {
       chefIntro: '특별한 양념 없이도 고구마 자체로 단맛을 내는 가장 간단한 잡곡밥이에요.',
@@ -106,7 +106,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-weekend-2', month: 10, title: '고구마 고로케', subtitle: '겉바속촉 튀김 요리',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-weekend-2/hero.webp',
     mainIngredient: '고구마', description: '으깬 고구마를 빵가루 입혀 튀긴, 달콤하고 바삭한 일본식 영향의 간식이에요.',
     masterclass: {
       chefIntro: '시간 들여 만드는 보람이 있는 메뉴예요. 고구마 자체의 단맛이 강해 속재료를 단순하게 해도 충분히 맛있어요.',
@@ -141,7 +141,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-weekend-3', month: 10, title: '고구마 베이컨말이', subtitle: '짭짤한 베이컨을 두른 한입 메뉴',
     category: '메인', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-weekend-3/hero.webp',
     mainIngredient: '고구마', description: '한입 크기 고구마를 베이컨으로 말아 구운, 단짠 조화가 좋은 안주예요.',
     masterclass: {
       chefIntro: '고구마의 단맛과 베이컨의 짠맛이 만나는 클래식한 조합이에요.',
@@ -173,7 +173,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-weekend-4', month: 10, title: '고구마 시나몬빵', subtitle: '폭신한 반죽 속 달콤한 고구마',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 100, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-weekend-4/hero.webp',
     mainIngredient: '고구마', description: '고구마 필링을 채운 폭신한 빵을 계피향과 함께 구운, 손이 가지만 보람 있는 베이킹이에요.',
     masterclass: {
       chefIntro: '빵 반죽을 다뤄보는 좋은 연습이 되는 메뉴예요. 고구마 필링이 들어가 더 든든하고 달콤해요.',
@@ -207,7 +207,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'sweetpotato-weekend-5', month: 10, title: '고구마 크림수프', subtitle: '곱게 갈아 부드럽게 즐기는 주말 수프',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-weekend-5/hero.webp',
     mainIngredient: '고구마', description: '고구마와 양파를 부드럽게 익혀 곱게 갈아낸, 달콤하고 든든한 크림 수프예요.',
     masterclass: {
       chefIntro: '고구마 자체의 단맛이 강해 별다른 양념 없이도 풍미가 깊어요.',
@@ -241,7 +241,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '일본',
       note: '텐푸라는 일본의 대표적인 튀김 요리로, 고구마는 가을철 텐푸라 식당에서 가장 인기 있는 재료 중 하나예요. 가볍고 바삭한 튀김옷이 일본 텐푸라의 핵심이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-world-2/hero.webp',
     mainIngredient: '고구마', description: '얇게 썬 고구마를 가벼운 튀김옷에 바삭하게 튀긴, 일본 가을의 대표 튀김이에요.',
     masterclass: {
       chefIntro: '일본 튀김집에서 가을이면 흔히 만나는 메뉴예요. 가벼운 튀김옷이 텐푸라의 핵심이에요.',
@@ -282,7 +282,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '중국',
       note: '빠스(拔丝)는 중국에서 튀긴 재료에 설탕시럽을 입혀 실처럼 늘어나게 만드는 조리법이에요. 고구마로 만든 빠스띠엔(拔丝地瓜)은 중국 가정과 식당에서 인기 있는 디저트예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-world-3/hero.webp',
     mainIngredient: '고구마', description: '튀긴 고구마에 설탕시럽을 입혀 실처럼 늘어나는, 중국의 독특한 디저트예요.',
     masterclass: {
       chefIntro: '설탕을 실처럼 늘어나게 만드는 중국 요리의 재미있는 기법이에요. 따뜻할 때 바로 먹어야 그 식감을 즐길 수 있어요.',
@@ -318,7 +318,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '아르헨티나',
       note: '엠파나다는 남미 전역에서 즐기는 속을 채운 페이스트리예요. 고구마 엠파나다는 아르헨티나와 칠레 등에서 디저트 버전으로 즐기는, 달콤한 속을 채운 변형이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-world-4/hero.webp',
     mainIngredient: '고구마', description: '고구마 속을 채워 반달 모양으로 빚어 구운, 남미식 달콤한 페이스트리예요.',
     masterclass: {
       chefIntro: '남미 길거리 음식의 친근함이 담긴 메뉴예요. 고구마 속이 페이스트리와 만나 든든한 간식이 돼요.',
@@ -355,7 +355,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '서아프리카',
       note: '땅콩버터를 베이스로 한 스튜는 서아프리카(가나, 나이지리아 등) 여러 나라에서 즐기는 대표적인 가정식이에요. 고구마를 더하면 단맛과 고소함이 함께 어우러지는 든든한 한 끼가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-world-5/hero.webp',
     mainIngredient: '고구마', description: '땅콩버터와 토마토를 베이스로 고구마를 넣어 끓인, 서아프리카의 진하고 고소한 스튜예요.',
     masterclass: {
       chefIntro: '서아프리카 가정에서 즐기는 든든한 한 끼예요. 고구마가 땅콩버터의 고소함과 잘 어우러져요.',
@@ -390,7 +390,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'sweetpotato-chef-2', month: 10, title: '고구마 뇨끼', subtitle: '브라운버터 세이지를 곁들인 정교한 면 요리',
     category: '면요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '그릇에 뇨끼를 담고 브라운버터를 끼얹은 뒤 바삭하게 구운 세이지 잎을 올려보세요. 파마산을 살짝 갈아 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-chef-2/hero.webp',
     mainIngredient: '고구마', description: '감자 뇨끼의 고구마 버전으로, 달콤한 반죽에 브라운버터와 세이지 향을 더한 정교한 메뉴예요.',
     masterclass: {
       chefIntro: '감자 뇨끼보다 더 부드럽고 달콤한 결과가 나와요. 고구마의 수분이 반죽을 더 쉽게 뭉치게 해줘요.',
@@ -425,7 +425,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'sweetpotato-chef-3', month: 10, title: '고구마 크렘브륄레', subtitle: '바삭한 캐러멜 막을 깨는 정교한 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 4,
     platingGuide: '작은 라메킨 그릇에 담아 손님 앞에서 토치로 캐러멜을 만들어보세요. 깨지는 소리부터가 이 요리의 경험이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-chef-3/hero.webp',
     mainIngredient: '고구마', description: '고구마 퓌레를 더한 커스터드 위에 바삭한 캐러멜 막을 올린, 클래식 크렘브륄레의 고구마 버전이에요.',
     masterclass: {
       chefIntro: '프랑스 클래식 디저트에 고구마를 더해 더 깊은 풍미를 낸 메뉴예요. 캐러멜 막을 깨는 그 순간이 이 요리의 핵심이에요.',
@@ -461,7 +461,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'sweetpotato-chef-4', month: 10, title: '고구마 무스와 호두 프랄린', subtitle: '가벼운 무스와 바삭한 견과류의 조화',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 프랄린을 부숴 위에 뿌려보세요. 금색 식용 잎을 살짝 올리면 화려해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-chef-4/hero.webp',
     mainIngredient: '고구마', description: '가볍게 휘핑한 고구마 무스에 바삭한 호두 프랄린을 더한, 질감의 대비가 즐거운 디저트예요.',
     masterclass: {
       chefIntro: '무겁게 느껴질 수 있는 고구마를 가벼운 무스로 표현한 메뉴예요. 프랄린의 바삭함이 좋은 대비를 만들어줘요.',
@@ -495,7 +495,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'sweetpotato-chef-5', month: 10, title: '고구마 타르트와 메이플 글레이즈', subtitle: '정교한 단면을 보여주는 플레이팅 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '타르트를 슬라이스해 단면이 보이게 세워 담고, 메이플 글레이즈를 가늘게 한 줄 그어보세요. 식용 금박을 살짝 올리면 화려해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpotato-chef-5/hero.webp',
     mainIngredient: '고구마', description: '곱게 간 고구마 필링을 타르트지에 채워 구운 뒤 메이플 글레이즈로 윤기를 더한, 정교한 플레이팅 디저트예요.',
     masterclass: {
       chefIntro: '단순한 고구마 파이를 한 단계 끌어올린 메뉴예요. 필링을 체에 내려 매끈하게 만드는 게 핵심이에요.',
@@ -535,7 +535,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-home-3', month: 4, title: '딸기잼', subtitle: '가장 기본적인 홈메이드 잼',
     category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-home-3/hero.webp',
     mainIngredient: '딸기', description: '딸기와 설탕만으로 만드는, 빵에 발라먹기 좋은 가장 기본적인 잼이에요.',
     masterclass: {
       chefIntro: '봄 딸기가 가장 달고 향긋할 때 만들면 일 년 내내 그 맛을 즐길 수 있어요.',
@@ -567,7 +567,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-home-4', month: 4, title: '딸기 샐러드', subtitle: '신선한 봄의 산뜻한 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-home-4/hero.webp',
     mainIngredient: '딸기', description: '신선한 딸기와 어린잎채소를 가볍게 섞은, 산뜻한 봄철 샐러드예요.',
     masterclass: {
       chefIntro: '딸기 자체의 단맛이 좋아서 드레싱을 많이 안 써도 충분히 맛있어요.',
@@ -594,7 +594,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-home-5', month: 4, title: '딸기 우유', subtitle: '직접 만드는 진짜 딸기 우유',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-home-5/hero.webp',
     mainIngredient: '딸기', description: '신선한 딸기를 갈아 우유와 섞은, 시판 제품과는 다른 진짜 딸기 맛 음료예요.',
     masterclass: {
       chefIntro: '딸기가 신선할 때 가장 맛있는 음료예요. 색소나 향료 없이 딸기 본연의 맛을 즐길 수 있어요.',
@@ -623,7 +623,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-weekend-2', month: 4, title: '딸기 롤케이크', subtitle: '폭신한 스펀지로 말아낸 봄 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-weekend-2/hero.webp',
     mainIngredient: '딸기', description: '폭신한 스펀지에 생크림과 딸기를 채워 말아낸, 손이 가지만 만족스러운 디저트예요.',
     masterclass: {
       chefIntro: '말기 기술을 연습하기 좋은 메뉴예요. 스펀지가 따뜻할 때 말아야 갈라지지 않아요.',
@@ -655,7 +655,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-weekend-3', month: 4, title: '딸기 치즈케이크', subtitle: '부드러운 크림치즈와 새콤한 딸기',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 100, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-weekend-3/hero.webp',
     mainIngredient: '딸기', description: '부드러운 크림치즈 베이스에 딸기 토핑을 올린, 주말에 시간 들여 만드는 디저트예요.',
     masterclass: {
       chefIntro: '치즈케이크는 굽는 온도 조절이 중요한 디저트예요. 딸기의 산미가 치즈의 부드러움과 잘 어울려요.',
@@ -690,7 +690,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-weekend-4', month: 4, title: '딸기 스무디볼', subtitle: '갈아낸 딸기 위에 토핑을 올린 비주얼 아침',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-weekend-4/hero.webp',
     mainIngredient: '딸기', description: '얼린 딸기를 곱게 갈아 그래놀라와 과일을 올린, 보기에도 즐거운 건강한 아침 메뉴예요.',
     masterclass: {
       chefIntro: '얼린 딸기를 쓰면 음료가 아니라 떠먹는 농도로 만들 수 있어요. 그게 스무디볼의 핵심이에요.',
@@ -718,7 +718,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
   {
     id: 'strawberry-weekend-5', month: 4, title: '딸기 잼 타르트', subtitle: '직접 만든 잼으로 채운 바삭한 타르트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-weekend-5/hero.webp',
     mainIngredient: '딸기', description: '직접 졸인 딸기잼을 바삭한 타르트지에 채운, 처음부터 끝까지 정성이 들어가는 디저트예요.',
     masterclass: {
       chefIntro: '잼부터 직접 만들어 채우는 만큼 향이 더 진해요. 시판 잼보다 신선한 딸기 향이 살아있어요.',
@@ -751,7 +751,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '프랑스',
       note: '마카롱은 프랑스 파티스리를 대표하는 디저트로, 아몬드가루를 베이스로 한 머랭 코크 사이에 필링을 채워 만들어요. 정교한 기법이 필요해 프랑스에서도 숙련된 파티시에의 솜씨로 평가받는 디저트예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-world-2/hero.webp',
     mainIngredient: '딸기', description: '아몬드 머랭 코크 사이에 딸기 필링을 채운, 프랑스 파티스리의 정교한 디저트예요.',
     masterclass: {
       chefIntro: '마카롱은 프랑스 파티스리 기법의 정수예요. 까다롭지만 성공하면 그 보람이 큰 디저트예요.',
@@ -789,7 +789,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '미국',
       note: '미국식 딸기 쇼트케이크는 일본식 스펀지 베이스와 달리, 바삭한 비스킷 사이에 딸기와 휘핑크림을 끼워 먹는 형태예요. 미국 가정에서 여름철 흔히 만나는 친근한 디저트예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-world-3/hero.webp',
     mainIngredient: '딸기', description: '바삭한 비스킷 사이에 딸기와 휘핑크림을 끼운, 일본식과는 전혀 다른 미국식 딸기 디저트예요.',
     masterclass: {
       chefIntro: '같은 이름이지만 일본식과 완전히 다른 디저트예요. 비스킷의 바삭함이 핵심이에요.',
@@ -825,7 +825,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '이탈리아',
       note: '티라미수는 이탈리아의 대표 디저트로, 원래는 커피와 마스카포네로 만들어요. 딸기 버전은 봄철 딸기가 풍성할 때 이탈리아 가정과 카페에서 즐기는 변형 레시피예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-world-4/hero.webp',
     mainIngredient: '딸기', description: '마스카포네 크림과 딸기를 켜켜이 쌓은, 커피 없이도 즐기는 이탈리아식 디저트예요.',
     masterclass: {
       chefIntro: '커피 향 대신 딸기의 신선함을 담은 변형이에요. 봄철 가볍게 즐기기 좋아요.',
@@ -862,7 +862,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
       country: '영국',
       note: '에튼 메스는 영국 이튼 칼리지의 정원파티에서 유래했다고 알려진 디저트로, 부서진 머랭과 딸기, 휘핑크림을 가볍게 섞어 만들어요. "메스(mess, 엉망)"라는 이름처럼 격식 없이 즐기는 디저트예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-world-5/hero.webp',
     mainIngredient: '딸기', description: '부서진 머랭과 딸기, 휘핑크림을 가볍게 섞은, 영국의 격식 없고 투박한 디저트예요.',
     masterclass: {
       chefIntro: '이름처럼 격식이 필요 없는 디저트예요. 재료를 섞는 정도만 신경 쓰면 누구나 만들 수 있어요.',
@@ -893,7 +893,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'strawberry-chef-2', month: 4, title: '딸기 타르타르', subtitle: '정교한 칼질로 완성하는 비주얼 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '무스링에 타르타르를 채워 모양을 잡고 들어올린 뒤, 바질오일을 점으로 뿌려보세요. 마이크로민트 한 잎이면 충분해요.',
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-chef-2/hero.webp',
     mainIngredient: '딸기', description: '딸기를 일정한 크기로 다져 정교하게 쌓아낸, 토마토 타르타르의 디저트 버전이에요.',
     masterclass: {
       chefIntro: '딸기를 정교한 칼질로 완성하는 모던 디저트예요. 일정한 큐브 모양이 이 요리의 핵심이에요.',
@@ -925,7 +925,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'strawberry-chef-3', month: 4, title: '딸기 무스와 바질오일', subtitle: '가벼운 무스와 허브 향의 모던 조합',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 바질오일을 점점이 떨어뜨려보세요. 신선한 딸기 한 조각을 위에 올리면 완성이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-chef-3/hero.webp',
     mainIngredient: '딸기', description: '가볍게 휘핑한 딸기 무스에 바질오일을 더한, 허브향이 의외로 잘 어울리는 모던 디저트예요.',
     masterclass: {
       chefIntro: '딸기와 바질의 조합이 의외로 잘 맞아요. 허브향이 단맛을 한층 산뜻하게 만들어줘요.',
@@ -955,7 +955,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'strawberry-chef-4', month: 4, title: '딸기 그라니타', subtitle: '코스 사이 입맛을 정리하는 차가운 샤베트',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 240, servings: 4,
     platingGuide: '작은 유리잔에 그라니타를 가볍게 담고 민트 잎 하나를 올려보세요. 거친 결정의 텍스처가 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-chef-4/hero.webp',
     mainIngredient: '딸기', description: '딸기를 갈아 얼린, 코스 요리 중간에 입맛을 정리해주는 차갑고 산뜻한 그라니타예요.',
     masterclass: {
       chefIntro: '레스토랑 코스에서 메인 사이에 내는 팔레트 클렌저 역할을 하는 디저트예요. 딸기 향이 그대로 살아있어요.',
@@ -988,7 +988,7 @@ export const recipesSweetpotatoStrawberryExpansion: Recipe[] = [
     id: 'strawberry-chef-5', month: 4, title: '딸기 밀푀유', subtitle: '겹겹이 쌓은 페이스트리와 딸기의 정교한 조화',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '직사각형으로 잘라 옆으로 누워 담으면 켜가 옆에서 그대로 보여요. 슈가파우더를 살짝 뿌리고 딸기 한 조각을 옆에 세워보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/strawberry-chef-5/hero.webp',
     mainIngredient: '딸기', description: '바삭한 페이스트리 켜 사이에 커스터드와 딸기를 채운, 프랑스 파티스리의 정교한 켜 디저트예요.',
     masterclass: {
       chefIntro: '켜를 가지런히 쌓는 기술이 핵심인 디저트예요. 딸기가 켜 사이사이 산뜻함을 더해줘요.',

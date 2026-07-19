@@ -16,7 +16,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-home-1', month: 2, title: '쭈꾸미볶음', subtitle: '쫄깃한 쭈꾸미를 매콤하게 볶아낸 별미',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-home-1/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '매콤달콤한 양념에 볶아낸 쭈꾸미로, 쫄깃한 식감이 일품인 대표적인 술안주예요.',
     masterclass: {
@@ -45,7 +45,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-home-2', month: 2, title: '쭈꾸미 초무침', subtitle: '새콤달콤 쫄깃한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-home-2/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '데친 쭈꾸미를 오이, 미나리와 함께 새콤달콤한 초고추장에 무친, 입맛을 돋우는 봄철 별미예요.',
     masterclass: {
@@ -77,7 +77,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-home-3', month: 2, title: '쭈꾸미 숙회', subtitle: '담백하게 데쳐 초장에 찍어 먹는 별미',
     category: '안주', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-home-3/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '쭈꾸미를 통째로 데쳐 초장에 찍어 먹는, 가장 단순하지만 재료 본연의 맛이 살아있는 요리예요.',
     masterclass: {
@@ -108,7 +108,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-home-4', month: 2, title: '쭈꾸미 콩나물찜', subtitle: '얼큰하고 시원한 밥반찬',
     category: '찜', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-home-4/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '콩나물과 쭈꾸미를 매콤한 양념에 찜처럼 볶아낸, 밥반찬으로도 술안주로도 좋은 요리예요.',
     masterclass: {
@@ -140,7 +140,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-home-5', month: 2, title: '쭈꾸미 미나리무침', subtitle: '향긋한 봄나물과의 만남',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-home-5/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '데친 쭈꾸미와 향긋한 미나리를 간장 양념으로 가볍게 무친, 담백한 봄철 반찬이에요.',
     masterclass: {
@@ -172,7 +172,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-weekend-1', month: 2, title: '쭈꾸미 샤부샤부', subtitle: '맑은 육수에 데쳐 먹는 담백한 요리',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-weekend-1/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '맑은 다시육수에 쭈꾸미와 채소를 살짝 데쳐 먹는, 담백하고 정갈한 전골 요리예요.',
     masterclass: {
@@ -204,7 +204,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-weekend-2', month: 2, title: '쭈꾸미 볶음밥', subtitle: '매콤한 볶음의 완벽한 마무리',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-weekend-2/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '매콤하게 볶은 쭈꾸미와 채소를 밥과 함께 볶아낸, 한 그릇으로 든든한 별미예요.',
     masterclass: {
@@ -235,7 +235,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-weekend-3', month: 2, title: '쭈꾸미 파전', subtitle: '쫄깃함이 살아있는 해물전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-weekend-3/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '쫄깃한 쭈꾸미와 쪽파를 듬뿍 넣어 부친, 씹는 맛이 좋은 해물파전이에요.',
     masterclass: {
@@ -266,7 +266,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-weekend-4', month: 2, title: '쭈꾸미 삼겹살 볶음', subtitle: '삼겹살과 만난 매콤한 조합',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-weekend-4/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '삼겹살과 쭈꾸미를 함께 매콤하게 볶은, 서로의 맛을 살려주는 인기 조합이에요.',
     masterclass: {
@@ -297,7 +297,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
   {
     id: 'webfootoctopus-weekend-5', month: 2, title: '쭈꾸미젓갈', subtitle: '오래 두고 먹는 짭조름한 밑반찬',
     category: '젓갈', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-weekend-5/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '데친 쭈꾸미를 매콤한 양념에 무쳐 숙성시킨, 밥반찬으로 좋은 젓갈이에요.',
     masterclass: {
@@ -331,7 +331,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-world-1', month: 2, title: '풀포 아 라 가예가', subtitle: '스페인 갈리시아식 문어요리',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '스페인', note: '풀포 아 라 가예가(pulpo a la gallega)는 스페인 갈리시아 지방의 대표 문어요리예요. 삶은 문어에 파프리카가루와 올리브오일만 뿌려 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-world-1/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '삶은 쭈꾸미에 스모크 파프리카가루와 올리브오일을 뿌린, 스페인 갈리시아식 심플한 요리예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-world-2', month: 2, title: '흐타포디 스티 스하라', subtitle: '그리스식 숯불 문어구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '그리스', note: '흐타포디(χταπόδι)는 그리스어로 문어를 뜻해요. 그리스 섬 지방에서는 문어를 빨랫줄에 널어 말린 뒤 숯불에 구워 먹는 것이 전통 방식으로 유명해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-world-2/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '올리브오일과 레몬, 오레가노로 향을 낸 쭈꾸미를 숯불처럼 구운, 그리스 섬마을 스타일 요리예요.',
     masterclass: {
@@ -394,7 +394,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-world-3', month: 2, title: '타코야키', subtitle: '일본식 한입 문어빵',
     category: '간식', difficulty: '보통', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '일본', note: '타코야키(たこ焼き)는 오사카를 대표하는 길거리 음식이에요. 타코(たこ)는 문어를 뜻하는데, 원래는 문어를 넣지만 쭈꾸미로 만들면 훨씬 쫄깃한 식감의 홈메이드 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-world-3/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '동그란 반죽 속에 쭈꾸미를 넣고 구운, 겉바속촉의 오사카식 길거리 간식이에요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-world-4', month: 2, title: '쭈꾸미 인사라타 디 마레', subtitle: '이탈리아식 해산물 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '인사라타 디 마레(insalata di mare)는 이탈리아 해안 지방의 대표적인 해산물 샐러드예요. 문어, 새우, 오징어 등을 데쳐 올리브오일과 레몬으로 가볍게 버무리는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-world-4/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '데친 쭈꾸미와 채소를 올리브오일, 레몬으로 가볍게 버무린, 산뜻한 이탈리아식 해산물 샐러드예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-world-5', month: 2, title: '폴보 아 페이라오', subtitle: '포르투갈식 삶은 문어와 감자',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '포르투갈', note: '폴보(polvo)는 포르투갈어로 문어를 뜻해요. 포르투갈에서는 문어를 삶아 감자와 함께 올리브오일에 버무리는 요리가 명절과 축제 음식으로 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-world-5/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '삶은 쭈꾸미와 감자를 올리브오일, 마늘로 버무린, 포르투갈식 소박하지만 깊은 맛의 요리예요.',
     masterclass: {
@@ -494,7 +494,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-chef-1', month: 2, title: '쭈꾸미 카르파치오', subtitle: '얇게 저민 쭈꾸미의 투명한 신선함',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 쭈꾸미를 얇게 펼쳐 겹치듯 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 소금 결정과 처빌을 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-chef-1/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '살짝 데쳐 얇게 저민 쭈꾸미에 올리브오일과 레몬을 더한, 재료의 신선함을 그대로 보여주는 전채예요.',
     masterclass: {
@@ -526,7 +526,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-chef-2', month: 2, title: '쭈꾸미 먹물 리조또', subtitle: '검은빛이 감도는 이탈리아식 리조또',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '검은 접시에 리조또를 담고, 중앙에 살짝 구운 쭈꾸미 한 마리를 올린 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-chef-2/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '오징어먹물로 검게 물들인 쌀에 쭈꾸미를 더한, 극적인 비주얼의 이탈리아식 리조또예요.',
     masterclass: {
@@ -559,7 +559,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-chef-3', month: 2, title: '쭈꾸미 갈릭콩피', subtitle: '올리브오일에 은근히 익힌 부드러운 쭈꾸미',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 쭈꾸미를 놓고, 콩피에 쓴 마늘 올리브오일을 끼얹은 뒤 구운 마늘 조각과 허브를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-chef-3/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '마늘과 올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 쭈꾸미요리예요.',
     masterclass: {
@@ -590,7 +590,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-chef-4', month: 2, title: '쭈꾸미 세비체', subtitle: '남미식 상큼한 쭈꾸미 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '차갑게 식힌 유리볼에 세비체를 담고, 가장자리에 고구마튀김을 곁들여 서빙하며 고수잎을 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-chef-4/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '살짝 데친 쭈꾸미를 라임즙과 채소에 재운, 상큼하고 신선한 남미식 전채예요.',
     masterclass: {
@@ -623,7 +623,7 @@ export const recipesWebfootOctopusExpansion: Recipe[] = [
     id: 'webfootoctopus-chef-5', month: 2, title: '쭈꾸미 그릴 로메스코', subtitle: '스페인식 견과류소스를 곁들인 구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '넓은 접시에 로메스코소스를 넓게 펴 바르고, 그 위에 그릴에 구운 쭈꾸미를 부채꼴로 배치한 뒤 파슬리와 아몬드 조각을 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/webfootoctopus-chef-5/hero.webp',
     mainIngredient: '쭈꾸미',
     description: '숯불에 구운 쭈꾸미에 스페인 카탈루냐식 견과류·파프리카소스를 곁들인, 풍미가 진한 요리예요.',
     masterclass: {

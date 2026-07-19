@@ -9,7 +9,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
   {
     id: 'springcabbage-weekend-1', month: 2, title: '봄동 굴전', subtitle: '달콤한 봄동과 통통한 굴의 만남',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-weekend-1/hero.webp',
     mainIngredient: '봄동',
     description: '봄동과 굴을 함께 부친, 달콤함과 바다향이 어우러지는 겨울 끝물 별미 전이에요.',
     masterclass: {
@@ -40,7 +40,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
   {
     id: 'springcabbage-weekend-2', month: 2, title: '봄동 된장찌개', subtitle: '달큰함이 도는 구수한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-weekend-2/hero.webp',
     mainIngredient: '봄동',
     description: '봄동과 두부, 채소를 넣고 구수하게 끓인 된장찌개예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
   {
     id: 'springcabbage-weekend-3', month: 2, title: '봄동 삼겹살찜', subtitle: '달콤한 잎에 고기를 싸 먹는 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-weekend-3/hero.webp',
     mainIngredient: '봄동',
     description: '삶은 삼겹살을 봄동잎에 싸 먹는, 든든하고 향긋한 겨울 끝물 별미예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
   {
     id: 'springcabbage-weekend-4', month: 2, title: '봄동 잡채', subtitle: '달콤한 봄동을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-weekend-4/hero.webp',
     mainIngredient: '봄동',
     description: '기본 잡채에 봄동을 더해 달콤함을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
   {
     id: 'springcabbage-weekend-5', month: 2, title: '봄동 만두', subtitle: '달콤한 봄동을 가득 채운 만두',
     category: '만두', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-weekend-5/hero.webp',
     mainIngredient: '봄동',
     description: '봄동과 돼지고기를 소로 채운, 달콤함이 배어 있는 손만두예요.',
     masterclass: {
@@ -163,7 +163,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-world-1', month: 2, title: '봄동 알리오 올리오', subtitle: '달콤한 배추를 더한 이탈리아 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 겨울 배추류를 마늘, 올리브오일과 함께 파스타에 즐겨 넣어요. 봄동을 쓰면 이탈리아 카볼로 네로(검은양배추) 파스타와 비슷하면서도 훨씬 달콤한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-world-1/hero.webp',
     mainIngredient: '봄동',
     description: '봄동을 마늘, 올리브오일에 볶아 파스타에 버무린, 달콤하고 향긋한 한 그릇이에요.',
     masterclass: {
@@ -195,7 +195,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-world-2', month: 2, title: '차오 바이차이', subtitle: '중국식 배추볶음의 정석',
     category: '볶음', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '차오 바이차이(炒白菜)는 중국 가정식에서 가장 흔한 배추볶음이에요. 센 불에서 짧게 볶아 아삭함을 살리는 것이 핵심이고, 봄동으로 만들면 흔한 배추볶음보다 훨씬 단맛이 진해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-world-2/hero.webp',
     mainIngredient: '봄동',
     description: '마늘과 굴소스로 센 불에 빠르게 볶은, 중국식 배추볶음의 정석이에요.',
     masterclass: {
@@ -227,7 +227,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-world-3', month: 2, title: '하쿠사이노 니모노', subtitle: '일본식 배추 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '일본', note: '니모노(煮物)는 다시육수에 채소를 은근히 졸이는 일본 가정식 조리법이에요. 하쿠사이(白菜, 배추)를 사용한 니모노는 겨울철 일본 가정식 밥상에 자주 오르는 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-world-3/hero.webp',
     mainIngredient: '봄동',
     description: '다시육수에 봄동을 은근히 졸인, 담백하고 달콤한 일본식 조림이에요.',
     masterclass: {
@@ -257,7 +257,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-world-4', month: 2, title: '봄동 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '프랑스', note: '파피요트(en papillote)는 재료를 종이나 포일에 싸서 오븐에 찌듯 굽는 프랑스 요리 기법이에요. 봄동을 채소로 활용하면 촉촉하게 익으며 단맛이 응축돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-world-4/hero.webp',
     mainIngredient: '봄동',
     description: '봄동과 생선을 종이포일에 싸서 오븐에 구운, 촉촉하고 달콤한 프랑스식 요리예요.',
     masterclass: {
@@ -289,7 +289,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-world-5', month: 2, title: '봄동 초리소 볶음', subtitle: '스페인식 훈제 소시지와의 조화',
     category: '볶음', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '스페인', note: '스페인 요리에서는 겨울 채소를 초리조와 함께 볶아 먹는 것이 흔한 조합이에요. 초리조의 훈제향과 매콤함이 채소의 단맛을 살려주는 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-world-5/hero.webp',
     mainIngredient: '봄동',
     description: '봄동과 초리조를 함께 볶은, 훈제향과 단맛이 어우러진 스페인식 요리예요.',
     masterclass: {
@@ -320,7 +320,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-chef-1', month: 2, title: '관자 봄동 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 데친 봄동을 그 옆에 곁들인 뒤 뵈르블랑소스를 숟가락으로 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-chef-1/hero.webp',
     mainIngredient: '봄동',
     description: '바삭하게 시어링한 관자와 데친 봄동에 프랑스식 버터소스를 곁들인, 겨울 끝물 우아한 메인요리예요.',
     masterclass: {
@@ -353,7 +353,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-chef-2', month: 2, title: '봄동 크림수프', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '얕은 수프 접시에 크림수프를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-chef-2/hero.webp',
     mainIngredient: '봄동',
     description: '봄동을 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 단맛의 프랑스식 수프예요.',
     masterclass: {
@@ -385,7 +385,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-chef-3', month: 2, title: '봄동 오일 콩피 흰살생선', subtitle: '봄향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 봄동을 그 옆에 곁들인 뒤 올리브오일을 끼얹고 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-chef-3/hero.webp',
     mainIngredient: '봄동',
     description: '봄동과 함께 올리브오일에 낮은 온도로 은근히 익힌, 부드럽고 달콤한 프랑스식 생선요리예요.',
     masterclass: {
@@ -417,7 +417,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-chef-4', month: 2, title: '봄동 리조또', subtitle: '달콤함이 감도는 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 살짝 볶은 봄동잎을 위에 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-chef-4/hero.webp',
     mainIngredient: '봄동',
     description: '봄동을 갈아 넣어 은은한 단맛을 낸, 겨울 끝물 채소 리조또예요.',
     masterclass: {
@@ -449,7 +449,7 @@ export const recipesSpringCabbageExpansion: Recipe[] = [
     id: 'springcabbage-chef-5', month: 2, title: '봄동 그라탕', subtitle: '프랑스식 화이트소스 그라탕',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '작은 그라탕 그릇에 소스를 채우고 오븐에서 그대로 구워, 표면이 진한 갈색으로 그을린 채 그릇째 상에 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/springcabbage-chef-5/hero.webp',
     mainIngredient: '봄동',
     description: '봄동을 뵈샤멜소스와 함께 겹겹이 쌓아 구운, 달콤하고 고소한 그라탕이에요.',
     masterclass: {

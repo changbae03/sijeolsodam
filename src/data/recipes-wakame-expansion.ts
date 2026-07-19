@@ -13,7 +13,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-home-3', month: 2, title: '물미역 된장국', subtitle: '시원하고 담백한 기본 된장국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-home-3/hero.webp',
     mainIngredient: '물미역',
     description: '물미역을 넣어 시원하게 끓인 된장국으로, 부드러운 식감이 매력적인 봄철 국이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-home-4', month: 2, title: '물미역 무침', subtitle: '고소하고 새콤한 기본 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-home-4/hero.webp',
     mainIngredient: '물미역',
     description: '물미역을 간장과 참기름으로 담백하게 무친, 초무침과는 다른 결의 기본 반찬이에요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-home-5', month: 2, title: '물미역 오이냉국', subtitle: '시원하게 즐기는 여름 초입 별미',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-home-5/hero.webp',
     mainIngredient: '물미역',
     description: '물미역과 오이를 새콤달콤한 냉국물에 담근, 더위를 식혀주는 시원한 별미예요.',
     masterclass: {
@@ -107,7 +107,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-weekend-1', month: 2, title: '물미역 냉채', subtitle: '새콤달콤한 여러 채소와의 조화',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-weekend-1/hero.webp',
     mainIngredient: '물미역',
     description: '물미역에 여러 채소와 겨자소스를 곁들인, 화려하고 시원한 냉채예요.',
     masterclass: {
@@ -138,7 +138,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-weekend-2', month: 2, title: '물미역 쌈밥', subtitle: '아삭하고 미끌한 색다른 쌈',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-weekend-2/hero.webp',
     mainIngredient: '물미역',
     description: '물미역에 밥과 양념을 싸 먹는, 상추쌈과는 다른 색다른 쌈밥이에요.',
     masterclass: {
@@ -167,7 +167,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-weekend-3', month: 2, title: '물미역 전골', subtitle: '푸짐하게 끓여내는 해초 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-weekend-3/hero.webp',
     mainIngredient: '물미역',
     description: '물미역과 채소, 해물을 넉넉히 넣고 시원하게 끓인 전골이에요.',
     masterclass: {
@@ -197,7 +197,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-weekend-4', month: 2, title: '물미역 튀김', subtitle: '바삭한 겉면과 미끌한 속살',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-weekend-4/hero.webp',
     mainIngredient: '물미역',
     description: '물미역에 튀김옷을 입혀 바삭하게 튀긴, 겉바속촉이 색다른 튀김이에요.',
     masterclass: {
@@ -227,7 +227,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
   {
     id: 'wakame-weekend-5', month: 2, title: '물미역 비빔국수', subtitle: '시원하고 매콤한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-weekend-5/hero.webp',
     mainIngredient: '물미역',
     description: '소면에 물미역과 매콤한 양념을 비벼낸, 시원하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -261,7 +261,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-world-1', month: 2, title: '와카메노 스노모노', subtitle: '일본식 미역 초무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '일본', note: '스노모노(酢の物)는 식초를 베이스로 한 일본식 초무침이에요. 와카메(미역)는 일본 요리에서 가장 흔히 쓰이는 해초로, 오이와 함께 새콤하게 무치는 것이 정석이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-world-1/hero.webp',
     mainIngredient: '물미역',
     description: '물미역과 오이를 일본식 스노모노 양념으로 새콤하게 무친, 산뜻한 반찬이에요.',
     masterclass: {
@@ -293,7 +293,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-world-2', month: 2, title: '하이자오 하이다이', subtitle: '중국식 참기름 해초 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '하이다이(海带)는 중국어로 다시마나 미역류 해초를 뜻해요. 중국 냉채 요리에서 참기름과 마늘, 고추기름으로 무친 해초 반찬이 인기 있는 전채로 자주 나와요.' },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-world-2/hero.webp',
     mainIngredient: '물미역',
     description: '참기름과 마늘, 고추기름으로 매콤하게 무친, 중국식 냉채 스타일의 해초 반찬이에요.',
     masterclass: {
@@ -323,7 +323,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-world-3', month: 2, title: '까잉 쭈아 로쓰이', subtitle: '베트남식 시큼한 해초 국물요리',
     category: '국&찌개', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '베트남', note: '까잉 쭈아(canh chua)는 베트남 남부의 대표적인 새콤한 국물요리예요. 타마린드로 신맛을 내는 것이 정통이지만, 물미역을 더하면 시원함이 배가되는 변형 버전을 만들 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-world-3/hero.webp',
     mainIngredient: '물미역',
     description: '새콤한 타마린드 국물에 물미역과 새우를 더한, 베트남 남부식 시원한 국물요리예요.',
     masterclass: {
@@ -354,7 +354,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-world-4', month: 2, title: '엔살라다 데 알가스', subtitle: '스페인식 해초 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '스페인 북부 갈리시아 지방은 해초 요리가 발달한 지역이에요. 알가스(algas)는 스페인어로 해초를 뜻하며, 올리브오일과 셰리식초로 가볍게 무쳐 전채로 즐기는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-world-4/hero.webp',
     mainIngredient: '물미역',
     description: '물미역을 올리브오일과 셰리식초로 무친, 스페인 갈리시아식 해초 샐러드예요.',
     masterclass: {
@@ -385,7 +385,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-world-5', month: 2, title: '호르타 메 알가 살라타', subtitle: '그리스식 해초 레몬 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스 섬 지역에서는 해초를 채취해 올리브오일과 레몬으로 간단히 무쳐 먹는 전통이 있어요. 재료 본연의 바다향을 살리는 것이 핵심이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-world-5/hero.webp',
     mainIngredient: '물미역',
     description: '물미역을 올리브오일과 레몬으로 심플하게 무친, 그리스 섬마을 스타일의 해초 샐러드예요.',
     masterclass: {
@@ -416,7 +416,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-chef-1', month: 2, title: '물미역 세비체', subtitle: '남미식 상큼한 해초 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 유리볼에 세비체를 담고, 가장자리에 고구마튀김을 곁들여 서빙하며 고수잎을 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-chef-1/hero.webp',
     mainIngredient: '물미역',
     description: '물미역과 흰살생선을 라임즙에 재운, 신선하고 이국적인 남미식 세비체예요.',
     masterclass: {
@@ -448,7 +448,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-chef-2', month: 2, title: '물미역 콩소메', subtitle: '맑고 깊은 바다향의 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 물미역과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-chef-2/hero.webp',
     mainIngredient: '물미역',
     description: '물미역과 다시마로 우린 육수를 달걀흰자로 맑게 정제한, 투명하면서도 바다향이 진한 콩소메예요.',
     masterclass: {
@@ -479,7 +479,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-chef-3', month: 2, title: '관자 물미역 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 물미역을 그 옆에 곁들인 뒤 뵈르블랑소스를 숟가락으로 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-chef-3/hero.webp',
     mainIngredient: '물미역',
     description: '바삭하게 시어링한 관자와 물미역에 프랑스식 버터소스를 곁들인, 바다향이 살아있는 메인요리예요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-chef-4', month: 2, title: '물미역 오일 파스타', subtitle: '이탈리아식 바다향 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 물미역을 위에 올린 뒤 레몬 제스트를 뿌리고 올리브오일을 한 바퀴 둘러 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-chef-4/hero.webp',
     mainIngredient: '물미역',
     description: '물미역을 마늘과 올리브오일에 볶아 만든, 은은한 바다향이 감도는 이탈리아식 파스타예요.',
     masterclass: {
@@ -544,7 +544,7 @@ export const recipesFreshWakameExpansion: Recipe[] = [
     id: 'wakame-chef-5', month: 2, title: '물미역 젤리 아뮤즈부시', subtitle: '한입에 즐기는 바다향 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 샷글라스나 도자기 스푼에 젤리를 한입 크기로 담고, 위에 캐비어나 날치알을 살짝 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wakame-chef-5/hero.webp',
     mainIngredient: '물미역',
     description: '물미역 육수를 한천으로 굳혀 만든, 코스요리 시작을 여는 세련된 한입 전채예요.',
     masterclass: {

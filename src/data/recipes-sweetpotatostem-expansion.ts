@@ -12,7 +12,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-home-1', month: 8, title: '고구마순 들깨볶음', subtitle: '아삭하고 고소한 늦여름 반찬',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-home-1/hero.webp',
     mainIngredient: '고구마순',
     description: '아삭한 고구마순을 들깨가루로 고소하게 볶아낸, 손이 많이 가지만 그만큼 깊은 맛이 나는 반찬이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-home-2', month: 8, title: '고구마순 들깨국', subtitle: '구수하고 아삭한 늦여름 국',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-home-2/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 들깨와 함께 끓인, 구수하고 걸쭉한 늦여름 별미 국이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-home-3', month: 8, title: '고구마순 김치', subtitle: '아삭한 여름 별미 김치',
     category: '김치', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1583224944844-5b268c057b72?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-home-3/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 멸치액젓 양념에 절여 만든, 아삭한 식감이 매력적인 여름철 별미 김치예요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-home-4', month: 8, title: '고구마순 무침', subtitle: '아삭 담백한 기본 나물무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-home-4/hero.webp',
     mainIngredient: '고구마순',
     description: '데친 고구마순을 간장 양념에 가볍게 무친, 담백한 기본 나물무침이에요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-home-5', month: 8, title: '고구마순 된장무침', subtitle: '구수하고 아삭한 조합',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-home-5/hero.webp',
     mainIngredient: '고구마순',
     description: '데친 고구마순을 된장 양념에 무친, 구수하고 아삭한 밑반찬이에요.',
     masterclass: {
@@ -164,7 +164,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-weekend-1', month: 8, title: '고구마순 잡채', subtitle: '아삭함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-weekend-1/hero.webp',
     mainIngredient: '고구마순',
     description: '기본 잡채에 고구마순을 더해 아삭한 식감을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -195,7 +195,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-weekend-2', month: 8, title: '고구마순 된장찌개', subtitle: '아삭함이 도는 구수한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-weekend-2/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순과 두부, 채소를 넣고 구수하게 끓인 된장찌개예요.',
     masterclass: {
@@ -225,7 +225,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-weekend-3', month: 8, title: '고구마순 장아찌', subtitle: '두고두고 꺼내 먹는 아삭한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-weekend-3/hero.webp',
     mainIngredient: '고구마순',
     description: '간장물에 절인 고구마순을 새콤짭짤하게 즐기는, 오래 두고 먹는 밑반찬이에요.',
     masterclass: {
@@ -255,7 +255,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-weekend-4', month: 8, title: '고구마순 들깨탕', subtitle: '진한 들깨국물의 든든한 탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-weekend-4/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순과 들깨국물에 닭고기를 더한, 진하고 든든한 탕 요리예요.',
     masterclass: {
@@ -286,7 +286,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
   {
     id: 'spstem-weekend-5', month: 8, title: '고구마순 전', subtitle: '아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-weekend-5/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 반죽에 섞어 부친, 아삭한 식감이 매력인 전이에요.',
     masterclass: {
@@ -319,7 +319,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-world-1', month: 8, title: '고구마순 나물 고마아에', subtitle: '일본식 참깨소스 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '일본', note: '고마아에(胡麻和え)는 데친 채소를 참깨소스로 무치는 일본 가정식이에요. 고구마순처럼 섬유질이 있는 채소는 고소한 참깨소스와 특히 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-world-1/hero.webp',
     mainIngredient: '고구마순',
     description: '데친 고구마순을 참깨소스로 무친, 고소함이 아삭한 식감을 감싸주는 일본식 반찬이에요.',
     masterclass: {
@@ -350,7 +350,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-world-2', month: 8, title: '홍수차오러우쓰', subtitle: '중국식 고구마순 돼지고기 볶음',
     category: '볶음', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '중국', note: '홍수(蕹菜 계열 잎줄기채소)는 중국 요리에서 돼지고기와 함께 볶는 것이 흔한 조합이에요. 고구마순 같은 줄기채소도 비슷한 방식으로 활용하면 씹는 맛이 좋은 볶음요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-world-2/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순과 돼지고기를 굴소스로 볶은, 중국식 가정식 볶음요리예요.',
     masterclass: {
@@ -381,7 +381,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-world-3', month: 8, title: '고구마순 알리오 올리오', subtitle: '아삭함을 더한 이탈리아 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 줄기채소나 브로콜리니를 마늘, 올리브오일과 함께 파스타에 즐겨 넣어요. 고구마순을 쓰면 씹는 맛이 좋은 색다른 알리오 올리오가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-world-3/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 마늘, 올리브오일에 볶아 파스타에 버무린, 아삭하고 향긋한 한 그릇이에요.',
     masterclass: {
@@ -413,7 +413,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-world-4', month: 8, title: '고구마순 느억맘 무침', subtitle: '베트남식 상큼한 무침',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남에서는 줄기채소를 데쳐서 느억맘소스로 새콤하게 무치는 것이 흔한 반찬이에요. 고구마순도 이 방식과 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-world-4/hero.webp',
     mainIngredient: '고구마순',
     description: '데친 고구마순을 느억맘소스로 새콤하게 무친, 상큼한 베트남식 반찬이에요.',
     masterclass: {
@@ -444,7 +444,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-world-5', month: 8, title: '호르타 스타일 고구마순', subtitle: '그리스식 올리브오일 무침',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '그리스', note: '호르타(χόρτα)는 그리스어로 "야생 채소"를 뜻해요. 그리스에서는 다양한 줄기채소를 데쳐서 올리브오일과 레몬만으로 간단히 무쳐 먹는 것이 오랜 전통이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-world-5/hero.webp',
     mainIngredient: '고구마순',
     description: '데친 고구마순에 올리브오일과 레몬을 두른, 그리스식 심플한 채소 반찬이에요.',
     masterclass: {
@@ -476,7 +476,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-chef-1', month: 8, title: '고구마순 크림수프', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 수프 접시에 크림수프를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-chef-1/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 향의 프랑스식 수프예요.',
     masterclass: {
@@ -508,7 +508,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-chef-2', month: 8, title: '고구마순 리조또', subtitle: '아삭함이 살아있는 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 볶은 고구마순 조각을 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-chef-2/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 넣어 아삭한 식감을 살린, 여름철 이탈리아식 리조또예요.',
     masterclass: {
@@ -540,7 +540,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-chef-3', month: 8, title: '고구마순 오일 콩피 흰살생선', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 고구마순을 그 옆에 곁들인 뒤 올리브오일을 끼얹고 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-chef-3/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순과 함께 올리브오일에 낮은 온도로 은근히 익힌, 부드럽고 향긋한 프랑스식 생선요리예요.',
     masterclass: {
@@ -572,7 +572,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-chef-4', month: 8, title: '관자 고구마순 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 데친 고구마순을 그 옆에 곁들인 뒤 뵈르블랑소스를 숟가락으로 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-chef-4/hero.webp',
     mainIngredient: '고구마순',
     description: '바삭하게 시어링한 관자와 데친 고구마순에 프랑스식 버터소스를 곁들인, 우아한 메인요리예요.',
     masterclass: {
@@ -605,7 +605,7 @@ export const recipesSweetPotatoStemExpansion: Recipe[] = [
     id: 'spstem-chef-5', month: 8, title: '고구마순 그라탕', subtitle: '프랑스식 화이트소스 그라탕',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '작은 그라탕 그릇에 소스를 채우고 오븐에서 그대로 구워, 표면이 진한 갈색으로 그을린 채 그릇째 상에 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spstem-chef-5/hero.webp',
     mainIngredient: '고구마순',
     description: '고구마순을 뵈샤멜소스와 함께 겹겹이 쌓아 구운, 아삭함과 고소함이 함께 있는 그라탕이에요.',
     masterclass: {

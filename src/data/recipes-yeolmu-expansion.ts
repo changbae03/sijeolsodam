@@ -14,7 +14,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-home-1', month: 7, title: '열무비빔국수', subtitle: '시원하고 아삭한 여름 별미 국수',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-home-1/hero.webp',
     mainIngredient: '열무',
     description: '아삭한 열무김치를 듬뿍 올려 비벼 먹는, 시원한 여름철 대표 별미 국수예요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-home-2', month: 7, title: '열무물김치', subtitle: '시원한 국물이 일품인 여름 별미 물김치',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-home-2/hero.webp',
     mainIngredient: '열무',
     description: '아삭한 열무로 담근, 국수와 곁들이면 더욱 맛있는 시원한 여름철 물김치예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-home-3', month: 7, title: '열무나물', subtitle: '아삭하고 담백한 기본 나물',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-home-3/hero.webp',
     mainIngredient: '열무',
     description: '열무를 데쳐 된장에 무친, 아삭하고 담백한 기본 나물이에요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-home-4', month: 7, title: '열무된장국', subtitle: '구수하고 시원한 여름 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-home-4/hero.webp',
     mainIngredient: '열무',
     description: '열무를 넣어 끓인 된장국으로, 구수하고 시원한 여름철 국이에요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-home-5', month: 7, title: '열무겉절이', subtitle: '아삭하고 매콤한 여름 별미',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-home-5/hero.webp',
     mainIngredient: '열무',
     description: '열무를 매콤달콤한 양념에 무친, 아삭하고 향긋한 여름철 별미예요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-weekend-1', month: 7, title: '열무보리비빔밥', subtitle: '구수하고 든든한 여름 별미밥',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-weekend-1/hero.webp',
     mainIngredient: '열무',
     description: '열무김치와 보리밥을 고추장에 비벼 먹는, 구수하고 든든한 여름철 별미예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-weekend-2', month: 7, title: '열무전', subtitle: '아삭하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-weekend-2/hero.webp',
     mainIngredient: '열무',
     description: '열무를 반죽에 섞어 부친, 아삭하고 향긋한 여름철 별미전이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-weekend-3', month: 7, title: '열무국수', subtitle: '시원하고 개운한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-weekend-3/hero.webp',
     mainIngredient: '열무',
     description: '열무물김치 국물에 국수를 말아 먹는, 시원하고 개운한 여름철 별미예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-weekend-4', month: 7, title: '열무전골', subtitle: '푸짐하고 시원한 여름 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-weekend-4/hero.webp',
     mainIngredient: '열무',
     description: '열무와 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 여름철 전골이에요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
   {
     id: 'yeolmu-weekend-5', month: 7, title: '열무김치볶음밥', subtitle: '새콤하고 고소한 별미밥',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-weekend-5/hero.webp',
     mainIngredient: '열무',
     description: '열무김치를 볶아 만든, 새콤하고 고소한 별미 볶음밥이에요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-world-1', month: 7, title: '열무 살사베르데', subtitle: '이탈리아식 그린소스',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '이탈리아', note: '살사베르데는 이탈리아의 대표적인 허브 그린소스로, 다양한 잎채소로 응용할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-world-1/hero.webp',
     mainIngredient: '열무',
     description: '열무를 파슬리와 함께 갈아 만든, 이탈리아식 향긋한 그린소스예요.',
     masterclass: {
@@ -334,7 +334,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-world-2', month: 7, title: '열무 가스파초', subtitle: '스페인식 차가운 여름 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '가스파초는 스페인 안달루시아의 대표적인 차가운 수프예요. 열무를 더하면 훨씬 아삭하고 향긋한 여름 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-world-2/hero.webp',
     mainIngredient: '열무',
     description: '열무와 토마토를 곱게 갈아 차갑게 낸, 스페인식 여름 냉수프예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-world-3', month: 7, title: '열무 스티어프라이', subtitle: '중국식 마늘볶음',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 다양한 잎채소를 마늘과 함께 센 불에 볶아 아삭함을 살리는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-world-3/hero.webp',
     mainIngredient: '열무',
     description: '열무를 마늘과 함께 센 불에 볶은, 중국식 아삭한 채소볶음이에요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-world-4', month: 7, title: '열무 후무스', subtitle: '중동식 콩퓌레 응용',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 4,
     cuisineContext: { country: '레바논', note: '중동에서는 다양한 잎채소를 후무스에 섞어 색과 향을 더하는 응용이 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-world-4/hero.webp',
     mainIngredient: '열무',
     description: '병아리콩과 열무를 함께 갈아 만든, 초록빛의 향긋한 중동식 딥소스예요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-world-5', month: 7, title: '열무 사이드카레', subtitle: '인도식 향신 채소요리',
     category: '반찬', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '인도', note: '인도에서는 다양한 잎채소를 향신료와 함께 볶는 사그(saag) 스타일 요리가 대중적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-world-5/hero.webp',
     mainIngredient: '열무',
     description: '열무를 향신료와 함께 볶은, 인도식 사그 스타일 채소 반찬이에요.',
     masterclass: {
@@ -453,7 +453,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-chef-1', month: 7, title: '열무 페스토 파스타', subtitle: '이탈리아식 그린페스토 블렌딩',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 담아 신선함이 느껴지게 연출하고, 파마산치즈를 갈아 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-chef-1/hero.webp',
     mainIngredient: '열무',
     description: '바질 대신 열무를 갈아 만든 향긋한 페스토를 파스타에 버무린, 개성 있는 이탈리아식 요리예요.',
     masterclass: {
@@ -483,7 +483,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-chef-2', month: 7, title: '열무 파오차이', subtitle: '중국 사천 브라인병 발효',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '파오차이 항아리에서 꺼낸 열무를 먹기 좋게 썰어 작은 종지에 담고, 참기름을 살짝 둘러 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-chef-2/hero.webp',
     mainIngredient: '열무',
     description: '열무를 향신 소금물에 담가 밀봉 발효시킨, 중국 사천 지방의 전통적인 채소 절임이에요.',
     masterclass: {
@@ -513,7 +513,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-chef-3', month: 7, title: '열무 프로바이오틱 스파클링', subtitle: '물김치 국물의 과학적 재해석',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 4320, servings: 6,
     platingGuide: '차갑게 식힌 스파클링을 유리잔에 따라 자연스러운 미세 기포가 보이게 연출하고, 열무 한 조각을 띄워 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-chef-3/hero.webp',
     mainIngredient: '열무',
     description: '열무물김치의 발효 국물을 유산균 발효음료로 정교하게 다듬은, 콤부차와 비슷한 원리의 발효 음료예요.',
     masterclass: {
@@ -544,7 +544,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-chef-4', month: 7, title: '열무갈레트', subtitle: '프랑스식 얇은 부침 기법',
     category: '전요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '반으로 접거나 사각으로 접은 갈레트를 접시에 담고, 안에 채운 재료가 살짝 보이게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-chef-4/hero.webp',
     mainIngredient: '열무',
     description: '메밀가루 반죽을 종이처럼 얇게 부쳐 열무와 치즈를 채운, 프랑스 브르타뉴식 갈레트예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesYeolmuExpansion: Recipe[] = [
     id: 'yeolmu-chef-5', month: 7, title: '열무나물 콩피', subtitle: '저온오일 조리',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '오일과 함께 유리병에 담아 상에 올리고, 사용할 때는 오일을 살짝 털어내 접시에 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yeolmu-chef-5/hero.webp',
     mainIngredient: '열무',
     description: '열무를 낮은 온도의 오일에 서서히 익힌, 채소를 콩피 기법으로 응용한 부드러운 반찬이에요.',
     masterclass: {

@@ -12,7 +12,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-home-1', month: 1, title: '귤 마멀레이드', subtitle: '향긋한 겨울 귤 수제잼',
     category: '양념', difficulty: '보통', level: 'home', cookTime: 50, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-home-1/hero.webp',
     mainIngredient: '귤',
     description: '새콤달콤한 겨울 귤을 껍질까지 활용해 만든, 향긋한 수제 마멀레이드예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-home-2', month: 1, title: '귤청', subtitle: '두고두고 차로 우려 마시는 청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-home-2/hero.webp',
     mainIngredient: '귤',
     description: '귤을 설탕에 재워 만든 청으로, 겨우내 따뜻한 차로 활용하기 좋아요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-home-3', month: 1, title: '귤샐러드', subtitle: '상큼하고 가벼운 겨울 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-home-3/hero.webp',
     mainIngredient: '귤',
     description: '귤과 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 겨울 샐러드예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-home-4', month: 1, title: '귤주스', subtitle: '상큼하고 진한 겨울 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-home-4/hero.webp',
     mainIngredient: '귤',
     description: '귤을 직접 갈아 만든, 상큼하고 진한 겨울철 생과일주스예요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-home-5', month: 1, title: '귤빙수', subtitle: '상큼하고 시원한 겨울 디저트',
     category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-home-5/hero.webp',
     mainIngredient: '귤',
     description: '얼음 위에 귤과 연유를 듬뿍 올린, 상큼하고 시원한 겨울철 디저트예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-weekend-1', month: 1, title: '귤글레이즈 폭찹', subtitle: '진한 과일소스를 곁들인 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-weekend-1/hero.webp',
     mainIngredient: '귤',
     description: '두툼하게 구운 돼지고기 폭찹에 귤로 만든 진한 소스를 곁들인, 서양식 메인요리예요.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-weekend-2', month: 1, title: '귤화채', subtitle: '향긋하고 시원한 겨울 후식',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-weekend-2/hero.webp',
     mainIngredient: '귤',
     description: '귤청 국물에 여러 과일을 띄운, 향긋하고 시원한 겨울철 후식 화채예요.',
     masterclass: {
@@ -220,7 +220,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-weekend-3', month: 1, title: '오리가슴살 귤소스구이', subtitle: '고급스러운 손님상 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-weekend-3/hero.webp',
     mainIngredient: '귤',
     description: '오리가슴살을 구워 귤소스를 곁들인, 고급스러운 손님상 메인요리예요.',
     masterclass: {
@@ -250,7 +250,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-weekend-4', month: 1, title: '귤타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-weekend-4/hero.webp',
     mainIngredient: '귤',
     description: '아몬드크림 위에 귤을 올려 구운, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -281,7 +281,7 @@ export const recipesTangerineExpansion: Recipe[] = [
   {
     id: 'tangerine-weekend-5', month: 1, title: '귤스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-weekend-5/hero.webp',
     mainIngredient: '귤',
     description: '귤과 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -313,7 +313,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-world-1', month: 1, title: '카나르 아 로랑주', subtitle: '프랑스식 오렌지소스 오리요리 재해석',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 3,
     cuisineContext: { country: '프랑스', note: '카나르 아 로랑주는 프랑스의 클래식 오리요리로, 오렌지소스를 곁들이는 것이 특징이에요. 귤로 만들면 훨씬 향긋하고 산뜻한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-world-1/hero.webp',
     mainIngredient: '귤',
     description: '오리다리살을 은근히 조리고 귤소스를 곁들인, 프랑스식 클래식 요리를 재해석한 메인요리예요.',
     masterclass: {
@@ -343,7 +343,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-world-2', month: 1, title: '귤 판나코타', subtitle: '이탈리아 크림 디저트에 귤향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 원래는 바닐라향이 기본이지만, 감귤류를 우려내는 변형도 흔해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-world-2/hero.webp',
     mainIngredient: '귤',
     description: '부드러운 이탈리아식 크림 디저트에 귤향을 우려낸, 향긋한 겨울 디저트예요.',
     masterclass: {
@@ -374,7 +374,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-world-3', month: 1, title: '귤 상그리아', subtitle: '스페인식 겨울 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 계절 과일을 듬뿍 넣는 것이 특징이에요. 겨울에는 귤을 넣은 버전이 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-world-3/hero.webp',
     mainIngredient: '귤',
     description: '레드와인에 귤과 향신료를 넣어 만든, 스페인식 겨울 상그리아예요.',
     masterclass: {
@@ -405,7 +405,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-world-4', month: 1, title: '귤 탕수육소스', subtitle: '중국식 새콤달콤 재해석',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '중국', note: '탕수육의 새콤달콤한 소스는 보통 식초와 설탕으로 만드는데, 귤즙을 더하면 훨씬 향긋하고 산뜻한 감귤향의 소스가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-world-4/hero.webp',
     mainIngredient: '귤',
     description: '바삭하게 튀긴 돼지고기에 귤로 향을 낸 새콤달콤한 소스를 곁들인, 중국식 요리예요.',
     masterclass: {
@@ -435,7 +435,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-world-5', month: 1, title: '모로칸 귤타진', subtitle: '모로코식 향신료 타진 요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '모로코', note: '모로코 타진에는 오렌지나 감귤류 같은 단 과일을 향신료와 함께 넣는 경우가 많아요. 닭고기와 감귤의 조합이 대표적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-world-5/hero.webp',
     mainIngredient: '귤',
     description: '닭고기와 귤을 향신료에 은근히 끓인, 달콤짭짤한 모로코식 타진 요리예요.',
     masterclass: {
@@ -469,7 +469,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-chef-1', month: 1, title: '귤 콩포트 타르트', subtitle: '진한 귤 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-chef-1/hero.webp',
     mainIngredient: '귤',
     description: '귤을 향신와인과 향신료에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 겨울 디저트예요.',
     masterclass: {
@@ -500,7 +500,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-chef-2', month: 1, title: '오리가슴살 귤소스 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 오리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '따뜻한 접시에 슬라이스한 오리가슴살을 부채꼴로 배치하고, 귤 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 귤제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-chef-2/hero.webp',
     mainIngredient: '귤',
     description: '바삭하게 구운 오리가슴살에 귤로 향을 낸 프랑스식 버터소스를 곁들인, 우아한 메인요리예요.',
     masterclass: {
@@ -532,7 +532,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-chef-3', month: 1, title: '귤 그라니타', subtitle: '이탈리아식 상큼한 셔벗',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '차갑게 식힌 유리잔에 그라니타를 포크로 긁어 소복이 담고, 민트잎과 귤제스트로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-chef-3/hero.webp',
     mainIngredient: '귤',
     description: '귤즙을 얼려서 긁어낸, 향긋하고 상큼한 이탈리아식 셔벗이에요.',
     masterclass: {
@@ -563,7 +563,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-chef-4', month: 1, title: '귤 콩소메', subtitle: '맑고 향긋한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 귤 과육 조각과 민트잎을 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-chef-4/hero.webp',
     mainIngredient: '귤',
     description: '귤 향을 우린 맑은 콩소메로, 코스요리의 시작이나 마무리에 어울리는 산뜻한 수프예요.',
     masterclass: {
@@ -594,7 +594,7 @@ export const recipesTangerineExpansion: Recipe[] = [
     id: 'tangerine-chef-5', month: 1, title: '귤 브랜디 트러플', subtitle: '술향이 은은한 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 접시에 트러플을 3~4개씩 원형으로 배치하고, 코코아파우더 위에 귤제스트를 살짝 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tangerine-chef-5/hero.webp',
     mainIngredient: '귤',
     description: '브랜디에 재운 귤제스트를 다크초콜릿 가나슈에 섞어 빚은, 어른들을 위한 한입 트러플이에요.',
     masterclass: {

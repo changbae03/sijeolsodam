@@ -12,7 +12,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-home-1', month: 3, title: '돌나물무침', subtitle: '새콤한 초고추장 봄나물 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-home-1/hero.webp',
     mainIngredient: '돌나물',
     description: '아삭하고 상큼한 돌나물을 새콤달콤한 초고추장에 무친, 입맛을 돋우는 간단한 봄나물 무침이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-home-2', month: 3, title: '돌나물 물김치', subtitle: '시원하고 아삭한 봄철 물김치',
     category: '김치', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1583224944844-5b268c057b72?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-home-2/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물을 시원한 국물에 담근, 아삭하고 상큼한 봄철 별미 물김치예요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-home-3', month: 3, title: '돌나물 겉절이', subtitle: '고춧가루로 매콤하게 무친 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-home-3/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물을 고춧가루 양념에 겉절이처럼 가볍게 무친, 매콤하고 산뜻한 반찬이에요.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-home-4', month: 3, title: '돌나물 비빔밥', subtitle: '상큼한 봄나물 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-home-4/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물을 듬뿍 올린 비빔밥으로, 상큼하고 아삭한 봄철 별미예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-home-5', month: 3, title: '돌나물 콩국', subtitle: '고소하고 시원한 여름 초입 별미',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-home-5/hero.webp',
     mainIngredient: '돌나물',
     description: '고소한 콩국물에 돌나물을 띄운, 시원하고 산뜻한 별미 국이에요.',
     masterclass: {
@@ -162,7 +162,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-weekend-1', month: 3, title: '돌나물 냉채', subtitle: '아삭하고 시원한 여러 채소의 조화',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-weekend-1/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물에 여러 채소와 겨자소스를 곁들인, 아삭하고 시원한 냉채예요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-weekend-2', month: 3, title: '돌나물 비빔국수', subtitle: '시원하고 상큼한 봄철 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-weekend-2/hero.webp',
     mainIngredient: '돌나물',
     description: '소면에 돌나물과 매콤한 양념을 비벼낸, 시원하고 상큼한 한 그릇이에요.',
     masterclass: {
@@ -223,7 +223,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-weekend-3', month: 3, title: '돌나물 두부무침', subtitle: '부드러움과 아삭함의 조화',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-weekend-3/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물에 으깬 두부를 더해 고소하게 무친, 담백한 밑반찬이에요.',
     masterclass: {
@@ -252,7 +252,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-weekend-4', month: 3, title: '돌나물 전복죽 고명', subtitle: '보양죽에 상큼함을 더하다',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-weekend-4/hero.webp',
     mainIngredient: '돌나물',
     description: '전복죽 위에 돌나물을 올려 산뜻함을 더한, 보양과 신선함을 함께 잡은 요리예요.',
     masterclass: {
@@ -282,7 +282,7 @@ export const recipesStonecropExpansion: Recipe[] = [
   {
     id: 'stonecrop-weekend-5', month: 3, title: '돌나물 잡채', subtitle: '아삭함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-weekend-5/hero.webp',
     mainIngredient: '돌나물',
     description: '기본 잡채에 돌나물을 고명처럼 올려 산뜻함을 더한, 색다른 잡채예요.',
     masterclass: {
@@ -316,7 +316,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-world-1', month: 3, title: '돌나물 미모사 샐러드', subtitle: '프랑스식 봄철 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '프랑스', note: '미모사 샐러드는 삶은 달걀노른자를 체에 내려 미모사 꽃처럼 뿌리는 프랑스식 샐러드예요. 봄철 여린 채소와 함께 내는 것이 전통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-world-1/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물에 삶은 달걀노른자를 체에 내려 뿌린, 프랑스식 봄철 샐러드예요.',
     masterclass: {
@@ -347,7 +347,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-world-2', month: 3, title: '돌나물 카르파치오식 샐러드', subtitle: '이탈리아식 산뜻한 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 봄철 여린 채소를 올리브오일과 레몬만으로 심플하게 즐기는 것이 전통이에요. 돌나물도 이 방식과 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-world-2/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물에 올리브오일과 레몬, 파마산치즈를 더한, 이탈리아식 산뜻한 전채예요.',
     masterclass: {
@@ -376,7 +376,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-world-3', month: 3, title: '돌나물 오히타시', subtitle: '일본식 담백한 나물무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '일본', note: '오히타시(お浸し)는 채소를 간장육수에 살짝 담가 만드는 일본식 나물무침이에요. 담백하고 깔끔한 맛이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-world-3/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물을 다시육수 양념에 살짝 무친, 담백하고 깔끔한 일본식 반찬이에요.',
     masterclass: {
@@ -407,7 +407,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-world-4', month: 3, title: '돌나물 살사베르데 타코', subtitle: '멕시코식 그린살사를 곁들인 타코',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '멕시코', note: '살사베르데(salsa verde)는 멕시코의 초록빛 매운 소스예요. 돌나물을 더하면 알싸한 향은 없지만 산뜻하고 아삭한 식감이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-world-4/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물과 고수, 고추를 갈아 만든 살사베르데를 곁들인, 상큼한 멕시코식 타코예요.',
     masterclass: {
@@ -438,7 +438,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-world-5', month: 3, title: '호르타 스타일 돌나물', subtitle: '그리스식 산뜻한 채소요리',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '그리스', note: '호르타(χόρτα)는 그리스어로 "야생 채소"를 뜻해요. 그리스에서는 다양한 채소를 올리브오일과 레몬만으로 간단히 즐기는 것이 오랜 전통이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-world-5/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물에 올리브오일과 레몬을 두른, 그리스식 심플한 채소요리예요.',
     masterclass: {
@@ -469,7 +469,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-chef-1', month: 3, title: '돌나물 카르파치오', subtitle: '얇게 저민 도미와 돌나물의 만남',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 얇게 저민 도미를 원형으로 펼쳐 담고, 돌나물을 그 위에 흩뿌린 뒤 올리브오일을 붓으로 얇게 발라 광택을 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-chef-1/hero.webp',
     mainIngredient: '돌나물',
     description: '얇게 저민 흰살생선 위에 돌나물을 올린, 신선함이 겹겹이 쌓이는 전채예요.',
     masterclass: {
@@ -500,7 +500,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-chef-2', month: 3, title: '돌나물 그린 젤리 아뮤즈부시', subtitle: '한입에 즐기는 봄맛 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '작은 샷글라스나 도자기 스푼에 젤리를 한입 크기로 담고, 위에 돌나물 잎을 하나씩 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-chef-2/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물을 갈아 만든 초록빛 즙을 젤리로 굳힌, 봄의 신선함을 응축한 한입 전채예요.',
     masterclass: {
@@ -532,7 +532,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-chef-3', month: 3, title: '돌나물 세비체', subtitle: '남미식 상큼한 흰살생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 생선 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 돌나물과 적양파를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-chef-3/hero.webp',
     mainIngredient: '돌나물',
     description: '신선한 흰살생선을 라임즙에 재우고 돌나물을 더한, 남미식 세비체예요.',
     masterclass: {
@@ -563,7 +563,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-chef-4', month: 3, title: '돌나물 오일 파스타', subtitle: '이탈리아식 봄향 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 돌나물을 그 위에 소복이 올린 뒤 레몬 제스트를 뿌리고 올리브오일을 한 바퀴 둘러 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-chef-4/hero.webp',
     mainIngredient: '돌나물',
     description: '마늘과 올리브오일로 볶은 파스타에 돌나물을 듬뿍 올린, 봄향 가득한 요리예요.',
     masterclass: {
@@ -593,7 +593,7 @@ export const recipesStonecropExpansion: Recipe[] = [
     id: 'stonecrop-chef-5', month: 3, title: '돌나물 그라니타', subtitle: '이탈리아식 상큼한 셔벗',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '차갑게 식힌 유리잔에 그라니타를 포크로 긁어 소복이 담고, 돌나물 잎 하나와 민트잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stonecrop-chef-5/hero.webp',
     mainIngredient: '돌나물',
     description: '돌나물즙과 레몬으로 만든, 얼려서 긁어낸 이탈리아식 상큼한 셔벗이에요.',
     masterclass: {

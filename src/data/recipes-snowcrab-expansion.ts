@@ -12,7 +12,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-home-1', month: 1, title: '대게찜', subtitle: '쪄낸 살이 탱글하게 빠지는 겨울 별미',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553247407-23251ce3c8ff?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-home-1/hero.webp',
     mainIngredient: '대게',
     description: '손질한 대게를 통째로 쪄서 살을 발라먹는, 가장 간단하고 확실한 겨울 별미예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-home-2', month: 1, title: '대게라면', subtitle: '진하고 시원한 겨울 별미',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-home-2/hero.webp',
     mainIngredient: '대게',
     description: '대게 다리를 넣어 끓인 라면으로, 진하고 시원한 국물이 일품이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-home-3', month: 1, title: '대게살볶음밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-home-3/hero.webp',
     mainIngredient: '대게',
     description: '대게살을 발라 넣고 볶은, 고소하고 든든한 볶음밥이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-home-4', month: 1, title: '대게알탕', subtitle: '고소하고 진한 겨울 국물',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-home-4/hero.webp',
     mainIngredient: '대게',
     description: '대게 알과 몸통을 넣어 끓인, 고소하고 진한 겨울철 국물 요리예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-home-5', month: 1, title: '대게죽', subtitle: '부드럽고 고소한 보양죽',
     category: '죽', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-home-5/hero.webp',
     mainIngredient: '대게',
     description: '대게살과 국물을 넣어 끓인, 부드럽고 고소한 겨울철 보양죽이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-weekend-1', month: 1, title: '대게칼국수', subtitle: '진한 국물의 든든한 한 그릇',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-weekend-1/hero.webp',
     mainIngredient: '대게',
     description: '대게 육수에 칼국수를 끓인, 진하고 든든한 한 그릇 요리예요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-weekend-2', month: 1, title: '대게전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-weekend-2/hero.webp',
     mainIngredient: '대게',
     description: '게살을 발라 반죽에 섞어 부친, 고소하고 든든한 별미전이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-weekend-3', month: 1, title: '대게살무침', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-weekend-3/hero.webp',
     mainIngredient: '대게',
     description: '대게살을 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-weekend-4', month: 1, title: '대게된장찌개', subtitle: '구수하고 시원한 겨울 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-weekend-4/hero.webp',
     mainIngredient: '대게',
     description: '대게를 넣어 끓인 된장찌개로, 구수하고 시원한 국물이 일품이에요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
   {
     id: 'snowcrab-weekend-5', month: 1, title: '대게간장게장', subtitle: '밥도둑의 대명사',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-weekend-5/hero.webp',
     mainIngredient: '대게',
     description: '대게를 간장 양념장에 재운, 밥도둑의 대명사로 불리는 대표 밑반찬이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-world-1', month: 1, title: '즈와이가니 나베', subtitle: '일본식 대게 전골',
     category: '전골', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '일본', note: '즈와이가니(ずわいがに)는 일본어로 대게를 뜻해요. 일본에서는 대게를 다시육수 전골(나베)로 끓여 살과 국물을 함께 즐기는 것이 겨울철 대표 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-world-1/hero.webp',
     mainIngredient: '대게',
     description: '대게와 채소를 다시육수에 끓인, 일본식 겨울 대표 전골이에요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-world-2', month: 1, title: '대게살 파스타', subtitle: '이탈리아식 감칠맛 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 40, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 게살을 넣은 파스타(스파게티 알 그랑키오)가 해안 지방의 대표 요리예요. 토마토나 오일 베이스 모두 즐겨 먹어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-world-2/hero.webp',
     mainIngredient: '대게',
     description: '대게살과 토마토로 만든, 이탈리아식 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-world-3', month: 1, title: '알래스카식 대게레그', subtitle: '미국식 버터 딥소스 대게',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '미국(알래스카)', note: '미국 알래스카에서는 대게 다리를 살짝 쪄서 녹인 버터에 찍어 먹는 것이 대표적인 즐김법이에요. 심플하지만 대게 본연의 단맛을 가장 잘 살리는 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1553247407-23251ce3c8ff?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-world-3/hero.webp',
     mainIngredient: '대게',
     description: '대게 다리를 쪄서 녹인 버터에 찍어 먹는, 미국 알래스카식 심플한 즐김법이에요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-world-4', month: 1, title: '대게살 그라탕', subtitle: '프랑스식 크리미한 그라탕',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스에서는 게살에 뵈샤멜소스와 치즈를 올려 그라탕으로 굽는 것이 클래식한 해산물 요리 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-world-4/hero.webp',
     mainIngredient: '대게',
     description: '대게살에 크리미한 뵈샤멜소스와 치즈를 올려 구운, 프랑스식 그라탕이에요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-world-5', month: 1, title: '뿌팟퐁 대게커리', subtitle: '태국식 대게 커리볶음',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '태국', note: '푸팟퐁커리(ปูผัดผงกะหรี่)는 태국의 대표 게요리로, 게를 커리가루와 계란물에 볶아내는 것이 특징이에요. 대게로 만들면 훨씬 풍성한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-world-5/hero.webp',
     mainIngredient: '대게',
     description: '대게를 커리가루와 계란물에 볶아낸, 태국의 대표 게요리를 대게로 재해석한 요리예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-chef-1', month: 1, title: '대게살 비스크', subtitle: '프랑스식 진한 갑각류 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '얕은 수프 접시에 비스크를 붓고, 중앙에 크렘프레슈를 한 스푼 올린 뒤 대게살 한 조각과 차이브로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-chef-1/hero.webp',
     mainIngredient: '대게',
     description: '대게 껍질까지 오래 우려 만든, 프랑스식 진하고 고급스러운 갑각류 수프예요.',
     masterclass: {
@@ -491,7 +491,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-chef-2', month: 1, title: '대게살 리조또', subtitle: '진한 감칠맛의 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 게살을 고명으로 소복이 올린 뒤 레몬 제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-chef-2/hero.webp',
     mainIngredient: '대게',
     description: '대게 육수로 지어 게살을 듬뿍 올린, 진한 감칠맛의 이탈리아식 리조또예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-chef-3', month: 1, title: '대게 오일파스타', subtitle: '고급 향유로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 게살을 고명으로 올린 뒤 레몬 제스트와 올리브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-chef-3/hero.webp',
     mainIngredient: '대게',
     description: '대게 껍질을 오일에 우려 만든 향유로 완성한, 감칠맛 진한 파스타예요.',
     masterclass: {
@@ -554,7 +554,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-chef-4', month: 1, title: '대게살 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 크림치즈 위에 게살을 소복이 올린 뒤 딜과 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-chef-4/hero.webp',
     mainIngredient: '대게',
     description: '바삭하게 구운 크로스티니 위에 게살과 크림치즈를 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {
@@ -583,7 +583,7 @@ export const recipesSnowCrabExpansion: Recipe[] = [
     id: 'snowcrab-chef-5', month: 1, title: '대게 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 게살 한 조각과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/snowcrab-chef-5/hero.webp',
     mainIngredient: '대게',
     description: '대게 육수를 달걀흰자로 맑게 정제한, 투명하면서도 깊은 감칠맛의 콩소메예요.',
     masterclass: {

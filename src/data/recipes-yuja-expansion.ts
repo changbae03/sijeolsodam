@@ -15,7 +15,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-home-1', month: 12, title: '유자차', subtitle: '겨울 감기를 예방하는 향긋한 전통차',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-home-1/hero.webp',
     mainIngredient: '유자',
     description: '향긋한 향으로 겨울 감기를 예방하는 유자를 청으로 만들어, 따뜻한 차로 즐기는 한국 전통 음료예요.',
     masterclass: {
@@ -45,7 +45,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-home-2', month: 12, title: '유자갈비찜', subtitle: '향긋한 유자향이 더해진 부드러운 갈비찜',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 90, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-home-2/hero.webp',
     mainIngredient: '유자',
     description: '향긋한 겨울 유자를 더해 깊은 풍미를 낸, 명절이나 손님 초대 메뉴로 손색없는 갈비찜이에요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-home-3', month: 12, title: '유자에이드', subtitle: '상큼하고 시원한 겨울 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-home-3/hero.webp',
     mainIngredient: '유자',
     description: '유자청을 탄산수에 타 만든, 상큼하고 시원한 겨울철 음료예요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-home-4', month: 12, title: '유자소스 생선구이', subtitle: '향긋하고 상큼한 생선요리',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-home-4/hero.webp',
     mainIngredient: '유자',
     description: '구운 생선에 유자소스를 곁들인, 향긋하고 상큼한 겨울철 생선요리예요.',
     masterclass: {
@@ -131,7 +131,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-home-5', month: 12, title: '유자드레싱 샐러드', subtitle: '상큼하고 가벼운 겨울 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-home-5/hero.webp',
     mainIngredient: '유자',
     description: '유자청으로 만든 드레싱을 채소에 곁들인, 상큼하고 가벼운 겨울철 샐러드예요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-weekend-1', month: 12, title: '유자청 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-weekend-1/hero.webp',
     mainIngredient: '유자',
     description: '구운 돼지고기 폭찹에 유자글레이즈를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-weekend-2', month: 12, title: '유자찜닭', subtitle: '향긋하고 든든한 겨울 찜요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-weekend-2/hero.webp',
     mainIngredient: '유자',
     description: '닭고기와 채소를 유자청 양념에 조린, 향긋하고 든든한 겨울철 찜요리예요.',
     masterclass: {
@@ -220,7 +220,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-weekend-3', month: 12, title: '유자 마카롱', subtitle: '상큼한 홈베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-weekend-3/hero.webp',
     mainIngredient: '유자',
     description: '유자청을 넣은 버터크림을 채운, 상큼하고 화사한 홈베이킹 마카롱이에요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-weekend-4', month: 12, title: '유자 케이크', subtitle: '향긋한 홈베이킹 시트케이크',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-weekend-4/hero.webp',
     mainIngredient: '유자',
     description: '유자청을 넣은 반죽으로 구운, 향긋하고 촉촉한 홈베이킹 케이크예요.',
     masterclass: {
@@ -277,7 +277,7 @@ export const recipesYujaExpansion: Recipe[] = [
   {
     id: 'yuja-weekend-5', month: 12, title: '유자막국수', subtitle: '시원하고 향긋한 겨울 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yuja-weekend-5/hero.webp',
     mainIngredient: '유자',
     description: '메밀면에 유자청 소스를 비빈, 시원하고 향긋한 겨울철 별미예요.',
     masterclass: {

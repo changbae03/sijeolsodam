@@ -12,7 +12,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-home-1', month: 10, title: '방어회', subtitle: '기름지고 고소한 가을·겨울 대표 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-home-1/hero.webp',
     mainIngredient: '방어',
     description: '기름이 올라 고소한 방어를 두툼하게 썰어 즐기는, 가을·겨울 대표 회예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-home-2', month: 10, title: '방어무조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-home-2/hero.webp',
     mainIngredient: '방어',
     description: '무를 깔고 방어를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-home-3', month: 10, title: '방어구이', subtitle: '기름지고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-home-3/hero.webp',
     mainIngredient: '방어',
     description: '방어에 소금간만 해서 구운, 기름지고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-home-4', month: 10, title: '방어무침회', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-home-4/hero.webp',
     mainIngredient: '방어',
     description: '방어회를 채소와 함께 새콤달콤한 초고추장에 무친, 쫄깃하고 개운한 별미예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-home-5', month: 10, title: '방어튀김', subtitle: '겉바속촉 고소한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-home-5/hero.webp',
     mainIngredient: '방어',
     description: '방어살을 바삭하게 튀긴, 겉은 바삭하고 속은 고소한 튀김이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-weekend-1', month: 10, title: '방어초밥', subtitle: '고소함이 살아있는 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-weekend-1/hero.webp',
     mainIngredient: '방어',
     description: '얇게 썬 방어를 초밥용 밥 위에 올린, 고소하고 기름진 초밥이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-weekend-2', month: 10, title: '방어전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-weekend-2/hero.webp',
     mainIngredient: '방어',
     description: '방어와 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 겨울 전골이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-weekend-3', month: 10, title: '방어데리야키', subtitle: '달콤짭짤한 일본식 조림구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-weekend-3/hero.webp',
     mainIngredient: '방어',
     description: '방어를 달콤짭짤한 데리야키소스에 조려낸, 일본식 대표 조림구이예요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-weekend-4', month: 10, title: '방어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-weekend-4/hero.webp',
     mainIngredient: '방어',
     description: '방어 뼈와 자투리로 얼큰하게 끓인, 시원하고 깊은 맛의 매운탕이에요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
   {
     id: 'yellowtail-weekend-5', month: 10, title: '방어덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-weekend-5/hero.webp',
     mainIngredient: '방어',
     description: '방어회와 채소를 밥 위에 올려 간장소스로 비벼 먹는, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-world-1', month: 10, title: '부리노 시오야키', subtitle: '일본식 방어 소금구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '부리(ブリ)는 일본어로 방어를 뜻해요. 일본에서는 겨울철 방어를 소금구이나 데리야키로 즐기는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-world-1/hero.webp',
     mainIngredient: '방어',
     description: '방어에 소금간만 해서 구운, 일본식 담백하고 고소한 생선구이예요.',
     masterclass: {
@@ -335,7 +335,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-world-2', month: 10, title: '방어 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '뵈르블랑은 프랑스 루아르 지방에서 유래한 클래식 버터소스로, 기름진 생선과 함께 내면 산뜻한 산미가 균형을 잡아줘요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-world-2/hero.webp',
     mainIngredient: '방어',
     description: '구운 방어에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-world-3', month: 10, title: '방어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-world-3/hero.webp',
     mainIngredient: '방어',
     description: '토마토와 화이트와인에 방어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-world-4', month: 10, title: '방어 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요. 기름진 방어로 만들면 라임의 산미가 느끼함을 잡아줘 훨씬 산뜻해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-world-4/hero.webp',
     mainIngredient: '방어',
     description: '신선한 방어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -428,7 +428,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-world-5', month: 10, title: '방어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-world-5/hero.webp',
     mainIngredient: '방어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 방어예요.',
     masterclass: {
@@ -460,7 +460,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-chef-1', month: 10, title: '방어 콩피', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-chef-1/hero.webp',
     mainIngredient: '방어',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-chef-2', month: 10, title: '방어 카르파치오', subtitle: '얇게 저민 방어의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 방어를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-chef-2/hero.webp',
     mainIngredient: '방어',
     description: '얇게 저민 방어에 올리브오일과 레몬을 더한, 재료 본연의 고소함을 즐기는 전채예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-chef-3', month: 10, title: '방어 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-chef-3/hero.webp',
     mainIngredient: '방어',
     description: '방어 뼈와 자투리로 우린 육수를 곱게 갈아 크림으로 마무리한, 벨벳처럼 진한 프랑스식 수프예요.',
     masterclass: {
@@ -555,7 +555,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-chef-4', month: 10, title: '방어 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 허브와 레몬 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-chef-4/hero.webp',
     mainIngredient: '방어',
     description: '방어와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -587,7 +587,7 @@ export const recipesYellowtailExpansion: Recipe[] = [
     id: 'yellowtail-chef-5', month: 10, title: '방어 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 방어와 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/yellowtail-chef-5/hero.webp',
     mainIngredient: '방어',
     description: '방어 뼈와 자투리를 달걀흰자로 맑게 정제한, 투명하면서도 깊은 감칠맛의 콩소메예요.',
     masterclass: {

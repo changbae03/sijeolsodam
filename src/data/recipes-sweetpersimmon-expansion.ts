@@ -15,7 +15,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-home-4', month: 11, title: '단감 무생채', subtitle: '아삭달콤한 가을 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-home-4/hero.webp',
     mainIngredient: '단감',
     description: '단감을 채 썬 무와 함께 새콤달콤하게 무친, 아삭한 식감이 매력인 가을 반찬이에요.',
     masterclass: {
@@ -45,7 +45,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-home-5', month: 11, title: '단감 요거트', subtitle: '자연스러운 단맛의 아침 대용',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1571212515416-fca325e3702a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-home-5/hero.webp',
     mainIngredient: '단감',
     description: '플레인 요거트에 잘게 썬 단감과 그래놀라를 올린, 설탕 없이도 달콤한 아침 대용식이에요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-weekend-1', month: 11, title: '단감 수정과', subtitle: '가을 후식의 대표주자',
     category: '음료', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-weekend-1/hero.webp',
     mainIngredient: '단감',
     description: '생강과 계피를 우린 물에 단감 조각을 띄운, 향긋하고 시원한 전통 후식 음료예요.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-weekend-2', month: 11, title: '단감 소불고기', subtitle: '단감으로 재운 부드러운 불고기',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-weekend-2/hero.webp',
     mainIngredient: '단감',
     description: '단감을 갈아 넣은 양념에 소고기를 재워 구운, 자연스러운 단맛과 부드러움이 매력인 불고기예요.',
     masterclass: {
@@ -135,7 +135,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-weekend-3', month: 11, title: '단감 잼', subtitle: '두고두고 발라 먹는 가을 잼',
     category: '양념', difficulty: '쉬움', level: 'weekend', cookTime: 50, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-weekend-3/hero.webp',
     mainIngredient: '단감',
     description: '단감을 잘게 썰어 설탕과 레몬즙으로 조린, 은은한 단맛의 가을 잼이에요.',
     masterclass: {
@@ -164,7 +164,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-weekend-4', month: 11, title: '단감 곶감말이', subtitle: '두 가지 단맛의 만남',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-weekend-4/hero.webp',
     mainIngredient: '단감',
     description: '단감을 채 썰어 곶감으로 돌돌 만, 두 가지 감의 식감과 단맛을 함께 즐기는 별미예요.',
     masterclass: {
@@ -194,7 +194,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
   {
     id: 'sweetpersimmon-weekend-5', month: 11, title: '단감 스무디', subtitle: '진하고 달콤한 가을 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'weekend', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-weekend-5/hero.webp',
     mainIngredient: '단감',
     description: '단감과 우유를 갈아 만든, 진하고 자연스러운 단맛의 가을철 스무디예요.',
     masterclass: {
@@ -226,7 +226,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-world-1', month: 11, title: '카키노 시라아에', subtitle: '일본식 두부무침에 단감을',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '카키(柿)는 일본어로 감을 뜻해요. 시라아에(白和え)는 두부를 으깨 채소나 과일과 무치는 일본 가정식으로, 가을철에는 단감을 넣은 시라아에가 인기 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-world-1/hero.webp',
     mainIngredient: '단감',
     description: '으깬 두부에 단감을 섞어 무친, 부드럽고 은은하게 달콤한 일본식 반찬이에요.',
     masterclass: {
@@ -257,7 +257,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-world-2', month: 11, title: '단감 프로슈토 부라타', subtitle: '이탈리아식 가을 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 가을철 감을 프로슈토, 부라타치즈와 함께 즐기는 것이 인기 있는 전채예요. 멜론과 프로슈토의 조합에서 착안한 단맛과 짠맛의 대비가 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-world-2/hero.webp',
     mainIngredient: '단감',
     description: '얇게 썬 단감에 프로슈토와 부라타치즈를 곁들인, 단맛과 짠맛이 대비를 이루는 이탈리아식 전채예요.',
     masterclass: {
@@ -287,7 +287,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-world-3', month: 11, title: '카키 가스파초', subtitle: '스페인식 차가운 감 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '스페인', note: '가스파초는 스페인 안달루시아 지방의 차가운 토마토 수프예요. 가을 제철 과일인 감을 더하면 토마토의 산미에 은은한 단맛이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-world-3/hero.webp',
     mainIngredient: '단감',
     description: '토마토와 단감을 함께 갈아 만든, 산뜻하면서도 은은하게 달콤한 차가운 스페인식 수프예요.',
     masterclass: {
@@ -318,7 +318,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-world-4', month: 11, title: '단감 크리스마스 처트니', subtitle: '영국식 매콤달콤한 소스',
     category: '양념', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '영국', note: '처트니는 영국에서 고기요리에 곁들이는 새콤달콤 매콤한 소스예요. 겨울 명절에는 계절 과일로 만든 처트니가 치즈나 구이요리와 함께 자주 등장해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-world-4/hero.webp',
     mainIngredient: '단감',
     description: '단감과 양파, 식초, 향신료를 오래 조려 만든, 매콤달콤한 영국식 처트니예요.',
     masterclass: {
@@ -348,7 +348,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-world-5', month: 11, title: '스민차이 카키', subtitle: '중국식 새콤달콤 단감무침',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 과일을 산초가루나 식초로 새콤하게 무쳐 냉채로 즐기는 문화가 있어요. 단감을 이런 방식으로 무치면 새콤달콤한 냉채 전채가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-world-5/hero.webp',
     mainIngredient: '단감',
     description: '단감을 새콤달콤한 식초 양념에 무친, 중국식 냉채 스타일의 산뜻한 전채예요.',
     masterclass: {
@@ -380,7 +380,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-chef-1', month: 11, title: '단감 카르파치오', subtitle: '얇게 저민 단감의 투명한 아름다움',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 단감을 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 파마산 셰이빙과 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-chef-1/hero.webp',
     mainIngredient: '단감',
     description: '얇게 저민 단감에 올리브오일과 파마산치즈를 더한, 과일의 신선함을 그대로 보여주는 전채예요.',
     masterclass: {
@@ -411,7 +411,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-chef-2', month: 11, title: '단감 콩포트 타르트', subtitle: '진한 단감 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-chef-2/hero.webp',
     mainIngredient: '단감',
     description: '단감을 와인과 향신료에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 가을 디저트예요.',
     masterclass: {
@@ -442,7 +442,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-chef-3', month: 11, title: '단감 소스 폭찹', subtitle: '진한 과일소스를 곁들인 돼지고기 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 구운 폭찹을 놓고, 단감소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 폭찹 위에 소스를 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-chef-3/hero.webp',
     mainIngredient: '단감',
     description: '두툼하게 구운 돼지고기 폭찹에 단감으로 만든 진한 소스를 곁들인, 서양식 메인요리예요.',
     masterclass: {
@@ -474,7 +474,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-chef-4', month: 11, title: '단감 판나코타', subtitle: '이탈리아 크림 디저트에 단감을',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 얇게 썬 단감과 캐러멜소스를 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-chef-4/hero.webp',
     mainIngredient: '단감',
     description: '부드러운 이탈리아식 크림 디저트에 단감 조각과 캐러멜소스를 더한, 가을 향 가득한 판나코타예요.',
     masterclass: {
@@ -506,7 +506,7 @@ export const recipesSweetPersimmonExpansion: Recipe[] = [
     id: 'sweetpersimmon-chef-5', month: 11, title: '단감 브랜디 트러플', subtitle: '술향이 은은한 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 접시에 트러플을 3~4개씩 원형으로 배치하고, 코코아파우더 위에 얇게 썬 단감 조각을 살짝 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/sweetpersimmon-chef-5/hero.webp',
     mainIngredient: '단감',
     description: '브랜디에 재운 단감을 다크초콜릿 가나슈에 섞어 빚은, 어른들을 위한 한입 트러플이에요.',
     masterclass: {

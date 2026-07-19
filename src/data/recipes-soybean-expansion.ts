@@ -12,7 +12,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-home-1', month: 12, title: '메주콩조림', subtitle: '구수하고 든든한 겨울철 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-home-1/hero.webp',
     mainIngredient: '메주콩',
     description: '구수한 메주콩을 간장 양념에 졸여낸, 단백질 든든한 겨울철 밑반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-home-2', month: 12, title: '메주콩영양밥', subtitle: '단백질 가득한 든든한 보양밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-home-2/hero.webp',
     mainIngredient: '메주콩',
     description: '구수한 메주콩을 넣어 지은, 단백질 가득한 겨울철 보양밥이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-home-3', month: 12, title: '콩국', subtitle: '고소하고 담백한 겨울 국',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-home-3/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 갈아 만든 콩물에 채소를 넣어 끓인, 고소하고 담백한 겨울철 국이에요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-home-4', month: 12, title: '콩자반', subtitle: '두고두고 꺼내 먹는 짭짤한 밑반찬',
     category: '밑반찬', difficulty: '쉬움', level: 'home', cookTime: 45, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-home-4/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 간장에 짭짤하게 조린, 오래 두고 먹기 좋은 전통 밑반찬이에요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-home-5', month: 12, title: '콩비지찌개', subtitle: '구수하고 든든한 겨울 찌개',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-home-5/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 갈아 만든 비지를 김치와 함께 끓인, 구수하고 든든한 겨울 찌개예요.',
     masterclass: {
@@ -164,7 +164,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-weekend-1', month: 12, title: '콩갈비찜', subtitle: '단백질 두 배 든든한 명절 찜',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-weekend-1/hero.webp',
     mainIngredient: '메주콩',
     description: '소갈비에 메주콩을 더해 조린, 단백질이 두 배로 든든한 명절 대표 찜요리예요.',
     masterclass: {
@@ -193,7 +193,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-weekend-2', month: 12, title: '콩자반 유부초밥', subtitle: '든든하고 고소한 도시락 메뉴',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-weekend-2/hero.webp',
     mainIngredient: '메주콩',
     description: '콩자반을 섞은 밥을 유부에 채운, 든든하고 고소한 도시락 메뉴예요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-weekend-3', month: 12, title: '콩국수', subtitle: '고소하고 든든한 별미 국수',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-weekend-3/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 갈아 만든 콩물에 소면을 말아낸, 고소하고 든든한 별미 국수예요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-weekend-4', month: 12, title: '콩샐러드', subtitle: '고소하고 든든한 단백질 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-weekend-4/hero.webp',
     mainIngredient: '메주콩',
     description: '삶은 메주콩에 채소를 더해 상큼한 드레싱으로 무친, 든든한 단백질 샐러드예요.',
     masterclass: {
@@ -283,7 +283,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
   {
     id: 'soybean-weekend-5', month: 12, title: '콩전', subtitle: '고소하게 부쳐낸 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-weekend-5/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 갈아 반죽해 부친, 고소하고 든든한 별미전이에요.',
     masterclass: {
@@ -315,7 +315,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-world-1', month: 12, title: '메주콩 후무스', subtitle: '중동식 콩 디핑소스',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '중동', note: '후무스(hummus)는 병아리콩을 갈아 만드는 중동의 대표 디핑소스예요. 메주콩으로 만들면 병아리콩보다 훨씬 구수하고 담백한 맛의 후무스가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-world-1/hero.webp',
     mainIngredient: '메주콩',
     description: '삶은 메주콩을 타히니와 함께 갈아 만든, 구수한 중동식 콩 디핑소스예요.',
     masterclass: {
@@ -345,7 +345,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-world-2', month: 12, title: '다이즈노 니모노', subtitle: '일본식 콩 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '일본', note: '다이즈(大豆)는 일본어로 콩을 뜻해요. 일본에서는 콩을 채소와 함께 간장, 미림으로 은근히 졸이는 니모노가 흔한 가정식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-world-2/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩과 채소를 간장에 은근히 졸인, 담백하고 구수한 일본식 조림이에요.',
     masterclass: {
@@ -375,7 +375,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-world-3', month: 12, title: '떠우장 콩스프', subtitle: '중국식 고소한 콩국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '중국', note: '떠우장(豆浆)은 중국의 대표 콩국물 음료로, 아침 식사로 즐겨 마셔요. 여기에 재료를 더해 짭짤한 국물요리로 응용하면 색다른 한 그릇이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-world-3/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 갈아 만든 콩물에 짭짤한 재료를 더한, 중국식 아침 스타일 콩스프예요.',
     masterclass: {
@@ -406,7 +406,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-world-4', month: 12, title: '메주콩 미네스트로네', subtitle: '이탈리아식 콩 채소수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '이탈리아', note: '미네스트로네(minestrone)는 콩과 채소를 듬뿍 넣어 끓이는 이탈리아의 대표 수프예요. 원래는 카넬리니콩을 쓰지만, 메주콩으로 만들어도 훌륭한 맛을 낼 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-world-4/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩과 각종 채소를 토마토 국물에 끓인, 든든한 이탈리아식 수프예요.',
     masterclass: {
@@ -437,7 +437,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-world-5', month: 12, title: '메주콩 프리홀레스', subtitle: '멕시코식 콩 요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '멕시코', note: '프리홀레스(frijoles)는 멕시코의 대표적인 콩요리로, 콩을 향신료와 함께 끓여 으깨 먹는 것이 특징이에요. 타코나 부리토에 곁들이는 기본 반찬이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-world-5/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 향신료와 함께 끓여 으깬, 멕시코식 콩요리예요.',
     masterclass: {
@@ -470,7 +470,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-chef-1', month: 12, title: '메주콩 후무스 플레이트', subtitle: '중동식 세련된 전채 구성',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '넓은 접시에 후무스를 숟가락 뒷면으로 소용돌이 모양으로 펴 바르고, 중앙에 올리브오일 웅덩이를 만든 뒤 구운 잣과 파프리카가루를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-chef-1/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩 후무스를 세련되게 플레이팅한, 손님상에 올리기 좋은 전채예요.',
     masterclass: {
@@ -501,7 +501,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-chef-2', month: 12, title: '메주콩 크림수프', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 수프 접시에 크림수프를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-chef-2/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩을 곱게 갈아 크림으로 부드럽게 마무리한, 고소한 프랑스식 수프예요.',
     masterclass: {
@@ -532,7 +532,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-chef-3', month: 12, title: '메주콩 리조또', subtitle: '고소하고 든든한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 구운 콩 몇 알을 고명으로 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-chef-3/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩 퓌레를 넣어 고소함을 더한, 든든한 이탈리아식 리조또예요.',
     masterclass: {
@@ -564,7 +564,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-chef-4', month: 12, title: '메주콩 테린느', subtitle: '프랑스식 콩 테린느',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '차갑게 굳힌 테린느를 틀에서 꺼내 도톰하게 슬라이스하고, 접시에 세워 담은 뒤 발사믹글레이즈를 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-chef-4/hero.webp',
     mainIngredient: '메주콩',
     description: '메주콩과 채소를 층층이 쌓아 굳힌, 프랑스식 세련된 전채요리예요.',
     masterclass: {
@@ -596,7 +596,7 @@ export const recipesSoybeanExpansion: Recipe[] = [
     id: 'soybean-chef-5', month: 12, title: '메주콩 브라운버터 샐러드', subtitle: '고소함이 배가되는 특별한 샐러드',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '넓은 접시에 샐러드 채소를 깔고 삶은 콩을 흩뿌린 뒤, 뵈르누아제트를 따뜻할 때 접시 전체에 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/soybean-chef-5/hero.webp',
     mainIngredient: '메주콩',
     description: '삶은 메주콩에 프랑스식 브라운버터 드레싱을 두른, 고소함이 배가되는 특별한 샐러드예요.',
     masterclass: {

@@ -10,7 +10,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-home-1', month: 1, title: '시래기무침', subtitle: '구수하게 무친 가장 기본적인 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-home-1/hero.webp',
     mainIngredient: '시래기', description: '삶은 시래기를 된장으로 구수하게 무친, 한식 밥상에 자주 오르는 기본 밑반찬이에요.',
     masterclass: {
       chefIntro: '시래기는 말린 채소라 삶는 시간이 길지만, 그만큼 진한 구수함이 배어있어요.',
@@ -45,7 +45,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-home-2', month: 1, title: '시래기 들깨탕', subtitle: '고소하고 든든한 기본 탕',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-home-2/hero.webp',
     mainIngredient: '시래기', description: '시래기에 들깨가루를 풀어 고소하게 끓인, 든든하고 구수한 기본 탕이에요.',
     masterclass: {
       chefIntro: '들깨가루가 더해지면 시래기 특유의 구수함이 한층 고소해져요. 추운 날 든든하게 먹기 좋은 메뉴예요.',
@@ -78,7 +78,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-home-3', month: 1, title: '시래기 떡갈비', subtitle: '구수한 시래기를 더한 든든한 떡갈비',
     category: '메인', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-home-3/hero.webp',
     mainIngredient: '시래기', description: '다진 고기에 시래기를 더해 구운, 구수함과 든든함을 동시에 느낄 수 있는 메뉴예요.',
     masterclass: {
       chefIntro: '시래기가 고기 사이에 들어가면 식감에 재미가 더해지고, 고기만 먹을 때보다 훨씬 가벼운 느낌이 나요.',
@@ -118,7 +118,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-weekend-1', month: 1, title: '시래기 갈비탕', subtitle: '오래 끓여 깊은 맛을 낸 보양 탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 150, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-weekend-1/hero.webp',
     mainIngredient: '시래기', description: '소갈비와 시래기를 오래 끓인, 깊고 구수한 맛이 우러나는 주말 보양식이에요.',
     masterclass: {
       chefIntro: '시래기가 갈비 국물의 기름기를 잡아주면서도, 오래 끓는 동안 그 맛을 그대로 흡수해요.',
@@ -152,7 +152,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-weekend-2', month: 1, title: '시래기 고추장찌개', subtitle: '칼칼하고 구수한 주말 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-weekend-2/hero.webp',
     mainIngredient: '시래기', description: '고추장 베이스에 돼지고기와 시래기를 더해 끓인, 칼칼하고 든든한 찌개예요.',
     masterclass: {
       chefIntro: '시래기의 구수함이 고추장의 칼칼함과 만나면 깊은 맛의 찌개가 돼요. 주말에 여유 있게 끓이기 좋아요.',
@@ -186,7 +186,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-weekend-3', month: 1, title: '시래기 만두', subtitle: '구수한 시래기를 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-weekend-3/hero.webp',
     mainIngredient: '시래기', description: '구수한 시래기를 듬뿍 넣어 빚은 만두로, 다른 만두와는 다른 깊은 풍미가 특징이에요.',
     masterclass: {
       chefIntro: '시래기는 익혀도 식감이 살아있어서, 만두 속에 넣으면 씹는 맛이 재미있어요.',
@@ -215,7 +215,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-weekend-4', month: 1, title: '시래기솥밥', subtitle: '향긋하게 지어낸 정성스러운 솥밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-weekend-4/hero.webp',
     mainIngredient: '시래기', description: '양념한 시래기를 쌀과 함께 솥에 지어낸, 양념장에 비벼 먹는 정성스러운 솥밥이에요.',
     masterclass: {
       chefIntro: '솥밥은 뚜껑을 여는 순간 올라오는 향이 절반이에요. 시래기가 밥에 향을 충분히 스며들게 해줘요.',
@@ -249,7 +249,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
   {
     id: 'siraegi-weekend-5', month: 1, title: '시래기 고기말이', subtitle: '구수함을 채운 손이 가는 메인 요리',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-weekend-5/hero.webp',
     mainIngredient: '시래기', description: '양념한 시래기를 얇게 썬 고기로 말아 구운, 손이 가지만 보람 있는 메인 요리예요.',
     masterclass: {
       chefIntro: '시래기를 고기로 말면 구수함과 고기의 풍미가 한 입에 같이 느껴져요.',
@@ -289,7 +289,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
       country: '이탈리아',
       note: '미네스트로네는 이탈리아 가정에서 남은 채소를 활용해 끓이는 수프예요. 토마토와 콩, 파스타가 들어가는 게 정통이지만, 시래기 같은 진한 채소를 더하면 더 구수한 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-world-1/hero.webp',
     mainIngredient: '시래기', description: '토마토 베이스 수프에 시래기를 더한, 구수함과 산뜻함이 함께 어우러지는 이탈리아풍 변형이에요.',
     masterclass: {
       chefIntro: '이탈리아의 가정식 수프에 한식 재료를 더한 색다른 조합이에요. 시래기가 토마토의 산미를 부드럽게 받쳐줘요.',
@@ -321,7 +321,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
       country: '태국',
       note: '태국 그린 커리는 코코넛밀크와 그린 커리 페이스트로 만드는 향긋한 커리예요. 잎채소를 듬뿍 넣는 경우가 많은데, 시래기를 더하면 구수함이 더해지는 색다른 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-world-2/hero.webp',
     mainIngredient: '시래기', description: '코코넛밀크의 부드러움과 시래기의 구수함이 만나는, 태국풍으로 재해석한 커리예요.',
     masterclass: {
       chefIntro: '코코넛밀크의 부드러움이 시래기의 구수함을 한층 풍부하게 만들어줘요. 의외로 잘 어울리는 조합이에요.',
@@ -359,7 +359,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
       country: '독일',
       note: '독일에서는 케일이나 양배추 같은 잎채소를 소시지와 함께 오래 끓이는 요리가 흔해요. 시래기를 활용하면 비슷한 구수함을 가진 변형 스튜가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-world-3/hero.webp',
     mainIngredient: '시래기', description: '소시지와 시래기를 오래 끓인, 독일 가정식의 구수한 채소 스튜를 재해석한 메뉴예요.',
     masterclass: {
       chefIntro: '독일 가정에서 잎채소와 소시지를 오래 끓이는 방식을 시래기에 적용한 메뉴예요.',
@@ -395,7 +395,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
       country: '이탈리아',
       note: '이탈리아 남부에서는 씁쓸한 잎채소(브로콜리니, 친환경 채소 등)를 파스타에 더하는 경우가 많아요. 시래기를 활용하면 비슷한 구수함을 가진 색다른 파스타가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-world-4/hero.webp',
     mainIngredient: '시래기', description: '마늘과 안초비 향에 시래기를 더한, 이탈리아 남부풍의 구수한 파스타예요.',
     masterclass: {
       chefIntro: '이탈리아 남부에서 쓴 잎채소를 활용하는 방식을 시래기에 적용했어요. 안초비의 감칠맛이 시래기의 구수함과 잘 어울려요.',
@@ -428,7 +428,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
       country: '일본',
       note: '일본에서는 미소시루에 다양한 잎채소를 넣어 끓이는 경우가 많아요. 시래기를 활용하면 일본식 미소국에 한층 깊은 구수함을 더할 수 있어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-world-5/hero.webp',
     mainIngredient: '시래기', description: '일본식 미소국에 시래기를 더한, 구수함이 한층 깊어진 변형 미소국이에요.',
     masterclass: {
       chefIntro: '일본의 미소시루는 보통 가볍게 끓이지만, 시래기를 더하면 훨씬 든든한 한 끼가 돼요.',
@@ -458,7 +458,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
     id: 'siraegi-chef-1', month: 1, title: '시래기 퓌레와 오리가슴살', subtitle: '구수한 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 시래기 칩을 한 조각 곁들이면 식감이 더해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-chef-1/hero.webp',
     mainIngredient: '시래기', description: '구수한 시래기 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 한식 재료를 프렌치 비스트로풍으로 풀어낸 메인이에요.',
     masterclass: {
       chefIntro: '시래기의 구수함이 오리의 진한 풍미를 한층 살려줘요. 익숙한 재료의 새로운 가능성을 보여주는 메뉴예요.',
@@ -493,7 +493,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
     id: 'siraegi-chef-2', month: 1, title: '시래기 콩소메', subtitle: '맑게 거른 시래기의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 시래기 잎 한 조각을 띄워보세요. 짙은 갈색빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-chef-2/hero.webp',
     mainIngredient: '시래기', description: '시래기를 갈아 맑게 걸러낸, 깊은 구수함이 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 시래기에 적용한 요리예요. 말린 채소 특유의 깊은 맛이 콩소메에 그대로 담겨요.',
@@ -527,7 +527,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
     id: 'siraegi-chef-3', month: 1, title: '시래기 라비올로와 세이지 버터', subtitle: '구수함을 채운 정교한 한입 파스타',
     category: '면요리', difficulty: '보통', level: 'chef', cookTime: 80, servings: 3,
     platingGuide: '접시에 라비올로를 단정하게 배열하고 브라운버터를 끼얹은 뒤 세이지를 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-chef-3/hero.webp',
     mainIngredient: '시래기', description: '시래기와 리코타 치즈를 채운 손수 빚은 라비올로에 브라운버터를 끼얹은, 동서양이 만나는 정교한 파스타예요.',
     masterclass: {
       chefIntro: '구수한 시래기를 이탈리아식 라비올로 속재료로 쓰는 색다른 발상이에요.',
@@ -562,7 +562,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
     id: 'siraegi-chef-4', month: 1, title: '시래기 크리스프와 사워크림 캐비어', subtitle: '바삭한 구수함과 짠맛의 모던 조합',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 사워크림과 캐비어를 정확히 중앙에 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-chef-4/hero.webp',
     mainIngredient: '시래기', description: '바삭하게 튀긴 시래기 위에 사워크림과 캐비어를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '시래기를 튀기면 구수한 향은 그대로 남으면서 전혀 다른 바삭한 질감으로 변해요.',
@@ -601,7 +601,7 @@ export const recipesSiraegiExpansion: Recipe[] = [
     id: 'siraegi-chef-5', month: 1, title: '시래기 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 차이브를 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/siraegi-chef-5/hero.webp',
     mainIngredient: '시래기', description: '가볍게 휘핑한 시래기 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 전채예요.',
     masterclass: {
       chefIntro: '시래기를 무스로 만들면 구수한 향은 그대로 살리면서 훨씬 가벼운 질감을 경험할 수 있어요.',

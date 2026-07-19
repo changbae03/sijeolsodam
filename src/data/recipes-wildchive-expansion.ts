@@ -13,7 +13,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-home-3', month: 3, title: '달래무침', subtitle: '알싸한 향이 살아있는 기본 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-home-3/hero.webp',
     mainIngredient: '달래',
     description: '달래를 고춧가루 양념에 무친, 알싸하고 향긋한 봄철 기본 반찬이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-home-4', month: 3, title: '달래된장국', subtitle: '알싸한 향이 도는 구수한 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-home-4/hero.webp',
     mainIngredient: '달래',
     description: '된장국에 달래를 더해 알싸한 봄향을 살린, 구수하고 향긋한 국이에요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-home-5', month: 3, title: '달래계란찜', subtitle: '부드럽고 향긋한 조합',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-home-5/hero.webp',
     mainIngredient: '달래',
     description: '달래를 넣어 찐 계란찜으로, 부드러운 식감에 알싸한 향이 스며든 반찬이에요.',
     masterclass: {
@@ -106,7 +106,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-weekend-1', month: 3, title: '달래 삼겹살구이', subtitle: '알싸한 향을 더한 고기구이',
     category: '메인요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-weekend-1/hero.webp',
     mainIngredient: '달래',
     description: '구운 삼겹살에 달래장을 곁들인, 알싸한 향으로 느끼함을 잡아주는 고기구이예요.',
     masterclass: {
@@ -136,7 +136,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-weekend-2', month: 3, title: '달래전', subtitle: '알싸하게 부쳐낸 봄나물전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-weekend-2/hero.webp',
     mainIngredient: '달래',
     description: '달래를 반죽에 섞어 부친, 알싸한 향이 고소하게 살아있는 전이에요.',
     masterclass: {
@@ -166,7 +166,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-weekend-3', month: 3, title: '달래 콩나물잡채', subtitle: '아삭함과 알싸함의 조화',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-weekend-3/hero.webp',
     mainIngredient: '달래',
     description: '콩나물과 당면에 달래를 더해 무친, 아삭함과 알싸함이 조화를 이루는 잡채예요.',
     masterclass: {
@@ -197,7 +197,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-weekend-4', month: 3, title: '달래 순두부찌개', subtitle: '알싸함이 감도는 얼큰한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-weekend-4/hero.webp',
     mainIngredient: '달래',
     description: '순두부찌개에 달래를 더해 알싸한 향을 살린, 봄철 얼큰한 찌개예요.',
     masterclass: {
@@ -227,7 +227,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
   {
     id: 'wildchive-weekend-5', month: 3, title: '달래 어묵볶음', subtitle: '향긋함을 더한 밥반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-weekend-5/hero.webp',
     mainIngredient: '달래',
     description: '어묵을 매콤하게 볶다가 달래를 더해 향긋함을 살린, 도시락 반찬으로 좋은 요리예요.',
     masterclass: {
@@ -259,7 +259,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-world-1', month: 3, title: '달래 뵈르블랑 크로스티니', subtitle: '프랑스식 버터소스를 얹은 전채',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '프랑스', note: '와일드 차이브(wild chive)는 유럽에서도 봄철 자생하는 허브로, 프랑스 요리에서는 버터소스나 오믈렛에 즐겨 활용해요. 달래는 이 서양 허브와 향이 비슷해 훌륭한 대체재가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-world-1/hero.webp',
     mainIngredient: '달래',
     description: '바삭하게 구운 바게트 위에 달래로 향을 낸 프랑스식 버터소스를 얹은, 세련된 봄철 전채예요.',
     masterclass: {
@@ -291,7 +291,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-world-2', month: 3, title: '달래 알리오 올리오', subtitle: '알싸한 봄나물이 더해진 이탈리아 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '알리오 올리오는 마늘과 올리브오일만으로 만드는 이탈리아의 가장 기본적인 파스타예요. 달래를 더하면 마늘향에 알싸한 봄나물 향이 겹쳐지는 독특한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-world-2/hero.webp',
     mainIngredient: '달래',
     description: '마늘과 올리브오일에 달래를 더해 볶은, 알싸한 향이 진한 이탈리아식 파스타예요.',
     masterclass: {
@@ -322,7 +322,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-world-3', month: 3, title: '노비루노 미소아에', subtitle: '일본식 들파 된장무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '일본', note: '노비루(野蒜)는 일본에서 자생하는 들파로, 달래와 매우 유사한 봄나물이에요. 미소된장에 무쳐 먹는 것이 일본 가정식의 전통적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-world-3/hero.webp',
     mainIngredient: '달래',
     description: '달래를 미소된장 양념에 무친, 일본식 봄나물 반찬이에요.',
     masterclass: {
@@ -352,7 +352,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-world-4', month: 3, title: '달래 만두', subtitle: '중국식 봄나물 만두',
     category: '만두', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '중국', note: '중국에서는 부추나 달래 같은 알싸한 향의 채소를 만두소에 즐겨 넣어요. 지역에 따라 봄철에 나는 야생 파류를 넣은 만두를 계절 별미로 즐기는 전통이 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-world-4/hero.webp',
     mainIngredient: '달래',
     description: '다진 돼지고기와 달래를 채운, 알싸한 향이 가득한 중국식 만두예요.',
     masterclass: {
@@ -383,7 +383,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-world-5', month: 3, title: '달래 살사베르데 타코', subtitle: '멕시코식 그린살사에 달래를',
     category: '메인요리', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '멕시코', note: '살사베르데(salsa verde)는 멕시코의 초록빛 매운 소스예요. 원래는 토마티요와 고추로 만들지만, 달래를 더하면 알싸한 마늘향이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-world-5/hero.webp',
     mainIngredient: '달래',
     description: '달래와 고수, 고추를 갈아 만든 살사베르데를 곁들인, 상큼하고 알싸한 멕시코식 타코예요.',
     masterclass: {
@@ -417,7 +417,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-chef-1', month: 3, title: '관자 달래 뵈르블랑', subtitle: '봄나물이 더해진 프랑스식 관자요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 달래 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 달래 잎을 가늘게 채 썰어 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-chef-1/hero.webp',
     mainIngredient: '달래',
     description: '바삭하게 시어링한 관자에 달래로 향을 낸 프랑스식 버터소스를 곁들인, 봄철 우아한 전채예요.',
     masterclass: {
@@ -450,7 +450,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-chef-2', month: 3, title: '달래 오일 콩피 흰살생선', subtitle: '봄 향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 달래오일을 끼얹은 뒤 구운 달래 조각과 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-chef-2/hero.webp',
     mainIngredient: '달래',
     description: '달래로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 알싸한 봄철 요리예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-chef-3', month: 3, title: '달래 크림치즈 카나페', subtitle: '알싸함과 부드러움의 만남',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 6,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 크림치즈 위에 달래를 소복이 올린 뒤 후추를 살짝 갈아 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-chef-3/hero.webp',
     mainIngredient: '달래',
     description: '바삭한 크래커에 크림치즈와 달래를 올린, 파티에 어울리는 세련된 한입 전채예요.',
     masterclass: {
@@ -513,7 +513,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-chef-4', month: 3, title: '달래 리조또', subtitle: '알싸한 봄향이 감도는 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 달래오일을 몇 방울 떨어뜨려 자연스러운 무늬를 만든 뒤 달래 잎을 가늘게 채 썰어 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-chef-4/hero.webp',
     mainIngredient: '달래',
     description: '달래를 갈아 넣어 은은한 초록빛과 알싸한 향을 낸, 봄향 가득한 이탈리아식 리조또예요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesWildChiveExpansion: Recipe[] = [
     id: 'wildchive-chef-5', month: 3, title: '달래 살사베르데 스테이크', subtitle: '알싸한 소스를 곁들인 고급 스테이크',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 슬라이스한 스테이크를 부채꼴로 배치하고, 달래 살사베르데를 접시 한쪽에 붓으로 그리듯 두른 뒤 소금 결정을 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/wildchive-chef-5/hero.webp',
     mainIngredient: '달래',
     description: '두툼하게 구운 스테이크에 달래로 만든 이탈리아식 살사베르데를 곁들인, 알싸함과 육즙이 어우러진 메인요리예요.',
     masterclass: {

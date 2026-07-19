@@ -571,7 +571,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-chef-5', month: 3, title: '톳문쁠라', subtitle: '태국식 다진생선 튀김케이크',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '노릇하게 튀긴 원반 모양 케이크를 접시에 담고, 오이피클과 땅콩소스를 곁들여 태국식 노점 스타일로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-chef-5/hero.webp',
     mainIngredient: '실치',
     description: '실치와 향신료를 곱게 다져 반죽해 튀긴, 태국의 대표적인 생선케이크예요.',
     masterclass: {

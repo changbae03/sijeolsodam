@@ -9,7 +9,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'tomato-home-4', month: 6, title: '토마토 달걀국', subtitle: '새콤하고 시원한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-home-4/hero.webp',
     mainIngredient: '방울토마토', description: '토마토와 달걀을 풀어 끓인, 새콤하고 부드러운 중식 가정식 국이에요.',
     masterclass: {
       chefIntro: '토마토 계란볶음과 비슷한 재료지만 국으로 끓이면 또 다른 맛이 나요. 산뜻하고 부드러워요.',
@@ -40,7 +40,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'tomato-home-5', month: 6, title: '토마토 마리네이드', subtitle: '간단하게 재워두는 새콤달콤 사이드',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-home-5/hero.webp',
     mainIngredient: '방울토마토', description: '올리브오일과 식초에 재워둔 토마토는 어떤 요리에도 곁들이기 좋은 산뜻한 사이드예요.',
     masterclass: {
       chefIntro: '냉장고에 두면 점점 맛이 깊어지는 간단한 사이드예요. 손은 적게 가지만 활용도가 높아요.',
@@ -69,7 +69,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'tomato-weekend-4', month: 6, title: '토마토 리코타 파스타', subtitle: '신선한 토마토소스와 부드러운 치즈',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-weekend-4/hero.webp',
     mainIngredient: '방울토마토', description: '신선한 토마토소스에 부드러운 리코타 치즈를 더한, 산뜻하고 크리미한 파스타예요.',
     masterclass: {
       chefIntro: '오래 끓이지 않고 신선하게 만드는 소스라 토마토 본연의 산뜻함이 살아있어요.',
@@ -102,7 +102,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'tomato-weekend-5', month: 6, title: '토마토 라구', subtitle: '오래 끓여 깊은 맛을 낸 이탈리아식 소스',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 100, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-weekend-5/hero.webp',
     mainIngredient: '방울토마토', description: '고기와 토마토를 오래 끓여 만든, 파스타나 라자냐에 두루 쓰이는 진한 소스예요.',
     masterclass: {
       chefIntro: '시간을 들이는 만큼 맛이 깊어지는 소스예요. 한 번 만들어두면 여러 요리에 활용할 수 있어요.',
@@ -142,7 +142,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
       country: '이탈리아',
       note: '판조넬라는 이탈리아 토스카나 지방에서 딱딱해진 빵을 활용하기 위해 만든 샐러드예요. 토마토와 빵, 올리브오일이 어우러지는 검소하지만 풍성한 농가 요리예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-world-6/hero.webp',
     mainIngredient: '방울토마토', description: '딱딱해진 빵을 토마토즙에 적셔 만든, 이탈리아 토스카나의 검소하고 풍성한 샐러드예요.',
     masterclass: {
       chefIntro: '음식을 낭비하지 않으려는 농가의 지혜가 담긴 요리예요. 빵이 토마토즙을 흡수하며 새로운 식감이 돼요.',
@@ -178,7 +178,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
       country: '이탈리아',
       note: '핏짜이올라는 나폴리 지역에서 유래한 빠르고 향긋한 토마토 소스로, 고기나 생선을 졸이는 데 흔히 쓰여요. 오레가노와 마늘 향이 특징인 남부 이탈리아의 대표적인 조리법이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-world-7/hero.webp',
     mainIngredient: '방울토마토', description: '마늘과 오레가노 향이 가득한 나폴리식 토마토 소스로 흰살생선을 졸인 메인 요리예요.',
     masterclass: {
       chefIntro: '나폴리 가정에서 생선이나 고기를 졸일 때 흔히 쓰는 빠른 소스예요. 짧은 시간에 향긋하게 완성돼요.',
@@ -208,7 +208,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
     id: 'tomato-chef-4', month: 6, title: '토마토 타르트 타탱', subtitle: '뒤집어 완성하는 짭짤한 토마토 타르트',
     category: '브런치', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '뒤집은 그대로 도마에 올려 조각으로 잘라 단면이 보이게 담으세요. 바질잎과 발사믹 글레이즈로 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-chef-4/hero.webp',
     mainIngredient: '방울토마토', description: '토마토를 캐러멜화한 양파 위에 채워 페이스트리를 덮어 구운 뒤 뒤집어내는, 짭짤한 타르트 타탱이에요.',
     masterclass: {
       chefIntro: '사과 타르트 타탱의 짭짤한 버전이에요. 양파를 캐러멜화하는 단계가 풍미의 핵심이에요.',
@@ -244,7 +244,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
     id: 'tomato-chef-5', month: 6, title: '토마토 그라니타와 바질', subtitle: '코스 사이 입맛을 정리하는 차가운 샤베트',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 240, servings: 4,
     platingGuide: '작은 유리잔에 그라니타를 가볍게 담고 바질 잎 하나를 올려보세요. 빨간 빙수 결정이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-chef-5/hero.webp',
     mainIngredient: '방울토마토', description: '토마토를 갈아 얼린, 코스 요리 중간에 입맛을 정리해주는 차갑고 산뜻한 그라니타예요.',
     masterclass: {
       chefIntro: '디저트가 아니라 짭짤한 코스 사이 클렌저로 즐기는 색다른 메뉴예요. 토마토 향이 그대로 살아있어요.',
@@ -278,7 +278,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cabbage-home-4', month: 11, title: '배추 된장무침', subtitle: '슴슴하게 무친 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-home-4/hero.webp',
     mainIngredient: '알배추', description: '살짝 데친 배추를 된장으로 슴슴하게 무친, 구수한 맛의 기본 반찬이에요.',
     masterclass: {
       chefIntro: '배추를 데쳐서 부드럽게 즐기는 가장 기본적인 무침이에요. 된장의 구수함이 배추의 단맛을 끌어올려줘요.',
@@ -305,7 +305,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cabbage-home-5', month: 11, title: '배추전(누름적)', subtitle: '간단하게 부쳐낸 배추 부침개',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-home-5/hero.webp',
     mainIngredient: '알배추', description: '배추잎에 반죽을 입혀 부친, 간단하지만 고소한 한식 전이에요.',
     masterclass: {
       chefIntro: '배추 동그랑땡보다 훨씬 간단해서 평일에도 부담 없이 만들 수 있어요.',
@@ -334,7 +334,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cabbage-weekend-4', month: 11, title: '배추 롤캐비지', subtitle: '서양식 다진고기 배추롤 찜',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-weekend-4/hero.webp',
     mainIngredient: '알배추', description: '배추잎에 다진 고기와 쌀을 채워 말아 토마토소스에 익힌, 서양식 영향을 받은 메인 요리예요.',
     masterclass: {
       chefIntro: '동유럽과 서양에서 즐기는 캐비지롤을 알배추로 재해석한 메뉴예요. 토마토소스와 잘 어울려요.',
@@ -362,7 +362,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cabbage-weekend-5', month: 11, title: '배추 그라탕', subtitle: '크림소스에 구운 든든한 채소 그라탕',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-weekend-5/hero.webp',
     mainIngredient: '알배추', description: '배추를 크림소스와 치즈로 구워낸, 든든하고 고소한 채소 그라탕이에요.',
     masterclass: {
       chefIntro: '배추를 메인 요리로 끌어올린 메뉴예요. 크림소스와 치즈가 배추의 단맛을 더 깊게 만들어줘요.',
@@ -396,7 +396,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
       country: '미국',
       note: '코울슬로는 미국 남부 바베큐 문화에서 빠지지 않는 사이드 디시예요. 마요네즈 베이스의 드레싱과 채 썬 채소가 어우러져, 기름진 바베큐 요리의 균형을 맞춰줘요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-world-4/hero.webp',
     mainIngredient: '알배추', description: '채 썬 배추에 마요네즈 드레싱을 더한, 미국 바베큐의 대표적인 사이드 샐러드예요.',
     masterclass: {
       chefIntro: '미국 바베큐 식당에서 흔히 만나는 사이드예요. 배추의 아삭함과 마요네즈의 부드러움이 잘 어울려요.',
@@ -427,7 +427,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
       country: '프랑스',
       note: '키슈는 프랑스 로렌 지방에서 시작된 짭짤한 파이예요. 전통적으로는 베이컨과 치즈를 채우지만, 발효된 배추(김치 느낌)를 더하면 동서양이 만나는 독특한 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-world-5/hero.webp',
     mainIngredient: '알배추', description: '발효된 배추와 베이컨, 치즈를 채운 프랑스식 파이로, 동서양이 만나는 색다른 브런치예요.',
     masterclass: {
       chefIntro: '프랑스의 클래식 키슈에 발효 배추를 더해 새콤한 풍미를 더한 변형이에요.',
@@ -459,7 +459,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
     id: 'cabbage-chef-4', month: 11, title: '배추 그라니타와 사과식초', subtitle: '산뜻한 산미의 모던 클렌저',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 240, servings: 4,
     platingGuide: '작은 유리잔에 그라니타를 가볍게 담고 처빌 한 잎을 올려보세요. 옅은 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-chef-4/hero.webp',
     mainIngredient: '알배추', description: '배추를 갈아 사과식초로 산미를 더한, 코스 사이 입맛을 정리하는 모던 클렌저예요.',
     masterclass: {
       chefIntro: '배추를 디저트가 아닌 모던 전채로 재해석한 메뉴예요. 산뜻한 산미가 다음 요리를 기대하게 만들어줘요.',
@@ -492,7 +492,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
     id: 'cabbage-chef-5', month: 11, title: '배추 콩소메', subtitle: '맑게 거른 배추의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 배추잎 한 조각을 띄워보세요. 맑은 색이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cabbage-chef-5/hero.webp',
     mainIngredient: '알배추', description: '배추를 갈아 맑게 걸러낸, 배추 본연의 깔끔한 단맛만 남긴 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 배추에 적용한 요리예요. 배추의 단맛이 의외로 콩소메에 잘 어울려요.',
@@ -528,7 +528,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cucumber-home-4', month: 6, title: '오이무침', subtitle: '새콤매콤한 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-home-4/hero.webp',
     mainIngredient: '오이', description: '오이를 새콤매콤하게 무친, 여름철 입맛을 살려주는 가장 기본적인 반찬이에요.',
     masterclass: {
       chefIntro: '여름이면 가장 자주 만드는 반찬 중 하나예요. 오이의 수분감과 고춧가루의 칼칼함이 잘 어울려요.',
@@ -555,7 +555,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cucumber-home-5', month: 6, title: '오이냉국', subtitle: '시원하게 즐기는 여름 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-home-5/hero.webp',
     mainIngredient: '오이', description: '오이를 채 썰어 차가운 국물에 띄운, 더운 여름날 입맛을 살려주는 시원한 국이에요.',
     masterclass: {
       chefIntro: '끓이지 않고 바로 만드는 시원한 여름 국이에요. 오이의 청량함이 그대로 느껴져요.',
@@ -584,7 +584,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cucumber-weekend-4', month: 6, title: '오이 김치(오이지)', subtitle: '오래 두고 먹는 짭짤한 발효 절임',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-weekend-4/hero.webp',
     mainIngredient: '오이', description: '소금물에 절여 오래 두고 먹는, 여름철 대표 발효 절임이에요.',
     masterclass: {
       chefIntro: '여름 오이가 가장 풍성할 때 만들어두면 한 여름을 든든하게 보낼 수 있는 밑반찬이에요.',
@@ -617,7 +617,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
   {
     id: 'cucumber-weekend-5', month: 6, title: '오이 냉파스타', subtitle: '시원하게 즐기는 여름 파스타',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-weekend-5/hero.webp',
     mainIngredient: '오이', description: '오이와 차갑게 식힌 면을 올리브오일에 가볍게 버무린, 더운 날 입맛을 돋우는 파스타예요.',
     masterclass: {
       chefIntro: '면을 차갑게 식혀 만드는 여름 파스타예요. 오이의 청량함이 무더위에 잘 어울려요.',
@@ -650,7 +650,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
       country: '일본',
       note: '캇파마키는 일본 스시 전문점의 대표적인 채소 롤이에요. 오이만으로 단순하게 만들어, 다른 생선 초밥을 먹은 뒤 입맛을 정리하는 용도로도 즐겨요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-world-4/hero.webp',
     mainIngredient: '오이', description: '오이만으로 단순하게 만든 일본식 김초밥으로, 산뜻하고 깔끔한 맛이 매력이에요.',
     masterclass: {
       chefIntro: '스시 전문점에서 입맛을 정리하는 용도로 즐기는 메뉴예요. 재료가 단순해 만들기도 쉬워요.',
@@ -682,7 +682,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
       country: '인도',
       note: '라잇따는 인도 요리에서 매운 커리의 균형을 맞추기 위해 곁들이는 요거트 사이드예요. 오이를 넣은 버전이 가장 흔하고, 더운 인도의 기후에서 청량감을 더해주는 역할을 해요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-world-5/hero.webp',
     mainIngredient: '오이', description: '오이와 요거트를 섞은, 매운 커리와 함께 곁들이는 인도식 시원한 사이드예요.',
     masterclass: {
       chefIntro: '인도 식탁에서 매운맛을 가라앉혀주는 역할을 하는 메뉴예요. 차지키와 비슷하지만 향신료가 더 들어가요.',
@@ -712,7 +712,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
     id: 'cucumber-chef-4', month: 6, title: '오이 카르파치오와 부라타', subtitle: '얇게 저민 오이와 부드러운 치즈의 조화',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '접시에 오이를 겹쳐 원형으로 펼쳐 담고 중앙에 부라타를 올려보세요. 올리브오일과 레몬즙을 뿌려 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-chef-4/hero.webp',
     mainIngredient: '오이', description: '오이를 투명하게 얇게 저며 부라타 치즈를 올린, 청량함과 크리미함의 정교한 조합이에요.',
     masterclass: {
       chefIntro: '오이를 생채소 그대로 즐기는 모던한 발상이에요. 부라타의 부드러움이 오이의 청량함과 잘 대비돼요.',
@@ -740,7 +740,7 @@ export const recipesTomatoCabbageCucumberBoost: Recipe[] = [
     id: 'cucumber-chef-5', month: 6, title: '오이 젤리와 민트', subtitle: '맑고 투명한 질감의 모던 전채',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 280, servings: 4,
     platingGuide: '투명한 유리잔에 젤리를 채우고 민트 잎과 작은 오이 큐브를 올려보세요. 맑은 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/cucumber-chef-5/hero.webp',
     mainIngredient: '오이', description: '오이즙을 맑게 걸러 젤라틴으로 굳힌, 투명하고 청량한 모던 전채예요.',
     masterclass: {
       chefIntro: '오이의 청량함을 시각적으로도 표현한 모던 키친 기법이에요. 투명도가 이 요리의 핵심이에요.',

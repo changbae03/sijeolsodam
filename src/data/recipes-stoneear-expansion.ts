@@ -14,7 +14,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-home-1', month: 10, title: '석이버섯무침', subtitle: '향긋하고 쫄깃한 가을 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-home-1/hero.webp',
     mainIngredient: '석이버섯',
     description: '쫄깃한 식감과 은은한 향이 매력인 석이버섯을 들기름에 무쳐낸, 가을 대표 별미예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-home-2', month: 10, title: '석이버섯전', subtitle: '향긋하고 쫄깃한 가을 별미 전',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-home-2/hero.webp',
     mainIngredient: '석이버섯',
     description: '쫄깃한 석이버섯을 곁들여 부쳐낸, 향긋하고 고급스러운 가을철 전이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-home-3', month: 10, title: '석이버섯볶음', subtitle: '담백하고 고소한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-home-3/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 참기름에 볶은, 담백하고 고소한 기본 반찬이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-home-4', month: 10, title: '석이버섯달걀찜', subtitle: '부드럽고 향긋한 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-home-4/hero.webp',
     mainIngredient: '석이버섯',
     description: '달걀찜에 석이버섯을 더해 향긋함을 살린, 부드러운 별미 반찬이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-home-5', month: 10, title: '석이버섯국', subtitle: '맑고 향긋한 가을 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-home-5/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 넣어 끓인 맑은국으로, 은은한 향이 매력적인 가을철 국이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-weekend-1', month: 10, title: '구절판', subtitle: '한국 궁중 아홉칸 전통요리',
     category: '전채', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-weekend-1/hero.webp',
     mainIngredient: '석이버섯',
     description: '아홉 칸 그릇에 각기 다른 색의 재료를 담고 밀전병에 싸 먹는, 한국 궁중요리의 대표작이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-weekend-2', month: 10, title: '신선로', subtitle: '한국 궁중 전골요리',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-weekend-2/hero.webp',
     mainIngredient: '석이버섯',
     description: '가운데 화통이 있는 전용 그릇에 다양한 재료를 담아 끓이는, 궁중 잔치의 대표 전골이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-weekend-3', month: 10, title: '석이버섯잡채', subtitle: '향긋함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-weekend-3/hero.webp',
     mainIngredient: '석이버섯',
     description: '기본 잡채에 석이버섯을 더해 향긋함과 고급스러움을 살린, 잔칫상 별미예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-weekend-4', month: 10, title: '석이버섯죽', subtitle: '부드럽고 향긋한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-weekend-4/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 넣어 끓인, 부드럽고 향긋한 가을철 보양죽이에요.',
     masterclass: {
@@ -274,7 +274,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
   {
     id: 'stoneear-weekend-5', month: 10, title: '석이버섯산적', subtitle: '고급스러운 궁중식 꼬치구이',
     category: '구이', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-weekend-5/hero.webp',
     mainIngredient: '석이버섯',
     description: '소고기와 채소, 석이버섯을 꼬치에 꿰어 구운, 고급스러운 궁중식 산적이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-world-1', month: 10, title: '석이버섯 크림수프', subtitle: '서양식 응용 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스식 버섯크림수프는 다양한 버섯을 활용하는데, 석이버섯을 응용하면 독특한 검은빛과 향의 동서양 퓨전 수프가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-world-1/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 곱게 갈아 만든, 은은한 향과 독특한 색의 프랑스식 크림수프예요.',
     masterclass: {
@@ -336,7 +336,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-world-2', month: 10, title: '무이얼탕', subtitle: '중국식 목이버섯 유사 요리 응용',
     category: '국&찌개', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 목이버섯을 활용한 산라탕이 유명해요. 석이버섯으로 응용하면 훨씬 은은한 향의 새콤매콤한 탕이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-world-2/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 넣어 새콤매콤하게 끓인, 중국식 산라탕을 응용한 탕요리예요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-world-3', month: 10, title: '석이버섯 리조또', subtitle: '이탈리아식 크리미 쌀요리',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 다양한 버섯을 넣은 리조또가 대표적인 가을 요리예요. 석이버섯으로 만들면 독특한 향의 동서양 퓨전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-world-3/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 넣어 지은, 은은한 향의 이탈리아식 가을 리조또예요.',
     masterclass: {
@@ -396,7 +396,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-world-4', month: 10, title: '석이버섯 만두', subtitle: '중국식 궁중 만두',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '중국', note: '중국 궁중요리에서도 석이버섯(스얼)을 귀한 식재료로 사용했어요. 만두 속에 넣으면 향긋함과 고급스러움이 더해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-world-4/hero.webp',
     mainIngredient: '석이버섯',
     description: '돼지고기와 석이버섯을 채워 빚은, 향긋하고 고급스러운 궁중식 만두예요.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-world-5', month: 10, title: '석이버섯 파스타', subtitle: '이탈리아식 응용 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아식 버섯파스타에 석이버섯을 응용하면 은은한 향의 색다른 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-world-5/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 마늘과 올리브오일에 볶아 파스타에 버무린, 은은한 향의 요리예요.',
     masterclass: {
@@ -458,7 +458,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-chef-1', month: 10, title: '석이버섯채 실썰기', subtitle: '전통 실채 썰기 정밀 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '흰 접시 위에 실처럼 가늘게 썬 석이버섯채를 새둥지 모양으로 소복이 쌓아 담고, 달걀지단채와 실고추를 함께 올려 색 대비를 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-chef-1/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 머리카락처럼 가늘게 채 써는, 한국 궁중요리의 정교한 칼 기법이에요.',
     masterclass: {
@@ -488,7 +488,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-chef-2', month: 10, title: '석이버섯 구절판 정찬', subtitle: '한국 궁중 아홉칸 플레이팅 담음새',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '전용 구절판 그릇의 가운데 칸에 밀전병을 쌓고, 나머지 여덟 칸에 재료를 시계 방향으로 색이 겹치지 않게 배치해 상 위에서 그대로 완성된 예술작품처럼 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-chef-2/hero.webp',
     mainIngredient: '석이버섯',
     description: '아홉 칸으로 나뉜 그릇에 다섯 가지 색의 재료를 정교하게 담아내는, 조선 궁중 잔치음식의 정수예요.',
     masterclass: {
@@ -519,7 +519,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-chef-3', month: 10, title: '석이버섯 흑색소 파우더', subtitle: '건조분쇄 천연 흑색소 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 480, servings: 8,
     platingGuide: '작은 체에 담아 흰 접시 위 요리에 스텐실을 대고 뿌려 정교한 무늬를 만들거나, 소스에 섞어 천연 검은빛을 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-chef-3/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 완전히 건조시켜 곱게 갈아 만든, 오징어먹물을 대신할 수 있는 천연 검은 색소예요.',
     masterclass: {
@@ -549,7 +549,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-chef-4', month: 10, title: '석이버섯 크리스프', subtitle: '모던 튀김 가니시',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '메인요리 위에 바삭한 석이버섯 크리스프를 세워 꽂아 입체감을 주고, 그 자체로 바삭한 검은 부채꼴 조각처럼 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-chef-4/hero.webp',
     mainIngredient: '석이버섯',
     description: '석이버섯을 얇게 펴 바삭하게 튀긴, 모던 파인다이닝의 구조적 가니시예요.',
     masterclass: {
@@ -578,7 +578,7 @@ export const recipesStoneEarExpansion: Recipe[] = [
     id: 'stoneear-chef-5', month: 10, title: '석이버섯 화양적', subtitle: '전통 오색 꽂이 요리',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '색색의 재료가 꽂힌 화양적을 접시에 부채꼴로 나란히 담아, 단면의 다섯 색이 나란히 보이도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/stoneear-chef-5/hero.webp',
     mainIngredient: '석이버섯',
     description: '오색 재료를 꼬치에 순서대로 꽂아 부친, 조선 궁중 연회에 오르던 전통 꽂이요리예요.',
     masterclass: {

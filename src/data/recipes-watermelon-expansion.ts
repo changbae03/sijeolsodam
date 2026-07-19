@@ -14,7 +14,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-home-1', month: 7, title: '수박화채', subtitle: '한여름 더위를 씻어주는 대표 디저트',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-home-1/hero.webp',
     mainIngredient: '수박',
     description: '한여름 더위를 씻어주는 대표 과일 수박으로 만든, 사이다와 함께 시원하게 즐기는 여름 별미예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-home-2', month: 7, title: '수박그라니타', subtitle: '한여름 더위를 씻어주는 시원한 셔벗',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-home-2/hero.webp',
     mainIngredient: '수박',
     description: '수박을 얼려 만드는 이탈리아식 셔벗으로, 만들기 쉽고 시원한 여름 디저트예요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-home-3', month: 7, title: '수박주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-home-3/hero.webp',
     mainIngredient: '수박',
     description: '수박을 직접 갈아 만든, 상큼하고 건강한 여름철 생과일주스예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-home-4', month: 7, title: '수박샐러드', subtitle: '상큼하고 가벼운 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-home-4/hero.webp',
     mainIngredient: '수박',
     description: '수박과 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 여름철 샐러드예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-home-5', month: 7, title: '수박화이트펀치', subtitle: '시원한 여름 파티 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-home-5/hero.webp',
     mainIngredient: '수박',
     description: '수박과 과일을 넣어 만든, 시원하고 화려한 여름 파티 음료예요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-weekend-1', month: 7, title: '수박화채떡', subtitle: '화려한 여름 손님상 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-weekend-1/hero.webp',
     mainIngredient: '수박',
     description: '수박과 오미자화채, 떡을 함께 낸, 화려한 여름철 손님상 디저트예요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-weekend-2', month: 7, title: '수박아이스크림', subtitle: '상큼하고 시원한 홈메이드 아이스크림',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-weekend-2/hero.webp',
     mainIngredient: '수박',
     description: '수박즙과 생크림을 섞어 얼린, 상큼하고 부드러운 홈메이드 아이스크림이에요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-weekend-3', month: 7, title: '수박화이트상그리아', subtitle: '스페인식 여름 음료',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-weekend-3/hero.webp',
     mainIngredient: '수박',
     description: '화이트와인에 수박과 여름 과일을 넣어 만든, 스페인식 시원한 상그리아예요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-weekend-4', month: 7, title: '수박콩국수', subtitle: '시원하고 든든한 여름 별미',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-weekend-4/hero.webp',
     mainIngredient: '수박',
     description: '콩국물에 수박을 곁들여 함께 즐기는, 시원하고 든든한 여름철 별미예요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
   {
     id: 'watermelon-weekend-5', month: 7, title: '수박모히토', subtitle: '쿠바식 상큼한 칵테일 응용',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-weekend-5/hero.webp',
     mainIngredient: '수박',
     description: '수박과 민트, 라임을 으깨어 만든, 쿠바식 모히토를 응용한 상큼한 음료예요.',
     masterclass: {
@@ -305,7 +305,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-world-1', month: 7, title: '수박 페타 샐러드', subtitle: '그리스식 클래식 여름 조합',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스에서는 수박과 페타치즈, 민트를 함께 즐기는 것이 여름철 클래식한 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-world-1/hero.webp',
     mainIngredient: '수박',
     description: '수박과 페타치즈, 민트를 함께 곁들인, 그리스식 클래식 여름 샐러드예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-world-2', month: 7, title: '수박 프로슈토', subtitle: '이탈리아식 응용 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 멜론과 프로슈토를 곁들이는 것이 클래식한 전채예요. 수박으로 응용해도 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-world-2/hero.webp',
     mainIngredient: '수박',
     description: '수박에 프로슈토를 곁들인, 이탈리아식 전채를 응용한 요리예요.',
     masterclass: {
@@ -361,7 +361,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-world-3', month: 7, title: '수박 아과프레스카', subtitle: '멕시코식 시원한 과일음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 4,
     cuisineContext: { country: '멕시코', note: '아과프레스카는 멕시코의 대표적인 과일음료로, 수박은 가장 인기 있는 재료 중 하나예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-world-3/hero.webp',
     mainIngredient: '수박',
     description: '수박과 라임, 물을 섞어 만든, 멕시코의 대표적인 시원한 과일음료예요.',
     masterclass: {
@@ -390,7 +390,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-world-4', month: 7, title: '수박 가스파초', subtitle: '스페인식 차가운 여름 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '스페인', note: '가스파초는 스페인 안달루시아의 대표적인 차가운 수프예요. 수박을 더하면 훨씬 상큼한 여름 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-world-4/hero.webp',
     mainIngredient: '수박',
     description: '수박과 토마토를 곱게 갈아 차갑게 낸, 스페인식 여름 냉수프예요.',
     masterclass: {
@@ -419,7 +419,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-world-5', month: 7, title: '수박 코코넛푸딩', subtitle: '동남아식 시원한 디저트',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '태국', note: '태국에서는 코코넛밀크에 다양한 열대과일을 곁들인 디저트가 인기예요. 수박으로 응용하면 훨씬 시원한 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-world-5/hero.webp',
     mainIngredient: '수박',
     description: '코코넛밀크 푸딩에 수박을 곁들인, 동남아식 시원한 여름 디저트예요.',
     masterclass: {
@@ -451,7 +451,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-chef-1', month: 7, title: '수박 스테이크', subtitle: '압축+시어링 비건 트렌드 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '두툼하게 시어링된 수박 스테이크를 나무판에 올려 참치스테이크처럼 슬라이스해 담고, 간장 글레이즈를 붓으로 발라 윤기를 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-chef-1/hero.webp',
     mainIngredient: '수박',
     description: '수박을 무거운 것으로 눌러 수분을 빼고 강불에 시어링해, 참치스테이크와 비슷한 식감과 비주얼로 만든 비건 트렌드 요리예요.',
     masterclass: {
@@ -481,7 +481,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-chef-2', month: 7, title: '수박껍질피클', subtitle: '미국 남부식 활용 피클링',
     category: '반찬', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '작은 유리병에 담아 상에 올리고, 바비큐 요리나 프라이드치킨 옆에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-chef-2/hero.webp',
     mainIngredient: '수박',
     description: '버려지는 수박의 흰 속껍질을 새콤달콤하게 절인, 미국 남부의 전통적인 "낭비 없는" 요리예요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-chef-3', month: 7, title: '수박당밀', subtitle: '레반트식 농축 시럽',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 120, servings: 8,
     platingGuide: '작은 병에 담긴 진한 시럽을 상에 올리고, 요거트나 할루미치즈 위에 스푼으로 지그재그로 뿌려 활용합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-chef-3/hero.webp',
     mainIngredient: '수박',
     description: '수박즙을 몇 시간에 걸쳐 극도로 졸인, 중동 레반트 지역의 전통적인 여름 농축 시럽이에요.',
     masterclass: {
@@ -542,7 +542,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-chef-4', month: 7, title: '수박콤부차', subtitle: '발효 음료 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 480, servings: 8,
     platingGuide: '유리병에 담긴 콤부차를 상에 올려 자연스러운 탄산 기포가 보이게 하고, 잔에 따라 수박 조각을 띄워 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-chef-4/hero.webp',
     mainIngredient: '수박',
     description: '수박즙을 스코비(SCOBY, 공생 박테리아·효모 배양체)로 2차 발효시킨, 자연 탄산이 살아있는 발효 음료예요.',
     masterclass: {
@@ -573,7 +573,7 @@ export const recipesWatermelonExpansion: Recipe[] = [
     id: 'watermelon-chef-5', month: 7, title: '수박씨 그래놀라', subtitle: '씨앗 로스팅 활용 기법',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 40, servings: 6,
     platingGuide: '완성된 그래놀라를 요거트나 아이스크림 위에 뿌리고, 남은 수박씨를 몇 알 흩뿌려 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/watermelon-chef-5/hero.webp',
     mainIngredient: '수박',
     description: '보통 버려지는 수박씨를 볶아 오트밀과 섞어 만든, 낭비 없는 홈메이드 그래놀라예요.',
     masterclass: {

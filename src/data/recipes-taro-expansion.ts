@@ -14,7 +14,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-home-1', month: 9, title: '토란국', subtitle: '부드럽고 구수한 가을 대표 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-home-1/hero.webp',
     mainIngredient: '토란',
     description: '소고기와 함께 끓여낸, 부드럽고 구수한 맛이 일품인 가을철 대표 국이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-home-2', month: 9, title: '토란조림', subtitle: '달콤짭짤한 대표 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-home-2/hero.webp',
     mainIngredient: '토란',
     description: '토란을 간장 양념에 졸여낸, 달콤짭짤한 가을 대표 밑반찬이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-home-3', month: 9, title: '토란탕수', subtitle: '새콤달콤 바삭한 별미',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-home-3/hero.webp',
     mainIngredient: '토란',
     description: '바삭하게 튀긴 토란에 새콤달콤한 소스를 끼얹은, 인기 만점 별미예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-home-4', month: 9, title: '토란볶음', subtitle: '담백하고 고소한 기본 볶음',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-home-4/hero.webp',
     mainIngredient: '토란',
     description: '토란을 간장과 참기름으로 볶은, 담백하고 고소한 기본 반찬이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-home-5', month: 9, title: '토란찜', subtitle: '담백하고 부드러운 가을 찜',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-home-5/hero.webp',
     mainIngredient: '토란',
     description: '토란을 부드럽게 쪄낸, 담백하고 소박한 가을철 찜이에요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-weekend-1', month: 9, title: '토란갈비찜', subtitle: '부드러움을 더한 특별한 갈비찜',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-weekend-1/hero.webp',
     mainIngredient: '토란',
     description: '갈비찜에 토란을 더해, 부드러운 식감과 구수함을 살린 특별한 메인요리예요.',
     masterclass: {
@@ -190,7 +190,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-weekend-2', month: 9, title: '토란튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-weekend-2/hero.webp',
     mainIngredient: '토란',
     description: '토란을 얇게 썰어 바삭하게 튀긴, 겉은 바삭하고 속은 촉촉한 튀김이에요.',
     masterclass: {
@@ -219,7 +219,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-weekend-3', month: 9, title: '토란수제비', subtitle: '구수하고 든든한 별미',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-weekend-3/hero.webp',
     mainIngredient: '토란',
     description: '토란을 넣어 끓인 수제비로, 구수하고 든든한 가을철 별미예요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-weekend-4', month: 9, title: '토란전', subtitle: '부드럽게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-weekend-4/hero.webp',
     mainIngredient: '토란',
     description: '토란을 으깨어 반죽해 부친, 부드럽고 고소한 별미전이에요.',
     masterclass: {
@@ -277,7 +277,7 @@ export const recipesTaroExpansion: Recipe[] = [
   {
     id: 'taro-weekend-5', month: 9, title: '토란죽', subtitle: '부드럽고 구수한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-weekend-5/hero.webp',
     mainIngredient: '토란',
     description: '토란을 넣어 끓인, 부드럽고 구수한 가을철 보양죽이에요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-world-1', month: 9, title: '사토이모노 니콤로가시', subtitle: '일본식 토란조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '사토이모(里芋)는 일본어로 토란을 뜻해요. 니콤로가시는 채소를 간장과 미림에 굴려가며 조리는 일본식 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-world-1/hero.webp',
     mainIngredient: '토란',
     description: '토란을 간장과 미림에 굴려가며 조린, 일본의 대표적인 가정식 조림이에요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-world-2', month: 9, title: '위위 커리', subtitle: '인도식 향신 토란커리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '인도', note: '인도에서는 토란(아르비)을 향신료와 함께 볶거나 커리로 즐기는 전통이 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-world-2/hero.webp',
     mainIngredient: '토란',
     description: '토란을 향신료와 토마토소스에 끓인, 인도식 향긋한 채소커리예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-world-3', month: 9, title: '토란 그라탕', subtitle: '프랑스식 크림 그라탕',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '프랑스', note: '프랑스에서는 감자를 크림소스와 함께 오븐에 굽는 그라탕 도피누아가 대표적이에요. 토란으로 만들면 훨씬 부드러운 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-world-3/hero.webp',
     mainIngredient: '토란',
     description: '토란을 크림소스와 함께 오븐에 구운, 프랑스식 부드러운 그라탕이에요.',
     masterclass: {
@@ -398,7 +398,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-world-4', month: 9, title: '위위 칩스', subtitle: '미국식 바삭한 뿌리채소칩',
     category: '간식', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '미국', note: '미국에서는 고구마, 토란 등 다양한 뿌리채소를 얇게 썰어 튀긴 베지터블칩이 인기 간식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-world-4/hero.webp',
     mainIngredient: '토란',
     description: '토란을 얇게 썰어 바삭하게 튀긴, 은은한 보랏빛이 매력적인 베지터블칩이에요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-world-5', month: 9, title: '중국식 토란튀김찜', subtitle: '중국식 향긋한 토란요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '중국', note: '중국 남부에서는 토란을 오향가루와 함께 튀긴 뒤 삼겹살과 켜켜이 쌓아 찌는 "위토우쿠러우"가 명절 요리로 인기예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-world-5/hero.webp',
     mainIngredient: '토란',
     description: '토란을 튀겨 삼겹살과 켜켜이 쌓아 찐, 중국 남부의 명절 요리를 응용한 메인요리예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-chef-1', month: 9, title: '포이', subtitle: '하와이식 발효 타로 페이스트',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '전통 나무그릇에 포이를 담아 손가락으로 찍어 먹을 수 있게 연출하고, 구운 생선이나 라우라우와 함께 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-chef-1/hero.webp',
     mainIngredient: '토란',
     description: '토란을 삶아 찧고 발효시킨, 하와이 원주민의 주식이자 신성하게 여겨지는 전통 음식이에요.',
     masterclass: {
@@ -489,7 +489,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-chef-2', month: 9, title: '위빙 타로 바스켓', subtitle: '중국식 튀긴 토란 바구니',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '완성된 토란 바구니를 접시 중앙에 놓고, 그 안에 볶은 새우나 채소를 소복이 채워 화려하게 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-chef-2/hero.webp',
     mainIngredient: '토란',
     description: '토란을 곱게 채 썰어 바구니 모양으로 튀겨 만든, 중국 딤섬 연회의 상징적인 그릇 요리예요.',
     masterclass: {
@@ -520,7 +520,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-chef-3', month: 9, title: '토란 밀푀유', subtitle: '프랑스식 층층 쌓기 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '두툼하게 잘라 세운 토란 밀푀유를 접시에 담고, 크림소스를 스푼으로 끼얹은 뒤 차이브를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-chef-3/hero.webp',
     mainIngredient: '토란',
     description: '토란을 종이처럼 얇게 저며 겹겹이 눌러 쌓은, 프랑스식 밀푀유 기법을 채소에 응용한 요리예요.',
     masterclass: {
@@ -551,7 +551,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-chef-4', month: 9, title: '토란완자', subtitle: '대만식 쫄깃한 경단',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 5,
     platingGuide: '삶은 토란완자를 코코넛밀크 국물에 담아 유리그릇에 담고, 팥이나 흑당시럽을 곁들여 대만식 디저트로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-chef-4/hero.webp',
     mainIngredient: '토란',
     description: '토란을 으깨어 타피오카전분과 반죽해 만든, 쫄깃한 식감이 매력적인 대만의 대표 디저트 경단이에요.',
     masterclass: {
@@ -582,7 +582,7 @@ export const recipesTaroExpansion: Recipe[] = [
     id: 'taro-chef-5', month: 9, title: '토란 수플레', subtitle: '프랑스식 부풀리는 오븐 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '오븐에서 갓 꺼낸 수플레를 라메킨째 바로 상에 올려, 부풀어 오른 모습이 꺼지기 전에 서빙합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/taro-chef-5/hero.webp',
     mainIngredient: '토란',
     description: '토란 퓌레에 머랭을 섞어 오븐에서 부풀린, 프랑스 파티세리의 정교한 수플레 기법을 응용한 디저트예요.',
     masterclass: {

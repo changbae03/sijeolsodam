@@ -10,7 +10,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-home-3', month: 1, title: '시금치 나물', subtitle: '가장 기본적인 데친 시금치 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-home-3/hero.webp',
     mainIngredient: '시금치', description: '살짝 데친 시금치를 참기름과 마늘로 무친, 가장 기본적인 한식 나물이에요.',
     masterclass: {
       chefIntro: '한식 밥상에 가장 자주 오르는 나물이에요. 겨울 시금치는 단맛이 깊어 양념을 거의 안 해도 맛있어요.',
@@ -51,7 +51,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-home-4', month: 1, title: '시금치 된장무침', subtitle: '구수하게 무친 또 다른 기본 나물',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-home-4/hero.webp',
     mainIngredient: '시금치', description: '데친 시금치를 된장으로 구수하게 무친, 슴슴한 맛의 또 다른 기본 나물이에요.',
     masterclass: {
       chefIntro: '참기름 나물과는 또 다른 구수한 맛이 나는 무침이에요. 된장의 깊은 풍미가 시금치와 잘 어울려요.',
@@ -82,7 +82,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-home-5', month: 1, title: '시금치 계란찜', subtitle: '부드럽게 쪄낸 영양 가득 한 그릇',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-home-5/hero.webp',
     mainIngredient: '시금치', description: '잘게 썬 시금치를 넣어 부드럽게 쪄낸, 아이 반찬으로도 좋은 영양식이에요.',
     masterclass: {
       chefIntro: '달걀과 시금치만으로 만드는 가장 간단한 영양식이에요. 부드러운 식감이 매력이에요.',
@@ -120,7 +120,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-weekend-1', month: 1, title: '시금치 라자냐', subtitle: '면 사이마다 채운 초록빛 채소 라자냐',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-weekend-1/hero.webp',
     mainIngredient: '시금치', description: '크림소스에 볶은 시금치를 라자냐 면 사이에 채운, 든든하고 향긋한 베이킹이에요.',
     masterclass: {
       chefIntro: '시금치는 익으면 부피가 확 줄어드는 채소예요. 넉넉히 준비해야 라자냐 켜를 채울 만큼 나와요.',
@@ -157,7 +157,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-weekend-2', month: 1, title: '시금치 크림 파스타', subtitle: '부드러운 크림소스에 시금치를 더한 파스타',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-weekend-2/hero.webp',
     mainIngredient: '시금치', description: '시금치를 듬뿍 넣은 부드러운 크림소스 파스타로, 색이 곱고 든든한 한 끼예요.',
     masterclass: {
       chefIntro: '시금치가 크림소스에 녹아들면서 자연스러운 초록빛과 향긋함을 더해줘요.',
@@ -190,7 +190,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-weekend-3', month: 1, title: '시금치 키슈', subtitle: '프랑스식 짭짤한 시금치 파이',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-weekend-3/hero.webp',
     mainIngredient: '시금치', description: '시금치와 베이컨, 치즈를 채운 프랑스식 짭짤한 파이로, 브런치에 잘 어울려요.',
     masterclass: {
       chefIntro: '시금치 키슈는 프랑스 가정식의 클래식 메뉴예요. 시금치와 베이컨의 조합이 정통에 가까워요.',
@@ -219,7 +219,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-weekend-4', month: 1, title: '시금치 만두', subtitle: '향긋한 시금치를 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-weekend-4/hero.webp',
     mainIngredient: '시금치', description: '데친 시금치를 듬뿍 넣어 빚은 만두로, 색이 곱고 향긋한 속이 매력이에요.',
     masterclass: {
       chefIntro: '시금치를 데쳐서 다지면 만두 속에 자연스러운 초록빛과 향이 더해져요.',
@@ -247,7 +247,7 @@ export const recipesSpinachExpansion: Recipe[] = [
   {
     id: 'spinach-weekend-5', month: 1, title: '시금치 베이컨 그라탕', subtitle: '크림소스에 구운 든든한 채소 그라탕',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-weekend-5/hero.webp',
     mainIngredient: '시금치', description: '시금치와 베이컨을 크림소스와 치즈로 구워낸, 든든하고 고소한 그라탕이에요.',
     masterclass: {
       chefIntro: '시금치를 메인 요리로 끌어올린 메뉴예요. 베이컨의 짠맛과 크림소스가 시금치의 향긋함을 더 살려줘요.',
@@ -281,7 +281,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       country: '인도',
       note: '사그 파니르는 인도 북부에서 즐기는 대표적인 커리로, 시금치 퓌레에 인도식 치즈 파니르를 넣어 만들어요. 채식 메뉴로도 인기가 많아 인도 식당에서 빠지지 않는 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-world-1/hero.webp',
     mainIngredient: '시금치', description: '곱게 간 시금치에 인도식 치즈 파니르를 넣어 끓인, 향신료 향 가득한 인도 커리예요.',
     masterclass: {
       chefIntro: '인도 채식 식당에서 가장 인기 있는 메뉴 중 하나예요. 시금치를 곱게 갈아 부드러운 소스를 만드는 게 핵심이에요.',
@@ -314,7 +314,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       country: '이탈리아',
       note: '오레키에테는 이탈리아 남부 풀리아 지방의 전통 파스타 모양으로, 시금치나 순무잎과 함께 마늘, 안초비를 더해 간단하게 볶아 먹는 게 정통 조리법이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-world-2/hero.webp',
     mainIngredient: '시금치', description: '마늘과 안초비 향이 가득한, 이탈리아 남부 풀리아 지방의 간단한 시금치 파스타예요.',
     masterclass: {
       chefIntro: '재료가 단순하지만 안초비의 감칠맛이 깊은 풍미를 만들어주는 이탈리아 남부의 가정식이에요.',
@@ -351,7 +351,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       country: '그리스',
       note: '스파나코피타는 그리스의 대표적인 시금치 페이스트리예요. 페타치즈와 시금치, 필로 페이스트리가 어우러지는 정통 메뉴로, 이를 응용해 더 간단한 오믈렛 형태로 재구성했어요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-world-3/hero.webp',
     mainIngredient: '시금치', description: '시금치와 페타치즈를 더한 그리스풍 오믈렛으로, 스파나코피타의 풍미를 간단하게 즐길 수 있어요.',
     masterclass: {
       chefIntro: '정통 스파나코피타는 페이스트리를 다루는 정교함이 필요한데, 오믈렛으로 재구성하면 그 풍미를 훨씬 간단하게 즐길 수 있어요.',
@@ -387,7 +387,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       country: '일본',
       note: '교자는 중국 만두에서 유래해 일본식으로 발전한 군만두예요. 시금치를 더한 버전은 일본 가정에서 채소를 더 많이 섭취하기 위해 즐기는 변형이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-world-4/hero.webp',
     mainIngredient: '시금치', description: '시금치를 듬뿍 넣어 빚어 바삭하게 구운, 일본식 군만두예요.',
     masterclass: {
       chefIntro: '일본 가정에서 채소를 더하기 위해 즐기는 변형 교자예요. 바닥은 바삭하고 속은 촉촉한 게 매력이에요.',
@@ -425,7 +425,7 @@ export const recipesSpinachExpansion: Recipe[] = [
       country: '동유럽',
       note: '시금치를 듬뿍 넣은 진한 수프는 우크라이나, 폴란드 등 동유럽 가정에서 즐겨 먹는 음식이에요. 사워크림을 곁들이는 방식이 동유럽 수프 문화의 특징이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-world-5/hero.webp',
     mainIngredient: '시금치', description: '시금치를 듬뿍 넣고 끓여 사워크림을 곁들인, 동유럽 가정식 영향을 받은 진한 수프예요.',
     masterclass: {
       chefIntro: '동유럽에서는 진한 수프에 사워크림을 곁들이는 게 흔한 식문화예요. 산미가 수프의 진한 맛과 잘 어울려요.',
@@ -456,7 +456,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     id: 'spinach-chef-1', month: 1, title: '시금치 퓌레와 시어드 스캘럽', subtitle: '깔끔한 시금치 퓌레와 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '퓌레를 접시에 한 스푼 자국 내듯 펴 바르고 시어드한 관자를 비스듬히 올려보세요. 버터소스를 점점이 뿌리세요.',
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-chef-1/hero.webp',
     mainIngredient: '시금치', description: '곱게 간 시금치 퓌레 위에 겉은 바삭하고 속은 부드러운 관자를 올린, 정교한 프렌치 비스트로풍 전채예요.',
     masterclass: {
       chefIntro: '시금치의 선명한 초록빛과 관자의 흰 속살이 시각적으로도 아름다운 조합이에요.',
@@ -501,7 +501,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     id: 'spinach-chef-2', month: 1, title: '시금치 뇨끼', subtitle: '초록빛 반죽으로 빚은 정교한 면 요리',
     category: '면요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '그릇에 뇨끼를 담고 브라운버터를 끼얹은 뒤 바삭하게 구운 세이지 잎을 올려보세요. 파마산을 살짝 갈아 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-chef-2/hero.webp',
     mainIngredient: '시금치', description: '감자 뇨끼에 시금치를 더해 선명한 초록빛을 낸, 비주얼과 풍미를 모두 갖춘 정교한 면 요리예요.',
     masterclass: {
       chefIntro: '시금치를 더하면 뇨끼가 초록빛으로 물들면서 시각적으로도, 풍미로도 한층 풍부해져요.',
@@ -536,7 +536,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     id: 'spinach-chef-3', month: 1, title: '시금치 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 차이브를 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-chef-3/hero.webp',
     mainIngredient: '시금치', description: '가볍게 휘핑한 시금치 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 전채예요.',
     masterclass: {
       chefIntro: '시금치를 무스로 만들면 전혀 새로운 가벼운 질감을 경험할 수 있어요. 짭짤한 베이컨과의 대비가 핵심이에요.',
@@ -570,7 +570,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     id: 'spinach-chef-4', month: 1, title: '시금치 콩소메', subtitle: '맑게 거른 시금치의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 처빌 잎 하나를 올려보세요. 선명한 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-chef-4/hero.webp',
     mainIngredient: '시금치', description: '시금치를 갈아 맑게 걸러낸, 선명한 초록빛과 향긋함이 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 시금치에 적용한 요리예요. 색이 가장 선명하게 나오는 채소 중 하나예요.',
@@ -605,7 +605,7 @@ export const recipesSpinachExpansion: Recipe[] = [
     id: 'spinach-chef-5', month: 1, title: '시금치 라비올로와 세이지 버터', subtitle: '리코타를 채운 정교한 한입 파스타',
     category: '면요리', difficulty: '보통', level: 'chef', cookTime: 80, servings: 3,
     platingGuide: '접시에 라비올로를 단정하게 배열하고 브라운버터를 끼얹은 뒤 세이지를 올려보세요. 파마산을 살짝 갈아 마무리하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/spinach-chef-5/hero.webp',
     mainIngredient: '시금치', description: '시금치와 리코타 치즈를 채운 손수 빚은 라비올로에 브라운버터를 끼얹은, 정교한 이탈리아식 파스타예요.',
     masterclass: {
       chefIntro: '반죽부터 직접 빚는 라비올로는 손이 많이 가지만, 완성했을 때의 보람이 큰 요리예요.',
