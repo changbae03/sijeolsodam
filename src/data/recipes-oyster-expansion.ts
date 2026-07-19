@@ -135,7 +135,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-weekend-3', month: 11, title: '굴젓', subtitle: '오래 두고 먹는 짭조름한 밑반찬',
     category: '젓갈', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-weekend-3/hero.webp',
     mainIngredient: '굴',
     description: '굴을 소금과 고춧가루로 절인, 짭조름하고 감칠맛 진한 전통 젓갈이에요.',
     masterclass: {
@@ -165,7 +165,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-weekend-4', month: 11, title: '굴전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-weekend-4/hero.webp',
     mainIngredient: '굴',
     description: '굴과 채소, 두부를 넉넉히 넣고 시원하게 끓인 겨울철 전골이에요.',
     masterclass: {
@@ -196,7 +196,7 @@ export const recipesOysterExpansion: Recipe[] = [
   {
     id: 'seaoyster-weekend-5', month: 11, title: '굴 강정', subtitle: '바삭 달콤한 별미',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-weekend-5/hero.webp',
     mainIngredient: '굴',
     description: '튀긴 굴에 달콤짭짤한 강정소스를 버무린, 색다르게 즐기는 겨울 별미예요.',
     masterclass: {
@@ -229,7 +229,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-world-1', month: 11, title: '위트르 아 라 미뇨네트', subtitle: '프랑스식 신선한 생굴',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '프랑스', note: '위트르(huître)는 프랑스어로 굴을 뜻해요. 프랑스 브르타뉴 지방에서는 생굴에 미뇨네트(적포도주식초와 샬롯으로 만든 소스)를 곁들이는 것이 정통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-world-1/hero.webp',
     mainIngredient: '굴',
     description: '신선한 생굴에 적포도주식초와 샬롯으로 만든 미뇨네트소스를 곁들인, 프랑스식 정통 전채예요.',
     masterclass: {
@@ -260,7 +260,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-world-2', month: 11, title: '카키노 도테나베', subtitle: '일본식 된장 굴전골',
     category: '전골', difficulty: '보통', level: 'world', cookTime: 40, servings: 4,
     cuisineContext: { country: '일본', note: '가키(牡蠣)는 일본어로 굴을 뜻해요. 도테나베(土手鍋)는 히로시마 지방의 명물 요리로, 냄비 가장자리에 미소된장을 발라두고 조금씩 풀어가며 먹는 굴 전골이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-world-2/hero.webp',
     mainIngredient: '굴',
     description: '냄비 가장자리에 미소된장을 발라 조금씩 풀어가며 먹는, 히로시마 명물 굴 전골이에요.',
     masterclass: {
@@ -292,7 +292,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-world-3', month: 11, title: '뉴잉글랜드 클램 챠우더', subtitle: '미국식 크리미한 굴수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 45, servings: 4,
     cuisineContext: { country: '미국', note: '클램 챠우더는 미국 동부 해안의 대표 조개수프예요. 원래는 조개로 만들지만, 굴을 넣으면 훨씬 진하고 부드러운 감칠맛의 챠우더가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-world-3/hero.webp',
     mainIngredient: '굴',
     description: '베이컨과 감자, 굴을 크림소스에 끓인, 미국 동부 해안식 진한 수프예요.',
     masterclass: {
@@ -324,7 +324,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-world-4', month: 11, title: '하오유 셩차이', subtitle: '중국식 굴소스 상추볶음',
     category: '볶음', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '하오유(蚝油)는 중국어로 굴소스를 뜻해요. 굴을 오랜 시간 졸여 만든 이 소스는 중국 요리의 기본 조미료예요. 셩차이(생채, 상추)볶음은 굴소스의 감칠맛을 가장 잘 보여주는 대표적인 채소볶음이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-world-4/hero.webp',
     mainIngredient: '굴',
     description: '생굴과 굴소스를 함께 넣어 볶은 상추요리로, 굴의 감칠맛이 두 배로 진해지는 중국식 볶음이에요.',
     masterclass: {
@@ -355,7 +355,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-world-5', month: 11, title: '오스트라스 그라티나다스', subtitle: '스페인식 그라탕 굴요리',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 35, servings: 4,
     cuisineContext: { country: '스페인', note: '스페인 갈리시아 지방에서는 굴을 껍질째 오븐에 그라탕처럼 구워내는 요리가 인기 있어요. 마늘과 빵가루, 파슬리를 올려 굽는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-world-5/hero.webp',
     mainIngredient: '굴',
     description: '굴 껍질 위에 마늘빵가루를 올려 오븐에 구운, 스페인식 따뜻한 굴요리예요.',
     masterclass: {
@@ -388,7 +388,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-chef-1', month: 11, title: '굴 미뇨네트 캐비어', subtitle: '고급스럽게 재해석한 생굴',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 4,
     platingGuide: '얼음을 채운 큰 접시에 굴을 껍질째 올리고, 미뇨네트소스를 작은 스푼으로 하나씩 얹은 뒤 날치알을 살짝 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-chef-1/hero.webp',
     mainIngredient: '굴',
     description: '프랑스식 미뇨네트소스에 날치알을 더해 화려함을 더한, 파티에 어울리는 세련된 생굴 전채예요.',
     masterclass: {
@@ -418,7 +418,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-chef-2', month: 11, title: '굴 그라탕 부르기뇽 스타일', subtitle: '버터갈릭향 프랑스식 굴구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '얼음이나 굵은 소금을 깐 접시에 굴을 껍질째 올려 오븐에서 그대로 구운 뒤, 파슬리 잎을 하나씩 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-chef-2/hero.webp',
     mainIngredient: '굴',
     description: '에스카르고 부르기뇽의 버터갈릭소스를 굴에 적용한, 향긋하고 진한 프랑스식 구이예요.',
     masterclass: {
@@ -449,7 +449,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-chef-3', month: 11, title: '굴 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 데친 굴 한 개를 살짝 띄운 뒤 차이브를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-chef-3/hero.webp',
     mainIngredient: '굴',
     description: '굴을 곱게 갈아 크림으로 부드럽게 마무리한, 벨벳처럼 진한 프랑스식 수프예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-chef-4', month: 11, title: '굴 타르타르소스 튀김', subtitle: '레스토랑 스타일 굴튀김',
     category: '튀김', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '나무 도마에 튀긴 굴을 비스듬히 겹쳐 담고, 타르타르소스를 작은 종지에 곁들이며 레몬 웨지를 함께 놓습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-chef-4/hero.webp',
     mainIngredient: '굴',
     description: '바삭하게 튀긴 굴에 직접 만든 타르타르소스를 곁들인, 레스토랑 스타일로 완성한 요리예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesOysterExpansion: Recipe[] = [
     id: 'seaoyster-chef-5', month: 11, title: '굴 폰즈젤리', subtitle: '일본식 세련된 한입 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '작은 유리잔이나 도자기 스푼에 데친 굴을 놓고 폰즈젤리를 그 위에 올린 뒤 무순과 유자 제스트로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaoyster-chef-5/hero.webp',
     mainIngredient: '굴',
     description: '데친 굴 위에 상큼한 폰즈소스를 젤리로 굳혀 올린, 일본 가이세키 요리 스타일의 세련된 한입 전채예요.',
     masterclass: {

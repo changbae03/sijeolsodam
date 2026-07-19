@@ -15,7 +15,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-home-1', month: 4, title: '느타리버섯 무침', subtitle: '부드러운 식감을 살린 기본 나물',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-home-1/hero.webp',
     mainIngredient: '느타리버섯',
     description: '결대로 찢어 데친 느타리버섯을 참기름과 간장으로 무친, 부드러운 식감이 살아 있는 기본 반찬이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-home-2', month: 4, title: '느타리버섯 된장국', subtitle: '구수하고 부드러운 봄철 국물',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-home-2/hero.webp',
     mainIngredient: '느타리버섯',
     description: '된장을 푼 육수에 느타리버섯을 넣고 끓인, 부드러운 식감이 국물에 잘 어우러지는 기본 국이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-home-3', month: 4, title: '느타리버섯 볶음', subtitle: '간장 양념으로 볶아낸 기본 반찬',
     category: '볶음', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-home-3/hero.webp',
     mainIngredient: '느타리버섯',
     description: '기름에 볶아 수분을 살짝 날린 느타리버섯을 간장 양념으로 마무리한, 밥반찬으로 좋은 볶음이에요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-home-4', month: 4, title: '느타리버섯 전', subtitle: '결을 살려 부친 담백한 전',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-home-4/hero.webp',
     mainIngredient: '느타리버섯',
     description: '결대로 찢은 느타리버섯에 부침가루 옷을 입혀 노릇하게 부친 전이에요.',
     masterclass: {
@@ -133,7 +133,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-home-5', month: 4, title: '느타리버섯 덮밥', subtitle: '간장 소스를 끼얹은 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-home-5/hero.webp',
     mainIngredient: '느타리버섯',
     description: '간장 소스에 볶은 느타리버섯을 밥 위에 올린, 간단하지만 든든한 한 그릇이에요.',
     masterclass: {
@@ -164,7 +164,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-weekend-1', month: 4, title: '느타리버섯 불고기', subtitle: '고기 없이도 든든한 불고기 양념 볶음',
     category: '볶음', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-weekend-1/hero.webp',
     mainIngredient: '느타리버섯',
     description: '불고기 양념에 재운 느타리버섯을 채소와 함께 볶은, 고기 없이도 감칠맛이 진한 요리예요.',
     masterclass: {
@@ -193,7 +193,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-weekend-2', month: 4, title: '느타리버섯 전골', subtitle: '푸짐하게 끓여내는 버섯 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-weekend-2/hero.webp',
     mainIngredient: '느타리버섯',
     description: '느타리버섯과 채소, 두부를 넉넉히 넣고 얼큰하게 끓인 전골이에요.',
     masterclass: {
@@ -223,7 +223,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-weekend-3', month: 4, title: '느타리버섯 카레', subtitle: '결이 살아있는 향긋한 카레',
     category: '카레', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-weekend-3/hero.webp',
     mainIngredient: '느타리버섯',
     description: '느타리버섯을 넉넉히 넣고 채소와 함께 끓인, 향긋하고 든든한 카레예요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-weekend-4', month: 4, title: '느타리버섯 튀김', subtitle: '바삭하게 튀겨낸 겉바속촉 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-weekend-4/hero.webp',
     mainIngredient: '느타리버섯',
     description: '결대로 찢은 느타리버섯에 바삭한 튀김옷을 입혀 튀긴, 겉은 바삭하고 속은 촉촉한 튀김이에요.',
     masterclass: {
@@ -283,7 +283,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
   {
     id: 'oyster-weekend-5', month: 4, title: '느타리버섯 장아찌', subtitle: '두고두고 꺼내 먹는 짭조름한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1623428187969-1cd5e3e3e5db?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-weekend-5/hero.webp',
     mainIngredient: '느타리버섯',
     description: '간장물에 절인 느타리버섯을 새콤달콤하게 즐기는, 오래 두고 먹는 밑반찬이에요.',
     masterclass: {
@@ -316,7 +316,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-world-1', month: 4, title: '오이스터 머쉬룸 프라이드', subtitle: '미국식 비건 프라이드 치킨 대체 요리',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '미국', note: '느타리버섯은 결이 닭고기와 비슷하게 찢어져서, 미국 비건 요리에서 프라이드치킨을 대체하는 재료로 널리 쓰여요. 버터밀크에 재우고 향신료를 입힌 튀김옷이 핵심이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-world-1/hero.webp',
     mainIngredient: '느타리버섯',
     description: '버터밀크에 재운 느타리버섯에 향신료 튀김옷을 입혀 튀긴, 프라이드치킨을 닮은 요리예요.',
     masterclass: {
@@ -347,7 +347,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-world-2', month: 4, title: '만타르 케밥', subtitle: '튀르키예식 버섯 꼬치구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '튀르키예', note: '만타르(mantar)는 튀르키예어로 버섯을 뜻해요. 튀르키예에서는 버섯을 꼬치에 꿰어 숯불에 굽는 케밥이 흔한데, 올리브오일과 향신료로 심플하게 맛을 낸 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-world-2/hero.webp',
     mainIngredient: '느타리버섯',
     description: '올리브오일과 향신료에 재운 느타리버섯을 꼬치에 꿰어 구운, 튀르키예식 버섯 케밥이에요.',
     masterclass: {
@@ -378,7 +378,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-world-3', month: 4, title: '느타리버섯 블랑케트', subtitle: '프랑스식 화이트 스튜',
     category: '스튜', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '프랑스', note: '블랑케트(blanquette)는 색을 내지 않고 은근히 끓여 크림으로 마무리하는 프랑스 전통 스튜예요. 원래는 송아지고기로 만들지만, 느타리버섯으로 만들면 부드러운 채식 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-world-3/hero.webp',
     mainIngredient: '느타리버섯',
     description: '느타리버섯을 채소와 함께 은근히 끓여 크림으로 마무리한, 색이 하얗고 부드러운 프랑스식 스튜예요.',
     masterclass: {
@@ -409,7 +409,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-world-4', month: 4, title: '핑구 시앙라 초', subtitle: '중국 쓰촨식 마라 버섯 볶음',
     category: '볶음', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '중국', note: '시앙라(香辣)는 쓰촨 요리 특유의 맵고 얼얼한 맛을 뜻해요. 핑구(平菇)는 느타리버섯의 중국어 명칭으로, 마라 양념과 함께 볶으면 쓰촨식 매콤한 볶음 요리가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-world-4/hero.webp',
     mainIngredient: '느타리버섯',
     description: '두반장과 花椒(화자오)로 맵고 얼얼하게 볶은, 쓰촨 스타일의 느타리버섯 볶음이에요.',
     masterclass: {
@@ -440,7 +440,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-world-5', month: 4, title: '느타리버섯 커리', subtitle: '인도식 향신료 버섯 커리',
     category: '커리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '인도', note: '인도 북부에서는 버섯 커리(mushroom masala)가 채식 식탁의 인기 메뉴예요. 토마토와 향신료를 오래 볶아 만든 그레이비가 특징이고, 지역에 따라 크림을 더하기도 해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-world-5/hero.webp',
     mainIngredient: '느타리버섯',
     description: '토마토와 향신료를 오래 볶아 만든 그레이비에 느타리버섯을 넣고 끓인, 향이 진한 인도식 커리예요.',
     masterclass: {
@@ -473,7 +473,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-chef-1', month: 4, title: '느타리버섯 뵈르블랑 소테', subtitle: '프랑스식 버터소스를 곁들인 소테',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '따뜻하게 데운 접시에 소테한 느타리버섯을 부채꼴로 펼쳐 담고, 뵈르블랑소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-chef-1/hero.webp',
     mainIngredient: '느타리버섯',
     description: '버터에 소테한 느타리버섯에 화이트와인과 버터로 만든 뵈르블랑소스를 곁들인 프렌치 스타일 요리예요.',
     masterclass: {
@@ -504,7 +504,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-chef-2', month: 4, title: '느타리버섯 템퓨라 폰즈소스', subtitle: '일본식 튀김과 새콤한 폰즈의 조화',
     category: '튀김', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '대나무 채반이나 종이를 깐 접시에 튀김을 비스듬히 겹쳐 담고, 작은 종지에 폰즈소스를 따로 곁들여 찍어 먹도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-chef-2/hero.webp',
     mainIngredient: '느타리버섯',
     description: '가볍게 튀긴 느타리버섯 템퓨라에 유자향 폰즈소스를 곁들인, 산뜻하게 즐기는 일식 스타일 요리예요.',
     masterclass: {
@@ -535,7 +535,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-chef-3', month: 4, title: '느타리버섯 브레제 폴렌타', subtitle: '이탈리아식 은근히 끓인 버섯과 폴렌타',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '넓은 접시 바닥에 폴렌타를 둥글게 펴 깔고, 그 위에 브레제한 느타리버섯을 소복이 올린 뒤 졸인 국물을 숟가락으로 끼얹고 파마산을 갈아 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-chef-3/hero.webp',
     mainIngredient: '느타리버섯',
     description: '레드와인에 은근히 끓인 느타리버섯을 부드러운 폴렌타 위에 올린, 깊은 풍미의 이탈리아식 요리예요.',
     masterclass: {
@@ -566,7 +566,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-chef-4', month: 4, title: '느타리버섯 타르타르', subtitle: '잘게 다져 신선하게 즐기는 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '원형 무스링을 접시 중앙에 놓고 타르타르를 눌러 담은 뒤 조심스럽게 들어 올려 원통형으로 세우고, 그 위에 반숙 메추리알과 차이브를 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-chef-4/hero.webp',
     mainIngredient: '느타리버섯',
     description: '살짝 볶아 잘게 다진 느타리버섯을 머스타드 드레싱으로 버무린, 고기 타르타르를 닮은 전채예요.',
     masterclass: {
@@ -597,7 +597,7 @@ export const recipesOysterMushroomExpansion: Recipe[] = [
     id: 'oyster-chef-5', month: 4, title: '느타리버섯 벨루테 수프', subtitle: '크리미하게 갈아낸 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 따로 소테한 느타리버섯 한 조각과 트러플오일 한 방울을 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/oyster-chef-5/hero.webp',
     mainIngredient: '느타리버섯',
     description: '느타리버섯을 곱게 갈아 크림으로 부드럽게 마무리한, 벨벳처럼 매끄러운 프랑스식 수프예요.',
     masterclass: {

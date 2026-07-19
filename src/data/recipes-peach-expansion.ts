@@ -12,7 +12,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-home-1', month: 8, title: '복숭아 셔벗', subtitle: '과즙 가득한 시원한 여름 셔벗',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1629828874514-979f5f8f0b48?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-home-1/hero.webp',
     mainIngredient: '복숭아',
     description: '과즙이 풍부한 여름 복숭아를 얼려 만드는, 간단하지만 인기 만점인 시원한 디저트예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-home-2', month: 8, title: '복숭아 카프레제', subtitle: '달콤함과 부드러움의 만남',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601379329542-8feea90c775d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-home-2/hero.webp',
     mainIngredient: '복숭아',
     description: '과즙이 풍부한 복숭아를 모짜렐라치즈와 곁들인, 의외로 잘 어울리는 산뜻한 샐러드예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-home-3', month: 8, title: '복숭아 화채', subtitle: '시원하고 달콤한 여름 후식',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-home-3/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아를 사이다에 띄운, 달콤하고 시원한 여름철 대표 후식이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-home-4', month: 8, title: '복숭아잼', subtitle: '두고두고 발라 먹는 여름 잼',
     category: '양념', difficulty: '보통', level: 'home', cookTime: 50, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-home-4/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아를 잘게 썰어 설탕과 레몬즙으로 조린, 향긋한 여름철 잼이에요.',
     masterclass: {
@@ -129,7 +129,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-home-5', month: 8, title: '복숭아 요거트볼', subtitle: '부드럽고 건강한 여름 아침',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1571212515416-fca325e3702a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-home-5/hero.webp',
     mainIngredient: '복숭아',
     description: '달콤한 복숭아와 그릭요거트를 함께 즐기는, 건강하고 가벼운 여름 아침 메뉴예요.',
     masterclass: {
@@ -160,7 +160,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-weekend-1', month: 8, title: '복숭아 빙수', subtitle: '과즙 가득한 여름 대표 빙수',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-weekend-1/hero.webp',
     mainIngredient: '복숭아',
     description: '얼음을 곱게 갈아 복숭아를 듬뿍 올린, 여름철 인기 만점 빙수예요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-weekend-2', month: 8, title: '복숭아 샹그리아', subtitle: '달콤한 여름 와인칵테일',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-weekend-2/hero.webp',
     mainIngredient: '복숭아',
     description: '화이트와인에 복숭아를 재운, 달콤하고 향긋한 여름철 와인칵테일이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-weekend-3', month: 8, title: '복숭아 코블러', subtitle: '미국식 따뜻한 과일 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 55, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-weekend-3/hero.webp',
     mainIngredient: '복숭아',
     description: '조린 복숭아 위에 비스킷 반죽을 올려 구운, 미국 남부의 대표 여름 디저트예요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-weekend-4', month: 8, title: '복숭아 냉파스타', subtitle: '상큼한 여름 별미 파스타',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1567608285969-48e4bbe0d399?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-weekend-4/hero.webp',
     mainIngredient: '복숭아',
     description: '차가운 파스타에 복숭아와 프로슈토를 곁들인, 여름철 별미 냉파스타예요.',
     masterclass: {
@@ -277,7 +277,7 @@ export const recipesPeachExpansion: Recipe[] = [
   {
     id: 'peach-weekend-5', month: 8, title: '복숭아 콩포트', subtitle: '두고두고 활용하는 여름 콩포트',
     category: '양념', difficulty: '쉬움', level: 'weekend', cookTime: 35, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-weekend-5/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아를 설탕과 바닐라에 은근히 조린, 여러 디저트에 활용하기 좋은 콩포트예요.',
     masterclass: {
@@ -309,7 +309,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-world-1', month: 8, title: '페스카 알라 그리글리아', subtitle: '이탈리아식 구운 복숭아',
     category: '디저트', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 여름철 복숭아를 그릴에 구워 마스카포네치즈와 함께 먹는 것이 별미로 알려져 있어요. 구우면 단맛이 응축되고 훨씬 향긋해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1629828874514-979f5f8f0b48?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-world-1/hero.webp',
     mainIngredient: '복숭아',
     description: '그릴에 구운 복숭아에 마스카포네치즈를 곁들인, 이탈리아식 여름 디저트예요.',
     masterclass: {
@@ -339,7 +339,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-world-2', month: 8, title: '모모노 간로니', subtitle: '일본식 복숭아 설탕조림',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '일본', note: '모모(桃)는 일본어로 복숭아를 뜻해요. 일본에서는 최고급 복숭아를 설탕물에 살짝 조려 향과 색을 살린 간로니를 다과로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1629828874514-979f5f8f0b48?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-world-2/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아를 설탕물에 살짝 조려 향과 색을 살린, 일본식 다과예요.',
     masterclass: {
@@ -369,7 +369,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-world-3', month: 8, title: '피치 아이스티', subtitle: '미국 남부식 시원한 여름 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '미국', note: '피치 아이스티(peach iced tea)는 미국 남부, 특히 조지아주에서 여름철 즐겨 마시는 대표 음료예요. 홍차의 떫은맛과 복숭아의 단맛이 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-world-3/hero.webp',
     mainIngredient: '복숭아',
     description: '홍차에 복숭아를 더한, 미국 남부식 시원한 여름 음료예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-world-4', month: 8, title: '복숭아 타르트타탕', subtitle: '프랑스식 거꾸로 굽는 타르트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '타르트타탕은 프랑스의 대표 디저트로, 원래는 사과로 만들지만 복숭아 같은 여름 과일로도 훌륭하게 응용돼요. 뒤집어냈을 때 드러나는 캐러멜라이즈된 윗면이 하이라이트예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-world-4/hero.webp',
     mainIngredient: '복숭아',
     description: '캐러멜라이즈된 복숭아를 바닥에 깔고 타르트지를 덮어 구운 뒤 뒤집어내는, 프랑스식 여름 타르트예요.',
     masterclass: {
@@ -431,7 +431,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-world-5', month: 8, title: '가스파초 데 멜로코톤', subtitle: '스페인식 차가운 복숭아 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '스페인', note: '스페인에서는 여름철 토마토 가스파초의 변형으로 복숭아를 활용한 차가운 수프를 즐기기도 해요. 산뜻하고 달콤한 여름 별미예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-world-5/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아와 토마토를 갈아 만든, 산뜻하고 달콤한 스페인식 차가운 수프예요.',
     masterclass: {
@@ -464,7 +464,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-chef-1', month: 8, title: '복숭아 부라타 카프레제', subtitle: '이탈리아식 화려한 전채',
     category: '전채', difficulty: '아주 쉬움', level: 'chef', cookTime: 20, servings: 3,
     platingGuide: '넓은 접시에 부라타치즈를 중앙에 놓고 그 주위로 복숭아와 프로슈토를 겹쳐 담은 뒤, 올리브오일을 두르고 발사믹글레이즈를 지그재그로 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-chef-1/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아에 프로슈토와 부라타치즈를 곁들인, 단맛과 짠맛이 대비를 이루는 이탈리아식 전채예요.',
     masterclass: {
@@ -494,7 +494,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-chef-2', month: 8, title: '복숭아 콩포트 타르트', subtitle: '진한 복숭아 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-chef-2/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아를 화이트와인과 바닐라에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 여름 디저트예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-chef-3', month: 8, title: '복숭아 판나코타', subtitle: '이탈리아 크림 디저트에 복숭아를',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 복숭아 콩포트와 민트잎을 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-chef-3/hero.webp',
     mainIngredient: '복숭아',
     description: '부드러운 이탈리아식 크림 디저트에 복숭아 콩포트를 더한, 여름 향 가득한 판나코타예요.',
     masterclass: {
@@ -557,7 +557,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-chef-4', month: 8, title: '복숭아소스 폭찹', subtitle: '진한 과일소스를 곁들인 돼지고기 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 구운 폭찹을 놓고, 복숭아소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 폭찹 위에 소스를 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-chef-4/hero.webp',
     mainIngredient: '복숭아',
     description: '두툼하게 구운 돼지고기 폭찹에 복숭아로 만든 진한 소스를 곁들인, 서양식 여름 메인요리예요.',
     masterclass: {
@@ -589,7 +589,7 @@ export const recipesPeachExpansion: Recipe[] = [
     id: 'peach-chef-5', month: 8, title: '복숭아 그라니타', subtitle: '이탈리아식 상큼한 셔벗',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '차갑게 식힌 유리잔에 그라니타를 포크로 긁어 소복이 담고, 민트잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/peach-chef-5/hero.webp',
     mainIngredient: '복숭아',
     description: '복숭아를 얼려서 긁어낸, 향긋하고 상큼한 이탈리아식 여름 셔벗이에요.',
     masterclass: {

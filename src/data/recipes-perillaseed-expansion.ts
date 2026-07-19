@@ -14,7 +14,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-home-2', month: 1, title: '들깨 무나물', subtitle: '고소함을 더한 기본 무나물',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-home-2/hero.webp',
     mainIngredient: '들깨',
     description: '채 썬 무를 볶다가 들깻가루를 더해 고소하게 마무리한, 기본 나물 반찬이에요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-home-3', month: 1, title: '들깨 수제비', subtitle: '고소한 국물의 겨울 별미',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-home-3/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루를 푼 육수에 감자와 애호박, 수제비 반죽을 끓인, 든든하고 고소한 겨울 별미예요.',
     masterclass: {
@@ -74,7 +74,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-home-4', month: 1, title: '들깨 버섯볶음', subtitle: '고소하게 볶아낸 버섯 반찬',
     category: '볶음', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-home-4/hero.webp',
     mainIngredient: '들깨',
     description: '버섯을 볶다가 들깻가루로 고소하게 마무리한, 간단한 밥반찬이에요.',
     masterclass: {
@@ -103,7 +103,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-home-5', month: 1, title: '들깨 두부조림', subtitle: '고소한 국물이 배어든 두부조림',
     category: '조림', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-home-5/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루를 푼 양념장에 두부를 조려낸, 고소하고 부드러운 조림이에요.',
     masterclass: {
@@ -135,7 +135,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-weekend-1', month: 1, title: '들깨 닭볶음탕', subtitle: '고소함을 더한 든든한 닭요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 55, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-weekend-1/hero.webp',
     mainIngredient: '들깨',
     description: '매콤하게 조린 닭볶음탕에 들깻가루를 더해 국물이 한층 부드럽고 고소해진 요리예요.',
     masterclass: {
@@ -165,7 +165,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-weekend-2', month: 1, title: '들깨 시래기찜', subtitle: '깊은 겨울 맛의 찜요리',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-weekend-2/hero.webp',
     mainIngredient: '들깨',
     description: '삶은 시래기를 들깻가루와 육수로 자박하게 쪄낸, 구수하고 깊은 맛의 겨울 찜이에요.',
     masterclass: {
@@ -196,7 +196,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-weekend-3', month: 1, title: '들깨 크림수제비', subtitle: '동서양이 만난 크리미한 수제비',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-weekend-3/hero.webp',
     mainIngredient: '들깨',
     description: '들깨 육수에 생크림을 더해 부드럽게 완성한, 한식과 양식이 만난 수제비예요.',
     masterclass: {
@@ -227,7 +227,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-weekend-4', month: 1, title: '들깨 강정', subtitle: '고소하게 씹히는 견과류 강정',
     category: '간식', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-weekend-4/hero.webp',
     mainIngredient: '들깨',
     description: '통들깨와 견과류를 조청으로 버무려 굳힌, 고소한 전통 다과예요.',
     masterclass: {
@@ -257,7 +257,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
   {
     id: 'perillaseed-weekend-5', month: 1, title: '들깨 옹심이탕', subtitle: '쫄깃한 새알심이 든 고소한 탕',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-weekend-5/hero.webp',
     mainIngredient: '들깨',
     description: '감자로 만든 쫄깃한 옹심이를 들깨 국물에 끓여낸, 강원도식 든든한 겨울 탕이에요.',
     masterclass: {
@@ -290,7 +290,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-world-1', month: 1, title: '고마아에', subtitle: '일본식 참깨소스 무침을 들깨로',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '고마아에(胡麻和え)는 참깨소스로 채소를 무친 일본 가정식이에요. 참깨 대신 들깨를 쓰면 향이 더 진하고 구수한 한국식 변형이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-world-1/hero.webp',
     mainIngredient: '들깨',
     description: '데친 시금치를 들깻가루 소스로 버무린, 일본식 참깨무침을 들깨로 재해석한 반찬이에요.',
     masterclass: {
@@ -321,7 +321,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-world-2', month: 1, title: '즈마장몐', subtitle: '중국식 참깨소스 냉면을 들깨로',
     category: '면요리', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '중국', note: '즈마장몐(芝麻酱面)은 중국 베이징식 참깨소스 비빔면이에요. 들깨로 소스를 만들면 참깨보다 더 구수하고 묵직한 향의 한국식 변형이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-world-2/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루로 만든 진한 소스에 면을 비벼 먹는, 중국식 참깨면을 들깨로 재해석한 요리예요.',
     masterclass: {
@@ -352,7 +352,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-world-3', month: 1, title: '들깨 페스토 파스타', subtitle: '바질 대신 들깨로 만든 이탈리아식 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 페스토는 원래 바질과 잣으로 만들지만, 들깨로 만들면 견과류 향이 더해진 독특한 동서양 퓨전 소스가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548940740-204726a19be3?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-world-3/hero.webp',
     mainIngredient: '들깨',
     description: '들깨와 견과류, 올리브오일을 갈아 만든 페스토를 파스타에 버무린, 고소함이 진한 요리예요.',
     masterclass: {
@@ -383,7 +383,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-world-4', month: 1, title: '들깨 벨루테 수프', subtitle: '프랑스식 크리미한 들깨 수프',
     category: '수프', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '프랑스', note: '벨루테는 루로 걸쭉함을 낸 뒤 곱게 갈아 마무리하는 프랑스 클래식 수프예요. 들깨로 만들면 견과류 수프 특유의 고소함이 살아나는 변형이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-world-4/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루를 육수에 풀어 곱게 갈아 만든, 벨벳처럼 부드러운 프랑스식 수프예요.',
     masterclass: {
@@ -415,7 +415,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-world-5', month: 1, title: '들깨 반쎄오', subtitle: '베트남식 부침개에 들깨를 더하다',
     category: '전요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 2,
     cuisineContext: { country: '베트남', note: '반쎄오(bánh xèo)는 쌀가루 반죽에 새우와 숙주를 넣어 바삭하게 부친 베트남식 부침개예요. 반죽에 들깻가루를 더하면 향이 훨씬 고소해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-world-5/hero.webp',
     mainIngredient: '들깨',
     description: '쌀가루와 들깻가루 반죽에 새우와 숙주를 채워 바삭하게 부친, 베트남식 고소한 전이에요.',
     masterclass: {
@@ -448,7 +448,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-chef-1', month: 1, title: '들깨 뵈샤멜 그라탕', subtitle: '프랑스식 화이트소스에 들깨를 더하다',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 55, servings: 3,
     platingGuide: '작은 그라탕 그릇에 소스를 채우고 오븐에서 그대로 구워, 표면이 진한 갈색으로 그을린 채 그릇째 상에 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-chef-1/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루로 향을 낸 뵈샤멜소스에 감자와 채소를 겹겹이 쌓아 구운, 고소함이 진한 그라탕이에요.',
     masterclass: {
@@ -480,7 +480,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-chef-2', month: 1, title: '들깨 크렘브륄레', subtitle: '고소함이 진한 프랑스식 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '작은 라메킨에 크림을 담아 그대로 굳히고, 먹기 직전 표면에 설탕을 얇게 뿌려 토치로 그을려 유리처럼 바삭한 막을 만듭니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-chef-2/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루로 향을 낸 커스터드 크림 위에 설탕을 그을려 바삭한 막을 만든, 고소함이 진한 디저트예요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-chef-3', month: 1, title: '들깨 페스토 크루도', subtitle: '차가운 파스타에 얹은 신선한 소스',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '넓은 접시에 차가운 파스타를 둥지 모양으로 담고, 그 위에 들깨 페스토를 스푼으로 얹은 뒤 방울토마토를 색색이 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-chef-3/hero.webp',
     mainIngredient: '들깨',
     description: '차갑게 식힌 파스타에 신선한 들깨 페스토와 방울토마토를 올린, 여름에도 겨울에도 산뜻한 전채예요.',
     masterclass: {
@@ -543,7 +543,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-chef-4', month: 1, title: '들깨 브라운버터 스캘럽', subtitle: '가리비에 고소함을 더한 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 가리비를 3~4개 부채꼴로 배치하고, 브라운버터 들깨소스를 숟가락으로 지그재그로 두른 뒤 새싹채소를 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-chef-4/hero.webp',
     mainIngredient: '들깨',
     description: '겉을 바삭하게 시어링한 가리비에 들깨 브라운버터소스를 곁들인, 고소함과 감칠맛이 겹겹이 쌓인 요리예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesPerillaSeedExpansion: Recipe[] = [
     id: 'perillaseed-chef-5', month: 1, title: '들깨 젤라토', subtitle: '고소함이 응축된 이탈리아식 아이스크림',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '차갑게 식힌 컵에 젤라토를 스쿱으로 동그랗게 담고, 위에 볶은 통들깨를 살짝 뿌린 뒤 조청을 가늘게 한 줄 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perillaseed-chef-5/hero.webp',
     mainIngredient: '들깨',
     description: '들깻가루를 우유와 크림에 우려내 만든, 고소함이 진하게 응축된 이탈리아식 젤라토예요.',
     masterclass: {

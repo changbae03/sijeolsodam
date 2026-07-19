@@ -13,7 +13,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-home-1', month: 8, title: '깻잎전', subtitle: '향긋한 깻잎을 통째로 부쳐낸 기본 전',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-home-1/hero.webp',
     mainIngredient: '깻잎', description: '깻잎 한 장 한 장에 고기소를 채워 부친, 향긋한 향과 든든한 속이 함께 느껴지는 전이에요.',
     masterclass: {
       chefIntro: '깻잎전은 보기엔 단순해도 손이 꽤 많이 가는 메뉴예요. 잎 한 장마다 속을 채우고, 다시 한 장을 겹쳐 덮고, 그걸 또 반죽에 묻혀 부치는 과정을 반복해야 하거든요. 그래도 한 입 베어 물면 고기의 든든함과 깻잎 특유의 알싱한 향이 동시에 느껴지는, 손이 가는 만큼 보람 있는 전이에요. 여름 깻잎은 잎이 크고 두꺼워서 속을 채우기에 특히 좋은 시기예요.',
@@ -57,7 +57,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-home-2', month: 8, title: '깻잎김치', subtitle: '한 장씩 양념을 얹어 만드는 향긋한 즉석 김치',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-home-2/hero.webp',
     mainIngredient: '깻잎', description: '깻잎 한 장 한 장에 양념을 발라 쌓아 올린, 짭짤하고 향긋한 즉석 김치예요.',
     masterclass: {
       chefIntro: '깻잎김치는 발효가 필요 없는 즉석 김치라서, 만든 그날 바로 먹을 수 있다는 게 가장 큰 매력이에요. 다만 잎이 얇아서 양념이 너무 짜거나 너무 묽으면 금방 무너지듯 흐물흐물해지니, 양념 농도를 적당히 맞추는 게 중요해요. 잎을 켜켜이 쌓을 때마다 양념을 골고루 펴 바르는 그 손길이 이 김치의 전부예요.',
@@ -89,7 +89,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-home-3', month: 8, title: '깻잎 멸치볶음', subtitle: '향긋한 깻잎과 고소한 멸치의 조합',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-home-3/hero.webp',
     mainIngredient: '깻잎', description: '바삭하게 볶은 멸치에 깻잎을 더해 향을 살린, 짭짤하고 고소한 밑반찬이에요.',
     masterclass: {
       chefIntro: '멸치볶음은 보통 단순하게 끝나는 반찬이지만, 마지막에 깻잎을 한 줌 더하면 전혀 다른 음식처럼 향이 살아나요. 깻잎 특유의 알싱한 향이 멸치의 고소함과 짠맛을 부드럽게 정리해주는 느낌이라, 한 번 만들어보면 자꾸 이 조합을 찾게 돼요.',
@@ -128,7 +128,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-weekend-1', month: 8, title: '깻잎 만두', subtitle: '향긋한 깻잎을 듬뿍 채운 만두',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-weekend-1/hero.webp',
     mainIngredient: '깻잎', description: '잘게 썬 깻잎을 듬뿍 넣어 빚은 만두로, 한입 베어 무는 순간 향긋함이 입안 가득 퍼져요.',
     masterclass: {
       chefIntro: '깻잎만두는 흔히 보는 메뉴는 아니지만, 한 번 맛보면 그 향에 의외로 빠지게 되는 만두예요. 부추만두와 비슷한 발상이지만 깻잎은 향이 더 알싱하고 끝맛이 산뜻해서, 기름진 돼지고기와 만나면 느끼함을 한층 더 잘 잡아줘요. 다만 깻잎은 부추보다 잎이 넓고 수분이 적어서, 다지는 방식이 조금 달라요.',
@@ -166,7 +166,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-weekend-2', month: 8, title: '깻잎 보쌈', subtitle: '쌈채소를 깻잎으로 풍성하게 채운 보쌈상',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 120, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-weekend-2/hero.webp',
     mainIngredient: '깻잎', description: '푹 삶은 돼지고기를 향긋한 깻잎에 싸 먹는, 손님 초대상에도 좋은 풍성한 보쌈이에요.',
     masterclass: {
       chefIntro: '보쌈은 보통 상추와 깻잎을 같이 곁들이지만, 이번엔 깻잎을 주인공으로 풍성하게 준비해보는 메뉴예요. 깻잎의 알싱한 향이 기름진 수육과 만나면, 한 입 쌀 때마다 느끼함이 확 잡히는 게 느껴져요. 시간이 좀 걸리는 메뉴지만, 손님상이나 가족 모임에 내면 다들 좋아하는 메뉴예요.',
@@ -201,7 +201,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-weekend-3', month: 8, title: '깻잎 페스토 파스타', subtitle: '향긋한 깻잎으로 만든 색다른 페스토',
     category: '면요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-weekend-3/hero.webp',
     mainIngredient: '깻잎', description: '바질 대신 깻잎으로 만든 향긋한 페스토를 곁들인, 한식 재료를 이탈리아식으로 풀어낸 파스타예요.',
     masterclass: {
       chefIntro: '바질 페스토를 만들 때 쓰는 원리를 그대로 깻잎에 적용해본 메뉴예요. 처음엔 어색하게 느껴질 수 있지만, 만들어 먹어보면 깻잎의 향이 바질과는 또 다른 매력으로 다가와요. 한식 재료 하나로 양식을 만들어보는 재미가 있는 레시피예요.',
@@ -233,7 +233,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-weekend-4', month: 8, title: '깻잎 장어구이', subtitle: '향긋한 깻잎과 만나는 보양식',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-weekend-4/hero.webp',
     mainIngredient: '깻잎', description: '양념을 발라 구운 장어를 깻잎에 싸 먹는, 여름 보양식의 대표적인 조합이에요.',
     masterclass: {
       chefIntro: '장어와 깻잎은 여름 보양식에서 빠지지 않는 단짝이에요. 장어 특유의 기름지고 진한 맛을 깻잎의 알싱한 향이 깔끔하게 정리해주기 때문이에요. 장어집에서 항상 깻잎을 함께 내는 이유가 바로 이거예요.',
@@ -266,7 +266,7 @@ export const recipesPerillaExpansion: Recipe[] = [
   {
     id: 'perilla-weekend-5', month: 8, title: '깻잎 닭갈비', subtitle: '향긋함을 더한 매콤한 춘천식 닭갈비',
     category: '메인', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-weekend-5/hero.webp',
     mainIngredient: '깻잎', description: '매콤하게 양념한 닭갈비에 깻잎을 듬뿍 더해, 마지막 향을 한층 살린 메뉴예요.',
     masterclass: {
       chefIntro: '춘천식 닭갈비는 보통 양배추나 깻잎을 채소로 곁들이는데, 깻잎을 듬뿍 쓰면 매콤한 양념 사이로 향긋함이 확 살아나요. 다른 채소보다 향이 강해서, 적은 양으로도 전체 맛의 인상이 크게 바뀌는 재료예요.',
@@ -309,7 +309,7 @@ export const recipesPerillaExpansion: Recipe[] = [
       country: '일본',
       note: '일본에서는 깻잎과 매우 비슷한 시소(차조기) 잎을 튀김으로 즐기는 경우가 많아요. 한국 깻잎과는 품종이 조금 다르지만 향의 결이 비슷해서, 같은 방식으로 튀기면 비슷한 풍미를 느낄 수 있어요. 일본 가정과 튀김집에서 여름철 흔히 만나는 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-world-1/hero.webp',
     mainIngredient: '깻잎', description: '얇은 튀김옷을 입혀 가볍게 튀긴 깻잎으로, 일본 텐푸라의 산뜻한 버전이에요.',
     masterclass: {
       chefIntro: '일본에서 시소를 튀기는 방식 그대로 깻잎에 적용해본 메뉴예요. 튀김옷이 얇아야 깻잎 본연의 향이 가려지지 않아요. 한 장씩 튀기는 데 시간이 좀 걸리지만, 입에 넣는 순간 바스락거리면서 향이 확 퍼지는 게 매력이에요.',
@@ -351,7 +351,7 @@ export const recipesPerillaExpansion: Recipe[] = [
       country: '베트남',
       note: '베트남 월남쌈은 라이스페이퍼에 다양한 허브와 채소, 고기를 싸 먹는 음식이에요. 베트남에서는 민트나 고수를 주로 쓰지만, 깻잎을 더하면 향의 층이 한층 더 풍부해지는 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-world-2/hero.webp',
     mainIngredient: '깻잎', description: '라이스페이퍼에 고기와 채소, 깻잎을 함께 싸 먹는, 동서양 허브 향이 함께 느껴지는 산뜻한 쌈이에요.',
     masterclass: {
       chefIntro: '베트남식 허브에 한식 깻잎을 더해보는 발상이에요. 민트의 청량함과 깻잎의 알싱한 향이 한 번에 느껴지는 게 신선해요. 라이스페이퍼만 잘 다루면 누구나 쉽게 만들 수 있는 메뉴예요.',
@@ -388,7 +388,7 @@ export const recipesPerillaExpansion: Recipe[] = [
       country: '이탈리아',
       note: '부르스케타는 이탈리아에서 구운 빵에 다양한 토핑을 올려 먹는 가벼운 전채예요. 보통 토마토나 바질을 올리지만, 바질 대신 깻잎 페스토를 활용하면 색다른 향을 가진 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-world-3/hero.webp',
     mainIngredient: '깻잎', description: '구운 바게트 위에 깻잎 페스토와 토마토를 올린, 이탈리아식 전채를 한식 재료로 재해석한 메뉴예요.',
     masterclass: {
       chefIntro: '부르스케타는 재료만 준비되면 정말 빠르게 완성되는 전채예요. 깻잎 페스토를 올리면 평범한 부르스케타가 향긋한 한식-양식 퓨전으로 바뀌어요.',
@@ -419,7 +419,7 @@ export const recipesPerillaExpansion: Recipe[] = [
       country: '태국',
       note: '태국의 팟 카파오(향신 바질 닭볶음)는 홀리바질을 듬뿍 넣어 향을 살리는 요리예요. 홀리바질을 구하기 어려울 때 깻잎으로 대체하면, 원래의 향과는 다르지만 비슷한 역할을 하는 향긋한 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-world-4/hero.webp',
     mainIngredient: '깻잎', description: '다진 닭고기를 매콤하게 볶아 깻잎을 듬뿍 더한, 태국 팟 카파오를 한식 재료로 재해석한 메뉴예요.',
     masterclass: {
       chefIntro: '태국 길거리 음식의 대표 메뉴를 깻잎으로 재해석해봤어요. 홀리바질의 화한 향과는 다르지만, 깻잎도 그 나름의 알싱한 향으로 매콤한 양념을 잘 받쳐줘요.',
@@ -461,7 +461,7 @@ export const recipesPerillaExpansion: Recipe[] = [
       country: '일본',
       note: '일본 가정에서는 두부에 채 썬 시소(차조기)와 폰즈 소스를 곁들이는 산뜻한 샐러드를 즐겨요. 깻잎으로 대체하면 비슷한 향의 결을 가진 한식-일식 변형이 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-world-5/hero.webp',
     mainIngredient: '깻잎', description: '부드러운 두부 위에 채 썬 깻잎을 올려 폰즈소스를 곁들인, 일본식의 산뜻하고 가벼운 샐러드예요.',
     masterclass: {
       chefIntro: '일본 가정식에서 자주 만나는 가벼운 곁들임 요리예요. 깻잎의 향이 부드러운 두부와 만나면 산뜻한 대비가 느껴져요.',
@@ -491,7 +491,7 @@ export const recipesPerillaExpansion: Recipe[] = [
     id: 'perilla-chef-1', month: 8, title: '깻잎오일과 관자', subtitle: '향긋한 오일과 시어드 관자의 정교한 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '접시에 깻잎오일을 가늘게 한 줄 그리고 시어드한 관자를 올려보세요. 깻잎 한 장을 얇게 채 썰어 튀겨 올리면 식감이 더해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-chef-1/hero.webp',
     mainIngredient: '깻잎', description: '깻잎을 갈아 만든 향긋한 오일에 시어드한 관자를 올린, 한식 향을 모던하게 풀어낸 정교한 전채예요.',
     masterclass: {
       chefIntro: '깻잎을 오일로 만든다는 발상이 신선해요. 색과 향을 동시에 살리는 모던 키친의 기법을 한식 재료에 적용해본 메뉴예요. 깻잎은 향이 워낙 진해서, 오일에 우려내면 적은 양으로도 충분한 풍미가 나와요.',
@@ -531,7 +531,7 @@ export const recipesPerillaExpansion: Recipe[] = [
     id: 'perilla-chef-2', month: 8, title: '깻잎 무스와 베이컨 칩', subtitle: '가벼운 무스와 바삭한 베이컨의 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '작은 유리잔에 무스를 채우고 베이컨 칩을 세워 꽂아보세요. 깻잎 새싹을 흩뿌리면 색이 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-chef-2/hero.webp',
     mainIngredient: '깻잎', description: '가볍게 휘핑한 깻잎 무스에 바삭한 베이컨 칩을 더한, 질감의 대비가 즐거운 정교한 전채예요.',
     masterclass: {
       chefIntro: '깻잎을 무스로 만들면 향은 그대로 살리면서 훨씬 가벼운 질감을 경험할 수 있어요. 짭짤한 베이컨과의 대비가 이 요리의 핵심이에요.',
@@ -565,7 +565,7 @@ export const recipesPerillaExpansion: Recipe[] = [
     id: 'perilla-chef-3', month: 8, title: '깻잎 퓌레와 오리가슴살', subtitle: '향긋한 깻잎 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 오리 기름 한 방울을 점으로 더하세요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-chef-3/hero.webp',
     mainIngredient: '깻잎', description: '향긋한 깻잎 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 한식 재료를 프렌치 비스트로풍으로 풀어낸 메인이에요.',
     masterclass: {
       chefIntro: '깻잎의 알싱한 향이 오리의 진한 풍미를 한층 살려줘요. 익숙한 재료의 새로운 가능성을 보여주는 메뉴예요.',
@@ -600,7 +600,7 @@ export const recipesPerillaExpansion: Recipe[] = [
     id: 'perilla-chef-4', month: 8, title: '깻잎 콩소메', subtitle: '맑게 거른 깻잎의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 작은 깻잎 한 장을 띄워보세요. 옅은 초록빛이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-chef-4/hero.webp',
     mainIngredient: '깻잎', description: '깻잎을 갈아 맑게 걸러낸, 향긋함이 진하게 살아있는 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '다른 채소 콩소메들과 같은 모던 기법을 깻잎에 적용한 요리예요. 향이 워낙 진한 재료라서, 적은 양으로도 풍미가 충분히 느껴져요.',
@@ -635,7 +635,7 @@ export const recipesPerillaExpansion: Recipe[] = [
     id: 'perilla-chef-5', month: 8, title: '깻잎 크리스프와 참치 타르타르', subtitle: '바삭함과 신선함의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 35, servings: 4,
     platingGuide: '평평한 접시에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 참치 타르타르를 정확히 중앙에 올려보세요.',
-    heroImage: 'https://images.unsplash.com/photo-1623241899612-7c80818f6f8b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/perilla-chef-5/hero.webp',
     mainIngredient: '깻잎', description: '바삭하게 튀긴 깻잎 위에 참치 타르타르를 올린, 한입에 즐기는 고급스러운 핑거푸드예요.',
     masterclass: {
       chefIntro: '깻잎을 튀기면 향은 그대로 남으면서 전혀 다른 바삭한 질감으로 변해요. 잎 모양 그대로 튀기니 모양도 살아있어서 플레이팅이 한결 수월해요.',

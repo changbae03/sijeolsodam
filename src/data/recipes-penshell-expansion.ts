@@ -14,7 +14,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-home-1', month: 2, title: '키조개살튀김', subtitle: '봄을 준비하는 조개살을 바삭하게 튀긴 별미',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-home-1/hero.webp',
     mainIngredient: '키조개',
     description: '봄을 준비하며 살이 차오르는 키조개살을 바삭하게 튀겨낸, 새콤한 소스가 잘 어울리는 별미예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-home-2', month: 5, title: '키조개관자버터구이', subtitle: '늦봄 가장 통통한 관자를 버터에 노릇하게 구운 별미',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534080391025-a77b4afb154f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-home-2/hero.webp',
     mainIngredient: '키조개',
     description: '늦봄 가장 살이 차오른 키조개 관자를 버터에 노릇하게 구워, 그 자체의 단맛을 살린 근사한 한 접시예요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-home-3', month: 3, title: '키조개볶음', subtitle: '쫄깃하고 시원한 기본 볶음',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-home-3/hero.webp',
     mainIngredient: '키조개',
     description: '키조개살을 채소와 함께 볶은, 쫄깃하고 시원한 봄철 기본 볶음이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-home-4', month: 3, title: '키조개관자회', subtitle: '탱탱하고 담백한 회',
     category: '전채', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-home-4/hero.webp',
     mainIngredient: '키조개',
     description: '키조개 관자를 얇게 저며 회로 즐기는, 탱탱하고 담백한 별미예요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-weekend-1', month: 3, title: '키조개샤부샤부', subtitle: '맑고 담백한 특별한 요리',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-weekend-1/hero.webp',
     mainIngredient: '키조개',
     description: '맑은 육수에 키조개를 살짝 데쳐 먹는, 담백하고 깔끔한 손님상 요리예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-weekend-2', month: 3, title: '키조개파전', subtitle: '쫄깃함이 살아있는 해물전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-weekend-2/hero.webp',
     mainIngredient: '키조개',
     description: '쪽파와 키조개살을 듬뿍 넣어 부친, 쫄깃함이 살아있는 해물전이에요.',
     masterclass: {
@@ -213,7 +213,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-weekend-3', month: 3, title: '키조개크림파스타', subtitle: '고소하고 담백한 이탈리아식',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-weekend-3/hero.webp',
     mainIngredient: '키조개',
     description: '키조개관자를 크림소스에 버무린, 고소하고 담백한 이탈리아식 파스타예요.',
     masterclass: {
@@ -242,7 +242,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-weekend-4', month: 3, title: '키조개찜', subtitle: '담백하고 깔끔한 찜요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-weekend-4/hero.webp',
     mainIngredient: '키조개',
     description: '키조개를 대파, 생강과 함께 맑게 찐, 담백하고 깔끔한 찜요리예요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-weekend-5', month: 3, title: '키조개덮밥', subtitle: '담백하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-weekend-5/hero.webp',
     mainIngredient: '키조개',
     description: '키조개관자를 간장버터소스에 볶아 밥 위에 올린, 담백하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -302,7 +302,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-world-1', month: 3, title: '감바스 스타일 키조개', subtitle: '스페인식 마늘올리브오일 조리',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '감바스 알 아히요는 스페인의 대표 타파스로, 새우 대신 조개관자로 응용해도 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-world-1/hero.webp',
     mainIngredient: '키조개',
     description: '키조개관자를 마늘과 올리브오일에 보글보글 끓여낸, 스페인식 대표 타파스를 응용한 요리예요.',
     masterclass: {
@@ -331,7 +331,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-world-2', month: 3, title: '키조개 세비체', subtitle: '남미식 상큼한 세비체',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 해산물을 라임즙에 재워 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-world-2/hero.webp',
     mainIngredient: '키조개',
     description: '신선한 키조개관자를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -361,7 +361,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-world-3', month: 3, title: '키조개관자 리조또', subtitle: '이탈리아식 크리미 쌀요리',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 관자를 넣은 리조또가 고급 해산물 요리로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-world-3/hero.webp',
     mainIngredient: '키조개',
     description: '키조개관자를 올린, 크리미하고 고급스러운 이탈리아식 리조또예요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-world-4', month: 3, title: '키조개관자 텐푸라', subtitle: '일본식 튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '텐푸라는 일본식 튀김 기법으로, 얼음물 반죽과 낮은 온도의 기름이 바삭함의 비결이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-world-4/hero.webp',
     mainIngredient: '키조개',
     description: '키조개관자를 일본식 텐푸라 반죽으로 튀긴, 가볍고 바삭한 튀김이에요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-world-5', month: 3, title: '키조개관자 아쿠아파짜', subtitle: '이탈리아식 토마토 해물찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 해산물을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-world-5/hero.webp',
     mainIngredient: '키조개',
     description: '토마토와 화이트와인에 키조개관자를 살짝 익힌, 이탈리아식 해물찜이에요.',
     masterclass: {
@@ -454,7 +454,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-chef-1', month: 3, title: '코퀴유 생자크', subtitle: '프랑스식 조개껍질 그라탕',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '깨끗이 씻은 가리비 껍질에 담아 오븐에서 바로 상에 올려, 껍질째 서빙되는 프랑스 클래식의 우아함을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-chef-1/hero.webp',
     mainIngredient: '키조개',
     description: '관자를 화이트와인 크림소스에 버무려 껍질에 채워 그라탕처럼 구운, 프랑스의 대표적인 클래식 요리예요.',
     masterclass: {
@@ -485,7 +485,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-chef-2', month: 3, title: '키조개 콘부지메', subtitle: '일본식 다시마숙성',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '다시마에서 꺼낸 관자를 얇게 저며 접시에 담고, 다시마향이 밴 것을 강조하며 간장을 살짝 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-chef-2/hero.webp',
     mainIngredient: '키조개',
     description: '신선한 관자를 다시마 사이에 끼워 몇 시간 숙성시킨, 일본의 정교한 우마미 강화 기법이에요.',
     masterclass: {
@@ -515,7 +515,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-chef-3', month: 3, title: 'XO소스 키조개볶음', subtitle: '중국 광둥식 고급 해물소스',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '뜨거운 웍에서 바로 접시에 옮겨 담아 윤기 나는 XO소스가 관자를 코팅한 모습을 그대로 보여줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-chef-3/hero.webp',
     mainIngredient: '키조개',
     description: '건해산물을 오래 볶아 만든 고급 XO소스에 관자를 재빨리 볶아낸, 홍콩의 상징적인 고급 요리예요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-chef-4', month: 3, title: '키조개 티라디토', subtitle: '페루식 얇게 저민 소스회',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '넓은 접시에 관자를 얇게 부채꼴로 펼쳐 담고, 소스를 위에서 붓으로 그리듯 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-chef-4/hero.webp',
     mainIngredient: '키조개',
     description: '관자를 종이처럼 얇게 저며 매콤한 소스를 부어낸, 페루의 일본계 이민자 요리가 탄생시킨 퓨전 요리예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesPenShellExpansion: Recipe[] = [
     id: 'penshell-chef-5', month: 3, title: '관자 타르타르', subtitle: '프랑스식 다져만드는 생회',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '둥근 무스링으로 모양을 잡아 접시 가운데 올리고, 링을 조심스럽게 빼내 매끈한 원통형으로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-chef-5/hero.webp',
     mainIngredient: '키조개',
     description: '관자를 칼로 곱게 다져 양념한, 프랑스 정찬에서 전채로 즐기는 클래식 타르타르예요.',
     masterclass: {

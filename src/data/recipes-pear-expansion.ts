@@ -10,7 +10,7 @@ export const recipesPearExpansion: Recipe[] = [
   {
     id: 'pear-home-4', month: 9, title: '배숙', subtitle: '생강향 가득한 전통 배 디저트',
     category: '디저트', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-home-4/hero.webp',
     mainIngredient: '배', description: '생강과 꿀물에 배를 살짝 익힌, 소화에도 좋은 전통 한식 디저트예요.',
     masterclass: {
       chefIntro: '명절 후식으로도 자주 만나는 디저트예요. 가을 배로 만들면 단맛과 시원함이 더 또렷해요.',
@@ -44,7 +44,7 @@ export const recipesPearExpansion: Recipe[] = [
   {
     id: 'pear-home-5', month: 9, title: '배 생채', subtitle: '새콤매콤하게 무친 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-home-5/hero.webp',
     mainIngredient: '배', description: '채 썬 배를 고춧가루 양념에 새콤하게 무친, 입맛을 돋우는 밑반찬이에요.',
     masterclass: {
       chefIntro: '무생채와 비슷한 발상이지만 배의 단맛이 더해져 더 부드러운 맛이 나요. 가을 배로 만들면 단맛이 깊어요.',
@@ -73,7 +73,7 @@ export const recipesPearExpansion: Recipe[] = [
   {
     id: 'pear-weekend-2', month: 9, title: '배 타르트', subtitle: '얇게 펼친 페이스트리 위의 가을 배',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 80, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-weekend-2/hero.webp',
     mainIngredient: '배', description: '버터향 가득한 페이스트리 위에 배를 얇게 펼쳐 구운, 가을철 손이 가는 디저트예요.',
     masterclass: {
       chefIntro: '사과 타르트와 비슷한 결이지만 배 특유의 부드러운 단맛이 또렷하게 살아나요.',
@@ -106,7 +106,7 @@ export const recipesPearExpansion: Recipe[] = [
   {
     id: 'pear-weekend-3', month: 9, title: '배 피클', subtitle: '새콤달콤하게 절인 가을 배',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-weekend-3/hero.webp',
     mainIngredient: '배', description: '식초물에 절인 배는 고기 요리에 곁들이기 좋은 색다른 피클이에요.',
     masterclass: {
       chefIntro: '과일을 피클로 만든다는 발상이 신선해요. 가을 배로 만들면 식초의 산미와 배의 단맛이 균형을 이뤄요.',
@@ -133,7 +133,7 @@ export const recipesPearExpansion: Recipe[] = [
   {
     id: 'pear-weekend-4', month: 9, title: '배 잼', subtitle: '은은한 단맛을 담은 홈메이드 잼',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-weekend-4/hero.webp',
     mainIngredient: '배', description: '배와 설탕만으로 만드는 은은하고 부드러운 단맛의 홈메이드 잼이에요.',
     masterclass: {
       chefIntro: '배는 사과보다 펙틴이 적어서 잼이 더 부드럽고 묽게 완성돼요. 그 점을 살려 빵에 발라먹기 좋게 만들어요.',
@@ -165,7 +165,7 @@ export const recipesPearExpansion: Recipe[] = [
   {
     id: 'pear-weekend-5', month: 9, title: '배 그릴 디저트', subtitle: '구워서 단맛을 끌어올린 따뜻한 한 입',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-weekend-5/hero.webp',
     mainIngredient: '배', description: '배를 반으로 잘라 꿀과 함께 구워낸, 단맛이 한층 깊어지는 간단한 디저트예요.',
     masterclass: {
       chefIntro: '굽기만 해도 배의 단맛이 캐러멜화되며 훨씬 깊어져요. 손은 적게 가지만 인상적인 디저트예요.',
@@ -203,7 +203,7 @@ export const recipesPearExpansion: Recipe[] = [
       country: '이탈리아',
       note: '배와 고르곤졸라의 조합은 이탈리아 북부에서 흔히 만나는 클래식한 페어링이에요. 리소토에 적용하면 달콤함과 짠맛이 크리미한 쌀과 어우러지는 독특한 요리가 돼요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-world-4/hero.webp',
     mainIngredient: '배', description: '고르곤졸라 치즈와 배를 더한 크리미한 이탈리아식 리소토예요.',
     masterclass: {
       chefIntro: '이탈리아 북부에서 흔히 즐기는 단짠 조합이에요. 배의 단맛이 치즈의 짠맛을 부드럽게 감싸줘요.',
@@ -240,7 +240,7 @@ export const recipesPearExpansion: Recipe[] = [
       country: '인도',
       note: '처트니는 인도 요리에서 빠지지 않는 양념 소스로, 과일이나 채소를 향신료와 함께 졸여 만들어요. 배 처트니는 커리나 난과 곁들여 먹는 인도 가정식의 친근한 조합이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-world-5/hero.webp',
     mainIngredient: '배', description: '배를 향신료와 함께 졸여 만든, 커리나 난에 곁들이는 인도식 새콤달콤한 소스예요.',
     masterclass: {
       chefIntro: '인도 가정식의 친근한 조연 같은 음식이에요. 향신료가 배의 단맛을 한층 끌어올려줘요.',
@@ -277,7 +277,7 @@ export const recipesPearExpansion: Recipe[] = [
       country: '프랑스',
       note: '클라푸티는 프랑스 리무진 지방에서 유래한 디저트로, 과일 위에 부드러운 커스터드 반죽을 부어 구워요. 원래는 체리로 만들었지만, 배나 사과로도 즐겨 만드는 프랑스 가정식 디저트예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-world-6/hero.webp',
     mainIngredient: '배', description: '배 위에 부드러운 커스터드 반죽을 부어 구운, 프랑스 가정의 따뜻한 디저트예요.',
     masterclass: {
       chefIntro: '프랑스 가정에서 과일이 남았을 때 흔히 만드는 디저트예요. 반죽이 단순해서 의외로 빠르게 완성돼요.',
@@ -313,7 +313,7 @@ export const recipesPearExpansion: Recipe[] = [
       country: '미국',
       note: '코블러는 미국 남부에서 발달한 디저트로, 과일 위에 비스킷 반죽을 올려 구워요. 파이지를 만드는 정교함 없이도 비슷한 만족감을 주는, 투박하지만 친근한 미국 가정식이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-world-7/hero.webp',
     mainIngredient: '배', description: '배 위에 투박한 비스킷 반죽을 올려 구운, 미국 남부의 정겨운 디저트예요.',
     masterclass: {
       chefIntro: '파이지처럼 정교하게 밀지 않아도 되는, 편한 마음으로 만드는 디저트예요. 모양이 안 예뻐도 코블러는 원래 투박한 게 매력이에요.',
@@ -348,7 +348,7 @@ export const recipesPearExpansion: Recipe[] = [
     id: 'pear-chef-2', month: 9, title: '배 타르트 타탱', subtitle: '뒤집어 완성하는 프랑스식 캐러멜 배 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 70, servings: 6,
     platingGuide: '뒤집은 그대로 도마에 올려 조각으로 잘라 단면이 보이게 담으세요. 크렘 프레슈를 한 스푼 곁들이면 색의 대비가 살아나요.',
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-chef-2/hero.webp',
     mainIngredient: '배', description: '배를 캐러멜화한 뒤 반죽을 덮어 구워 뒤집어내는, 사과 타탱의 배 버전이에요.',
     masterclass: {
       chefIntro: '타르트 타탱 기법을 배에 적용하면 사과보다 더 부드럽고 향긋한 결과가 나와요.',
@@ -388,7 +388,7 @@ export const recipesPearExpansion: Recipe[] = [
     id: 'pear-chef-3', month: 9, title: '오리가슴살과 배 퓌레', subtitle: '진한 오리와 깔끔한 배의 클래식 페어링',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 올려보세요. 배 슬라이스 한 조각을 옆에 더하면 재료가 한눈에 보여요.',
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-chef-3/hero.webp',
     mainIngredient: '배', description: '부드러운 배 퓌레와 바삭하게 구운 오리가슴살을 함께 낸, 프렌치 비스트로풍 메인이에요.',
     masterclass: {
       chefIntro: '오리와 과일의 조합은 프랑스 요리에서 흔한 클래식이에요. 배의 깔끔한 단맛이 오리의 진한 풍미를 정리해줘요.',
@@ -423,7 +423,7 @@ export const recipesPearExpansion: Recipe[] = [
     id: 'pear-chef-4', month: 9, title: '배 셔벗과 고르곤졸라 크럼블', subtitle: '차가움과 짠맛의 모던 디저트 구성',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 280, servings: 4,
     platingGuide: '작은 잔에 크럼블을 깔고 셔벗을 올린 뒤 호두 한 조각을 꽂아보세요. 차가운 셔벗과 짠맛 크럼블의 대비가 핵심이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-chef-4/hero.webp',
     mainIngredient: '배', description: '차가운 배 셔벗과 짭짤한 고르곤졸라 크럼블을 함께 구성한, 단짠의 정교한 모던 디저트예요.',
     masterclass: {
       chefIntro: '배와 고르곤졸라의 클래식한 짝을 디저트 코스로 풀어낸 구성이에요. 차가움과 짠맛의 대비를 즐겨보세요.',
@@ -458,7 +458,7 @@ export const recipesPearExpansion: Recipe[] = [
     id: 'pear-chef-5', month: 9, title: '배 콩소메', subtitle: '맑게 거른 배의 정수만 담은 모던 수프',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 280, servings: 2,
     platingGuide: '투명한 잔에 콩소메를 따르고 잘게 썬 신선한 배를 띄워보세요. 맑은 색이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pear-chef-5/hero.webp',
     mainIngredient: '배', description: '배를 갈아 맑게 걸러낸, 배 본연의 향만 남긴 투명한 모던 디저트예요.',
     masterclass: {
       chefIntro: '토마토나 오이 콩소메와 같은 모던 기법을 배에 적용한 디저트예요. 향이 진한 배일수록 더 깊은 맛이 나와요.',

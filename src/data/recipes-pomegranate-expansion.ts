@@ -14,7 +14,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-home-1', month: 9, title: '석류에이드', subtitle: '알알이 씹히는 새콤달콤 가을 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-home-1/hero.webp',
     mainIngredient: '석류',
     description: '새콤달콤한 석류알을 듬뿍 넣어 만든, 산뜻한 가을철 음료예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-home-2', month: 9, title: '석류샐러드', subtitle: '알알이 씹히는 새콤함이 매력적인 가을 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-home-2/hero.webp',
     mainIngredient: '석류',
     description: '새콤달콤한 석류알을 채소와 함께 즐기는, 산뜻한 가을 샐러드예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-home-3', month: 9, title: '석류청', subtitle: '새콤달콤한 홈메이드 과일청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-home-3/hero.webp',
     mainIngredient: '석류',
     description: '석류알을 설탕에 재워 만든 과일청으로, 차로 마시거나 탄산수에 타 마시기 좋아요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-home-4', month: 9, title: '석류요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-home-4/hero.webp',
     mainIngredient: '석류',
     description: '석류알과 그릭요거트를 섞은, 상큼하고 건강한 가을철 간식이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-home-5', month: 9, title: '석류주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-home-5/hero.webp',
     mainIngredient: '석류',
     description: '석류알을 직접 갈아 만든, 상큼하고 건강한 생과일주스예요.',
     masterclass: {
@@ -157,7 +157,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-weekend-1', month: 9, title: '석류치킨', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-weekend-1/hero.webp',
     mainIngredient: '석류',
     description: '구운 닭고기에 석류소스를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-weekend-2', month: 9, title: '석류타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-weekend-2/hero.webp',
     mainIngredient: '석류',
     description: '커스터드크림 위에 석류알을 소복이 올린, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-weekend-3', month: 9, title: '석류양갈비', subtitle: '이국적이고 화려한 메인요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-weekend-3/hero.webp',
     mainIngredient: '석류',
     description: '구운 양갈비에 석류소스를 곁들인, 이국적이고 화려한 메인요리예요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-weekend-4', month: 9, title: '석류무침', subtitle: '새콤달콤한 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-weekend-4/hero.webp',
     mainIngredient: '석류',
     description: '석류알과 채소를 새콤달콤하게 무친, 가을철 대표 별미 반찬이에요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
   {
     id: 'pomegranate-weekend-5', month: 9, title: '석류빙수', subtitle: '상큼하고 시원한 가을 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-weekend-5/hero.webp',
     mainIngredient: '석류',
     description: '얼음 위에 석류알과 연유를 듬뿍 올린, 상큼하고 시원한 가을철 디저트예요.',
     masterclass: {
@@ -302,7 +302,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-world-1', month: 9, title: '석류 상그리아', subtitle: '스페인식 가을 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 가을에는 석류를 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-world-1/hero.webp',
     mainIngredient: '석류',
     description: '레드와인에 석류와 가을 과일을 넣어 만든, 스페인식 상그리아예요.',
     masterclass: {
@@ -333,7 +333,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-world-2', month: 9, title: '타불레 석류샐러드', subtitle: '중동식 허브 곡물 샐러드',
     category: '샐러드', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '레바논', note: '타불레는 레바논의 대표 허브 샐러드예요. 석류알을 더하면 톡톡 터지는 식감과 새콤함이 더해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-world-2/hero.webp',
     mainIngredient: '석류',
     description: '불구르에 파슬리와 석류알을 듬뿍 넣은, 중동식 허브 곡물 샐러드예요.',
     masterclass: {
@@ -363,7 +363,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-world-3', month: 9, title: '석류 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 새콤한 과일을 넣은 트러플이 클래식한 조합으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-world-3/hero.webp',
     mainIngredient: '석류',
     description: '석류즙을 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -394,7 +394,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-world-4', month: 9, title: '석류 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-world-4/hero.webp',
     mainIngredient: '석류',
     description: '석류알과 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-world-5', month: 9, title: '석류 판나코타', subtitle: '이탈리아 크림 디저트에 석류향을',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 새콤한 과일 소스를 곁들이는 것도 클래식한 변형이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-world-5/hero.webp',
     mainIngredient: '석류',
     description: '부드러운 이탈리아식 크림 디저트에 석류소스를 곁들인, 화려한 가을 디저트예요.',
     masterclass: {
@@ -455,7 +455,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-chef-1', month: 9, title: '페센잔', subtitle: '페르시아식 석류호두 치킨스튜',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '깊은 그릇에 닭고기를 담고 진한 갈색빛 소스를 넉넉히 끼얹은 뒤, 석류알을 흩뿌리고 페르시안 쌀밥을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-chef-1/hero.webp',
     mainIngredient: '석류',
     description: '닭고기를 호두와 석류당밀에 오래 뭉근히 끓인, 이란의 대표적인 명절 스튜예요.',
     masterclass: {
@@ -486,7 +486,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-chef-2', month: 9, title: '무함마라', subtitle: '시리아·터키식 고추호두석류 딥',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '넓은 그릇에 담아 올리브오일을 두르고 석류알과 다진 호두를 흩뿌려 완성한 뒤, 피타빵과 함께 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-chef-2/hero.webp',
     mainIngredient: '석류',
     description: '구운 붉은 파프리카와 호두, 석류당밀을 곱게 갈아 만든, 시리아 알레포의 대표적인 매콤달콤한 딥이에요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-chef-3', month: 9, title: '석류당밀', subtitle: '중동식 농축 시럽',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 90, servings: 8,
     platingGuide: '작은 병에 담아 상에 올리고, 요리에 소스로 활용할 때는 접시에 스푼으로 지그재그로 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-chef-3/hero.webp',
     mainIngredient: '석류',
     description: '석류즙을 몇 시간에 걸쳐 극도로 졸인, 중동 요리의 필수 조미료예요.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-chef-4', month: 9, title: '그레나딘시럽', subtitle: '프랑스 바텐더 전통 칵테일 시럽',
     category: '음료', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 8,
     platingGuide: '작은 병에 담긴 진한 붉은 시럽을 상에 올리고, 칵테일이나 목테일에 소량 부어 그라데이션이 생기는 모습을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-chef-4/hero.webp',
     mainIngredient: '석류',
     description: '석류즙에 설탕을 녹인, 전 세계 바에서 사용하는 프랑스 전통 칵테일 시럽이에요.',
     masterclass: {
@@ -574,7 +574,7 @@ export const recipesPomegranateExpansion: Recipe[] = [
     id: 'pomegranate-chef-5', month: 9, title: '석류가죽', subtitle: '탈수 프룻레더 시트화 기법',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 480, servings: 8,
     platingGuide: '돌돌 만 석류가죽을 나무판에 여러 개 세워 담거나, 잘게 잘라 접시에 부채꼴로 펼쳐 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomegranate-chef-5/hero.webp',
     mainIngredient: '석류',
     description: '석류 퓌레를 아주 얇게 펴 바짝 말린, 쫄깃하게 씹히는 천연 과일간식이에요.',
     masterclass: {

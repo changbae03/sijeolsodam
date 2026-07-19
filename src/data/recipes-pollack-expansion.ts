@@ -13,7 +13,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-home-4', month: 12, title: '북엇국', subtitle: '해장에 좋은 시원한 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-home-4/hero.webp',
     mainIngredient: '명태',
     description: '북어를 불려 계란을 풀어 끓인, 시원하고 든든한 대표적인 해장국이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-home-5', month: 12, title: '명태튀김', subtitle: '바삭한 겉면과 담백한 속살',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-home-5/hero.webp',
     mainIngredient: '명태',
     description: '명태살을 한입 크기로 썰어 바삭하게 튀긴, 담백한 밑반찬 겸 안주예요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-weekend-1', month: 12, title: '명태식해', subtitle: '함경도식 발효 별미',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-weekend-1/hero.webp',
     mainIngredient: '명태',
     description: '명태살에 조밥과 고춧가루, 무를 섞어 삭힌, 함경도 지역의 전통 발효 밑반찬이에요.',
     masterclass: {
@@ -106,7 +106,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-weekend-2', month: 12, title: '명태회무침', subtitle: '새콤달콤 쫄깃한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-weekend-2/hero.webp',
     mainIngredient: '명태',
     description: '얼린 명태살을 채 썰어 초고추장에 새콤달콤하게 무친, 씹는 맛이 좋은 별미예요.',
     masterclass: {
@@ -136,7 +136,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-weekend-3', month: 12, title: '코다리찜', subtitle: '매콤달콤 쫄깃한 밥도둑',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-weekend-3/hero.webp',
     mainIngredient: '명태',
     description: '반건조 명태(코다리)를 매콤달콤한 양념에 쪄낸, 쫄깃하고 진한 맛의 별미예요.',
     masterclass: {
@@ -167,7 +167,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-weekend-4', month: 12, title: '명태전골', subtitle: '푸짐하고 시원한 겨울 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-weekend-4/hero.webp',
     mainIngredient: '명태',
     description: '명태와 채소, 두부를 넉넉히 넣고 시원하게 끓인 겨울철 전골이에요.',
     masterclass: {
@@ -198,7 +198,7 @@ export const recipesPollackExpansion: Recipe[] = [
   {
     id: 'pollack-weekend-5', month: 12, title: '명태포무침', subtitle: '쫄깃하게 씹는 술안주',
     category: '안주', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-weekend-5/hero.webp',
     mainIngredient: '명태',
     description: '찢은 명태포를 매콤한 고추장 양념에 무친, 쫄깃하게 오래 씹는 술안주예요.',
     masterclass: {
@@ -230,7 +230,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-world-1', month: 12, title: '스케토우다라 사이쿄야키', subtitle: '일본식 미소구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '스케토우다라(すけとうだら)는 일본어로 명태를 뜻해요. 사이쿄야키(西京焼き)는 교토식 백미소된장에 생선을 재워 굽는 조리법으로, 은은한 단맛과 감칠맛이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-world-1/hero.webp',
     mainIngredient: '명태',
     description: '백미소된장에 재운 명태를 구운, 은은한 단맛과 감칠맛이 도는 일본식 요리예요.',
     masterclass: {
@@ -261,7 +261,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-world-2', month: 12, title: '피시케이크 노르웨이식', subtitle: '북유럽 대표 생선 요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '노르웨이', note: '피시케이크(fiskekaker)는 노르웨이 가정식의 대표 메뉴예요. 대구과 생선을 곱게 다져 부드러운 패티로 빚어 굽는데, 명태로 만들면 비슷하게 담백하고 부드러운 맛을 낼 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-world-2/hero.webp',
     mainIngredient: '명태',
     description: '명태살을 곱게 다져 크림과 섞어 구운, 부드럽고 담백한 노르웨이식 생선완자예요.',
     masterclass: {
@@ -292,7 +292,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-world-3', month: 12, title: '명태 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-world-3/hero.webp',
     mainIngredient: '명태',
     description: '토마토와 화이트와인, 조개를 함께 넣고 명태를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -324,7 +324,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-world-4', month: 12, title: '명태 크로켓', subtitle: '스페인식 바삭한 생선 크로켓',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '스페인', note: '크로케타스(croquetas)는 스페인 타파스 바에서 흔히 볼 수 있는 대표 메뉴예요. 베샤멜소스에 재료를 섞어 튀겨내는데, 대구류 생선을 넣은 버전이 특히 인기가 많아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-world-4/hero.webp',
     mainIngredient: '명태',
     description: '명태살을 베샤멜소스와 섞어 튀긴, 겉바속촉의 스페인식 크로켓이에요.',
     masterclass: {
@@ -356,7 +356,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-world-5', month: 12, title: '명태 피시앤칩스', subtitle: '영미식 바삭한 생선튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '영국', note: '피시앤칩스는 영국의 대표 길거리 음식이에요. 원래는 대구나 해덕을 쓰지만, 명태로 만들어도 비슷하게 담백하고 바삭한 튀김을 즐길 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-world-5/hero.webp',
     mainIngredient: '명태',
     description: '맥주 반죽옷을 입혀 튀긴 명태와 감자튀김을 함께 낸, 영국식 대표 요리예요.',
     masterclass: {
@@ -390,7 +390,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-chef-1', month: 12, title: '명태 브라운버터 뫼니에르', subtitle: '프랑스 요리의 정석',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 명태를 놓고, 뵈르누아제트를 숟가락으로 지그재그로 두른 뒤 케이퍼와 파슬리, 레몬 슬라이스를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-chef-1/hero.webp',
     mainIngredient: '명태',
     description: '밀가루옷을 입혀 버터에 구운 명태에 견과류향 가득한 브라운버터소스를 끼얹은, 프랑스 요리의 정석이에요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-chef-2', month: 12, title: '명태 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일째 접시에 담아 상 앞에서 직접 열어 향이 퍼지도록 연출하고, 허브를 살짝 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-chef-2/hero.webp',
     mainIngredient: '명태',
     description: '명태와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -454,7 +454,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-chef-3', month: 12, title: '명태 콩피', subtitle: '올리브오일에 저온으로 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '따뜻한 접시에 명태를 놓고, 콩피에 쓴 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-chef-3/hero.webp',
     mainIngredient: '명태',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 살이 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -485,7 +485,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-chef-4', month: 12, title: '명태 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 명태 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-chef-4/hero.webp',
     mainIngredient: '명태',
     description: '신선한 명태를 얇게 저며 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -516,7 +516,7 @@ export const recipesPollackExpansion: Recipe[] = [
     id: 'pollack-chef-5', month: 12, title: '명태 챠우더', subtitle: '미국식 진한 크림수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 4,
     platingGuide: '깊은 그릇에 챠우더를 담고, 오이스터크래커를 몇 개 올린 뒤 차이브를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pollack-chef-5/hero.webp',
     mainIngredient: '명태',
     description: '베이컨과 감자, 명태를 크림소스에 끓인, 미국 동부 해안식 진한 수프예요.',
     masterclass: {

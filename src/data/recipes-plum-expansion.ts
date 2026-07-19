@@ -15,7 +15,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-home-1', month: 6, title: '자두청', subtitle: '진한 향과 새콤한 맛을 담은 여름 과일청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-home-1/hero.webp',
     mainIngredient: '자두',
     description: '새콤달콤한 자두로 만든 청으로, 물이나 탄산수에 타서 시원한 음료로 즐길 수 있어요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-home-2', month: 6, title: '자두화채', subtitle: '향긋하고 시원한 여름 화채',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-home-2/hero.webp',
     mainIngredient: '자두',
     description: '자두를 사이다와 함께 시원하게 즐기는, 향긋한 여름 화채예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-home-3', month: 6, title: '자두잼', subtitle: '진한 향의 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-home-3/hero.webp',
     mainIngredient: '자두',
     description: '자두를 졸여 만든, 진한 향과 색의 홈메이드 잼이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-home-4', month: 6, title: '자두요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-home-4/hero.webp',
     mainIngredient: '자두',
     description: '자두와 그릭요거트를 섞은, 상큼하고 건강한 간식이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-home-5', month: 6, title: '자두샐러드', subtitle: '상큼하고 가벼운 여름 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-home-5/hero.webp',
     mainIngredient: '자두',
     description: '자두와 채소를 함께 상큼한 드레싱에 버무린, 가볍고 산뜻한 여름 샐러드예요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-weekend-1', month: 6, title: '자두타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-weekend-1/hero.webp',
     mainIngredient: '자두',
     description: '아몬드크림 위에 자두를 올려 구운, 달콤하고 향긋한 홈메이드 타르트예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-weekend-2', month: 6, title: '자두소스 폭찹', subtitle: '새콤달콤한 특별한 구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-weekend-2/hero.webp',
     mainIngredient: '자두',
     description: '구운 돼지고기 폭찹에 자두소스를 곁들인, 새콤달콤한 특별한 메인요리예요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-weekend-3', month: 6, title: '자두셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-weekend-3/hero.webp',
     mainIngredient: '자두',
     description: '자두를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -248,7 +248,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-weekend-4', month: 6, title: '자두스무디볼', subtitle: '보기에도 예쁜 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-weekend-4/hero.webp',
     mainIngredient: '자두',
     description: '자두와 바나나를 갈아 만든 스무디에 여러 토핑을 올린, 보기에도 예쁜 건강 브런치예요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesPlumExpansion: Recipe[] = [
   {
     id: 'plum-weekend-5', month: 6, title: '자두빙수', subtitle: '향긋하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-weekend-5/hero.webp',
     mainIngredient: '자두',
     description: '얼음 위에 자두와 연유를 듬뿍 올린, 향긋하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-world-1', month: 6, title: '자두 콩포트 요거트', subtitle: '프랑스식 과일 조림',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '프랑스', note: '콩포트(compote)는 과일을 설탕에 은근히 조려 만드는 프랑스의 대표 저장 디저트예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-world-1/hero.webp',
     mainIngredient: '자두',
     description: '자두를 향신료와 함께 은근히 조린 콩포트를, 요거트에 올린 프랑스식 디저트예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-world-2', month: 6, title: '자두 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 과일을 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-world-2/hero.webp',
     mainIngredient: '자두',
     description: '자두와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-world-3', month: 6, title: '자두 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트(galette)는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-world-3/hero.webp',
     mainIngredient: '자두',
     description: '자두를 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-world-4', month: 6, title: '자두 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 프랄린과 트러플 같은 정교한 초콜릿 과자가 발달했어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-world-4/hero.webp',
     mainIngredient: '자두',
     description: '자두 퓌레를 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -429,7 +429,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-world-5', month: 6, title: '자두 상그리아', subtitle: '스페인식 여름 과일 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 4,
     cuisineContext: { country: '스페인', note: '상그리아는 스페인의 대표적인 와인 과일 음료로, 계절 과일을 듬뿍 넣는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-world-5/hero.webp',
     mainIngredient: '자두',
     description: '레드와인에 자두와 여름 과일을 넣어 만든, 스페인식 여름 상그리아예요.',
     masterclass: {
@@ -462,7 +462,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-chef-1', month: 6, title: '자두 우메보시 스타일 절임', subtitle: '일본식 소금절임 기법',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '완성된 절임 자두를 작은 종지에 1~2개씩 담아 밥이나 오차즈케에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-chef-1/hero.webp',
     mainIngredient: '자두',
     description: '자두를 소금에 절여 햇볕에 말리는, 일본의 우메보시(매실장아찌) 기법을 응용한 신맛 절임이에요.',
     masterclass: {
@@ -493,7 +493,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-chef-2', month: 6, title: '즈베치겐크뇌델', subtitle: '오스트리아식 감자반죽 만두',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '삶은 만두를 그릇에 담고 버터에 볶은 빵가루를 소복이 뿌린 뒤 계핏가루와 설탕을 살짝 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-chef-2/hero.webp',
     mainIngredient: '자두',
     description: '삶은 감자로 만든 반죽으로 씨를 뺀 자두를 통째로 감싸 삶은, 오스트리아·체코의 대표적인 여름 디저트예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-chef-3', month: 6, title: '중국식 자두소스 오리구이', subtitle: '덕소스 리덕션 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 3,
     platingGuide: '슬라이스한 오리가슴살을 접시에 부채꼴로 담고, 자두소스를 스푼으로 지그재그로 두른 뒤 실파를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-chef-3/hero.webp',
     mainIngredient: '자두',
     description: '자두를 향신료와 함께 조려 만든 중국식 자두소스(덕소스)를, 구운 오리에 곁들인 요리예요.',
     masterclass: {
@@ -556,7 +556,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-chef-4', month: 6, title: '독일식 자두케이크', subtitle: '이스트 반죽 베이킹',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 120, servings: 8,
     platingGuide: '케이크를 통째로 나무판이나 큰 접시에 올려 표면의 자두 무늬가 보이게 하고, 조각으로 잘라 휘핑크림을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-chef-4/hero.webp',
     mainIngredient: '자두',
     description: '이스트로 부풀린 반죽 위에 자두를 가지런히 올려 구운, 독일의 대표적인 여름 과일 케이크예요.',
     masterclass: {
@@ -587,7 +587,7 @@ export const recipesPlumExpansion: Recipe[] = [
     id: 'plum-chef-5', month: 6, title: '자두 발효주', subtitle: '알코올 발효 기법',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 60, servings: 8,
     platingGuide: '완성된 자두주를 작은 유리잔에 담아 얼음 한 조각과 함께 내거나, 병에 담아 라벨을 붙여 선물처럼 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/plum-chef-5/hero.webp',
     mainIngredient: '자두',
     description: '자두를 소주나 증류주에 담가 오래 숙성시킨, 한국·일본에서 흔한 과실주 기법이에요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-home-1', month: 5, title: '병어조림', subtitle: '살이 부드러운 초여름 대표 조림',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-home-1/hero.webp',
     mainIngredient: '병어',
     description: '간장양념에 졸여낸 병어는 살이 부드럽고 양념이 잘 배어드는, 초여름 대표 조림이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-home-2', month: 5, title: '병어구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-home-2/hero.webp',
     mainIngredient: '병어',
     description: '병어에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-home-3', month: 5, title: '병어찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-home-3/hero.webp',
     mainIngredient: '병어',
     description: '병어를 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-home-4', month: 5, title: '병어튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-home-4/hero.webp',
     mainIngredient: '병어',
     description: '병어를 통째로 바삭하게 튀긴, 뼈까지 즐길 수 있는 겉바속촉 튀김이에요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-home-5', month: 5, title: '병어무조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-home-5/hero.webp',
     mainIngredient: '병어',
     description: '무를 깔고 병어를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-weekend-1', month: 5, title: '병어회', subtitle: '담백하고 쫄깃한 초여름 회',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-weekend-1/hero.webp',
     mainIngredient: '병어',
     description: '초여름 병어는 살이 쫄깃하고 담백해서, 얇게 썰어 회로 즐기기 좋아요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-weekend-2', month: 5, title: '병어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-weekend-2/hero.webp',
     mainIngredient: '병어',
     description: '병어와 채소를 넣고 얼큰하게 끓인, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-weekend-3', month: 5, title: '병어묵은지찜', subtitle: '깊은 감칠맛의 별미 찜',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-weekend-3/hero.webp',
     mainIngredient: '병어',
     description: '병어를 묵은지와 함께 조린, 깊고 시원한 감칠맛의 별미 찜이에요.',
     masterclass: {
@@ -247,7 +247,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-weekend-4', month: 5, title: '병어초밥', subtitle: '담백함이 살아있는 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-weekend-4/hero.webp',
     mainIngredient: '병어',
     description: '얇게 썬 병어를 초밥용 밥 위에 올린, 담백하고 깔끔한 초밥이에요.',
     masterclass: {
@@ -276,7 +276,7 @@ export const recipesPomfretExpansion: Recipe[] = [
   {
     id: 'pomfret-weekend-5', month: 5, title: '병어전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-weekend-5/hero.webp',
     mainIngredient: '병어',
     description: '병어살에 밀가루옷을 입혀 부친, 담백하고 부드러운 전이에요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-world-1', month: 5, title: '마차이 폼프렛 프라이', subtitle: '인도식 향신료 병어튀김',
     category: '튀김', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '인도', note: '인도 서해안 지방(뭄바이, 고아)에서는 폼프렛(병어)이 대표 생선으로, 향신료 반죽을 발라 튀기는 것이 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-world-1/hero.webp',
     mainIngredient: '병어',
     description: '강황과 고추가루 등 향신료 반죽을 바른 병어를 바삭하게 튀긴, 인도식 대표 생선요리예요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-world-2', month: 5, title: '병어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-world-2/hero.webp',
     mainIngredient: '병어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 병어예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-world-3', month: 5, title: '이칸 바카르 폼프렛', subtitle: '동남아식 향신 병어구이',
     category: '구이', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '인도네시아', note: '이칸 바카르(ikan bakar)는 인도네시아·말레이시아의 대표 생선 숯불구이로, 삼발소스를 발라가며 굽는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-world-3/hero.webp',
     mainIngredient: '병어',
     description: '병어에 삼발소스를 발라가며 구운, 동남아식 향긋하고 매콤한 생선구이예요.',
     masterclass: {
@@ -398,7 +398,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-world-4', month: 5, title: '병어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-world-4/hero.webp',
     mainIngredient: '병어',
     description: '토마토와 화이트와인에 병어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -429,7 +429,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-world-5', month: 5, title: '그리스식 병어구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-world-5/hero.webp',
     mainIngredient: '병어',
     description: '병어를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -460,7 +460,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-chef-1', month: 5, title: '병어 타르타르 유자폰즈', subtitle: '일불 퓨전 생선 타르타르',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 원형 링 몰드에 타르타르를 눌러 담고 살짝 들어올려, 접시 중앙에 원기둥 모양으로 세운 뒤 유자폰즈젤을 주위에 점점이 찍고 처빌잎을 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-chef-1/hero.webp',
     mainIngredient: '병어',
     description: '병어살을 잘게 다져 유자폰즈로 버무린, 프랑스식 타르타르 기법을 일본풍으로 재해석한 전채예요.',
     masterclass: {
@@ -491,7 +491,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-chef-2', month: 5, title: '병어 뫼니에르 그르노블루아즈', subtitle: '프랑스 비스트로의 정석',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '따뜻한 접시에 병어를 놓고, 브라운버터소스를 끼얹은 뒤 케이퍼와 레몬 세그먼트, 작은 크루통을 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-chef-2/hero.webp',
     mainIngredient: '병어',
     description: '밀가루를 입혀 구운 병어에 브라운버터, 케이퍼, 레몬, 크루통을 곁들인 프랑스 비스트로의 클래식 요리예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-chef-3', month: 5, title: '탄두리 병어', subtitle: '인도식 숯불 향신료 구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '뜨겁게 달군 무쇠팬이나 접시에 병어를 올려 김이 피어오르게 연출하고, 민트요거트소스를 옆에 곁들이며 얇게 썬 적양파와 레몬 웨지로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-chef-3/hero.webp',
     mainIngredient: '병어',
     description: '요거트와 향신료에 재운 병어를 숯불 향이 나도록 고온에서 구운, 인도 탄두르 기법의 생선 요리예요.',
     masterclass: {
@@ -554,7 +554,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-chef-4', month: 5, title: '병어 라비올리 세이지버터', subtitle: '이탈리아식 속을 채운 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 70, servings: 3,
     platingGuide: '따뜻한 접시에 라비올리를 3~4개씩 부채꼴로 담고, 세이지버터소스를 끼얹은 뒤 튀긴 세이지잎과 파마산치즈 셰이빙을 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-chef-4/hero.webp',
     mainIngredient: '병어',
     description: '병어살과 리코타를 채운 홈메이드 라비올리에, 세이지향 브라운버터를 곁들인 이탈리아 정통 파스타예요.',
     masterclass: {

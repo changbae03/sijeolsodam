@@ -584,7 +584,7 @@ export const recipesMungBeanExpansion: Recipe[] = [
     id: 'mungbean-chef-5', month: 8, title: '숙주오일 콩피 흰살생선', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 숙주를 얹은 뒤 콩피에 쓴 오일을 살짝 끼얹고 레몬 제스트를 뿌려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/mungbean-chef-5/hero.webp',
     mainIngredient: '녹두',
     description: '숙주로 향을 낸 올리브오일에 흰살생선을 낮은 온도로 은근히 익힌, 부드럽고 향긋한 요리예요.',
     masterclass: {
