@@ -127,7 +127,7 @@ export const recipesPenShellExpansion: Recipe[] = [
   {
     id: 'penshell-home-5', month: 3, title: '키조개탕', subtitle: '시원하고 담백한 국물요리',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/penshell-home-5/hero.webp',
     mainIngredient: '키조개',
     description: '키조개를 넣어 끓인 맑은탕으로, 시원하고 담백한 국물이 일품이에요.',
     masterclass: {

@@ -12,7 +12,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-home-1', month: 12, title: '모과차', subtitle: '향긋하고 새콤한 겨울 대표 차',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-home-1/hero.webp',
     mainIngredient: '모과',
     description: '향이 진하고 새콤한 모과를 설탕에 재워 끓여낸, 겨울철 대표 향긋한 차예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-home-2', month: 12, title: '모과정과', subtitle: '쫄깃하고 향긋한 전통 다과',
     category: '간식', difficulty: '보통', level: 'home', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-home-2/hero.webp',
     mainIngredient: '모과',
     description: '모과를 설탕에 졸여낸, 쫄깃하고 향긋한 전통 겨울 다과예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-home-3', month: 12, title: '모과청', subtitle: '두고두고 차로 우려 마시는 청',
     category: '양념', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 8,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-home-3/hero.webp',
     mainIngredient: '모과',
     description: '모과를 설탕에 재워 만든 청으로, 오래 두고 차로 우려 마시기 좋아요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-home-4', month: 12, title: '모과 생강차', subtitle: '몸을 따뜻하게 데워주는 겨울 차',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-home-4/hero.webp',
     mainIngredient: '모과',
     description: '모과와 생강을 함께 끓인, 몸을 따뜻하게 데워주는 겨울철 대표 차예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-home-5', month: 12, title: '모과잼', subtitle: '두고두고 발라 먹는 향긋한 잼',
     category: '양념', difficulty: '보통', level: 'home', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-home-5/hero.webp',
     mainIngredient: '모과',
     description: '모과를 삶아 곱게 갈아 만든, 향긋한 겨울철 잼이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-weekend-1', month: 12, title: '모과편', subtitle: '쫄깃하고 향긋한 전통 떡',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-weekend-1/hero.webp',
     mainIngredient: '모과',
     description: '모과청을 넣어 굳힌, 쫄깃하고 향긋한 전통 겨울 떡이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-weekend-2', month: 12, title: '모과 갈비찜', subtitle: '향긋함을 더한 명절 대표 찜',
     category: '찜', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-weekend-2/hero.webp',
     mainIngredient: '모과',
     description: '갈비찜 양념에 모과청을 더해, 은은한 향과 감칠맛을 살린 찜요리예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-weekend-3', month: 12, title: '모과 불고기', subtitle: '향긋하게 재운 부드러운 불고기',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-weekend-3/hero.webp',
     mainIngredient: '모과',
     description: '모과청을 갈아 넣은 양념에 소고기를 재워 구운, 향긋하고 부드러운 불고기예요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-weekend-4', month: 12, title: '모과 화채', subtitle: '향긋하고 시원한 겨울 후식',
     category: '음료', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-weekend-4/hero.webp',
     mainIngredient: '모과',
     description: '모과청 국물에 여러 과일을 띄운, 향긋하고 시원한 겨울철 후식 화채예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesQuinceExpansion: Recipe[] = [
   {
     id: 'quince-weekend-5', month: 12, title: '모과 절임', subtitle: '아삭하고 향긋한 저장 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-weekend-5/hero.webp',
     mainIngredient: '모과',
     description: '모과를 설탕과 식초에 절인, 아삭하고 향긋한 겨울철 저장 밑반찬이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-world-1', month: 12, title: '멤브리요', subtitle: '스페인식 모과 젤리',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 90, servings: 8,
     cuisineContext: { country: '스페인', note: '멤브리요(membrillo)는 스페인의 대표적인 모과 디저트로, 모과를 오래 조려 굳힌 단단한 젤리예요. 만체고 치즈와 함께 먹는 것이 전통적인 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-world-1/hero.webp',
     mainIngredient: '모과',
     description: '모과를 설탕과 함께 오래 조려 굳힌, 스페인의 대표적인 모과 디저트예요.',
     masterclass: {
@@ -338,7 +338,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-world-2', month: 12, title: '마르멜로 자무', subtitle: '포르투갈식 모과잼',
     category: '양념', difficulty: '보통', level: 'world', cookTime: 70, servings: 6,
     cuisineContext: { country: '포르투갈', note: '마르멜라다(marmelada)는 포르투갈어로 모과잼을 뜻하며, 실제로 영어 단어 "marmalade"의 어원이기도 해요. 포르투갈에서는 치즈나 빵에 곁들여 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-world-2/hero.webp',
     mainIngredient: '모과',
     description: '모과를 오래 조려 만든, 포르투갈식 진한 모과잼이에요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-world-3', month: 12, title: '카린슈, 모과절임', subtitle: '일본식 모과 설탕절임',
     category: '간식', difficulty: '쉬움', level: 'world', cookTime: 40, servings: 6,
     cuisineContext: { country: '일본', note: '카린(かりん)은 일본어로 모과를 뜻해요. 일본에서는 모과를 설탕이나 꿀에 절여 기침감기에 좋은 건강 음료나 다과로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-world-3/hero.webp',
     mainIngredient: '모과',
     description: '모과를 꿀에 절인, 일본식 건강 다과 겸 감기에 좋은 절임이에요.',
     masterclass: {
@@ -398,7 +398,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-world-4', month: 12, title: '모과 타르트타탕', subtitle: '프랑스식 거꾸로 굽는 타르트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 70, servings: 6,
     cuisineContext: { country: '프랑스', note: '타르트타탕은 프랑스의 대표 디저트로, 원래는 사과로 만들지만 모과 같은 향이 진한 과일로도 훌륭하게 응용돼요. 뒤집어냈을 때 드러나는 캐러멜라이즈된 윗면이 하이라이트예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-world-4/hero.webp',
     mainIngredient: '모과',
     description: '캐러멜라이즈된 모과를 바닥에 깔고 타르트지를 덮어 구운 뒤 뒤집어내는, 프랑스식 모과 타르트예요.',
     masterclass: {
@@ -430,7 +430,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-world-5', month: 12, title: '모과 크럼블', subtitle: '영국식 바삭한 크럼블 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 55, servings: 4,
     cuisineContext: { country: '영국', note: '크럼블(crumble)은 영국의 대표적인 과일 디저트로, 조린 과일 위에 바삭한 버터가루 토핑을 올려 굽는 것이 특징이에요. 향이 진한 모과로 만들면 훨씬 이국적인 크럼블이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-world-5/hero.webp',
     mainIngredient: '모과',
     description: '조린 모과 위에 바삭한 버터토핑을 올려 구운, 영국식 대표 디저트예요.',
     masterclass: {
@@ -463,7 +463,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-chef-1', month: 12, title: '모과 콩포트 타르트', subtitle: '진한 모과 콩포트를 채운 타르트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 90, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-chef-1/hero.webp',
     mainIngredient: '모과',
     description: '모과를 와인과 향신료에 은근히 조려 만든 콩포트를 타르트지에 채운, 깊은 풍미의 겨울 디저트예요.',
     masterclass: {
@@ -494,7 +494,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-chef-2', month: 12, title: '모과 판나코타', subtitle: '이탈리아 크림 디저트에 모과를',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 유리컵에 판나코타를 굳혀 그대로 담고, 표면에 모과청 조각과 시럽을 얹어 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-chef-2/hero.webp',
     mainIngredient: '모과',
     description: '부드러운 이탈리아식 크림 디저트에 모과향을 우려낸, 겨울 향 가득한 판나코타예요.',
     masterclass: {
@@ -525,7 +525,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-chef-3', month: 12, title: '모과소스 폭찹', subtitle: '진한 과일소스를 곁들인 돼지고기 요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 구운 폭찹을 놓고, 모과소스를 접시 한쪽에 붓으로 그리듯 두른 뒤 폭찹 위에 소스를 살짝 끼얹습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-chef-3/hero.webp',
     mainIngredient: '모과',
     description: '두툼하게 구운 돼지고기 폭찹에 모과로 만든 진한 소스를 곁들인, 서양식 메인요리예요.',
     masterclass: {
@@ -557,7 +557,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-chef-4', month: 12, title: '모과 그라니타', subtitle: '이탈리아식 상큼한 셔벗',
     category: '디저트', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '차갑게 식힌 유리잔에 그라니타를 포크로 긁어 소복이 담고, 민트잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-chef-4/hero.webp',
     mainIngredient: '모과',
     description: '모과청을 얼려서 긁어낸, 향긋하고 상큼한 이탈리아식 셔벗이에요.',
     masterclass: {
@@ -587,7 +587,7 @@ export const recipesQuinceExpansion: Recipe[] = [
     id: 'quince-chef-5', month: 12, title: '모과 브랜디 트러플', subtitle: '술향이 은은한 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '작은 접시에 트러플을 3~4개씩 원형으로 배치하고, 코코아파우더 위에 모과 조각을 살짝 올려 포인트를 줍니다.',
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/quince-chef-5/hero.webp',
     mainIngredient: '모과',
     description: '브랜디에 재운 모과청을 다크초콜릿 가나슈에 섞어 빚은, 어른들을 위한 한입 트러플이에요.',
     masterclass: {

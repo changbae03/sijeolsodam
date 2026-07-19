@@ -10,7 +10,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
   {
     id: '6-1-home-4', month: 6, title: '감자채볶음', subtitle: '아삭하게 볶아낸 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-home-4/hero.webp',
     mainIngredient: '햇감자', description: '채 썬 감자를 아삭하게 볶아낸, 가장 기본적인 한식 반찬이에요.',
     masterclass: {
       chefIntro: '집집마다 한 번쯤 만들어본 반찬일 거예요. 햇감자는 전분이 적어서, 채 썰어 볶아도 아삭한 식감이 더 잘 살아요.',
@@ -51,7 +51,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
   {
     id: '6-1-home-5', month: 6, title: '감자전', subtitle: '바삭하게 부쳐낸 감자 부침개',
     category: '브런치', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-home-5/hero.webp',
     mainIngredient: '햇감자', description: '갈아낸 감자를 노릇하게 부쳐낸, 비 오는 날 생각나는 한식 부침개예요.',
     masterclass: {
       chefIntro: '비 오는 날이면 자연스럽게 생각나는 메뉴예요. 햇감자는 수분이 많아서 갈았을 때 더 부드러운 반죽이 나와요.',
@@ -94,7 +94,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
   {
     id: '6-1-weekend-4', month: 6, title: '감자 고로케', subtitle: '겉은 바삭, 속은 부드러운 튀김 요리',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-weekend-4/hero.webp',
     mainIngredient: '햇감자', description: '으깬 감자에 속을 채워 빵가루를 입혀 튀긴, 겉바속촉의 정석을 보여주는 요리예요.',
     masterclass: {
       chefIntro: '시간 들여 만드는 보람이 있는 주말 메뉴예요. 햇감자는 으깼을 때 더 부드럽고 끈기가 적어 속을 채우기 좋아요.',
@@ -140,7 +140,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
   {
     id: '6-1-weekend-5', month: 6, title: '베이컨 감자말이', subtitle: '짭짤한 베이컨을 두른 한입 메뉴',
     category: '메인', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-weekend-5/hero.webp',
     mainIngredient: '햇감자', description: '한입 크기 감자를 베이컨으로 말아 구운, 손님 초대상에도 좋은 메뉴예요.',
     masterclass: {
       chefIntro: '비주얼이 좋아서 손님 초대 자리에 내기 좋은 메뉴예요. 햇감자는 크기가 작아 한입 크기로 손질하기도 편해요.',
@@ -188,7 +188,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
       country: '독일',
       note: '카토펠푸퍼는 독일과 오스트리아에서 즐겨 먹는 감자 팬케이크예요. 사과소스나 사워크림을 곁들여 메인으로도, 사이드로도 먹는 독일 가정식의 대표적인 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-world-4/hero.webp',
     mainIngredient: '햇감자', description: '간 감자에 양파를 더해 바삭하게 부쳐낸 독일식 감자 팬케이크예요.',
     masterclass: {
       chefIntro: '독일 가정에서 평범하게 만들어 먹는 메뉴예요. 햇감자로 만들면 한국 감자전보다 더 바삭하고 고소한 맛이 나요.',
@@ -237,7 +237,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
       country: '페루',
       note: '까우사 리메냐는 페루 리마 지역의 대표 요리로, 노란 감자를 으깨 아보카도, 참치나 닭고기를 켜켜이 쌓아 만들어요. 페루가 감자의 원산지인 만큼, 감자 요리에 대한 자부심이 담긴 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-world-5/hero.webp',
     mainIngredient: '햇감자', description: '으깬 감자와 아보카도, 참치를 켜켜이 쌓아 만든, 페루의 화려한 색감을 가진 차가운 요리예요.',
     masterclass: {
       chefIntro: '감자의 원산지인 페루를 대표하는 요리예요. 햇감자로 만들면 으깼을 때 더 부드럽고 단맛이 또렷하게 느껴져요.',
@@ -284,7 +284,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
     id: '6-1-chef-3', month: 6, title: '트러플 감자 라비올로', subtitle: '얇은 감자로 감싸낸 모던 한입 요리',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '하얀 접시 중앙에 라비올로를 하나씩 단정하게 올리고, 트러플 오일을 점점이 두세 방울 떨어뜨려보세요. 마이크로그린 한 잎이면 충분합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-chef-3/hero.webp',
     mainIngredient: '햇감자', description: '얇게 썬 감자로 트러플 크림을 감싸 만든, 파스타가 아닌 감자로 빚어내는 모던 라비올리예요.',
     masterclass: {
       chefIntro: '감자를 파스타처럼 사용하는 모던 키친의 발상이 담긴 요리예요. 햇감자는 얇게 썰었을 때 더 매끈하고 투명하게 잘려요.',
@@ -330,7 +330,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
     id: '6-1-chef-4', month: 6, title: '감자 크리스프와 사워크림 캐비어', subtitle: '한입에 즐기는 고급스러운 핑거푸드',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '평평한 접시나 트레이에 크리스프를 한 줄로 가지런히 배열하고, 작은 스푼으로 사워크림과 캐비어를 정확히 중앙에 올려보세요. 균일한 배열 자체가 플레이팅이에요.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-chef-4/hero.webp',
     mainIngredient: '햇감자', description: '바삭하게 구운 감자 크리스프 위에 사워크림과 캐비어를 올린, 파티 자리에 잘 어울리는 고급 핑거푸드예요.',
     masterclass: {
       chefIntro: '작은 한입이지만 만드는 과정엔 정성이 필요한 요리예요. 햇감자로 만들면 크리스프가 더 가볍고 바삭하게 구워져요.',
@@ -371,7 +371,7 @@ export const recipesPotatoExpansion2: Recipe[] = [
     id: '6-1-chef-5', month: 6, title: '감자 무스와 콩소메 젤리', subtitle: '부드러운 무스와 투명한 젤리의 정교한 대비',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '작은 유리잔이나 투명한 그릇에 무스를 먼저 채우고, 그 위에 콩소메 젤리를 살짝 부어 두 층이 보이게 하세요. 처빌 한 잎으로 마무리하면 단정해요.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-chef-5/hero.webp',
     mainIngredient: '햇감자', description: '부드러운 감자 무스 위에 투명한 닭육수 젤리를 올린, 질감의 대비를 즐기는 모던 코스 요리예요.',
     masterclass: {
       chefIntro: '코스 요리의 한 접시처럼 구성한 메뉴예요. 부드러운 무스와 탱글한 젤리, 두 질감의 대비를 즐겨보세요.',

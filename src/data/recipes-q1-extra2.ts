@@ -6,7 +6,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '1-13', month: 1, title: '대파된장국', subtitle: '단맛이 오른 대파로 끓인 구수한 된장국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/1-13/hero.webp',
     mainIngredient: '대파',
     description: '겨울철 단맛이 오른 대파를 듬뿍 넣어 끓인, 간단하지만 깊은 맛을 내는 구수한 된장국이에요.',
     masterclass: {
@@ -35,7 +35,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '1-15', month: 1, title: '대파크림파스타', subtitle: '단맛 가득한 대파로 만든 부드러운 크림 파스타',
     category: '파스타', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/1-15/hero.webp',
     mainIngredient: '대파',
     description: '겨울철 달콤해진 대파를 듬뿍 넣고 끓인, 한식 재료와 양식이 만나는 색다른 크림 파스타예요.',
     masterclass: {
@@ -67,7 +67,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '2-11', month: 2, title: '유채나물무침', subtitle: '쌉싸름한 향으로 입맛을 깨우는 봄나물 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-11/hero.webp',
     mainIngredient: '유채나물',
     description: '쌉싸름한 유채나물을 된장 양념에 무쳐낸, 입맛을 살려주는 향긋한 봄맞이 반찬이에요.',
     masterclass: {
@@ -96,7 +96,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '2-12', month: 2, title: '물미역초무침', subtitle: '새콤달콤한 양념의 미끌한 봄 해초 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-12/hero.webp',
     mainIngredient: '물미역',
     description: '미끌하고 쫄깃한 물미역을 새콤달콤한 초고추장에 무쳐낸, 입맛을 돋우는 반찬이에요.',
     masterclass: {
@@ -125,7 +125,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '2-13', month: 2, title: '쪽파전', subtitle: '알싸한 향이 매력적인 봄철 별미 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-13/hero.webp',
     mainIngredient: '쪽파',
     description: '알이 작고 향이 진한 쪽파로 부쳐낸, 막걸리 안주로도 잘 어울리는 바삭한 전이에요.',
     masterclass: {
@@ -154,7 +154,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '2-14', month: 2, title: '유채나물비빔밥', subtitle: '향긋한 봄나물 한가득 담은 건강 비빔밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-14/hero.webp',
     mainIngredient: '유채나물',
     description: '쌉싸름한 유채나물과 갖은 나물을 듬뿍 올려 비벼 먹는, 건강한 봄철 한 그릇이에요.',
     masterclass: {
@@ -184,7 +184,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '2-15', month: 2, title: '물미역콩나물국', subtitle: '담백하고 시원한 해장용 봄철 국물요리',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-15/hero.webp',
     mainIngredient: '물미역',
     description: '미끌한 물미역과 아삭한 콩나물을 함께 끓인, 해장에도 좋은 시원하고 담백한 국이에요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesQ1Extra2: Recipe[] = [
   {
     id: '3-13', month: 3, title: '봄동비빔국수', subtitle: '단맛이 오른 봄동을 듬뿍 올린 비빔국수',
     category: '면요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-13/hero.webp',
     mainIngredient: '봄동',
     description: '한파를 견디며 단맛이 오른 봄동을 듬뿍 올려 만든, 새콤달콤한 비빔국수예요.',
     masterclass: {

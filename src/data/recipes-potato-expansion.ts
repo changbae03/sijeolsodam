@@ -22,7 +22,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '간단한 반찬이지만 졸이는 불 조절만 신경 쓰면 누구나 맛있게 만들 수 있어요.',
     },
     cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-home-2/hero.webp',
     mainIngredient: '햇감자', description: '간장양념에 졸여낸 감자조림은 어떤 반찬과도 잘 어울리는 한식 기본기예요.',
     ingredients: [
       { name: '햇감자', amount: '4개' }, { name: '간장', amount: '3큰술' }, { name: '설탕', amount: '1큰술' }, { name: '식용유', amount: '1큰술' }, { name: '다진마늘', amount: '1작은술' }, { name: '깨소금', amount: '약간' },
@@ -73,7 +73,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '재료를 따뜻할 때 섞는 것 하나만 기억하면, 실패할 일이 거의 없는 메뉴예요.',
     },
     cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-home-3/hero.webp',
     mainIngredient: '햇감자', description: '삶아 으깬 감자에 마요네즈와 채소를 더한, 누구나 좋아하는 기본 샐러드예요.',
     ingredients: [
       { name: '햇감자', amount: '4개' }, { name: '마요네즈', amount: '3큰술' }, { name: '오이', amount: '1/2개' }, { name: '당근', amount: '1/4개' }, { name: '소금, 후추', amount: '약간씩' },
@@ -120,7 +120,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '모양이 완벽하지 않아도 괜찮아요. 직접 빚었다는 것 자체가 이 요리의 즐거움이에요.',
     },
     cookTime: 80, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-weekend-2/hero.webp',
     mainIngredient: '햇감자', description: '감자와 밀가루로 반죽을 빚어 만드는 이탈리아식 면 요리예요. 손으로 직접 빚는 재미가 있어요.',
     ingredients: [
       { name: '햇감자', amount: '500g' }, { name: '밀가루', amount: '150g' }, { name: '달걀노른자', amount: '1개' }, { name: '소금', amount: '약간' }, { name: '버터', amount: '2큰술' }, { name: '세이지(선택)', amount: '약간' },
@@ -173,7 +173,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '블렌더에 갈기 전, 꼭 한 김 식히는 것만 기억해주세요. 그거면 충분해요.',
     },
     cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-weekend-3/hero.webp',
     mainIngredient: '햇감자', description: '감자와 양파를 부드럽게 익혀 곱게 갈아낸, 따뜻하고 든든한 크림 수프예요.',
     ingredients: [
       { name: '햇감자', amount: '4개' }, { name: '양파', amount: '1개' }, { name: '버터', amount: '2큰술' }, { name: '치킨스톡(또는 물)', amount: '3컵' }, { name: '생크림', amount: '1/2컵' }, { name: '소금, 후추', amount: '약간씩' },
@@ -228,7 +228,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '차갑게 충분히 식히는 것, 그거 하나만 기억하면 누구나 만들 수 있는 수프예요.',
     },
     cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-world-2/hero.webp',
     mainIngredient: '햇감자', description: '감자와 리크(서양대파)를 끓여 곱게 갈아 차갑게 식혀 먹는, 여름에 특히 잘 어울리는 프랑스식 수프예요.',
     ingredients: [
       { name: '햇감자', amount: '3개' }, { name: '리크(또는 대파)', amount: '2대' }, { name: '버터', amount: '2큰술' }, { name: '치킨스톡', amount: '3컵' }, { name: '생크림', amount: '1/3컵' }, { name: '차이브(선택)', amount: '약간' },
@@ -281,7 +281,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '속을 너무 욕심내지 않는 것, 그것만 기억하면 누구나 만들 수 있는 빵이에요.',
     },
     cookTime: 60, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-world-3/hero.webp',
     mainIngredient: '햇감자', description: '향신료로 양념한 감자 속을 채워 구운 인도식 납작빵으로, 인도 가정의 대표적인 아침 식사예요.',
     ingredients: [
       { name: '햇감자', amount: '3개' }, { name: '통밀가루(또는 밀가루)', amount: '2컵' }, { name: '쿠민가루', amount: '1작은술' }, { name: '고수(선택)', amount: '약간' }, { name: '청양고추', amount: '1개' }, { name: '식용유', amount: '적당량' }, { name: '소금', amount: '약간' },
@@ -334,7 +334,7 @@ export const recipesPotatoExpansion: Recipe[] = [
       closingNote: '버터가 아깝다고 느껴질 수도 있어요. 그런데 이 풍부함이 이 요리의 전부예요. 한 번쯔음은 욕심내보세요.',
     },
     cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-chef-2/hero.webp',
     mainIngredient: '햇감자', description: '프랑스의 전설적인 셰프 조엘 로뷰숑이 유명하게 만든, 감자와 버터의 비율이 거의 1:1에 가까운 압도적으로 부드러운 퓌레예요.',
     ingredients: [
       { name: '햇감자(왁시 품종)', amount: '1kg' }, { name: '버터(차가운 것)', amount: '250g' }, { name: '우유', amount: '150ml' }, { name: '소금', amount: '약간' },

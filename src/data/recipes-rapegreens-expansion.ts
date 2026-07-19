@@ -9,7 +9,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-home-3', month: 2, title: '유채나물 된장국', subtitle: '쌉싸름한 향이 살아있는 봄 된장국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-home-3/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 넣어 끓인 된장국으로, 쌉싸름한 봄나물 향이 구수한 된장과 잘 어우러져요.',
     masterclass: {
@@ -40,7 +40,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-home-4', month: 2, title: '유채나물전', subtitle: '향긋하게 부쳐낸 봄나물전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-home-4/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 반죽에 섞어 부친, 쌉싸름한 향이 고소하게 살아있는 전이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-home-5', month: 2, title: '유채나물 된장무침', subtitle: '구수하고 쌉싸름한 조합',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-home-5/hero.webp',
     mainIngredient: '유채나물',
     description: '데친 유채나물을 된장 양념에 무친, 구수하고 쌉싸름한 조합의 밑반찬이에요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-weekend-1', month: 2, title: '유채나물 파스타', subtitle: '쌉싸름한 봄향이 도는 파스타',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-weekend-1/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 올리브오일과 마늘에 볶아 파스타에 버무린, 쌉싸름하고 향긋한 한 그릇이에요.',
     masterclass: {
@@ -132,7 +132,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-weekend-2', month: 2, title: '유채나물 잡채', subtitle: '봄나물을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-weekend-2/hero.webp',
     mainIngredient: '유채나물',
     description: '기본 잡채에 유채나물을 더해 쌉싸름한 봄향을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -163,7 +163,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-weekend-3', month: 2, title: '유채나물 두부무침', subtitle: '고소함을 더한 담백한 무침',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-weekend-3/hero.webp',
     mainIngredient: '유채나물',
     description: '데친 유채나물에 으깬 두부를 더해 고소하게 무친, 담백한 밑반찬이에요.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-weekend-4', month: 2, title: '유채나물 된장찌개', subtitle: '봄향 가득한 구수한 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-weekend-4/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물과 두부, 채소를 넣고 구수하게 끓인 된장찌개예요.',
     masterclass: {
@@ -222,7 +222,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
   {
     id: 'rapegreens-weekend-5', month: 2, title: '유채나물 볶음밥', subtitle: '향긋한 봄나물 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-weekend-5/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 잘게 썰어 밥과 함께 볶은, 향긋하고 건강한 한 그릇이에요.',
     masterclass: {
@@ -253,7 +253,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-world-1', month: 2, title: '치메 디 라파 알리오 올리오', subtitle: '이탈리아 남부의 쌉싸름한 볶음채소',
     category: '반찬', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '이탈리아', note: '치메 디 라파(cime di rapa)는 이탈리아 풀리아 지방의 대표 채소로, 유채나물과 매우 유사한 십자화과 채소예요. 마늘과 올리브오일에 볶아 그대로 반찬처럼 먹거나 파스타에 곁들이는 것이 전통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-world-1/hero.webp',
     mainIngredient: '유채나물',
     description: '마늘과 올리브오일, 페페론치노로 볶아낸, 이탈리아 남부식 쌉싸름한 채소 반찬이에요.',
     masterclass: {
@@ -285,7 +285,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-world-2', month: 2, title: '유채나물 마늘볶음', subtitle: '중국식 청경채 볶음을 유채나물로',
     category: '볶음', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 3,
     cuisineContext: { country: '중국', note: '중국에서는 청경채나 유채꽃(유채나물의 중국 사촌격인 요우차이)을 마늘과 굴소스로 간단히 볶아 먹는 것이 흔한 가정식이에요. 센 불에서 짧게 볶는 웍헤이(불맛) 기법이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-world-2/hero.webp',
     mainIngredient: '유채나물',
     description: '마늘과 굴소스로 센 불에 빠르게 볶은, 중국식 채소볶음의 정석이에요.',
     masterclass: {
@@ -317,7 +317,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-world-3', month: 2, title: '유채나물 고마아에', subtitle: '일본식 참깨소스 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '고마아에(胡麻和え)는 데친 채소를 참깨소스로 무치는 일본 가정식이에요. 채소의 쓴맛이나 풋내를 참깨의 고소함이 부드럽게 감싸주는 조합으로, 어떤 나물에도 잘 어울려요.' },
-    heroImage: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-world-3/hero.webp',
     mainIngredient: '유채나물',
     description: '데친 유채나물을 참깨소스로 무친, 고소함이 쌉싸름한 향을 감싸주는 일본식 반찬이에요.',
     masterclass: {
@@ -349,7 +349,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-world-4', month: 2, title: '사르손 카 사그', subtitle: '인도 펀자브식 겨자잎 카레',
     category: '카레', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '인도', note: '사르손 카 사그(sarson ka saag)는 인도 펀자브 지방의 대표 겨울 요리로, 겨자잎을 향신료와 함께 오래 끓여 걸쭉하게 만든 요리예요. 유채나물도 십자화과 채소라 비슷한 방식으로 훌륭하게 응용할 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-world-4/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 향신료와 함께 오래 끓여 걸쭉하게 만든, 인도 펀자브식 채소 카레예요.',
     masterclass: {
@@ -381,7 +381,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-world-5', month: 2, title: '호르타 살라타', subtitle: '그리스식 데친 채소 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '그리스', note: '호르타(χόρτα)는 그리스어로 "야생 채소"를 뜻해요. 그리스에서는 다양한 쓴맛 나는 채소를 데쳐서 올리브오일과 레몬만으로 간단히 무쳐 먹는 것이 오랜 전통이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-world-5/hero.webp',
     mainIngredient: '유채나물',
     description: '데친 유채나물에 올리브오일과 레몬을 두른, 그리스식 심플한 채소 샐러드예요.',
     masterclass: {

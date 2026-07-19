@@ -5,7 +5,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '5-6', month: 5, title: '미나리새우전', subtitle: '봄철 향긋한 미나리와 탱글한 새우의 조합',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-6/hero.webp',
     mainIngredient: '미나리',
     description: '늦봄 향긋한 미나리와 탱글한 새우를 함께 부친, 입맛을 돋워주는 산뜻한 별미예요.',
     masterclass: {
@@ -34,7 +34,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '5-8', month: 5, title: '봄동강된장', subtitle: '구수하고 진한 강된장에 봄동을 곁들인 쌈',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-8/hero.webp',
     mainIngredient: '봄동',
     description: '구수하고 진한 강된장을 봄동에 싸 먹는, 밥 한 그릇을 뚝딱 비우게 하는 메뉴예요.',
     masterclass: {
@@ -63,7 +63,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '5-9', month: 5, title: '아스파라거스새우볶음', subtitle: '부드러운 아스파라거스와 탱글한 새우의 조화',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-9/hero.webp',
     mainIngredient: '아스파라거스',
     description: '부드러운 봄 아스파라거스와 탱글한 새우를 마늘향 가득하게 볶아낸, 간단하지만 근사한 메인요리예요.',
     masterclass: {
@@ -94,7 +94,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '6-6', month: 6, title: '오이냉국', subtitle: '아삭한 오이로 만드는 여름 시원한 냉국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-6/hero.webp',
     mainIngredient: '오이',
     description: '아삭한 오이를 새콤달콤하게 무쳐 차가운 국물에 더한, 더위에 입맛 없을 때 좋은 여름 별미예요.',
     masterclass: {
@@ -123,7 +123,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '6-7', month: 6, title: '햇감자옹심이', subtitle: '포슬포슬한 햇감자로 만드는 쫄깃한 옹심이',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-7/hero.webp',
     mainIngredient: '햇감자',
     description: '포슬포슬한 햇감자를 갈아 만든 쫄깃한 옹심이를 넣은, 강원도식 별미 국물요리예요.',
     masterclass: {
@@ -153,7 +153,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '6-9', month: 6, title: '갑오징어미역줄기볶음', subtitle: '쫄깃한 갑오징어와 아삭한 미역줄기의 조화',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-9/hero.webp',
     mainIngredient: '갑오징어',
     description: '초여름 두툼한 갑오징어와 아삭한 미역줄기를 매콤하게 볶아낸, 밥반찬으로도 안주로도 좋은 메뉴예요.',
     masterclass: {
@@ -181,7 +181,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '6-10', month: 6, title: '토마토달걀볶음', subtitle: '새콤달콤한 토마토와 부드러운 달걀의 만남',
     category: '메인요리', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-10/hero.webp',
     mainIngredient: '방울토마토',
     description: '여름 초입 달큰한 방울토마토와 부드러운 달걀을 함께 볶아낸, 간단하지만 풍미가 깊은 중국식 가정요리예요.',
     masterclass: {
@@ -213,7 +213,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '7-8', month: 7, title: '가지냉채무침', subtitle: '시원하게 즐기는 여름 가지 냉채',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/7-8/hero.webp',
     mainIngredient: '가지',
     description: '부드럽게 찐 가지를 매콤새콤한 양념에 무쳐 시원하게 즐기는, 한여름 입맛 없을 때 좋은 여름 별미예요.',
     masterclass: {
@@ -242,7 +242,7 @@ export const recipesQ2Extra: Recipe[] = [
   {
     id: '8-7', month: 8, title: '전복미역국', subtitle: '보양식의 정수, 전복으로 끓인 미역국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/8-7/hero.webp',
     mainIngredient: '전복',
     description: '여름 보양식의 대표 전복을 듬뿍 넣어 끓인, 더위에 지친 몸을 보양해주는 든든한 미역국이에요.',
     masterclass: {

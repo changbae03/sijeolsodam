@@ -586,7 +586,7 @@ export const recipesPomfretExpansion: Recipe[] = [
     id: 'pomfret-chef-5', month: 5, title: '병어 그라브락스', subtitle: '북유럽식 염장 큐어링',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '얇게 저민 그라브락스를 나무 도마나 슬레이트 접시에 부채꼴로 겹쳐 담고, 머스타드딜소스를 작은 종지에 곁들이며 딜잎으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pomfret-chef-5/hero.webp',
     mainIngredient: '병어',
     description: '소금과 설탕, 딜에 재워 열을 가하지 않고 익힌, 북유럽 스칸디나비아의 전통 생선 큐어링 요리예요.',
     masterclass: {

@@ -11,7 +11,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-1/hero.webp',
     mainIngredient: '매실',
     description: '5월에 담근 매실청으로 새콤달콤한 비빔국수 양념을 만들어요. 더위가 시작되기 전, 산뜻한 입맛을 즐길 수 있는 메뉴예요.',
     masterclass: {
@@ -57,7 +57,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 10,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-5/hero.webp',
     mainIngredient: '방울토마토',
     description: '새콤달콤한 매실청에 방울토마토를 절여 만든 산뜻한 디저트예요. 냉장고에 두고 입맛 없을 때 꺼내 먹기 좋습니다.',
     masterclass: {
@@ -117,7 +117,7 @@ export const recipesQ2: Recipe[] = [
     },
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1/hero.webp',
     mainIngredient: '햇감자',
     description: '강한 햇살을 받고 자란 포슬포슬한 햇감자를 로즈마리와 올리브오일로 구워낸 메뉴예요. 사이드 디시로도, 와인 안주로도 잘 어울립니다.',
     ingredients: [
@@ -192,7 +192,7 @@ export const recipesQ2: Recipe[] = [
     },
     cookTime: 70,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-weekend/hero.webp',
     mainIngredient: '햇감자',
     description: '얇게 썬 감자를 크림소스와 함께 겹겹이 쌓아 오븐에 구운, 한 단계 더 손이 가는 주말 메뉴예요. 칼질의 균일함과 오븐 안에서의 변화를 직접 지켜보는 재미가 있어요.',
     ingredients: [
@@ -277,7 +277,7 @@ export const recipesQ2: Recipe[] = [
     },
     cookTime: 45,
     servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-world/hero.webp',
     mainIngredient: '햇감자',
     description: '얇게 썬 감자와 양파를 올리브오일에 천천히 익혀 달걀과 함께 두툼하게 부쳐낸, 스페인의 국민 가정식이에요.',
     ingredients: [
@@ -370,7 +370,7 @@ export const recipesQ2: Recipe[] = [
     },
     cookTime: 75,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-1-chef/hero.webp',
     mainIngredient: '햇감자',
     description: '얇게 썬 감자를 버터와 함께 원형으로 겹겹이 쌓아 구운 뒤 뒤집어내는, 단순한 재료로 기술의 정점을 보여주는 프랑스 고전 요리예요.',
     ingredients: [
@@ -443,7 +443,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-2/hero.webp',
     mainIngredient: '갑오징어',
     description: '초여름 가장 두툼하고 쫄깃한 갑오징어를 데쳐 신선한 채소와 새콤한 초고추장 드레싱에 곁들이는 샐러드예요.',
     masterclass: {
@@ -487,7 +487,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-4/hero.webp',
     mainIngredient: '가지',
     description: '부드럽고 영양 가득한 여름 가지를 구수한 된장 양념에 볶아낸 밥도둑 반찬이에요. 간단하지만 깊은 맛을 자랑합니다.',
     masterclass: {
@@ -533,7 +533,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-5/hero.webp',
     mainIngredient: '방울토마토',
     description: '여름 초입 가장 달큰한 방울토마토를 듬뿍 넣어 만드는 시원한 냉파스타예요. 더위에 입맛 없을 때 가볍게 즐기기 좋습니다.',
     masterclass: {
@@ -580,7 +580,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534790566985-aae57c661c44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/7-2/hero.webp',
     mainIngredient: '갈치',
     description: '여름 갈치의 기름진 살에 매콤한 양념이 깊게 배어든 칼칼한 조림이에요. 밥 한 그릇을 든든하게 비울 수 있는 메뉴입니다.',
     masterclass: {
@@ -628,7 +628,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1659261200833-ec8761558af7?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/7-4/hero.webp',
     mainIngredient: '가지',
     description: '부드럽게 찐 가지를 매콤새콤한 양념에 무쳐 차갑게 즐기는 여름 별미예요. 더운 날 입맛을 살려주는 산뜻한 반찬입니다.',
     masterclass: {
@@ -673,7 +673,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/7-5/hero.webp',
     mainIngredient: '갈치',
     description: '신선한 여름 갈치를 소금만으로 깔끔하게 구워 본연의 맛을 살린 가장 기본적인 생선구이예요.',
     masterclass: {
@@ -715,7 +715,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 50,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1632128795906-8d542d13ab3b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/8-1/hero.webp',
     mainIngredient: '전복',
     description: '더위에 지친 몸을 보양해주는 전복 내장죽이에요. 전복 내장의 깊고 녹진한 맛이 죽에 그대로 우러나옵니다.',
     masterclass: {
@@ -761,7 +761,7 @@ export const recipesQ2: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/8-2/hero.webp',
     mainIngredient: '전복',
     description: '여름 보양식의 대표 전복을 버터에 노릇하게 구워 풍미를 살린 메뉴예요. 손님 초대 요리로도 손색없습니다.',
     masterclass: {

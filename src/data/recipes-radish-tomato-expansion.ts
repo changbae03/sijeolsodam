@@ -10,7 +10,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'radish-home-1', month: 11, title: '쇠고기무국', subtitle: '집집마다 끓이는 가장 기본적인 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-home-1/hero.webp',
     mainIngredient: '무',
     description: '무와 소고기를 국간장으로 슴슴하게 끓인, 한국 밥상에서 가장 자주 만나는 기본 국이에요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'radish-home-2', month: 11, title: '무나물', subtitle: '슴슴하게 볶아낸 기본 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-home-2/hero.webp',
     mainIngredient: '무', description: '채 썬 무를 부드럽게 볶아낸, 슴슴하고 단맛 나는 기본 밑반찬이에요.',
     masterclass: {
       chefIntro: '제사상에도 올라가는 가장 기본적인 무 요리예요. 가을·겨울 무는 단맛이 깊어서 양념을 거의 안 해도 맛있어요.',
@@ -76,7 +76,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'radish-home-3', month: 11, title: '무채국', subtitle: '맑고 시원한 기본 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-home-3/hero.webp',
     mainIngredient: '무', description: '채 썬 무를 맑게 끓인, 부담 없이 매일 먹을 수 있는 국이에요.',
     masterclass: {
       chefIntro: '특별한 재료 없이도 무 자체의 단맛으로 맛을 내는 국이에요. 가을·겨울 무로 끓이면 국물이 훨씬 깊어요.',
@@ -110,7 +110,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'radish-weekend-2', month: 11, title: '무피클', subtitle: '아삭하게 절여낸 새콤달콤 피클',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-weekend-2/hero.webp',
     mainIngredient: '무', description: '식초물에 절여낸 무피클은 기름진 요리에 곁들이기 좋은 새콤달콤한 밑반찬이에요.',
     masterclass: {
       chefIntro: '시간을 들여 숙성시키는 만큼 맛이 더 깊어지는 메뉴예요. 가을·겨울 무는 수분이 많아 피클물이 더 잘 스며들어요.',
@@ -148,7 +148,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'radish-weekend-3', month: 11, title: '무전', subtitle: '달큰한 무를 갈아 부쳐낸 부침개',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-weekend-3/hero.webp',
     mainIngredient: '무', description: '간 무에 부침가루를 더해 노릇하게 부쳐낸, 무의 단맛이 살아있는 부침개예요.',
     masterclass: {
       chefIntro: '감자전과 비슷한 원리지만 무는 더 은은한 단맛이 나요. 가을·겨울 무로 만들면 단맛이 더 또렷해요.',
@@ -186,7 +186,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       country: '프랑스',
       note: '라디 뵈르(Radis au beurre)는 프랑스 비스트로에서 식전에 가볍게 내는 전채예요. 무를 버터와 소금에 찍어 먹는, 재료 본연의 맛을 살린 가장 단순한 프랑스식 먹는 방법이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-world-2/hero.webp',
     mainIngredient: '무', description: '무를 버터와 소금에 찍어 먹는, 프랑스 비스트로의 가장 단순한 전채요리예요.',
     masterclass: {
       chefIntro: '재료가 단순할수록 식재료 본연의 맛이 중요해요. 무가 신선하고 아삭할수록 이 요리의 매력이 살아나요.',
@@ -217,7 +217,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       country: '중국',
       note: '뤄보탕(萝卜汤)은 중국에서 겨울철 몸을 데우기 위해 끓이는 맑은 무 탕이에요. 돼지갈비나 당근을 더해 끓이는 경우가 많고, 중국 가정식에서 소화를 돕는 음식으로도 여겨져요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-world-3/hero.webp',
     mainIngredient: '무', description: '돼지갈비와 무를 오래 끓여낸, 중국 가정의 겨울 보양 탕이에요.',
     masterclass: {
       chefIntro: '중국 가정에서 몸을 데우려고 끓이는 탕이에요. 무가 오래 끓을수록 단맛이 국물에 배어들어요.',
@@ -253,7 +253,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
     id: 'radish-chef-2', month: 11, title: '무 카르파치오', subtitle: '얇게 저민 무로 완성하는 정교한 전채',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 20, servings: 2,
     platingGuide: '접시에 무를 겹쳐 원형으로 펼쳐 담고 올리브오일과 레몬즙을 뿌려보세요. 처빌이나 딜을 살짝 올리면 단정해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-chef-2/hero.webp',
     mainIngredient: '무', description: '무를 투명하게 얇게 저며 올리브오일과 레몬으로 마무리한, 의외의 신선함을 주는 전채요리예요.',
     masterclass: {
       chefIntro: '무를 익히지 않고 생으로 즐기는 색다른 발상이에요. 가을·겨울 무는 단맛이 또렷해서 날것으로 먹어도 부드러워요.',
@@ -281,7 +281,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
     id: 'radish-chef-3', month: 11, title: '오리가슴살과 무 퓌레', subtitle: '깔끔한 무 퓌레와 진한 오리의 조화',
     category: '메인', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '퓌레를 접시에 길게 펴 바르고 슬라이스한 오리가슴살을 비스듬히 올려보세요. 오렌지 제스트를 살짝 뿌리면 향과 색이 더해져요.',
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radish-chef-3/hero.webp',
     mainIngredient: '무', description: '깔끔한 단맛의 무 퓌레 위에 껍질을 바삭하게 구운 오리가슴살을 올린, 프렌치 비스트로풍 메인이에요.',
     masterclass: {
       chefIntro: '오리의 진한 풍미와 무의 깔끔한 단맛이 균형을 이루는 조합이에요. 겨울 무로 만들면 퓌레가 더 부드러워요.',
@@ -317,7 +317,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'tomato-home-3', month: 6, title: '토마토 계란볶음', subtitle: '새콤달콤 중식 가정식의 정석',
     category: '메인', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-home-3/hero.webp',
     mainIngredient: '방울토마토', description: '토마토와 달걀을 빠르게 볶아낸, 중식 가정식 어디서나 만날 수 있는 기본 메뉴예요.',
     masterclass: {
       chefIntro: '중국 가정에서 거의 매일 만들어 먹는 메뉴예요. 방울토마토는 일반 토마토보다 더 빨리 익고 단맛도 진해요.',
@@ -351,7 +351,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'tomato-weekend-2', month: 6, title: '토마토 타르트', subtitle: '짭짤한 페이스트리 위에 올린 토마토',
     category: '브런치', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-weekend-2/hero.webp',
     mainIngredient: '방울토마토', description: '바삭한 페이스트리 위에 치즈와 토마토를 올려 구운, 브런치로 좋은 짭짤한 타르트예요.',
     masterclass: {
       chefIntro: '주말 브런치에 어울리는 짭짤한 타르트예요. 방울토마토는 수분이 적어 구워도 페이스트리가 눅눅해지지 않아요.',
@@ -383,7 +383,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
   {
     id: 'tomato-weekend-3', month: 6, title: '토마토 스튜', subtitle: '오래 끓여 깊은 맛을 낸 토마토 스튜',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 90, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-weekend-3/hero.webp',
     mainIngredient: '방울토마토', description: '고기와 토마토를 오래 끓여 깊은 맛을 낸, 시간을 들이는 만큼 보답하는 스튜예요.',
     masterclass: {
       chefIntro: '오래 끓일수록 좋아지는 요리라, 주말에 여유 있게 만들기 좋아요. 방울토마토는 끓이면서 자연스럽게 으깨져 소스에 녹아들어요.',
@@ -422,7 +422,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       country: '이탈리아',
       note: '카프레제는 이탈리아 카프리섬에서 유래한 샐러드로, 토마토(빨강), 모짜렐라(흰색), 바질(초록)이 이탈리아 국기를 연상시킨다고 알려져 있어요. 재료 본연의 맛을 살리는 이탈리아 요리 철학을 가장 잘 보여주는 메뉴예요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-world-4/hero.webp',
     mainIngredient: '방울토마토', description: '토마토, 모짜렐라, 바질을 올리브오일로 마무리한, 이탈리아의 가장 단순하고 신선한 샐러드예요.',
     masterclass: {
       chefIntro: '재료 3가지로 완성하는 이탈리아 요리의 정수예요. 잘 익은 방울토마토일수록 이 요리가 빛나요.',
@@ -453,7 +453,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
       country: '중동·북아프리카',
       note: '샥슈카는 북아프리카에서 시작돼 이스라엘, 튀니지 등 중동 전역에서 즐기는 아침 요리예요. 매콤한 토마토 소스에 달걀을 통째로 익혀 빵과 함께 떠먹는 게 특징이에요.',
     },
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-world-5/hero.webp',
     mainIngredient: '방울토마토', description: '매콤한 토마토 소스에 달걀을 익혀 빵과 함께 떠먹는, 중동 지역의 활기찬 아침 요리예요.',
     masterclass: {
       chefIntro: '한 팬에서 시작부터 끝까지 완성하는 든든한 브런치예요. 방울토마토는 끓이면서 자연스럽게 으깨져 진한 소스가 돼요.',
@@ -494,7 +494,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
     id: 'tomato-chef-2', month: 6, title: '토마토 카르파치오와 부라타', subtitle: '얇게 저민 토마토와 부드러운 부라타의 조화',
     category: '샐러드', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '접시에 토마토를 겹쳐 원형으로 깔고 중앙에 부라타를 통째로 올려보세요. 손님이 직접 잘라 터뜨리게 두면 그 자체로 퍼포먼스가 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-chef-2/hero.webp',
     mainIngredient: '방울토마토', description: '얇게 저민 토마토 위에 부드러운 부라타 치즈를 올린, 이탈리아 미식을 정교하게 풀어낸 전채예요.',
     masterclass: {
       chefIntro: '카프레제를 좀 더 정교하게 재해석한 요리예요. 부라타의 크리미함이 토마토의 산미와 만나는 순간이 핵심이에요.',
@@ -522,7 +522,7 @@ export const recipesRadishTomatoExpansion: Recipe[] = [
     id: 'tomato-chef-3', month: 6, title: '토마토 워터 콘소메', subtitle: '맑게 거른 토마토의 정수만 담은 모던 수프',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 90, servings: 2,
     platingGuide: '투명한 잔에 콩소메만 따르고 그 위에 작은 바질오일 한 점, 다진 토마토 한 조각을 띄워보세요. 맑고 투명한 색이 그대로 비주얼이 돼요.',
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/tomato-chef-3/hero.webp',
     mainIngredient: '방울토마토', description: '토마토를 갈아 맑게 걸러낸, 토마토 본연의 풍미만 남긴 투명한 모던 수프예요.',
     masterclass: {
       chefIntro: '토마토를 익히지 않고 그 정수만 추출하는 모던 키친의 기법이에요. 잘 익은 방울토마토일수록 더 깊은 맛이 나와요.',

@@ -13,7 +13,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
   {
     id: 'pumpkin-home-5', month: 10, title: '단호박전', subtitle: '달콤하게 부쳐낸 가을 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-home-5/hero.webp',
     mainIngredient: '단호박',
     description: '얇게 썬 단호박에 부침가루옷을 입혀 노릇하게 부친, 달콤하고 고소한 가을 전이에요.',
     masterclass: {
@@ -46,7 +46,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
   {
     id: 'pumpkin-weekend-1', month: 10, title: '단호박 찜닭', subtitle: '달콤함이 스며든 든든한 찜닭',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-weekend-1/hero.webp',
     mainIngredient: '단호박',
     description: '닭과 단호박을 매콤달콤한 양념에 함께 조린, 가을철 든든한 찜닭이에요.',
     masterclass: {
@@ -76,7 +76,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
   {
     id: 'pumpkin-weekend-2', month: 10, title: '단호박 튀김', subtitle: '겉바속촉 달콤한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-weekend-2/hero.webp',
     mainIngredient: '단호박',
     description: '얇게 썬 단호박을 바삭하게 튀긴, 겉은 바삭하고 속은 달콤한 튀김이에요.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
   {
     id: 'pumpkin-weekend-3', month: 10, title: '단호박 그라탕', subtitle: '치즈 향 가득한 달콤한 오븐요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-weekend-3/hero.webp',
     mainIngredient: '단호박',
     description: '단호박을 크림소스와 치즈로 구운, 달콤하고 고소한 오븐요리예요.',
     masterclass: {
@@ -135,7 +135,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
   {
     id: 'pumpkin-weekend-4', month: 10, title: '단호박 매작과', subtitle: '달콤하고 바삭한 전통 다과',
     category: '간식', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-weekend-4/hero.webp',
     mainIngredient: '단호박',
     description: '단호박 반죽을 튀겨 조청에 버무린, 달콤하고 바삭한 전통 다과예요.',
     masterclass: {
@@ -166,7 +166,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
   {
     id: 'pumpkin-weekend-5', month: 10, title: '단호박 스프레드', subtitle: '빵에 발라 먹는 달콤한 잼',
     category: '양념', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-weekend-5/hero.webp',
     mainIngredient: '단호박',
     description: '단호박을 곱게 삶아 으깬 뒤 버터와 설탕으로 조린, 빵에 발라 먹는 스프레드예요.',
     masterclass: {
@@ -198,7 +198,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-world-1', month: 10, title: '카보차노 니모노', subtitle: '일본식 단호박 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '카보차(かぼちゃ)는 일본어로 단호박을 뜻해요. 다시육수와 간장, 미림으로 은근히 졸이는 니모노(煮物)는 일본 가정식에서 가장 흔한 단호박 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-world-1/hero.webp',
     mainIngredient: '단호박',
     description: '다시육수에 단호박을 은근히 졸인, 부드럽고 달콤한 일본식 조림이에요.',
     masterclass: {
@@ -228,7 +228,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-world-2', month: 10, title: '단호박 뇨끼', subtitle: '이탈리아식 감자경단을 단호박으로',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 60, servings: 3,
     cuisineContext: { country: '이탈리아', note: '이탈리아 북부에서는 가을철 단호박(주카)을 넣은 뇨끼가 계절 별미로 사랑받아요. 세이지버터소스와 함께 내는 것이 정통 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-world-2/hero.webp',
     mainIngredient: '단호박',
     description: '단호박과 감자를 섞어 만든 뇨끼를 세이지버터소스로 마무리한, 가을철 이탈리아식 요리예요.',
     masterclass: {
@@ -260,7 +260,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-world-3', month: 10, title: '단호박 엔칠라다', subtitle: '멕시코식 매콤달콤한 또띠아 요리',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 55, servings: 4,
     cuisineContext: { country: '멕시코', note: '멕시코에서는 가을철 호박류(칼라바사)가 풍성하게 나요. 엔칠라다는 또띠아에 속재료를 채워 매콤한 소스를 끼얹어 굽는 요리로, 단호박을 넣으면 채식 버전으로도 든든한 한 끼가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-world-3/hero.webp',
     mainIngredient: '단호박',
     description: '단호박과 검은콩을 채운 또띠아에 매콤한 소스를 끼얹어 구운, 멕시코식 든든한 요리예요.',
     masterclass: {
@@ -291,7 +291,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-world-4', month: 10, title: '단호박 파이', subtitle: '미국 추수감사절의 대표 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 70, servings: 6,
     cuisineContext: { country: '미국', note: '펌킨파이는 미국 추수감사절 상차림에 빠지지 않는 대표 디저트예요. 시나몬, 넛맥 같은 향신료가 단호박의 단맛과 어우러져 깊은 가을 향을 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-world-4/hero.webp',
     mainIngredient: '단호박',
     description: '단호박 퓌레와 향신료를 넣은 커스터드를 타르트지에 채워 구운, 미국식 가을 대표 디저트예요.',
     masterclass: {
@@ -321,7 +321,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-world-5', month: 10, title: '단호박 코코넛 커리', subtitle: '태국식 향긋한 커리',
     category: '카레', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '태국', note: '태국에서는 호박류를 코코넛밀크 커리에 넣어 부드럽고 달콤하게 즐겨요. 레드커리페이스트의 매콤함과 코코넛의 부드러움, 단호박의 단맛이 삼박자를 이루는 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-world-5/hero.webp',
     mainIngredient: '단호박',
     description: '코코넛밀크와 레드커리페이스트에 단호박을 끓인, 향긋하고 매콤달콤한 태국식 커리예요.',
     masterclass: {
@@ -354,7 +354,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-chef-1', month: 10, title: '단호박 크렘브륄레', subtitle: '고소함이 진한 프랑스식 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '작은 라메킨에 크림을 담아 그대로 굳히고, 먹기 직전 표면에 설탕을 얇게 뿌려 토치로 그을려 유리처럼 바삭한 막을 만듭니다.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-chef-1/hero.webp',
     mainIngredient: '단호박',
     description: '단호박 퓌레로 향을 낸 커스터드 크림 위에 설탕을 그을려 바삭한 막을 만든, 가을 향 가득한 디저트예요.',
     masterclass: {
@@ -386,7 +386,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-chef-2', month: 10, title: '단호박 세이지버터 뇨끼', subtitle: '고급 레스토랑 스타일 뇨끼',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 65, servings: 3,
     platingGuide: '따뜻한 접시에 뇨끼를 나선형으로 담고, 세이지버터소스를 골고루 끼얹은 뒤 튀긴 세이지 잎과 파마산치즈를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580201271605-757fb46e4577?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-chef-2/hero.webp',
     mainIngredient: '단호박',
     description: '단호박 뇨끼에 브라운버터와 튀긴 세이지를 곁들인, 레스토랑 스타일로 완성한 요리예요.',
     masterclass: {
@@ -419,7 +419,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-chef-3', month: 10, title: '단호박 리조또', subtitle: '크리미하고 달콤한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 구운 단호박씨와 세이지오일을 몇 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-chef-3/hero.webp',
     mainIngredient: '단호박',
     description: '단호박을 갈아 넣어 부드럽고 달콤한 색감을 낸, 가을철 대표 이탈리아식 리조또예요.',
     masterclass: {
@@ -451,7 +451,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-chef-4', month: 10, title: '오리다리 단호박 콩피', subtitle: '가을 향이 스민 프랑스식 오리요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 90, servings: 2,
     platingGuide: '따뜻한 접시에 오리다리를 놓고, 콩피한 단호박 조각을 옆에 곁들인 뒤 오리기름을 살짝 끼얹어 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-chef-4/hero.webp',
     mainIngredient: '단호박',
     description: '오리다리와 단호박을 함께 오리기름에 은근히 익힌, 깊고 풍부한 프랑스식 콩피예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesSweetPumpkinExpansion: Recipe[] = [
     id: 'pumpkin-chef-5', month: 10, title: '단호박 무스 타르트', subtitle: '가볍고 부드러운 가을 디저트',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 80, servings: 6,
     platingGuide: '타르트를 통째로 원형 접시에 올려 자연스럽게 자른 조각 하나를 살짝 빼내어 단면이 보이게 연출하고, 조각 위에 슈가파우더와 시나몬가루를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/pumpkin-chef-5/hero.webp',
     mainIngredient: '단호박',
     description: '단호박 무스를 타르트지에 채운, 가볍고 부드러운 가을철 디저트예요.',
     masterclass: {

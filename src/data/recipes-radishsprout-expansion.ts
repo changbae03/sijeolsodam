@@ -12,7 +12,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-home-1', month: 9, title: '무순샐러드', subtitle: '간단하게 곁들이는 알싸한 새싹 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-home-1/hero.webp',
     mainIngredient: '무순',
     description: '아삭한 무순에 간장 드레싱을 더해 가볍게 곁들이기 좋은, 알싸한 새싹 샐러드예요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-home-2', month: 9, title: '무순비빔밥', subtitle: '알싸하고 개운한 한 그릇',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-home-2/hero.webp',
     mainIngredient: '무순',
     description: '무순을 듬뿍 올려 비벼 먹는, 알싸하고 개운한 가벼운 한 그릇이에요.',
     masterclass: {
@@ -69,7 +69,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-home-3', month: 9, title: '무순냉국', subtitle: '알싸하고 시원한 가을 냉국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-home-3/hero.webp',
     mainIngredient: '무순',
     description: '무순을 새콤달콤한 냉국물에 담근, 알싸하고 시원한 가을 별미예요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-home-4', month: 9, title: '무순쌈밥', subtitle: '알싸하고 개운한 쌈 한 끼',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-home-4/hero.webp',
     mainIngredient: '무순',
     description: '무순에 밥과 고기를 싸 먹는, 알싸함이 느끼함을 잡아주는 쌈 한 끼예요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-home-5', month: 9, title: '무순장떡', subtitle: '알싸하게 부쳐낸 별미전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-home-5/hero.webp',
     mainIngredient: '무순',
     description: '무순을 된장 반죽에 섞어 부친, 알싸하고 구수한 별미 장떡이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-weekend-1', month: 9, title: '연어무순덮밥', subtitle: '고소하고 알싸한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-weekend-1/hero.webp',
     mainIngredient: '무순',
     description: '훈제연어와 무순을 밥에 올려 간장소스로 비벼 먹는, 고소하고 알싸한 한 그릇이에요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-weekend-2', month: 9, title: '무순잡채', subtitle: '알싸함을 더한 특별한 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1623241899756-c5e72e1e9d8e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-weekend-2/hero.webp',
     mainIngredient: '무순',
     description: '기본 잡채에 무순을 더해 알싸한 향을 살린, 색다른 잡채예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-weekend-3', month: 9, title: '무순비빔국수', subtitle: '알싸하고 개운한 여름 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-weekend-3/hero.webp',
     mainIngredient: '무순',
     description: '소면에 무순과 매콤한 양념을 비벼낸, 알싸하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-weekend-4', month: 9, title: '무순전복죽', subtitle: '알싸함을 더한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-weekend-4/hero.webp',
     mainIngredient: '무순',
     description: '전복죽에 무순을 고명으로 올려, 알싸한 향으로 개운함을 더한 보양죽이에요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
   {
     id: 'radishsprout-weekend-5', month: 9, title: '탕평채', subtitle: '오색 채소를 곁들인 궁중요리',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-weekend-5/hero.webp',
     mainIngredient: '무순',
     description: '녹두묵과 여러 채소, 무순을 색스럽게 무친, 조선시대 궁중요리 탕평채예요.',
     masterclass: {
@@ -308,7 +308,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-world-1', month: 9, title: '가이와레노 사라다', subtitle: '일본식 무순 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '일본', note: '가이와레(貝割れ)는 일본어로 무순을 뜻해요. 일본에서는 참치회나 초밥에 곁들이는 대표적인 고명채소로 활용해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-world-1/hero.webp',
     mainIngredient: '무순',
     description: '무순을 폰즈소스와 가쓰오부시로 무친, 담백한 일본식 샐러드예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-world-2', month: 9, title: '무순 카프레제', subtitle: '이탈리아식 카프레제 응용',
     category: '샐러드', difficulty: '아주 쉬움', level: 'world', cookTime: 15, servings: 2,
     cuisineContext: { country: '이탈리아', note: '카프레제는 토마토, 모짜렐라, 바질로 만드는 이탈리아 대표 샐러드예요. 무순을 더하면 알싸한 향이 더해진 색다른 버전이 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-world-2/hero.webp',
     mainIngredient: '무순',
     description: '토마토와 모짜렐라에 무순을 더한, 이탈리아식 카프레제를 응용한 샐러드예요.',
     masterclass: {
@@ -366,7 +366,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-world-3', month: 9, title: '베트남식 무순 스프링롤', subtitle: '상큼한 여름 스프링롤',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '베트남', note: '베트남의 스프링롤(고이꾸온)은 라이스페이퍼에 신선한 채소와 허브, 새우 등을 말아 느억맘소스에 찍어 먹는 대표 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-world-3/hero.webp',
     mainIngredient: '무순',
     description: '라이스페이퍼에 무순과 새우, 허브를 말아낸, 상큼한 베트남식 스프링롤이에요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-world-4', month: 9, title: '무순 갈레트', subtitle: '프랑스식 메밀 갈레트',
     category: '브런치', difficulty: '보통', level: 'world', cookTime: 40, servings: 2,
     cuisineContext: { country: '프랑스', note: '갈레트는 프랑스 브르타뉴 지방의 메밀 크레페로, 계란과 치즈, 채소를 넣어 짭짤하게 즐기는 브런치 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-world-4/hero.webp',
     mainIngredient: '무순',
     description: '메밀가루로 부친 갈레트에 계란과 치즈, 무순을 올린, 프랑스식 브런치예요.',
     masterclass: {
@@ -427,7 +427,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-world-5', month: 9, title: '태국식 무순 얌', subtitle: '새콤매콤한 태국식 샐러드',
     category: '샐러드', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '태국', note: '얌은 태국의 대표 샐러드 스타일로, 라임즙과 피시소스, 고추로 새콤매콤하게 무치는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-world-5/hero.webp',
     mainIngredient: '무순',
     description: '무순을 라임즙과 피시소스로 무친, 새콤매콤한 태국식 얌 샐러드예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-chef-1', month: 9, title: '무순 콩소메', subtitle: '맑고 알싸한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 50, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 무순 한 줌과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-chef-1/hero.webp',
     mainIngredient: '무순',
     description: '무순 향을 우린 맑은 콩소메로, 코스요리의 시작에 어울리는 산뜻한 수프예요.',
     masterclass: {
@@ -490,7 +490,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-chef-2', month: 9, title: '무순 뵈르블랑 관자', subtitle: '프랑스식 버터소스와 만난 관자',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 무순을 올려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-chef-2/hero.webp',
     mainIngredient: '무순',
     description: '바삭하게 시어링한 관자에 프랑스식 버터소스와 무순을 곁들인, 우아한 메인요리예요.',
     masterclass: {
@@ -522,7 +522,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-chef-3', month: 9, title: '참치타다키 무순', subtitle: '일본식 참치 겉불맛과 무순',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 타다키를 얇게 저며 부채꼴로 담고, 무순을 소복이 올린 뒤 폰즈소스를 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-chef-3/hero.webp',
     mainIngredient: '무순',
     description: '겉만 살짝 구운 참치에 무순을 곁들인, 일본식 세련된 전채예요.',
     masterclass: {
@@ -553,7 +553,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-chef-4', month: 9, title: '무순 리조또', subtitle: '알싸하고 고소한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 무순을 소복이 올린 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-chef-4/hero.webp',
     mainIngredient: '무순',
     description: '무순을 넣어 알싸한 향을 살린, 가을철 이탈리아식 리조또예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesRadishSproutExpansion: Recipe[] = [
     id: 'radishsprout-chef-5', month: 9, title: '무순 카나페', subtitle: '한입에 즐기는 고급 전채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '긴 접시에 카나페를 일렬로 배치하고, 크림치즈 위에 훈제연어와 무순을 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/radishsprout-chef-5/hero.webp',
     mainIngredient: '무순',
     description: '바삭하게 구운 크로스티니 위에 훈제연어와 무순을 올린, 파티에 어울리는 세련된 전채예요.',
     masterclass: {

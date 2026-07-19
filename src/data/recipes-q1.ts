@@ -58,7 +58,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/1-5/hero.webp',
     mainIngredient: '시금치',
     description: '단맛이 진해진 겨울 시금치를 듬뿍 넣고 끓인 구수한 된장국이에요. 추운 날 몸을 따뜻하게 데워주는 가장 기본적인 집밥 메뉴입니다.',
     masterclass: {
@@ -105,7 +105,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1627444391694-84594c9b9102?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-1/hero.webp',
     mainIngredient: '바지락',
     description: '봄을 준비하며 살이 차오른 바지락을 청주와 함께 찜으로 즐기는 메뉴예요. 깔끔하고 시원한 국물이 입춘 무렵 입맛을 깨워줍니다.',
     masterclass: {
@@ -151,7 +151,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-2/hero.webp',
     mainIngredient: '삼치',
     description: '부드럽고 기름진 삼치살을 달콤짭짤한 데리야끼 소스로 윤기나게 구워낸 요리예요. 밥반찬으로도, 술안주로도 잘 어울려요.',
     masterclass: {
@@ -197,7 +197,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-4/hero.webp',
     mainIngredient: '냉이',
     description: '땅이 녹기 시작하면 가장 먼저 올라오는 냉이로 끓인 구수한 된장찌개예요. 흙내 가득한 향이 봄이 오고 있음을 알려줍니다.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1591814468924-caf88d1232e1?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-5/hero.webp',
     mainIngredient: '바지락',
     description: '겨울 끝물 바지락의 진한 감칠맛이 우러난 육수에 칼국수 면을 넣어 끓이는 따뜻한 한 그릇이에요.',
     masterclass: {
@@ -294,7 +294,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-1/hero.webp',
     mainIngredient: '달래',
     description: '봄의 전령 달래로 만든 알싸한 양념장을 뜨끈한 밥에 비벼 먹는 메뉴예요. 마늘과 비슷한 알싸한 향이 입맛을 확 돋워줍니다.',
     masterclass: {
@@ -339,7 +339,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-2/hero.webp',
     mainIngredient: '바지락',
     description: '바지락의 시원한 감칠맛과 냉이의 향긋함이 만나 한층 깊어진 된장국이에요. 봄이 가장 잘 느껴지는 국물 요리입니다.',
     masterclass: {
@@ -384,7 +384,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-4/hero.webp',
     mainIngredient: '미나리',
     description: '향긋한 미나리를 듬뿍 넣고 바삭하게 부친 전이에요. 비 오는 봄날 막걸리와 함께 즐기기 좋은 메뉴입니다.',
     masterclass: {
@@ -426,7 +426,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-5/hero.webp',
     mainIngredient: '두릅',
     description: '쌉쌀한 두릅과 알싸한 달래를 함께 무쳐낸 향긋한 봄나물 반찬이에요. 입맛 없는 봄날 입맛을 돋워줍니다.',
     masterclass: {
@@ -472,7 +472,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-1/hero.webp',
     mainIngredient: '두릅',
     description: '봄철 산나물의 왕, 두릅을 베이컨으로 감싸 구워낸 별미예요. 쌉쌀한 두릅 향과 베이컨의 고소한 짠맛이 환상의 조화를 이룹니다.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-2/hero.webp',
     mainIngredient: '죽순',
     description: '아삭한 식감이 살아있는 봄 죽순과 영양 가득한 견과류, 잡곡을 함께 지은 영양밥이에요. 씹는 맛이 일품인 든든한 한 끼입니다.',
     masterclass: {
@@ -561,7 +561,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-3/hero.webp',
     mainIngredient: '취나물',
     description: '향긋하고 부드러운 취나물을 들기름에 고소하게 무쳐낸 가장 기본적인 봄나물 반찬입니다.',
     masterclass: {
@@ -605,7 +605,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 10,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-4/hero.webp',
     mainIngredient: '딸기',
     description: '제철을 맞아 가장 달고 향이 진한 딸기로 만드는 상큼한 요거트 음료예요. 아이들 간식으로도, 어른들 디저트로도 좋습니다.',
     masterclass: {
@@ -661,7 +661,7 @@ export const recipesQ1: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-5/hero.webp',
     mainIngredient: '죽순',
     description: '아삭한 식감의 봄 죽순과 탱글한 새우를 튀김옷에 묻혀 바삭하게 튀겨낸 별미예요. 맥주 안주로도 좋은 메뉴입니다.',
     masterclass: {

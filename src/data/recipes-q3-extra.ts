@@ -5,7 +5,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '9-6', month: 9, title: '배식혜', subtitle: '과즙 가득한 배로 만드는 전통 음료',
     category: '음료', difficulty: '보통', level: 'home', cookTime: 60, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-6/hero.webp',
     mainIngredient: '배',
     description: '가을 대표 과일 배를 더해 향긋하게 끓인, 명절이나 손님 접대용으로도 좋은 전통 식혜예요.',
     masterclass: {
@@ -35,7 +35,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '9-7', month: 9, title: '표고버섯불고기', subtitle: '향긋한 표고버섯과 소고기의 조화',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-7/hero.webp',
     mainIngredient: '표고버섯',
     description: '가을 표고버섯의 향과 소고기의 감칠맛이 어우러진, 가족 식사로 든든하게 즐기기 좋은 불고기예요.',
     masterclass: {
@@ -64,7 +64,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '9-10', month: 9, title: '배셔벗', subtitle: '과즙 가득한 가을 배로 만드는 시원한 셔벗',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-10/hero.webp',
     mainIngredient: '배',
     description: '과즙이 가득한 가을 배를 얼려 만드는, 가볍게 즐기기 좋은 시원한 셔벗이에요.',
     masterclass: {
@@ -95,7 +95,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '10-7', month: 10, title: '단호박영양밥', subtitle: '달큰한 호박과 견과류가 어우러진 가을 영양밥',
     category: '밥', difficulty: '보통', level: 'home', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-7/hero.webp',
     mainIngredient: '단호박',
     description: '달큰한 가을 단호박과 견과류, 잡곡을 함께 지은, 든든하고 건강한 영양밥이에요.',
     masterclass: {
@@ -125,7 +125,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '10-8', month: 10, title: '사과김치', subtitle: '단맛이 더해진 가을 별미 김치',
     category: '반찬', difficulty: '보통', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-8/hero.webp',
     mainIngredient: '사과',
     description: '아삭한 가을 사과를 더해 단맛과 아삭함을 살린, 일반 김치와는 다른 산뜻한 별미 김치예요.',
     masterclass: {
@@ -154,7 +154,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '10-9', month: 10, title: '고구마들깨범벅', subtitle: '구수하고 든든한 가을 별미 간식',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-9/hero.webp',
     mainIngredient: '고구마',
     description: '구수한 고구마를 들깨가루와 함께 버무린, 든든하고 영양 가득한 가을철 별미 간식이에요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '11-6', month: 11, title: '알배추된장국', subtitle: '속이 꽉 찬 가을 배추로 끓인 구수한 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-6/hero.webp',
     mainIngredient: '알배추',
     description: '속이 단단하게 차오른 가을 알배추를 듬뿍 넣어 끓인, 추운 늦가을 몸을 데워주는 구수한 된장국이에요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '11-7', month: 11, title: '단감샐러드', subtitle: '달콤한 단감과 부드러운 치즈의 조화',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601493700750-738103982f56?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-7/hero.webp',
     mainIngredient: '단감',
     description: '늦가을 달콤한 단감과 부드러운 리코타치즈를 곁들인, 손님 초대 메뉴로도 좋은 산뜻한 샐러드예요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '11-9', month: 11, title: '굴파전', subtitle: '통통한 굴을 듬뿍 넣은 바삭한 파전',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1626200926749-2cf3414de4d6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-9/hero.webp',
     mainIngredient: '굴',
     description: '본격적으로 살이 차오르는 늦가을 굴을 듬뿍 넣어 바삭하게 부친, 비 오는 날 막걸리와 잘 어울리는 파전이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '11-10', month: 11, title: '단감식초절임', subtitle: '새콤달콤하게 절인 늦가을 단감 별미',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1601493700750-738103982f56?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-10/hero.webp',
     mainIngredient: '단감',
     description: '단단한 단감을 새콤달콤한 절임물에 담가 즐기는, 입맛을 돋워주는 별미예요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesQ3Extra: Recipe[] = [
   {
     id: '12-8', month: 12, title: '명태전', subtitle: '담백한 명태살을 바삭하게 부친 전',
     category: '전요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/12-8/hero.webp',
     mainIngredient: '명태',
     description: '겨울 동해를 대표하는 명태살을 얇게 떠서 부친, 명절 음식으로도 좋은 담백한 전이에요.',
     masterclass: {

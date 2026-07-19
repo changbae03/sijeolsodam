@@ -11,7 +11,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1625943555017-a517a8e8d11a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-1/hero.webp',
     mainIngredient: '대하',
     description: '서늘한 바람이 불기 시작하며 단맛이 응축된 가을무와, 살이 탱글하게 오른 대하를 함께 찜으로 즐기는 메뉴예요.',
     masterclass: {
@@ -55,7 +55,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-2/hero.webp',
     mainIngredient: '표고버섯',
     description: '향과 식감이 가장 좋은 가을 표고버섯을 들깨와 함께 끓여낸 구수한 탕이에요. 든든한 보양식으로도 손색없습니다.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-3/hero.webp',
     mainIngredient: '가을무',
     description: '단맛이 응축된 가을무와 과즙 가득한 배를 채 썰어 새콤하게 무친 시원한 반찬이에요. 기름진 음식과 함께 먹으면 좋습니다.',
     masterclass: {
@@ -145,7 +145,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-4/hero.webp',
     mainIngredient: '표고버섯',
     description: '향이 가장 진한 가을 표고버섯 안에 고소한 소를 채워 부친 전이에요. 명절 음식으로도, 평일 별미로도 좋습니다.',
     masterclass: {
@@ -191,7 +191,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/9-5/hero.webp',
     mainIngredient: '배',
     description: '과즙이 가득한 가을 대표 과일 배를 채소와 함께 곁들인 산뜻한 샐러드예요. 단맛과 아삭함이 동시에 느껴집니다.',
     masterclass: {
@@ -237,7 +237,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-2/hero.webp',
     mainIngredient: '사과',
     description: '아삭함과 단맛이 절정인 가을 사과를 견과류와 함께 곁들인 샐러드예요. 가볍지만 영양이 가득합니다.',
     masterclass: {
@@ -282,7 +282,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1635348722099-83ada9f6e2da?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-3/hero.webp',
     mainIngredient: '고구마',
     description: '구수하고 달콤한 가을 고구마를 바삭하게 튀겨 시럽을 입힌 대표 간식이에요. 아이부터 어른까지 모두 좋아하는 메뉴입니다.',
     masterclass: {
@@ -345,7 +345,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-5/hero.webp',
     mainIngredient: '사과',
     description: '아삭함과 단맛이 절정인 가을 사과를 시나몬과 버터로 따뜻하게 구운 디저트예요. 가을 분위기를 가득 느낄 수 있는 메뉴입니다.',
     masterclass: {
@@ -390,7 +390,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-1/hero.webp',
     mainIngredient: '굴',
     description: '본격적으로 살이 차오르기 시작하는 굴을 듬뿍 넣어 끓인 미역국이에요. 굴의 진한 감칠맛이 국물에 깊게 우러납니다.',
     masterclass: {
@@ -435,7 +435,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-2/hero.webp',
     mainIngredient: '알배추',
     description: '속이 단단하게 차오른 가을 알배추를 매콤하게 무친 겉절이예요. 김장 전에 빠르게 만들어 먹기 좋은 반찬입니다.',
     masterclass: {
@@ -480,7 +480,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601493700750-738103982f56?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-4/hero.webp',
     mainIngredient: '단감',
     description: '늦가을의 달콤한 마무리를 책임지는 단감을 채소와 함께 곁들인 산뜻한 샐러드예요.',
     masterclass: {
@@ -524,7 +524,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1626200926749-2cf3414de4d6?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-5/hero.webp',
     mainIngredient: '굴',
     description: '본격적으로 살이 차오르기 시작하는 가을 굴을 바삭하게 부친 전이에요. 굴 본연의 진한 맛을 가장 잘 느낄 수 있는 메뉴입니다.',
     masterclass: {
@@ -569,7 +569,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 40,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/12-2/hero.webp',
     mainIngredient: '명태',
     description: '겨울 동해를 대표하는 명태(코다리)를 매콤한 양념에 졸여낸 칼칼한 조림이에요. 추운 겨울 든든한 밥반찬이 됩니다.',
     masterclass: {
@@ -616,7 +616,7 @@ export const recipesQ3: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/12-5/hero.webp',
     mainIngredient: '명태',
     description: '겨울 동해를 대표하는 명태로 끓인 얼큰한 매운탕이에요. 추운 겨울밤 가족이 둘러앉아 먹기 좋은 메뉴입니다.',
     masterclass: {

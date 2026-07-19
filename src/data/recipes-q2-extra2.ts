@@ -6,7 +6,7 @@ export const recipesQ2Extra2: Recipe[] = [
   {
     id: '5-11', month: 5, title: '오이냉채', subtitle: '아삭하고 시원한 초여름 입맛 살리는 무침',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-11/hero.webp',
     mainIngredient: '오이',
     description: '수분 가득한 오이를 새콤달콤하게 무쳐낸, 더위가 시작될 때 입맛을 살려주는 시원한 냉채예요.',
     masterclass: {
@@ -35,7 +35,7 @@ export const recipesQ2Extra2: Recipe[] = [
   {
     id: '5-14', month: 5, title: '오이지무침', subtitle: '새콤짭짤한 감칠맛 가득한 여름 밑반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/5-14/hero.webp',
     mainIngredient: '오이',
     description: '새콤짭짤한 오이지를 매콤하게 무쳐낸, 입맛을 살려주는 여름철 밑반찬이에요.',
     masterclass: {
@@ -65,7 +65,7 @@ export const recipesQ2Extra2: Recipe[] = [
   {
     id: '6-11', month: 6, title: '깻잎장아찌', subtitle: '짭짤하고 향긋한 여름 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-11/hero.webp',
     mainIngredient: '깻잎',
     description: '향긋한 깻잎을 간장 양념에 절여낸, 밥반찬으로 두고 먹기 좋은 밑반찬이에요.',
     masterclass: {
@@ -94,7 +94,7 @@ export const recipesQ2Extra2: Recipe[] = [
   {
     id: '6-14', month: 6, title: '깻잎된장무침', subtitle: '구수한 된장 양념이 밴 향긋한 잎채소 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622206151226-18ca2c9d680f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/6-14/hero.webp',
     mainIngredient: '깻잎',
     description: '향긋한 깻잎을 된장 양념에 가볍게 무쳐낸, 입맛을 돋우는 반찬이에요.',
     masterclass: {
@@ -124,7 +124,7 @@ export const recipesQ2Extra2: Recipe[] = [
   {
     id: '7-11', month: 7, title: '옥수수버터구이', subtitle: '한여름 단맛이 진한 별미 간식',
     category: '간식', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1601593768799-76c6d3f92dea?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/7-11/hero.webp',
     mainIngredient: '옥수수',
     description: '달콤한 옥수수를 버터에 구워낸, 간단하고 고소한 여름철 간식이에요.',
     masterclass: {
@@ -153,7 +153,7 @@ export const recipesQ2Extra2: Recipe[] = [
   {
     id: '7-14', month: 7, title: '옥수수전', subtitle: '달콤하고 바삭한 여름 별미 전',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/7-14/hero.webp',
     mainIngredient: '옥수수',
     description: '달콤한 옥수수알을 듬뿍 넣어 부쳐낸, 바삭하고 고소한 여름철 전이에요.',
     masterclass: {

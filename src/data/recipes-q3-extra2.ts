@@ -7,7 +7,7 @@ export const recipesQ3Extra2: Recipe[] = [
   {
     id: '10-11', month: 10, title: '단호박라떼', subtitle: '부드럽고 따뜻한 가을철 음료',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-11/hero.webp',
     mainIngredient: '단호박',
     description: '달콤하고 부드러운 단호박을 우유와 함께 끓여낸, 따뜻한 가을철 음료예요.',
     masterclass: {
@@ -36,7 +36,7 @@ export const recipesQ3Extra2: Recipe[] = [
   {
     id: '10-15', month: 10, title: '단호박죽', subtitle: '부드럽고 든든한 가을철 보양 죽',
     category: '죽', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/10-15/hero.webp',
     mainIngredient: '단호박',
     description: '부드러운 단호박을 푹 끓여낸, 따뜻하고 든든한 가을철 보양 죽이에요.',
     masterclass: {
@@ -68,7 +68,7 @@ export const recipesQ3Extra2: Recipe[] = [
   {
     id: '11-11', month: 11, title: '시래기된장국', subtitle: '깊은 맛이 우러난 겨울 초입 보양 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-11/hero.webp',
     mainIngredient: '시래기',
     description: '말린 시래기를 푹 삶아 끓인, 깊은 맛으로 속을 든든하게 채워주는 구수한 된장국이에요.',
     masterclass: {
@@ -97,7 +97,7 @@ export const recipesQ3Extra2: Recipe[] = [
   {
     id: '11-14', month: 11, title: '시래기나물밥', subtitle: '구수한 시래기를 듬뿍 올린 영양밥',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/11-14/hero.webp',
     mainIngredient: '시래기',
     description: '구수한 시래기를 양념해 밥에 올려 비벼 먹는, 든든한 겨울철 한 끼예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesQ3Extra2: Recipe[] = [
   {
     id: '12-13', month: 12, title: '곶감샐러드', subtitle: '농축된 단맛이 매력인 겨울 별미 샐러드',
     category: '샐러드', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/12-13/hero.webp',
     mainIngredient: '곶감',
     description: '말려서 단맛이 농축된 곶감을 채소와 함께 즐기는, 색다른 겨울철 샐러드예요.',
     masterclass: {

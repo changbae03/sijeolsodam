@@ -11,7 +11,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/1-6/hero.webp',
     mainIngredient: '명태',
     description: '겨울철 가장 살이 통통한 동태로 끓인 얼큰한 탕이에요. 무와 함께 끓이면 더욱 깊은 국물 맛을 즐길 수 있습니다.',
     masterclass: {
@@ -58,7 +58,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/1-7/hero.webp',
     mainIngredient: '봄동',
     description: '겨울철 노지에서 자란 봄동은 부드럽고 단맛이 진해요. 매콤하게 무쳐 겉절이로 즐기면 입맛을 돋워줍니다.',
     masterclass: {
@@ -102,7 +102,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/1-9/hero.webp',
     mainIngredient: '단호박',
     description: '겨울철 달큰한 단호박을 곱게 갈아 부드럽게 끓인 수프예요. 추운 날 속을 따뜻하게 데워주는 메뉴입니다.',
     masterclass: {
@@ -149,7 +149,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-6/hero.webp',
     mainIngredient: '봄동',
     description: '입춘 무렵 가장 부드러운 봄동을 듬뿍 넣어 끓인 된장국이에요. 단맛이 진한 봄동이 국물에 우러나 깊은 맛을 냅니다.',
     masterclass: {
@@ -192,7 +192,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-7/hero.webp',
     mainIngredient: '도미',
     description: '봄을 준비하며 살이 차오른 도미를 맑게 쪄내는 담백한 요리예요. 생강과 대파의 향이 비린내를 잡아줍니다.',
     masterclass: {
@@ -236,7 +236,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-8/hero.webp',
     mainIngredient: '냉이',
     description: '냉이와 봄동 등 봄나물을 듬뿍 넣어 비벼 먹는 향긋한 비빔국수예요. 입춘 무렵 입맛을 깨워주는 메뉴입니다.',
     masterclass: {
@@ -281,7 +281,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/2-10/hero.webp',
     mainIngredient: '미나리',
     description: '향긋한 미나리를 듬뿍 곁들여 삼겹살을 구워 먹는 별미예요. 미나리의 향이 삼겹살의 기름진 맛을 깔끔하게 잡아줍니다.',
     masterclass: {
@@ -326,7 +326,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 35,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-6/hero.webp',
     mainIngredient: '두릅',
     description: '봄철 산나물의 왕 두릅을 쌀과 함께 지어 향긋하게 즐기는 솥밥이에요. 쌉쌀한 향이 입맛을 돋워줍니다.',
     masterclass: {
@@ -369,7 +369,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-7/hero.webp',
     mainIngredient: '봄동',
     description: '부드러운 봄동과 고소한 두부를 함께 무친 담백한 반찬이에요. 간단하지만 영양이 가득합니다.',
     masterclass: {
@@ -413,7 +413,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 20,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-9/hero.webp',
     mainIngredient: '달래',
     description: '봄의 전령 달래를 듬뿍 넣어 끓인 알싸하고 구수한 된장찌개예요. 입맛 없는 봄날 든든한 한 끼가 됩니다.',
     masterclass: {
@@ -457,7 +457,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 25,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/3-10/hero.webp',
     mainIngredient: '미나리',
     description: '향긋한 미나리전 위에 탱글한 새우를 올려 더욱 풍성하게 즐기는 별미예요. 봄비 내리는 날 막걸리와 함께 즐기기 좋습니다.',
     masterclass: {
@@ -502,7 +502,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-6/hero.webp',
     mainIngredient: '두릅',
     description: '쌉쌀한 두릅을 으깬 두부와 함께 무쳐낸 담백한 반찬이에요. 산뜻한 봄 산채의 맛을 가장 잘 느낄 수 있는 메뉴입니다.',
     masterclass: {
@@ -545,7 +545,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 40,
     servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-7/hero.webp',
     mainIngredient: '딸기',
     description: '제철 딸기를 통째로 넣어 만드는 일본식 찹쌀떡이에요. 쫄깃한 떡과 달콤한 딸기, 고소한 팥앙금의 조화가 일품입니다.',
     masterclass: {
@@ -589,7 +589,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '쉬움', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-8/hero.webp',
     mainIngredient: '취나물',
     description: '취나물, 두릅 등 봄철 산나물을 듬뿍 올려 비벼 먹는 영양 가득한 비빔밥이에요. 색감도 화려해 보는 즐거움도 있습니다.',
     masterclass: {
@@ -634,7 +634,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '아주 쉬움', level: 'home',
     cookTime: 15,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-9/hero.webp',
     mainIngredient: '죽순',
     description: '아삭한 식감이 살아있는 봄 죽순을 간단하게 무친 반찬이에요. 고소한 참기름 향이 입맛을 돋워줍니다.',
     masterclass: {
@@ -678,7 +678,7 @@ export const recipesQ1Extra: Recipe[] = [
     difficulty: '보통', level: 'home',
     cookTime: 30,
     servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/4-10/hero.webp',
     mainIngredient: '취나물',
     description: '향긋하고 부드러운 취나물을 넣어 만든 색다른 김밥이에요. 도시락으로도, 봄 소풍 메뉴로도 좋습니다.',
     masterclass: {
