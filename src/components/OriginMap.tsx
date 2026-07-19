@@ -72,19 +72,48 @@ const PROVINCE_COORDS: Record<string, [number, number]> = {
   제주: [33.45, 126.55], 서울: [37.57, 126.98], 부산: [35.18, 129.08], 인천: [37.46, 126.7],
 };
 
-export function resolveOriginCoord(origin: string): { lat: number; lon: number; label: string } | null {
-  // "경북 포항(구룡포)" -> 괄호 제거, "충남 태안·서천" -> 첫 지명
-  const cleaned = origin.replace(/\(.*?\)/g, '').trim();
-  const primary = cleaned.split('·')[0].trim();
-  const tokens = primary.split(/\s+/);
+export interface OriginPoint {
+  lat: number;
+  lon: number;
+  label: string;
+}
 
+/** 지명 하나("경북 청도" 또는 "서천")를 좌표로 */
+function resolveOne(part: string): OriginPoint | null {
+  const tokens = part.trim().split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return null;
+  // 뒤쪽(시·군)부터 찾고, 없으면 앞쪽(도) 중심점
   for (let i = tokens.length - 1; i >= 0; i--) {
     const city = CITY_COORDS[tokens[i]];
-    if (city) return { lat: city[0], lon: city[1], label: primary };
+    if (city) return { lat: city[0], lon: city[1], label: part.trim() };
   }
   const prov = PROVINCE_COORDS[tokens[0]];
-  if (prov) return { lat: prov[0], lon: prov[1], label: primary };
+  if (prov) return { lat: prov[0], lon: prov[1], label: part.trim() };
   return null;
+}
+
+/**
+ * 산지 문자열 -> 좌표 목록.
+ * "경북 청도·충북 충주"처럼 여러 산지가 붙어 있으면 각각을 모두 표시한다.
+ * "충남 태안·서천"처럼 뒤쪽에 도 이름이 생략된 경우도 시·군 이름으로 찾는다.
+ */
+export function resolveOriginCoords(origin: string): OriginPoint[] {
+  const cleaned = origin.replace(/\(.*?\)/g, '').trim();
+  const points: OriginPoint[] = [];
+  const seen = new Set<string>();
+  for (const part of cleaned.split('·')) {
+    const p = resolveOne(part);
+    if (p && !seen.has(`${p.lat},${p.lon}`)) {
+      seen.add(`${p.lat},${p.lon}`);
+      points.push(p);
+    }
+  }
+  return points;
+}
+
+/** 단일 좌표가 필요할 때 (첫 산지 기준) */
+export function resolveOriginCoord(origin: string): OriginPoint | null {
+  return resolveOriginCoords(origin)[0] ?? null;
 }
 
 export default function OriginMap({
@@ -97,8 +126,8 @@ export default function OriginMap({
   /** 이 산지에서 나는 것만의 특징 (없으면 일반 문구) */
   note?: string;
 }) {
-  const coord = resolveOriginCoord(origin);
-  if (!coord) return null;
+  const points = resolveOriginCoords(origin);
+  if (points.length === 0) return null;
 
   const path = MAINLAND.map(([lat, lon], i) => {
     const [x, y] = project(lat, lon);
@@ -106,10 +135,15 @@ export default function OriginMap({
   }).join(' ') + ' Z';
 
   const [jx, jy] = project(JEJU.lat, JEJU.lon);
-  const [mx, my] = project(coord.lat, coord.lon);
   // 울릉도처럼 투영 범위를 벗어나는 산지는 가장자리로 클램프
-  const cx = Math.max(8, Math.min(W - 8, mx));
-  const cy = Math.max(8, Math.min(H - 8, my));
+  const markers = points.map((p) => {
+    const [mx, my] = project(p.lat, p.lon);
+    return {
+      label: p.label,
+      cx: Math.max(8, Math.min(W - 8, mx)),
+      cy: Math.max(8, Math.min(H - 8, my)),
+    };
+  });
 
   return (
     <section className="mb-8">
@@ -124,15 +158,22 @@ export default function OriginMap({
           >
             <path d={path} fill="var(--color-cream-warm, #F3EFE7)" stroke="var(--color-border-soft, #E5DFD3)" strokeWidth="1.5" strokeLinejoin="round" />
             <ellipse cx={jx} cy={jy} rx={JEJU.rx} ry={JEJU.ry} fill="var(--color-cream-warm, #F3EFE7)" stroke="var(--color-border-soft, #E5DFD3)" strokeWidth="1.5" />
-            {/* 산지 표시 — 은은한 후광 + 점 */}
-            <circle cx={cx} cy={cy} r="14" fill="var(--color-terracotta, #C4633F)" opacity="0.16" />
-            <circle cx={cx} cy={cy} r="6" fill="var(--color-terracotta, #C4633F)" />
-            <circle cx={cx} cy={cy} r="2.2" fill="#fff" opacity="0.9" />
+            {/* 산지 표시 — 은은한 후광 + 점 (여러 산지면 모두 표시) */}
+            {markers.map((m) => (
+              <g key={m.label}>
+                <circle cx={m.cx} cy={m.cy} r="14" fill="var(--color-terracotta, #C4633F)" opacity="0.16" />
+                <circle cx={m.cx} cy={m.cy} r="6" fill="var(--color-terracotta, #C4633F)" />
+                <circle cx={m.cx} cy={m.cy} r="2.2" fill="#fff" opacity="0.9" />
+              </g>
+            ))}
           </svg>
 
           <div className="min-w-0">
             <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1">대표 산지</p>
             <p className="text-[17px] font-bold tracking-[-0.01em] text-ink leading-snug">{origin}</p>
+            {markers.length > 1 && (
+              <p className="text-[12px] text-ink-soft/60 mt-1">{markers.length}곳이 대표 산지예요</p>
+            )}
             {!note && (
               <p className="text-[12.5px] text-ink-soft/70 mt-2 leading-relaxed">
                 같은 {name}라도 산지에 따라 맛과 크기가 조금씩 달라요.
