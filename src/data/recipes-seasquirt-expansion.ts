@@ -12,7 +12,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-home-1', month: 4, title: '멍게비빔밥', subtitle: '바다 향 가득한 봄철 별미 비빔밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-home-1/hero.webp',
     mainIngredient: '멍게',
     description: '멍게 특유의 향과 참기름이 어우러진, 간단하고 향긋한 봄철 비빔밥이에요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-home-2', month: 4, title: '멍게초무침', subtitle: '새콤달콤한 봄철 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-home-2/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 채소와 함께 새콤달콤한 초고추장에 무친, 봄철 대표 별미예요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-home-3', month: 4, title: '멍게젓갈', subtitle: '짭짤하고 향긋한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-home-3/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 소금에 절인, 짭짤하고 향긋한 통영식 전통 밑반찬이에요.',
     masterclass: {
@@ -98,7 +98,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-home-4', month: 4, title: '멍게회', subtitle: '향긋한 봄바다 그대로',
     category: '전채', difficulty: '아주 쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-home-4/hero.webp',
     mainIngredient: '멍게',
     description: '손질한 멍게를 그대로 즐기는, 향긋한 봄바다를 담은 회예요.',
     masterclass: {
@@ -126,7 +126,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-home-5', month: 4, title: '멍게된장찌개', subtitle: '구수하고 향긋한 봄철 찌개',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-home-5/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 넣어 끓인 된장찌개로, 구수하고 향긋한 봄철 별미예요.',
     masterclass: {
@@ -156,7 +156,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-weekend-1', month: 4, title: '멍게파스타', subtitle: '향긋한 봄바다의 이탈리아식 응용',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-weekend-1/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 화이트와인과 마늘에 볶아 파스타에 버무린, 향긋하고 색다른 파스타예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-weekend-2', month: 4, title: '멍게비빔국수', subtitle: '향긋하고 개운한 봄 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-weekend-2/hero.webp',
     mainIngredient: '멍게',
     description: '소면에 멍게와 매콤한 양념을 비벼낸, 향긋하고 개운한 한 그릇이에요.',
     masterclass: {
@@ -214,7 +214,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-weekend-3', month: 4, title: '멍게전', subtitle: '향긋하게 부쳐낸 별미전',
     category: '전요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-weekend-3/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 반죽에 섞어 부친, 향긋하고 색다른 별미전이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-weekend-4', month: 4, title: '멍게덮밥', subtitle: '향긋하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-weekend-4/hero.webp',
     mainIngredient: '멍게',
     description: '멍게와 채소를 밥 위에 올려 양념장에 비벼 먹는, 향긋하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
   {
     id: 'seasquirt-weekend-5', month: 4, title: '멍게된장무침', subtitle: '구수하고 향긋한 밑반찬',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-weekend-5/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 된장과 참기름으로 무친, 구수하고 향긋한 밑반찬이에요.',
     masterclass: {
@@ -302,7 +302,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-world-1', month: 4, title: '호야노 스노모노', subtitle: '일본식 멍게 초회',
     category: '전채', difficulty: '아주 쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '일본', note: '호야(ホヤ)는 일본어로 멍게를 뜻해요. 일본 동북 지방에서는 멍게를 스노모노(식초무침)로 즐기는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-world-1/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 폰즈소스와 오이에 무친, 담백하고 향긋한 일본식 초회예요.',
     masterclass: {
@@ -331,7 +331,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-world-2', month: 4, title: '스페인식 멍게 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '스페인', note: '스페인과 남미에서는 멍게와 비슷한 해양생물(피구아)을 세비체나 회로 즐기는 문화가 있어요. 라임과 올리브오일의 조합이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-world-2/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 라임즙과 올리브오일에 무친, 스페인·남미식 상큼한 전채예요.',
     masterclass: {
@@ -360,7 +360,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-world-3', month: 4, title: '멍게 오일파스타', subtitle: '이탈리아식 감칠맛 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 해안 지방에서는 조개류와 특이한 해산물을 오일파스타에 활용하는 전통이 있어요. 멍게로 만들면 독특한 향의 파스타가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-world-3/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 올리브오일과 마늘에 볶아 완성한, 향긋한 이탈리아식 오일파스타예요.',
     masterclass: {
@@ -390,7 +390,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-world-4', month: 4, title: '프랑스식 멍게 그라탕', subtitle: '크리미한 그라탕 응용',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 45, servings: 3,
     cuisineContext: { country: '프랑스', note: '프랑스에서는 조개류나 특이한 해산물에 뵈샤멜소스와 치즈를 올려 그라탕으로 굽는 것이 클래식한 해산물 요리 방식이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-world-4/hero.webp',
     mainIngredient: '멍게',
     description: '멍게에 크리미한 뵈샤멜소스와 치즈를 올려 구운, 프랑스식 그라탕이에요.',
     masterclass: {
@@ -420,7 +420,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-world-5', month: 4, title: '멍게 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 해산물을 라임즙에 재워 만들어요. 멍게로 만들면 독특한 향과 산미가 만나는 색다른 세비체가 돼요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-world-5/hero.webp',
     mainIngredient: '멍게',
     description: '신선한 멍게를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-chef-1', month: 4, title: '멍게 카르파치오', subtitle: '얇게 저민 멍게의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 멍게를 얇게 겹치듯 원형으로 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 미니 허브를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-chef-1/hero.webp',
     mainIngredient: '멍게',
     description: '얇게 저민 신선한 멍게에 올리브오일과 레몬을 더한, 재료 본연의 향을 즐기는 전채예요.',
     masterclass: {
@@ -483,7 +483,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-chef-2', month: 4, title: '멍게 콩소메', subtitle: '맑고 향긋한 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 55, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 멍게 한 조각과 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-chef-2/hero.webp',
     mainIngredient: '멍게',
     description: '멍게 향을 우린 맑은 콩소메로, 코스요리의 시작에 어울리는 향긋한 수프예요.',
     masterclass: {
@@ -514,7 +514,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-chef-3', month: 4, title: '멍게 오일파스타(셰프)', subtitle: '고급 향유로 완성한 파스타',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 멍게를 고명으로 올린 뒤 레몬 제스트와 올리브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-chef-3/hero.webp',
     mainIngredient: '멍게',
     description: '멍게를 오일에 우려 만든 향유로 완성한, 향긋하고 고급스러운 파스타예요.',
     masterclass: {
@@ -544,7 +544,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-chef-4', month: 4, title: '멍게 리조또', subtitle: '향긋한 이탈리아식 쌀요리',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 멍게를 고명으로 소복이 올린 뒤 레몬 제스트를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-chef-4/hero.webp',
     mainIngredient: '멍게',
     description: '멍게로 향을 낸, 향긋하고 고급스러운 이탈리아식 리조또예요.',
     masterclass: {
@@ -575,7 +575,7 @@ export const recipesSeaSquirtExpansion: Recipe[] = [
     id: 'seasquirt-chef-5', month: 4, title: '멍게 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 멍게',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 멍게를 담고, 뵈르블랑소스를 숟가락으로 지그재그로 두른 뒤 차이브를 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seasquirt-chef-5/hero.webp',
     mainIngredient: '멍게',
     description: '신선한 멍게에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 전채예요.',
     masterclass: {

@@ -12,7 +12,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-home-1', month: 6, title: '농어회', subtitle: '탱글한 살이 일품인 여름 대표 회',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-home-1/hero.webp',
     mainIngredient: '농어',
     description: '여름 농어는 살이 탱글하고 쫄깃해서, 얇게 썰어 회로 즐기기 좋아요.',
     masterclass: {
@@ -41,7 +41,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-home-2', month: 6, title: '농어맑은탕', subtitle: '개운하고 깔끔한 여름 보양탕',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-home-2/hero.webp',
     mainIngredient: '농어',
     description: '농어를 맑은 육수에 끓인, 개운하고 깔끔한 여름철 보양탕이에요.',
     masterclass: {
@@ -70,7 +70,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-home-3', month: 6, title: '농어구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-home-3/hero.webp',
     mainIngredient: '농어',
     description: '농어에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-home-4', month: 6, title: '농어조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-home-4/hero.webp',
     mainIngredient: '농어',
     description: '무를 깔고 농어를 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-home-5', month: 6, title: '농어튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-home-5/hero.webp',
     mainIngredient: '농어',
     description: '농어살을 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-weekend-1', month: 6, title: '농어초밥', subtitle: '탱글한 담백함이 살아있는 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-weekend-1/hero.webp',
     mainIngredient: '농어',
     description: '얇게 썬 농어를 초밥용 밥 위에 올린, 탱글하고 담백한 초밥이에요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-weekend-2', month: 6, title: '농어뫼니에르', subtitle: '프랑스식 버터구이',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-weekend-2/hero.webp',
     mainIngredient: '농어',
     description: '농어살에 밀가루를 살짝 입혀 버터에 구운, 고소하고 담백한 프랑스식 생선요리예요.',
     masterclass: {
@@ -217,7 +217,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-weekend-3', month: 6, title: '농어전', subtitle: '담백하게 부쳐낸 부드러운 전',
     category: '전요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-weekend-3/hero.webp',
     mainIngredient: '농어',
     description: '농어살에 밀가루옷을 입혀 부친, 담백하고 부드러운 전이에요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-weekend-4', month: 6, title: '농어맑은찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-weekend-4/hero.webp',
     mainIngredient: '농어',
     description: '농어를 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
   {
     id: 'seabass-weekend-5', month: 6, title: '농어매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-weekend-5/hero.webp',
     mainIngredient: '농어',
     description: '농어 뼈와 자투리로 얼큰하게 끓인, 시원하고 깊은 맛의 매운탕이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-world-1', month: 6, title: '스파고 디 브란지노', subtitle: '이탈리아식 농어구이',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '이탈리아', note: '브란지노(branzino)는 이탈리아어로 농어를 뜻해요. 이탈리아 해안 지방에서는 농어를 통째로 구워 올리브오일과 레몬으로 심플하게 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-world-1/hero.webp',
     mainIngredient: '농어',
     description: '농어를 통째로 구워 올리브오일과 레몬으로 마무리한, 이탈리아식 심플한 생선요리예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-world-2', month: 6, title: '농어 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '뵈르블랑은 프랑스 루아르 지방에서 유래한 클래식 버터소스로, 흰살생선과 함께 내는 것이 전통적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-world-2/hero.webp',
     mainIngredient: '농어',
     description: '구운 농어에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-world-3', month: 6, title: '스즈키노 시오야키', subtitle: '일본식 농어 소금구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '스즈키(スズキ)는 일본어로 농어를 뜻해요. 일본에서는 여름철 농어를 소금구이(시오야키)로 즐기는 것이 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-world-3/hero.webp',
     mainIngredient: '농어',
     description: '농어에 소금간만 해서 구운, 일본식 담백한 생선구이예요.',
     masterclass: {
@@ -398,7 +398,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-world-4', month: 6, title: '그리스식 농어구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-world-4/hero.webp',
     mainIngredient: '농어',
     description: '농어를 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -428,7 +428,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-world-5', month: 6, title: '농어 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요. 올리브오일과 마늘만으로 심플하게 완성하는 것이 특징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-world-5/hero.webp',
     mainIngredient: '농어',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 농어예요.',
     masterclass: {
@@ -460,7 +460,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-chef-1', month: 6, title: '농어 콩소메', subtitle: '맑고 깊은 프랑스식 재해석',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '얕은 수프 접시에 콩소메를 붓고, 중앙에 얇게 썬 농어와 차이브를 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-chef-1/hero.webp',
     mainIngredient: '농어',
     description: '농어 뼈와 자투리를 달걀흰자로 맑게 정제한, 투명하면서도 깊은 감칠맛의 콩소메예요.',
     masterclass: {
@@ -491,7 +491,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-chef-2', month: 6, title: '농어 콩피', subtitle: '향유에 은근히 익힌 부드러운 생선',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '따뜻한 접시에 생선을 놓고, 콩피에 쓴 마늘 올리브오일을 살짝 끼얹은 뒤 허브와 레몬 제스트를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-chef-2/hero.webp',
     mainIngredient: '농어',
     description: '올리브오일에 낮은 온도로 은근히 익힌, 놀랍도록 부드러운 프랑스식 생선요리예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-chef-3', month: 6, title: '농어 파피요트', subtitle: '프랑스식 종이포일 찜구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '포일을 상 위에서 직접 열어 김이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 허브와 레몬 조각을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-chef-3/hero.webp',
     mainIngredient: '농어',
     description: '농어와 채소를 종이포일에 싸서 오븐에 구운, 촉촉하고 향긋한 프랑스식 요리예요.',
     masterclass: {
@@ -555,7 +555,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-chef-4', month: 6, title: '농어 세비체', subtitle: '남미식 상큼한 생선 세비체',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 농어 조각을 겹치듯 펼쳐 담고, 세비체 국물을 골고루 끼얹은 뒤 적양파와 고수를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-chef-4/hero.webp',
     mainIngredient: '농어',
     description: '신선한 농어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -586,7 +586,7 @@ export const recipesSeaBassExpansion: Recipe[] = [
     id: 'seabass-chef-5', month: 6, title: '농어 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 45, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크루통을 몇 개 띄운 뒤 올리브오일을 한 방울 떨어뜨려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabass-chef-5/hero.webp',
     mainIngredient: '농어',
     description: '농어 뼈와 자투리로 우린 육수를 곱게 갈아 크림으로 마무리한, 벨벳처럼 진한 프랑스식 수프예요.',
     masterclass: {

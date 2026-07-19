@@ -17,7 +17,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-home-2', month: 2, title: '도미 소금구이', subtitle: '껍질까지 바삭하게 즐기는 기본 구이',
     category: '구이', difficulty: '아주 쉬움', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-home-2/hero.webp',
     mainIngredient: '도미',
     description: '소금만으로 밑간해 껍질까지 바삭하게 구운, 도미 본연의 담백한 맛을 가장 정직하게 즐기는 구이예요.',
     masterclass: {
@@ -50,7 +50,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-home-3', month: 2, title: '도미 미역국', subtitle: '맑고 깊은 국물의 생일상 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-home-3/hero.webp',
     mainIngredient: '도미',
     description: '도미 뼈와 머리로 우린 육수에 미역을 끓인, 소고기 미역국과는 또 다른 맑고 깊은 국이에요.',
     masterclass: {
@@ -82,7 +82,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-home-4', month: 2, title: '도미조림', subtitle: '매콤달콤 밥반찬의 정석',
     category: '조림', difficulty: '쉬움', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-home-4/hero.webp',
     mainIngredient: '도미',
     description: '무를 깔고 매콤한 양념장으로 조려낸, 살이 단단해 부서지지 않는 도미조림이에요.',
     masterclass: {
@@ -113,7 +113,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-home-5', month: 2, title: '도미 무침회', subtitle: '새콤달콤한 초장 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-home-5/hero.webp',
     mainIngredient: '도미',
     description: '신선한 도미살을 채소와 함께 초고추장에 무친, 새콤달콤하고 아삭한 무침회예요.',
     masterclass: {
@@ -146,7 +146,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-weekend-1', month: 2, title: '도미 머리조림', subtitle: '진한 감칠맛의 잔치용 요리',
     category: '조림', difficulty: '보통', level: 'weekend', cookTime: 55, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-weekend-1/hero.webp',
     mainIngredient: '도미',
     description: '도미 머리를 큼직하게 손질해 진하게 조려낸, 잔치상이나 손님상에 어울리는 요리예요.',
     masterclass: {
@@ -178,7 +178,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-weekend-2', month: 2, title: '도미 매운탕', subtitle: '얼큰하고 진한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-weekend-2/hero.webp',
     mainIngredient: '도미',
     description: '도미 머리와 뼈로 우린 육수에 얼큰한 양념을 더한, 시원하고 진한 매운탕이에요.',
     masterclass: {
@@ -209,7 +209,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-weekend-3', month: 2, title: '도미 완자탕', subtitle: '보드랍고 정성스러운 손질 요리',
     category: '국&찌개', difficulty: '보통', level: 'weekend', cookTime: 55, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-weekend-3/hero.webp',
     mainIngredient: '도미',
     description: '도미살을 곱게 다져 완자로 빚어 맑은 국물에 끓인, 부드럽고 정갈한 전통 국물 요리예요.',
     masterclass: {
@@ -241,7 +241,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-weekend-4', month: 2, title: '도미 튀김강정', subtitle: '바삭 달콤한 밥도둑',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-weekend-4/hero.webp',
     mainIngredient: '도미',
     description: '바삭하게 튀긴 도미살에 달콤짭짤한 소스를 버무린, 아이도 어른도 좋아하는 강정이에요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
   {
     id: 'seabream-weekend-5', month: 2, title: '도미 어죽', subtitle: '뼈째 우려낸 진한 보양죽',
     category: '죽', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-weekend-5/hero.webp',
     mainIngredient: '도미',
     description: '도미를 뼈째 푹 고아 살을 발라 넣고 끓인, 든든하고 속이 편안한 보양죽이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-world-1', month: 2, title: '다이노 오카시라 니', subtitle: '일본식 도미 머리조림의 원조',
     category: '조림', difficulty: '보통', level: 'world', cookTime: 60, servings: 4,
     cuisineContext: { country: '일본', note: '다이(鯛, 도미)는 일본에서 축하 자리에 빠지지 않는 생선이에요. "메데타이(경사스럽다)"라는 말과 발음이 비슷해 결혼식이나 명절 상에 통째로 올리는 풍습이 있고, 오카시라니(お頭煮)는 그 머리 부위를 조려내는 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-world-1/hero.webp',
     mainIngredient: '도미',
     description: '간장과 미림, 사케로 은근히 조려낸, 일본 축하상의 대표 요리인 도미 머리조림이에요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-world-2', month: 2, title: '칭정 위', subtitle: '중국식 도미 찜의 대표주자',
     category: '찜', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '중국', note: '칭정 위(清蒸鱼)는 광둥식 생선 찜 요리로, 재료 본연의 신선함을 극대화하는 것이 핵심이에요. 뜨거운 기름을 마지막에 붓는 "리유(淋油)" 기법이 이 요리의 상징이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-world-2/hero.webp',
     mainIngredient: '도미',
     description: '생강과 대파로 향을 낸 도미를 통째로 찐 뒤 뜨거운 기름을 부어 완성한, 광둥식 대표 생선요리예요.',
     masterclass: {
@@ -369,7 +369,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-world-3', month: 2, title: '오라타 알 살레', subtitle: '이탈리아식 소금크러스트 도미구이',
     category: '구이', difficulty: '보통', level: 'world', cookTime: 55, servings: 3,
     cuisineContext: { country: '이탈리아', note: '오라타(orata)는 이탈리아어로 도미를 뜻해요. 알 살레(al sale)는 굵은 소금을 반죽해 생선을 통째로 감싸 굽는 조리법으로, 소금 껍질이 수분을 완전히 가두어 살이 놀랍도록 촉촉해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-world-3/hero.webp',
     mainIngredient: '도미',
     description: '굵은 소금 반죽으로 도미를 통째로 감싸 구운, 겉은 단단하고 속은 촉촉한 이탈리아식 구이예요.',
     masterclass: {
@@ -401,7 +401,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-world-4', month: 2, title: '치파로 프소또', subtitle: '그리스식 올리브오일 도미구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '그리스', note: '그리스 섬 지방에서는 신선한 생선을 올리브오일과 레몬, 오레가노만으로 심플하게 구워내는 것이 전통이에요. 지중해식 조리법 중에서도 재료 본연의 맛을 가장 정직하게 살리는 방식으로 꼽혀요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-world-4/hero.webp',
     mainIngredient: '도미',
     description: '올리브오일과 레몬, 오레가노로 심플하게 구운, 그리스 섬마을 스타일의 도미구이예요.',
     masterclass: {
@@ -433,7 +433,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-world-5', month: 2, title: '도미 부이야베스', subtitle: '프랑스 남부의 생선 스튜',
     category: '스튜', difficulty: '보통', level: 'world', cookTime: 70, servings: 4,
     cuisineContext: { country: '프랑스', note: '부이야베스(bouillabaisse)는 프랑스 마르세유의 대표 생선 스튜예요. 원래는 어부들이 팔고 남은 여러 생선을 한데 끓여 만들던 음식이었지만, 지금은 사프란 향이 나는 고급 요리로 자리 잡았어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-world-5/hero.webp',
     mainIngredient: '도미',
     description: '토마토와 사프란, 회향으로 향을 낸 국물에 도미를 끓인, 프랑스 남부의 대표 생선 스튜예요.',
     masterclass: {
@@ -467,7 +467,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-chef-1', month: 2, title: '도미 카르파치오', subtitle: '얇게 저민 도미의 투명한 아름다움',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '차갑게 식힌 넓은 접시에 도미를 겹치듯 원형으로 얇게 펼쳐 담고, 올리브오일을 붓으로 얇게 발라 광택을 낸 뒤 소금 결정과 미니 허브를 점점이 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-chef-1/hero.webp',
     mainIngredient: '도미',
     description: '얇게 저민 신선한 도미에 올리브오일과 레몬, 소금만을 더한, 재료의 신선함을 그대로 보여주는 전채예요.',
     masterclass: {
@@ -499,7 +499,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-chef-2', month: 2, title: '도미 소금크러스트 허브구이', subtitle: '프렌치 스타일 소금크러스트',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 60, servings: 3,
     platingGuide: '나무 도마에 소금크러스트를 통째로 올려 상 앞에서 깨는 퍼포먼스로 연출하고, 살을 발라 접시에 담은 뒤 허브오일을 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-chef-2/hero.webp',
     mainIngredient: '도미',
     description: '허브를 더한 소금크러스트로 도미를 통째로 감싸 구운, 프렌치 비스트로 스타일의 특별한 요리예요.',
     masterclass: {
@@ -531,7 +531,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-chef-3', month: 2, title: '도미 뫼니에르 뵈르누아제트', subtitle: '갈색버터소스의 클래식 프렌치',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '따뜻한 접시에 도미를 놓고, 뵈르누아제트를 숟가락으로 지그재그로 두른 뒤 케이퍼와 파슬리, 레몬 슬라이스를 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-chef-3/hero.webp',
     mainIngredient: '도미',
     description: '밀가루옷을 입혀 버터에 구운 도미에 견과류향 가득한 브라운버터소스를 끼얹은, 프랑스 요리의 정석이에요.',
     masterclass: {
@@ -563,7 +563,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-chef-4', month: 2, title: '도미 아쿠아파짜 사프란 리덕션', subtitle: '이탈리아식 찜을 고급스럽게 재해석',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 45, servings: 2,
     platingGuide: '넓은 접시에 도미를 중앙에 놓고, 사프란으로 졸인 국물을 숟가락으로 접시 가장자리에 원을 그리듯 두른 뒤 바질오일을 점점이 떨어뜨립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-chef-4/hero.webp',
     mainIngredient: '도미',
     description: '기본 아쿠아파짜에 사프란을 더해 졸이고 바질오일로 마무리한, 한층 정교해진 이탈리아식 생선요리예요.',
     masterclass: {
@@ -596,7 +596,7 @@ export const recipesSeaBreamExpansion: Recipe[] = [
     id: 'seabream-chef-5', month: 2, title: '도미 포치니 크림소스', subtitle: '버섯향 가득한 크리미한 생선요리',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '따뜻한 접시에 도미를 놓고, 포치니크림소스를 넉넉히 끼얹은 뒤 얇게 슬라이스한 생버섯과 처빌을 올려 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seabream-chef-5/hero.webp',
     mainIngredient: '도미',
     description: '말린 포치니버섯으로 향을 낸 진한 크림소스를 도미에 곁들인, 깊은 풍미의 요리예요.',
     masterclass: {

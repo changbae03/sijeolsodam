@@ -15,7 +15,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-home-1', month: 6, title: '산딸기청', subtitle: '새콤달콤한 홈메이드 과일청',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 30, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1577069861033-55d04cec4ef5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-home-1/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 설탕에 재워 만든 과일청으로, 여름철 시원한 음료나 디저트 소스로 두루 활용하기 좋아요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-home-2', month: 6, title: '산딸기에이드', subtitle: '상큼하고 시원한 여름 음료',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-home-2/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기청을 탄산수에 타 만든, 상큼하고 시원한 여름철 음료예요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-home-3', month: 6, title: '산딸기잼', subtitle: '진한 빨간빛 홈메이드 잼',
     category: '음료', difficulty: '쉬움', level: 'home', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-home-3/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 졸여 만든, 진한 빨간빛의 새콤달콤한 홈메이드 잼이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-home-4', month: 6, title: '산딸기요거트', subtitle: '상큼하고 건강한 간식',
     category: '디저트', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-home-4/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기와 그릭요거트를 섞은, 상큼하고 건강한 여름철 간식이에요.',
     masterclass: {
@@ -127,7 +127,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-home-5', month: 6, title: '산딸기주스', subtitle: '상큼하고 건강한 생과일주스',
     category: '음료', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-home-5/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 직접 갈아 만든, 상큼하고 건강한 여름철 생과일주스예요.',
     masterclass: {
@@ -156,7 +156,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-weekend-1', month: 6, title: '산딸기타르트', subtitle: '달콤한 홈메이드 디저트',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 60, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-weekend-1/hero.webp',
     mainIngredient: '산딸기',
     description: '커스터드크림 위에 산딸기를 소복이 올려 만든, 달콤하고 화려한 홈메이드 타르트예요.',
     masterclass: {
@@ -185,7 +185,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-weekend-2', month: 6, title: '산딸기머핀', subtitle: '폭신하고 향긋한 홈베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-weekend-2/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 듬뿍 넣어 구운, 폭신하고 향긋한 홈베이킹 머핀이에요.',
     masterclass: {
@@ -214,7 +214,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-weekend-3', month: 6, title: '산딸기셔벗', subtitle: '상큼하고 시원한 홈메이드 셔벗',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-weekend-3/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 곱게 갈아 얼린, 상큼하고 시원한 홈메이드 셔벗이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-weekend-4', month: 6, title: '산딸기치즈케이크', subtitle: '진하고 부드러운 홈베이킹',
     category: '디저트', difficulty: '보통', level: 'weekend', cookTime: 70, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-weekend-4/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기소스를 곁들인, 진하고 부드러운 노베이크 치즈케이크예요.',
     masterclass: {
@@ -272,7 +272,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
   {
     id: 'raspberry-weekend-5', month: 6, title: '산딸기빙수', subtitle: '상큼하고 시원한 여름 디저트',
     category: '디저트', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-weekend-5/hero.webp',
     mainIngredient: '산딸기',
     description: '얼음 위에 산딸기와 연유를 듬뿍 올린, 상큼하고 시원한 여름철 디저트예요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-world-1', month: 6, title: '산딸기 판나코타', subtitle: '이탈리아 크림 디저트에 산딸기소스를',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 30, servings: 4,
     cuisineContext: { country: '이탈리아', note: '판나코타는 이탈리아 피에몬테 지방의 대표 디저트예요. 베리류 소스를 곁들이는 것이 클래식한 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-world-1/hero.webp',
     mainIngredient: '산딸기',
     description: '부드러운 이탈리아식 크림 디저트에 산딸기소스를 곁들인, 상큼한 여름 디저트예요.',
     masterclass: {
@@ -334,7 +334,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-world-2', month: 6, title: '산딸기 초콜릿 트러플', subtitle: '벨기에식 한입 초콜릿',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 50, servings: 6,
     cuisineContext: { country: '벨기에', note: '벨기에는 세계적인 초콜릿 강국으로, 산딸기향 트러플은 클래식한 조합으로 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-world-2/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기즙을 넣은 다크초콜릿 가나슈를 빚은, 벨기에식 한입 트러플이에요.',
     masterclass: {
@@ -365,7 +365,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-world-3', month: 6, title: '산딸기 그래놀라볼', subtitle: '미국식 건강 브런치',
     category: '디저트', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '미국', note: '미국식 그래놀라볼은 곡물 플레이크와 요거트, 베리류를 층층이 담는 건강한 아침 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-world-3/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기와 그래놀라, 요거트를 층층이 담은, 건강한 아침 브런치예요.',
     masterclass: {
@@ -393,7 +393,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-world-4', month: 6, title: '산딸기 마카롱', subtitle: '프랑스식 한입 디저트',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 70, servings: 6,
     cuisineContext: { country: '프랑스', note: '마카롱은 프랑스의 대표적인 한입 디저트로, 베리류 필링이 클래식하게 사랑받아요.' },
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-world-4/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기잼을 채운 버터크림을 넣은, 상큼하고 화사한 프랑스식 마카롱이에요.',
     masterclass: {
@@ -422,7 +422,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-world-5', month: 6, title: '산딸기 갈레트', subtitle: '프랑스식 자유형 과일 파이',
     category: '디저트', difficulty: '보통', level: 'world', cookTime: 60, servings: 6,
     cuisineContext: { country: '프랑스', note: '갈레트는 틀 없이 반죽을 자유롭게 접어 굽는 프랑스식 소박한 파이예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-world-5/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 얹어 반죽 가장자리를 자유롭게 접어 구운, 소박하고 매력적인 프랑스식 파이예요.',
     masterclass: {
@@ -455,7 +455,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-chef-1', month: 6, title: '산딸기 파트드프루이', subtitle: '프랑스식 펙틴 젤리캔디',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 60, servings: 12,
     platingGuide: '설탕에 굴린 정육면체 캔디를 작은 상자나 접시에 격자로 담아 프티푸르처럼 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1548907040-4baa419e5c6f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-chef-1/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기 퓌레를 펙틴과 함께 끓여 단단하게 굳힌, 프랑스 정찬 마지막에 나오는 쫀득한 과일 캔디예요.',
     masterclass: {
@@ -486,7 +486,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-chef-2', month: 6, title: '프람보아즈 람빅', subtitle: '벨기에식 자연발효 과일맥주',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 60, servings: 8,
     platingGuide: '튤립 모양 유리잔에 따라 자연스러운 신맛과 붉은 색을 감상하며 천천히 내세요.',
-    heroImage: 'https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-chef-2/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기를 베이스 맥주에 넣어 몇 주간 재발효시킨, 벨기에 람빅 맥주 스타일의 새콤한 과일맥주예요.',
     masterclass: {
@@ -517,7 +517,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-chef-3', month: 6, title: '산딸기 앙트르메', subtitle: '프랑스식 다층 무스케이크 조립',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 120, servings: 8,
     platingGuide: '무스링을 조심스럽게 벗겨내 매끈한 옆면을 보여주고, 위에 산딸기 몇 알과 금박으로 화려하게 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-chef-3/hero.webp',
     mainIngredient: '산딸기',
     description: '스펀지, 산딸기 인서트, 무스를 층층이 쌓아 얼려 완성한, 프랑스 정찬 코스의 마지막을 장식하는 정교한 다층 케이크예요.',
     masterclass: {
@@ -548,7 +548,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-chef-4', month: 6, title: '산딸기 미러글레이즈', subtitle: '모던 케이크 표면 광택 코팅',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 40, servings: 8,
     platingGuide: '냉동된 케이크 위에 정확한 온도의 글레이즈를 한 번에 부어, 거울처럼 반사되는 매끈한 표면을 그대로 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-chef-4/hero.webp',
     mainIngredient: '산딸기',
     description: '산딸기퓌레와 젤라틴, 시럽을 정확한 온도로 맞춰 케이크 위에 부어 거울처럼 반짝이게 코팅한, SNS에서 화제가 된 모던 파티세리 기법이에요.',
     masterclass: {
@@ -579,7 +579,7 @@ export const recipesRaspberryExpansion: Recipe[] = [
     id: 'raspberry-chef-5', month: 6, title: '산딸기 크렘무슬린', subtitle: '프랑스식 버터크림+커스터드 하이브리드 필링',
     category: '디저트', difficulty: '보통', level: 'chef', cookTime: 50, servings: 6,
     platingGuide: '크렘무슬린을 짤주머니로 화려하게 짜 올리고, 산딸기를 하나씩 올려 프랑스 파티세리 스타일로 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/raspberry-chef-5/hero.webp',
     mainIngredient: '산딸기',
     description: '커스터드크림에 부드러운 버터를 듬뿍 휘핑해 넣은, 일반 커스터드보다 훨씬 진하고 안정적인 프랑스 파티세리 필링이에요.',
     masterclass: {

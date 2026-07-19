@@ -14,7 +14,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-home-1', month: 3, title: '실치회무침', subtitle: '투명하고 가는 봄철 별미 무침',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-home-1/hero.webp',
     mainIngredient: '실치',
     description: '실처럼 가는 봄철 실치를 새콤달콤한 양념에 무쳐낸, 봄 식탁에 산뜻함을 더하는 별미예요.',
     masterclass: {
@@ -44,7 +44,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-home-2', month: 3, title: '실치미나리전', subtitle: '봄 향 가득한 실치와 미나리의 만남',
     category: '전요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-home-2/hero.webp',
     mainIngredient: '실치',
     description: '봄철 실치와 미나리를 듬뿍 넣어 부쳐낸, 막걸리 안주로도 일품인 향긋한 전이에요.',
     masterclass: {
@@ -73,7 +73,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-home-3', month: 3, title: '실치볶음', subtitle: '고소하고 짭짤한 밥도둑',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-home-3/hero.webp',
     mainIngredient: '실치',
     description: '실치를 간장에 볶은, 고소하고 짭짤한 대표 밥도둑 반찬이에요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-home-4', month: 3, title: '실치덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-home-4/hero.webp',
     mainIngredient: '실치',
     description: '실치를 밥 위에 올려 간장소스로 비벼 먹는, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-home-5', month: 3, title: '실치국', subtitle: '시원하고 개운한 봄 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604908554007-31ea36970bdb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-home-5/hero.webp',
     mainIngredient: '실치',
     description: '실치를 넣어 끓인 맑은국으로, 시원하고 개운한 봄철 국이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-weekend-1', month: 3, title: '실치튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-weekend-1/hero.webp',
     mainIngredient: '실치',
     description: '실치를 반죽에 버무려 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -186,7 +186,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-weekend-2', month: 3, title: '실치비빔국수', subtitle: '알싸하고 개운한 별미',
     category: '면요리', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-weekend-2/hero.webp',
     mainIngredient: '실치',
     description: '소면에 실치와 매콤한 양념을 비벼낸, 개운한 봄철 별미예요.',
     masterclass: {
@@ -215,7 +215,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-weekend-3', month: 3, title: '실치젓갈', subtitle: '짭짤하고 감칠맛 나는 밥도둑',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 30, servings: 5,
-    heroImage: 'https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-weekend-3/hero.webp',
     mainIngredient: '실치',
     description: '실치를 소금에 절인, 짭짤하고 감칠맛 나는 봄철 밥도둑 밑반찬이에요.',
     masterclass: {
@@ -243,7 +243,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-weekend-4', month: 3, title: '실치달걀찜', subtitle: '부드럽고 고소한 별미',
     category: '반찬', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-weekend-4/hero.webp',
     mainIngredient: '실치',
     description: '달걀찜에 실치를 더해 고소함을 살린, 부드러운 별미 반찬이에요.',
     masterclass: {
@@ -271,7 +271,7 @@ export const recipesSilchiExpansion: Recipe[] = [
   {
     id: 'silchi-weekend-5', month: 3, title: '실치주먹밥', subtitle: '고소하고 간편한 별미',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-weekend-5/hero.webp',
     mainIngredient: '실치',
     description: '실치를 볶아 섞은 밥을 동그랗게 뭉친, 고소하고 간편한 별미 주먹밥이에요.',
     masterclass: {
@@ -303,7 +303,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-world-1', month: 3, title: '시라스동', subtitle: '일본식 실치덮밥',
     category: '밥', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 2,
     cuisineContext: { country: '일본', note: '시라스(しらす)는 일본어로 실치와 같은 작은 치어를 뜻해요. 시라스동은 일본 시즈오카 지방의 대표적인 덮밥이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-world-1/hero.webp',
     mainIngredient: '실치',
     description: '실치를 밥 위에 그대로 올린, 일본 시즈오카의 대표적인 소박한 덮밥이에요.',
     masterclass: {
@@ -332,7 +332,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-world-2', month: 3, title: '실치 알라올리오', subtitle: '이탈리아식 마늘오일 파스타',
     category: '파스타', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아 남부에서는 작은 치어(비앙케티)를 넣은 파스타가 대표적인 봄철 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-world-2/hero.webp',
     mainIngredient: '실치',
     description: '실치를 마늘, 올리브오일에 볶아 파스타에 버무린, 이탈리아식 봄철 요리예요.',
     masterclass: {
@@ -362,7 +362,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-world-3', month: 3, title: '실치 오믈렛', subtitle: '스페인식 응용 오믈렛',
     category: '브런치', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '스페인에서는 작은 치어를 넣은 토르티야(오믈렛)를 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-world-3/hero.webp',
     mainIngredient: '실치',
     description: '실치를 넣어 부친, 스페인식 두툼한 오믈렛이에요.',
     masterclass: {
@@ -392,7 +392,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-world-4', month: 3, title: '실치 프리터', subtitle: '영국식 채소·생선 프리터',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '영국', note: '영국에서는 작은 흰살생선을 반죽에 버무려 튀기는 프리터가 대중적이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-world-4/hero.webp',
     mainIngredient: '실치',
     description: '실치를 두꺼운 반죽에 버무려 튀긴, 영국식 바삭한 프리터예요.',
     masterclass: {
@@ -421,7 +421,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-world-5', month: 3, title: '실치 그린살사', subtitle: '멕시코식 응용 살사',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '멕시코', note: '멕시코에서는 작은 생선을 라임즙과 채소에 버무리는 것이 대중적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-world-5/hero.webp',
     mainIngredient: '실치',
     description: '실치를 라임즙과 채소에 버무린, 멕시코식 상큼한 살사예요.',
     masterclass: {
@@ -452,7 +452,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-chef-1', month: 3, title: '가룸', subtitle: '고대 로마식 발효 생선소스',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 60, servings: 10,
     platingGuide: '작은 유리병에 담긴 진한 갈색 소스를 상에 올리고, 사용할 때는 고기나 채소 요리에 몇 방울 뿌려 감칠맛을 더합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1600617618095-e6a45e59d2f5?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-chef-1/hero.webp',
     mainIngredient: '실치',
     description: '작은 생선을 소금과 함께 몇 달간 발효시킨, 고대 로마 요리의 필수 조미료였던 전설적인 소스예요.',
     masterclass: {
@@ -482,7 +482,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-chef-2', month: 3, title: '시라스보시', subtitle: '일본식 천일건조 보존',
     category: '반찬', difficulty: '보통', level: 'chef', cookTime: 240, servings: 8,
     platingGuide: '건조된 시라스보시를 대나무 채반째 상에 올리거나, 작은 접시에 소복이 담아 그대로 반찬으로 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-chef-2/hero.webp',
     mainIngredient: '실치',
     description: '실치를 소금물에 데쳐 햇볕에 반쯤 말린, 일본 시즈오카 지방의 전통적인 저장식이에요.',
     masterclass: {
@@ -512,7 +512,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-chef-3', month: 3, title: '프리튀르', subtitle: '프랑스식 통째 튀김 비스트로 클래식',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '종이를 깐 바구니에 산더미처럼 쌓아 담고, 레몬 웨지와 아이올리소스를 곁들여 프랑스 비스트로 스타일로 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-chef-3/hero.webp',
     mainIngredient: '실치',
     description: '실치를 밀가루만 살짝 입혀 통째로 튀긴, 프랑스 지중해 연안 비스트로의 클래식 전채예요.',
     masterclass: {
@@ -542,7 +542,7 @@ export const recipesSilchiExpansion: Recipe[] = [
     id: 'silchi-chef-4', month: 3, title: '비앙케티 크루도', subtitle: '이탈리아식 레몬생채',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 20, servings: 3,
     platingGuide: '얼음을 깐 접시에 투명한 실치를 소복이 담고, 레몬 제스트와 올리브오일을 뿌려 반짝이는 모습을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/silchi-chef-4/hero.webp',
     mainIngredient: '실치',
     description: '실치를 레몬즙과 올리브오일에 아주 살짝만 버무린, 이탈리아 리구리아 해안의 극도로 신선한 생채 요리예요.',
     masterclass: {

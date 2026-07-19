@@ -14,7 +14,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-home-1', month: 8, title: '우럭미역국', subtitle: '담백한 흰살생선과 미역이 어우러진 국',
     category: '국&찌개', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-home-1/hero.webp',
     mainIngredient: '우럭',
     description: '우럭의 담백함과 미역의 부드러움이 잘 어울리는, 시원한 늦여름 국이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-home-2', month: 8, title: '우럭매운탕', subtitle: '얼큰하고 시원한 국물 요리',
     category: '국&찌개', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1573246123716-6b1782bfc499?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-home-2/hero.webp',
     mainIngredient: '우럭',
     description: '우럭과 채소를 넣고 얼큰하게 끓인, 시원하고 진한 대표 매운탕이에요.',
     masterclass: {
@@ -72,7 +72,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-home-3', month: 8, title: '우럭구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-home-3/hero.webp',
     mainIngredient: '우럭',
     description: '우럭에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -101,7 +101,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-home-4', month: 8, title: '우럭찜', subtitle: '담백하고 부드러운 찜요리',
     category: '메인요리', difficulty: '보통', level: 'home', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-home-4/hero.webp',
     mainIngredient: '우럭',
     description: '우럭을 대파, 생강과 함께 맑게 찐, 담백하고 부드러운 찜요리예요.',
     masterclass: {
@@ -130,7 +130,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-home-5', month: 8, title: '우럭조림', subtitle: '매콤달콤한 밥도둑',
     category: '조림', difficulty: '보통', level: 'home', cookTime: 35, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-home-5/hero.webp',
     mainIngredient: '우럭',
     description: '무를 깔고 우럭을 매콤한 양념장에 조린, 밥도둑 생선조림이에요.',
     masterclass: {
@@ -161,7 +161,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-weekend-1', month: 8, title: '우럭회', subtitle: '쫄깃하고 담백한 대표 회',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-weekend-1/hero.webp',
     mainIngredient: '우럭',
     description: '우럭은 살이 단단하고 쫄깃해서, 회로 즐기기 좋은 대표적인 흰살생선이에요.',
     masterclass: {
@@ -189,7 +189,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-weekend-2', month: 8, title: '우럭튀김', subtitle: '겉바속촉 담백한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-weekend-2/hero.webp',
     mainIngredient: '우럭',
     description: '우럭살을 바삭하게 튀긴, 겉은 바삭하고 속은 부드러운 튀김이에요.',
     masterclass: {
@@ -218,7 +218,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-weekend-3', month: 8, title: '우럭전골', subtitle: '푸짐하고 시원한 여름 전골',
     category: '전골', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-weekend-3/hero.webp',
     mainIngredient: '우럭',
     description: '우럭과 채소를 넉넉히 넣고 끓인, 시원하고 푸짐한 전골이에요.',
     masterclass: {
@@ -246,7 +246,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-weekend-4', month: 8, title: '우럭탕수', subtitle: '새콤달콤 바삭한 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-weekend-4/hero.webp',
     mainIngredient: '우럭',
     description: '바삭하게 튀긴 우럭에 새콤달콤한 소스를 끼얹은, 인기 만점 중화풍 별미예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesRockfishExpansion: Recipe[] = [
   {
     id: 'rockfish-weekend-5', month: 8, title: '우럭덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-weekend-5/hero.webp',
     mainIngredient: '우럭',
     description: '우럭회와 채소를 밥 위에 올려 간장소스로 비벼 먹는, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -306,7 +306,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-world-1', month: 8, title: '우럭 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-world-1/hero.webp',
     mainIngredient: '우럭',
     description: '토마토와 화이트와인에 우럭을 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-world-2', month: 8, title: '우럭 알 라 플란차', subtitle: '스페인식 팬구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 25, servings: 2,
     cuisineContext: { country: '스페인', note: '아 라 플란차(a la plancha)는 스페인에서 철판에 재료를 간단히 구워내는 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-world-2/hero.webp',
     mainIngredient: '우럭',
     description: '올리브오일과 마늘로 심플하게 구운, 스페인식 팬구이 우럭이에요.',
     masterclass: {
@@ -367,7 +367,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-world-3', month: 8, title: '카사고노 니츠케', subtitle: '일본식 우럭 조림',
     category: '조림', difficulty: '아주 쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '일본', note: '카사고(カサゴ)는 일본어로 우럭과 비슷한 락피시류를 뜻해요. 일본에서는 이런 흰살생선을 간장과 미림에 조리는 니츠케가 대표적인 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-world-3/hero.webp',
     mainIngredient: '우럭',
     description: '우럭을 간장과 미림에 은근히 조린, 담백하고 깊은 맛의 일본식 조림이에요.',
     masterclass: {
@@ -397,7 +397,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-world-4', month: 8, title: '우럭 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-world-4/hero.webp',
     mainIngredient: '우럭',
     description: '신선한 우럭을 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -428,7 +428,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-world-5', month: 8, title: '그리스식 우럭구이', subtitle: '올리브오일과 오레가노향 구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 2,
     cuisineContext: { country: '그리스', note: '그리스에서는 신선한 생선을 올리브오일, 레몬, 오레가노로 심플하게 구워 먹는 것이 지중해식 전통 조리법이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-world-5/hero.webp',
     mainIngredient: '우럭',
     description: '우럭을 올리브오일과 오레가노로 구운, 그리스식 지중해 요리예요.',
     masterclass: {
@@ -459,7 +459,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-chef-1', month: 8, title: '우럭 부야베스', subtitle: '프랑스 프로방스 생선스튜',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 90, servings: 4,
     platingGuide: '큰 그릇에 국물을 붓고 우럭과 채소를 소복이 담은 뒤, 루이유소스를 바른 크루통을 옆에 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-chef-1/hero.webp',
     mainIngredient: '우럭',
     description: '우럭과 사프란, 회향을 넣어 끓인, 프랑스 마르세유의 대표적인 생선스튜예요.',
     masterclass: {
@@ -490,7 +490,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-chef-2', month: 8, title: '칭정위', subtitle: '중국 광둥식 통생선찜과 뜨거운 기름',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '통째로 찐 우럭을 긴 접시에 그대로 올리고, 뜨거운 기름을 상 앞에서 끼얹어 지글거리는 소리와 김이 피어오르는 순간을 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-chef-2/hero.webp',
     mainIngredient: '우럭',
     description: '통우럭을 정교하게 쪄낸 뒤, 뜨겁게 달군 기름을 파와 생강 위에 끼얹어 향을 폭발시키는 광둥식 요리예요.',
     masterclass: {
@@ -521,7 +521,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-chef-3', month: 8, title: '레체 데 티그레', subtitle: '페루 세비체 국물의 정수',
     category: '음료', difficulty: '보통', level: 'chef', cookTime: 30, servings: 4,
     platingGuide: '작은 샷글라스에 레체 데 티그레를 담아 세비체 요리 옆에 함께 내거나, 코스 시작 전 웰컴 샷으로 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-chef-3/hero.webp',
     mainIngredient: '우럭',
     description: '세비체를 만들고 남는 생선 국물을 라임, 고추와 함께 갈아낸, 페루에서 숙취 해소제로도 유명한 강렬한 샷이에요.',
     masterclass: {
@@ -552,7 +552,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-chef-4', month: 8, title: '바나나잎 우럭구이', subtitle: '동남아식 잎포장 구이',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '바나나잎을 상 위에서 직접 풀어 향이 피어오르는 모습을 연출하고, 그대로 접시에 옮겨 라임과 고추소스를 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-chef-4/hero.webp',
     mainIngredient: '우럭',
     description: '우럭에 향신 페이스트를 발라 바나나잎으로 감싸 구운, 동남아시아의 전통적인 잎포장 구이예요.',
     masterclass: {
@@ -584,7 +584,7 @@ export const recipesRockfishExpansion: Recipe[] = [
     id: 'rockfish-chef-5', month: 8, title: '수타 생선완자탕', subtitle: '중국식 손으로 치는 어묵 반죽',
     category: '국&찌개', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '맑은 그릇에 국물을 붓고 탱글한 생선완자를 소복이 담은 뒤 실파와 백후추를 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rockfish-chef-5/hero.webp',
     mainIngredient: '우럭',
     description: '우럭살을 곱게 다져 손으로 여러 번 쳐서 탱글하게 만든 완자를 맑은 국물에 끓인, 중국식 전통 어묵탕이에요.',
     masterclass: {

@@ -14,7 +14,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-home-1', month: 9, title: '연어스테이크', subtitle: '겉은 바삭, 속은 부드러운 연어 요리',
     category: '메인요리', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-home-1/hero.webp',
     mainIngredient: '연어',
     description: '팬에 구워 겉은 바삭하고 속은 부드럽게 즐기는, 가장 기본적인 연어 요리예요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-home-2', month: 9, title: '연어덮밥', subtitle: '고소하고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-home-2/hero.webp',
     mainIngredient: '연어',
     description: '연어회와 채소를 밥 위에 올려 간장소스로 비벼 먹는, 고소하고 든든한 한 그릇이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-home-3', month: 9, title: '연어구이', subtitle: '담백하고 고소한 소금구이',
     category: '구이', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-home-3/hero.webp',
     mainIngredient: '연어',
     description: '연어에 소금간만 해서 구운, 담백하고 고소한 기본 생선구이예요.',
     masterclass: {
@@ -100,7 +100,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-home-4', month: 9, title: '연어샐러드', subtitle: '상큼하고 가벼운 한 끼',
     category: '샐러드', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-home-4/hero.webp',
     mainIngredient: '연어',
     description: '구운 연어와 채소를 곁들인, 상큼하고 가벼운 한 끼 샐러드예요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-home-5', month: 9, title: '연어알밥', subtitle: '고소하고 짭짤한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 15, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-home-5/hero.webp',
     mainIngredient: '연어',
     description: '연어알을 밥 위에 올려 간단히 즐기는, 고소하고 짭짤한 한 그릇이에요.',
     masterclass: {
@@ -158,7 +158,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-weekend-1', month: 9, title: '연어초밥', subtitle: '부드럽고 고소한 초밥',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-weekend-1/hero.webp',
     mainIngredient: '연어',
     description: '얇게 썬 연어를 초밥용 밥 위에 올린, 부드럽고 고소한 초밥이에요.',
     masterclass: {
@@ -187,7 +187,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-weekend-2', month: 9, title: '연어파스타', subtitle: '크리미하고 고소한 이탈리아식',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-weekend-2/hero.webp',
     mainIngredient: '연어',
     description: '연어를 크림소스에 버무린, 부드럽고 고소한 이탈리아식 파스타예요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-weekend-3', month: 9, title: '연어장', subtitle: '짭짤한 밥도둑',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1625943555017-a517a8e8d11a?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-weekend-3/hero.webp',
     mainIngredient: '연어',
     description: '연어를 간장 양념에 절인, 짭짤하고 감칠맛 나는 밥도둑 반찬이에요.',
     masterclass: {
@@ -245,7 +245,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-weekend-4', month: 9, title: '연어리조또', subtitle: '진한 감칠맛의 크리미 쌀요리',
     category: '리조또', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-weekend-4/hero.webp',
     mainIngredient: '연어',
     description: '연어를 넣어 지은, 진하고 크리미한 이탈리아식 리조또예요.',
     masterclass: {
@@ -275,7 +275,7 @@ export const recipesSalmonExpansion: Recipe[] = [
   {
     id: 'salmon-weekend-5', month: 9, title: '연어튀김', subtitle: '겉바속촉 바삭한 튀김',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-weekend-5/hero.webp',
     mainIngredient: '연어',
     description: '연어살을 바삭하게 튀긴, 겉은 바삭하고 속은 촉촉한 튀김이에요.',
     masterclass: {
@@ -307,7 +307,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-world-1', month: 9, title: '사케노 시오야키', subtitle: '일본식 연어 소금구이',
     category: '구이', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '일본', note: '사케(鮭)는 일본어로 연어를 뜻해요. 일본에서는 연어를 소금구이로 즐기는 것이 대표적인 아침 식사 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-world-1/hero.webp',
     mainIngredient: '연어',
     description: '연어에 소금간만 해서 구운, 일본식 담백한 아침 대표 생선구이예요.',
     masterclass: {
@@ -337,7 +337,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-world-2', month: 9, title: '연어 뵈르블랑', subtitle: '프랑스식 버터소스와 만난 생선',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '뵈르블랑은 프랑스 루아르 지방에서 유래한 클래식 버터소스로, 연어 같은 기름진 생선과 함께 내면 산뜻한 산미가 균형을 잡아줘요.' },
-    heroImage: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-world-2/hero.webp',
     mainIngredient: '연어',
     description: '구운 연어에 프랑스식 화이트와인 버터소스를 곁들인, 우아한 생선요리예요.',
     masterclass: {
@@ -368,7 +368,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-world-3', month: 9, title: '연어 세비체', subtitle: '남미식 상큼한 재해석',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '페루', note: '세비체는 페루의 대표 요리로, 신선한 생선을 라임즙에 재워 만들어요. 연어로 만들면 기름진 맛이 라임의 산미와 만나 산뜻해져요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-world-3/hero.webp',
     mainIngredient: '연어',
     description: '신선한 연어를 라임즙에 살짝 재운, 남미식 세비체예요.',
     masterclass: {
@@ -399,7 +399,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-world-4', month: 9, title: '연어 아쿠아파짜', subtitle: '이탈리아식 토마토 생선찜',
     category: '메인요리', difficulty: '보통', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '이탈리아', note: '아쿠아파짜(acqua pazza)는 이탈리아어로 "미친 물"이라는 뜻으로, 토마토와 화이트와인, 올리브오일에 생선을 은근히 익히는 나폴리 지방의 전통 요리예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-world-4/hero.webp',
     mainIngredient: '연어',
     description: '토마토와 화이트와인에 연어를 은근히 익힌, 이탈리아식 생선찜이에요.',
     masterclass: {
@@ -430,7 +430,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-world-5', month: 9, title: '연어 타르타르', subtitle: '프랑스식 다지기 기법 전채',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 25, servings: 3,
     cuisineContext: { country: '프랑스', note: '타르타르는 재료를 잘게 다져 드레싱에 버무리는 프랑스 클래식 기법이에요. 연어는 참치와 함께 가장 흔히 타르타르로 만들어지는 생선이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-world-5/hero.webp',
     mainIngredient: '연어',
     description: '연어를 잘게 다져 드레싱에 버무린, 프랑스식 신선한 전채예요.',
     masterclass: {
@@ -461,7 +461,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-chef-1', month: 9, title: '삼나무 판자구이 연어', subtitle: '북미 원주민 훈연구이 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 50, servings: 3,
     platingGuide: '연어를 구운 삼나무 판자째 상 위에 올려 훈연 향이 피어오르는 모습을 그대로 보여주고, 레몬 웨지와 딜을 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-chef-1/hero.webp',
     mainIngredient: '연어',
     description: '물에 불린 삼나무 판자 위에 연어를 올려 구운, 태평양 북서부 원주민의 전통 조리법이에요.',
     masterclass: {
@@ -492,7 +492,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-chef-2', month: 9, title: '연어 리예트', subtitle: '프랑스식 저장 스프레드 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 45, servings: 4,
     platingGuide: '작은 병이나 라메킨에 리예트를 눌러 담아 표면을 매끈하게 다듬고, 바게트 슬라이스와 코르니숑을 곁들여 냅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-chef-2/hero.webp',
     mainIngredient: '연어',
     description: '연어를 부드럽게 익혀 버터와 함께 곱게 찢어 다진, 프랑스의 전통적인 저장 스프레드예요.',
     masterclass: {
@@ -523,7 +523,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-chef-3', month: 9, title: '하와이안 연어 포케', subtitle: '태평양 하와이식 생선무침 볼',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 25, servings: 3,
     platingGuide: '깊은 볼에 밥을 담고 그 위에 포케를 소복이 올린 뒤, 채 썬 채소와 아보카도, 김가루를 색스럽게 배치합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-chef-3/hero.webp',
     mainIngredient: '연어',
     description: '연어를 간장 기반 양념에 버무려 밥 위에 올린, 하와이의 대표적인 생선무침 볼이에요.',
     masterclass: {
@@ -554,7 +554,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-chef-4', month: 9, title: '연어 쿨리비악', subtitle: '러시아 황실의 파이 기법',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 100, servings: 6,
     platingGuide: '쿨리비악을 통째로 상 위에 올려 두툼하게 잘라 단면의 층위(생선, 밥, 계란)가 보이게 담고, 사워크림소스를 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694257947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-chef-4/hero.webp',
     mainIngredient: '연어',
     description: '연어와 쌀, 삶은 계란을 층층이 쌓아 페이스트리로 감싸 구운, 러시아 황실 요리의 정수예요.',
     masterclass: {
@@ -585,7 +585,7 @@ export const recipesSalmonExpansion: Recipe[] = [
     id: 'salmon-chef-5', month: 9, title: '연어 직접 훈제하기', subtitle: '실제 열훈연 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 120, servings: 4,
     platingGuide: '훈제한 연어를 얇게 슬라이스해 나무 도마에 부채꼴로 담고, 크림치즈와 케이퍼, 레몬 웨지를 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/salmon-chef-5/hero.webp',
     mainIngredient: '연어',
     description: '소금에 재운 연어를 스토브탑 훈제기로 실제 나무 연기에 익힌, 진짜 훈제 기법이에요.',
     masterclass: {

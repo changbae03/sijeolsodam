@@ -411,7 +411,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-chef-1', month: 2, title: '유채나물 페스토 크루도', subtitle: '이탈리아식 신선한 페스토',
     category: '전채', difficulty: '쉬움', level: 'chef', cookTime: 30, servings: 3,
     platingGuide: '넓은 접시에 차가운 파스타를 둥지 모양으로 담고, 그 위에 유채나물 페스토를 스푼으로 얹은 뒤 견과류를 흩뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-chef-1/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 갈아 만든 신선한 페스토를 차가운 파스타에 얹은, 산뜻한 봄철 전채예요.',
     masterclass: {
@@ -442,7 +442,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-chef-2', month: 2, title: '유채나물 벨루테', subtitle: '벨벳처럼 부드러운 프랑스식 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '얕은 수프 접시에 벨루테를 붓고, 중앙에 크렘프레슈를 한 스푼 올린 뒤 유채나물 잎 하나로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-chef-2/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 곱게 갈아 크림으로 부드럽게 마무리한, 은은한 초록빛의 프랑스식 수프예요.',
     masterclass: {
@@ -475,7 +475,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-chef-3', month: 2, title: '유채나물 템퓨라 안초비버터', subtitle: '일본식 튀김과 서양식 소스의 만남',
     category: '튀김', difficulty: '보통', level: 'chef', cookTime: 35, servings: 3,
     platingGuide: '대나무 채반에 템퓨라를 비스듬히 겹쳐 담고, 안초비버터소스를 작은 종지에 따로 곁들여 찍어 먹도록 연출합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1566842600175-97dca489844f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-chef-3/hero.webp',
     mainIngredient: '유채나물',
     description: '가볍게 튀긴 유채나물 템퓨라에 짭짤한 안초비버터소스를 곁들인, 동서양이 만난 전채예요.',
     masterclass: {
@@ -506,7 +506,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-chef-4', month: 2, title: '유채나물 리조또 베르데', subtitle: '초록빛이 감도는 이탈리아식 리조또',
     category: '리조또', difficulty: '보통', level: 'chef', cookTime: 50, servings: 2,
     platingGuide: '넓은 접시에 리조또를 담고, 유채나물 오일을 몇 방울 떨어뜨려 자연스러운 무늬를 만든 뒤 파마산치즈를 갈아 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-chef-4/hero.webp',
     mainIngredient: '유채나물',
     description: '유채나물을 갈아 넣어 은은한 초록빛을 낸, 봄향이 가득한 이탈리아식 리조또예요.',
     masterclass: {
@@ -538,7 +538,7 @@ export const recipesRapeGreensExpansion: Recipe[] = [
     id: 'rapegreens-chef-5', month: 2, title: '관자 유채나물 뵈르블랑', subtitle: '프랑스식 버터소스와 봄나물의 만남',
     category: '메인요리', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '따뜻한 접시에 시어링한 관자를 부채꼴로 배치하고, 데친 유채나물을 그 옆에 곁들인 뒤 뵈르블랑소스를 숟가락으로 지그재그로 두릅니다.',
-    heroImage: 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/rapegreens-chef-5/hero.webp',
     mainIngredient: '유채나물',
     description: '바삭하게 시어링한 관자와 데친 유채나물에 프랑스식 버터소스를 곁들인, 봄철 우아한 메인요리예요.',
     masterclass: {

@@ -13,7 +13,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-home-1', month: 8, title: '성게비빔밥', subtitle: '바다향 가득한 고급스러운 별미 비빔밥',
     category: '밥', difficulty: '아주 쉬움', level: 'home', cookTime: 10, servings: 1,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-home-1/hero.webp',
     mainIngredient: '성게',
     description: '신선한 성게알을 밥 위에 올려 참기름과 간장으로 간단히 즐기는, 고급스러운 별미예요.',
     masterclass: {
@@ -42,7 +42,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-home-2', month: 8, title: '성게초밥', subtitle: '크리미하고 향긋한 고급 초밥',
     category: '밥', difficulty: '보통', level: 'home', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-home-2/hero.webp',
     mainIngredient: '성게',
     description: '초밥용 밥 위에 성게알을 올린, 크리미하고 향긋한 고급 초밥이에요.',
     masterclass: {
@@ -71,7 +71,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-home-3', month: 8, title: '성게된장국', subtitle: '고소하고 진한 여름 국',
     category: '국&찌개', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-home-3/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 넣어 끓인 된장국으로, 고소하고 진한 바다향이 배어드는 국이에요.',
     masterclass: {
@@ -99,7 +99,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-home-4', month: 8, title: '성게달걀찜', subtitle: '부드럽고 고소한 별미',
     category: '반찬', difficulty: '쉬움', level: 'home', cookTime: 25, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-home-4/hero.webp',
     mainIngredient: '성게',
     description: '달걀찜에 성게알을 올려, 부드럽고 고소함을 배가시킨 별미 반찬이에요.',
     masterclass: {
@@ -128,7 +128,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-home-5', month: 8, title: '성게죽', subtitle: '부드럽고 고소한 보양죽',
     category: '죽', difficulty: '보통', level: 'home', cookTime: 40, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-home-5/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 넣어 끓인, 부드럽고 고소한 늦여름 보양죽이에요.',
     masterclass: {
@@ -159,7 +159,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-weekend-1', month: 8, title: '성게파스타', subtitle: '크리미하고 진한 감칠맛 파스타',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-weekend-1/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 버터와 섞어 만든 크리미한 소스를 파스타에 버무린, 진한 감칠맛 요리예요.',
     masterclass: {
@@ -188,7 +188,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-weekend-2', month: 8, title: '성게덮밥', subtitle: '고급스럽고 든든한 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-weekend-2/hero.webp',
     mainIngredient: '성게',
     description: '성게알과 채소를 밥 위에 올려 즐기는, 고급스럽고 든든한 한 그릇이에요.',
     masterclass: {
@@ -216,7 +216,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-weekend-3', month: 8, title: '성게찜', subtitle: '부드럽고 고급스러운 별미',
     category: '메인요리', difficulty: '보통', level: 'weekend', cookTime: 25, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-weekend-3/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 껍질째 살짝 쪄낸, 부드럽고 고급스러운 별미예요.',
     masterclass: {
@@ -244,7 +244,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-weekend-4', month: 8, title: '성게솥밥', subtitle: '고소하고 고급스러운 한 그릇',
     category: '밥', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1609951651473-38c1d8c2ae2c?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-weekend-4/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 올려 지은 솥밥으로, 고소하고 고급스러운 향이 밥알에 배어드는 요리예요.',
     masterclass: {
@@ -273,7 +273,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
   {
     id: 'seaurchin-weekend-5', month: 8, title: '성게토스트', subtitle: '고급스러운 한입 브런치',
     category: '브런치', difficulty: '쉬움', level: 'weekend', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-weekend-5/hero.webp',
     mainIngredient: '성게',
     description: '바삭한 바게트 위에 버터와 성게알을 올린, 고급스러운 브런치예요.',
     masterclass: {
@@ -304,7 +304,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-world-1', month: 8, title: '우니 파스타', subtitle: '이탈리아식 성게크림파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '이탈리아', note: '이탈리아에서는 우니(성게)를 리치아(riccio di mare)라 부르며, 시칠리아와 남부 해안 지방에서 파스타에 즐겨 활용해요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-world-1/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 화이트와인과 크림에 녹여낸, 이탈리아 남부식 진한 파스타예요.',
     masterclass: {
@@ -334,7 +334,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-world-2', month: 8, title: '우니 자완무시', subtitle: '일본식 고급 계란찜',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 3,
     cuisineContext: { country: '일본', note: '일본 가이세키 요리에서 우니(성게)는 차완무시나 초밥의 고급 재료로 널리 쓰여요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-world-2/hero.webp',
     mainIngredient: '성게',
     description: '부드러운 계란찜 위에 성게알을 올린, 일본 가이세키 스타일의 고급 전채예요.',
     masterclass: {
@@ -364,7 +364,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-world-3', month: 8, title: '우니 크로스티니', subtitle: '스페인식 타파스 응용',
     category: '전채', difficulty: '쉬움', level: 'world', cookTime: 20, servings: 3,
     cuisineContext: { country: '스페인', note: '스페인 북부 바스크 지방에서는 성게(에리소 데 마르)를 바게트에 올린 핀초(작은 타파스)로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-world-3/hero.webp',
     mainIngredient: '성게',
     description: '바삭한 바게트에 성게알과 아이올리를 올린, 스페인식 핀초 스타일 전채예요.',
     masterclass: {
@@ -394,7 +394,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-world-4', month: 8, title: '우니 콘 파스타 브랑카', subtitle: '프랑스식 성게 크림 파스타',
     category: '파스타', difficulty: '보통', level: 'world', cookTime: 30, servings: 2,
     cuisineContext: { country: '프랑스', note: '프랑스 브르타뉴 지방에서는 성게(우르생)를 오믈렛이나 크림소스에 활용하는 전통이 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-world-4/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 버터크림소스에 녹여낸, 프랑스 브르타뉴식 진한 파스타예요.',
     masterclass: {
@@ -424,7 +424,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-world-5', month: 8, title: '우니 온천다마고', subtitle: '일본식 정밀 온천계란 페어링',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 40, servings: 2,
     cuisineContext: { country: '일본', note: '온천다마고(温泉卵)는 일본 온천지역에서 유래한, 노른자는 살짝 굳고 흰자는 반쯤 액체인 독특한 질감의 계란요리예요. 성게와 함께 내는 것이 고급스러운 조합이에요.' },
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-world-5/hero.webp',
     mainIngredient: '성게',
     description: '정밀한 온도로 익힌 온천계란에 성게알을 올린, 일본 가이세키의 고급 전채예요.',
     masterclass: {
@@ -456,7 +456,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-chef-1', month: 8, title: '성게 카르보나라', subtitle: '이탈리아식 계란 유화 기법',
     category: '파스타', difficulty: '보통', level: 'chef', cookTime: 35, servings: 2,
     platingGuide: '깊은 접시에 파스타를 돌돌 말아 담고, 성게알 몇 조각을 중앙에 올린 뒤 후추를 굵게 갈아 뿌려 완성합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-chef-1/hero.webp',
     mainIngredient: '성게',
     description: '구아치알레와 페코리노 대신 성게알로 유화시킨, 카르보나라 기법의 대담한 재해석이에요.',
     masterclass: {
@@ -487,7 +487,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-chef-2', month: 8, title: '성게 군칸마키', subtitle: '일본식 초밥 손기법의 정수',
     category: '밥', difficulty: '보통', level: 'chef', cookTime: 40, servings: 3,
     platingGuide: '군칸마키를 접시에 나란히 배치하고, 각각의 성게알 위에 금박이나 차조기잎을 한 조각씩 올려 균일하게 마무리합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-chef-2/hero.webp',
     mainIngredient: '성게',
     description: '초밥용 밥을 김으로 둘러 배 모양(군칸)을 만들고, 그 안에 성게알을 채운 정통 초밥 기법이에요.',
     masterclass: {
@@ -518,7 +518,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-chef-3', month: 8, title: '성게 고로케', subtitle: '일본식 튀김 크로켓',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 4,
     platingGuide: '고로케를 반으로 잘라 단면에서 성게소스가 살짝 흐르는 모습을 보여주며 접시에 세워 담고, 소금 약간과 레몬 웨지를 곁들입니다.',
-    heroImage: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-chef-3/hero.webp',
     mainIngredient: '성게',
     description: '감자와 성게알을 섞어 빵가루를 입혀 튀긴, 겉바속촉 일본식 고로케예요.',
     masterclass: {
@@ -550,7 +550,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-chef-4', month: 8, title: '성게 온천다마고 다시젤리', subtitle: '정밀 저온 계란과 젤리의 조합',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 2,
     platingGuide: '작은 유리잔에 온천다마고를 담고, 그 위에 굳힌 다시젤리를 올린 뒤 성게알을 소복이 얹고 실파와 금박으로 장식합니다.',
-    heroImage: 'https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-chef-4/hero.webp',
     mainIngredient: '성게',
     description: '정밀한 온도로 익힌 온천계란 위에 다시육수 젤리와 성게알을 층층이 쌓은, 온도와 질감의 삼중주를 이루는 고급 전채예요.',
     masterclass: {
@@ -581,7 +581,7 @@ export const recipesSeaUrchinExpansion: Recipe[] = [
     id: 'seaurchin-chef-5', month: 8, title: '성게 에스푸마', subtitle: '분자요리 거품 기법',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 40, servings: 4,
     platingGuide: '작은 그릇에 뜨거운 다시육수를 붓고, 그 위에 사이펀으로 짜낸 성게 에스푸마를 구름처럼 올린 뒤 미세하게 채썬 김을 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/seaurchin-chef-5/hero.webp',
     mainIngredient: '성게',
     description: '성게알을 곱게 갈아 아산화질소로 부풀린, 구름처럼 가벼운 분자요리 거품이에요.',
     masterclass: {

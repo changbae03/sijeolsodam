@@ -14,7 +14,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-home-1', month: 9, title: '표고버섯 나물무침', subtitle: '향을 가장 또렷하게 느끼는 기본 반찬',
     category: '반찬', difficulty: '아주 쉬움', level: 'home', cookTime: 20, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-home-1/hero.webp',
     mainIngredient: '표고버섯',
     description: '데친 표고버섯을 간장 양념으로 무친, 가장 담백하게 향을 즐기는 기본 반찬이에요.',
     masterclass: {
@@ -43,7 +43,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-home-2', month: 9, title: '표고버섯 볶음밥', subtitle: '향긋한 표고 향이 밥알에 밴 한 그릇',
     category: '밥', difficulty: '쉬움', level: 'home', cookTime: 20, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-home-2/hero.webp',
     mainIngredient: '표고버섯',
     description: '잘게 썬 표고버섯을 간장으로 볶아 밥과 섞은, 반찬 없이도 든든한 한 그릇이에요.',
     masterclass: {
@@ -75,7 +75,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-weekend-1', month: 9, title: '표고버섯 잡채', subtitle: '당면보다 표고버섯이 주인공인 잡채',
     category: '반찬', difficulty: '보통', level: 'weekend', cookTime: 50, servings: 4,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-weekend-1/hero.webp',
     mainIngredient: '표고버섯',
     description: '표고버섯을 두툼하게 썰어 넉넉히 넣은, 향이 살아 있는 잡채예요.',
     masterclass: {
@@ -106,7 +106,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-weekend-2', month: 9, title: '표고버섯 크림파스타', subtitle: '버섯 향이 진한 크림소스 파스타',
     category: '파스타', difficulty: '보통', level: 'weekend', cookTime: 40, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-weekend-2/hero.webp',
     mainIngredient: '표고버섯',
     description: '버터에 볶은 표고버섯과 생크림을 졸여 만든, 진한 향의 크림파스타예요.',
     masterclass: {
@@ -136,7 +136,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-weekend-3', month: 9, title: '표고버섯 장아찌', subtitle: '두고두고 꺼내 먹는 짭조름한 밑반찬',
     category: '장아찌', difficulty: '쉬움', level: 'weekend', cookTime: 40, servings: 6,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-weekend-3/hero.webp',
     mainIngredient: '표고버섯',
     description: '간장물에 절여 숙성시킨, 짭조름하고 쫄깃한 표고버섯 장아찌예요.',
     masterclass: {
@@ -166,7 +166,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-weekend-4', month: 9, title: '표고버섯 버터갈릭구이', subtitle: '스테이크처럼 두툼하게 구운 버섯 한 조각',
     category: '구이', difficulty: '보통', level: 'weekend', cookTime: 30, servings: 2,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-weekend-4/hero.webp',
     mainIngredient: '표고버섯',
     description: '두꺼운 갓을 통째로 구워 버터와 마늘 향을 입힌, 고기 없이도 든든한 구이예요.',
     masterclass: {
@@ -196,7 +196,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
   {
     id: 'shiitake-weekend-5', month: 9, title: '표고버섯 강정', subtitle: '바삭하고 달콤짭짤한 간식 겸 술안주',
     category: '튀김', difficulty: '보통', level: 'weekend', cookTime: 45, servings: 3,
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-weekend-5/hero.webp',
     mainIngredient: '표고버섯',
     description: '튀긴 표고버섯에 달콤짭짤한 강정소스를 버무린, 아이도 어른도 좋아하는 간식이에요.',
     masterclass: {
@@ -229,7 +229,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-world-1', month: 9, title: '시이타케 니모노', subtitle: '일본 가정식 표고버섯 조림',
     category: '조림', difficulty: '쉬움', level: 'world', cookTime: 35, servings: 3,
     cuisineContext: { country: '일본', note: '니모노(煮物)는 일본 가정식의 기본 조리법 중 하나로, 다시육수에 채소나 버섯을 은근히 졸여 반찬으로 즐겨요. 표고버섯 니모노는 오세치 요리(설 명절 음식)에도 빠지지 않는 단골 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-world-1/hero.webp',
     mainIngredient: '표고버섯',
     description: '가쓰오다시에 간장, 미림을 더해 은근히 졸인 일본식 표고버섯 조림이에요.',
     masterclass: {
@@ -260,7 +260,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-world-2', month: 9, title: '홍샤오 시앙구', subtitle: '중국식 표고버섯 굴소스 조림',
     category: '조림', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '중국', note: '홍샤오(红烧)는 간장과 설탕으로 붉은빛이 돌게 조리는 중국식 조림법이에요. 표고버섯(香菇, 시앙구)은 채식 잔치상에서도 고기를 대신할 만큼 진한 감칠맛으로 사랑받는 재료예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-world-2/hero.webp',
     mainIngredient: '표고버섯',
     description: '굴소스와 간장으로 윤기 나게 조린, 진하고 달큰한 중국식 표고버섯 요리예요.',
     masterclass: {
@@ -291,7 +291,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-world-3', month: 9, title: '표고버섯 리조또', subtitle: '이탈리아식 버섯 향 가득한 쌀 요리',
     category: '리조또', difficulty: '보통', level: 'world', cookTime: 45, servings: 2,
     cuisineContext: { country: '이탈리아', note: '리조또는 이탈리아 북부의 대표 쌀 요리로, 육수를 조금씩 부어가며 쌀 전분을 끌어내 크리미한 질감을 만드는 것이 핵심이에요. 버섯 리조또(리조토 아이 풍기)는 가을철 이탈리아 가정에서 즐겨 먹는 메뉴예요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-world-3/hero.webp',
     mainIngredient: '표고버섯',
     description: '표고버섯 향을 우린 육수를 조금씩 부어가며 만든, 크리미한 이탈리아식 리조또예요.',
     masterclass: {
@@ -322,7 +322,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-world-4', month: 9, title: '표고버섯 뒥셀 부셰', subtitle: '프랑스식 버섯 페이스트리',
     category: '전채', difficulty: '보통', level: 'world', cookTime: 50, servings: 4,
     cuisineContext: { country: '프랑스', note: '뒥셀(duxelles)은 버섯을 잘게 다져 버터에 수분이 없어질 때까지 볶아낸 프랑스 클래식 베이스예요. 부셰(bouchée)는 이 뒥셀을 채운 작은 페이스트리로, 파티나 전채 요리로 즐겨요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-world-4/hero.webp',
     mainIngredient: '표고버섯',
     description: '표고버섯을 곱게 다져 볶은 뒥셀을 페이스트리에 채운, 우아한 프랑스식 전채예요.',
     masterclass: {
@@ -353,7 +353,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-world-5', month: 9, title: '똠얌 표고버섯 수프', subtitle: '태국식 새콤매콤한 버섯 수프',
     category: '수프', difficulty: '쉬움', level: 'world', cookTime: 30, servings: 3,
     cuisineContext: { country: '태국', note: '똠얌(ต้มยำ)은 태국을 대표하는 새콤매콤한 수프로, 레몬그라스와 라임, 고추가 어우러진 강렬한 향이 특징이에요. 원래는 새우가 들어가지만, 표고버섯만으로도 향과 감칠맛을 충분히 살릴 수 있어요.' },
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-world-5/hero.webp',
     mainIngredient: '표고버섯',
     description: '레몬그라스와 라임으로 향을 낸 육수에 표고버섯을 끓인, 새콤매콤한 태국식 수프예요.',
     masterclass: {
@@ -387,7 +387,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-chef-1', month: 9, title: '표고버섯 카르파치오', subtitle: '얇게 저민 표고버섯의 향을 그대로',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 25, servings: 2,
     platingGuide: '넓은 접시 중앙에 표고버섯을 겹치듯 원형으로 펼쳐 담고, 그 위에 파마산 셰이빙과 트러플오일을 지그재그로 뿌린 뒤 미니 허브를 중심에 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-chef-1/hero.webp',
     mainIngredient: '표고버섯',
     description: '생표고버섯을 종이처럼 얇게 저며 올리브오일과 파마산으로 마무리한, 익히지 않은 향을 그대로 즐기는 전채예요.',
     masterclass: {
@@ -418,7 +418,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-chef-2', month: 9, title: '표고버섯 콩소메', subtitle: '맑고 깊은 버섯 향의 클리어 수프',
     category: '수프', difficulty: '보통', level: 'chef', cookTime: 70, servings: 4,
     platingGuide: '얕고 넓은 수프 접시에 콩소메를 붓고, 중앙에 데친 표고버섯 슬라이스와 차이브를 살짝 띄워 맑은 국물이 돋보이게 담습니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-chef-2/hero.webp',
     mainIngredient: '표고버섯',
     description: '표고버섯 육수를 달걀흰자로 맑게 정제한, 투명하면서도 향은 진한 콩소메예요.',
     masterclass: {
@@ -449,7 +449,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-chef-3', month: 9, title: '표고버섯 사케찜 유자버터소스', subtitle: '일본 사케 향과 유자버터의 만남',
     category: '찜', difficulty: '보통', level: 'chef', cookTime: 30, servings: 2,
     platingGuide: '접시 중앙에 찐 표고버섯을 갓이 위로 오게 담고, 유자버터소스를 숟가락으로 원을 그리듯 두른 뒤 유자 제스트를 살짝 뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-chef-3/hero.webp',
     mainIngredient: '표고버섯',
     description: '사케로 찐 표고버섯에 유자와 버터를 녹여 만든 소스를 곁들인, 향이 겹겹이 쌓인 요리예요.',
     masterclass: {
@@ -480,7 +480,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-chef-4', month: 9, title: '표고버섯 파테', subtitle: '빵에 발라 즐기는 진한 버섯 스프레드',
     category: '전채', difficulty: '보통', level: 'chef', cookTime: 60, servings: 6,
     platingGuide: '작은 라메킨에 파테를 담아 표면을 매끈하게 정리하고, 그 위에 녹인 버터를 얇게 부어 굳힌 뒤 타임 잎 하나를 장식으로 올립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-chef-4/hero.webp',
     mainIngredient: '표고버섯',
     description: '표고버섯을 곱게 갈아 버터와 크림으로 부드럽게 완성한, 빵에 발라 먹는 프랑스식 스프레드예요.',
     masterclass: {
@@ -511,7 +511,7 @@ export const recipesShiitakeExpansion: Recipe[] = [
     id: 'shiitake-chef-5', month: 9, title: '표고버섯 미소 캐러멜라이즈 구이', subtitle: '일본 된장으로 겉을 캐러멜화한 구이',
     category: '구이', difficulty: '보통', level: 'chef', cookTime: 40, servings: 2,
     platingGuide: '검은 돌판이나 어두운 색 접시에 표고버섯을 갓이 위로 오게 담고, 남은 미소 글레이즈를 붓으로 얇게 덧발라 윤기를 낸 뒤 참깨를 흩뿌립니다.',
-    heroImage: 'https://images.unsplash.com/photo-1607301406259-dfb186e15de8?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/images/recipes/shiitake-chef-5/hero.webp',
     mainIngredient: '표고버섯',
     description: '미소와 미림에 재워 오븐에 구운, 겉이 캐러멜처럼 짙게 그을린 표고버섯 요리예요.',
     masterclass: {
