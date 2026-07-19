@@ -17,10 +17,46 @@ interface ViewSummary {
 }
 
 export default function MyPage() {
-  const { user, loading, logout } = useAuth();
+  const { user, loading, logout, refresh } = useAuth();
   const { favoriteIds } = useFavorites();
   const [views, setViews] = useState<ViewSummary | null>(null);
   const [deleting, setDeleting] = useState(false);
+  const [editingName, setEditingName] = useState(false);
+  const [nameDraft, setNameDraft] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [savingName, setSavingName] = useState(false);
+  const [follow, setFollow] = useState({ followers: 0, following: 0 });
+
+  useEffect(() => {
+    if (!user) return;
+    fetch(`/api/follow?userId=${user.id}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => data && setFollow({ followers: data.followers, following: data.following }))
+      .catch(() => {});
+  }, [user]);
+
+  const saveName = async () => {
+    setSavingName(true);
+    setNameError('');
+    try {
+      const res = await fetch('/api/profile', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: nameDraft }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setNameError(data.error ?? '닉네임을 바꾸지 못했어요.');
+        return;
+      }
+      await refresh();
+      setEditingName(false);
+    } catch {
+      setNameError('닉네임을 바꾸지 못했어요.');
+    } finally {
+      setSavingName(false);
+    }
+  };
 
   const handleDeleteAccount = async () => {
     // 파괴적 동작이라 두 번 확인
@@ -114,9 +150,65 @@ export default function MyPage() {
         className="mb-6"
       >
         <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">마이페이지</p>
-        <h1 className="text-[24px] text-ink font-bold tracking-[-0.02em] leading-tight">
-          {user.name ? `${user.name}님` : user.email}
-        </h1>
+        {editingName ? (
+          <div className="flex items-center gap-2">
+            <input
+              value={nameDraft}
+              onChange={(e) => setNameDraft(e.target.value)}
+              maxLength={12}
+              autoFocus
+              className="min-w-0 flex-1 rounded-xl border border-border-soft bg-paper px-3 py-2 text-[16px] text-ink outline-none focus:border-sage"
+              placeholder="2~12자"
+            />
+            <button
+              type="button"
+              onClick={saveName}
+              disabled={savingName}
+              className="rounded-xl bg-ink px-4 py-2 text-[13.5px] font-semibold text-cream disabled:opacity-60"
+            >
+              저장
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setEditingName(false);
+                setNameError('');
+              }}
+              className="text-[13.5px] text-ink-soft"
+            >
+              취소
+            </button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
+            <h1 className="text-[24px] text-ink font-bold tracking-[-0.02em] leading-tight">
+              {user.name ? `${user.name}님` : user.email}
+            </h1>
+            <button
+              type="button"
+              onClick={() => {
+                setNameDraft(user.name ?? '');
+                setEditingName(true);
+              }}
+              aria-label="닉네임 수정"
+              className="text-ink-soft/60"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+              </svg>
+            </button>
+          </div>
+        )}
+        {nameError && <p className="mt-1.5 text-[12.5px] text-terracotta">{nameError}</p>}
+        <div className="mt-2 flex items-center gap-3 text-[13px] text-ink-soft">
+          <span>
+            팔로워 <b className="text-ink font-semibold">{follow.followers}</b>
+          </span>
+          <span>
+            팔로잉 <b className="text-ink font-semibold">{follow.following}</b>
+          </span>
+        </div>
       </motion.header>
 
       {/* ============================================

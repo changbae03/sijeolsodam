@@ -249,11 +249,17 @@ function CommunityPageInner() {
                 style={{ boxShadow: 'var(--shadow-sm)' }}
               >
                 <div className="flex items-center gap-2.5 px-4 pt-3.5 pb-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/15 text-[15px] font-medium text-sage">
+                  {/* 작성자 -> 프로필. 팔로우보다 '이 사람이 뭘 만드는지 본다'가 먼저다 */}
+                  <Link
+                    href={`/u/${post.authorId}`}
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/15 text-[15px] font-medium text-sage"
+                  >
                     {post.authorName.slice(0, 1)}
-                  </span>
+                  </Link>
                   <div className="min-w-0 flex-1">
-                    <p className="text-[14.5px] font-medium text-ink truncate">{post.authorName}</p>
+                    <Link href={`/u/${post.authorId}`} className="text-[14.5px] font-medium text-ink truncate block">
+                      {post.authorName}
+                    </Link>
                     <p className="text-[12px] text-ink-soft/70">{timeAgo(post.createdAt)}</p>
                   </div>
                 </div>

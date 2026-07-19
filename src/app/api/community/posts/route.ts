@@ -8,8 +8,35 @@ const PAGE_SIZE = 30;
 export async function GET(request: NextRequest) {
   const viewer = getUserFromRequest(request);
 
+  // ?userId= 가 있으면 그 사람의 게시물만 (프로필 페이지용)
+  const authorFilter = Number(request.nextUrl.searchParams.get('userId')) || null;
+
   try {
-    const rows = await sql`
+    const rows = authorFilter
+      ? await sql`
+      SELECT
+        p.id,
+        p.image_url,
+        p.caption,
+        p.hashtags,
+        p.recipe_id,
+        p.user_recipe_id,
+        p.created_at,
+        u.id AS author_id,
+        u.name AS author_name,
+        u.avatar_url AS author_avatar_url,
+        COUNT(DISTINCT pr.id)::int AS reaction_count,
+        COUNT(DISTINCT pc.id)::int AS comment_count
+      FROM posts p
+      JOIN users u ON u.id = p.user_id
+      LEFT JOIN post_reactions pr ON pr.post_id = p.id
+      LEFT JOIN post_comments pc ON pc.post_id = p.id
+      WHERE p.user_id = ${authorFilter}
+      GROUP BY p.id, u.id
+      ORDER BY p.created_at DESC
+      LIMIT ${PAGE_SIZE}
+    `
+      : await sql`
       SELECT
         p.id,
         p.image_url,
