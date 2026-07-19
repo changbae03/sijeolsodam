@@ -8,6 +8,7 @@ import { findIngredientByName, formatSeasonMonths, resolveIngredientForMonth } f
 import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
 import PriceTrendSection from '@/components/PriceTrendSection';
+import OriginMap from '@/components/OriginMap';
 import { Card } from '@/components/ui';
 import RecipeCard from '@/components/RecipeCard';
 import { SeasonalIngredient, Recipe, RecipeLevel } from '@/data/types';
@@ -232,6 +233,11 @@ export default function IngredientDetailPage() {
         <PriceTrendSection name={ingredient.name} />
 
         {/* ============================================
+            5-3. 산지 지도
+           ============================================ */}
+        {ingredient.origin && <OriginMap origin={ingredient.origin} name={ingredient.name} />}
+
+        {/* ============================================
             6. 영양 요약
            ============================================ */}
         {ingredient.nutrition && (
@@ -244,22 +250,54 @@ export default function IngredientDetailPage() {
         )}
 
         {/* ============================================
-            7. 함께 쓰면 좋은 재료 — 탐색이 아니라 요리를 돕는 정보
+            7. 궁합 — 왜 잘 맞는지, 무엇을 피할지
            ============================================ */}
-        {pairings.length > 0 && (
-          <section className="mb-4">
-            <SectionHeader title="함께 쓰면 좋은 재료" />
-            <div className="flex flex-wrap gap-2 mt-3.5">
-              {pairings.map((p) => (
-                <span
-                  key={p}
-                  className="rounded-full border border-border-soft bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft"
-                >
-                  {p}
-                </span>
-              ))}
-            </div>
+        {(ingredient.pairings?.length || ingredient.avoidPairings?.length) ? (
+          <section className="mb-8">
+            <SectionHeader title="궁합" />
+            {ingredient.pairings && ingredient.pairings.length > 0 && (
+              <div className="mt-3.5">
+                <p className="text-[12.5px] font-semibold text-sage-dark mb-2">잘 맞아요</p>
+                <div className="rounded-2xl border border-border-soft bg-paper divide-y divide-border-soft/70">
+                  {ingredient.pairings.map((p) => (
+                    <div key={p.name} className="flex items-baseline gap-3 px-4 py-3">
+                      <span className="text-[14px] font-semibold text-ink shrink-0">{p.name}</span>
+                      <span className="text-[13px] text-ink-soft leading-snug">{p.reason}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {ingredient.avoidPairings && ingredient.avoidPairings.length > 0 && (
+              <div className="mt-4">
+                <p className="text-[12.5px] font-semibold text-terracotta mb-2">이건 피하는 게 좋아요</p>
+                <div className="rounded-2xl border border-border-soft bg-paper divide-y divide-border-soft/70">
+                  {ingredient.avoidPairings.map((p) => (
+                    <div key={p.name} className="flex items-baseline gap-3 px-4 py-3">
+                      <span className="text-[14px] font-semibold text-ink shrink-0">{p.name}</span>
+                      <span className="text-[13px] text-ink-soft leading-snug">{p.reason}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </section>
+        ) : (
+          pairings.length > 0 && (
+            <section className="mb-8">
+              <SectionHeader title="함께 쓰면 좋은 재료" />
+              <div className="flex flex-wrap gap-2 mt-3.5">
+                {pairings.map((p) => (
+                  <span
+                    key={p}
+                    className="rounded-full border border-border-soft bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft"
+                  >
+                    {p}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )
         )}
       </div>
 

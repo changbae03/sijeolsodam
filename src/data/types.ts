@@ -89,6 +89,10 @@ export interface SeasonalIngredient {
   tip?: string;
   /** 잘 어울리는 조리법이나 양념 (선택적) */
   goesWellWith?: string;
+  /** 궁합이 좋은 재료와 그 이유 (선택적) */
+  pairings?: { name: string; reason: string }[];
+  /** 함께 쓰면 손해 보는 재료와 그 이유 (선택적) */
+  avoidPairings?: { name: string; reason: string }[];
   /** 대표 산지 (선택적, 예: "제주", "경남 고성") */
   origin?: string;
   /** Pinterest 스타일 카드에 쓰는 실제 사진 URL (선택적) */
