@@ -418,19 +418,43 @@ export function getMonthData(month: number): MonthData | undefined {
  */
 export function findIngredientByName(
   name: string
-): { ingredient: SeasonalIngredient; months: number[] } | undefined {
+): { ingredient: SeasonalIngredient; months: number[]; byMonth: Record<number, SeasonalIngredient> } | undefined {
   const months: number[] = [];
+  const byMonth: Record<number, SeasonalIngredient> = {};
   let found: SeasonalIngredient | undefined;
 
   for (const m of monthsData) {
     const match = m.ingredients.find((i) => i.name === name);
     if (match) {
       months.push(m.month);
+      byMonth[m.month] = match;
       if (!found) found = match;
     }
   }
 
-  return found ? { ingredient: found, months } : undefined;
+  return found ? { ingredient: found, months, byMonth } : undefined;
+}
+
+/**
+ * 특정 달 기준으로 식재료 정보를 해석한다.
+ * 같은 재료라도 달마다 설명이 다르므로(꽃게: 4·5월 봄 암꽃게 / 10·11월 가을 수꽃게)
+ * 해당 달의 항목을 우선 쓰되, 그 달 항목에 없는 선택 필드(영양·손질법 등)는
+ * 다른 달 항목에서 채워 넣는다.
+ */
+export function resolveIngredientForMonth(
+  found: { ingredient: SeasonalIngredient; byMonth: Record<number, SeasonalIngredient> },
+  month: number
+): SeasonalIngredient {
+  const base = { ...found.ingredient } as unknown as Record<string, unknown>;
+  // 선택 필드는 어느 달 항목에든 채워져 있으면 가져온다
+  for (const entry of Object.values(found.byMonth)) {
+    for (const [k, v] of Object.entries(entry)) {
+      if (v !== undefined && base[k] === undefined) base[k] = v;
+    }
+  }
+  const merged = base as unknown as SeasonalIngredient;
+  // 해당 달 항목이 있으면 그 달의 값(설명·산지 등)으로 덮어쓴다
+  return found.byMonth[month] ? { ...merged, ...found.byMonth[month] } : merged;
 }
 
 /**

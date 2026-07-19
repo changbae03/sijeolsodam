@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { findIngredientByName, formatSeasonMonths } from '@/data/months';
+import { findIngredientByName, formatSeasonMonths, resolveIngredientForMonth } from '@/data/months';
 import { getRecipesByIngredient } from '@/data/recipes';
 import { getCurrentMonth } from '@/lib/season';
 import PriceTrendSection from '@/components/PriceTrendSection';
@@ -63,7 +63,21 @@ export default function IngredientDetailPage() {
     );
   }
 
-  const { ingredient, months } = found;
+  const { months } = found;
+
+  // 같은 재료라도 달마다 설명이 다르므로(꽃게: 봄 암꽃게 / 가을 수꽃게)
+  // 지금 보는 시점에 해당하는 달의 정보를 쓴다. peakMonth 계산은 아래에 있어
+  // 여기서 동일한 규칙(현재 달이 제철이면 그 달, 아니면 가장 가까운 제철 달)을 적용.
+  const viewMonth = (() => {
+    const now = getCurrentMonth();
+    if (months.includes(now)) return now;
+    return months.reduce((best, m) => {
+      const dist = (m - now + 12) % 12;
+      const bestDist = (best - now + 12) % 12;
+      return dist < bestDist ? m : best;
+    }, months[0]);
+  })();
+  const ingredient = resolveIngredientForMonth(found, viewMonth);
   const recipes = getRecipesByIngredient(ingredient.name);
 
   const recipesByLevel = LEVEL_ORDER.reduce<Record<RecipeLevel, Recipe[]>>(
@@ -74,17 +88,8 @@ export default function IngredientDetailPage() {
     { home: [], weekend: [], world: [], chef: [] }
   );
 
-  // "OO월이 가장 맛있는 시기입니다" — 지금 달이 제철이면 그대로,
-  // 아니면 앞으로 가장 가까운 제철 달을 고른다. (꽃게처럼 봄·가을로 제철이 나뉜 재료에서
-  // 무조건 첫 달을 쓰면 11월에 "4월이 가장 맛있다"고 나와 어색해짐)
-  const currentMonth = getCurrentMonth();
-  const peakMonth = months.includes(currentMonth)
-    ? currentMonth
-    : months.reduce((best, m) => {
-        const dist = (m - currentMonth + 12) % 12;
-        const bestDist = (best - currentMonth + 12) % 12;
-        return dist < bestDist ? m : best;
-      }, months[0]);
+  // "OO월이 가장 맛있는 시기입니다" — 위에서 고른 기준 달과 동일하게 표기
+  const peakMonth = viewMonth;
 
   const pairings = getPairingIngredients(ingredient);
 
