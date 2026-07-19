@@ -274,7 +274,7 @@ function CommunityPageInner() {
                         😋
                       </span>
                       <span className={`text-[14px] ${liked ? 'text-terracotta font-medium' : 'text-ink-soft'}`}>
-                        맛있어요 {post.reactionCount}
+                        맛있어요{post.reactionCount > 0 ? ` ${post.reactionCount}` : ''}
                       </span>
                     </button>
                     <button
@@ -286,7 +286,9 @@ function CommunityPageInner() {
                       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft">
                         <path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5Z" />
                       </svg>
-                      <span className="text-[14px] text-ink-soft">{post.commentCount}</span>
+                      {post.commentCount > 0 && (
+                        <span className="text-[14px] text-ink-soft">{post.commentCount}</span>
+                      )}
                     </button>
                   </div>
 
