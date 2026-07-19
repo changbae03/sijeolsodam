@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { allRecipes } from '@/data/recipes';
 import { SearchBar } from '@/components/ui';
@@ -8,10 +8,58 @@ import RecipeCard from '@/components/RecipeCard';
 import Logo from '@/components/Logo';
 
 const PAGE_SIZE = 30; // 2,635개를 한 번에 그리지 않도록 점진 렌더
+const STATE_KEY = 'recipes-tab-state'; // 상세 갔다 돌아올 때 검색어·펼친 개수·스크롤 복원용
+
+function loadSavedState(): { query: string; visibleCount: number; scrollY: number } | null {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = sessionStorage.getItem(STATE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
 
 export default function RecipesPage() {
-  const [query, setQuery] = useState('');
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const saved = useRef(loadSavedState());
+  const [query, setQuery] = useState(saved.current?.query ?? '');
+  const [visibleCount, setVisibleCount] = useState(saved.current?.visibleCount ?? PAGE_SIZE);
+
+  // 복원: 저장된 개수만큼 렌더된 뒤 스크롤 위치로 이동
+  useEffect(() => {
+    const y = saved.current?.scrollY;
+    if (y && y > 0) {
+      requestAnimationFrame(() => window.scrollTo(0, y));
+    }
+    saved.current = null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- 마운트 시 1회만
+  }, []);
+
+  // 저장: 상태·스크롤이 바뀔 때마다 세션에 기록 (뒤로가기 대비)
+  useEffect(() => {
+    const save = () => {
+      try {
+        sessionStorage.setItem(
+          STATE_KEY,
+          JSON.stringify({ query, visibleCount, scrollY: window.scrollY })
+        );
+      } catch {
+        // 세션 저장 실패는 무시 (복원만 못 할 뿐)
+      }
+    };
+    save();
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      setTimeout(() => {
+        save();
+        ticking = false;
+      }, 200);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [query, visibleCount]);
 
   const filtered = query.trim()
     ? allRecipes.filter(
