@@ -28,12 +28,18 @@ interface PersonalizeData {
 }
 
 /** 원산지·보관팁·영양 정보를 모두 더해 "눈여겨볼 재료" 한 줄을 훨씬 풍성하게 만든다. */
-function buildIngredientLine(ing: NonNullable<PersonalizeData['todayIngredient']>): string {
-  const parts = [ing.description];
-  if (ing.origin) parts.push(`${ing.origin}에서 온 제철 재료예요.`);
-  if (ing.nutrition) parts.push(ing.nutrition);
-  if (ing.tip) parts.push(`💡 ${ing.tip}`);
-  return parts.join(' ');
+/**
+ * 제철 재료 소개를 문단으로 나눈다.
+ * 영양·보관 팁이 길어지면서 한 덩어리로 붙이면 벽 같은 글이 되어 읽히지 않는다.
+ * 성격이 다른 정보(무엇인지 / 몸에 어떤지 / 다룰 때 팁)를 각각 한 문단으로.
+ */
+function buildIngredientParagraphs(
+  ing: NonNullable<PersonalizeData['todayIngredient']>
+): { intro: string; nutrition?: string; tip?: string } {
+  const intro = [ing.description, ing.origin ? `${ing.origin}에서 온 제철 재료예요.` : '']
+    .filter(Boolean)
+    .join(' ');
+  return { intro, nutrition: ing.nutrition, tip: ing.tip };
 }
 
 /** 인사이트 행 앞의 라인 아이콘 — 이모지 칩 대신 스트로크 아이콘으로 새 홈 톤에 맞춤 */
@@ -110,7 +116,7 @@ function InsightRow({
       </span>
       <div className="min-w-0 flex-1">
         <p className={`text-[11.5px] font-semibold tracking-[0.04em] ${labelColor}`}>{label}</p>
-        <p className="text-[13.5px] text-ink-soft leading-snug mt-0.5">{children}</p>
+        <div className="text-[13.5px] text-ink-soft leading-relaxed mt-0.5 space-y-1.5">{children}</div>
       </div>
       {href && <span className="text-ink-soft/30 shrink-0 mt-2">›</span>}
     </div>
@@ -206,10 +212,25 @@ export default function WelcomeBanner() {
         labelColor="text-sage"
         href={`/ingredient/${encodeURIComponent(data.todayIngredient.name)}`}
       >
-        <span className="text-ink font-medium">{data.todayIngredient.name}</span>
-        {'. '}
-        {buildIngredientLine(data.todayIngredient)}
-        {data.priceNote && <span className="text-terracotta"> {data.priceNote}</span>}
+        {(() => {
+          const p = buildIngredientParagraphs(data.todayIngredient!);
+          return (
+            <>
+              <p>
+                <span className="text-ink font-medium">{data.todayIngredient!.name}</span>
+                {'. '}
+                {p.intro}
+                {data.priceNote && <span className="text-terracotta"> {data.priceNote}</span>}
+              </p>
+              {p.nutrition && <p>{p.nutrition}</p>}
+              {p.tip && (
+                <p className="text-ink-soft/80">
+                  <span className="font-medium text-ink-soft">보관 팁</span> · {p.tip}
+                </p>
+              )}
+            </>
+          );
+        })()}
       </InsightRow>
     );
   } else if (data.priceNote) {
