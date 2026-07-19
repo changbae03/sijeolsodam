@@ -32,14 +32,16 @@ interface Exchange {
 const QUICK_PROMPTS = ['이거 어떻게 만들어?', '냉장고 파먹기 도와줘', '오늘은 매콤한 게 당겨요'];
 
 /**
- * 전역 소담이 버튼을 띄울 페이지를 좁게 제한한다.
+ * 전역 소담이 버튼은 현재 어느 화면에도 띄우지 않는다.
  *
- * 떠 있는 버튼은 화면을 가리고, 탭마다 자기 액션(커뮤니티의 글쓰기 +, 레시피 상세의
- * 요리 코치)과 겹쳐 두 개가 포개진다. 소담이가 실제로 필요한 지점은
- * "이 재료로 뭘 하지"를 고민하는 식재료 상세 정도라, 거기서만 노출한다.
+ * 떠 있는 버튼이 콘텐츠를 가리고, 탭마다 자기 액션(커뮤니티 글쓰기 +,
+ * 레시피 상세 요리 코치)과 겹쳐 보였다. 소담이 진입은 홈의 큰 입력창과
+ * 하단 탭으로 충분하다는 판단.
+ *
+ * 되살릴 때는 아래에 노출할 경로 조건을 추가하면 된다.
+ * 예: if (pathname.startsWith('/ingredient/')) return false;
  */
-function shouldHideOnPath(pathname: string) {
-  if (pathname.startsWith('/ingredient/')) return false; // 재료를 보며 물어볼 여지가 있는 유일한 화면
+function shouldHideGlobalSodami() {
   return true;
 }
 
@@ -63,7 +65,7 @@ export default function GlobalSodami() {
     if (open) setTimeout(() => inputRef.current?.focus(), 300);
   }, [open]);
 
-  if (shouldHideOnPath(pathname)) return null;
+  if (shouldHideGlobalSodami()) return null;
 
   async function send(text: string) {
     const trimmed = text.trim();
