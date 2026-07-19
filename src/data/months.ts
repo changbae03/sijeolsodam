@@ -382,7 +382,7 @@ export const monthsData: MonthData[] = [
     headline: '추운 겨울 밤, 우리 집 주방을 데우는 온기',
     description: '한 해의 끝, 가장 춥고 어두운 밤이 길어지는 동짓달입니다. 굴과 명태처럼 진한 국물을 내는 식재료로 몸을 데워보세요.',
     ingredients: [
-      { name: '생굴', emoji: '🦪', description: '한 해 중 가장 통통하고 진한 맛', category: '해산물', origin: '경남 통영', imageUrl: '/images/ingredients/생굴.webp' , nutrition: '아연이 풍부해서 면역력 강화에 도움을 주고, 추운 겨울철 감기 예방에 좋답니다. 타우린도 많아 피로회복과 간 건강에 이로운 영향을 줄 수 있어요.', howToChoose: '껍질이 단단히 닫혀있고, 살이 통통한 것을 고르세요.', tip: '옅은 소금물에 흔들어 씻은 후 바로 드시는 게 좋답니다.', goesWellWith: '초고추장이나 레몬즙을 곁들여 보세요.' },
+      { name: '굴', emoji: '🦪', description: '살이 가장 통통하게 차오르는 한겨울 굴', category: '해산물', origin: '경남 통영', imageUrl: '/images/ingredients/굴.webp' , nutrition: '아연이 풍부해서 면역력 강화에 도움을 주고, 추운 겨울철 감기 예방에 좋답니다. 타우린도 많아 피로회복과 간 건강에 이로운 영향을 줄 수 있어요.', howToChoose: '껍질이 단단히 닫혀있고, 살이 통통한 것을 고르세요.', tip: '옅은 소금물에 흔들어 씻은 후 바로 드시는 게 좋답니다.', goesWellWith: '초고추장이나 레몬즙을 곁들여 보세요.' },
       { name: '명태', emoji: '🐟', description: '겨울 동해를 대표하는 생선', category: '해산물', origin: '강원 고성', imageUrl: '/images/ingredients/명태.webp' , nutrition: '명태는 단백질이 풍부하여 추운 겨울철 기력 보충과 면역력 증진에 도움을 준답니다. 또한, 비타민 B군이 많아 겨울철 피로 회복과 활력 증진에도 참 좋답니다.', howToChoose: '눈이 맑고 아가미가 선홍색이며 살이 단단한 것을 고르세요.', tip: '내장을 제거하고 소금 간하여 냉동 보관하면 좋아요.', goesWellWith: '시원한 국물 요리나 매콤한 조림에 잘 어울려요.' },
       { name: '동치미무', emoji: '🥬', description: '시원한 국물을 내는 겨울 무', category: '채소', origin: '강원 평창', imageUrl: '/images/ingredients/동치미무.webp' , nutrition: '동치미무에는 비타민 C가 풍부하게 들어있어 추운 겨울철 면역력을 높이고 감기를 예방하는 데 도움을 줄 수 있답니다. 또한, 소화를 돕는 효소들이 많아 기름진 음식과 함께 드시면 속을 편안하게 해주는 효과도 기대할 수 있어요.', howToChoose: '단단하고 표면이 매끄러운 것을 고르세요.', tip: '흙을 털어낸 후 신문지에 싸서 서늘하게 보관하세요.', goesWellWith: '시원한 동치미를 담가보세요.' },
       { name: '유자', emoji: '🍋', description: '향긋한 향으로 겨울 감기를 예방하는 과일', category: '과일', origin: '전남 고흥', imageUrl: '/images/ingredients/유자.webp' , nutrition: '유자에는 비타민 C가 풍부하게 들어있어 추운 겨울철 감기 예방과 면역력 증진에 도움을 준답니다. 또한, 구연산은 피로 해소에 좋고, 리모넨 성분은 혈액순환을 원활하게 해주는 데 도움을 줄 수 있어요.', howToChoose: '껍질이 깨끗하고 향이 진하며 단단한 유자를 고르세요.', tip: '깨끗이 씻어 물기를 제거한 후 냉동 보관하면 오래 즐길 수 있어요.', goesWellWith: '청, 차, 드레싱으로 즐기기 좋아요.' },
@@ -401,7 +401,6 @@ export const monthsData: MonthData[] = [
       { name: '봄동', emoji: '🥬', description: '겉은 푸르고 속은 노란 달큰한 겨울 배추', category: '채소', imageUrl: '/images/ingredients/봄동.webp', origin: '전남 해남' },
       { name: '한라봉', emoji: '🍊', description: '향긋하고 달콤한 제주 겨울 감귤', category: '과일', imageUrl: '/images/ingredients/한라봉.webp', origin: '제주' },
       { name: '귤', emoji: '🍊', description: '새콤달콤하고 향긋한 한겨울 대표 과일', category: '과일', imageUrl: '/images/ingredients/귤.webp', origin: '제주' },
-      { name: '굴', emoji: '🦪', description: '살이 가장 통통하게 차오르는 한겨울 굴', category: '해산물', imageUrl: '/images/ingredients/굴.webp', origin: '경남 통영' },
       { name: '표고버섯', emoji: '🍄', description: '향이 진하고 쫄깃한 식감으로 어디든 잘 어울리는 버섯', category: '버섯', imageUrl: '/images/ingredients/표고버섯.webp', origin: '경북 청도·전남 장흥' },
       { name: '팽이버섯', emoji: '🍄', description: '가늘고 아삭한 식감으로 탕과 볶음에 즐겨 쓰는 버섯', category: '버섯', imageUrl: '/images/ingredients/팽이버섯.webp', origin: '충남 부여' },
       { name: '흑미', emoji: '🌾', description: '구수한 맛과 풍부한 안토시아닌이 매력적인 곡물', category: '곡물', imageUrl: '/images/ingredients/흑미.webp', origin: '경기 여주' },
