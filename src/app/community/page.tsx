@@ -506,7 +506,12 @@ function CommunityPageInner() {
                           {media.map((url, i) => (
                             <div
                               key={url}
-                              className={`relative aspect-square shrink-0 snap-center bg-cream-warm ${
+                              // 탭하면 전체화면 뷰어로 — 피드에서도 사진을 크게 보고 넘길 수 있게
+                              onClick={() => {
+                                setViewerPost(post);
+                                setViewerIdx(i);
+                              }}
+                              className={`relative aspect-square shrink-0 snap-center cursor-zoom-in bg-cream-warm ${
                                 media.length > 1 ? 'w-[88%] overflow-hidden rounded-2xl' : 'w-full'
                               }`}
                             >
@@ -859,6 +864,13 @@ function CommunityPageInner() {
 
                   {/* 사진 — 손가락으로 좌우 스와이프 (스크롤 스냅) */}
                   <div
+                    // 마운트 시 선택했던 사진 위치로 바로 이동 (피드에서 3번째를 눌렀으면 3번째부터)
+                    ref={(el) => {
+                      if (el && el.dataset.initialized !== 'true') {
+                        el.dataset.initialized = 'true';
+                        el.scrollLeft = viewerIdx * el.clientWidth;
+                      }
+                    }}
                     onScroll={(e) => {
                       const el = e.currentTarget;
                       const idx = Math.round(el.scrollLeft / el.clientWidth);
@@ -902,7 +914,19 @@ function CommunityPageInner() {
                         ))}
                       </div>
                     )}
-                    <p className="text-[11.5px] text-white/60">{postTimeLabel(viewerPost.createdAt)}</p>
+                    <div className="flex items-center gap-2">
+                      <span className="relative flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white/15 text-[12px] font-medium text-white">
+                        {viewerPost.authorAvatarUrl ? (
+                          <Image src={viewerPost.authorAvatarUrl} alt="" fill sizes="28px" className="object-cover" />
+                        ) : (
+                          viewerPost.authorName.slice(0, 1)
+                        )}
+                      </span>
+                      <p className="text-[13.5px] font-medium text-white">{viewerPost.authorName}</p>
+                      <span className="text-[11.5px] text-white/50">
+                        {postTimeLabel(viewerPost.createdAt)}
+                      </span>
+                    </div>
                     {viewerPost.caption && (
                       <p className="mt-1.5 text-[15px] leading-relaxed text-white">{viewerPost.caption}</p>
                     )}
