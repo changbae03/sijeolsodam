@@ -9,13 +9,20 @@ import { getRecipeById } from '@/data/recipes';
  * 그래서 여기서 PNG 카드를 직접 그려 내보낸다. 절기 히어로와 같은 톤에
  * 로고·요리 이름·부제를 얹어, 사진이 없어도 브랜드가 드러나게 했다.
  */
-export const runtime = 'edge';
+// Edge 런타임은 번들 상한(Hobby 1MB)이 있는데 레시피 데이터가 6.9MB라 배포가 실패한다.
+// Node 런타임은 상한이 훨씬 커서 전체 데이터를 그대로 참조할 수 있다.
+export const runtime = 'nodejs';
 export const alt = '시절소담 레시피';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default async function RecipeOgImage({ params }: { params: { id: string } }) {
-  const recipe = getRecipeById(params.id);
+export default async function RecipeOgImage({
+  params,
+}: {
+  params: Promise<{ id: string }> | { id: string };
+}) {
+  const { id } = await params;
+  const recipe = getRecipeById(id);
   const title = recipe?.title ?? '시절소담';
   const subtitle = recipe?.subtitle ?? '제철 식재료로 짓는 한 끼';
   const meta = recipe ? `${recipe.cookTime}분 · ${recipe.difficulty}` : '';
