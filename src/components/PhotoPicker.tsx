@@ -229,6 +229,9 @@ export default function PhotoPicker({
   const [edit, setEdit] = useState<EditState>(DEFAULT_EDIT);
   const boxRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number; ox: number; oy: number } | null>(null);
+  // 두 손가락 핀치 상태 (활성 포인터 좌표 + 시작 시점의 간격·배율)
+  const pointersRef = useRef<Map<number, { x: number; y: number }>>(new Map());
+  const pinchRef = useRef<{ dist: number; zoom: number } | null>(null);
   const [natural, setNatural] = useState<{ w: number; h: number }>({ w: 0, h: 0 });
   // 미리보기 폭 — 변환식과 결과물 좌표 환산에 쓰인다 (렌더 중 ref를 읽지 않도록 상태로 보관)
   const [boxWidth, setBoxWidth] = useState(0);
@@ -458,9 +461,31 @@ export default function PhotoPicker({
                   className="absolute inset-0 touch-none"
                   onPointerDown={(e) => {
                     e.currentTarget.setPointerCapture(e.pointerId);
-                    dragRef.current = { x: e.clientX, y: e.clientY, ox: edit.offsetX, oy: edit.offsetY };
+                    pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+                    if (pointersRef.current.size === 2) {
+                      // 두 손가락이 닿으면 핀치 시작 — 그 순간의 간격과 배율을 기준으로 삼는다
+                      const [a, b] = Array.from(pointersRef.current.values());
+                      pinchRef.current = { dist: Math.hypot(a.x - b.x, a.y - b.y), zoom: edit.zoom };
+                      dragRef.current = null;
+                    } else {
+                      dragRef.current = { x: e.clientX, y: e.clientY, ox: edit.offsetX, oy: edit.offsetY };
+                    }
                   }}
                   onPointerMove={(e) => {
+                    if (!pointersRef.current.has(e.pointerId)) return;
+                    pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+                    // 두 손가락: 벌리면 확대, 오므리면 축소
+                    if (pointersRef.current.size >= 2 && pinchRef.current) {
+                      const [a, b] = Array.from(pointersRef.current.values());
+                      const dist = Math.hypot(a.x - b.x, a.y - b.y);
+                      const next = Math.min(4, Math.max(1, (pinchRef.current.zoom * dist) / pinchRef.current.dist));
+                      setEdit((prev) => ({ ...prev, zoom: next }));
+                      return;
+                    }
+
+                    // 한 손가락: 위치 이동
                     const d = dragRef.current;
                     if (!d) return;
                     setEdit((prev) => ({
@@ -469,9 +494,29 @@ export default function PhotoPicker({
                       offsetY: d.oy + (e.clientY - d.y),
                     }));
                   }}
-                  onPointerUp={() => {
+                  onPointerUp={(e) => {
+                    pointersRef.current.delete(e.pointerId);
+                    if (pointersRef.current.size < 2) pinchRef.current = null;
+                    if (pointersRef.current.size === 0) {
+                      dragRef.current = null;
+                      if (shots.length) void emit(shots, filterId);
+                    }
+                  }}
+                  onPointerCancel={(e) => {
+                    pointersRef.current.delete(e.pointerId);
+                    pinchRef.current = null;
                     dragRef.current = null;
-                    if (shots.length) void emit(shots, filterId);
+                  }}
+                  onDoubleClick={() => {
+                    // 두 번 탭하면 2배 확대 / 원래대로 — 핀치가 어려운 상황의 대안
+                    const next = { ...edit, zoom: edit.zoom > 1.05 ? 1 : 2, offsetX: 0, offsetY: 0 };
+                    setEdit(next);
+                    if (shots.length) void emit(shots, filterId, next);
+                  }}
+                  onWheel={(e) => {
+                    // 데스크톱: 휠로 확대·축소
+                    const next = Math.min(4, Math.max(1, edit.zoom - e.deltaY * 0.002));
+                    setEdit((prev) => ({ ...prev, zoom: next }));
                   }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 미리보기 */}
@@ -505,6 +550,19 @@ export default function PhotoPicker({
                   />
                 </div>
                 <FilterOverlays filter={selected} />
+                {/* 자르기 프레임 — 이 틀 안이 그대로 저장된다 */}
+                <div className="pointer-events-none absolute inset-0">
+                  <div className="absolute inset-0 border border-white/25" />
+                  <div className="absolute left-1/3 top-0 h-full w-px bg-white/15" />
+                  <div className="absolute left-2/3 top-0 h-full w-px bg-white/15" />
+                  <div className="absolute left-0 top-1/3 h-px w-full bg-white/15" />
+                  <div className="absolute left-0 top-2/3 h-px w-full bg-white/15" />
+                  {/* 모서리 마커 */}
+                  <span className="absolute left-2 top-2 h-4 w-4 border-l-2 border-t-2 border-white/70" />
+                  <span className="absolute right-2 top-2 h-4 w-4 border-r-2 border-t-2 border-white/70" />
+                  <span className="absolute bottom-2 left-2 h-4 w-4 border-b-2 border-l-2 border-white/70" />
+                  <span className="absolute bottom-2 right-2 h-4 w-4 border-b-2 border-r-2 border-white/70" />
+                </div>
               </>
             )}
             <button
@@ -648,7 +706,7 @@ export default function PhotoPicker({
       {active && !active.isVideo && (
         <div className="mt-3">
           <div className="flex items-center justify-between">
-            <p className="text-[12.5px] font-semibold text-ink">사진 편집</p>
+            <p className="text-[12.5px] font-semibold text-ink">사진 자르기</p>
             <button
               type="button"
               onClick={() => {
@@ -702,7 +760,7 @@ export default function PhotoPicker({
             <input
               type="range"
               min={1}
-              max={3}
+              max={4}
               step={0.01}
               value={edit.zoom}
               onChange={(e) => setEdit((prev) => ({ ...prev, zoom: Number(e.target.value) }))}
@@ -714,7 +772,9 @@ export default function PhotoPicker({
               {edit.zoom.toFixed(1)}x
             </span>
           </div>
-          <p className="mt-1.5 text-[11px] text-ink-soft/55">사진을 끌어서 위치를 맞출 수 있어요</p>
+          <p className="mt-1.5 text-[11px] text-ink-soft/55">
+            두 손가락으로 벌려 확대하고, 끌어서 위치를 맞춰요 · 두 번 탭하면 2배
+          </p>
         </div>
       )}
 
