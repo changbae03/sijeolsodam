@@ -8,7 +8,6 @@ import { useAuth } from '@/lib/auth-context';
 import { useFavorites } from '@/lib/favorites-context';
 import { getRecipesByIds } from '@/data/recipes';
 import { findIngredientByName } from '@/data/months';
-import { getCurrentSolarTerm } from '@/data/solar-terms';
 import RecipeCard from '@/components/RecipeCard';
 
 interface ViewSummary {
@@ -189,7 +188,6 @@ export default function MyPage() {
   const cookedRecipes = getRecipesByIds(cookedIds);
   // 데이터에 실제 존재하는 재료만 칩으로 (조회 기록의 main_ingredient가 개편 전 이름일 수 있음)
   const topIngredients = (views?.topIngredients ?? []).filter((n) => findIngredientByName(n));
-  const { current: currentTerm } = getCurrentSolarTerm();
 
   return (
     <main className="max-w-md mx-auto px-5 pt-6 pb-12">
@@ -327,34 +325,38 @@ export default function MyPage() {
       </motion.header>
 
       {/* ============================================
-          2. 나의 시절 요약 — 즐겨찾기 · 둘러본 레시피 · 지금 절기
+          2. 나의 요리 기록 — 큰 숫자 카드 대신 조용한 한 줄 요약
+             (마이페이지의 주인공은 지표가 아니라 내가 모아온 것들)
          ============================================ */}
-      <section className="mb-8">
-        <div className="grid grid-cols-3 gap-2.5">
-          <div className="rounded-2xl bg-paper border border-border-soft px-3 py-3.5 text-center">
-            <p className="text-[20px] font-bold tracking-[-0.02em] text-ink tabular-nums">
-              {favoriteRecipes.length}
-            </p>
-            <p className="text-[11.5px] text-ink-soft mt-0.5">즐겨찾기</p>
-          </div>
-          <div className="rounded-2xl bg-paper border border-border-soft px-3 py-3.5 text-center">
-            <p className="text-[20px] font-bold tracking-[-0.02em] text-ink tabular-nums">
-              {cookedRecipes.length}
-            </p>
-            <p className="text-[11.5px] text-ink-soft mt-0.5">만들었어요</p>
-          </div>
-          <div
-            className="rounded-2xl px-3 py-3.5 text-center text-cream"
-            style={{
-              background: `linear-gradient(160deg, ${currentTerm.theme.mid}, ${currentTerm.theme.deep})`,
-            }}
-          >
-            <p className="font-season text-[19px] font-semibold leading-[1.15]">
-              {currentTerm.name}
-            </p>
-            <p className="text-[11.5px] text-white/70 mt-0.5">지금 절기</p>
-          </div>
+      <section className="mb-7">
+        <div className="flex items-center divide-x divide-border-soft rounded-2xl border border-border-soft bg-paper">
+          {[
+            { label: '만든 요리', value: cookedRecipes.length },
+            { label: '즐겨찾기', value: favoriteRecipes.length },
+            { label: '둘러본 레시피', value: views?.totalViewed ?? 0 },
+          ].map((item) => (
+            <div key={item.label} className="flex-1 px-3 py-3 text-center">
+              <p className="text-[17px] font-bold tabular-nums tracking-[-0.02em] text-ink">
+                {item.value.toLocaleString()}
+              </p>
+              <p className="mt-0.5 text-[11.5px] text-ink-soft">{item.label}</p>
+            </div>
+          ))}
         </div>
+      </section>
+
+      {/* ============================================
+          2-2. 바로 가기 — 마이페이지에서 자주 향하는 곳들
+         ============================================ */}
+      <section className="mb-8 grid grid-cols-2 gap-2.5">
+        <Link href="/community" className="rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
+          <p className="text-[14px] font-semibold text-ink">내 소담</p>
+          <p className="mt-0.5 text-[12px] text-ink-soft">올린 요리 사진 보기</p>
+        </Link>
+        <Link href="/support" className="rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
+          <p className="text-[14px] font-semibold text-ink">문의 내역</p>
+          <p className="mt-0.5 text-[12px] text-ink-soft">답변 확인하기</p>
+        </Link>
       </section>
 
       {/* ============================================
@@ -457,10 +459,6 @@ export default function MyPage() {
       <section className="mb-8">
         <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">지원</h2>
         <div className="rounded-2xl bg-paper border border-border-soft divide-y divide-border-soft/70">
-          <Link href="/support" className="flex items-center justify-between px-4 py-3.5">
-            <span className="text-[14px] text-ink">문의하기</span>
-            <span className="text-ink-soft/40">›</span>
-          </Link>
           <Link href="/terms" className="flex items-center justify-between px-4 py-3.5">
             <span className="text-[14px] text-ink">이용약관</span>
             <span className="text-ink-soft/40">›</span>
