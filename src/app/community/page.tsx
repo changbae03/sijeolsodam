@@ -718,7 +718,7 @@ function CommunityPageInner() {
             }
             // 인스타 프로필처럼 사진만 3x3 격자로 — 내 기록은 훑어보는 용도라 사진이 주인공
             return (
-              <div className="grid grid-cols-3 gap-1">
+              <div className="grid grid-cols-3 gap-1.5">
                 {mine.map((p) => (
                   <button
                     key={p.id}
@@ -727,16 +727,18 @@ function CommunityPageInner() {
                       setViewerPost(p);
                       setViewerIdx(0);
                     }}
-                    className="relative aspect-square overflow-hidden bg-cream-warm"
+                    className="group relative aspect-square overflow-hidden rounded-xl bg-cream-warm"
                   >
                     <Image
                       src={p.imageUrl}
                       alt={p.caption ?? '내 요리'}
                       fill
                       sizes="150px"
-                      className="object-cover protected-media"
+                      className="object-cover protected-media transition-transform duration-500 group-active:scale-[1.04]"
                       draggable={false}
                     />
+                    {/* 하단 그라디언트 — 밝은 사진에서도 표식이 묻히지 않게 */}
+                    <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/25 to-transparent" />
                     {p.mediaType === 'video' ? (
                       <span className="absolute right-1.5 top-1.5 text-cream drop-shadow">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -772,105 +774,101 @@ function CommunityPageInner() {
         </svg>
       </button>
 
-      {/* 사진 크게 보기 — 내 소담 격자에서 탭했을 때 (탭 이동 없이 그 자리에서) */}
+      {/* 사진 크게 보기 — 손가락으로 넘기는 몰입 뷰어 */}
       <AnimatePresence>
         {viewerPost && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.18 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm"
-            onClick={() => setViewerPost(null)}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 bg-black"
           >
-            <motion.div
-              initial={{ scale: 0.96, y: 12 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.96, y: 12 }}
-              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="w-full max-w-md px-4"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {(() => {
-                const media = viewerPost.imageUrls?.length
-                  ? viewerPost.imageUrls
-                  : [viewerPost.imageUrl];
-                const current = media[Math.min(viewerIdx, media.length - 1)];
-                return (
-                  <div className="overflow-hidden rounded-3xl bg-paper">
-                    <div className="relative aspect-square bg-ink">
-                      {viewerPost.mediaType === 'video' ? (
-                        <video src={current} className="h-full w-full object-contain" controls playsInline autoPlay />
-                      ) : (
-                        <Image
-                          src={current}
-                          alt={viewerPost.caption ?? '내 요리'}
-                          fill
-                          sizes="448px"
-                          className="object-contain protected-media"
-                          draggable={false}
-                        />
-                      )}
+            {(() => {
+              const media = viewerPost.imageUrls?.length ? viewerPost.imageUrls : [viewerPost.imageUrl];
+              return (
+                <div className="relative flex h-full w-full flex-col">
+                  {/* 상단: 닫기 + 위치 */}
+                  <div className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 pt-[max(14px,env(safe-area-inset-top))] pb-3 bg-gradient-to-b from-black/60 to-transparent">
+                    <button
+                      type="button"
+                      onClick={() => setViewerPost(null)}
+                      aria-label="닫기"
+                      className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-md"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+                        <path d="M6 6l12 12M18 6L6 18" />
+                      </svg>
+                    </button>
+                    {media.length > 1 && (
+                      <span className="rounded-full bg-white/15 px-3 py-1.5 text-[12.5px] font-semibold text-white backdrop-blur-md tabular-nums">
+                        {Math.min(viewerIdx, media.length - 1) + 1} / {media.length}
+                      </span>
+                    )}
+                  </div>
 
-                      {media.length > 1 && (
-                        <>
-                          <button
-                            type="button"
-                            onClick={() => setViewerIdx((i) => (i - 1 + media.length) % media.length)}
-                            aria-label="이전 사진"
-                            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/45 px-2.5 py-2 text-white backdrop-blur-sm"
-                          >
-                            ‹
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => setViewerIdx((i) => (i + 1) % media.length)}
-                            aria-label="다음 사진"
-                            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/45 px-2.5 py-2 text-white backdrop-blur-sm"
-                          >
-                            ›
-                          </button>
-                          <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
-                            {media.map((u, i) => (
-                              <span
-                                key={u}
-                                className={`h-1.5 rounded-full transition-all ${
-                                  i === viewerIdx ? 'w-4 bg-white' : 'w-1.5 bg-white/50'
-                                }`}
-                              />
-                            ))}
-                          </div>
-                        </>
-                      )}
-                    </div>
-
-                    <div className="px-4 py-3.5">
-                      <p className="text-[12px] text-ink-soft/70">{postTimeLabel(viewerPost.createdAt)}</p>
-                      {viewerPost.caption && (
-                        <p className="mt-1.5 text-[14px] text-ink leading-relaxed">{viewerPost.caption}</p>
-                      )}
-                      {viewerPost.hashtags.length > 0 && (
-                        <p className="mt-1.5 text-[13px] text-sage">
-                          {viewerPost.hashtags.map((t) => `#${t}`).join(' ')}
-                        </p>
-                      )}
-                      <div className="mt-3 flex items-center gap-3 text-[12.5px] text-ink-soft">
-                        <span>맛있어요{viewerPost.reactionCount > 0 ? ` ${viewerPost.reactionCount}` : ''}</span>
-                        <span>댓글{viewerPost.commentCount > 0 ? ` ${viewerPost.commentCount}` : ''}</span>
+                  {/* 사진 — 손가락으로 좌우 스와이프 (스크롤 스냅) */}
+                  <div
+                    onScroll={(e) => {
+                      const el = e.currentTarget;
+                      const idx = Math.round(el.scrollLeft / el.clientWidth);
+                      if (idx !== viewerIdx) setViewerIdx(idx);
+                    }}
+                    className="flex h-full w-full snap-x snap-mandatory overflow-x-auto overflow-y-hidden scrollbar-hide"
+                  >
+                    {media.map((url, i) => (
+                      <div key={url} className="relative h-full w-full shrink-0 snap-center">
+                        {viewerPost.mediaType === 'video' ? (
+                          <video src={url} className="h-full w-full object-contain" controls playsInline autoPlay={i === 0} />
+                        ) : (
+                          <Image
+                            src={url}
+                            alt={viewerPost.caption ?? '사진'}
+                            fill
+                            sizes="100vw"
+                            className="object-contain protected-media"
+                            draggable={false}
+                            priority={i === 0}
+                          />
+                        )}
                       </div>
+                    ))}
+                  </div>
+
+                  {/* 하단: 인디케이터 + 캡션 */}
+                  <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/75 via-black/45 to-transparent px-5 pb-[max(20px,env(safe-area-inset-bottom))] pt-10">
+                    {media.length > 1 && (
+                      <div className="mb-3 flex justify-center gap-1.5">
+                        {media.map((u, i) => (
+                          <button
+                            key={u}
+                            type="button"
+                            aria-label={`${i + 1}번째 사진`}
+                            onClick={() => setViewerIdx(i)}
+                            className={`h-1.5 rounded-full transition-all ${
+                              i === viewerIdx ? 'w-5 bg-white' : 'w-1.5 bg-white/45'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    )}
+                    <p className="text-[11.5px] text-white/60">{postTimeLabel(viewerPost.createdAt)}</p>
+                    {viewerPost.caption && (
+                      <p className="mt-1.5 text-[15px] leading-relaxed text-white">{viewerPost.caption}</p>
+                    )}
+                    {viewerPost.hashtags.length > 0 && (
+                      <p className="mt-1.5 text-[13px] text-white/70">
+                        {viewerPost.hashtags.map((t) => `#${t}`).join(' ')}
+                      </p>
+                    )}
+                    <div className="mt-2.5 flex items-center gap-3 text-[12.5px] text-white/60">
+                      <span>맛있어요{viewerPost.reactionCount > 0 ? ` ${viewerPost.reactionCount}` : ''}</span>
+                      <span>댓글{viewerPost.commentCount > 0 ? ` ${viewerPost.commentCount}` : ''}</span>
                     </div>
                   </div>
-                );
-              })()}
-
-              <button
-                type="button"
-                onClick={() => setViewerPost(null)}
-                className="mx-auto mt-3 block rounded-full bg-white/15 px-5 py-2 text-[13px] font-medium text-white backdrop-blur-md"
-              >
-                닫기
-              </button>
-            </motion.div>
+                </div>
+              );
+            })()}
           </motion.div>
         )}
       </AnimatePresence>
