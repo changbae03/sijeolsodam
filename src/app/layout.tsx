@@ -5,9 +5,23 @@ import { FavoritesProvider } from "@/lib/favorites-context";
 import BottomNav from "@/components/BottomNav";
 import GlobalSodami from "@/components/GlobalSodami";
 
+/** 링크 공유 시 미리보기(카카오톡·메시지 등)에 쓰이는 절대 주소 */
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://sijeolsodam.vercel.app");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "시절소담 — 제철 식재료로 짓는 한 끼",
   description: "절기를 따라 가장 맛있는 때의 식재료로 차리는 집밥 레시피, 시절소담입니다.",
+  openGraph: {
+    type: "website",
+    siteName: "시절소담",
+    title: "시절소담 — 제철 식재료로 짓는 한 끼",
+    description: "절기를 따라 가장 맛있는 때의 식재료로 차리는 집밥 레시피.",
+    locale: "ko_KR",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {

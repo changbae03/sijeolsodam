@@ -42,7 +42,9 @@ export default function RecipeShareButton({ recipeId, title }: { recipeId: strin
     const payload = `${text}\n${url}`;
     try {
       if (navigator.share) {
-        await navigator.share({ title: `시절소담 · ${title}`, text, url });
+        // title·url을 따로 넘기면 카카오톡 등에서 메시지가 두 개로 쪼개진다.
+        // 문구와 링크를 한 문자열로 합쳐 text 하나만 전달해 한 번에 가게 한다.
+        await navigator.share({ text: payload });
       } else {
         await navigator.clipboard.writeText(payload);
         setCopied(true);

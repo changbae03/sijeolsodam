@@ -1,5 +1,7 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getRecipeById, allRecipes } from '@/data/recipes';
+import { SITE_URL } from '@/app/layout';
 import RecipeHero from '@/components/RecipeHero';
 import RecipeBody from '@/components/RecipeBody';
 import CookingCoach from '@/components/CookingCoach';
@@ -10,6 +12,39 @@ import { CurrentStepProvider } from '@/lib/current-step-context';
 
 export function generateStaticParams() {
   return allRecipes.map((r) => ({ id: r.id }));
+}
+
+/**
+ * 링크 미리보기 — 공유 메시지에 요리 사진과 제목이 함께 뜨도록.
+ * heroImage가 상대 경로(/images/...)일 수 있어 절대 주소로 바꿔준다.
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const recipe = getRecipeById(id);
+  if (!recipe) return {};
+
+  const image = recipe.heroImage.startsWith('http')
+    ? recipe.heroImage
+    : `${SITE_URL}${recipe.heroImage}`;
+  const description = recipe.subtitle || `${recipe.cookTime}분 · ${recipe.difficulty} · 시절소담`;
+
+  return {
+    title: `${recipe.title} — 시절소담`,
+    description,
+    openGraph: {
+      type: 'article',
+      siteName: '시절소담',
+      title: recipe.title,
+      description,
+      images: [{ url: image, width: 1200, height: 1200, alt: recipe.title }],
+      locale: 'ko_KR',
+    },
+    twitter: { card: 'summary_large_image', title: recipe.title, description, images: [image] },
+  };
 }
 
 export default async function RecipeDetailPage({
