@@ -90,6 +90,9 @@ function CommunityPageInner() {
   );
   // 내 글 수정/삭제
   const [menuPostId, setMenuPostId] = useState<number | null>(null);
+  // 내 소담 격자에서 사진을 눌렀을 때 크게 보는 팝업
+  const [viewerPost, setViewerPost] = useState<Post | null>(null);
+  const [viewerIdx, setViewerIdx] = useState(0);
   const [editingPostId, setEditingPostId] = useState<number | null>(null);
   const [editCaption, setEditCaption] = useState('');
   const [editHashtags, setEditHashtags] = useState('');
@@ -583,7 +586,10 @@ function CommunityPageInner() {
                   <button
                     key={p.id}
                     type="button"
-                    onClick={() => setTab('feed')}
+                    onClick={() => {
+                      setViewerPost(p);
+                      setViewerIdx(0);
+                    }}
                     className="relative aspect-square overflow-hidden bg-cream-warm"
                   >
                     <Image src={p.imageUrl} alt={p.caption ?? '내 요리'} fill sizes="150px" className="object-cover" />
@@ -620,6 +626,102 @@ function CommunityPageInner() {
           <path d="M12 5v14M5 12h14" />
         </svg>
       </button>
+
+      {/* 사진 크게 보기 — 내 소담 격자에서 탭했을 때 (탭 이동 없이 그 자리에서) */}
+      <AnimatePresence>
+        {viewerPost && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm"
+            onClick={() => setViewerPost(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.96, y: 12 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.96, y: 12 }}
+              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="w-full max-w-md px-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {(() => {
+                const media = viewerPost.imageUrls?.length
+                  ? viewerPost.imageUrls
+                  : [viewerPost.imageUrl];
+                const current = media[Math.min(viewerIdx, media.length - 1)];
+                return (
+                  <div className="overflow-hidden rounded-3xl bg-paper">
+                    <div className="relative aspect-square bg-ink">
+                      {viewerPost.mediaType === 'video' ? (
+                        <video src={current} className="h-full w-full object-contain" controls playsInline autoPlay />
+                      ) : (
+                        <Image src={current} alt={viewerPost.caption ?? '내 요리'} fill sizes="448px" className="object-contain" />
+                      )}
+
+                      {media.length > 1 && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={() => setViewerIdx((i) => (i - 1 + media.length) % media.length)}
+                            aria-label="이전 사진"
+                            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/45 px-2.5 py-2 text-white backdrop-blur-sm"
+                          >
+                            ‹
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setViewerIdx((i) => (i + 1) % media.length)}
+                            aria-label="다음 사진"
+                            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/45 px-2.5 py-2 text-white backdrop-blur-sm"
+                          >
+                            ›
+                          </button>
+                          <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
+                            {media.map((u, i) => (
+                              <span
+                                key={u}
+                                className={`h-1.5 rounded-full transition-all ${
+                                  i === viewerIdx ? 'w-4 bg-white' : 'w-1.5 bg-white/50'
+                                }`}
+                              />
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </div>
+
+                    <div className="px-4 py-3.5">
+                      <p className="text-[12px] text-ink-soft/70">{postTimeLabel(viewerPost.createdAt)}</p>
+                      {viewerPost.caption && (
+                        <p className="mt-1.5 text-[14px] text-ink leading-relaxed">{viewerPost.caption}</p>
+                      )}
+                      {viewerPost.hashtags.length > 0 && (
+                        <p className="mt-1.5 text-[13px] text-sage">
+                          {viewerPost.hashtags.map((t) => `#${t}`).join(' ')}
+                        </p>
+                      )}
+                      <div className="mt-3 flex items-center gap-3 text-[12.5px] text-ink-soft">
+                        <span>맛있어요{viewerPost.reactionCount > 0 ? ` ${viewerPost.reactionCount}` : ''}</span>
+                        <span>댓글{viewerPost.commentCount > 0 ? ` ${viewerPost.commentCount}` : ''}</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
+              <button
+                type="button"
+                onClick={() => setViewerPost(null)}
+                className="mx-auto mt-3 block rounded-full bg-white/15 px-5 py-2 text-[13px] font-medium text-white backdrop-blur-md"
+              >
+                닫기
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {composer === 'post' && (
         <PostComposer
