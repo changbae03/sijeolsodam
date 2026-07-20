@@ -75,6 +75,38 @@ export const SODAM_FILTERS: SodamFilter[] = [
 
 const MAX_EDGE = 1600;
 
+/** 사진 편집 상태 — 비율·확대·이동·회전 */
+export interface EditState {
+  /** 결과물 가로/세로 비 */
+  aspect: number;
+  /** 1 이상, 확대 배율 */
+  zoom: number;
+  /** 미리보기 컨테이너 기준 픽셀 이동량 */
+  offsetX: number;
+  offsetY: number;
+  /** 0 / 90 / 180 / 270 */
+  rotation: number;
+}
+
+export const ASPECT_OPTIONS: { id: string; label: string; value: number }[] = [
+  { id: 'square', label: '1:1', value: 1 },
+  { id: 'portrait', label: '4:5', value: 4 / 5 },
+  { id: 'landscape', label: '3:2', value: 3 / 2 },
+];
+
+export const DEFAULT_EDIT: EditState = { aspect: 1, zoom: 1, offsetX: 0, offsetY: 0, rotation: 0 };
+
+/**
+ * 회전을 감안해 컨테이너를 꽉 채우는 기본 배율.
+ * 미리보기와 결과물이 같은 식을 쓰기 때문에 화면에서 본 그대로 저장된다.
+ */
+function coverScale(iw: number, ih: number, cw: number, ch: number, rotation: number): number {
+  const swapped = rotation % 180 !== 0;
+  const w = swapped ? ih : iw;
+  const h = swapped ? iw : ih;
+  return Math.max(cw / w, ch / h);
+}
+
 /** 촬영 가이드 — 필터로는 못 고치는, 찍는 순간에만 잡을 수 있는 것들 */
 const SHOOTING_TIPS: { title: string; body: string }[] = [
   { title: '창가로, 조명은 끄고', body: '형광등 아래선 누렇게 나와요.' },
@@ -111,38 +143,60 @@ function FilterOverlays({ filter }: { filter: SodamFilter }) {
 async function renderToFile(
   source: HTMLImageElement | HTMLCanvasElement,
   filter: SodamFilter,
-  fileName: string
+  fileName: string,
+  edit: EditState = DEFAULT_EDIT,
+  /** 미리보기 컨테이너 폭(px) — 이동량을 결과물 좌표로 환산하는 기준 */
+  previewWidth?: number
 ): Promise<File> {
-  const sw = source instanceof HTMLImageElement ? source.naturalWidth : source.width;
-  const sh = source instanceof HTMLImageElement ? source.naturalHeight : source.height;
-  const scale = Math.min(1, MAX_EDGE / Math.max(sw, sh));
-  const w = Math.round(sw * scale);
-  const h = Math.round(sh * scale);
+  const iw = source instanceof HTMLImageElement ? source.naturalWidth : source.width;
+  const ih = source instanceof HTMLImageElement ? source.naturalHeight : source.height;
+
+  // 결과물 크기: 긴 변을 MAX_EDGE로 맞추되 선택한 비율을 따른다
+  const outW = edit.aspect >= 1 ? MAX_EDGE : Math.round(MAX_EDGE * edit.aspect);
+  const outH = edit.aspect >= 1 ? Math.round(MAX_EDGE / edit.aspect) : MAX_EDGE;
 
   const canvas = document.createElement('canvas');
-  canvas.width = w;
-  canvas.height = h;
+  canvas.width = outW;
+  canvas.height = outH;
   const ctx = canvas.getContext('2d')!;
 
+  ctx.fillStyle = '#000';
+  ctx.fillRect(0, 0, outW, outH);
+
+  // 미리보기와 동일한 변환을 결과물 좌표계로 확대해 적용
+  const ratio = previewWidth ? outW / previewWidth : 1;
+  const scale = coverScale(iw, ih, outW, outH, edit.rotation) * edit.zoom;
+
+  ctx.save();
   ctx.filter = filter.css === 'none' ? 'none' : filter.css;
-  ctx.drawImage(source, 0, 0, w, h);
-  ctx.filter = 'none';
+  ctx.translate(outW / 2 + edit.offsetX * ratio, outH / 2 + edit.offsetY * ratio);
+  ctx.rotate((edit.rotation * Math.PI) / 180);
+  ctx.scale(scale, scale);
+  ctx.drawImage(source, -iw / 2, -ih / 2, iw, ih);
+  ctx.restore();
 
   if (filter.warmOverlay) {
     ctx.globalCompositeOperation = 'overlay';
     ctx.globalAlpha = filter.warmOverlay.alpha;
     ctx.fillStyle = filter.warmOverlay.color;
-    ctx.fillRect(0, 0, w, h);
+    ctx.fillRect(0, 0, outW, outH);
     ctx.globalAlpha = 1;
     ctx.globalCompositeOperation = 'source-over';
   }
 
   if (filter.vignette) {
-    const g = ctx.createRadialGradient(w / 2, h / 2, Math.min(w, h) * 0.35, w / 2, h / 2, Math.max(w, h) * 0.75);
+    const g = ctx.createRadialGradient(
+      outW / 2,
+      outH / 2,
+      Math.min(outW, outH) * 0.35,
+      outW / 2,
+      outH / 2,
+      Math.max(outW, outH) * 0.75
+    );
     g.addColorStop(0, 'rgba(0,0,0,0)');
     g.addColorStop(1, `rgba(0,0,0,${filter.vignette})`);
     ctx.fillStyle = g;
-    ctx.fillRect(0, 0, w, h);
+    ctx.fillRect(0, 0, outW, outH);
   }
 
   const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/webp', 0.86));
@@ -172,6 +226,23 @@ export default function PhotoPicker({
   const [cameraError, setCameraError] = useState(false);
   const [facing, setFacing] = useState<'environment' | 'user'>('environment');
   const [showTips, setShowTips] = useState(false);
+  const [edit, setEdit] = useState<EditState>(DEFAULT_EDIT);
+  const boxRef = useRef<HTMLDivElement>(null);
+  const dragRef = useRef<{ x: number; y: number; ox: number; oy: number } | null>(null);
+  const [natural, setNatural] = useState<{ w: number; h: number }>({ w: 0, h: 0 });
+  // 미리보기 폭 — 변환식과 결과물 좌표 환산에 쓰인다 (렌더 중 ref를 읽지 않도록 상태로 보관)
+  const [boxWidth, setBoxWidth] = useState(0);
+
+  useEffect(() => {
+    const el = boxRef.current;
+    if (!el || typeof ResizeObserver === 'undefined') return;
+    const ro = new ResizeObserver((entries) => {
+      const w = entries[0]?.contentRect.width ?? 0;
+      setBoxWidth((prev) => (Math.abs(prev - w) > 0.5 ? w : prev));
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
   // 이 앱에서 최근에 쓴 사진 (기기 안에만 저장 — 폰 앨범은 브라우저가 읽을 수 없다)
   const [recent, setRecent] = useState<{ url: string; name: string }[]>([]);
 
@@ -240,7 +311,7 @@ export default function PhotoPicker({
 
   /** 현재 활성 사진 + 필터로 업로드 파일 만들기 */
   const emit = useCallback(
-    async (list: { url: string; name: string; file?: File; isVideo?: boolean }[], id: string) => {
+    async (list: { url: string; name: string; file?: File; isVideo?: boolean }[], id: string, editState: EditState = edit) => {
       if (list.length === 0) {
         onReady([], 'image');
         return;
@@ -262,7 +333,7 @@ export default function PhotoPicker({
             el.src = item.url;
           });
           if (i === activeIdx) imgRef.current = img;
-          files.push(await renderToFile(img, filter, item.name));
+          files.push(await renderToFile(img, filter, item.name, editState, boxWidth || undefined));
         }
         onReady(files, 'image');
       } catch {
@@ -271,7 +342,7 @@ export default function PhotoPicker({
         setProcessing(false);
       }
     },
-    [onReady, activeIdx]
+    [onReady, activeIdx, edit, boxWidth]
   );
 
   /** 인앱 카메라로 촬영 — 정사각으로 잘라 담는다 */
@@ -302,6 +373,7 @@ export default function PhotoPicker({
     const next = [{ url, name: `shot-${Date.now()}.webp` }, ...shots];
     setShots(next);
     setActiveIdx(0);
+    setEdit(DEFAULT_EDIT);
     void emit(next, filterId);
   };
 
@@ -323,6 +395,7 @@ export default function PhotoPicker({
       .forEach((f) => void saveRecentPhoto(f));
     setShots(picked);
     setActiveIdx(0);
+    setEdit(DEFAULT_EDIT);
     void emit(picked, filterId);
   };
 
@@ -338,7 +411,7 @@ export default function PhotoPicker({
     if (!imgRef.current) return;
     setProcessing(true);
     try {
-      const file = await renderToFile(imgRef.current, selected, active?.name ?? 'photo.webp');
+      const file = await renderToFile(imgRef.current, selected, active?.name ?? 'photo.webp', edit, boxWidth || undefined);
       const nav = navigator as Navigator & { canShare?: (d?: { files?: File[] }) => boolean };
       if (nav.canShare?.({ files: [file] })) {
         await navigator.share({ files: [file], text: '#시절소담' });
@@ -369,20 +442,68 @@ export default function PhotoPicker({
       />
 
       {/* 촬영/미리보기 영역 — 어둡게 깔아 사진에 시선이 가게 */}
-      <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-ink">
+      <div
+        ref={boxRef}
+        className="relative w-full overflow-hidden rounded-[22px] bg-ink"
+        style={{ aspectRatio: active && !active.isVideo ? String(edit.aspect) : '1' }}
+      >
         {active ? (
           <>
             {active.isVideo ? (
               <video src={active.url} className="h-full w-full object-cover" controls playsInline />
             ) : (
               <>
-                {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 미리보기 */}
-                <img
-                  src={active.url}
-                  alt="선택한 사진"
-                  className="h-full w-full object-cover"
-                  style={{ filter: selected.css === 'none' ? undefined : selected.css }}
-                />
+                {/* 드래그로 위치를 옮긴다 — 미리보기와 결과물이 같은 변환식을 쓴다 */}
+                <div
+                  className="absolute inset-0 touch-none"
+                  onPointerDown={(e) => {
+                    e.currentTarget.setPointerCapture(e.pointerId);
+                    dragRef.current = { x: e.clientX, y: e.clientY, ox: edit.offsetX, oy: edit.offsetY };
+                  }}
+                  onPointerMove={(e) => {
+                    const d = dragRef.current;
+                    if (!d) return;
+                    setEdit((prev) => ({
+                      ...prev,
+                      offsetX: d.ox + (e.clientX - d.x),
+                      offsetY: d.oy + (e.clientY - d.y),
+                    }));
+                  }}
+                  onPointerUp={() => {
+                    dragRef.current = null;
+                    if (shots.length) void emit(shots, filterId);
+                  }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 미리보기 */}
+                  <img
+                    src={active.url}
+                    alt="선택한 사진"
+                    onLoad={(e) =>
+                      setNatural({
+                        w: e.currentTarget.naturalWidth,
+                        h: e.currentTarget.naturalHeight,
+                      })
+                    }
+                    draggable={false}
+                    className="pointer-events-none absolute left-1/2 top-1/2 max-w-none"
+                    style={{
+                      width: natural.w || undefined,
+                      height: natural.h || undefined,
+                      filter: selected.css === 'none' ? undefined : selected.css,
+                      transform: `translate(-50%, -50%) translate(${edit.offsetX}px, ${edit.offsetY}px) rotate(${edit.rotation}deg) scale(${
+                        (boxWidth && natural.w
+                          ? coverScale(
+                              natural.w,
+                              natural.h,
+                              boxWidth,
+                              boxWidth / edit.aspect,
+                              edit.rotation
+                            )
+                          : 1) * edit.zoom
+                      })`,
+                    }}
+                  />
+                </div>
                 <FilterOverlays filter={selected} />
               </>
             )}
@@ -520,6 +641,80 @@ export default function PhotoPicker({
               <img src={s.url} alt="" className="h-full w-full object-cover" />
             </button>
           ))}
+        </div>
+      )}
+
+      {/* 편집 — 비율·확대·회전. 잘라낼 영역을 눈으로 보며 맞춘다 */}
+      {active && !active.isVideo && (
+        <div className="mt-3">
+          <div className="flex items-center justify-between">
+            <p className="text-[12.5px] font-semibold text-ink">사진 편집</p>
+            <button
+              type="button"
+              onClick={() => {
+                setEdit(DEFAULT_EDIT);
+                if (shots.length) void emit(shots, filterId, DEFAULT_EDIT);
+              }}
+              className="text-[11.5px] text-ink-soft/70"
+            >
+              초기화
+            </button>
+          </div>
+
+          <div className="mt-2 flex items-center gap-2">
+            {ASPECT_OPTIONS.map((a) => (
+              <button
+                key={a.id}
+                type="button"
+                onClick={() => {
+                  const next = { ...edit, aspect: a.value, offsetX: 0, offsetY: 0 };
+                  setEdit(next);
+                  if (shots.length) void emit(shots, filterId, next);
+                }}
+                className={`rounded-xl px-3 py-1.5 text-[12.5px] font-medium transition-colors ${
+                  Math.abs(edit.aspect - a.value) < 0.01
+                    ? 'bg-ink text-cream'
+                    : 'border border-border-soft bg-paper text-ink-soft'
+                }`}
+              >
+                {a.label}
+              </button>
+            ))}
+            <button
+              type="button"
+              onClick={() => {
+                const next = { ...edit, rotation: (edit.rotation + 90) % 360, offsetX: 0, offsetY: 0 };
+                setEdit(next);
+                if (shots.length) void emit(shots, filterId, next);
+              }}
+              aria-label="90도 회전"
+              className="ml-auto flex h-8 w-8 items-center justify-center rounded-xl border border-border-soft bg-paper text-ink-soft"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 12a9 9 0 1 1 3 6.7" />
+                <path d="M3 20v-5h5" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="mt-2.5 flex items-center gap-3">
+            <span className="text-[11.5px] text-ink-soft/70">확대</span>
+            <input
+              type="range"
+              min={1}
+              max={3}
+              step={0.01}
+              value={edit.zoom}
+              onChange={(e) => setEdit((prev) => ({ ...prev, zoom: Number(e.target.value) }))}
+              onPointerUp={() => shots.length && void emit(shots, filterId)}
+              onTouchEnd={() => shots.length && void emit(shots, filterId)}
+              className="h-1 flex-1 cursor-pointer appearance-none rounded-full bg-border-soft accent-ink"
+            />
+            <span className="w-8 text-right text-[11.5px] tabular-nums text-ink-soft/70">
+              {edit.zoom.toFixed(1)}x
+            </span>
+          </div>
+          <p className="mt-1.5 text-[11px] text-ink-soft/55">사진을 끌어서 위치를 맞출 수 있어요</p>
         </div>
       )}
 
