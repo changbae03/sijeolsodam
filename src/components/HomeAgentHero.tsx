@@ -268,7 +268,13 @@ export default function HomeAgentHero() {
                 )}
 
                 {(ex.dishes?.length ?? 0) > 0 && (
-                  <ul className="-mx-2 divide-y divide-border-soft/70 mb-2">
+                  <>
+                    {/* 이름이 비슷하다는 이유로 엉뚱한 레시피가 붙는 경우가 있어,
+                        '정답'이 아니라 참고용임을 분명히 밝힌다 */}
+                    <p className="mb-1.5 text-[11.5px] font-semibold tracking-[0.04em] text-ink-soft/60">
+                      참고할 만한 레시피
+                    </p>
+                    <ul className="-mx-2 divide-y divide-border-soft/70 mb-2">
                     {ex.dishes!.map((dish, j) =>
                       dish.recipe ? (
                         <li key={j}>
@@ -302,6 +308,7 @@ export default function HomeAgentHero() {
                       )
                     )}
                   </ul>
+                  </>
                 )}
 
                 {i === exchanges.length - 1 && isLoading && (

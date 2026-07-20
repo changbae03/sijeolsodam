@@ -11,7 +11,7 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
 
   try {
     const rows = await sql`
-      SELECT c.id, c.body, c.created_at, u.name AS author_name
+      SELECT c.id, c.body, c.created_at, u.id AS author_id, u.name AS author_name
       FROM post_comments c
       JOIN users u ON u.id = c.user_id
       WHERE c.post_id = ${postId}
@@ -24,6 +24,7 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
         id: r.id,
         body: r.body,
         createdAt: r.created_at,
+        authorId: r.author_id,
         authorName: r.author_name || '이웃',
       })),
     });
@@ -69,5 +70,65 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
   } catch (error) {
     console.error('Create comment error:', error);
     return NextResponse.json({ error: '댓글을 남기지 못했어요.' }, { status: 500 });
+  }
+}
+
+/** 내 댓글 수정 — 소유권은 SQL 조건으로 강제 */
+export async function PATCH(request: NextRequest) {
+  const user = getUserFromRequest(request);
+  if (!user) {
+    return NextResponse.json({ error: '로그인이 필요해요.' }, { status: 401 });
+  }
+
+  try {
+    const { commentId, body } = (await request.json()) as { commentId?: number; body?: string };
+    const text = (body ?? '').trim();
+    if (!commentId || text.length === 0) {
+      return NextResponse.json({ error: '내용을 입력해주세요.' }, { status: 400 });
+    }
+
+    const rows = (await sql`
+      UPDATE post_comments
+      SET body = ${text.slice(0, 500)}
+      WHERE id = ${commentId} AND user_id = ${user.userId}
+      RETURNING id, body
+    `) as { id: number; body: string }[];
+
+    if (rows.length === 0) {
+      return NextResponse.json({ error: '내가 쓴 댓글만 수정할 수 있어요.' }, { status: 403 });
+    }
+    return NextResponse.json({ id: rows[0].id, body: rows[0].body });
+  } catch (error) {
+    console.error('Update comment error:', error);
+    return NextResponse.json({ error: '댓글을 수정하지 못했어요.' }, { status: 500 });
+  }
+}
+
+/** 내 댓글 삭제 */
+export async function DELETE(request: NextRequest) {
+  const user = getUserFromRequest(request);
+  if (!user) {
+    return NextResponse.json({ error: '로그인이 필요해요.' }, { status: 401 });
+  }
+
+  const commentId = Number(request.nextUrl.searchParams.get('commentId'));
+  if (!commentId) {
+    return NextResponse.json({ error: 'commentId가 필요해요.' }, { status: 400 });
+  }
+
+  try {
+    const rows = (await sql`
+      DELETE FROM post_comments
+      WHERE id = ${commentId} AND user_id = ${user.userId}
+      RETURNING id
+    `) as { id: number }[];
+
+    if (rows.length === 0) {
+      return NextResponse.json({ error: '내가 쓴 댓글만 삭제할 수 있어요.' }, { status: 403 });
+    }
+    return NextResponse.json({ deleted: true });
+  } catch (error) {
+    console.error('Delete comment error:', error);
+    return NextResponse.json({ error: '댓글을 삭제하지 못했어요.' }, { status: 500 });
   }
 }

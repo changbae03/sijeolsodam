@@ -202,3 +202,24 @@ p, h1, h2, h3, h4 {
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/**
+ * 커뮤니티 사진 보호 (억제 수준).
+ * 길게 눌러 '이미지 저장' 시트를 띄우는 iOS 기본 동작과 드래그·우클릭 저장을 막는다.
+ * 스크린샷까지는 기술적으로 막을 수 없으므로 완전한 차단이 아니라,
+ * 무심코 저장·재배포하는 것을 어렵게 만드는 장치다.
+ */
+.protected-media {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+/* 이미지를 감싼 영역은 클릭(캐러셀 스와이프 등)이 필요하므로 이벤트를 살려둔다 */
+.protected-media-wrap {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

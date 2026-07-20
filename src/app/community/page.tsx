@@ -45,6 +45,7 @@ interface Comment {
   id: number;
   body: string;
   createdAt: string;
+  authorId: number;
   authorName: string;
 }
 
@@ -96,6 +97,44 @@ function CommunityPageInner() {
   const [viewerIdx, setViewerIdx] = useState(0);
   // 게시물별 캐러셀 현재 위치 (몇 번째 사진을 보고 있는지)
   const [carouselIdx, setCarouselIdx] = useState<Record<number, number>>({});
+  // 내 댓글 수정
+  const [editingCommentId, setEditingCommentId] = useState<number | null>(null);
+  const [commentEditDraft, setCommentEditDraft] = useState('');
+
+  const saveComment = async (postId: number, commentId: number) => {
+    const body = commentEditDraft.trim();
+    if (!body) return;
+    const res = await fetch(`/api/community/posts/${postId}/comments`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ commentId, body }),
+    });
+    if (res.ok) {
+      setCommentsByPost((prev) => ({
+        ...prev,
+        [postId]: (prev[postId] ?? []).map((c) => (c.id === commentId ? { ...c, body } : c)),
+      }));
+      setEditingCommentId(null);
+    }
+  };
+
+  const removeComment = async (postId: number, commentId: number) => {
+    if (!window.confirm('댓글을 삭제할까요?')) return;
+    const res = await fetch(`/api/community/posts/${postId}/comments?commentId=${commentId}`, {
+      method: 'DELETE',
+    });
+    if (res.ok) {
+      setCommentsByPost((prev) => ({
+        ...prev,
+        [postId]: (prev[postId] ?? []).filter((c) => c.id !== commentId),
+      }));
+      setPosts((prev) =>
+        (prev ?? []).map((p) =>
+          p.id === postId ? { ...p, commentCount: Math.max(0, p.commentCount - 1) } : p
+        )
+      );
+    }
+  };
   const [editingPostId, setEditingPostId] = useState<number | null>(null);
   const [editCaption, setEditCaption] = useState('');
   const [editHashtags, setEditHashtags] = useState('');
@@ -242,7 +281,13 @@ function CommunityPageInner() {
   });
 
   return (
-    <div className="min-h-screen bg-cream pb-24">
+    <div
+      className="min-h-screen bg-cream pb-24 protected-media-wrap"
+      onContextMenu={(e) => {
+        // 사진 위 우클릭·롱프레스 저장 메뉴 차단 (텍스트 복사는 그대로)
+        if ((e.target as HTMLElement).tagName === 'IMG') e.preventDefault();
+      }}
+    >
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3 pb-3 flex items-center justify-between">
           <Logo size="sm" />
@@ -326,7 +371,7 @@ function CommunityPageInner() {
                     className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full bg-sage/15 text-[15px] font-medium text-sage"
                   >
                     {post.authorAvatarUrl ? (
-                      <Image src={post.authorAvatarUrl} alt="" fill sizes="36px" className="object-cover" />
+                      <Image src={post.authorAvatarUrl} alt="" fill sizes="36px" className="object-cover protected-media" draggable={false} />
                     ) : (
                       post.authorName.slice(0, 1)
                     )}
@@ -420,7 +465,8 @@ function CommunityPageInner() {
                                 alt={post.caption ?? `사진 ${i + 1}`}
                                 fill
                                 sizes="448px"
-                                className="object-cover"
+                                className="object-cover protected-media"
+                                draggable={false}
                               />
                             </div>
                           ))}
@@ -553,12 +599,64 @@ function CommunityPageInner() {
                         className="overflow-hidden"
                       >
                         <div className="mt-3 border-t border-border-soft/70 pt-3 space-y-2.5">
-                          {(commentsByPost[post.id] ?? []).map((c) => (
-                            <p key={c.id} className="text-[13.5px] text-ink leading-relaxed">
-                              <span className="font-medium">{c.authorName}</span>{' '}
-                              <span className="text-ink-soft">{c.body}</span>
-                            </p>
-                          ))}
+                          {(commentsByPost[post.id] ?? []).map((c) =>
+                            editingCommentId === c.id ? (
+                              <div key={c.id} className="flex items-center gap-2">
+                                <input
+                                  value={commentEditDraft}
+                                  onChange={(e) => setCommentEditDraft(e.target.value)}
+                                  onKeyDown={(e) => {
+                                    if (e.key === 'Enter' && !e.nativeEvent.isComposing)
+                                      saveComment(post.id, c.id);
+                                  }}
+                                  autoFocus
+                                  className="min-w-0 flex-1 rounded-xl border border-border-soft bg-paper px-3 py-1.5 text-[13.5px] text-ink outline-none focus:border-sage"
+                                />
+                                <button
+                                  type="button"
+                                  onClick={() => saveComment(post.id, c.id)}
+                                  className="shrink-0 text-[12.5px] font-semibold text-terracotta"
+                                >
+                                  저장
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => setEditingCommentId(null)}
+                                  className="shrink-0 text-[12.5px] text-ink-soft"
+                                >
+                                  취소
+                                </button>
+                              </div>
+                            ) : (
+                              <div key={c.id} className="flex items-start gap-2">
+                                <p className="min-w-0 flex-1 text-[13.5px] text-ink leading-relaxed">
+                                  <span className="font-medium">{c.authorName}</span>{' '}
+                                  <span className="text-ink-soft">{c.body}</span>
+                                </p>
+                                {user?.id === c.authorId && (
+                                  <span className="flex shrink-0 items-center gap-2 pt-0.5">
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        setEditingCommentId(c.id);
+                                        setCommentEditDraft(c.body);
+                                      }}
+                                      className="text-[12px] text-ink-soft/70"
+                                    >
+                                      수정
+                                    </button>
+                                    <button
+                                      type="button"
+                                      onClick={() => removeComment(post.id, c.id)}
+                                      className="text-[12px] text-terracotta/80"
+                                    >
+                                      삭제
+                                    </button>
+                                  </span>
+                                )}
+                              </div>
+                            )
+                          )}
                           <div className="flex items-center gap-2 pt-1">
                             <input
                               value={commentDraft}
@@ -631,7 +729,14 @@ function CommunityPageInner() {
                     }}
                     className="relative aspect-square overflow-hidden bg-cream-warm"
                   >
-                    <Image src={p.imageUrl} alt={p.caption ?? '내 요리'} fill sizes="150px" className="object-cover" />
+                    <Image
+                      src={p.imageUrl}
+                      alt={p.caption ?? '내 요리'}
+                      fill
+                      sizes="150px"
+                      className="object-cover protected-media"
+                      draggable={false}
+                    />
                     {p.mediaType === 'video' ? (
                       <span className="absolute right-1.5 top-1.5 text-cream drop-shadow">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -697,7 +802,14 @@ function CommunityPageInner() {
                       {viewerPost.mediaType === 'video' ? (
                         <video src={current} className="h-full w-full object-contain" controls playsInline autoPlay />
                       ) : (
-                        <Image src={current} alt={viewerPost.caption ?? '내 요리'} fill sizes="448px" className="object-contain" />
+                        <Image
+                          src={current}
+                          alt={viewerPost.caption ?? '내 요리'}
+                          fill
+                          sizes="448px"
+                          className="object-contain protected-media"
+                          draggable={false}
+                        />
                       )}
 
                       {media.length > 1 && (
