@@ -2,7 +2,16 @@ import { NextRequest, NextResponse } from 'next/server';
 import { sql } from '@/lib/db';
 import { getUserFromRequest } from '@/lib/auth';
 
-/** 닉네임 변경. 커뮤니티에 표시되는 이름이라 길이·중복 정도만 가볍게 검증한다. */
+/** 프로필 컬럼 지연 마이그레이션 (멱등) */
+async function ensureProfileColumns() {
+  await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS avatar_url TEXT`;
+  await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS bio TEXT`;
+}
+
+/**
+ * 프로필 수정 — 닉네임·프로필 사진·한 줄 소개.
+ * 전달된 필드만 바꾼다(부분 수정).
+ */
 export async function PATCH(request: NextRequest) {
   const user = getUserFromRequest(request);
   if (!user) {
@@ -10,25 +19,48 @@ export async function PATCH(request: NextRequest) {
   }
 
   try {
-    const { name } = (await request.json()) as { name?: string };
-    const trimmed = (name ?? '').trim();
+    await ensureProfileColumns();
+    const { name, avatarUrl, bio } = (await request.json()) as {
+      name?: string;
+      avatarUrl?: string | null;
+      bio?: string;
+    };
 
-    if (trimmed.length < 2 || trimmed.length > 12) {
-      return NextResponse.json({ error: '닉네임은 2~12자로 지어주세요.' }, { status: 400 });
-    }
-    if (/[<>/\\]/.test(trimmed)) {
-      return NextResponse.json({ error: '사용할 수 없는 문자가 있어요.' }, { status: 400 });
+    if (name !== undefined) {
+      const trimmed = name.trim();
+      if (trimmed.length < 2 || trimmed.length > 12) {
+        return NextResponse.json({ error: '닉네임은 2~12자로 지어주세요.' }, { status: 400 });
+      }
+      if (/[<>/\\]/.test(trimmed)) {
+        return NextResponse.json({ error: '사용할 수 없는 문자가 있어요.' }, { status: 400 });
+      }
+      const taken = (await sql`
+        SELECT 1 FROM users WHERE name = ${trimmed} AND id <> ${user.userId} LIMIT 1
+      `) as unknown[];
+      if (taken.length > 0) {
+        return NextResponse.json({ error: '이미 쓰고 있는 닉네임이에요.' }, { status: 409 });
+      }
+      await sql`UPDATE users SET name = ${trimmed} WHERE id = ${user.userId}`;
     }
 
-    const taken = (await sql`
-      SELECT 1 FROM users WHERE name = ${trimmed} AND id <> ${user.userId} LIMIT 1
-    `) as unknown[];
-    if (taken.length > 0) {
-      return NextResponse.json({ error: '이미 쓰고 있는 닉네임이에요.' }, { status: 409 });
+    if (avatarUrl !== undefined) {
+      await sql`UPDATE users SET avatar_url = ${avatarUrl} WHERE id = ${user.userId}`;
     }
 
-    await sql`UPDATE users SET name = ${trimmed} WHERE id = ${user.userId}`;
-    return NextResponse.json({ name: trimmed });
+    if (bio !== undefined) {
+      const trimmedBio = bio.trim().slice(0, 60);
+      await sql`UPDATE users SET bio = ${trimmedBio} WHERE id = ${user.userId}`;
+    }
+
+    const rows = (await sql`
+      SELECT id, email, name, avatar_url, bio FROM users WHERE id = ${user.userId}
+    `) as { id: number; email: string; name: string | null; avatar_url: string | null; bio: string | null }[];
+    const me = rows[0];
+    return NextResponse.json({
+      name: me?.name,
+      avatarUrl: me?.avatar_url,
+      bio: me?.bio,
+    });
   } catch (error) {
     console.error('Update profile error:', error);
     return NextResponse.json({ error: '닉네임을 바꾸지 못했어요.' }, { status: 500 });

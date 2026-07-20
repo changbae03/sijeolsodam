@@ -11,14 +11,17 @@ export async function GET(request: NextRequest) {
 
   try {
     const result = await sql`
-      SELECT id, email, name FROM users WHERE id = ${payload.userId}
+      SELECT id, email, name, avatar_url, bio FROM users WHERE id = ${payload.userId}
     `;
 
     if (result.length === 0) {
       return NextResponse.json({ user: null });
     }
 
-    return NextResponse.json({ user: result[0] });
+    const u = result[0];
+    return NextResponse.json({
+      user: { id: u.id, email: u.email, name: u.name, avatarUrl: u.avatar_url, bio: u.bio },
+    });
   } catch (error) {
     console.error('Me error:', error);
     return NextResponse.json({ user: null });

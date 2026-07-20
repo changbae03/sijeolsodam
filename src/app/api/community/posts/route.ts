@@ -34,6 +34,7 @@ export async function GET(request: NextRequest) {
         u.id AS author_id,
         u.name AS author_name,
         u.avatar_url AS author_avatar_url,
+        u.bio AS author_bio,
         COUNT(DISTINCT pr.id)::int AS reaction_count,
         COUNT(DISTINCT pc.id)::int AS comment_count
       FROM posts p
@@ -59,6 +60,7 @@ export async function GET(request: NextRequest) {
         u.id AS author_id,
         u.name AS author_name,
         u.avatar_url AS author_avatar_url,
+        u.bio AS author_bio,
         COUNT(DISTINCT pr.id)::int AS reaction_count,
         COUNT(DISTINCT pc.id)::int AS comment_count
       FROM posts p
@@ -95,6 +97,7 @@ export async function GET(request: NextRequest) {
         authorId: r.author_id,
         authorName: r.author_name || '이웃',
         authorAvatarUrl: r.author_avatar_url,
+        authorBio: r.author_bio,
         reactionCount: r.reaction_count,
         commentCount: r.comment_count,
         reacted: reactedPostIds.has(r.id),

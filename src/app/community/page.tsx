@@ -23,6 +23,7 @@ interface Post {
   authorId: number;
   authorName: string;
   authorAvatarUrl: string | null;
+  authorBio?: string | null;
   reactionCount: number;
   commentCount: number;
   reacted: boolean;
@@ -320,14 +321,21 @@ function CommunityPageInner() {
                   {/* 작성자 -> 프로필. 팔로우보다 '이 사람이 뭘 만드는지 본다'가 먼저다 */}
                   <Link
                     href={`/u/${post.authorId}`}
-                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage/15 text-[15px] font-medium text-sage"
+                    className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full bg-sage/15 text-[15px] font-medium text-sage"
                   >
-                    {post.authorName.slice(0, 1)}
+                    {post.authorAvatarUrl ? (
+                      <Image src={post.authorAvatarUrl} alt="" fill sizes="36px" className="object-cover" />
+                    ) : (
+                      post.authorName.slice(0, 1)
+                    )}
                   </Link>
                   <div className="min-w-0 flex-1">
                     <Link href={`/u/${post.authorId}`} className="text-[14.5px] font-medium text-ink truncate block">
                       {post.authorName}
                     </Link>
+                    {post.authorBio && (
+                      <p className="text-[11.5px] text-ink-soft/60 truncate">{post.authorBio}</p>
+                    )}
                     <p className="text-[12px] text-ink-soft/70">{postTimeLabel(post.createdAt)}</p>
                   </div>
 

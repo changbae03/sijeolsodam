@@ -13,6 +13,8 @@ interface Post {
   caption: string;
   authorId: number;
   authorName: string;
+  authorAvatarUrl?: string | null;
+  authorBio?: string | null;
   reactionCount: number;
   commentCount: number;
 }
@@ -46,6 +48,8 @@ export default function UserProfilePage() {
 
   const isMe = user?.id === userId;
   const displayName = posts?.[0]?.authorName ?? '이웃';
+  const avatarUrl = posts?.[0]?.authorAvatarUrl ?? null;
+  const bio = posts?.[0]?.authorBio ?? null;
 
   const toggleFollow = async () => {
     if (!user) {
@@ -84,11 +88,16 @@ export default function UserProfilePage() {
       </button>
 
       <div className="flex items-center gap-4">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-cream-warm text-[22px] font-bold text-ink-soft">
-          {displayName.slice(0, 1)}
+        <div className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-cream-warm text-[22px] font-bold text-ink-soft">
+          {avatarUrl ? (
+            <Image src={avatarUrl} alt="프로필 사진" fill sizes="64px" className="object-cover" />
+          ) : (
+            displayName.slice(0, 1)
+          )}
         </div>
         <div className="min-w-0 flex-1">
           <h1 className="text-[20px] font-bold tracking-[-0.02em] text-ink">{displayName}</h1>
+          {bio && <p className="mt-0.5 text-[13px] leading-relaxed text-ink-soft">{bio}</p>}
           <div className="mt-1 flex items-center gap-3 text-[13px] text-ink-soft">
             <span>
               게시물 <b className="text-ink font-semibold">{posts?.length ?? 0}</b>

@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'motion/react';
 import { useAuth } from '@/lib/auth-context';
@@ -26,6 +27,52 @@ export default function MyPage() {
   const [nameError, setNameError] = useState('');
   const [savingName, setSavingName] = useState(false);
   const [follow, setFollow] = useState({ followers: 0, following: 0 });
+  const [editingBio, setEditingBio] = useState(false);
+  const [bioDraft, setBioDraft] = useState('');
+  const [uploadingAvatar, setUploadingAvatar] = useState(false);
+  const avatarInputRef = useRef<HTMLInputElement>(null);
+
+  /** 프로필 사진 업로드 후 프로필에 연결 */
+  const handleAvatar = async (file: File | undefined) => {
+    if (!file) return;
+    setUploadingAvatar(true);
+    try {
+      const form = new FormData();
+      form.append('image', file);
+      const up = await fetch('/api/community/upload', { method: 'POST', body: form });
+      const upData = await up.json();
+      if (!up.ok) {
+        setNameError(upData.error ?? '사진을 올리지 못했어요.');
+        return;
+      }
+      const res = await fetch('/api/profile', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ avatarUrl: upData.url }),
+      });
+      if (res.ok) await refresh();
+    } catch {
+      setNameError('사진을 올리지 못했어요.');
+    } finally {
+      setUploadingAvatar(false);
+    }
+  };
+
+  const saveBio = async () => {
+    try {
+      const res = await fetch('/api/profile', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ bio: bioDraft }),
+      });
+      if (res.ok) {
+        await refresh();
+        setEditingBio(false);
+      }
+    } catch {
+      // 무시 — 다시 시도하면 됨
+    }
+  };
 
   useEffect(() => {
     if (!user) return;
@@ -149,7 +196,34 @@ export default function MyPage() {
         transition={{ duration: 0.3 }}
         className="mb-6"
       >
-        <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-1.5">마이페이지</p>
+        <p className="text-[12px] tracking-[0.08em] text-sage font-semibold mb-3">마이페이지</p>
+
+        {/* 프로필 사진 */}
+        <input
+          ref={avatarInputRef}
+          type="file"
+          accept="image/*"
+          className="hidden"
+          onChange={(e) => handleAvatar(e.target.files?.[0])}
+        />
+        <button
+          type="button"
+          onClick={() => avatarInputRef.current?.click()}
+          disabled={uploadingAvatar}
+          className="relative mb-3 block h-20 w-20 overflow-hidden rounded-full bg-cream-warm"
+          aria-label="프로필 사진 바꾸기"
+        >
+          {user.avatarUrl ? (
+            <Image src={user.avatarUrl} alt="프로필 사진" fill sizes="80px" className="object-cover" />
+          ) : (
+            <span className="flex h-full w-full items-center justify-center text-[24px] font-bold text-ink-soft/60">
+              {(user.name ?? user.email).slice(0, 1)}
+            </span>
+          )}
+          <span className="absolute inset-x-0 bottom-0 bg-ink/60 py-1 text-[10px] font-medium text-cream">
+            {uploadingAvatar ? '올리는 중' : '바꾸기'}
+          </span>
+        </button>
         {editingName ? (
           <div className="flex items-center gap-2">
             <input
@@ -209,6 +283,41 @@ export default function MyPage() {
             팔로잉 <b className="text-ink font-semibold">{follow.following}</b>
           </span>
         </div>
+
+        {/* 한 줄 소개 */}
+        {editingBio ? (
+          <div className="mt-3 flex items-center gap-2">
+            <input
+              value={bioDraft}
+              onChange={(e) => setBioDraft(e.target.value)}
+              maxLength={60}
+              autoFocus
+              placeholder="어떤 요리를 좋아하는지 한 줄로"
+              className="min-w-0 flex-1 rounded-xl border border-border-soft bg-paper px-3 py-2 text-[14px] text-ink outline-none focus:border-sage"
+            />
+            <button
+              type="button"
+              onClick={saveBio}
+              className="rounded-xl bg-ink px-4 py-2 text-[13.5px] font-semibold text-cream"
+            >
+              저장
+            </button>
+            <button type="button" onClick={() => setEditingBio(false)} className="text-[13.5px] text-ink-soft">
+              취소
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => {
+              setBioDraft(user.bio ?? '');
+              setEditingBio(true);
+            }}
+            className="mt-2.5 block text-left text-[13.5px] leading-relaxed text-ink-soft"
+          >
+            {user.bio ? user.bio : <span className="text-ink-soft/50">한 줄 소개를 남겨보세요</span>}
+          </button>
+        )}
       </motion.header>
 
       {/* ============================================
