@@ -17,12 +17,13 @@ export default function StructuredReplyView({ text, size = 'md', ingredientList 
   const outro = parsed.outro;
   // API가 이미 구조화된 재료 배열을 줬으면 그걸 쓰고, 없으면(과거 대화 등) 텍스트 추측 파싱으로 대체한다.
   const chips = ingredientList && ingredientList.length > 0 ? ingredientList : parsed.ingredientLine;
-  const introTextClass = size === 'md' ? 'text-[17px]' : 'text-[16px]';
-  const stepTextClass = size === 'md' ? 'text-[15px]' : 'text-[14.5px]';
+  // 조리 순서를 읽어가며 따라 해야 하므로 본문을 한 단계 키운다 (가독성 피드백 반영)
+  const introTextClass = size === 'md' ? 'text-[18px]' : 'text-[17px]';
+  const stepTextClass = size === 'md' ? 'text-[16px]' : 'text-[15.5px]';
   const badgeSize = size === 'md' ? 'w-6 h-6 text-[13px]' : 'w-5 h-5 text-[12px]';
 
   return (
-    <div className="space-y-3.5">
+    <div className="space-y-4">
       {intro.map((paragraph, i) => (
         <p
           key={`intro-${i}`}
@@ -44,7 +45,7 @@ export default function StructuredReplyView({ text, size = 'md', ingredientList 
             {chips.map((item, i) => (
               <span
                 key={i}
-                className="inline-flex items-center bg-sage/10 text-ink border border-sage/20 rounded-full px-2.5 py-1 text-[13px] font-medium"
+                className="inline-flex items-center bg-sage/10 text-ink border border-sage/20 rounded-full px-3 py-1.5 text-[14px] font-medium"
               >
                 {item}
               </span>
@@ -74,7 +75,7 @@ export default function StructuredReplyView({ text, size = 'md', ingredientList 
       )}
 
       {outro.map((paragraph, i) => (
-        <p key={`outro-${i}`} className="text-[13.5px] text-ink-soft leading-relaxed">
+        <p key={`outro-${i}`} className="text-[14.5px] text-ink-soft leading-relaxed">
           {paragraph}
         </p>
       ))}

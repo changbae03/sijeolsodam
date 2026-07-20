@@ -467,21 +467,25 @@ export default function HomeAgentHero() {
                     아직 나눈 이야기가 없어요. 지금 첫 질문을 건네보세요!
                   </p>
                 )}
+                {/* 지난 대화도 방금 받은 답변과 같은 형태로 — 재료 칩·번호 단계가 그대로 보이게.
+                    줄글로 이어 붙이면 조리 순서를 다시 읽기 어렵다는 피드백을 반영. */}
                 {pastQueries?.map((q, i) => (
                   <div
                     key={q.id}
-                    className={cn(i > 0 && 'border-t border-border-soft/70 pt-4 mt-4')}
+                    className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}
                   >
-                    <p className="text-[12px] text-ink-soft/60 mb-1.5">
-                      {new Date(q.createdAt).toLocaleDateString('ko-KR', {
-                        month: 'long',
-                        day: 'numeric',
-                      })}
-                    </p>
-                    <p className="text-[13px] text-ink-soft mb-1.5">{q.message}</p>
-                    <p className="text-[14.5px] text-ink leading-relaxed whitespace-pre-wrap break-words">
-                      {q.reply}
-                    </p>
+                    <div className="flex items-baseline justify-between mb-2">
+                      <span className="inline-flex rounded-full bg-cream-warm px-3 py-1.5 text-[13.5px] font-medium text-ink">
+                        {q.message}
+                      </span>
+                      <span className="shrink-0 pl-3 text-[12px] text-ink-soft/60">
+                        {new Date(q.createdAt).toLocaleDateString('ko-KR', {
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </span>
+                    </div>
+                    <StructuredReplyView text={q.reply} size="md" />
                   </div>
                 ))}
               </div>
