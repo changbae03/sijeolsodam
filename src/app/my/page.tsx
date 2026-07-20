@@ -21,6 +21,7 @@ export default function MyPage() {
   const { favoriteIds } = useFavorites();
   const [views, setViews] = useState<ViewSummary | null>(null);
   const [cookedIds, setCookedIds] = useState<string[]>([]);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [nameDraft, setNameDraft] = useState('');
@@ -76,6 +77,10 @@ export default function MyPage() {
 
   useEffect(() => {
     if (!user) return;
+    fetch('/api/admin/me')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => d?.isAdmin && setIsAdmin(true))
+      .catch(() => {});
     fetch('/api/cooked?mine=1')
       .then((res) => (res.ok ? res.json() : null))
       .then((d) => d?.recipeIds && setCookedIds(d.recipeIds))
@@ -438,6 +443,27 @@ export default function MyPage() {
           </Link>
         </div>
       </section>
+
+      {/* ============================================
+          6-2. 운영 — 관리자 계정에만 보인다
+         ============================================ */}
+      {isAdmin && (
+        <section className="mb-8">
+          <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">운영</h2>
+          <Link
+            href="/admin"
+            className="flex items-center justify-between rounded-2xl border border-sage/30 bg-sage/[0.07] px-4 py-3.5"
+          >
+            <span className="flex items-center gap-2">
+              <span className="rounded-full bg-sage-dark px-2 py-0.5 text-[10.5px] font-semibold text-cream">
+                관리자
+              </span>
+              <span className="text-[14px] font-medium text-ink">운영 대시보드</span>
+            </span>
+            <span className="text-ink-soft/40">›</span>
+          </Link>
+        </section>
+      )}
 
       {/* ============================================
           7. 계정
