@@ -94,6 +94,8 @@ function CommunityPageInner() {
   // 내 소담 격자에서 사진을 눌렀을 때 크게 보는 팝업
   const [viewerPost, setViewerPost] = useState<Post | null>(null);
   const [viewerIdx, setViewerIdx] = useState(0);
+  // 게시물별 캐러셀 현재 위치 (몇 번째 사진을 보고 있는지)
+  const [carouselIdx, setCarouselIdx] = useState<Record<number, number>>({});
   const [editingPostId, setEditingPostId] = useState<number | null>(null);
   const [editCaption, setEditCaption] = useState('');
   const [editHashtags, setEditHashtags] = useState('');
@@ -389,10 +391,30 @@ function CommunityPageInner() {
                     const media = post.imageUrls?.length ? post.imageUrls : [post.imageUrl];
                     return (
                       <div className="relative">
-                        {/* 여러 장이면 가로 스와이프 — 스크롤 스냅으로 네이티브 느낌 */}
-                        <div className="flex w-full snap-x snap-mandatory overflow-x-auto scrollbar-hide">
+                        {/* 여러 장이면 다음 사진이 옆으로 살짝 보이게 해 '넘길 수 있다'를 즉시 알린다.
+                            배지·인디케이터만으로는 알아채지 못한다는 피드백을 반영. */}
+                        <div
+                          onScroll={(e) => {
+                            if (media.length < 2) return;
+                            const el = e.currentTarget;
+                            const card = el.firstElementChild as HTMLElement | null;
+                            const step = (card?.offsetWidth ?? el.clientWidth) + 8;
+                            const idx = Math.round(el.scrollLeft / step);
+                            setCarouselIdx((prev) =>
+                              prev[post.id] === idx ? prev : { ...prev, [post.id]: idx }
+                            );
+                          }}
+                          className={`flex snap-x snap-mandatory overflow-x-auto scrollbar-hide ${
+                            media.length > 1 ? 'gap-2 px-3 py-2' : ''
+                          }`}
+                        >
                           {media.map((url, i) => (
-                            <div key={url} className="relative aspect-square w-full shrink-0 snap-center bg-cream-warm">
+                            <div
+                              key={url}
+                              className={`relative aspect-square shrink-0 snap-center bg-cream-warm ${
+                                media.length > 1 ? 'w-[88%] overflow-hidden rounded-2xl' : 'w-full'
+                              }`}
+                            >
                               <Image
                                 src={url}
                                 alt={post.caption ?? `사진 ${i + 1}`}
@@ -403,15 +425,24 @@ function CommunityPageInner() {
                             </div>
                           ))}
                         </div>
+
                         {media.length > 1 && (
                           <>
-                            <span className="absolute right-3 top-3 rounded-full bg-black/50 px-2.5 py-1 text-[11.5px] font-medium text-white backdrop-blur-sm">
-                              {media.length}장
+                            {/* 현재 위치를 함께 보여줘야 몇 장 중 어디인지 즉시 안다 */}
+                            <span className="pointer-events-none absolute right-5 top-4 rounded-full bg-black/55 px-2.5 py-1 text-[11.5px] font-semibold text-white backdrop-blur-sm tabular-nums">
+                              {(carouselIdx[post.id] ?? 0) + 1}/{media.length}
                             </span>
-                            <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
-                              {media.map((u) => (
-                                <span key={u} className="h-1.5 w-1.5 rounded-full bg-white/70" />
-                              ))}
+                            <div className="pointer-events-none absolute inset-x-0 bottom-4 flex justify-center">
+                              <span className="flex items-center gap-1.5 rounded-full bg-black/40 px-2.5 py-1.5 backdrop-blur-sm">
+                                {media.map((u, i) => (
+                                  <span
+                                    key={u}
+                                    className={`h-1.5 rounded-full transition-all ${
+                                      i === (carouselIdx[post.id] ?? 0) ? 'w-4 bg-white' : 'w-1.5 bg-white/55'
+                                    }`}
+                                  />
+                                ))}
+                              </span>
                             </div>
                           </>
                         )}
@@ -608,11 +639,12 @@ function CommunityPageInner() {
                         </svg>
                       </span>
                     ) : (p.imageUrls?.length ?? 0) > 1 ? (
-                      <span className="absolute right-1.5 top-1.5 text-cream drop-shadow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <span className="absolute right-1.5 top-1.5 flex items-center gap-1 rounded-full bg-black/45 px-1.5 py-0.5 text-[10px] font-semibold text-white backdrop-blur-sm">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
                           <rect x="8" y="3" width="13" height="13" rx="2" />
                           <path d="M4 8v11a2 2 0 0 0 2 2h11" />
                         </svg>
+                        {p.imageUrls?.length}
                       </span>
                     ) : null}
                   </button>
