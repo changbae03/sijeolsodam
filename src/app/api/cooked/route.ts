@@ -28,6 +28,28 @@ async function ensureTable() {
 }
 
 export async function GET(request: NextRequest) {
+  const mine = request.nextUrl.searchParams.get('mine');
+
+  // 마이페이지용: 내가 만들었다고 기록한 레시피 목록 (최신순)
+  if (mine) {
+    const user = getUserFromRequest(request);
+    if (!user) return NextResponse.json({ recipeIds: [] });
+    try {
+      await ensureTable();
+      const rows = (await sql`
+        SELECT recipe_id
+        FROM cooked_records
+        WHERE user_id = ${user.userId}
+        ORDER BY created_at DESC
+        LIMIT 50
+      `) as { recipe_id: string }[];
+      return NextResponse.json({ recipeIds: rows.map((r) => r.recipe_id) });
+    } catch (error) {
+      console.error('Get my cooked error:', error);
+      return NextResponse.json({ recipeIds: [] });
+    }
+  }
+
   const recipeId = request.nextUrl.searchParams.get('recipeId');
   if (!recipeId) {
     return NextResponse.json({ error: 'recipeId가 필요해요.' }, { status: 400 });
@@ -88,5 +110,30 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Post cooked error:', error);
     return NextResponse.json({ error: '기록하지 못했어요.' }, { status: 500 });
+  }
+}
+
+/** 만들었어요 취소 — 잘못 눌렀을 때 되돌릴 수 있어야 한다 */
+export async function DELETE(request: NextRequest) {
+  const user = getUserFromRequest(request);
+  if (!user) {
+    return NextResponse.json({ error: '로그인이 필요해요.' }, { status: 401 });
+  }
+
+  const recipeId = request.nextUrl.searchParams.get('recipeId');
+  if (!recipeId) {
+    return NextResponse.json({ error: 'recipeId가 필요해요.' }, { status: 400 });
+  }
+
+  try {
+    await ensureTable();
+    await sql`
+      DELETE FROM cooked_records
+      WHERE user_id = ${user.userId} AND recipe_id = ${recipeId}
+    `;
+    return NextResponse.json({ cooked: false });
+  } catch (error) {
+    console.error('Delete cooked error:', error);
+    return NextResponse.json({ error: '취소하지 못했어요.' }, { status: 500 });
   }
 }

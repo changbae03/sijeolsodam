@@ -4,6 +4,7 @@ import RecipeHero from '@/components/RecipeHero';
 import RecipeBody from '@/components/RecipeBody';
 import CookingCoach from '@/components/CookingCoach';
 import CookedButton from '@/components/CookedButton';
+import RecipeShareButton from '@/components/RecipeShareButton';
 import RecipeViewLogger from '@/components/RecipeViewLogger';
 import { CurrentStepProvider } from '@/lib/current-step-context';
 
@@ -29,8 +30,9 @@ export default async function RecipeDetailPage({
         <RecipeBody recipe={recipe} />
 
         {/* 요리를 다 본 지점 = 커뮤니티 진입의 최적 시점 */}
-        <div className="px-5 pb-28 pt-2">
+        <div className="px-5 pb-28 pt-2 space-y-2.5">
           <CookedButton recipeId={recipe.id} title={recipe.title} />
+          <RecipeShareButton recipeId={recipe.id} title={recipe.title} />
         </div>
 
         <CookingCoach recipeId={recipe.id} totalSteps={recipe.steps.length} />

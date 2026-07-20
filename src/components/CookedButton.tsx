@@ -40,13 +40,9 @@ export default function CookedButton({ recipeId, title }: { recipeId: string; ti
     };
   }, [recipeId]);
 
-  const handleClick = async () => {
+  const mark = async () => {
     if (!user) {
       router.push('/login');
-      return;
-    }
-    if (cooked) {
-      setShowBridge(true); // 이미 기록했으면 자랑하기만 다시 제안
       return;
     }
     setSaving(true);
@@ -67,34 +63,65 @@ export default function CookedButton({ recipeId, title }: { recipeId: string; ti
     }
   };
 
+  /** 잘못 눌렀을 때 되돌리기 — 기록은 취소할 수 있어야 부담 없이 누른다 */
+  const unmark = async () => {
+    setSaving(true);
+    try {
+      const res = await fetch(`/api/cooked?recipeId=${encodeURIComponent(recipeId)}`, {
+        method: 'DELETE',
+      });
+      if (res.ok) {
+        setCooked(false);
+        setShowBridge(false);
+      }
+    } catch {
+      // 무시
+    } finally {
+      setSaving(false);
+    }
+  };
+
   return (
     <>
-      <button
-        type="button"
-        onClick={handleClick}
-        disabled={saving}
-        className={`flex h-[54px] w-full items-center justify-center gap-2 rounded-2xl text-[15.5px] font-semibold transition-transform active:scale-[0.98] ${
-          cooked
-            ? 'border border-border-soft bg-paper text-ink'
-            : 'bg-ink text-cream'
-        }`}
-      >
-        {cooked ? (
-          <>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+      {cooked ? (
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={unmark}
+            disabled={saving}
+            className="flex h-[54px] flex-1 items-center justify-center gap-2 rounded-2xl border border-border-soft bg-paper text-[15px] font-semibold text-ink transition-transform active:scale-[0.98]"
+          >
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="text-sage-dark">
               <path d="M4 12.5l5 5L20 6.5" />
             </svg>
             만들었어요
-          </>
-        ) : (
-          '이 요리 만들었어요'
-        )}
-        {count > 0 && (
-          <span className={`text-[13px] font-medium ${cooked ? 'text-ink-soft' : 'text-cream/70'}`}>
-            · {count.toLocaleString()}명
-          </span>
-        )}
-      </button>
+            {count > 0 && <span className="text-[13px] font-medium text-ink-soft">· {count.toLocaleString()}명</span>}
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowBridge(true)}
+            className="h-[54px] shrink-0 rounded-2xl bg-ink px-5 text-[14.5px] font-semibold text-cream transition-transform active:scale-[0.98]"
+          >
+            사진 자랑
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={mark}
+          disabled={saving}
+          className="flex h-[54px] w-full items-center justify-center gap-2 rounded-2xl bg-ink text-[15.5px] font-semibold text-cream transition-transform active:scale-[0.98]"
+        >
+          이 요리 만들었어요
+          {count > 0 && <span className="text-[13px] font-medium text-cream/70">· {count.toLocaleString()}명</span>}
+        </button>
+      )}
+
+      {cooked && (
+        <p className="mt-1.5 text-center text-[11.5px] text-ink-soft/60">
+          다시 누르면 기록이 취소돼요
+        </p>
+      )}
 
       {/* 커뮤니티로 잇는 다리 */}
       <AnimatePresence>

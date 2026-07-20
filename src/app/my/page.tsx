@@ -21,6 +21,7 @@ export default function MyPage() {
   const { user, loading, logout, refresh } = useAuth();
   const { favoriteIds } = useFavorites();
   const [views, setViews] = useState<ViewSummary | null>(null);
+  const [cookedIds, setCookedIds] = useState<string[]>([]);
   const [deleting, setDeleting] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [nameDraft, setNameDraft] = useState('');
@@ -76,6 +77,10 @@ export default function MyPage() {
 
   useEffect(() => {
     if (!user) return;
+    fetch('/api/cooked?mine=1')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => d?.recipeIds && setCookedIds(d.recipeIds))
+      .catch(() => {});
     fetch(`/api/follow?userId=${user.id}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => data && setFollow({ followers: data.followers, following: data.following }))
@@ -181,6 +186,7 @@ export default function MyPage() {
 
   const favoriteRecipes = getRecipesByIds(Array.from(favoriteIds));
   const recentRecipes = views ? getRecipesByIds(views.recipeIds).slice(0, 10) : [];
+  const cookedRecipes = getRecipesByIds(cookedIds);
   // 데이터에 실제 존재하는 재료만 칩으로 (조회 기록의 main_ingredient가 개편 전 이름일 수 있음)
   const topIngredients = (views?.topIngredients ?? []).filter((n) => findIngredientByName(n));
   const { current: currentTerm } = getCurrentSolarTerm();
@@ -333,9 +339,9 @@ export default function MyPage() {
           </div>
           <div className="rounded-2xl bg-paper border border-border-soft px-3 py-3.5 text-center">
             <p className="text-[20px] font-bold tracking-[-0.02em] text-ink tabular-nums">
-              {views?.totalViewed ?? '–'}
+              {cookedRecipes.length}
             </p>
-            <p className="text-[11.5px] text-ink-soft mt-0.5">둘러본 레시피</p>
+            <p className="text-[11.5px] text-ink-soft mt-0.5">만들었어요</p>
           </div>
           <div
             className="rounded-2xl px-3 py-3.5 text-center text-cream"
@@ -368,6 +374,24 @@ export default function MyPage() {
               >
                 {name}
               </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ============================================
+          3-2. 만들었어요 — 실제로 해먹은 기록
+         ============================================ */}
+      {cookedRecipes.length > 0 && (
+        <section className="mb-8 -mx-5">
+          <h2 className="px-5 text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">
+            내가 만든 요리 · {cookedRecipes.length}
+          </h2>
+          <div className="flex gap-3 overflow-x-auto scrollbar-hide px-5 snap-x scroll-px-5">
+            {cookedRecipes.map((recipe) => (
+              <div key={recipe.id} className="w-[150px] flex-shrink-0 snap-start">
+                <RecipeCard recipe={recipe} />
+              </div>
             ))}
           </div>
         </section>
