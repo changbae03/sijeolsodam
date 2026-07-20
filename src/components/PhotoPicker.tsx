@@ -1,34 +1,33 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 /**
- * 사진 선택 + 소담 필터.
+ * 사진 고르기 — 인앱 카메라 + 소담 필터.
  *
- * 인스타그램처럼 "찍고 바로 올리는" 흐름을 목표로 한다:
- *  - 카메라 바로 열기(capture) / 앨범에서 고르기를 나란히 제공
- *  - 고르면 즉시 미리보기와 필터가 뜨고, 확정하면 캔버스에서 한 번에 처리
- *
- * 필터는 모두 클라이언트 캔버스에서 처리해 서버 비용이 없고,
- * 처리하면서 긴 변 1600px + WebP로 압축해 업로드도 빨라진다(원본 4MB -> 300KB 수준).
+ * 웹앱은 브라우저 보안상 갤러리 목록을 직접 읽을 수 없어(파일 선택창을 거쳐야 함),
+ * "최근 사진 목록"을 그리는 대신 단계를 줄이는 쪽으로 풀었다:
+ *  - 시트를 열면 인앱 카메라가 바로 켜지고, 찍기 전부터 필터가 실시간으로 보인다
+ *    (OS 카메라 앱으로 나갔다 돌아오는 왕복이 없어 인스타그램보다 단계가 적다)
+ *  - 앨범은 여러 장을 한 번에 고를 수 있고, 고른 사진들은 하단 스트립에서 바로 전환
+ *  - 필터 칩은 실제 내 사진 썸네일로 보여줘 결과를 보고 고른다
+ * 카메라 권한이 없거나 지원하지 않는 환경에서는 자동으로 파일 선택으로 넘어간다.
  */
 
 export interface SodamFilter {
   id: string;
   label: string;
   hint: string;
-  /** canvas ctx.filter 문자열 */
+  /** canvas ctx.filter / CSS filter 공용 문자열 */
   css: string;
-  /** 따뜻한 색 오버레이 (없으면 생략) */
   warmOverlay?: { color: string; alpha: number };
-  /** 가장자리 어둡게 (비네트) 강도 0~1 */
   vignette?: number;
 }
 
 /**
- * 음식 사진에 실제로 효과가 있는 조정만 담았다.
- * 핵심은 채도를 과하게 올리지 않고(음식이 인공적으로 보임)
- * 대비와 따뜻함으로 "갓 만든 느낌"을 살리는 것.
+ * 음식 사진 기준으로 조정한 프리셋.
+ * 채도를 과하게 올리면 음식이 인공적으로 보이므로, 대비·따뜻함·비네트로
+ * "갓 만든 느낌"을 만드는 방향.
  */
 export const SODAM_FILTERS: SodamFilter[] = [
   { id: 'original', label: '원본', hint: '보정 없이', css: 'none' },
@@ -75,28 +74,49 @@ export const SODAM_FILTERS: SodamFilter[] = [
 
 const MAX_EDGE = 1600;
 
-/**
- * 촬영 가이드 — 음식 사진에서 실제로 결과가 달라지는 것만 골랐다.
- * 필터는 이미 찍은 사진을 다듬을 뿐이고, 구도와 빛은 찍는 순간에만 잡을 수 있다.
- */
+/** 촬영 가이드 — 필터로는 못 고치는, 찍는 순간에만 잡을 수 있는 것들 */
 const SHOOTING_TIPS: { title: string; body: string }[] = [
-  { title: '창가로, 조명은 끄고', body: '형광등 아래선 누렇게 나와요. 낮이면 창 옆, 밤이면 가장 밝은 자연광 쪽으로.' },
-  { title: '빛을 옆이나 뒤에서', body: '빛이 정면에서 오면 납작해져요. 옆·뒤에서 오면 그림자가 생겨 입체감이 살아요.' },
-  { title: '45도에서 한 장, 위에서 한 장', body: '국물·높이 있는 요리는 45도, 접시에 펼친 요리는 바로 위에서.' },
-  { title: '한 걸음 더 가까이', body: '접시 전체를 다 넣기보다 가장 맛있어 보이는 부분을 크게. 가장자리가 잘려도 괜찮아요.' },
-  { title: '주인공만 남기기', body: '리모컨·휴지·다른 그릇은 프레임 밖으로. 천이나 나무 도마 하나면 충분해요.' },
-  { title: '김이 오를 때 바로', body: '갓 만든 순간이 가장 예뻐요. 김·윤기는 1~2분이면 사라져요.' },
+  { title: '창가로, 조명은 끄고', body: '형광등 아래선 누렇게 나와요.' },
+  { title: '빛은 옆이나 뒤에서', body: '정면광은 납작해져요. 옆·뒤에서 와야 입체감이 살아요.' },
+  { title: '국물은 45도, 펼친 접시는 위에서', body: '요리 높이에 따라 각도를 바꿔요.' },
+  { title: '한 걸음 더 가까이', body: '가장자리가 잘려도 괜찮아요. 질감이 보이게.' },
+  { title: '주인공만 남기기', body: '리모컨·휴지는 프레임 밖으로.' },
+  { title: '김이 오를 때 바로', body: '윤기와 김은 1~2분이면 사라져요.' },
 ];
 
-/** 원본 파일 + 필터 -> 업로드용 WebP File */
+/** 필터 CSS + 오버레이를 하나의 미리보기 레이어로 (프리뷰/썸네일 공용) */
+function FilterOverlays({ filter }: { filter: SodamFilter }) {
+  return (
+    <>
+      {filter.warmOverlay && (
+        <div
+          className="pointer-events-none absolute inset-0 mix-blend-overlay"
+          style={{ background: filter.warmOverlay.color, opacity: filter.warmOverlay.alpha }}
+        />
+      )}
+      {filter.vignette ? (
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background: `radial-gradient(circle at center, rgba(0,0,0,0) 45%, rgba(0,0,0,${filter.vignette}) 100%)`,
+          }}
+        />
+      ) : null}
+    </>
+  );
+}
+
+/** 원본 이미지 + 필터 -> 업로드용 WebP File (긴 변 1600px, q86) */
 async function renderToFile(
-  image: HTMLImageElement,
+  source: HTMLImageElement | HTMLCanvasElement,
   filter: SodamFilter,
   fileName: string
 ): Promise<File> {
-  const scale = Math.min(1, MAX_EDGE / Math.max(image.naturalWidth, image.naturalHeight));
-  const w = Math.round(image.naturalWidth * scale);
-  const h = Math.round(image.naturalHeight * scale);
+  const sw = source instanceof HTMLImageElement ? source.naturalWidth : source.width;
+  const sh = source instanceof HTMLImageElement ? source.naturalHeight : source.height;
+  const scale = Math.min(1, MAX_EDGE / Math.max(sw, sh));
+  const w = Math.round(sw * scale);
+  const h = Math.round(sh * scale);
 
   const canvas = document.createElement('canvas');
   canvas.width = w;
@@ -104,7 +124,7 @@ async function renderToFile(
   const ctx = canvas.getContext('2d')!;
 
   ctx.filter = filter.css === 'none' ? 'none' : filter.css;
-  ctx.drawImage(image, 0, 0, w, h);
+  ctx.drawImage(source, 0, 0, w, h);
   ctx.filter = 'none';
 
   if (filter.warmOverlay) {
@@ -124,9 +144,7 @@ async function renderToFile(
     ctx.fillRect(0, 0, w, h);
   }
 
-  const blob = await new Promise<Blob | null>((resolve) =>
-    canvas.toBlob(resolve, 'image/webp', 0.86)
-  );
+  const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/webp', 0.86));
   if (!blob) throw new Error('이미지 처리에 실패했어요.');
   return new File([blob], fileName.replace(/\.[^.]+$/, '') + '.webp', { type: 'image/webp' });
 }
@@ -139,72 +157,143 @@ export default function PhotoPicker({
   onReady: (file: File | null) => void;
   disabled?: boolean;
 }) {
-  const cameraRef = useRef<HTMLInputElement>(null);
   const albumRef = useRef<HTMLInputElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const streamRef = useRef<MediaStream | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
 
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [fileName, setFileName] = useState('photo.jpg');
-  const [filterId, setFilterId] = useState('sodam'); // 기본값을 보정으로 — 대부분 원본보다 낫다
+  // 고른 사진들(여러 장 선택 가능) — 하단 스트립에서 전환
+  const [shots, setShots] = useState<{ url: string; name: string }[]>([]);
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [filterId, setFilterId] = useState('sodam');
   const [processing, setProcessing] = useState(false);
-  const [showGrid, setShowGrid] = useState(true); // 3분할 구도 격자
-
-  useEffect(() => {
-    return () => {
-      if (previewUrl) URL.revokeObjectURL(previewUrl);
-    };
-  }, [previewUrl]);
-
-  const handleSelect = (file: File | undefined) => {
-    if (!file) return;
-    const url = URL.createObjectURL(file);
-    setFileName(file.name || 'photo.jpg');
-    setPreviewUrl(url);
-
-    const img = new Image();
-    img.onload = () => {
-      imgRef.current = img;
-      void applyFilter(filterId, img);
-    };
-    img.src = url;
-  };
-
-  const applyFilter = async (id: string, image?: HTMLImageElement) => {
-    const target = image ?? imgRef.current;
-    if (!target) return;
-    const filter = SODAM_FILTERS.find((f) => f.id === id) ?? SODAM_FILTERS[0];
-    setProcessing(true);
-    try {
-      const file = await renderToFile(target, filter, fileName);
-      onReady(file);
-    } catch {
-      onReady(null);
-    } finally {
-      setProcessing(false);
-    }
-  };
+  const [cameraOn, setCameraOn] = useState(false);
+  const [cameraError, setCameraError] = useState(false);
+  const [facing, setFacing] = useState<'environment' | 'user'>('environment');
+  const [showTips, setShowTips] = useState(false);
 
   const selected = SODAM_FILTERS.find((f) => f.id === filterId) ?? SODAM_FILTERS[0];
+  const active = shots[activeIdx] ?? null;
 
-  /**
-   * 필터를 적용한 사진을 폰 공유 시트로 넘긴다 (인스타그램·카톡 등).
-   * 인스타그램은 외부 앱이 사용자 개인 계정에 직접 게시하는 것을 허용하지 않으므로
-   * (Graph API는 프로페셔널 계정 + 페이지 연결 + 심사 필요),
-   * 실질적으로 가능한 최선은 이 네이티브 공유다.
-   */
-  const shareToApps = async () => {
+  const stopCamera = useCallback(() => {
+    streamRef.current?.getTracks().forEach((t) => t.stop());
+    streamRef.current = null;
+    setCameraOn(false);
+  }, []);
+
+  const startCamera = useCallback(async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: facing, width: { ideal: 1920 }, height: { ideal: 1920 } },
+        audio: false,
+      });
+      streamRef.current = stream;
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream;
+        await videoRef.current.play();
+      }
+      setCameraOn(true);
+      setCameraError(false);
+    } catch {
+      // 권한 거부·미지원 — 앨범 선택으로 유도
+      setCameraError(true);
+      setCameraOn(false);
+    }
+  }, [facing]);
+
+  // 시트를 열면 바로 카메라를 켠다 (사진을 이미 고른 뒤에는 켜지 않음)
+  useEffect(() => {
+    if (shots.length === 0 && !cameraError) void startCamera();
+    return stopCamera;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- facing 변경 시에만 재시작
+  }, [facing]);
+
+  useEffect(() => {
+    return () => shots.forEach((s) => URL.revokeObjectURL(s.url));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- 언마운트 정리
+  }, []);
+
+  /** 현재 활성 사진 + 필터로 업로드 파일 만들기 */
+  const emit = useCallback(
+    async (url: string, name: string, id: string) => {
+      const filter = SODAM_FILTERS.find((f) => f.id === id) ?? SODAM_FILTERS[0];
+      setProcessing(true);
+      try {
+        const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+          const el = new Image();
+          el.onload = () => resolve(el);
+          el.onerror = reject;
+          el.src = url;
+        });
+        imgRef.current = img;
+        onReady(await renderToFile(img, filter, name));
+      } catch {
+        onReady(null);
+      } finally {
+        setProcessing(false);
+      }
+    },
+    [onReady]
+  );
+
+  /** 인앱 카메라로 촬영 — 정사각으로 잘라 담는다 */
+  const shoot = async () => {
+    const video = videoRef.current;
+    if (!video) return;
+    const size = Math.min(video.videoWidth, video.videoHeight);
+    const canvas = document.createElement('canvas');
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext('2d')!;
+    ctx.drawImage(
+      video,
+      (video.videoWidth - size) / 2,
+      (video.videoHeight - size) / 2,
+      size,
+      size,
+      0,
+      0,
+      size,
+      size
+    );
+    const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, 'image/webp', 0.95));
+    if (!blob) return;
+    const url = URL.createObjectURL(blob);
+    stopCamera();
+    const next = [{ url, name: `shot-${Date.now()}.webp` }, ...shots];
+    setShots(next);
+    setActiveIdx(0);
+    void emit(url, next[0].name, filterId);
+  };
+
+  const handleFiles = (files: FileList | null) => {
+    if (!files || files.length === 0) return;
+    const picked = Array.from(files)
+      .slice(0, 8)
+      .map((f) => ({ url: URL.createObjectURL(f), name: f.name || 'photo.jpg' }));
+    stopCamera();
+    setShots(picked);
+    setActiveIdx(0);
+    void emit(picked[0].url, picked[0].name, filterId);
+  };
+
+  const reset = () => {
+    shots.forEach((s) => URL.revokeObjectURL(s.url));
+    setShots([]);
+    onReady(null);
+    setCameraError(false);
+    void startCamera();
+  };
+
+  const shareCurrent = async () => {
     if (!imgRef.current) return;
     setProcessing(true);
     try {
-      const filter = SODAM_FILTERS.find((f) => f.id === filterId) ?? SODAM_FILTERS[0];
-      const file = await renderToFile(imgRef.current, filter, fileName);
-      const nav = navigator as Navigator & {
-        canShare?: (data?: { files?: File[] }) => boolean;
-      };
+      const file = await renderToFile(imgRef.current, selected, active?.name ?? 'photo.webp');
+      const nav = navigator as Navigator & { canShare?: (d?: { files?: File[] }) => boolean };
       if (nav.canShare?.({ files: [file] })) {
         await navigator.share({ files: [file], text: '#시절소담' });
       } else {
-        // 데스크톱 등 공유 미지원 환경에서는 내려받기로 대체
         const url = URL.createObjectURL(file);
         const a = document.createElement('a');
         a.href = url;
@@ -213,7 +302,7 @@ export default function PhotoPicker({
         URL.revokeObjectURL(url);
       }
     } catch {
-      // 사용자가 공유를 취소한 경우 등 — 조용히 무시
+      // 취소 등 — 무시
     } finally {
       setProcessing(false);
     }
@@ -222,162 +311,223 @@ export default function PhotoPicker({
   return (
     <div>
       <input
-        ref={cameraRef}
-        type="file"
-        accept="image/*"
-        capture="environment"
-        className="hidden"
-        onChange={(e) => handleSelect(e.target.files?.[0])}
-      />
-      <input
         ref={albumRef}
         type="file"
         accept="image/*"
+        multiple
         className="hidden"
-        onChange={(e) => handleSelect(e.target.files?.[0])}
+        onChange={(e) => handleFiles(e.target.files)}
       />
 
-      {!previewUrl && (
-        <div className="grid grid-cols-2 gap-2.5">
-          <button
-            type="button"
-            onClick={() => cameraRef.current?.click()}
-            disabled={disabled}
-            className="flex h-[104px] flex-col items-center justify-center gap-2 rounded-2xl bg-ink text-cream"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.9l1.2-2h6.8l1.2 2h1.9A2.5 2.5 0 0 1 21 8.5v9A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5Z" />
-              <circle cx="12" cy="13" r="3.6" />
-            </svg>
-            <span className="text-[14px] font-semibold">사진 찍기</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => albumRef.current?.click()}
-            disabled={disabled}
-            className="flex h-[104px] flex-col items-center justify-center gap-2 rounded-2xl border border-border-soft bg-paper text-ink"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="3" y="4" width="18" height="16" rx="2.5" />
-              <path d="M3 15.5l4.5-4.5 4 4 3-3 6 6" />
-              <circle cx="8.5" cy="8.5" r="1.4" />
-            </svg>
-            <span className="text-[14px] font-semibold">앨범에서 고르기</span>
-          </button>
-        </div>
-      )}
-
-      {!previewUrl && (
-        <div className="mt-3 rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
-          <p className="text-[12.5px] font-semibold text-ink mb-2">맛있게 찍는 법</p>
-          <ul className="space-y-2">
-            {SHOOTING_TIPS.map((t) => (
-              <li key={t.title} className="flex gap-2">
-                <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-sage" />
-                <p className="text-[12.5px] leading-relaxed text-ink-soft">
-                  <span className="font-semibold text-ink">{t.title}</span> — {t.body}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {previewUrl && (
-        <div>
-          <div className="relative w-full aspect-square overflow-hidden rounded-2xl bg-cream-warm">
-            {/* 미리보기는 CSS 필터로 즉시 반영하고, 업로드용 파일은 캔버스로 따로 만든다 */}
+      {/* 촬영/미리보기 영역 — 어둡게 깔아 사진에 시선이 가게 */}
+      <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-ink">
+        {active ? (
+          <>
             {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 미리보기 */}
             <img
-              src={previewUrl}
-              alt="선택한 사진 미리보기"
+              src={active.url}
+              alt="선택한 사진"
               className="h-full w-full object-cover"
               style={{ filter: selected.css === 'none' ? undefined : selected.css }}
             />
-            {selected.warmOverlay && (
-              <div
-                className="pointer-events-none absolute inset-0 mix-blend-overlay"
-                style={{ background: selected.warmOverlay.color, opacity: selected.warmOverlay.alpha }}
-              />
-            )}
-            {selected.vignette ? (
-              <div
-                className="pointer-events-none absolute inset-0"
-                style={{
-                  background: `radial-gradient(circle at center, rgba(0,0,0,0) 45%, rgba(0,0,0,${selected.vignette}) 100%)`,
-                }}
-              />
-            ) : null}
-            {/* 3분할 격자 — 주인공을 선이 만나는 지점에 두면 구도가 안정된다 */}
-            {showGrid && (
-              <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-1/3 top-0 h-full w-px bg-white/35" />
-                <div className="absolute left-2/3 top-0 h-full w-px bg-white/35" />
-                <div className="absolute left-0 top-1/3 h-px w-full bg-white/35" />
-                <div className="absolute left-0 top-2/3 h-px w-full bg-white/35" />
+            <FilterOverlays filter={selected} />
+            <button
+              type="button"
+              onClick={reset}
+              className="absolute right-3 top-3 rounded-full bg-black/45 px-3 py-1.5 text-[12.5px] font-medium text-white backdrop-blur-md"
+            >
+              다시 찍기
+            </button>
+          </>
+        ) : (
+          <>
+            <video
+              ref={videoRef}
+              playsInline
+              muted
+              className="h-full w-full object-cover"
+              style={{
+                filter: selected.css === 'none' ? undefined : selected.css,
+                transform: facing === 'user' ? 'scaleX(-1)' : undefined,
+              }}
+            />
+            <FilterOverlays filter={selected} />
+
+            {/* 3분할 구도 격자 */}
+            <div className="pointer-events-none absolute inset-0">
+              <div className="absolute left-1/3 top-0 h-full w-px bg-white/25" />
+              <div className="absolute left-2/3 top-0 h-full w-px bg-white/25" />
+              <div className="absolute left-0 top-1/3 h-px w-full bg-white/25" />
+              <div className="absolute left-0 top-2/3 h-px w-full bg-white/25" />
+            </div>
+
+            {!cameraOn && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-8 text-center">
+                <p className="text-[13.5px] text-white/80 leading-relaxed">
+                  {cameraError
+                    ? '카메라를 쓸 수 없어요.\n앨범에서 사진을 골라주세요.'
+                    : '카메라를 준비하고 있어요...'}
+                </p>
+                {cameraError && (
+                  <button
+                    type="button"
+                    onClick={() => albumRef.current?.click()}
+                    className="rounded-full bg-white px-5 py-2.5 text-[13.5px] font-semibold text-ink"
+                  >
+                    앨범 열기
+                  </button>
+                )}
               </div>
             )}
+
+            {/* 하단 컨트롤: 앨범 · 셔터 · 전환 */}
+            {cameraOn && (
+              <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-6 pb-5">
+                <button
+                  type="button"
+                  onClick={() => albumRef.current?.click()}
+                  aria-label="앨범에서 고르기"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/15 text-white backdrop-blur-md"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="4" width="18" height="16" rx="2.5" />
+                    <path d="M3 15.5l4.5-4.5 4 4 3-3 6 6" />
+                    <circle cx="8.5" cy="8.5" r="1.4" />
+                  </svg>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={shoot}
+                  disabled={disabled}
+                  aria-label="사진 찍기"
+                  className="flex h-[70px] w-[70px] items-center justify-center rounded-full border-[3px] border-white/90 active:scale-95 transition-transform"
+                >
+                  <span className="h-[56px] w-[56px] rounded-full bg-white" />
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setFacing((f) => (f === 'environment' ? 'user' : 'environment'))}
+                  aria-label="카메라 전환"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/15 text-white backdrop-blur-md"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 12a9 9 0 0 1 14.5-7M21 12a9 9 0 0 1-14.5 7" />
+                    <path d="M17 2v5h-5M7 22v-5h5" />
+                  </svg>
+                </button>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* 고른 사진 스트립 — 여러 장 골랐을 때 바로 전환 */}
+      {shots.length > 1 && (
+        <div className="mt-2.5 flex gap-2 overflow-x-auto scrollbar-hide">
+          {shots.map((s, i) => (
             <button
+              key={s.url}
               type="button"
               onClick={() => {
-                setPreviewUrl(null);
-                imgRef.current = null;
-                onReady(null);
+                setActiveIdx(i);
+                void emit(s.url, s.name, filterId);
               }}
-              className="absolute right-2.5 top-2.5 rounded-full bg-ink/70 px-3 py-1.5 text-[12.5px] font-medium text-cream backdrop-blur-sm"
+              className={`relative h-14 w-14 shrink-0 overflow-hidden rounded-xl transition-all ${
+                i === activeIdx ? 'ring-2 ring-ink ring-offset-2 ring-offset-cream' : 'opacity-60'
+              }`}
             >
-              다시 고르기
+              {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 썸네일 */}
+              <img src={s.url} alt="" className="h-full w-full object-cover" />
             </button>
-            <button
-              type="button"
-              onClick={() => setShowGrid((v) => !v)}
-              className="absolute left-2.5 top-2.5 rounded-full bg-ink/70 px-3 py-1.5 text-[12.5px] font-medium text-cream backdrop-blur-sm"
-            >
-              격자 {showGrid ? '끄기' : '켜기'}
-            </button>
-          </div>
-
-          <div className="mt-3">
-            <div className="flex items-baseline justify-between mb-2">
-              <p className="text-[12.5px] font-semibold text-ink">소담 필터</p>
-              <p className="text-[11.5px] text-ink-soft/70">
-                {processing ? '적용 중...' : selected.hint}
-              </p>
-            </div>
-            <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
-              {SODAM_FILTERS.map((f) => (
-                <button
-                  key={f.id}
-                  type="button"
-                  onClick={() => {
-                    setFilterId(f.id);
-                    void applyFilter(f.id);
-                  }}
-                  className={`shrink-0 rounded-full px-3.5 py-2 text-[12.5px] font-medium transition-colors ${
-                    f.id === filterId
-                      ? 'bg-ink text-cream'
-                      : 'border border-border-soft bg-paper text-ink-soft'
-                  }`}
-                >
-                  {f.label}
-                </button>
-              ))}
-            </div>
-
-            <button
-              type="button"
-              onClick={shareToApps}
-              disabled={processing}
-              className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-xl border border-border-soft bg-paper text-[13px] font-medium text-ink-soft"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 16V4M8 8l4-4 4 4" />
-                <path d="M4 14v4.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V14" />
-              </svg>
-              필터 적용한 사진 저장·공유하기
-            </button>
-          </div>
+          ))}
         </div>
+      )}
+
+      {/* 필터 — 내 사진 썸네일로 결과를 보고 고른다 */}
+      <div className="mt-3.5">
+        <div className="flex items-baseline justify-between mb-2">
+          <p className="text-[12.5px] font-semibold text-ink">소담 필터</p>
+          <p className="text-[11.5px] text-ink-soft/70">{processing ? '적용 중...' : selected.hint}</p>
+        </div>
+        <div className="flex gap-2.5 overflow-x-auto scrollbar-hide pb-1">
+          {SODAM_FILTERS.map((f) => (
+            <button
+              key={f.id}
+              type="button"
+              onClick={() => {
+                setFilterId(f.id);
+                if (active) void emit(active.url, active.name, f.id);
+              }}
+              className="shrink-0 text-center"
+            >
+              <span
+                className={`relative block h-16 w-16 overflow-hidden rounded-2xl bg-cream-warm transition-all ${
+                  f.id === filterId ? 'ring-2 ring-ink ring-offset-2 ring-offset-cream' : ''
+                }`}
+              >
+                {active ? (
+                  <>
+                    {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 썸네일 */}
+                    <img
+                      src={active.url}
+                      alt=""
+                      className="h-full w-full object-cover"
+                      style={{ filter: f.css === 'none' ? undefined : f.css }}
+                    />
+                    <FilterOverlays filter={f} />
+                  </>
+                ) : (
+                  <span className="flex h-full w-full items-center justify-center text-[11px] text-ink-soft/50">
+                    {f.label}
+                  </span>
+                )}
+              </span>
+              <span
+                className={`mt-1.5 block text-[11.5px] ${
+                  f.id === filterId ? 'font-semibold text-ink' : 'text-ink-soft'
+                }`}
+              >
+                {f.label}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* 보조 액션 */}
+      <div className="mt-3 flex gap-2">
+        <button
+          type="button"
+          onClick={() => setShowTips((v) => !v)}
+          className="flex-1 rounded-xl border border-border-soft bg-paper py-2.5 text-[12.5px] font-medium text-ink-soft"
+        >
+          맛있게 찍는 법 {showTips ? '접기' : '보기'}
+        </button>
+        {active && (
+          <button
+            type="button"
+            onClick={shareCurrent}
+            disabled={processing}
+            className="flex-1 rounded-xl border border-border-soft bg-paper py-2.5 text-[12.5px] font-medium text-ink-soft"
+          >
+            저장·공유하기
+          </button>
+        )}
+      </div>
+
+      {showTips && (
+        <ul className="mt-2.5 space-y-2 rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
+          {SHOOTING_TIPS.map((t) => (
+            <li key={t.title} className="flex gap-2">
+              <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-sage" />
+              <p className="text-[12.5px] leading-relaxed text-ink-soft">
+                <span className="font-semibold text-ink">{t.title}</span> — {t.body}
+              </p>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
