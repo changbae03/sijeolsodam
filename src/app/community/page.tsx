@@ -97,6 +97,11 @@ function CommunityPageInner() {
   const [viewerIdx, setViewerIdx] = useState(0);
   // 게시물별 캐러셀 현재 위치 (몇 번째 사진을 보고 있는지)
   const [carouselIdx, setCarouselIdx] = useState<Record<number, number>>({});
+  // 운영자 공지 — 피드 맨 위에 고정
+  const [announcements, setAnnouncements] = useState<
+    { id: number; title: string; body: string | null; createdAt: string }[]
+  >([]);
+  const [openNoticeId, setOpenNoticeId] = useState<number | null>(null);
   // 내 댓글 수정
   const [editingCommentId, setEditingCommentId] = useState<number | null>(null);
   const [commentEditDraft, setCommentEditDraft] = useState('');
@@ -182,6 +187,13 @@ function CommunityPageInner() {
   // 레시피 상세의 "만들었어요 -> 사진 올리기"에서 넘어온 경우 글쓰기를 바로 열고
   // 어떤 레시피에서 왔는지 게시글에 함께 저장한다.
   const searchParams = useSearchParams();
+
+  useEffect(() => {
+    fetch('/api/announcements')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => d?.announcements && setAnnouncements(d.announcements))
+      .catch(() => {});
+  }, []);
   const linkedRecipeId = searchParams.get('recipeId');
   const linkedRecipeTitle = searchParams.get('title');
 
@@ -345,6 +357,44 @@ function CommunityPageInner() {
 
       {tab === 'feed' && (
         <div className="max-w-md mx-auto px-5 space-y-6">
+          {/* 운영자 공지 — 게시물과 섞이면 묻히므로 맨 위에 고정하고 톤도 다르게 */}
+          {announcements.length > 0 && (
+            <div className="space-y-2">
+              {announcements.map((n) => {
+                const open = openNoticeId === n.id;
+                return (
+                  <button
+                    key={n.id}
+                    type="button"
+                    onClick={() => setOpenNoticeId(open ? null : n.id)}
+                    className="block w-full rounded-2xl border border-sage/25 bg-sage/[0.07] px-4 py-3.5 text-left"
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <span className="mt-0.5 shrink-0 rounded-full bg-sage-dark px-2 py-0.5 text-[10.5px] font-semibold text-cream">
+                        공지
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <p className="text-[14px] font-semibold text-ink leading-snug">{n.title}</p>
+                        {n.body && (
+                          <p
+                            className={`mt-1 text-[13px] leading-relaxed text-ink-soft ${
+                              open ? '' : 'line-clamp-1'
+                            }`}
+                          >
+                            {n.body}
+                          </p>
+                        )}
+                        <p className="mt-1.5 text-[11.5px] text-ink-soft/60">
+                          {new Date(n.createdAt).toLocaleDateString('ko-KR')}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
           {posts === null && <p className="text-[14px] text-ink-soft text-center py-10">불러오는 중...</p>}
           {posts?.length === 0 && (
             <p className="text-[14px] text-ink-soft text-center py-10">

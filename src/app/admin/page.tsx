@@ -66,6 +66,12 @@ export default function AdminPage() {
   const [inquiries, setInquiries] = useState<Inquiry[] | null>(null);
   const [replyDrafts, setReplyDrafts] = useState<Record<number, string>>({});
   const [replyingId, setReplyingId] = useState<number | null>(null);
+  const [notices, setNotices] = useState<
+    { id: number; title: string; body: string | null; createdAt: string }[]
+  >([]);
+  const [noticeTitle, setNoticeTitle] = useState('');
+  const [noticeBody, setNoticeBody] = useState('');
+  const [postingNotice, setPostingNotice] = useState(false);
 
   const load = () => {
     fetch('/api/admin')
@@ -82,12 +88,46 @@ export default function AdminPage() {
 
   useEffect(() => {
     load();
+    loadNotices();
     fetch('/api/admin/inquiries')
       .then((res) => (res.ok ? res.json() : null))
       .then((d) => d && setInquiries(d.inquiries ?? []))
       .catch(() => setInquiries([]));
     // eslint-disable-next-line react-hooks/exhaustive-deps -- 최초 진입 시 1회
   }, []);
+
+  const loadNotices = () => {
+    fetch('/api/announcements')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => d?.announcements && setNotices(d.announcements))
+      .catch(() => {});
+  };
+
+  const publishNotice = async () => {
+    if (!noticeTitle.trim()) return;
+    setPostingNotice(true);
+    try {
+      const res = await fetch('/api/announcements', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: noticeTitle, body: noticeBody }),
+      });
+      if (res.ok) {
+        const d = await res.json();
+        setNotices((prev) => [d.announcement, ...prev]);
+        setNoticeTitle('');
+        setNoticeBody('');
+      }
+    } finally {
+      setPostingNotice(false);
+    }
+  };
+
+  const removeNotice = async (id: number) => {
+    if (!window.confirm('이 공지를 내릴까요?')) return;
+    const res = await fetch(`/api/announcements?id=${id}`, { method: 'DELETE' });
+    if (res.ok) setNotices((prev) => prev.filter((n) => n.id !== id));
+  };
 
   const sendReply = async (id: number) => {
     const reply = (replyDrafts[id] ?? '').trim();
@@ -186,6 +226,60 @@ export default function AdminPage() {
           </div>
         </section>
       )}
+
+      {/* 공지 — 모두의 소담 피드 맨 위에 노출된다 */}
+      <section className="mt-8">
+        <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">공지사항</h2>
+
+        <div className="rounded-2xl border border-border-soft bg-paper p-3.5">
+          <input
+            value={noticeTitle}
+            onChange={(e) => setNoticeTitle(e.target.value)}
+            maxLength={100}
+            placeholder="공지 제목"
+            className="w-full rounded-xl border border-border-soft bg-cream-warm/40 px-3 py-2.5 text-[14px] text-ink outline-none focus:border-sage"
+          />
+          <textarea
+            value={noticeBody}
+            onChange={(e) => setNoticeBody(e.target.value)}
+            rows={3}
+            maxLength={1000}
+            placeholder="내용 (선택)"
+            className="mt-2 w-full resize-none rounded-xl border border-border-soft bg-cream-warm/40 px-3 py-2.5 text-[13.5px] text-ink outline-none focus:border-sage"
+          />
+          <button
+            type="button"
+            onClick={publishNotice}
+            disabled={postingNotice || !noticeTitle.trim()}
+            className="mt-2.5 w-full rounded-xl bg-ink py-2.5 text-[13.5px] font-semibold text-cream disabled:opacity-50"
+          >
+            {postingNotice ? '등록 중...' : '공지 올리기'}
+          </button>
+        </div>
+
+        {notices.length > 0 && (
+          <div className="mt-3 space-y-2">
+            {notices.map((n) => (
+              <div key={n.id} className="flex items-start gap-3 rounded-2xl border border-border-soft bg-paper px-4 py-3">
+                <div className="min-w-0 flex-1">
+                  <p className="text-[13.5px] font-semibold text-ink">{n.title}</p>
+                  {n.body && <p className="mt-0.5 text-[12.5px] text-ink-soft line-clamp-2">{n.body}</p>}
+                  <p className="mt-1 text-[11px] text-ink-soft/60">
+                    {new Date(n.createdAt).toLocaleDateString('ko-KR')}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => removeNotice(n.id)}
+                  className="shrink-0 rounded-xl border border-border-soft px-3 py-1.5 text-[12.5px] font-medium text-terracotta"
+                >
+                  내리기
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
 
       {/* 문의 — 답변 대기가 먼저 오도록 서버에서 정렬 */}
       <section className="mt-8">
