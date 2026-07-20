@@ -7,6 +7,7 @@ import { getCurrentMonth } from '@/lib/season';
 import { getKamisMappingByName } from '@/lib/kamis-mapping';
 import { IngredientCategory } from '@/data/types';
 import { SearchBar } from '@/components/ui';
+import Logo from '@/components/Logo';
 import MonthStrip from '@/components/MonthStrip';
 import IngredientGridCard from '@/components/IngredientGridCard';
 import { SOLAR_TERMS } from '@/data/solar-terms';
@@ -109,9 +110,7 @@ export default function SeasonalPage() {
       <header className="sticky top-0 z-30 bg-cream/85 backdrop-blur-xl">
         <div className="max-w-md mx-auto px-5 pt-3 pb-3">
           <div className="flex items-center gap-3">
-            <span className="font-season text-[17px] font-bold tracking-wide text-ink shrink-0">
-              시절소담
-            </span>
+            <Logo size="sm" className="shrink-0" />
             <div className="flex-1">
               <SearchBar
                 placeholder="식재료를 검색해보세요"

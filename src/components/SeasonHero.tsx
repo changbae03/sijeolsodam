@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Logo from '@/components/Logo';
 import { motion } from 'motion/react';
 import { getCurrentSolarTerm, SOLAR_TERMS } from '@/data/solar-terms';
 import { josa } from '@/lib/korean';
@@ -50,9 +51,7 @@ export default function SeasonHero({ featuredName }: SeasonHeroProps) {
       <div className="relative max-w-md mx-auto px-6 pt-5 pb-[72px]">
         {/* 상단 — 워드마크 + 아이콘 */}
         <div className="flex items-center justify-between mb-8">
-          <span className="font-season text-[19px] font-bold tracking-wide text-cream">
-            시절소담
-          </span>
+          <Logo size="sm" tone="cream" />
           <div className="flex items-center gap-2">
             <Link
               href="/recipes"

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getRecipeById, allRecipes } from '@/data/recipes';
-import { SITE_URL } from '@/app/layout';
 import RecipeHero from '@/components/RecipeHero';
 import RecipeBody from '@/components/RecipeBody';
 import CookingCoach from '@/components/CookingCoach';
@@ -27,11 +26,10 @@ export async function generateMetadata({
   const recipe = getRecipeById(id);
   if (!recipe) return {};
 
-  const image = recipe.heroImage.startsWith('http')
-    ? recipe.heroImage
-    : `${SITE_URL}${recipe.heroImage}`;
   const description = recipe.subtitle || `${recipe.cookTime}분 · ${recipe.difficulty} · 시절소담`;
 
+  // og:image는 같은 폴더의 opengraph-image.tsx가 PNG로 생성한다.
+  // (요리 사진은 WebP라 카카오톡 크롤러가 렌더하지 못해 빈 썸네일이 떴다)
   return {
     title: `${recipe.title} — 시절소담`,
     description,
@@ -40,10 +38,9 @@ export async function generateMetadata({
       siteName: '시절소담',
       title: recipe.title,
       description,
-      images: [{ url: image, width: 1200, height: 1200, alt: recipe.title }],
       locale: 'ko_KR',
     },
-    twitter: { card: 'summary_large_image', title: recipe.title, description, images: [image] },
+    twitter: { card: 'summary_large_image', title: recipe.title, description },
   };
 }
 
