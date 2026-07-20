@@ -153,8 +153,8 @@ export default function PhotoPicker({
   onReady,
   disabled,
 }: {
-  /** 필터까지 적용된 최종 파일 */
-  onReady: (file: File | null) => void;
+  /** 필터까지 적용된 최종 파일들 (동영상은 원본 그대로) */
+  onReady: (files: File[], mediaType: 'image' | 'video') => void;
   disabled?: boolean;
 }) {
   const albumRef = useRef<HTMLInputElement>(null);
@@ -163,7 +163,7 @@ export default function PhotoPicker({
   const imgRef = useRef<HTMLImageElement | null>(null);
 
   // 고른 사진들(여러 장 선택 가능) — 하단 스트립에서 전환
-  const [shots, setShots] = useState<{ url: string; name: string }[]>([]);
+  const [shots, setShots] = useState<{ url: string; name: string; file?: File; isVideo?: boolean }[]>([]);
   const [activeIdx, setActiveIdx] = useState(0);
   const [filterId, setFilterId] = useState('sodam');
   const [processing, setProcessing] = useState(false);
@@ -201,10 +201,19 @@ export default function PhotoPicker({
     }
   }, [facing]);
 
-  // 시트를 열면 바로 카메라를 켠다 (사진을 이미 고른 뒤에는 켜지 않음)
+  // 시트를 열면 바로 카메라를 켠다 (사진을 이미 고른 뒤에는 켜지 않음).
+  // startCamera 내부의 상태 변경은 비동기 완료 후 일어나므로 이펙트 동기 구간에서 setState 하지 않는다.
   useEffect(() => {
-    if (shots.length === 0 && !cameraError) void startCamera();
-    return stopCamera;
+    let cancelled = false;
+    if (shots.length === 0 && !cameraError) {
+      void (async () => {
+        if (!cancelled) await startCamera();
+      })();
+    }
+    return () => {
+      cancelled = true;
+      stopCamera();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- facing 변경 시에만 재시작
   }, [facing]);
 
@@ -215,25 +224,38 @@ export default function PhotoPicker({
 
   /** 현재 활성 사진 + 필터로 업로드 파일 만들기 */
   const emit = useCallback(
-    async (url: string, name: string, id: string) => {
+    async (list: { url: string; name: string; file?: File; isVideo?: boolean }[], id: string) => {
+      if (list.length === 0) {
+        onReady([], 'image');
+        return;
+      }
+      // 동영상은 필터를 적용하지 않고 원본을 그대로 올린다 (프레임 단위 처리는 과함)
+      if (list[0].isVideo) {
+        onReady(list[0].file ? [list[0].file] : [], 'video');
+        return;
+      }
       const filter = SODAM_FILTERS.find((f) => f.id === id) ?? SODAM_FILTERS[0];
       setProcessing(true);
       try {
-        const img = await new Promise<HTMLImageElement>((resolve, reject) => {
-          const el = new Image();
-          el.onload = () => resolve(el);
-          el.onerror = reject;
-          el.src = url;
-        });
-        imgRef.current = img;
-        onReady(await renderToFile(img, filter, name));
+        const files: File[] = [];
+        for (const [i, item] of list.entries()) {
+          const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+            const el = new Image();
+            el.onload = () => resolve(el);
+            el.onerror = reject;
+            el.src = item.url;
+          });
+          if (i === activeIdx) imgRef.current = img;
+          files.push(await renderToFile(img, filter, item.name));
+        }
+        onReady(files, 'image');
       } catch {
-        onReady(null);
+        onReady([], 'image');
       } finally {
         setProcessing(false);
       }
     },
-    [onReady]
+    [onReady, activeIdx]
   );
 
   /** 인앱 카메라로 촬영 — 정사각으로 잘라 담는다 */
@@ -263,24 +285,29 @@ export default function PhotoPicker({
     const next = [{ url, name: `shot-${Date.now()}.webp` }, ...shots];
     setShots(next);
     setActiveIdx(0);
-    void emit(url, next[0].name, filterId);
+    void emit(next, filterId);
   };
 
   const handleFiles = (files: FileList | null) => {
     if (!files || files.length === 0) return;
     const picked = Array.from(files)
-      .slice(0, 8)
-      .map((f) => ({ url: URL.createObjectURL(f), name: f.name || 'photo.jpg' }));
+      .slice(0, 10)
+      .map((f) => ({
+        url: URL.createObjectURL(f),
+        name: f.name || 'photo.jpg',
+        file: f,
+        isVideo: f.type.startsWith('video/'),
+      }));
     stopCamera();
     setShots(picked);
     setActiveIdx(0);
-    void emit(picked[0].url, picked[0].name, filterId);
+    void emit(picked, filterId);
   };
 
   const reset = () => {
     shots.forEach((s) => URL.revokeObjectURL(s.url));
     setShots([]);
-    onReady(null);
+    onReady([], 'image');
     setCameraError(false);
     void startCamera();
   };
@@ -313,7 +340,7 @@ export default function PhotoPicker({
       <input
         ref={albumRef}
         type="file"
-        accept="image/*"
+        accept="image/*,video/*"
         multiple
         className="hidden"
         onChange={(e) => handleFiles(e.target.files)}
@@ -323,14 +350,20 @@ export default function PhotoPicker({
       <div className="relative w-full aspect-square overflow-hidden rounded-[22px] bg-ink">
         {active ? (
           <>
-            {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 미리보기 */}
-            <img
-              src={active.url}
-              alt="선택한 사진"
-              className="h-full w-full object-cover"
-              style={{ filter: selected.css === 'none' ? undefined : selected.css }}
-            />
-            <FilterOverlays filter={selected} />
+            {active.isVideo ? (
+              <video src={active.url} className="h-full w-full object-cover" controls playsInline />
+            ) : (
+              <>
+                {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 미리보기 */}
+                <img
+                  src={active.url}
+                  alt="선택한 사진"
+                  className="h-full w-full object-cover"
+                  style={{ filter: selected.css === 'none' ? undefined : selected.css }}
+                />
+                <FilterOverlays filter={selected} />
+              </>
+            )}
             <button
               type="button"
               onClick={reset}
@@ -430,10 +463,7 @@ export default function PhotoPicker({
             <button
               key={s.url}
               type="button"
-              onClick={() => {
-                setActiveIdx(i);
-                void emit(s.url, s.name, filterId);
-              }}
+              onClick={() => setActiveIdx(i)}
               className={`relative h-14 w-14 shrink-0 overflow-hidden rounded-xl transition-all ${
                 i === activeIdx ? 'ring-2 ring-ink ring-offset-2 ring-offset-cream' : 'opacity-60'
               }`}
@@ -458,7 +488,7 @@ export default function PhotoPicker({
               type="button"
               onClick={() => {
                 setFilterId(f.id);
-                if (active) void emit(active.url, active.name, f.id);
+                if (shots.length) void emit(shots, f.id);
               }}
               className="shrink-0 text-center"
             >

@@ -12,6 +12,9 @@ import { useAuth } from '@/lib/auth-context';
 interface Post {
   id: number;
   imageUrl: string;
+  /** 여러 장 게시물의 전체 미디어 (구버전 글은 imageUrl 한 장) */
+  imageUrls?: string[];
+  mediaType?: 'image' | 'video';
   caption: string | null;
   hashtags: string[];
   recipeId: string | null;
@@ -44,23 +47,35 @@ interface Comment {
   authorName: string;
 }
 
-function timeAgo(iso: string) {
-  const diffMs = Date.now() - new Date(iso).getTime();
+/**
+ * "35분 전"만 있으면 언제 만든 요리인지 감이 안 온다.
+ * 상대 시간(최근일수록 유용)과 날짜(기록으로서 유용)를 함께 보여준다.
+ */
+function postTimeLabel(iso: string) {
+  const d = new Date(iso);
+  const diffMs = Date.now() - d.getTime();
   const min = Math.floor(diffMs / 60000);
-  if (min < 1) return '방금 전';
-  if (min < 60) return `${min}분 전`;
-  const hour = Math.floor(min / 60);
-  if (hour < 24) return `${hour}시간 전`;
-  const day = Math.floor(hour / 24);
-  if (day < 7) return `${day}일 전`;
-  return new Date(iso).toLocaleDateString('ko-KR');
+  const dateLabel = d.toLocaleDateString('ko-KR', {
+    year: d.getFullYear() === new Date().getFullYear() ? undefined : 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  let rel: string;
+  if (min < 1) rel = '방금 전';
+  else if (min < 60) rel = `${min}분 전`;
+  else if (min < 60 * 24) rel = `${Math.floor(min / 60)}시간 전`;
+  else if (min < 60 * 24 * 7) rel = `${Math.floor(min / 1440)}일 전`;
+  else return dateLabel;
+
+  return `${dateLabel} · ${rel}`;
 }
 
 function CommunityPageInner() {
   const { user } = useAuth();
   const router = useRouter();
 
-  const [tab, setTab] = useState<'feed' | 'recipes'>('feed');
+  const [tab, setTab] = useState<'feed' | 'mine'>('feed');
   const [query, setQuery] = useState('');
   const [posts, setPosts] = useState<Post[] | null>(null);
   const [userRecipes, setUserRecipes] = useState<UserRecipe[] | null>(null);
@@ -240,6 +255,8 @@ function CommunityPageInner() {
           오늘 만든 요리, 발견한 팁, 나만의 레시피를 편하게 나눠보세요.
         </p>
 
+        {/* 글 종류(자랑/레시피)로 나누지 않는다 — 올리는 사람이 알아서 쓰면 되고,
+            보는 사람에게 의미 있는 구분은 '남의 것 / 내 것'이다 */}
         <div className="flex gap-2 mb-5">
           <button
             type="button"
@@ -248,16 +265,16 @@ function CommunityPageInner() {
               tab === 'feed' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
             }`}
           >
-            피드
+            모두의 소담
           </button>
           <button
             type="button"
-            onClick={() => setTab('recipes')}
+            onClick={() => setTab('mine')}
             className={`text-[14px] font-medium rounded-full px-4 py-2 transition-colors ${
-              tab === 'recipes' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
+              tab === 'mine' ? 'bg-ink text-cream' : 'bg-paper border border-border-soft text-ink-soft'
             }`}
           >
-            이웃의 레시피
+            내 소담
           </button>
         </div>
 
@@ -269,7 +286,7 @@ function CommunityPageInner() {
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={tab === 'feed' ? '이름, 재료, 해시태그로 검색' : '레시피 이름이나 재료로 검색'}
+            placeholder="이름, 재료, 해시태그로 검색"
             className="flex-1 bg-transparent text-[14px] text-ink outline-none placeholder:text-ink-soft/45"
           />
         </div>
@@ -308,7 +325,7 @@ function CommunityPageInner() {
                     <Link href={`/u/${post.authorId}`} className="text-[14.5px] font-medium text-ink truncate block">
                       {post.authorName}
                     </Link>
-                    <p className="text-[12px] text-ink-soft/70">{timeAgo(post.createdAt)}</p>
+                    <p className="text-[12px] text-ink-soft/70">{postTimeLabel(post.createdAt)}</p>
                   </div>
 
                   {/* 내 글에만 수정·삭제 메뉴 */}
@@ -348,9 +365,49 @@ function CommunityPageInner() {
                   )}
                 </div>
 
-                <div className="relative w-full aspect-[4/3] bg-cream-warm">
-                  <Image src={post.imageUrl} alt={post.caption ?? ''} fill sizes="448px" className="object-cover" />
-                </div>
+                {post.mediaType === 'video' ? (
+                  <video
+                    src={post.imageUrl}
+                    className="w-full aspect-square bg-ink object-cover"
+                    controls
+                    playsInline
+                    preload="metadata"
+                  />
+                ) : (
+                  (() => {
+                    const media = post.imageUrls?.length ? post.imageUrls : [post.imageUrl];
+                    return (
+                      <div className="relative">
+                        {/* 여러 장이면 가로 스와이프 — 스크롤 스냅으로 네이티브 느낌 */}
+                        <div className="flex w-full snap-x snap-mandatory overflow-x-auto scrollbar-hide">
+                          {media.map((url, i) => (
+                            <div key={url} className="relative aspect-square w-full shrink-0 snap-center bg-cream-warm">
+                              <Image
+                                src={url}
+                                alt={post.caption ?? `사진 ${i + 1}`}
+                                fill
+                                sizes="448px"
+                                className="object-cover"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                        {media.length > 1 && (
+                          <>
+                            <span className="absolute right-3 top-3 rounded-full bg-black/50 px-2.5 py-1 text-[11.5px] font-medium text-white backdrop-blur-sm">
+                              {media.length}장
+                            </span>
+                            <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
+                              {media.map((u) => (
+                                <span key={u} className="h-1.5 w-1.5 rounded-full bg-white/70" />
+                              ))}
+                            </div>
+                          </>
+                        )}
+                      </div>
+                    );
+                  })()
+                )}
 
                 <div className="px-4 pt-3 pb-4">
                   <div className="flex items-center gap-5">
@@ -499,68 +556,65 @@ function CommunityPageInner() {
         </div>
       )}
 
-      {tab === 'recipes' && (
-        <div className="max-w-md mx-auto px-5 space-y-4">
-          {userRecipes === null && <p className="text-[14px] text-ink-soft text-center py-10">불러오는 중...</p>}
-          {userRecipes?.length === 0 && (
-            <p className="text-[14px] text-ink-soft text-center py-10">
-              아직 등록된 이웃 레시피가 없어요. 가장 먼저 나만의 레시피를 남겨보세요!
-            </p>
-          )}
-          {userRecipes && userRecipes.length > 0 && filteredUserRecipes.length === 0 && (
-            <p className="text-[14px] text-ink-soft text-center py-10">
-              &ldquo;{query}&rdquo;와 일치하는 레시피를 찾지 못했어요.
-            </p>
-          )}
-          {filteredUserRecipes.map((r) => (
-            <div
-              key={r.id}
-              className="bg-paper border border-border-soft rounded-2xl overflow-hidden"
-              style={{ boxShadow: 'var(--shadow-sm)' }}
-            >
-              {r.imageUrl && (
-                <div className="relative w-full aspect-[16/10] bg-cream-warm">
-                  <Image src={r.imageUrl} alt={r.title} fill sizes="448px" className="object-cover" />
-                </div>
-              )}
-              <div className="p-4">
-                <div className="flex items-center gap-2 mb-1.5">
-                  {r.mainIngredient && (
-                    <span className="text-[12px] bg-sage/10 text-sage font-medium rounded-full px-2 py-0.5">
-                      {r.mainIngredient}
-                    </span>
-                  )}
-                  <span className="text-[12px] text-ink-soft/60">{r.authorName}님의 레시피</span>
-                </div>
-                <p className="font-display text-[17px] text-ink font-medium">{r.title}</p>
-                {r.description && (
-                  <p className="text-[13.5px] text-ink-soft leading-relaxed mt-1">{r.description}</p>
-                )}
-                <details className="mt-2.5 group">
-                  <summary className="text-[13.5px] text-terracotta font-medium cursor-pointer list-none">
-                    재료·만드는 법 보기
-                  </summary>
-                  <div className="mt-2 space-y-2">
-                    <p className="text-[13px] text-ink-soft whitespace-pre-wrap leading-relaxed">
-                      {r.ingredientsText}
-                    </p>
-                    <p className="text-[13px] text-ink whitespace-pre-wrap leading-relaxed border-t border-border-soft/70 pt-2">
-                      {r.stepsText}
-                    </p>
-                  </div>
-                </details>
+      {tab === 'mine' && (
+        <div className="max-w-md mx-auto px-5">
+          {(() => {
+            const mine = (posts ?? []).filter((p) => p.authorId === user?.id);
+            if (!user) {
+              return (
+                <p className="rounded-2xl border border-border-soft bg-paper px-5 py-10 text-center text-[14px] text-ink-soft">
+                  로그인하면 내가 올린 요리를 모아볼 수 있어요.
+                </p>
+              );
+            }
+            if (mine.length === 0) {
+              return (
+                <p className="rounded-2xl border border-border-soft bg-paper px-5 py-10 text-center text-[14px] text-ink-soft">
+                  아직 올린 요리가 없어요.
+                  <br />
+                  오늘 만든 요리를 첫 번째로 올려보세요.
+                </p>
+              );
+            }
+            // 인스타 프로필처럼 사진만 3x3 격자로 — 내 기록은 훑어보는 용도라 사진이 주인공
+            return (
+              <div className="grid grid-cols-3 gap-1">
+                {mine.map((p) => (
+                  <button
+                    key={p.id}
+                    type="button"
+                    onClick={() => setTab('feed')}
+                    className="relative aspect-square overflow-hidden bg-cream-warm"
+                  >
+                    <Image src={p.imageUrl} alt={p.caption ?? '내 요리'} fill sizes="150px" className="object-cover" />
+                    {p.mediaType === 'video' ? (
+                      <span className="absolute right-1.5 top-1.5 text-cream drop-shadow">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M5 4l14 8-14 8Z" />
+                        </svg>
+                      </span>
+                    ) : (p.imageUrls?.length ?? 0) > 1 ? (
+                      <span className="absolute right-1.5 top-1.5 text-cream drop-shadow">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <rect x="8" y="3" width="13" height="13" rx="2" />
+                          <path d="M4 8v11a2 2 0 0 0 2 2h11" />
+                        </svg>
+                      </span>
+                    ) : null}
+                  </button>
+                ))}
               </div>
-            </div>
-          ))}
+            );
+          })()}
         </div>
       )}
 
       <button
         type="button"
-        onClick={() => openComposer(tab === 'feed' ? 'post' : 'recipe')}
+        onClick={() => openComposer('post')}
         className="fixed bottom-24 right-5 z-30 w-14 h-14 rounded-full bg-ink flex items-center justify-center"
         style={{ boxShadow: 'var(--shadow-lg)' }}
-        aria-label={tab === 'feed' ? '요리 자랑하기' : '레시피 올리기'}
+        aria-label="요리 올리기"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 5v14M5 12h14" />
@@ -641,7 +695,8 @@ function PostComposer({
   linkedRecipeTitle?: string | null;
 }) {
   const { user } = useAuth();
-  const [photoFile, setPhotoFile] = useState<File | null>(null);
+  const [photoFiles, setPhotoFiles] = useState<File[]>([]);
+  const [mediaType, setMediaType] = useState<'image' | 'video'>('image');
   const [uploading, setUploading] = useState(false);
   const [caption, setCaption] = useState('');
   const [hashtagsInput, setHashtagsInput] = useState('');
@@ -649,20 +704,24 @@ function PostComposer({
   const [error, setError] = useState<string | null>(null);
 
   /** 게시 직전에 업로드한다 — 필터를 바꿔가며 고르는 동안 서버에 여러 장이 쌓이지 않게 */
-  async function uploadSelected(): Promise<string | null> {
-    if (!photoFile) return null;
+  async function uploadSelected(): Promise<string[] | null> {
+    if (photoFiles.length === 0) return null;
     setUploading(true);
     setError(null);
     try {
-      const formData = new FormData();
-      formData.append('image', photoFile);
-      const res = await fetch('/api/community/upload', { method: 'POST', body: formData });
-      const data = await res.json();
-      if (!res.ok) {
-        setError(data.error || '사진을 올리지 못했어요.');
-        return null;
+      const urls: string[] = [];
+      for (const file of photoFiles) {
+        const formData = new FormData();
+        formData.append('image', file);
+        const res = await fetch('/api/community/upload', { method: 'POST', body: formData });
+        const data = await res.json();
+        if (!res.ok) {
+          setError(data.error || '사진을 올리지 못했어요.');
+          return null;
+        }
+        urls.push(data.url as string);
       }
-      return data.url as string;
+      return urls;
     } catch {
       setError('사진을 올리지 못했어요. 잠시 후 다시 시도해주세요.');
       return null;
@@ -672,15 +731,16 @@ function PostComposer({
   }
 
   async function handleSubmit() {
-    if (!photoFile) {
+    if (photoFiles.length === 0) {
       setError('먼저 사진을 골라주세요.');
       return;
     }
     setSubmitting(true);
     setError(null);
     try {
-      const imageUrl = await uploadSelected();
-      if (!imageUrl) return;
+      const urls = await uploadSelected();
+      if (!urls || urls.length === 0) return;
+      const imageUrl = urls[0];
       const hashtags = hashtagsInput
         .split(/[\s,]+/)
         .map((t) => t.replace(/^#/, ''))
@@ -688,7 +748,14 @@ function PostComposer({
       const res = await fetch('/api/community/posts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ imageUrl, caption, hashtags, recipeId: linkedRecipeId ?? undefined }),
+        body: JSON.stringify({
+          imageUrl,
+          imageUrls: urls,
+          mediaType,
+          caption,
+          hashtags,
+          recipeId: linkedRecipeId ?? undefined,
+        }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -730,7 +797,13 @@ function PostComposer({
           </span>
         </div>
       )}
-      <PhotoPicker onReady={setPhotoFile} disabled={submitting || uploading} />
+      <PhotoPicker
+        onReady={(files, type) => {
+          setPhotoFiles(files);
+          setMediaType(type);
+        }}
+        disabled={submitting || uploading}
+      />
 
       <textarea
         value={caption}
@@ -752,7 +825,7 @@ function PostComposer({
       <button
         type="button"
         onClick={handleSubmit}
-        disabled={submitting || uploading || !photoFile}
+        disabled={submitting || uploading || photoFiles.length === 0}
         className="w-full mt-4 rounded-xl bg-terracotta text-cream text-[15px] font-medium py-3 disabled:opacity-40"
       >
         {submitting ? '올리는 중...' : '자랑하기'}

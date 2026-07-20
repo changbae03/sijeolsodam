@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "*.public.blob.vercel-storage.com",
       },
+      {
+        // Cloudflare R2 공개 개발 URL (커뮤니티 사진·동영상)
+        protocol: "https",
+        hostname: "*.r2.dev",
+      },
     ],
   },
 };

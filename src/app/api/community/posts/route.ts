@@ -5,6 +5,12 @@ import { getUserFromRequest } from '@/lib/auth';
 /** 목록에 보여줄 게시물 최대 개수 */
 const PAGE_SIZE = 30;
 
+/** 여러 장·동영상 지원을 위한 컬럼을 필요 시 추가 (멱등) */
+async function ensureMediaColumns() {
+  await sql`ALTER TABLE posts ADD COLUMN IF NOT EXISTS image_urls TEXT[]`;
+  await sql`ALTER TABLE posts ADD COLUMN IF NOT EXISTS media_type TEXT`;
+}
+
 export async function GET(request: NextRequest) {
   const viewer = getUserFromRequest(request);
 
@@ -12,11 +18,14 @@ export async function GET(request: NextRequest) {
   const authorFilter = Number(request.nextUrl.searchParams.get('userId')) || null;
 
   try {
+    await ensureMediaColumns();
     const rows = authorFilter
       ? await sql`
       SELECT
         p.id,
         p.image_url,
+        p.image_urls,
+        p.media_type,
         p.caption,
         p.hashtags,
         p.recipe_id,
@@ -40,6 +49,8 @@ export async function GET(request: NextRequest) {
       SELECT
         p.id,
         p.image_url,
+        p.image_urls,
+        p.media_type,
         p.caption,
         p.hashtags,
         p.recipe_id,
@@ -74,6 +85,8 @@ export async function GET(request: NextRequest) {
       posts: rows.map((r) => ({
         id: r.id,
         imageUrl: r.image_url,
+        imageUrls: (r.image_urls as string[] | null) ?? (r.image_url ? [r.image_url] : []),
+        mediaType: (r.media_type as string | null) ?? 'image',
         caption: r.caption,
         hashtags: r.hashtags ?? [],
         recipeId: r.recipe_id,
@@ -100,12 +113,14 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const { imageUrl, caption, hashtags, recipeId, userRecipeId } = (await request.json()) as {
+    const { imageUrl, imageUrls, mediaType, caption, hashtags, recipeId, userRecipeId } = (await request.json()) as {
       imageUrl?: string;
       caption?: string;
       hashtags?: string[];
       recipeId?: string;
       userRecipeId?: number;
+      imageUrls?: string[];
+      mediaType?: 'image' | 'video';
     };
 
     if (!imageUrl) {
@@ -117,11 +132,17 @@ export async function POST(request: NextRequest) {
       .filter(Boolean)
       .slice(0, 8);
 
+    await ensureMediaColumns();
+    // image_url은 첫 장(썸네일·구버전 호환), image_urls에 전체를 담는다
+    const urls = imageUrls?.length ? imageUrls.slice(0, 10) : [imageUrl];
+
     const result = await sql`
-      INSERT INTO posts (user_id, image_url, caption, hashtags, recipe_id, user_recipe_id)
+      INSERT INTO posts (user_id, image_url, image_urls, media_type, caption, hashtags, recipe_id, user_recipe_id)
       VALUES (
         ${user.userId},
-        ${imageUrl},
+        ${urls[0]},
+        ${urls},
+        ${mediaType ?? 'image'},
         ${caption ?? null},
         ${cleanHashtags},
         ${recipeId ?? null},
