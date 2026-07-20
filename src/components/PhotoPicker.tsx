@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { listRecentPhotos, saveRecentPhoto } from '@/lib/recent-photos';
 
 /**
  * 사진 고르기 — 인앱 카메라 + 소담 필터.
@@ -171,6 +172,8 @@ export default function PhotoPicker({
   const [cameraError, setCameraError] = useState(false);
   const [facing, setFacing] = useState<'environment' | 'user'>('environment');
   const [showTips, setShowTips] = useState(false);
+  // 이 앱에서 최근에 쓴 사진 (기기 안에만 저장 — 폰 앨범은 브라우저가 읽을 수 없다)
+  const [recent, setRecent] = useState<{ url: string; name: string }[]>([]);
 
   const selected = SODAM_FILTERS.find((f) => f.id === filterId) ?? SODAM_FILTERS[0];
   const active = shots[activeIdx] ?? null;
@@ -216,6 +219,19 @@ export default function PhotoPicker({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- facing 변경 시에만 재시작
   }, [facing]);
+
+  useEffect(() => {
+    let alive = true;
+    void listRecentPhotos().then((items) => {
+      if (!alive) return;
+      setRecent(
+        items.map((it) => ({ url: URL.createObjectURL(it.blob), name: `recent-${it.id}.webp` }))
+      );
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   useEffect(() => {
     return () => shots.forEach((s) => URL.revokeObjectURL(s.url));
@@ -280,6 +296,7 @@ export default function PhotoPicker({
     );
     const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, 'image/webp', 0.95));
     if (!blob) return;
+    void saveRecentPhoto(blob);
     const url = URL.createObjectURL(blob);
     stopCamera();
     const next = [{ url, name: `shot-${Date.now()}.webp` }, ...shots];
@@ -299,6 +316,11 @@ export default function PhotoPicker({
         isVideo: f.type.startsWith('video/'),
       }));
     stopCamera();
+    // 사진만 최근 보관함에 남긴다 (동영상은 용량이 커서 제외)
+    Array.from(files)
+      .filter((f) => f.type.startsWith('image/'))
+      .slice(0, 10)
+      .forEach((f) => void saveRecentPhoto(f));
     setShots(picked);
     setActiveIdx(0);
     void emit(picked, filterId);
@@ -455,6 +477,32 @@ export default function PhotoPicker({
           </>
         )}
       </div>
+
+      {/* 최근 사진 — 앨범을 열지 않고 바로 고르기 */}
+      {shots.length === 0 && recent.length > 0 && (
+        <div className="mt-2.5">
+          <p className="mb-1.5 text-[11.5px] text-ink-soft/70">최근 사진</p>
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+            {recent.map((r) => (
+              <button
+                key={r.url}
+                type="button"
+                onClick={() => {
+                  stopCamera();
+                  const picked = [{ url: r.url, name: r.name }];
+                  setShots(picked);
+                  setActiveIdx(0);
+                  void emit(picked, filterId);
+                }}
+                className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-cream-warm"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element -- blob URL 썸네일 */}
+                <img src={r.url} alt="" className="h-full w-full object-cover" />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* 고른 사진 스트립 — 여러 장 골랐을 때 바로 전환 */}
       {shots.length > 1 && (
