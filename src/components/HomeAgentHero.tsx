@@ -105,12 +105,16 @@ export default function HomeAgentHero() {
 
   const hasConversation = exchanges.length > 0;
 
+  /**
+   * 지난 대화를 별도 시트로 띄우지 않고 이 대화창 안에서 펼친다.
+   * 같은 화면에서 이어 읽어야 흐름이 끊기지 않는다는 피드백을 반영.
+   */
   function openHistory() {
     if (!user) {
       router.push('/login');
       return;
     }
-    setHistoryOpen(true);
+    setHistoryOpen((prev) => !prev);
     if (!pastQueries) {
       fetch('/api/agent-queries')
         .then((res) => res.json())
@@ -214,7 +218,7 @@ export default function HomeAgentHero() {
             onClick={openHistory}
             className="text-[12px] tracking-wide text-ink-soft/60 hover:text-ink-soft transition-colors"
           >
-            지난 대화
+            {historyOpen ? '지난 대화 접기' : '지난 대화'}
           </button>
           {hasConversation && (
             <button
@@ -229,6 +233,56 @@ export default function HomeAgentHero() {
       </div>
 
       <div>
+        {/* 지난 대화 — 대화창 안에서 위쪽에 이어 붙는다 (오래된 것부터 아래로 이어짐) */}
+        {historyOpen && (
+          <div className="mb-4">
+            <div className="mb-3 flex items-center gap-2">
+              <span className="h-px flex-1 bg-border-soft" />
+              <span className="text-[11.5px] tracking-[0.08em] text-ink-soft/60">지난 대화</span>
+              <span className="h-px flex-1 bg-border-soft" />
+            </div>
+
+            {pastQueries === null && (
+              <p className="py-6 text-center text-[13.5px] text-ink-soft">불러오는 중...</p>
+            )}
+            {pastQueries?.length === 0 && (
+              <p className="py-6 text-center text-[13.5px] text-ink-soft">
+                아직 나눈 이야기가 없어요. 지금 첫 질문을 건네보세요!
+              </p>
+            )}
+
+            {/* 최근 것이 아래로 오도록 뒤집어, 현재 대화로 자연스럽게 이어지게 */}
+            {pastQueries && pastQueries.length > 0 && (
+              <div className="max-h-[420px] overflow-y-auto pr-1">
+                {[...pastQueries].reverse().map((q, i) => (
+                  <div key={q.id} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
+                    <div className="mb-3 flex items-baseline justify-between gap-3">
+                      <span className="inline-block max-w-[85%] rounded-2xl rounded-tl-sm bg-cream-warm px-3.5 py-2 text-[13px] text-ink-soft">
+                        {q.message}
+                      </span>
+                      <span className="shrink-0 text-[11.5px] text-ink-soft/50">
+                        {new Date(q.createdAt).toLocaleDateString('ko-KR', {
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </span>
+                    </div>
+                    <StructuredReplyView text={q.reply} size="md" />
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {hasConversation && (
+              <div className="mt-4 flex items-center gap-2">
+                <span className="h-px flex-1 bg-border-soft" />
+                <span className="text-[11.5px] tracking-[0.08em] text-ink-soft/60">지금 대화</span>
+                <span className="h-px flex-1 bg-border-soft" />
+              </div>
+            )}
+          </div>
+        )}
+
         {hasConversation && (
           <div ref={scrollRef} className="pb-1">
             {exchanges.map((ex, i) => (
@@ -429,70 +483,6 @@ export default function HomeAgentHero() {
         </div>
       )}
 
-      <AnimatePresence>
-        {historyOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setHistoryOpen(false)}
-              className="fixed inset-0 bg-ink/30 z-40"
-            />
-            <motion.div
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'spring', stiffness: 320, damping: 32 }}
-              className="fixed bottom-0 left-0 right-0 z-50 max-w-md mx-auto bg-cream rounded-t-3xl flex flex-col max-h-[80vh]"
-            >
-              <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border-soft shrink-0">
-                <p className="font-display text-[17px] text-ink font-medium">소담이와 나눈 이야기</p>
-                <button
-                  onClick={() => setHistoryOpen(false)}
-                  aria-label="닫기"
-                  className="w-8 h-8 rounded-full flex items-center justify-center text-ink-soft/60 hover:text-ink-soft transition-colors"
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-                    <path d="M18 6L6 18M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              <div className="flex-1 overflow-y-auto px-5 py-4">
-                {pastQueries === null && (
-                  <p className="text-[14px] text-ink-soft text-center py-8">불러오는 중...</p>
-                )}
-                {pastQueries?.length === 0 && (
-                  <p className="text-[14px] text-ink-soft text-center py-8">
-                    아직 나눈 이야기가 없어요. 지금 첫 질문을 건네보세요!
-                  </p>
-                )}
-                {/* 지난 대화도 방금 받은 답변과 같은 형태로 — 재료 칩·번호 단계가 그대로 보이게.
-                    줄글로 이어 붙이면 조리 순서를 다시 읽기 어렵다는 피드백을 반영. */}
-                {pastQueries?.map((q, i) => (
-                  <div
-                    key={q.id}
-                    className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}
-                  >
-                    <div className="flex items-baseline justify-between mb-2">
-                      <span className="inline-flex rounded-full bg-cream-warm px-3 py-1.5 text-[13.5px] font-medium text-ink">
-                        {q.message}
-                      </span>
-                      <span className="shrink-0 pl-3 text-[12px] text-ink-soft/60">
-                        {new Date(q.createdAt).toLocaleDateString('ko-KR', {
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </span>
-                    </div>
-                    <StructuredReplyView text={q.reply} size="md" />
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
