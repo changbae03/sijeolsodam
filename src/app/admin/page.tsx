@@ -88,20 +88,16 @@ export default function AdminPage() {
 
   useEffect(() => {
     load();
-    loadNotices();
+    fetch('/api/announcements')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => d?.announcements && setNotices(d.announcements))
+      .catch(() => {});
     fetch('/api/admin/inquiries')
       .then((res) => (res.ok ? res.json() : null))
       .then((d) => d && setInquiries(d.inquiries ?? []))
       .catch(() => setInquiries([]));
     // eslint-disable-next-line react-hooks/exhaustive-deps -- 최초 진입 시 1회
   }, []);
-
-  const loadNotices = () => {
-    fetch('/api/announcements')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((d) => d?.announcements && setNotices(d.announcements))
-      .catch(() => {});
-  };
 
   const publishNotice = async () => {
     if (!noticeTitle.trim()) return;
