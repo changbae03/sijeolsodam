@@ -325,41 +325,6 @@ export default function MyPage() {
       </motion.header>
 
       {/* ============================================
-          2. 나의 요리 기록 — 큰 숫자 카드 대신 조용한 한 줄 요약
-             (마이페이지의 주인공은 지표가 아니라 내가 모아온 것들)
-         ============================================ */}
-      <section className="mb-7">
-        <div className="flex items-center divide-x divide-border-soft rounded-2xl border border-border-soft bg-paper">
-          {[
-            { label: '만든 요리', value: cookedRecipes.length },
-            { label: '즐겨찾기', value: favoriteRecipes.length },
-            { label: '둘러본 레시피', value: views?.totalViewed ?? 0 },
-          ].map((item) => (
-            <div key={item.label} className="flex-1 px-3 py-3 text-center">
-              <p className="text-[17px] font-bold tabular-nums tracking-[-0.02em] text-ink">
-                {item.value.toLocaleString()}
-              </p>
-              <p className="mt-0.5 text-[11.5px] text-ink-soft">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ============================================
-          2-2. 바로 가기 — 마이페이지에서 자주 향하는 곳들
-         ============================================ */}
-      <section className="mb-8 grid grid-cols-2 gap-2.5">
-        <Link href="/community" className="rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
-          <p className="text-[14px] font-semibold text-ink">내 소담</p>
-          <p className="mt-0.5 text-[12px] text-ink-soft">올린 요리 사진 보기</p>
-        </Link>
-        <Link href="/support" className="rounded-2xl border border-border-soft bg-paper px-4 py-3.5">
-          <p className="text-[14px] font-semibold text-ink">문의 내역</p>
-          <p className="mt-0.5 text-[12px] text-ink-soft">답변 확인하기</p>
-        </Link>
-      </section>
-
-      {/* ============================================
           3. 자주 찾는 재료 — 조회 기록에서 추출한 취향 칩
          ============================================ */}
       {topIngredients.length > 0 && (
@@ -459,6 +424,10 @@ export default function MyPage() {
       <section className="mb-8">
         <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">지원</h2>
         <div className="rounded-2xl bg-paper border border-border-soft divide-y divide-border-soft/70">
+          <Link href="/support" className="flex items-center justify-between px-4 py-3.5">
+            <span className="text-[14px] text-ink">문의하기</span>
+            <span className="text-ink-soft/40">›</span>
+          </Link>
           <Link href="/terms" className="flex items-center justify-between px-4 py-3.5">
             <span className="text-[14px] text-ink">이용약관</span>
             <span className="text-ink-soft/40">›</span>
