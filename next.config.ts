@@ -21,6 +21,19 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "*.r2.dev",
       },
+      {
+        // 카카오 로그인 사용자의 프로필 사진
+        protocol: "http",
+        hostname: "k.kakaocdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "k.kakaocdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "img1.kakaocdn.net",
+      },
     ],
   },
 };
