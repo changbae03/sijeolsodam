@@ -433,13 +433,10 @@ export default function MyPage() {
       <section className="mb-8">
         <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">지원</h2>
         <div className="rounded-2xl bg-paper border border-border-soft divide-y divide-border-soft/70">
-          <a
-            href="mailto:hello.sijeolsodam@gmail.com?subject=%5B%EC%8B%9C%EC%A0%88%EC%86%8C%EB%8B%B4%20%EB%AC%B8%EC%9D%98%5D"
-            className="flex items-center justify-between px-4 py-3.5"
-          >
+          <Link href="/support" className="flex items-center justify-between px-4 py-3.5">
             <span className="text-[14px] text-ink">문의하기</span>
             <span className="text-ink-soft/40">›</span>
-          </a>
+          </Link>
           <Link href="/terms" className="flex items-center justify-between px-4 py-3.5">
             <span className="text-[14px] text-ink">이용약관</span>
             <span className="text-ink-soft/40">›</span>

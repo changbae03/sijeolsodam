@@ -5,6 +5,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getRecipeById } from '@/data/recipes';
 
+interface Inquiry {
+  id: number;
+  body: string;
+  reply: string | null;
+  repliedAt: string | null;
+  createdAt: string;
+  userId: number;
+  userName: string | null;
+  userEmail: string;
+}
+
 interface Overview {
   stats: {
     users: number;
@@ -52,6 +63,9 @@ export default function AdminPage() {
   const [data, setData] = useState<Overview | null>(null);
   const [denied, setDenied] = useState(false);
   const [busyId, setBusyId] = useState<number | null>(null);
+  const [inquiries, setInquiries] = useState<Inquiry[] | null>(null);
+  const [replyDrafts, setReplyDrafts] = useState<Record<number, string>>({});
+  const [replyingId, setReplyingId] = useState<number | null>(null);
 
   const load = () => {
     fetch('/api/admin')
@@ -66,7 +80,37 @@ export default function AdminPage() {
       .catch(() => setDenied(true));
   };
 
-  useEffect(load, []);
+  useEffect(() => {
+    load();
+    fetch('/api/admin/inquiries')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => d && setInquiries(d.inquiries ?? []))
+      .catch(() => setInquiries([]));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- 최초 진입 시 1회
+  }, []);
+
+  const sendReply = async (id: number) => {
+    const reply = (replyDrafts[id] ?? '').trim();
+    if (!reply) return;
+    setReplyingId(id);
+    try {
+      const res = await fetch('/api/admin/inquiries', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, reply }),
+      });
+      if (res.ok) {
+        setInquiries((prev) =>
+          (prev ?? []).map((q) =>
+            q.id === id ? { ...q, reply, repliedAt: new Date().toISOString() } : q
+          )
+        );
+        setReplyDrafts((prev) => ({ ...prev, [id]: '' }));
+      }
+    } finally {
+      setReplyingId(null);
+    }
+  };
 
   const removePost = async (id: number) => {
     if (!window.confirm('이 게시물을 삭제할까요? 되돌릴 수 없어요.')) return;
@@ -142,6 +186,70 @@ export default function AdminPage() {
           </div>
         </section>
       )}
+
+      {/* 문의 — 답변 대기가 먼저 오도록 서버에서 정렬 */}
+      <section className="mt-8">
+        <h2 className="text-[16.5px] font-bold tracking-[-0.01em] text-ink mb-3">
+          문의
+          {inquiries && inquiries.some((q) => !q.reply) && (
+            <span className="ml-2 rounded-full bg-terracotta px-2 py-0.5 text-[11.5px] font-semibold text-cream">
+              대기 {inquiries.filter((q) => !q.reply).length}
+            </span>
+          )}
+        </h2>
+        {inquiries === null ? (
+          <p className="text-[13.5px] text-ink-soft">불러오는 중...</p>
+        ) : inquiries.length === 0 ? (
+          <p className="rounded-2xl border border-border-soft bg-paper px-4 py-8 text-center text-[13.5px] text-ink-soft">
+            아직 들어온 문의가 없어요.
+          </p>
+        ) : (
+          <div className="space-y-2.5">
+            {inquiries.map((q) => (
+              <div key={q.id} className="rounded-2xl border border-border-soft bg-paper p-4">
+                <div className="flex items-center justify-between">
+                  <p className="text-[13px] font-medium text-ink truncate">
+                    {q.userName ?? q.userEmail}
+                  </p>
+                  <span className="text-[11.5px] text-ink-soft/60">
+                    {new Date(q.createdAt).toLocaleDateString('ko-KR')}
+                  </span>
+                </div>
+                <p className="mt-2 whitespace-pre-wrap text-[13.5px] leading-relaxed text-ink">{q.body}</p>
+
+                {q.reply ? (
+                  <div className="mt-3 rounded-xl bg-cream-warm/60 px-3.5 py-3">
+                    <p className="text-[11.5px] font-semibold text-sage-dark">답변함</p>
+                    <p className="mt-1.5 whitespace-pre-wrap text-[13px] leading-relaxed text-ink-soft">
+                      {q.reply}
+                    </p>
+                  </div>
+                ) : (
+                  <div className="mt-3">
+                    <textarea
+                      value={replyDrafts[q.id] ?? ''}
+                      onChange={(e) =>
+                        setReplyDrafts((prev) => ({ ...prev, [q.id]: e.target.value }))
+                      }
+                      rows={3}
+                      placeholder="답변을 적어주세요"
+                      className="w-full resize-none rounded-xl border border-border-soft bg-cream-warm/40 px-3 py-2.5 text-[13.5px] text-ink outline-none focus:border-sage"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => sendReply(q.id)}
+                      disabled={replyingId === q.id || !(replyDrafts[q.id] ?? '').trim()}
+                      className="mt-2 rounded-xl bg-ink px-4 py-2 text-[13px] font-semibold text-cream disabled:opacity-50"
+                    >
+                      {replyingId === q.id ? '보내는 중...' : '답변 보내기'}
+                    </button>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
 
       {/* 최근 게시물 — 문제 콘텐츠 즉시 삭제 */}
       <section className="mt-8">
