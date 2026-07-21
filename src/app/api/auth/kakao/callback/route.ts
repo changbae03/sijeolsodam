@@ -63,7 +63,14 @@ export async function GET(request: NextRequest) {
     const tokenData = (await tokenRes.json()) as KakaoTokenResponse;
     if (!tokenData.access_token) {
       console.error('Kakao token error:', tokenData.error, tokenData.error_description);
-      return failRedirect(origin, '카카오 인증에 실패했어요. 다시 시도해주세요.');
+      // 진단용: 카카오가 준 실제 에러 코드를 로그인 URL에 함께 노출 (원인 확인 후 제거 예정)
+      const url = new URL('/login', origin);
+      url.searchParams.set('error', '카카오 인증에 실패했어요. 다시 시도해주세요.');
+      url.searchParams.set(
+        'kakao',
+        `${tokenData.error ?? 'unknown'}: ${tokenData.error_description ?? ''}`.slice(0, 200)
+      );
+      return NextResponse.redirect(url);
     }
 
     // 2. 프로필 조회

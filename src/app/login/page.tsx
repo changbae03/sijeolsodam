@@ -14,7 +14,12 @@ function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   // 카카오 콜백에서 ?error= 로 돌아온 경우 그대로 보여줌
-  const [error, setError] = useState(searchParams.get('error') ?? '');
+  // (진단용) ?kakao= 로 실제 카카오 에러코드가 오면 함께 표시
+  const [error, setError] = useState(() => {
+    const base = searchParams.get('error') ?? '';
+    const kakao = searchParams.get('kakao');
+    return kakao ? `${base} [${kakao}]` : base;
+  });
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
