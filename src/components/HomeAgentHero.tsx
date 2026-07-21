@@ -101,6 +101,7 @@ export default function HomeAgentHero() {
   const [examplesOpen, setExamplesOpen] = useState(false);
   const [pastQueries, setPastQueries] = useState<PastQuery[] | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const historyScrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const hasConversation = exchanges.length > 0;
@@ -136,6 +137,21 @@ export default function HomeAgentHero() {
       scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }, [exchanges, isLoading]);
+
+  // 지난 대화를 펼치면 목록 스크롤을 맨 아래(가장 최근)에 맞춘다.
+  // 오래된 대화는 위로 스크롤해서 거슬러 올라가는 형태.
+  useEffect(() => {
+    if (!historyOpen) return;
+    if (!pastQueries || pastQueries.length === 0) return;
+    const el = historyScrollRef.current;
+    if (!el) return;
+    const anchorToLatest = () => {
+      el.scrollTop = el.scrollHeight;
+    };
+    anchorToLatest();
+    const raf = requestAnimationFrame(anchorToLatest);
+    return () => cancelAnimationFrame(raf);
+  }, [historyOpen, pastQueries]);
 
   async function send(text: string) {
     const trimmed = text.trim();
@@ -251,9 +267,9 @@ export default function HomeAgentHero() {
               </p>
             )}
 
-            {/* 최근 것이 아래로 오도록 뒤집어, 현재 대화로 자연스럽게 이어지게 */}
+            {/* 최근 것이 아래로 오도록 뒤집고, 펼치면 맨 아래(최근)로 스크롤 앵커링 */}
             {pastQueries && pastQueries.length > 0 && (
-              <div className="max-h-[420px] overflow-y-auto pr-1">
+              <div ref={historyScrollRef} className="max-h-[420px] overflow-y-auto pr-1">
                 {[...pastQueries].reverse().map((q, i) => (
                   <div key={q.id} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
                     <div className="mb-3 flex items-baseline justify-between gap-3">
