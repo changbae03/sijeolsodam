@@ -8,14 +8,31 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: '로그인이 필요해요.' }, { status: 401 });
   }
 
+  const q = request.nextUrl.searchParams.get('q')?.trim();
+
   try {
-    const rows = await sql`
-      SELECT id, message, reply, matched_ingredient, created_at
-      FROM agent_queries
-      WHERE user_id = ${user.userId} AND reply IS NOT NULL
-      ORDER BY created_at DESC
-      LIMIT 50
-    `;
+    let rows;
+    if (q) {
+      // 백슬래시/와일드카드를 이스케이프해 '포함' 검색으로 처리 (message + reply 본문 전체 대상)
+      const escaped = q.replace(/[\\%_]/g, (c) => `\\${c}`);
+      const pattern = `%${escaped}%`;
+      rows = await sql`
+        SELECT id, message, reply, matched_ingredient, created_at
+        FROM agent_queries
+        WHERE user_id = ${user.userId} AND reply IS NOT NULL
+          AND (message ILIKE ${pattern} OR reply ILIKE ${pattern})
+        ORDER BY created_at DESC
+        LIMIT 50
+      `;
+    } else {
+      rows = await sql`
+        SELECT id, message, reply, matched_ingredient, created_at
+        FROM agent_queries
+        WHERE user_id = ${user.userId} AND reply IS NOT NULL
+        ORDER BY created_at DESC
+        LIMIT 50
+      `;
+    }
 
     return NextResponse.json({
       queries: rows.map((r) => ({

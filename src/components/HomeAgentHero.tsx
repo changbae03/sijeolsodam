@@ -100,6 +100,9 @@ export default function HomeAgentHero() {
   const [historyOpen, setHistoryOpen] = useState(false);
   const [examplesOpen, setExamplesOpen] = useState(false);
   const [pastQueries, setPastQueries] = useState<PastQuery[] | null>(null);
+  const [historySearch, setHistorySearch] = useState('');
+  const [searchResults, setSearchResults] = useState<PastQuery[] | null>(null);
+  const [searching, setSearching] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const historyScrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -115,8 +118,14 @@ export default function HomeAgentHero() {
       router.push('/login');
       return;
     }
-    setHistoryOpen((prev) => !prev);
-    if (!pastQueries) {
+    const next = !historyOpen;
+    setHistoryOpen(next);
+    if (!next) {
+      // 닫을 때 검색 상태 초기화
+      setHistorySearch('');
+      setSearchResults(null);
+    }
+    if (next && !pastQueries) {
       fetch('/api/agent-queries')
         .then((res) => res.json())
         .then((data) => setPastQueries(data.queries ?? []))
@@ -139,9 +148,9 @@ export default function HomeAgentHero() {
   }, [exchanges, isLoading]);
 
   // 지난 대화를 펼치면 목록 스크롤을 맨 아래(가장 최근)에 맞춘다.
-  // 오래된 대화는 위로 스크롤해서 거슬러 올라가는 형태.
+  // 오래된 대화는 위로 스크롤해서 거슬러 올라가는 형태. (검색 중일 땐 앵커링 안 함)
   useEffect(() => {
-    if (!historyOpen) return;
+    if (!historyOpen || historySearch.trim()) return;
     if (!pastQueries || pastQueries.length === 0) return;
     const el = historyScrollRef.current;
     if (!el) return;
@@ -151,7 +160,42 @@ export default function HomeAgentHero() {
     anchorToLatest();
     const raf = requestAnimationFrame(anchorToLatest);
     return () => cancelAnimationFrame(raf);
-  }, [historyOpen, pastQueries]);
+  }, [historyOpen, pastQueries, historySearch]);
+
+  // 지난 대화 키워드 검색 (디바운스 300ms, 서버에서 전체 내역 대상 검색)
+  useEffect(() => {
+    if (!historyOpen) return;
+    const keyword = historySearch.trim();
+    if (!keyword) {
+      setSearchResults(null);
+      setSearching(false);
+      return;
+    }
+    setSearching(true);
+    const timer = setTimeout(() => {
+      fetch(`/api/agent-queries?q=${encodeURIComponent(keyword)}`)
+        .then((res) => res.json())
+        .then((data) => setSearchResults(data.queries ?? []))
+        .catch(() => setSearchResults([]))
+        .finally(() => setSearching(false));
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [historySearch, historyOpen]);
+
+  // 지난 대화 한 건(질문 말풍선 + 날짜 + 구조화 답변)을 그리는 공용 렌더러
+  const renderPastItem = (q: PastQuery, i: number) => (
+    <div key={q.id} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
+      <div className="mb-3 flex items-baseline justify-between gap-3">
+        <span className="inline-block max-w-[85%] rounded-2xl rounded-tl-sm bg-cream-warm px-3.5 py-2 text-[13px] text-ink-soft">
+          {q.message}
+        </span>
+        <span className="shrink-0 text-[11.5px] text-ink-soft/50">
+          {new Date(q.createdAt).toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' })}
+        </span>
+      </div>
+      <StructuredReplyView text={q.reply} size="md" />
+    </div>
+  );
 
   async function send(text: string) {
     const trimmed = text.trim();
@@ -267,29 +311,60 @@ export default function HomeAgentHero() {
               </p>
             )}
 
-            {/* 최근 것이 아래로 오도록 뒤집고, 펼치면 맨 아래(최근)로 스크롤 앵커링 */}
+            {/* 키워드 검색창 */}
             {pastQueries && pastQueries.length > 0 && (
-              <div ref={historyScrollRef} className="max-h-[420px] overflow-y-auto pr-1">
-                {[...pastQueries].reverse().map((q, i) => (
-                  <div key={q.id} className={cn(i > 0 && 'border-t border-border-soft/70 pt-5 mt-5')}>
-                    <div className="mb-3 flex items-baseline justify-between gap-3">
-                      <span className="inline-block max-w-[85%] rounded-2xl rounded-tl-sm bg-cream-warm px-3.5 py-2 text-[13px] text-ink-soft">
-                        {q.message}
-                      </span>
-                      <span className="shrink-0 text-[11.5px] text-ink-soft/50">
-                        {new Date(q.createdAt).toLocaleDateString('ko-KR', {
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </span>
-                    </div>
-                    <StructuredReplyView text={q.reply} size="md" />
-                  </div>
-                ))}
+              <div className="relative mb-3">
+                <input
+                  type="text"
+                  value={historySearch}
+                  onChange={(e) => setHistorySearch(e.target.value)}
+                  placeholder="지난 대화 검색 (예: 명란, 파스타)"
+                  className="w-full rounded-xl border border-border-soft bg-cream-warm/40 py-2 pl-3.5 pr-8 text-[13px] text-ink placeholder:text-ink-soft/50 focus:border-ink-soft/40 focus:outline-none"
+                />
+                {historySearch && (
+                  <button
+                    type="button"
+                    onClick={() => setHistorySearch('')}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 px-1 text-[16px] leading-none text-ink-soft/50 hover:text-ink-soft"
+                    aria-label="검색어 지우기"
+                  >
+                    ×
+                  </button>
+                )}
               </div>
             )}
 
-            {hasConversation && (
+            {historySearch.trim() ? (
+              /* 검색 모드 — 전체 내역에서 찾은 결과를 최신순으로 (스크롤 앵커링 없음) */
+              <div className="max-h-[420px] overflow-y-auto pr-1">
+                {searching && (
+                  <p className="py-6 text-center text-[13.5px] text-ink-soft">검색 중...</p>
+                )}
+                {!searching && searchResults && searchResults.length === 0 && (
+                  <p className="py-6 text-center text-[13.5px] text-ink-soft">
+                    ‘{historySearch.trim()}’에 대한 지난 대화가 없어요.
+                  </p>
+                )}
+                {!searching && searchResults && searchResults.length > 0 && (
+                  <>
+                    <p className="mb-3 text-[12px] text-ink-soft/60">
+                      {searchResults.length}개 찾음
+                    </p>
+                    {searchResults.map((q, i) => renderPastItem(q, i))}
+                  </>
+                )}
+              </div>
+            ) : (
+              /* 기본 목록 — 오래된 것 위 → 최근 아래, 펼치면 맨 아래(최근)로 앵커링 */
+              pastQueries &&
+              pastQueries.length > 0 && (
+                <div ref={historyScrollRef} className="max-h-[420px] overflow-y-auto pr-1">
+                  {[...pastQueries].reverse().map((q, i) => renderPastItem(q, i))}
+                </div>
+              )
+            )}
+
+            {hasConversation && !historySearch.trim() && (
               <div className="mt-4 flex items-center gap-2">
                 <span className="h-px flex-1 bg-border-soft" />
                 <span className="text-[11.5px] tracking-[0.08em] text-ink-soft/60">지금 대화</span>
