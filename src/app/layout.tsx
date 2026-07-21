@@ -4,6 +4,7 @@ import { AuthProvider } from "@/lib/auth-context";
 import { FavoritesProvider } from "@/lib/favorites-context";
 import BottomNav from "@/components/BottomNav";
 import GlobalSodami from "@/components/GlobalSodami";
+import WelcomeOnboarding from "@/components/WelcomeOnboarding";
 
 /** 링크 공유 시 미리보기(카카오톡·메시지 등)에 쓰이는 절대 주소 */
 export const SITE_URL =
@@ -71,6 +72,7 @@ export default function RootLayout({
             <div className="flex-1 pb-20">{children}</div>
             <GlobalSodami />
             <BottomNav />
+            <WelcomeOnboarding />
           </FavoritesProvider>
         </AuthProvider>
       </body>

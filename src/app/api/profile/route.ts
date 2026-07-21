@@ -6,6 +6,7 @@ import { getUserFromRequest } from '@/lib/auth';
 async function ensureProfileColumns() {
   await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS avatar_url TEXT`;
   await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS bio TEXT`;
+  await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS onboarded_at TIMESTAMP`;
 }
 
 /**
@@ -20,10 +21,11 @@ export async function PATCH(request: NextRequest) {
 
   try {
     await ensureProfileColumns();
-    const { name, avatarUrl, bio } = (await request.json()) as {
+    const { name, avatarUrl, bio, onboarded } = (await request.json()) as {
       name?: string;
       avatarUrl?: string | null;
       bio?: string;
+      onboarded?: boolean;
     };
 
     if (name !== undefined) {
@@ -50,6 +52,11 @@ export async function PATCH(request: NextRequest) {
     if (bio !== undefined) {
       const trimmedBio = bio.trim().slice(0, 60);
       await sql`UPDATE users SET bio = ${trimmedBio} WHERE id = ${user.userId}`;
+    }
+
+    if (onboarded === true) {
+      // 이미 값이 있으면 덮어쓰지 않음 (최초 완료 시각 유지)
+      await sql`UPDATE users SET onboarded_at = NOW() WHERE id = ${user.userId} AND onboarded_at IS NULL`;
     }
 
     const rows = (await sql`

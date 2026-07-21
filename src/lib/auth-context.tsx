@@ -8,6 +8,7 @@ interface User {
   name: string | null;
   avatarUrl?: string | null;
   bio?: string | null;
+  onboardedAt?: string | null;
 }
 
 interface AuthContextValue {

@@ -10,9 +10,18 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const result = await sql`
-      SELECT id, email, name, avatar_url, bio FROM users WHERE id = ${payload.userId}
-    `;
+    let result;
+    try {
+      result = await sql`
+        SELECT id, email, name, avatar_url, bio, onboarded_at FROM users WHERE id = ${payload.userId}
+      `;
+    } catch {
+      // onboarded_at 컬럼이 아직 없는 초기 DB면 생성 후 재시도 (지연 마이그레이션)
+      await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS onboarded_at TIMESTAMP`;
+      result = await sql`
+        SELECT id, email, name, avatar_url, bio, onboarded_at FROM users WHERE id = ${payload.userId}
+      `;
+    }
 
     if (result.length === 0) {
       return NextResponse.json({ user: null });
@@ -20,7 +29,14 @@ export async function GET(request: NextRequest) {
 
     const u = result[0];
     return NextResponse.json({
-      user: { id: u.id, email: u.email, name: u.name, avatarUrl: u.avatar_url, bio: u.bio },
+      user: {
+        id: u.id,
+        email: u.email,
+        name: u.name,
+        avatarUrl: u.avatar_url,
+        bio: u.bio,
+        onboardedAt: u.onboarded_at,
+      },
     });
   } catch (error) {
     console.error('Me error:', error);
