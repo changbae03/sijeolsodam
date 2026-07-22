@@ -91,11 +91,16 @@ function getVariant(name: string, category: Category): string {
  */
 const IMAGE_HINTS: Record<string, string> = {
   갈치:
-    'CRITICAL SPECIES AND SHAPE: 갈치 is the largehead hairtail (beltfish / cutlassfish) — ' +
-    'an extremely long, slender, flat, ribbon-like fish with a bright metallic silver body, ' +
-    'no scales, a small pointed head, and a body tapering to a long thin whip-like tail. ' +
-    'It must NOT look like a short, round, plump or torpedo-shaped fish such as mackerel or herring. ' +
-    'Show whole elongated silver ribbon-shaped fish laid out lengthwise.',
+    'CRITICAL SPECIES: 갈치 is the largehead hairtail (beltfish / cutlassfish / Japanese tachiuo, ' +
+    'Trichiurus lepturus). Required anatomy: a body shaped like a long flat metal belt or sword blade — ' +
+    'strongly flattened side-to-side (ribbon-like), not round or tube-shaped in cross-section. ' +
+    'Skin is scaleless and mirror-bright silver. ' +
+    'ONE single long dorsal fin runs continuously along the ENTIRE length of the back from head to tail. ' +
+    'It has NO tail fin and NO forked tail: the body simply tapers to a fine whip-like point at the end. ' +
+    'There are NO small separate finlets along the back or belly. ' +
+    'The head is large with a protruding lower jaw and visible sharp fangs. ' +
+    'DO NOT depict Pacific saury (꽁치), mackerel, herring, needlefish, halfbeak or any torpedo-shaped fish ' +
+    'with a forked tail fin. Show whole fish laid out lengthwise as long straight silver ribbons.',
 };
 
 function buildPrompt(name: string, category: Category): string {
