@@ -50,6 +50,8 @@ const ingredientArg = args.find((a) => a.startsWith('--ingredient='))?.split('='
 const runAll = args.includes('--all');
 const replaceExisting = args.includes('--replace-existing');
 const replaceBlob = args.includes('--replace-blob');
+// 로컬에 이미 저장된 이미지까지 강제로 다시 생성 (특정 이미지 교정용)
+const forceRegen = args.includes('--force');
 
 if (!ingredientArg && !runAll) {
   console.error(
@@ -83,12 +85,27 @@ function getVariant(name: string, category: Category): string {
   return variants[seed % variants.length];
 }
 
+/**
+ * 한글 이름만으로는 Gemini가 종/형태를 잘못 그리는 식재료에 영어 종명 + 형태 힌트를 덧붙인다.
+ * (예: '갈치'를 통통한 생선으로 그리던 문제) — 새로 발견되는 대로 여기에 추가.
+ */
+const IMAGE_HINTS: Record<string, string> = {
+  갈치:
+    'CRITICAL SPECIES AND SHAPE: 갈치 is the largehead hairtail (beltfish / cutlassfish) — ' +
+    'an extremely long, slender, flat, ribbon-like fish with a bright metallic silver body, ' +
+    'no scales, a small pointed head, and a body tapering to a long thin whip-like tail. ' +
+    'It must NOT look like a short, round, plump or torpedo-shaped fish such as mackerel or herring. ' +
+    'Show whole elongated silver ribbon-shaped fish laid out lengthwise.',
+};
+
 function buildPrompt(name: string, category: Category): string {
   const variant = getVariant(name, category);
+  const hint = IMAGE_HINTS[name] ? ` ${IMAGE_HINTS[name]} ` : '';
   return (
     `A 45-degree top-down natural light food photograph of fresh, raw, uncooked ${name} ` +
     `(Korean seasonal ingredient), ${variant}. ` +
     `Ingredient only — absolutely NO cooked or prepared dish, no plate of cooked food, no cooking. ` +
+    hint +
     `Background: ivory linen, light wood, or neutral stone table. ` +
     `Soft natural daylight, warm muted color grading, minimal editorial styling, generous negative space, subtle soft shadow.` +
     SODAMI_VISUAL_STYLE
@@ -169,11 +186,13 @@ async function main() {
     const imageUrlMatch = line.match(/imageUrl: '([^']*)'/);
     const currentUrl = imageUrlMatch?.[1] ?? '';
 
-    if (isAlreadyGenerated(currentUrl)) {
-      continue; // 로컬 저장분은 항상 건너뜀, Blob은 --replace-blob 없으면 건너뜀
-    }
-    if (currentUrl && !replaceExisting && !replaceBlob) {
-      continue; // 기존 사진 있고 --replace-existing 안 줬으면 건너뜀
+    if (!forceRegen) {
+      if (isAlreadyGenerated(currentUrl)) {
+        continue; // 로컬 저장분은 항상 건너뜀, Blob은 --replace-blob 없으면 건너뜀
+      }
+      if (currentUrl && !replaceExisting && !replaceBlob) {
+        continue; // 기존 사진 있고 --replace-existing 안 줬으면 건너뜀
+      }
     }
 
     let url = generatedUrlByName.get(name);
