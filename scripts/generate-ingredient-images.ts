@@ -52,6 +52,8 @@ const replaceExisting = args.includes('--replace-existing');
 const replaceBlob = args.includes('--replace-blob');
 // 로컬에 이미 저장된 이미지까지 강제로 다시 생성 (특정 이미지 교정용)
 const forceRegen = args.includes('--force');
+// 어종/형태가 계속 틀리게 나올 때 참조 사진을 함께 넣는다: --ref=./ref/갈치.jpg
+const refImagePath = args.find((a) => a.startsWith('--ref='))?.split('=')[1];
 
 if (!ingredientArg && !runAll) {
   console.error(
@@ -118,9 +120,34 @@ function buildPrompt(name: string, category: Category): string {
 }
 
 async function generateImageBuffer(prompt: string): Promise<Buffer | null> {
+  // --ref=<경로>로 참조 사진을 주면 어종/형태를 그 사진에 맞춰 생성한다.
+  // (구도·배경은 그대로 시절소담 스타일로, 사진을 베끼지는 않도록 지시)
+  const contents: unknown[] = [];
+  if (refImagePath) {
+    const refBuffer = readFileSync(refImagePath);
+    const ext = refImagePath.split('.').pop()?.toLowerCase();
+    const mimeType =
+      ext === 'png' ? 'image/png' : ext === 'webp' ? 'image/webp' : 'image/jpeg';
+    contents.push({
+      inlineData: { mimeType, data: refBuffer.toString('base64') },
+    });
+    contents.push({
+      text:
+        'The attached photo is an ANATOMY REFERENCE ONLY, provided to show what this ' +
+        'species actually looks like — its body shape, proportions, fins, head and colour. ' +
+        'Match the species and anatomy exactly. Do NOT copy the reference photo itself: ' +
+        'ignore its composition, framing, background, lighting and crowding, and instead ' +
+        'create an entirely new original photograph as described below.\n\n' +
+        prompt,
+    });
+  } else {
+    contents.push({ text: prompt });
+  }
+
   const response = await ai.models.generateContent({
     model: 'gemini-2.5-flash-image',
-    contents: prompt,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    contents: contents as any,
   });
   const parts = response.candidates?.[0]?.content?.parts ?? [];
   for (const part of parts) {
