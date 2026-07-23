@@ -125,42 +125,24 @@ interface ImageHint {
 const IMAGE_HINTS: Record<string, ImageHint> = {
   갈치: {
     subject:
-      'cutlassfish steaks — thick crosswise cut pieces of cutlassfish, also called hairtail or ' +
-      'beltfish (Trichiurus lepturus), known in Korea as 갈치, a Korean seasonal seafood ingredient',
+      'cut pieces of cutlassfish (hairtail / beltfish, Trichiurus lepturus), known in Korea as 갈치 — ' +
+      'a Korean seasonal seafood ingredient, sold cut into short steaks for braising',
     species:
-      'CRITICAL — WHAT EACH PIECE MUST LOOK LIKE: this image shows hairtail (갈치, Trichiurus lepturus) ' +
-      'that has ALREADY been cut into steaks. Each piece is a short RECTANGULAR BLOCK of fish, like a ' +
-      'small silver bar or a thick domino. ' +
-      'GEOMETRY OF ONE PIECE: about 6cm long, about 5cm tall, and only about 2cm thick — because the live ' +
-      'fish is a flat ribbon, every piece is TALL and THIN, never round or plump. ' +
-      'BOTH ends of every piece are FLAT CUT SURFACES showing white flesh with one small round bone in ' +
-      'the middle and a little natural pink beside the bone. ' +
-      'The width stays the SAME along the whole length of a piece — the pieces DO NOT taper to a point. ' +
-      'ABSOLUTELY FORBIDDEN in this image: tail fins, forked tails, fish heads, eyes, pointed or ' +
-      'teardrop-shaped pieces, whole small fish, fillets. Every single piece must be a blunt-ended ' +
-      'rectangular chunk cut from both sides. ' +
-      'SURFACE AND COLOUR — CRITICAL: the skin is scaleless, smooth and UNIFORMLY mirror-bright ' +
-      'metallic silver over the entire piece, top to bottom, like polished chrome or aluminium foil. ' +
-      'There is NO dark blue, green, navy or black band along the back, NO tiger stripes, NO spots, ' +
-      'NO two-tone dark-top/pale-belly colouring. Any dark dorsal band means the wrong fish was drawn. ' +
-      'Only a very thin hairline fin edge may be slightly darker. ' +
-      'FLATNESS — CRITICAL: each piece is a FLAT SLAB, not a cube or a chunky block. ' +
-      'Its thickness is less than half its height, so laid on its side it looks like a thin plank of ' +
-      'silver fish, clearly wider than it is thick. Do NOT draw chunky cube-like or barrel-like pieces. ' +
-      'DO NOT depict mackerel, Spanish mackerel, Pacific saury, herring, sardine or any round-bodied ' +
-      'or dark-backed fish.',
+      'The fish is a slender ribbon-shaped species with scaleless, uniformly bright silver skin — ' +
+      'no dark back, no stripes, no spots. Each piece is a short blunt-ended steak cut straight across ' +
+      'the body, so it is flat and slab-like rather than round or chunky, with no head and no tail fin. ' +
+      'Keep it looking like real fresh fish at a market counter — natural surface irregularity, ' +
+      'slight moisture, soft imperfections — not a smooth plastic or CGI block. ' +
+      'It is not mackerel, Spanish mackerel, saury or herring.',
     presentation:
-      'five or six rectangular cut steaks of hairtail laid flat and slightly overlapping on a bed of ' +
-      'crushed ice on a wide pale blue-grey ceramic plate, all pieces roughly the same size and neatly ' +
-      'blunt-ended, a few stray ice shards on the table around the plate, photographed from directly ' +
-      'above looking straight down',
+      'five or six cut steaks resting on crushed ice on a wide pale blue-grey ceramic plate, ' +
+      'arranged loosely and naturally as a fishmonger would lay them out, a few stray ice shards ' +
+      'on the table beside the plate, photographed from above',
     setting:
       'SETTING OVERRIDE for this image: ignore the warm cream / aged wood / terracotta linen setting. ' +
-      'Use a calm cool-toned setting instead — a smooth pale grey stone or concrete surface, ' +
-      'a pale blue-grey ceramic plate, crushed ice. Soft, even, diffused daylight with gentle shadows. ' +
-      'The mood is clean, cold and fresh, like seafood just laid out at a good fish counter. ' +
-      'Keep the muted film-like grade and generous negative space, but let the whites and silvers stay ' +
-      'cool and crisp rather than warm.',
+      'Use a calm cool-toned setting instead — a smooth pale grey stone surface, a pale blue-grey ' +
+      'ceramic plate, crushed ice. Soft, even, diffused daylight with gentle shadows. ' +
+      'The mood is clean, cold and fresh, like seafood just laid out at a good fish counter.',
   },
 };
 
