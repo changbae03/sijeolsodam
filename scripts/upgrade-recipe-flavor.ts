@@ -26,6 +26,7 @@ import { join } from 'path';
 import {
   SODAMI_TEXT_PERSONA_PROMPT,
   SODAMI_FLAVOR_STANDARD,
+  SODAMI_TECHNIQUE_STANDARD,
   SODAMI_KOREAN_PALATE,
 } from '../src/lib/persona';
 
@@ -126,6 +127,8 @@ function buildPrompt(
   return `${SODAMI_TEXT_PERSONA_PROMPT}
 
 ${SODAMI_FLAVOR_STANDARD}
+
+${SODAMI_TECHNIQUE_STANDARD}
 
 ${SODAMI_KOREAN_PALATE}
 

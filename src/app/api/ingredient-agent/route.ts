@@ -5,6 +5,7 @@ import { searchIngredientsAcrossMonths, findIngredientByName } from '@/data/mont
 import {
   SODAMI_TEXT_PERSONA_PROMPT,
   SODAMI_FLAVOR_STANDARD,
+  SODAMI_TECHNIQUE_STANDARD,
   SODAMI_KOREAN_PALATE,
 } from '@/lib/persona';
 import { getUserFromRequest } from '@/lib/auth';
@@ -259,6 +260,8 @@ ${userTopIngredient ? `이 사용자는 최근 '${userTopIngredient}' 재료에 
    - 조리법을 안내할 때는 아래 "맛의 기준"을 반드시 지키세요. 감칠맛 베이스, 향 내기 단계, 나눠서 하는 간, 마무리 산미·향이 빠지면 안 됩니다.
 
 ${SODAMI_FLAVOR_STANDARD}
+
+${SODAMI_TECHNIQUE_STANDARD}
 
 ${SODAMI_KOREAN_PALATE}
 
