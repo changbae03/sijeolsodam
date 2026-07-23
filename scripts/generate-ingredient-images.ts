@@ -109,21 +109,34 @@ function getVariant(name: string, category: Category): string {
 interface ImageHint {
   species?: string;
   presentation?: string;
+  /**
+   * SODAMI_VISUAL_STYLE의 "생재료는 따뜻한 크림/원목 테이블" 기본 세팅을 덮어쓴다.
+   * 얼음 위 생선처럼 차갑고 깔끔한 연출이 어울리는 재료에 사용.
+   */
+  setting?: string;
 }
 
 const IMAGE_HINTS: Record<string, ImageHint> = {
   갈치: {
     species:
       'CRITICAL SPECIES: 갈치 is the largehead hairtail (beltfish / cutlassfish, Trichiurus lepturus). ' +
-      'Its flesh is pure white and the skin is scaleless, mirror-bright metallic silver. ' +
-      'The body is strongly flattened side-to-side, so each cut piece has a tall, narrow, ' +
-      'slightly rectangular cross-section — never a round tube shape. ' +
-      'A single continuous dorsal fin runs along the top edge of every piece. ' +
+      'The cut flesh is pure bright white and firm, with a small round bone at the centre of each cross-section ' +
+      'and a touch of natural pink near the bone. The skin is scaleless and mirror-bright metallic silver. ' +
+      'The body is strongly flattened side-to-side, so each cut steak is TALL and NARROW in cross-section — ' +
+      'never a round tube. A single continuous fin runs along the top edge of each piece. ' +
       'DO NOT depict mackerel, Pacific saury, herring or any round-bodied fish.',
     presentation:
-      'cut into 5 to 6 thick crosswise steaks about 6cm long (the way hairtail is sold and ' +
-      'prepared for Korean braising), the cut pieces arranged in a loose overlapping row on ' +
-      'crushed ice on a pale ceramic plate, shot from a high angle',
+      'cleaned and cut into 5 thick crosswise steaks about 6cm long — the way hairtail is sold at a ' +
+      'Korean fish counter and prepared for braising — the pieces laid in a loose, slightly overlapping ' +
+      'arrangement on a bed of crushed ice on a wide pale blue-grey ceramic plate, with a few stray ice ' +
+      'shards scattered on the table around the plate, photographed from a high angle looking down',
+    setting:
+      'SETTING OVERRIDE for this image: ignore the warm cream / aged wood / terracotta linen setting. ' +
+      'Use a calm cool-toned setting instead — a smooth pale grey stone or concrete surface, ' +
+      'a pale blue-grey ceramic plate, crushed ice. Soft, even, diffused daylight with gentle shadows. ' +
+      'The mood is clean, cold and fresh, like seafood just laid out at a good fish counter. ' +
+      'Keep the muted film-like grade and generous negative space, but let the whites and silvers stay ' +
+      'cool and crisp rather than warm.',
   },
 };
 
@@ -131,14 +144,19 @@ function buildPrompt(name: string, category: Category): string {
   const hintEntry = IMAGE_HINTS[name];
   const variant = hintEntry?.presentation ?? getVariant(name, category);
   const hint = hintEntry?.species ? ` ${hintEntry.species} ` : '';
+  const background = hintEntry?.setting
+    ? ''
+    : `Background: ivory linen, light wood, or neutral stone table. `;
+  const settingOverride = hintEntry?.setting ? ` ${hintEntry.setting}` : '';
   return (
     `A 45-degree top-down natural light food photograph of fresh, raw, uncooked ${name} ` +
     `(Korean seasonal ingredient), ${variant}. ` +
     `Ingredient only — absolutely NO cooked or prepared dish, no plate of cooked food, no cooking. ` +
     hint +
-    `Background: ivory linen, light wood, or neutral stone table. ` +
+    background +
     `Soft natural daylight, warm muted color grading, minimal editorial styling, generous negative space, subtle soft shadow.` +
-    SODAMI_VISUAL_STYLE
+    SODAMI_VISUAL_STYLE +
+    settingOverride
   );
 }
 
