@@ -23,7 +23,11 @@
 import { GoogleGenAI } from '@google/genai';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
-import { SODAMI_TEXT_PERSONA_PROMPT, SODAMI_FLAVOR_STANDARD } from '../src/lib/persona';
+import {
+  SODAMI_TEXT_PERSONA_PROMPT,
+  SODAMI_FLAVOR_STANDARD,
+  SODAMI_KOREAN_PALATE,
+} from '../src/lib/persona';
 
 const apiKey = process.env.GEMINI_API_KEY;
 if (!apiKey) {
@@ -122,6 +126,8 @@ function buildPrompt(
   return `${SODAMI_TEXT_PERSONA_PROMPT}
 
 ${SODAMI_FLAVOR_STANDARD}
+
+${SODAMI_KOREAN_PALATE}
 
 아래는 "시절소담"에 이미 실려 있는 레시피입니다. 그런데 이 레시피대로 만들면 맛이 밍밍하다는 피드백을 받았습니다.
 위 "맛의 기준"에 맞춰, **실제로 먹었을 때 확실히 맛있도록** 재료와 조리 단계를 다시 설계해주세요.
