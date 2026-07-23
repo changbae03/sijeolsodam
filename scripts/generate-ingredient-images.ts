@@ -119,17 +119,25 @@ interface ImageHint {
 const IMAGE_HINTS: Record<string, ImageHint> = {
   갈치: {
     species:
-      'CRITICAL SPECIES: 갈치 is the largehead hairtail (beltfish / cutlassfish, Trichiurus lepturus). ' +
-      'The cut flesh is pure bright white and firm, with a small round bone at the centre of each cross-section ' +
-      'and a touch of natural pink near the bone. The skin is scaleless and mirror-bright metallic silver. ' +
-      'The body is strongly flattened side-to-side, so each cut steak is TALL and NARROW in cross-section — ' +
-      'never a round tube. A single continuous fin runs along the top edge of each piece. ' +
-      'DO NOT depict mackerel, Pacific saury, herring or any round-bodied fish.',
+      'CRITICAL — WHAT EACH PIECE MUST LOOK LIKE: this image shows hairtail (갈치, Trichiurus lepturus) ' +
+      'that has ALREADY been cut into steaks. Each piece is a short RECTANGULAR BLOCK of fish, like a ' +
+      'small silver bar or a thick domino. ' +
+      'GEOMETRY OF ONE PIECE: about 6cm long, about 5cm tall, and only about 2cm thick — because the live ' +
+      'fish is a flat ribbon, every piece is TALL and THIN, never round or plump. ' +
+      'BOTH ends of every piece are FLAT CUT SURFACES showing white flesh with one small round bone in ' +
+      'the middle and a little natural pink beside the bone. ' +
+      'The width stays the SAME along the whole length of a piece — the pieces DO NOT taper to a point. ' +
+      'ABSOLUTELY FORBIDDEN in this image: tail fins, forked tails, fish heads, eyes, pointed or ' +
+      'teardrop-shaped pieces, whole small fish, fillets. Every single piece must be a blunt-ended ' +
+      'rectangular chunk cut from both sides. ' +
+      'SURFACE: scaleless, smooth, mirror-bright metallic silver skin on the two broad flat sides, ' +
+      'with a thin dark fin line running along the top and bottom edges. ' +
+      'DO NOT depict mackerel, Pacific saury, herring, sardine or any round-bodied fish.',
     presentation:
-      'cleaned and cut into 5 thick crosswise steaks about 6cm long — the way hairtail is sold at a ' +
-      'Korean fish counter and prepared for braising — the pieces laid in a loose, slightly overlapping ' +
-      'arrangement on a bed of crushed ice on a wide pale blue-grey ceramic plate, with a few stray ice ' +
-      'shards scattered on the table around the plate, photographed from a high angle looking down',
+      'five or six rectangular cut steaks of hairtail laid flat and slightly overlapping on a bed of ' +
+      'crushed ice on a wide pale blue-grey ceramic plate, all pieces roughly the same size and neatly ' +
+      'blunt-ended, a few stray ice shards on the table around the plate, photographed from directly ' +
+      'above looking straight down',
     setting:
       'SETTING OVERRIDE for this image: ignore the warm cream / aged wood / terracotta linen setting. ' +
       'Use a calm cool-toned setting instead — a smooth pale grey stone or concrete surface, ' +
