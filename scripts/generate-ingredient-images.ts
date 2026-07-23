@@ -88,26 +88,37 @@ function getVariant(name: string, category: Category): string {
 }
 
 /**
- * 한글 이름만으로는 Gemini가 종/형태를 잘못 그리는 식재료에 영어 종명 + 형태 힌트를 덧붙인다.
- * (예: '갈치'를 통통한 생선으로 그리던 문제) — 새로 발견되는 대로 여기에 추가.
+ * 한글 이름만으로는 Gemini가 종/형태를 잘못 그리거나, 기본 연출이 어울리지 않는 식재료를 위한 힌트.
+ *  - species: 어종·품종의 생김새를 못 맞출 때 쓰는 형태 설명
+ *  - presentation: 기본 연출(SEAFOOD_VARIANTS/PRODUCE_VARIANTS) 대신 쓸 구도.
+ *    실제로 그 재료를 사고 손질하는 모습이 더 자연스러울 때 지정한다.
+ * 새로 발견되는 대로 여기에 추가.
  */
-const IMAGE_HINTS: Record<string, string> = {
-  갈치:
-    'CRITICAL SPECIES: 갈치 is the largehead hairtail (beltfish / cutlassfish / Japanese tachiuo, ' +
-    'Trichiurus lepturus). Required anatomy: a body shaped like a long flat metal belt or sword blade — ' +
-    'strongly flattened side-to-side (ribbon-like), not round or tube-shaped in cross-section. ' +
-    'Skin is scaleless and mirror-bright silver. ' +
-    'ONE single long dorsal fin runs continuously along the ENTIRE length of the back from head to tail. ' +
-    'It has NO tail fin and NO forked tail: the body simply tapers to a fine whip-like point at the end. ' +
-    'There are NO small separate finlets along the back or belly. ' +
-    'The head is large with a protruding lower jaw and visible sharp fangs. ' +
-    'DO NOT depict Pacific saury (꽁치), mackerel, herring, needlefish, halfbeak or any torpedo-shaped fish ' +
-    'with a forked tail fin. Show whole fish laid out lengthwise as long straight silver ribbons.',
+interface ImageHint {
+  species?: string;
+  presentation?: string;
+}
+
+const IMAGE_HINTS: Record<string, ImageHint> = {
+  갈치: {
+    species:
+      'CRITICAL SPECIES: 갈치 is the largehead hairtail (beltfish / cutlassfish, Trichiurus lepturus). ' +
+      'Its flesh is pure white and the skin is scaleless, mirror-bright metallic silver. ' +
+      'The body is strongly flattened side-to-side, so each cut piece has a tall, narrow, ' +
+      'slightly rectangular cross-section — never a round tube shape. ' +
+      'A single continuous dorsal fin runs along the top edge of every piece. ' +
+      'DO NOT depict mackerel, Pacific saury, herring or any round-bodied fish.',
+    presentation:
+      'cut into 5 to 6 thick crosswise steaks about 6cm long (the way hairtail is sold and ' +
+      'prepared for Korean braising), the cut pieces arranged in a loose overlapping row on ' +
+      'crushed ice on a pale ceramic plate, shot from a high angle',
+  },
 };
 
 function buildPrompt(name: string, category: Category): string {
-  const variant = getVariant(name, category);
-  const hint = IMAGE_HINTS[name] ? ` ${IMAGE_HINTS[name]} ` : '';
+  const hintEntry = IMAGE_HINTS[name];
+  const variant = hintEntry?.presentation ?? getVariant(name, category);
+  const hint = hintEntry?.species ? ` ${hintEntry.species} ` : '';
   return (
     `A 45-degree top-down natural light food photograph of fresh, raw, uncooked ${name} ` +
     `(Korean seasonal ingredient), ${variant}. ` +
