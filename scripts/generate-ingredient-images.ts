@@ -27,8 +27,9 @@
 import { GoogleGenAI } from '@google/genai';
 import { put } from '@vercel/blob';
 import sharp from 'sharp';
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
+import { homedir } from 'os';
 import { SODAMI_VISUAL_STYLE } from '../src/lib/persona';
 
 const apiKey = process.env.GEMINI_API_KEY;
@@ -53,7 +54,18 @@ const replaceBlob = args.includes('--replace-blob');
 // 로컬에 이미 저장된 이미지까지 강제로 다시 생성 (특정 이미지 교정용)
 const forceRegen = args.includes('--force');
 // 어종/형태가 계속 틀리게 나올 때 참조 사진을 함께 넣는다: --ref=./ref/갈치.jpg
-const refImagePath = args.find((a) => a.startsWith('--ref='))?.split('=')[1];
+const refImagePathRaw = args.find((a) => a.startsWith('--ref='))?.split('=')[1];
+// 홈 디렉토리(~) 표기를 실제 경로로 펼친다
+const refImagePath = refImagePathRaw?.startsWith('~')
+  ? join(homedir(), refImagePathRaw.slice(1))
+  : refImagePathRaw;
+
+if (refImagePath && !existsSync(refImagePath)) {
+  console.error(`참조 이미지를 찾을 수 없습니다: ${refImagePath}`);
+  console.error('--ref= 뒤에는 실제 파일 경로를 넣어주세요.');
+  console.error('맥에서는 "--ref=" 까지 입력한 뒤 파일을 터미널 창으로 드래그하면 경로가 자동 입력됩니다.');
+  process.exit(1);
+}
 
 if (!ingredientArg && !runAll) {
   console.error(
@@ -209,6 +221,8 @@ function slugify(name: string): string {
 }
 
 async function main() {
+  let successCount = 0;
+  let failCount = 0;
   const filePath = join(__dirname, '..', 'src', 'data', 'months.ts');
   const lines = readFileSync(filePath, 'utf-8').split('\n');
 
@@ -253,6 +267,7 @@ async function main() {
         console.log('  업로드 완료:', url);
       } catch (err) {
         console.error('  생성 에러:', err);
+        failCount++;
         continue;
       }
       await new Promise((r) => setTimeout(r, 1500));
@@ -268,9 +283,15 @@ async function main() {
       );
     }
     writeFileSync(filePath, lines.join('\n'), 'utf-8');
+    successCount++;
   }
 
-  console.log('\n완료!');
+  if (successCount === 0 && failCount > 0) {
+    console.log(`\n생성된 이미지가 없습니다. (실패 ${failCount}건) 위 에러를 확인해주세요.`);
+    process.exitCode = 1;
+  } else {
+    console.log(`\n완료! ${successCount}개 생성${failCount > 0 ? `, ${failCount}건 실패` : ''}`);
+  }
 }
 
 main();
