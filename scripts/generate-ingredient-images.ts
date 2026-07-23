@@ -107,6 +107,12 @@ function getVariant(name: string, category: Category): string {
  * 새로 발견되는 대로 여기에 추가.
  */
 interface ImageHint {
+  /**
+   * 프롬프트 문장의 주어를 통째로 교체한다.
+   * 한글 이름만으로는 모델이 종을 못 알아듣는 재료에 영어 종명을 앞세우기 위한 필드.
+   * 지정하지 않으면 `${한글이름} (Korean seasonal ingredient)`가 쓰인다.
+   */
+  subject?: string;
   species?: string;
   presentation?: string;
   /**
@@ -118,6 +124,9 @@ interface ImageHint {
 
 const IMAGE_HINTS: Record<string, ImageHint> = {
   갈치: {
+    subject:
+      'cutlassfish steaks — thick crosswise cut pieces of cutlassfish, also called hairtail or ' +
+      'beltfish (Trichiurus lepturus), known in Korea as 갈치, a Korean seasonal seafood ingredient',
     species:
       'CRITICAL — WHAT EACH PIECE MUST LOOK LIKE: this image shows hairtail (갈치, Trichiurus lepturus) ' +
       'that has ALREADY been cut into steaks. Each piece is a short RECTANGULAR BLOCK of fish, like a ' +
@@ -150,6 +159,9 @@ const IMAGE_HINTS: Record<string, ImageHint> = {
 
 function buildPrompt(name: string, category: Category): string {
   const hintEntry = IMAGE_HINTS[name];
+  // 한글 이름만 주면 모델이 종을 잘못 잡는 경우, 문장 주어 자체를 영어 종명으로 교체한다.
+  // (프롬프트 첫머리의 주어가 결과를 가장 강하게 좌우하기 때문)
+  const subject = hintEntry?.subject ?? `${name} (Korean seasonal ingredient)`;
   const variant = hintEntry?.presentation ?? getVariant(name, category);
   const hint = hintEntry?.species ? ` ${hintEntry.species} ` : '';
   const background = hintEntry?.setting
@@ -157,8 +169,8 @@ function buildPrompt(name: string, category: Category): string {
     : `Background: ivory linen, light wood, or neutral stone table. `;
   const settingOverride = hintEntry?.setting ? ` ${hintEntry.setting}` : '';
   return (
-    `A 45-degree top-down natural light food photograph of fresh, raw, uncooked ${name} ` +
-    `(Korean seasonal ingredient), ${variant}. ` +
+    `A 45-degree top-down natural light food photograph of fresh, raw, uncooked ${subject}, ` +
+    `${variant}. ` +
     `Ingredient only — absolutely NO cooked or prepared dish, no plate of cooked food, no cooking. ` +
     hint +
     background +
