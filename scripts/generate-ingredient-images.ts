@@ -139,9 +139,16 @@ const IMAGE_HINTS: Record<string, ImageHint> = {
       'ABSOLUTELY FORBIDDEN in this image: tail fins, forked tails, fish heads, eyes, pointed or ' +
       'teardrop-shaped pieces, whole small fish, fillets. Every single piece must be a blunt-ended ' +
       'rectangular chunk cut from both sides. ' +
-      'SURFACE: scaleless, smooth, mirror-bright metallic silver skin on the two broad flat sides, ' +
-      'with a thin dark fin line running along the top and bottom edges. ' +
-      'DO NOT depict mackerel, Pacific saury, herring, sardine or any round-bodied fish.',
+      'SURFACE AND COLOUR — CRITICAL: the skin is scaleless, smooth and UNIFORMLY mirror-bright ' +
+      'metallic silver over the entire piece, top to bottom, like polished chrome or aluminium foil. ' +
+      'There is NO dark blue, green, navy or black band along the back, NO tiger stripes, NO spots, ' +
+      'NO two-tone dark-top/pale-belly colouring. Any dark dorsal band means the wrong fish was drawn. ' +
+      'Only a very thin hairline fin edge may be slightly darker. ' +
+      'FLATNESS — CRITICAL: each piece is a FLAT SLAB, not a cube or a chunky block. ' +
+      'Its thickness is less than half its height, so laid on its side it looks like a thin plank of ' +
+      'silver fish, clearly wider than it is thick. Do NOT draw chunky cube-like or barrel-like pieces. ' +
+      'DO NOT depict mackerel, Spanish mackerel, Pacific saury, herring, sardine or any round-bodied ' +
+      'or dark-backed fish.',
     presentation:
       'five or six rectangular cut steaks of hairtail laid flat and slightly overlapping on a bed of ' +
       'crushed ice on a wide pale blue-grey ceramic plate, all pieces roughly the same size and neatly ' +
