@@ -125,18 +125,24 @@ interface ImageHint {
 const IMAGE_HINTS: Record<string, ImageHint> = {
   갈치: {
     subject:
-      'cut pieces of cutlassfish (hairtail / beltfish, Trichiurus lepturus), known in Korea as 갈치 — ' +
+      'cut steaks of cutlassfish (hairtail / beltfish, Trichiurus lepturus), known in Korea as 갈치 — ' +
       'a Korean seasonal seafood ingredient, sold cut into short steaks for braising',
     species:
-      'The fish is a slender ribbon-shaped species with scaleless, uniformly bright silver skin — ' +
-      'no dark back, no stripes, no spots. Each piece is a short blunt-ended steak cut straight across ' +
-      'the body, so it is flat and slab-like rather than round or chunky, with no head and no tail fin. ' +
-      'Keep it looking like real fresh fish at a market counter — natural surface irregularity, ' +
-      'slight moisture, soft imperfections — not a smooth plastic or CGI block. ' +
-      'It is not mackerel, Spanish mackerel, saury or herring.',
+      'SHAPE OF EACH PIECE — the single most important thing: every piece is a short steak cut ' +
+      'straight across the body, so BOTH ends are flat cut faces. ' +
+      'There must be NO tail fin, NO forked tail, NO tapering point, NO head and NO eyes anywhere in ' +
+      'the image — these are middle-body pieces only. A piece that narrows to a point is wrong. ' +
+      'Each piece is flat and slab-like rather than round or barrel-shaped, because the fish itself is ' +
+      'a thin ribbon. ' +
+      'COLOUR: scaleless skin, uniformly bright silver over the whole piece — no dark navy or green ' +
+      'back, no stripes, no spots, no dark-top/pale-belly gradient. ' +
+      'The pale flesh shows only at the two cut ends, not on the silver sides. ' +
+      'Keep it looking like real fresh fish on a market counter — natural surface irregularity, ' +
+      'slight moisture and soft imperfections — not a smooth plastic or CGI block. ' +
+      'It is not mackerel, Spanish mackerel, saury, sardine or herring.',
     presentation:
       'five or six cut steaks resting on crushed ice on a wide pale blue-grey ceramic plate, ' +
-      'arranged loosely and naturally as a fishmonger would lay them out, a few stray ice shards ' +
+      'laid loosely and naturally as a fishmonger would arrange them, a few stray ice shards ' +
       'on the table beside the plate, photographed from above',
     setting:
       'SETTING OVERRIDE for this image: ignore the warm cream / aged wood / terracotta linen setting. ' +
