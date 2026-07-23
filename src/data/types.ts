@@ -49,6 +49,8 @@ export interface MasterclassContent {
 
 export interface Recipe {
   id: string;
+  /** 맛 보강 스크립트(upgrade-recipe-flavor)가 적용된 레시피 표시 — 재실행 시 건너뛰기용 */
+  flavorUpgraded?: boolean;
   month: number;
   title: string;
   subtitle: string;

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenAI, Type } from '@google/genai';
 import { searchRecipes, getRecipesByIngredient } from '@/data/recipes';
 import { searchIngredientsAcrossMonths, findIngredientByName } from '@/data/months';
-import { SODAMI_TEXT_PERSONA_PROMPT } from '@/lib/persona';
+import { SODAMI_TEXT_PERSONA_PROMPT, SODAMI_FLAVOR_STANDARD } from '@/lib/persona';
 import { getUserFromRequest } from '@/lib/auth';
 import { sql } from '@/lib/db';
 import { getUserTopIngredient } from '@/lib/personalization';
@@ -252,6 +252,10 @@ ${userTopIngredient ? `이 사용자는 최근 '${userTopIngredient}' 재료에 
    조리법을 묻는 게 아닌 일반적인 대화(추천, 잡담 등)에서는 ingredientList를 비워두세요.
    - 계량은 "적당히", "약간" 같은 애매한 표현 대신 항상 구체적인 수치로 쓰세요. 예: "간장 약간"이 아니라 "간장 1큰술", "고춧가루 조금"이 아니라 "고춧가루 1.5큰술", "물 적당량"이 아니라 "물 2컵". 숟가락 단위는 큰술/작은술로, 그 외엔 g, ml, 컵, 개 등 실제 요리할 때 계량할 수 있는 단위를 쓰세요.
    - 타이밍도 구체적으로 짚으세요. "볶는다"로 끝내지 말고 "중불에서 2분간 볶는다", "고기 겉면이 갈색이 되면 양파를 넣는다"처럼 몇 분인지, 무엇이 어떤 상태가 됐을 때 다음 재료를 넣는지, 불 세기는 어느 정도인지까지 알려주세요. 재료를 넣는 순서가 맛을 좌우하는 경우(예: 마늘을 먼저 볶아 향을 낸 뒤 고기를 넣는다) 그 이유도 짧게 덧붙이세요.
+   - 조리법을 안내할 때는 아래 "맛의 기준"을 반드시 지키세요. 감칠맛 베이스, 향 내기 단계, 나눠서 하는 간, 마무리 산미·향이 빠지면 안 됩니다.
+
+${SODAMI_FLAVOR_STANDARD}
+
 5. 각 요리/재료 제안에는 왜 지금 좋은지 1문장 이내의 다정한 이유를 붙이세요.
 6. 요리 이름은 검색에 쓰이므로 재료명을 포함한 명확한 한글 이름으로 쓰세요 (예: "애호박 두부 된장찌개"). 재료 이름도 일반적인 한글 명칭으로 쓰세요 (예: "애호박", "표고버섯"). 브랜드명이나 지나치게 창작적인 이름은 피하세요.
 7. 대화의 이전 맥락을 항상 기억하고 자연스럽게 이어가세요. 같은 제안을 반복하지 마세요.
