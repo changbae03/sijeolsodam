@@ -10,10 +10,22 @@
     "generate:checkpoints": "tsx scripts/generate-checkpoints.ts",
     "generate:images": "tsx scripts/generate-images.ts",
     "generate:ingredient-images": "tsx scripts/generate-ingredient-images.ts",
-    "generate:ingredients": "tsx scripts/generate-ingredient-details.ts"
+    "generate:ingredients": "tsx scripts/generate-ingredient-details.ts",
+    "app:sync": "cap sync ios",
+    "app:open": "cap open ios",
+    "app:build:bundled": "CAP_BUNDLED=1 next build && CAP_BUNDLED=1 cap sync ios"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1090.0",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/browser": "^8.0.4",
+    "@capacitor/cli": "^8.4.2",
+    "@capacitor/core": "^8.4.2",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/ios": "^8.4.2",
+    "@capacitor/keyboard": "^8.0.5",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.3",
     "@google/genai": "^2.9.0",
     "@neondatabase/serverless": "^1.1.0",
     "@vercel/blob": "^2.4.1",

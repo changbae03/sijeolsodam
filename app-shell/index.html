@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
+    />
+    <title>시절소담</title>
+    <style>
+      :root {
+        --cream: #ffffff;
+        --cream-warm: #f6f1e8;
+        --ink: #2c2a26;
+        --ink-soft: #5a5650;
+        --border-soft: #e8e2d8;
+      }
+
+      * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .wrap {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1.75rem calc(2rem + env(safe-area-inset-bottom));
+      }
+
+      .mark {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin-bottom: 1.75rem;
+      }
+
+      .mark span {
+        display: inline-block;
+        margin-right: 0.4rem;
+      }
+
+      h1 {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        margin: 0 0 0.625rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.65;
+        color: var(--ink-soft);
+        max-width: 17rem;
+      }
+
+      button {
+        margin-top: 1.75rem;
+        border: 0;
+        border-radius: 999px;
+        background: var(--ink);
+        color: var(--cream);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        font-family: inherit;
+        padding: 0.8125rem 2rem;
+        cursor: pointer;
+      }
+
+      button:active {
+        opacity: 0.85;
+      }
+
+      .hint {
+        margin-top: 1.25rem;
+        font-size: 0.75rem;
+        color: var(--ink-soft);
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="mark"><span>🍚</span>시절소담</div>
+      <h1>연결이 잠시 끊겼어요</h1>
+      <p>
+        네트워크 상태를 확인한 뒤 다시 시도해 주세요. 제철 식재료와 레시피는 그대로 기다리고
+        있어요.
+      </p>
+      <button type="button" onclick="window.location.reload()">다시 불러오기</button>
+      <div class="hint" id="hint"></div>
+    </div>
+
+    <script>
+      // 온라인으로 돌아오면 자동으로 다시 시도한다.
+      window.addEventListener('online', function () {
+        window.location.reload();
+      });
+
+      if (!navigator.onLine) {
+        document.getElementById('hint').textContent = '오프라인 상태입니다';
+      }
+    </script>
+  </body>
+</html>

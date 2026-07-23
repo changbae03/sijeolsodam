@@ -223,3 +223,35 @@ p, h1, h2, h3, h4 {
   -webkit-user-select: none;
   user-select: none;
 }
+
+/* ── iOS 앱(Capacitor) 대응 ──────────────────────────────────
+   웹뷰가 노치·홈바 영역까지 차지하므로 상단 여백을 세이프에어리어로 확보한다.
+   웹 브라우저에서는 env()가 0이라 아무 영향이 없다. */
+body {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* 화면 상단에 고정되는 요소(헤더 등)는 각자 세이프에어리어를 더해 쓰도록 유틸 제공 */
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 앱 안에서는 길게 눌러 텍스트 선택·확대되는 웹 동작이 어색해서 막는다.
+   단 입력창과 본문 텍스트는 선택 가능해야 하므로 예외를 둔다. */
+.capacitor-app body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  overscroll-behavior-y: none;
+}
+.capacitor-app input,
+.capacitor-app textarea,
+.capacitor-app [contenteditable='true'],
+.capacitor-app p,
+.capacitor-app li {
+  -webkit-user-select: text;
+  user-select: text;
+}

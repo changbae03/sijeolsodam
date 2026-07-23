@@ -5,6 +5,7 @@ import { FavoritesProvider } from "@/lib/favorites-context";
 import BottomNav from "@/components/BottomNav";
 import GlobalSodami from "@/components/GlobalSodami";
 import WelcomeOnboarding from "@/components/WelcomeOnboarding";
+import NativeAppSetup from "@/components/NativeAppSetup";
 
 /** 링크 공유 시 미리보기(카카오톡·메시지 등)에 쓰이는 절대 주소 */
 export const SITE_URL =
@@ -29,6 +30,10 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  // 노치·홈바 영역까지 화면을 채우고, 안쪽 여백은 env(safe-area-inset-*)로 맞춘다.
+  // (iOS 앱 웹뷰에서 상·하단이 잘리거나 뜨는 것을 막는다)
+  viewportFit: "cover",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
@@ -73,6 +78,7 @@ export default function RootLayout({
             <GlobalSodami />
             <BottomNav />
             <WelcomeOnboarding />
+            <NativeAppSetup />
           </FavoritesProvider>
         </AuthProvider>
       </body>
